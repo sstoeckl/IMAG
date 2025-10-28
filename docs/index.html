@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IMAG — Investment Management & Asset Game</title>
+  <style>
+    :root{
+      --ink:#0f172a; --muted:#475569; --brand:#2b6cb0;
+      --hero:#f1f5fb; --card:#ffffff; --border:#e5e7eb;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.55;background:#fff}
+    a{color:inherit}
+    .container{max-width:1100px;margin:0 auto;padding:0 1rem}
+    .nav{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid #f2f4f7}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:54px}
+    .brand{font-weight:600;white-space:nowrap}
+    .menu{display:flex;gap:1rem;align-items:center;font-size:.95rem;color:#2c3e50}
+    .menu a{text-decoration:none;padding:.35rem .4rem;border-radius:.35rem}
+    .menu a:hover{background:#f6f7fb}
+    .hero{background:var(--hero);padding:3rem 0 2rem}
+    .hero-grid{display:grid;gap:2rem}
+    @media(min-width:960px){.hero-grid{grid-template-columns:2fr 1fr}}
+    .h1{font-size:2.25rem;margin:0 0 .35rem}
+    .lead{color:var(--muted);max-width:56rem}
+    .btns{margin-top:1rem;display:flex;gap:.5rem;flex-wrap:wrap}
+    .btn{display:inline-block;padding:.6rem 1rem;border-radius:.5rem;text-decoration:none;border:1px solid #cbd5e1}
+    .btn-primary{background:var(--brand);color:#fff;border-color:var(--brand)}
+    .btn-light{background:#fff;color:var(--ink)}
+    .infobox{background:#fff;border:1px solid var(--border);border-radius:.9rem;padding:1rem 1.1rem;box-shadow:0 2px 3px rgba(0,0,0,.02)}
+    .infobox h3{font-size:1rem;margin:.2rem 0}
+    .infobox ul{margin:.5rem 0 .25rem 1.2rem}
+    .supported{font-size:.8rem;color:var(--muted);display:flex;align-items:center;gap:.4rem}
+    .badge{display:inline-block;background:#1e40af;color:#fff;font-weight:600;border-radius:.35rem;padding:.1rem .4rem;font-size:.72rem}
+    .section{padding:2rem 0}
+    .section h2{font-size:1.35rem;margin:0 0 .8rem}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:1rem;padding:1rem 1.1rem;box-shadow:0 1px 1px rgba(0,0,0,.02)}
+    .grid2{display:grid;gap:1rem}
+    @media(min-width:980px){.grid2{grid-template-columns:1fr 1fr}}
+    .muted{color:var(--muted)}
+    details{border:1px solid var(--border);border-radius:.6rem;background:#f8fafc}
+    summary{cursor:pointer;padding:.55rem .75rem;list-style:none}
+    summary::-webkit-details-marker{display:none}
+    details > div{padding:.6rem .9rem .8rem}
+    .footer{padding:1.25rem 0;border-top:1px solid #f2f4f7;color:#64748b;font-size:.9rem}
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <div class="container nav-inner">
+      <div class="brand">IMAG — Investment Management & Asset Game</div>
+      <nav class="menu">
+        <a href="project.html">Project</a>
+        <a href="team.html">Team</a>
+        <a href="outcomes.html">Outcomes</a>
+        <a href="events.html">Events</a>
+        <a href="apps.html">Apps</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1 class="h1">Understanding Investing with IMAG</h1>
+        <p class="lead">Erasmus+ project: a simple public landing that links out to our game, external promo video and Quarto-rendered documentation. Keep it minimal but informative.</p>
+        <div class="btns">
+          <a class="btn btn-primary" href="apps.html">Explore Apps / Play Game</a>
+          <a class="btn btn-light" href="outcomes.html">See Outcomes</a>
+        </div>
+      </div>
+      <aside class="infobox">
+        <h3>An Erasmus+ initiative. Improving financial literacy in investing.</h3>
+        <ul>
+          <li>Two target groups: students and lifelong learners.</li>
+          <li>Modular learning from basics to advanced topics.</li>
+          <li>Interactive simulation to understand portfolio decisions.</li>
+        </ul>
+        <p class="supported">SUPPORTED BY <span class="badge">Erasmus+</span></p>
+      </aside>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h2>Project</h2>
+      <div class="card">
+        Our goal is to transfer practical investment knowledge through an engaging game, a transparent simulation engine, and open teaching resources.
+        This page is the outer frame. Detailed docs are rendered with Quarto on separate pages and linked in the navbar.
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Project Events</h2>
+      <div class="grid2">
+        <div class="card">
+          <h3>Conference & Teaching Workshop</h3>
+          <p class="muted">University of Liechtenstein, 2025. Plenary with partners; demo of the simulation engine; teaching pilots planning.</p>
+          <details>
+            <summary>Program &amp; Photos</summary>
+            <div>
+              <ul>
+                <li><a href="docs/kickoff-agenda.pdf">Agenda (PDF)</a></li>
+                <li><a href="docs/kickoff-slides.pdf">Slides (PDF)</a></li>
+                <li><a href="events/kickoff-photos/">Photo gallery</a></li>
+              </ul>
+            </div>
+          </details>
+        </div>
+        <div class="card">
+          <h3>Final Project Meeting</h3>
+          <p class="muted">Vaduz, 2027. Presentation of outputs: simulation docs, course materials, and dissemination.</p>
+          <details>
+            <summary>Photos</summary>
+            <div>
+              <ul>
+                <li><a href="events/final-photos/">Gallery</a></li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      © IMAG <span id="y"></span> • Built simple, links out to game and docs.
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
