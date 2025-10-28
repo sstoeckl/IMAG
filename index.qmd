@@ -1,30 +1,76 @@
 ---
 title: "IMAG — Investment Management & Asset Game"
-description: "Projektübersicht, Simulation & Teaching-Material"
 page-layout: full
+format:
+  html:
+    css:
+      - assets/css/custom.css
+      - assets/css/landing.css
+    toc: false
 ---
 
-<!-- Simple hero -->
-<section class="hero">
+<!-- Custom Landing modeled after UNPIE layout -->
+<section class="hero-landing">
   <div class="container">
-    <h1>IMAG: Lernen, Forschen, Investieren</h1>
-    <p class="lead">Ein realitätsnahes Investment-Spiel, eine robuste Simulation-Engine und begleitende Lehrmaterialien.</p>
-    <p>
-      <a class="btn btn-primary" href="game.qmd">Play the Game</a>
-      <a class="btn btn-outline-secondary" href="simulation.qmd">Simulation Engine</a>
-      <a class="btn btn-outline-secondary" href="pages/teaching/teaching.qmd">Teaching</a>
-    </p>
+    <div class="hero-text">
+      <h1>IMAG</h1>
+      <p class="subtitle">Investment Management & Asset Game</p>
+      <p class="lede">
+        A competitive investment simulation with a realistic market engine and full teaching package.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="game.qmd">Play the Game</a>
+        <a class="btn btn-secondary" href="simulation.qmd">Simulation Engine</a>
+        <a class="btn btn-outline" href="pages/teaching/teaching.qmd">Teaching</a>
+      </div>
+    </div>
   </div>
 </section>
 
-## Project highlights
+<section class="cards">
+  <div class="container card-grid">
+    <a class="card" href="project.qmd">
+      <h3>Project</h3>
+      <p>Goals, work packages, milestones, and impact.</p>
+    </a>
+    <a class="card" href="participants.qmd">
+      <h3>Participants</h3>
+      <p>Universities and industry partners, roles and contacts.</p>
+    </a>
+    <a class="card" href="meetings.qmd">
+      <h3>Meetings</h3>
+      <p>Kick-off, workshops, agendas, slides, and minutes.</p>
+    </a>
+    <a class="card" href="game.qmd">
+      <h3>Game</h3>
+      <p>Cesim Invest — promo video and access to the platform.</p>
+    </a>
+    <a class="card" href="resources.qmd">
+      <h3>Resources</h3>
+      <p>Guides, case descriptions, and public documents.</p>
+    </a>
+    <a class="card" href="contact.qmd">
+      <h3>Contact</h3>
+      <p>Get in touch and legal information.</p>
+    </a>
+  </div>
+</section>
 
-- Wettbewerbsbasiertes **Investment-Simulationsspiel** mit realen Marktkomplexitäten
-- **Simulation-Engine** für Szenarien, Faktoren & Risikomaße
-- **Teaching Hub**: Quarto-Buch & Vorlesungsfolien
+<section class="sponsors">
+  <div class="container logos">
+    <div class="logo-row">
+      <img src="assets/logos/imag-logo.svg" alt="IMAG" />
+      <img src="assets/logos/uni-li.svg" alt="University of Liechtenstein" />
+      <img src="assets/logos/cesim.svg" alt="Cesim" />
+      <img src="assets/logos/lub.svg" alt="LUB" />
+    </div>
+  </div>
+</section>
 
-## Quick links
-
-- **Participants:** <a href="participants.qmd">Team & Partner</a>  
-- **Meetings:** <a href="meetings.qmd">Kick-off, Workshops, Events</a>  
-- **Resources:** <a href="resources.qmd">Anträge, Guides, Cases</a>
+<section class="footer-cta">
+  <div class="container">
+    <p>
+      Host only what you need here. External content (game instance, promo video) can be linked out to official providers.
+    </p>
+  </div>
+</section>
