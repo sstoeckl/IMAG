@@ -1,0 +1,11 @@
+---
+title: "Project"
+---
+## Ziele & Work Packages
+- WP1: Game & Tech Design
+- WP2: Simulation Engine & Data
+- WP3: Dissemination
+- WP4: Educational Resources
+            
+## Timeline
+- 2025–2027 mit Milestones (Kick-off, Alpha/Beta, Teaching piloting)

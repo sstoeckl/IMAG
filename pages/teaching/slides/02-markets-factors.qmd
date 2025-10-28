@@ -1,0 +1,6 @@
+---
+title: "Markets & Factors"
+format: revealjs
+---
+## Faktoren
+- Value, Momentum, Quality, Size, Low-Risk

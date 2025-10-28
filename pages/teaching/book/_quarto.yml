@@ -1,0 +1,20 @@
+project:
+  type: book
+  output-dir: ../../../../docs/teaching-book
+
+book:
+  title: "IMAG Teaching Book"
+  author: "IMAG Team"
+  chapters:
+    - index.qmd
+    - chapters/01-introduction.qmd
+    - chapters/02-asset-classes.qmd
+    - chapters/03-saa-taa.qmd
+    - chapters/04-esg-and-impact.qmd
+    - chapters/05-assessment.qmd
+
+format:
+  html:
+    theme: cosmo
+    number-sections: true
+    toc: true

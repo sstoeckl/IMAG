@@ -1,0 +1,30 @@
+---
+title: "IMAG — Investment Management & Asset Game"
+description: "Projektübersicht, Simulation & Teaching-Material"
+page-layout: full
+---
+
+<!-- Simple hero -->
+<section class="hero">
+  <div class="container">
+    <h1>IMAG: Lernen, Forschen, Investieren</h1>
+    <p class="lead">Ein realitätsnahes Investment-Spiel, eine robuste Simulation-Engine und begleitende Lehrmaterialien.</p>
+    <p>
+      <a class="btn btn-primary" href="game.qmd">Play the Game</a>
+      <a class="btn btn-outline-secondary" href="simulation.qmd">Simulation Engine</a>
+      <a class="btn btn-outline-secondary" href="pages/teaching/teaching.qmd">Teaching</a>
+    </p>
+  </div>
+</section>
+
+## Project highlights
+
+- Wettbewerbsbasiertes **Investment-Simulationsspiel** mit realen Marktkomplexitäten
+- **Simulation-Engine** für Szenarien, Faktoren & Risikomaße
+- **Teaching Hub**: Quarto-Buch & Vorlesungsfolien
+
+## Quick links
+
+- **Participants:** <a href="participants.qmd">Team & Partner</a>  
+- **Meetings:** <a href="meetings.qmd">Kick-off, Workshops, Events</a>  
+- **Resources:** <a href="resources.qmd">Anträge, Guides, Cases</a>

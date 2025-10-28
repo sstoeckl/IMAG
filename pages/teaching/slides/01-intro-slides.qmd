@@ -1,0 +1,7 @@
+---
+title: "Intro to IMAG"
+format: revealjs
+---
+## Willkommen
+- Spielüberblick
+- Ziele

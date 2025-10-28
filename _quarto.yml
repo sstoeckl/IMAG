@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "IMAG — Investment Management & Asset Game"
+  favicon: assets/logos/imag-favicon.png
+  navbar:
+    logo: assets/logos/imag-logo.svg
+    left:
+      - text: "Project"
+        file: project.qmd
+      - text: "Participants"
+        file: participants.qmd
+      - text: "Meetings"
+        file: meetings.qmd
+      - text: "Game"
+        file: game.qmd
+      - text: "Simulation"
+        file: simulation.qmd
+      - text: "Teaching"
+        file: pages/teaching/teaching.qmd
+      - text: "Resources"
+        file: resources.qmd
+      - text: "Contact"
+        file: contact.qmd
+  page-footer:
+    left: "© IMAG {year}"
+    right: "Built with Quarto"
+
+format:
+  html:
+    theme: cosmo
+    css: assets/css/custom.css
+    toc: true
+    toc-location: left
+    smooth-scroll: true
+    anchor-sections: true
+lang: de
