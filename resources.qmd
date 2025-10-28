@@ -1,7 +1,0 @@
----
-title: "Resources"
----
-- KA220 IMAG application (public) — `docs/KA220-IMAG-application.pdf`
-- Decision-making guide — `docs/decision-making-guide.pdf`
-- Case description — `docs/case-description.pdf`
-- Logos — `assets/logos/`

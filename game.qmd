@@ -1,8 +1,0 @@
----
-title: "Game"
----
-**Play the Game / Promo:**  
-- Cesim Invest: https://www.cesim.com/simulations/cesim-invest
-- Promo-Video: (YouTube/Vimeo link here)
-
-Add screenshots to `assets/screenshots/` and embed here.

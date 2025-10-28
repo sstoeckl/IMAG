@@ -1,5 +1,0 @@
----
-title: "IMAG Teaching Book"
----
-## Überblick
-Lernziele, Syllabus, Prüfungsleistung, Tools.

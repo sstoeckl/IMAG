@@ -1,4 +1,0 @@
----
-title: "Asset Classes"
----
-_TODO: Inhalt für Kapitel 2._

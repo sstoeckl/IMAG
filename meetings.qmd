@@ -1,5 +1,0 @@
----
-title: "Meetings"
----
-- 2025-02-14 — Kick-off @ Vaduz (Agenda, Slides, Minutes)
-- 2025-05-08 — WP Sync (Online)

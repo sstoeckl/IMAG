@@ -1,7 +1,0 @@
----
-title: "Teaching Hub"
----
-Willkommen im Teaching-Hub. Hier finden Sie das Quarto-Buch (Kapitel) und begleitende Vorlesungsfolien.
-
-- **Book:** `pages/teaching/book/index.qmd`
-- **Slides:** `pages/teaching/slides/`

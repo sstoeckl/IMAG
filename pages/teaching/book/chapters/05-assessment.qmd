@@ -1,4 +1,0 @@
----
-title: "Assessment"
----
-_TODO: Inhalt für Kapitel 5._

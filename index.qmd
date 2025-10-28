@@ -1,76 +1,74 @@
+
 ---
 title: "IMAG — Investment Management & Asset Game"
 page-layout: full
-format:
-  html:
-    css:
-      - assets/css/custom.css
-      - assets/css/landing.css
-    toc: false
 ---
 
-<!-- Custom Landing modeled after UNPIE layout -->
-<section class="hero-landing">
-  <div class="container">
-    <div class="hero-text">
-      <h1>IMAG</h1>
-      <p class="subtitle">Investment Management & Asset Game</p>
-      <p class="lede">
-        A competitive investment simulation with a realistic market engine and full teaching package.
-      </p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="game.qmd">Play the Game</a>
-        <a class="btn btn-secondary" href="simulation.qmd">Simulation Engine</a>
-        <a class="btn btn-outline" href="pages/teaching/teaching.qmd">Teaching</a>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>IMAG — Investment Management & Asset Game</h1>
+      <p class="lead">Erasmus+ project: We develop a competitive investment simulation with a realistic market engine and ready-to-use teaching materials (Quarto book & slides). Simple landing, external links for the rest.</p>
+      <div class="btn-row">
+        <a class="btn-primary" href="apps.qmd">Explore Apps</a>
+        <a class="btn-light" href="outcomes.qmd">See Outcomes</a>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="cards">
-  <div class="container card-grid">
-    <a class="card" href="project.qmd">
-      <h3>Project</h3>
-      <p>Goals, work packages, milestones, and impact.</p>
-    </a>
-    <a class="card" href="participants.qmd">
-      <h3>Participants</h3>
-      <p>Universities and industry partners, roles and contacts.</p>
-    </a>
-    <a class="card" href="meetings.qmd">
-      <h3>Meetings</h3>
-      <p>Kick-off, workshops, agendas, slides, and minutes.</p>
-    </a>
-    <a class="card" href="game.qmd">
-      <h3>Game</h3>
-      <p>Cesim Invest — promo video and access to the platform.</p>
-    </a>
-    <a class="card" href="resources.qmd">
-      <h3>Resources</h3>
-      <p>Guides, case descriptions, and public documents.</p>
-    </a>
-    <a class="card" href="contact.qmd">
-      <h3>Contact</h3>
-      <p>Get in touch and legal information.</p>
-    </a>
-  </div>
-</section>
-
-<section class="sponsors">
-  <div class="container logos">
-    <div class="logo-row">
-      <img src="assets/logos/imag-logo.svg" alt="IMAG" />
-      <img src="assets/logos/uni-li.svg" alt="University of Liechtenstein" />
-      <img src="assets/logos/cesim.svg" alt="Cesim" />
-      <img src="assets/logos/lub.svg" alt="LUB" />
+    <div class="badgebox">
+      <h3>An Erasmus+ initiative. Improving financial literacy in investing.</h3>
+      <ul>
+        <li>Two target groups: students and lifelong learners.</li>
+        <li>Modular learning from basics to advanced topics.</li>
+        <li>Interactive simulation to understand portfolio decisions.</li>
+      </ul>
+      <p class="supported">SUPPORTED BY <img src="assets/img/erasmus-placeholder.svg" alt="Erasmus+" style="height:16px; vertical-align:middle; margin-left:.3rem"></p>
     </div>
   </div>
 </section>
 
-<section class="footer-cta">
+<section class="section">
   <div class="container">
-    <p>
-      Host only what you need here. External content (game instance, promo video) can be linked out to official providers.
-    </p>
+    <h2>Project</h2>
+    <div class="card">
+      <p>Our goal is to transfer practical investment knowledge to students and the public through an engaging game, a transparent simulation engine, and open teaching resources. The IMAG site is intentionally simple: the landing summarizes; the game and videos are hosted externally.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Project Events</h2>
+    <div class="grid2">
+      <div class="card">
+        <h3>Kick-off & Teaching Workshop</h3>
+        <p class="small-muted">University of Liechtenstein, 2025. Plenary with partners; demo of the simulation engine; teaching pilots planning.</p>
+        <div class="callout" id="c1">
+          <div class="callout-toggle" onclick="this.parentElement.classList.toggle('open')">
+            ▶ Program & Photos
+          </div>
+          <div class="callout-content">
+            <ul>
+              <li>Agenda (PDF)</li>
+              <li>Slides (PDF)</li>
+              <li>Photo gallery</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Final Project Meeting</h3>
+        <p class="small-muted">Vaduz, 2027. Presentation of outputs: simulation docs, course materials, and dissemination.</p>
+        <div class="callout" id="c2">
+          <div class="callout-toggle" onclick="this.parentElement.classList.toggle('open')">
+            ▶ Photos
+          </div>
+          <div class="callout-content">
+            <ul>
+              <li>Gallery</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

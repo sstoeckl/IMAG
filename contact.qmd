@@ -1,7 +1,3 @@
----
-title: "Contact"
----
-**IMAG Coordination**  
-University of Liechtenstein — Vaduz
+# Contact
 
-E-Mail: info@imag.li
+info@imag.li
