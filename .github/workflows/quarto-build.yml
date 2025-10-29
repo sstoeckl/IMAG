@@ -1,0 +1,52 @@
+name: Build Quarto sites to docs
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 'latest'
+
+      #Optional: TinyTeX if you plan to render PDFs later
+      - uses: r-lib/actions/setup-tinytex@v2
+
+      - name: Render Teaching Book
+        working-directory: ./teaching
+        run: quarto render
+
+      - name: Render Slides
+        working-directory: ./slides
+        run: quarto render
+
+      - name: Render Engine Docs
+        working-directory: ./engine
+        run: quarto render
+
+      - name: Ensure redirect files exist
+        run: |
+          mkdir -p docs
+          echo '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=./teaching/"><link rel="canonical" href="./teaching/">' > docs/teaching.html
+          echo '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=./slides/"><link rel="canonical" href="./slides/">' > docs/slides.html
+          echo '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=./engine/"><link rel="canonical" href="./engine/">' > docs/engine.html
+
+      - name: Commit built files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "CI: render Quarto projects to docs" || echo "No changes to commit"
+
+      - name: Push changes
+        run: |
+          git push

@@ -1,0 +1,14 @@
+project:
+  type: website
+  output-dir: ../docs/engine
+
+website:
+  title: "IMAG Engine Documentation"
+  navbar: false
+
+format:
+  html:
+    toc: true
+    include-in-header: ../includes/head.html
+    include-before-body: ../includes/header.html
+    include-after-body: ../includes/footer.html

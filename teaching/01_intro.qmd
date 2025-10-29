@@ -1,0 +1,5 @@
+# Getting Started
+
+- Course setup & onboarding
+- Recommended round structure
+- Assessment pointers (Sharpe, alpha, IR)

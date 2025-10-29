@@ -1,0 +1,12 @@
+project:
+  type: website
+  output-dir: ../docs/slides
+
+format:
+  revealjs:
+    slide-number: true
+    toc: false
+    include-in-header: ../includes/head.html
+    include-before-body: ../includes/header.html
+    include-after-body: ../includes/footer.html
+    transition: fade

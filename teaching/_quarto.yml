@@ -1,0 +1,21 @@
+project:
+  type: book
+  output-dir: ../docs/teaching
+
+book:
+  title: "IMAG Teaching Materials"
+  chapters:
+    - index.qmd
+    - 01-intro.qmd
+
+format:
+  html:
+    theme: default
+    toc: true
+    number-sections: true
+    include-in-header: ../includes/head.html
+    include-before-body: ../includes/header.html
+    include-after-body: ../includes/footer.html
+    page-layout: full
+    smooth-scroll: true
+    anchor-sections: true

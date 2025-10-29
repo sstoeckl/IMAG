@@ -1,0 +1,5 @@
+---
+title: "IMAG Engine Documentation"
+---
+
+This document outlines the market model, asset universe, KPIs, and configuration used by the IMAG simulation.

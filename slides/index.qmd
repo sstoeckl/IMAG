@@ -1,0 +1,10 @@
+---
+title: "IMAG — Lecture Slides"
+format: revealjs
+---
+
+# IMAG Overview
+
+- Simulation flow
+- Decisions & KPIs
+- ESG integration
