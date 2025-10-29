@@ -336,145 +336,75 @@
   <!-- Outcomes -->
   <section id="outcomes" class="container mx-auto px-4 py-12">
     <h2 class="text-2xl font-semibold">Outcomes</h2>
-    <div class="mt-6 grid md:grid-cols-2 gap-6">
-      <div class="rounded-2xl border bg-white p-5 shadow-sm">
-        <h3 class="font-semibold">Online Courses (MOOCs)</h3>
-        <p class="mt-2 text-sm text-slate-700">Two modular MOOCs: (1) an accessible course for citizens (German and English) and (2) an advanced course for students. <br>
-        <strong>Status:</strong> content consolidation in progress; one course is currently piloted on Coursera to test delivery and engagement.</p>
-        <!-- <a class="mt-3 inline-flex text-sm text-[var(--brand)] hover:underline" href="https://pensionsineurope.eu/onlinecourses/" target="_blank" rel="noopener">Online Courses</a> -->
-      </div>
-      <div class="rounded-2xl border bg-white p-5 shadow-sm">
-        <h3 class="font-semibold">Interactive Web Applications</h3>
-        <p class="mt-2 text-sm text-slate-700">A suite of <a href="https://docs.r-wasm.org/webr/latest/">webR</a>-powered tools that let users simulate savings paths, pensions, longevity effects, and ruin probabilities. These apps are embedded in the courses and freely accessible.</p>
-        <!-- <a class="mt-3 inline-flex text-sm text-[var(--brand)] hover:underline" href="https://pensionsineurope.eu/onlinecourses/online-software-applications/" target="_blank" rel="noopener">Online Software Applications</a> -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Apps -->
-  <section id="apps" class="container mx-auto px-4 py-12">
-    <h2 class="text-2xl font-semibold">Apps</h2>
-    <!-- <p class="mt-3 text-slate-700">All apps are deployed via GitHub Pages and linked under <code>https://www.sebastianstoeckl.com/unpie2/</code>. Use the language parameter <code>?lang=en</code> or <code>?lang=de_DE</code> to switch UI language.</p> -->
-
-    <!-- Accordion groups -->
-    <div class="mt-6 space-y-4" id="apps-accordion"></div>
-    <!-- Hero-style CTA under the apps accordion -->
-    <div class="mt-6 flex flex-wrap gap-3">
-      <a href="q/apps.html"
-         class="inline-flex items-center px-4 py-2 rounded bg-[var(--brand)] text-white hover:bg-[var(--brand-dark)]">
-        Overview: Explore and Filter all Apps
-      </a>
-    </div>
-
-    <template id="apps-section">
-      <details class="rounded-2xl border bg-white shadow-sm overflow-hidden">
-        <summary class="px-5 py-4 cursor-pointer font-semibold bg-white hover:bg-slate-50 flex items-center justify-between">
-          <span class="section-title"></span>
-          <span class="text-slate-500 text-sm">(click to expand)</span>
-        </summary>
-        <div class="p-5 bg-white">
-          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 section-grid"></div>
+  
+    <div class="mt-6 grid md:grid-cols-3 gap-6">
+  
+      <!-- Outcome 1: The Game -->
+      <article class="rounded-2xl border bg-white p-5 shadow-sm">
+        <h3 class="font-semibold">Cesim Invest — The IMAG Simulation</h3>
+        <p class="mt-2 text-sm text-slate-700">
+          A web-based investment management simulation where participants act as portfolio managers. Learners practise diversification,
+          risk–return decisions, and ESG-integrated investing via round-based gameplay with clear KPIs and guided onboarding.
+          The simulation is modular and suitable for schools, universities, and professional training.
+        </p>
+        <div class="mt-4 space-y-2 text-sm">
+          <a href="assets/pdfs/IMAG_Case_AsterionCapital.pdf" class="inline-flex items-center gap-2 text-[var(--brand)] hover:underline">
+            <span>📄</span><span>Case Description — Asterion Capital</span>
+          </a>
+          <a href="assets/pdfs/IMAG_Player_Decision_Guide.pdf" class="inline-flex items-center gap-2 text-[var(--brand)] hover:underline">
+            <span>📄</span><span>Player Decision Guide</span>
+          </a>
+          <a href="assets/pdfs/IMAG_Instructor_Portal_Export.pdf" class="inline-flex items-center gap-2 text-[var(--brand)] hover:underline">
+            <span>📄</span><span>Instructor Portal (PDF export)</span>
+          </a>
         </div>
-      </details>
-    </template>
-
-    <template id="app-card">
-      <article class="rounded-2xl border bg-white shadow-sm overflow-hidden flex flex-col">
-        <div class="aspect-[16/9] bg-slate-100 flex items-center justify-center" data-aspect>
-          <img class="w-full h-full object-cover hidden" alt="App screenshot" />
-          <div class="text-slate-400 text-sm" data-placeholder>(Add screenshot)</div>
-        </div>
-        <div class="p-5 flex-1 flex flex-col">
-          <h3 class="font-semibold leading-snug"></h3>
-          <p class="mt-2 text-sm text-slate-700 flex-1"></p>
-          <div class="mt-4 flex gap-2 text-sm">
-            <a class="px-3 py-1 rounded-lg bg-[var(--brand)] text-white hover:bg-[var(--brand-dark)]" target="_blank" rel="noopener">English</a>
-            <a class="px-3 py-1 rounded-lg bg-slate-900 text-white hover:bg-slate-800" target="_blank" rel="noopener">Deutsch</a>
-          </div>
+        <div class="mt-5 flex flex-wrap gap-3">
+          <a href="https://www.cesim.com/simulations/cesim-invest" class="inline-flex items-center px-3 py-2 rounded bg-[var(--brand)] text-white hover:bg-[var(--brand-dark)] text-sm">Go to simulation</a>
+          <a href="teaching.html" class="inline-flex items-center px-3 py-2 rounded border border-[var(--brand)] text-[var(--brand)] hover:bg-[var(--brand)] hover:text-white text-sm">See teaching material</a>
         </div>
       </article>
-    </template>
-
-    <script>
-      // Base for absolute links & assets
-      const BASE = "https://www.sebastianstoeckl.com/unpie2";
-
-      // Central list of apps grouped into sections with language-specific links
-      const APP_SECTIONS = [
-        {
-          title: "Introductory Apps",
-          items: [
-            { id:"case1",  title:"App 1: Future value of single savings payment", desc:"FV of a single savings payment.", thumb:"app1.png" },
-            { id:"case2",  title:"App 2: Future value (nominal and real) of single savings payment", desc:"FV of one payment, with nominal vs real comparison.", thumb:"app2.png" },
-            { id:"case3",  title:"App 3: Future value of constant yearly savings payments", desc:"FV of constant annual savings.", thumb:"app3.png" },
-            { id:"case4",  title:"App 4: Future value (nominal and real) of constant (nominal) yearly savings payments", desc:"FV of nominal yearly savings in nominal vs real terms.", thumb:"app4.png" },
-            { id:"case5",  title:"App 5: Future value (nominal and real) of constant (real) yearly savings payments", desc:"FV of real yearly savings in nominal vs real terms.", thumb:"app5.png" },
-            { id:"case6",  title:"App 6: Required wealth to finance constant (nominal) yearly spending", desc:"Wealth needed for constant nominal spending.", thumb:"app6.png" },
-            { id:"case7",  title:"App 7: Required wealth to finance constant (nominal/real) yearly spending", desc:"Wealth needed for constant spending (nominal or real).", thumb:"app7.png" },
-            { id:"case8",  title:"App 8: Real yearly spending financed by given (real) yearly savings", desc:"Real spending supported by given real savings.", thumb:"app8.png" },
-            { id:"case9",  title:"App 9: Yearly savings required to finance given yearly spending (both in real terms)", desc:"Savings needed to fund target real spending.", thumb:"app9.png" }
-          ]
-        },
-        {
-          title: "Apps Including Risk",
-          items: [
-            { id:"case10", title:"App 10: Real yearly pension resulting from constant (real) yearly savings", desc:"Stochastic real pension from constant real savings.", thumb:"add1.png" },
-            { id:"case11", title:"App 11: Real yearly savings required to reach minimum desired (real) yearly pension with probability p", desc:"Savings required to hit a target pension with probability p.", thumb:"add2.png" },
-            { id:"case12", title:"App 12: Years to ruin when spending yearly from given retirement savings", desc:"Years to portfolio ruin under yearly spending.", thumb:"add3.png" },
-            { id:"case13", title:"App 13: Maximum periodic spending possible to exceed specified minimum years to ruin with probability p", desc:"Max spending s.t. years-to-ruin ≥ threshold with probability p.", thumb:"add4.png" }
-          ]
-        },
-        {
-          title: "Longevity Risk & Mortality",
-          items: [
-            { id:"case7m",  title:"App 7m: Pension fund’s view — Required wealth to finance constant (nominal/real) pension payments", desc:"Required wealth for lifelong pensions under mortality.", thumb:"app7m.png" },
-            { id:"case8m",  title:"App 8m: Real pension payments that can be financed by given (real) savings", desc:"Real pension payments supported by given real savings.", thumb:"app8m.png" },
-            { id:"case9m",  title:"App 9m: Savings required to finance given life-long continuous spending (both in real terms)", desc:"Savings needed for lifelong continuous real spending.", thumb:"app9m.png" },
-            { id:"case14n",  title:"App 14: \"Fair\" conversion rate for given mortality and constant expected (or average) investment returns", desc:"Approximate fair annuity conversion rate given mortality & returns.", thumb:"app14n.png" },
-            { id:"case15n",  title:"App 15: Approximate probability of retirement ruin for given spending rate, wealth & log-normal real returns", desc:"Approximate ruin probability under log-normal returns.", thumb:"app15n.png" },
-            { id:"case16n",  title:"App 16: Moments and conditional survival probabilities for the Gompertz–Makeham distribution", desc:"Moments & survival probabilities under Gompertz–Makeham.", thumb:"app16n.png" }
-          ]
-        }
-      ];
-
-      const acc = document.getElementById('apps-accordion');
-      const secTmpl = document.getElementById('apps-section');
-      const cardTmpl = document.getElementById('app-card');
-
-      APP_SECTIONS.forEach(section => {
-        const s = secTmpl.content.cloneNode(true);
-        s.querySelector('.section-title').textContent = section.title;
-        const grid = s.querySelector('.section-grid');
-
-        section.items.forEach(app => {
-          const node = cardTmpl.content.cloneNode(true);
-          const img = node.querySelector('img');
-          const title = node.querySelector('h3');
-          const desc = node.querySelector('p');
-          const [aEn, aDe] = node.querySelectorAll('a');
-          
-          title.textContent = app.title;
-          desc.textContent = app.desc;
-          
-          const page = `${BASE}/${app.id}.html`;
-          aEn.href = `${page}?lang=en`;
-          aDe.href = `${page}?lang=de`;
-          
-          if (app.thumb) {
-            img.src = `${BASE}/assets/screenshots/${app.thumb}`;
-            img.alt = `${app.title} — screenshot`;
-            img.classList.remove('hidden');
-            // ✅ new: use data-* hooks
-            const placeholder = node.querySelector('[data-placeholder]');
-            if (placeholder) placeholder.classList.add('hidden');
-          }
-          
-          grid.appendChild(node);
-        });
-
-        acc.appendChild(s);
-      });
-    </script>
+  
+      <!-- Outcome 2: Teaching Materials -->
+      <article class="rounded-2xl border bg-white p-5 shadow-sm">
+        <h3 class="font-semibold">Teaching Materials</h3>
+        <p class="mt-2 text-sm text-slate-700">
+          Ready-to-use assets that make classroom adoption easy: slides, agendas, and example assignments aligned with the simulation’s
+          learning outcomes. Includes a recorded 60-minute “How to play” webinar and a short overview video.
+        </p>
+        <div class="mt-4 space-y-2 text-sm">
+          <a href="assets/pdfs/IMAG_Slides_SamplePack.pdf" class="inline-flex items-center gap-2 text-[var(--brand)] hover:underline">
+            <span>📄</span><span>Slides — Sample Pack</span>
+          </a>
+          <a href="assets/pdfs/IMAG_Lesson_Agendas.pdf" class="inline-flex items-center gap-2 text-[var(--brand)] hover:underline">
+            <span>📄</span><span>Lesson Agendas & Assignments</span>
+          </a>
+          <a href="https://player.vimeo.com/video/1109639021?h=0" class="inline-flex items-center gap-2 text-[var(--brand)] hover:underline" target="_blank" rel="noopener">
+            <span>▶️</span><span>Overview Video (Vimeo)</span>
+          </a>
+        </div>
+      </article>
+  
+      <!-- Outcome 3: Competition & Events -->
+      <article class="rounded-2xl border bg-white p-5 shadow-sm">
+        <h3 class="font-semibold">Competition & Events</h3>
+        <p class="mt-2 text-sm text-slate-700">
+          IMAG was showcased in hybrid roadshows and used as the platform for the international Cesim Elite finals. Materials here help
+          you organise campus sessions or a local competition and report outcomes.
+        </p>
+        <div class="mt-4 space-y-2 text-sm">
+          <a href="assets/pdfs/IMAG_EventKit.pdf" class="inline-flex items-center gap-2 text-[var(--brand)] hover:underline">
+            <span>📄</span><span>Event Kit — How to Host a Session</span>
+          </a>
+          <a href="assets/pdfs/IMAG_Competition_Rules.pdf" class="inline-flex items-center gap-2 text-[var(--brand)] hover:underline">
+            <span>📄</span><span>Competition Rules & Scoring</span>
+          </a>
+          <a href="assets/pdfs/IMAG_Dissemination_Summary.pdf" class="inline-flex items-center gap-2 text-[var(--brand)] hover:underline">
+            <span>📄</span><span>Dissemination Summary (highlights)</span>
+          </a>
+        </div>
+      </article>
+  
+    </div>
   </section>
 
   <!-- Contact / Footer -->
