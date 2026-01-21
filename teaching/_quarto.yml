@@ -4,18 +4,52 @@ project:
 
 book:
   title: "IMAG Teaching Materials"
+  #subtitle: ""
+  #author: ""
+  #date: ""
+  #cover-image:
+  #site-url:
+  #repo-url:
+  bread-crumbs: false
   chapters:
     - index.qmd
-    - 01-intro.qmd
+    #- 01_intro.qmd
+    - 01_Introduction.qmd
+    - 02_Asset_Classes.qmd
+    - 03_Sustainable_Investing.qmd
+    - 04_Client_Analysis.qmd
+    - 05_Investment_Policy.qmd
+    #- part: "Strategic Financial Analysis"
+    - 06_Strategic_Fiancial_Analysis.qmd
+    - 07_Strategic_Asset_Allocation.qmd
+    #- part: "Tactical Financial Analysis"
+    - 08_Tactical_Financial_Analysis.qmd
+    - 09_Tactical_Asset_Allocation.qmd
+      # Tactical Financial Analysis
+      # Tactical Asset Allocation
+    - 10_Security_Analysis.qmd
+    - 11_Portfolio_Implementation.qmd
+    - part: "Performance Analysis"
+    - part: "Feedback Loop"
+  page-footer:
+    border: true
+    center:
+      - text: "© 2025 Investment Management Game (IMAG). All rights reserved."
+      - text: "Supported by <a href='https://erasmus-plus.ec.europa.eu/projects/search/details/2022-1-LI01-KA220-HED-000085536' target='_blank'>Erasmus+</a> and partner institutions. Logos and trademarks are property of their respective owners."
+    
+
+
 
 format:
   html:
     theme: default
     toc: true
     number-sections: true
-    include-in-header: ../includes/head.html
-    include-before-body: ../includes/header.html
-    include-after-body: ../includes/footer.html
+    # Tailwind removes all margins from all html elements
+    #include-in-header: ../includes/head.html
+    #include-before-body: ../includes/header.html
+    #include-after-body: ../includes/footer.html
     page-layout: full
     smooth-scroll: true
     anchor-sections: true
+
