@@ -13,6 +13,7 @@ The KYC principle is a regulatory requirement for financial services providers t
 
 ### Regulatory Aspects of KYC
 KYC regulations are part of broader anti-money laundering (AML) laws that govern the financial industry globally. Compliance with these regulations requires institutions to perform due diligence to ensure that clients are properly assessed before establishing a financial relationship. The KYC process involves several key components:
+
 - __Client Identification Program (CIP):__ Verifying the identity of individuals wishing to conduct financial transactions.
 - __Customer Due Diligence (CDD):__ Assessing the risk profile of the client and monitoring their transactions.
 - __Enhanced Due Diligence (EDD):__ For higher-risk customers, a more thorough check is conducted, which may include detailed financial and background checks.
