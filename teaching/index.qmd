@@ -1,5 +1,2 @@
----
-title: "IMAG Teaching Materials"
----
-
+# IMAG Teaching Materials {.unnumbered}
 Welcome! This book accompanies the **Cesim Invest** simulation (IMAG). It includes instructor guidance, agendas, and student-facing notes aligned with diversification, risk–return, and ESG learning outcomes.

@@ -1,4 +1,6 @@
-# Getting Started
+---
+title: "Introduction"
+---
 
 - Course setup & onboarding
 - Recommended round structure
