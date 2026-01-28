@@ -29,8 +29,8 @@ book:
       # Tactical Asset Allocation
     - 10_Security_Analysis.qmd
     - 11_Portfolio_Implementation.qmd
-    - part: "Performance Analysis"
-    - part: "Feedback Loop"
+    - 12_Portfolio_Analysis.qmd
+    - 13_Feedback_Loop.qmd
   page-footer:
     border: true
     center:
