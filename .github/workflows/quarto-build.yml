@@ -15,8 +15,8 @@ jobs:
 
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          version: 'latest'
+        #with:
+        #  version: 'latest'
 
       #Optional: TinyTeX if you plan to render PDFs later
       - uses: r-lib/actions/setup-tinytex@v2
