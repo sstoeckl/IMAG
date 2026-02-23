@@ -17,7 +17,5 @@ format:
     theme: default
     width: 1280
     height: 720
-    css:
-      - custom.css
-      - ../includes/footer.css
-    footer: "<div class='imag-footer-logos'><img src='../assets/logos/uli.jpg' alt='uni.li'><img src='../assets/logos/unibz.jpg' alt='unibz'><img src='../assets/logos/cesim.png' alt='Cesim'><img src='../assets/logos/erasmus.jpg' alt='Erasmus+'></div>"
+    css: custom.css
+    footer: "<div class='slide-footer-logos'><img src='../assets/logos/uli.jpg' alt='uni.li'><img src='../assets/logos/unibz.jpg' alt='unibz'><img src='../assets/logos/cesim.png' alt='Cesim'><img src='../assets/logos/erasmus.jpg' alt='Erasmus+'></div>"
