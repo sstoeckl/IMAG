@@ -17,4 +17,10 @@ format:
     theme: default
     width: 1280
     height: 720
-    footer: "IMAG — Investment Management Game | Erasmus+ Project 2022-1-LI01-KA220-HED-000085536"
+    css: custom.css
+    footer: |
+      <img src="../assets/logos/uli.jpg" alt="University of Liechtenstein">
+      <img src="../assets/logos/unibz.jpg" alt="unibz">
+      <img src="../assets/logos/cesim.png" alt="Cesim">
+      <img src="../assets/logos/erasmus.jpg" alt="Erasmus+">
+      <span class="footer-label">IMAG &mdash; Erasmus+ Project 2022-1-LI01-KA220-HED-000085536</span>
