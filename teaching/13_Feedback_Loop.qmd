@@ -2,6 +2,10 @@
 title: "Feedback Loop"
 ---
 
+::: {.callout-tip title="Lecture Slides"}
+**Associated slides:** [Lesson 6 — Performance Measurement & Feedback Loop](../slides/lesson-06-performance.html)
+:::
+
 ## Introduction
 
 Effective portfolio management does not end with the assessment of past performance; it is an iterative process that continually informs future strategy and decision-making. This chapter focuses on creating a feedback loop from performance attribution to tactical asset allocation and portfolio implementation. By understanding how past investment decisions have influenced performance, portfolio managers can adjust their strategies to better align with market dynamics and investment goals.

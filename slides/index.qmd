@@ -1,10 +1,20 @@
 ---
-title: "IMAG — Lecture Slides"
-format: revealjs
+title: "IMAG Teaching Slides"
+format:
+  html:
+    toc: false
+    include-in-header: ../includes/head.html
+    include-before-body: ../includes/header.html
+    include-after-body: ../includes/footer.html
 ---
 
-# IMAG Overview
+These slide decks accompany the [IMAG Teaching Materials](../teaching/index.html) and are designed for six 90-minute lessons. Each deck is self-contained and links back to the relevant chapters for deeper reading.
 
-- Simulation flow
-- Decisions & KPIs
-- ESG integration
+| Lesson | Topic | Key Simulation Task |
+|--------|-------|----------|
+| [Lesson 1](lesson-01-introduction.html) | Introduction & Simulation Setup | Get started with Cesim Invest |
+| [Lesson 2](lesson-02-markets-esg.html) | Markets, Asset Classes & ESG | Map the investable universe |
+| [Lesson 3](lesson-03-client-ips.html) | Client Discovery & Investment Policy Statement | Draft the IPS |
+| [Lesson 4](lesson-04-saa.html) | Strategic Asset Allocation | Build & submit the SAA |
+| [Lesson 5](lesson-05-taa-security.html) | Tactical Allocation & Security Selection | Tactical tilts & security picks |
+| [Lesson 6](lesson-06-performance.html) | Performance Measurement & Feedback Loop | Analyse results & iterate |

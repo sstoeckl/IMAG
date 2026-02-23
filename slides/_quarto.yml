@@ -2,6 +2,10 @@ project:
   type: website
   output-dir: ../docs/slides
 
+website:
+  title: "IMAG Slides"
+  navbar: false
+
 format:
   revealjs:
     slide-number: true
@@ -10,3 +14,7 @@ format:
     include-before-body: ../includes/header.html
     include-after-body: ../includes/footer.html
     transition: fade
+    theme: default
+    width: 1280
+    height: 720
+    footer: "IMAG — Investment Management Game | Erasmus+ Project 2022-1-LI01-KA220-HED-000085536"

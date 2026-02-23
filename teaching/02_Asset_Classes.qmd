@@ -1,6 +1,10 @@
 ---
 title: "Asset Classes, Currencies and Instruments"
 ---
+
+::: {.callout-tip title="Lecture Slides"}
+**Associated slides:** [Lesson 2 — Markets, Asset Classes & ESG](../slides/lesson-02-markets-esg.html)
+:::
 The financial markets are characterized by a diversity of asset classes, each playing a critical role in investment strategy and portfolio management. An in-depth understanding of these asset classes, along with the currencies and financial instruments associated with them, is essential for informed investment decision-making. This chapter aims to provide a comprehensive overview of the various investment vehicles available, facilitating the development of a strategic approach to asset allocation that aligns with investors' financial objectives and risk tolerance.
 
 Asset allocation is a cornerstone of investment strategy, determining the distribution of investments across different asset classes to achieve an optimal balance between risk and return. This decision-making process is influenced by an understanding of each asset class's unique attributes, including growth potential, risk factors, and their contribution to the economy and financial markets.

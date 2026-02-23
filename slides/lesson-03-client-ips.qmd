@@ -1,0 +1,163 @@
+---
+title: "Lesson 3: Client Discovery & the Investment Policy Statement"
+subtitle: "IMAG — Investment Management Game"
+---
+
+## Learning Outcomes
+
+By the end of this lesson you will be able to:
+
+- Profile a client and translate qualitative preferences into quantitative objectives
+- Formulate a complete Investment Policy Statement (IPS)
+- Define risk tolerance, return requirements, constraints, and ESG policy
+- Use the IPS as the governing document for all subsequent decisions
+
+*Teaching chapters: Client Discovery & Personas · Investment Policy & Risk Governance*
+
+# Understanding Your Client {background-color="#1e3a5f"}
+
+## Client Typology
+
+- Institutional clients: pension funds, endowments, insurance companies, sovereign wealth funds
+- Retail clients: high-net-worth individuals, family offices
+- Key differences: time horizon, liability structure, regulatory constraints, reporting requirements
+
+*→ Content: IMAG client persona description (who is the simulated investor?).*
+
+## The Client Discovery Process
+
+1. **Goals**: what does the client want to achieve?
+2. **Constraints**: what limits what they can do?
+3. **Preferences**: what do they care about beyond returns?
+4. **Time horizon**: when do they need the money?
+5. **Liquidity needs**: how much cash must be accessible?
+
+*→ Content: worked example with IMAG client profile.*
+
+## Translating Qualitative to Quantitative
+
+| Qualitative statement | Quantitative objective |
+|-----------------------|------------------------|
+| "Preserve capital" | Max drawdown ≤ 10%; real return ≥ 0% |
+| "Moderate risk taker" | Portfolio volatility 8–12% p.a. |
+| "Long-term growth" | Target return: CPI + 4% over 10 years |
+| "ESG-conscious" | Portfolio ESG score ≥ 7/10 |
+
+*→ Content: IMAG-specific calibration table.*
+
+## Risk Tolerance Assessment
+
+- **Risk capacity**: ability to absorb losses (financial situation)
+- **Risk willingness**: psychological comfort with volatility
+- Tools: questionnaires, scenario testing, loss aversion probes
+- Result: a defined risk budget (max volatility, max drawdown, VaR)
+
+*→ Content: risk questionnaire template; scoring guide.*
+
+# The Investment Policy Statement {background-color="#1e3a5f"}
+
+## What is an IPS?
+
+- The governing document of the portfolio
+- Agreed upon by client and manager before any investment is made
+- Serves as the benchmark for every subsequent decision
+- Must be reviewed at least annually (or after major market events)
+
+## IPS Structure
+
+1. **Client background & objectives**
+2. **Return requirement** (absolute or relative to benchmark)
+3. **Risk tolerance** (quantified)
+4. **Time horizon**
+5. **Liquidity requirements**
+6. **Tax considerations** (if applicable)
+7. **Legal & regulatory constraints**
+8. **ESG & exclusion policy**
+9. **Benchmark definition**
+10. **Rebalancing policy**
+
+## Return Requirement
+
+- Required return = spending needs + inflation + fees
+- Must be realistic given the risk budget
+- Distinguish: **nominal vs. real**, **absolute vs. relative**
+- Example: "Achieve CPI + 3.5% net of fees over rolling 5-year periods"
+
+*→ Content: return decomposition diagram; link to Cesim scoring benchmark.*
+
+## Risk Constraints
+
+- Maximum portfolio volatility (annualised standard deviation)
+- Maximum drawdown from peak
+- Tracking error limit vs. benchmark
+- Value-at-Risk (VaR) at 95% confidence
+
+::: {.callout-note}
+In IMAG, the risk constraints you set here will govern your SAA (Lesson 4) and all TAA decisions (Lesson 5).
+:::
+
+## Constraints: Liquidity, Legal, ESG
+
+- **Liquidity**: minimum cash allocation; redemption notice period
+- **Legal**: eligible instruments; prohibited sectors
+- **ESG**: minimum portfolio ESG score; explicit exclusions (e.g. coal, weapons)
+- **Concentration**: maximum single-issuer or single-sector weight
+
+*→ Content: IMAG constraint checklist.*
+
+## Benchmark Definition
+
+- The benchmark is the reference point for relative performance
+- Choices: market-cap index, custom blended index, CPI-linked target
+- Must reflect the client's strategic asset allocation
+- Defines what is "active risk" vs. "passive market risk"
+
+*→ Content: worked example of composite benchmark construction for IMAG.*
+
+# Risk Governance {background-color="#1e3a5f"}
+
+## The Governance Framework
+
+- Who makes decisions? Who approves? Who monitors?
+- **Investment Committee**: strategy decisions, IPS approval
+- **Portfolio Manager**: day-to-day execution
+- **Risk Officer**: limit monitoring, breach escalation
+- **Compliance**: regulatory adherence
+
+*→ Content: governance org-chart; decision rights matrix.*
+
+## Monitoring & Reporting
+
+- Frequency: daily (risk limits), monthly (performance), quarterly (IPS review)
+- Key reports: factsheet, attribution report, risk dashboard
+- Breach protocol: when does a breach trigger a rebalancing?
+
+*→ Content: sample reporting template.*
+
+## Key Takeaways
+
+- The IPS is the most important document you will produce in this course
+- Every investment decision in Lessons 4–6 must be traceable to the IPS
+- A well-defined IPS prevents emotion-driven decisions under market stress
+
+## Simulation Task — Lesson 3
+
+::: {.callout-important}
+## Deliverable: Your IPS
+Draft a complete IPS for the IMAG simulation covering:
+
+- [ ] Return objective (quantified)
+- [ ] Risk tolerance (max volatility, max drawdown)
+- [ ] Time horizon
+- [ ] Liquidity requirement
+- [ ] ESG policy (minimum score + any exclusions)
+- [ ] Benchmark definition
+- [ ] Rebalancing policy (trigger-based or calendar-based)
+
+Submit before Lesson 4. Your SAA must be consistent with this document.
+:::
+
+## Further Reading
+
+- Chapter: *Client Discovery & Personas*
+- Chapter: *Investment Policy, Risk & Governance*

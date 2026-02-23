@@ -2,6 +2,10 @@
 title: "Investment Policy"
 ---
 
+::: {.callout-tip title="Lecture Slides"}
+**Associated slides:** [Lesson 3 — Client Discovery & the Investment Policy Statement](../slides/lesson-03-client-ips.html)
+:::
+
 ## Introduction
 An investment policy serves as a fundamental framework for investment companies, outlining the guiding principles and strategies that dictate how investments are managed on behalf of clients. This policy is crucial not only for ensuring consistent and disciplined investment practices but also for aligning the firm’s operations with the expectations and goals of its clients.
 

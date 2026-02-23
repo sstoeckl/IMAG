@@ -2,6 +2,10 @@
 title: "Client Analysis"
 ---
 
+::: {.callout-tip title="Lecture Slides"}
+**Associated slides:** [Lesson 3 — Client Discovery & the Investment Policy Statement](../slides/lesson-03-client-ips.html)
+:::
+
 ## Introduction
 In investment management, understanding each client’s specific needs, goals, and risk tolerance is essential for crafting a tailored investment strategy aligned with their financial objectives. This understanding forms the backbone of client analysis, a foundational step in ensuring that investment decisions genuinely reflect client circumstances and aspirations. Client analysis involves gathering, verifying, and documenting essential client data through the Know Your Client (KYC) process, ultimately supporting an ethical and customized approach to investment.
 

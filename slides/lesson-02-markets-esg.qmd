@@ -1,0 +1,142 @@
+---
+title: "Lesson 2: Markets, Asset Classes & ESG"
+subtitle: "IMAG — Investment Management Game"
+---
+
+## Learning Outcomes
+
+By the end of this lesson you will be able to:
+
+- Classify the main asset classes available in IMAG and explain their risk-return characteristics
+- Describe how macro drivers influence asset prices across the cycle
+- Integrate ESG criteria into asset class analysis
+- Map the investable universe to the Cesim Invest platform
+
+*Teaching chapters: Markets & Asset Classes · Sustainable Investing*
+
+# Asset Classes & Instruments {background-color="#1e3a5f"}
+
+## The Investable Universe
+
+- Four broad asset classes: **Equities · Fixed Income · Alternatives · Cash**
+- Each has a distinct risk-return profile, liquidity, and ESG footprint
+- The IMAG universe is a subset of the global investable universe
+
+*→ Content: table of asset classes with expected return, volatility, and correlation.*
+
+## Equities
+
+- Represent ownership in firms; residual claim on cash flows
+- Priced by: earnings growth, discount rate, sentiment
+- Key dimensions: geography, sector, size, style (value vs. growth)
+- ESG dimension: governance quality, climate exposure
+
+*→ Content: equity risk premium history; sector heatmap.*
+
+## Fixed Income
+
+- Government bonds: risk-free benchmark; duration & yield curve risk
+- Corporate bonds: credit spread as compensation for default risk
+- Yield curve dynamics: steepening, flattening, inversion
+- Cash & money market: liquidity reserve; real rate exposure
+
+*→ Content: yield curve diagram; credit spread history.*
+
+## Alternative Assets & Digital Assets
+
+- Commodities: inflation hedge; supply-demand dynamics
+- Real estate: income + capital appreciation; illiquidity premium
+- Digital assets: high volatility; low correlation (historically)
+- Role in a diversified portfolio: diversification benefit vs. complexity cost
+
+*→ Content: correlation matrix across asset classes.*
+
+## Currencies & FX Risk
+
+- Multi-currency portfolio: returns affected by exchange rate moves
+- Hedging choices: full hedge, partial hedge, unhedged
+- Currency as an active return source vs. unintended risk
+
+*→ Content: FX impact illustration on a cross-border equity position.*
+
+# Macro Drivers of Asset Prices {background-color="#1e3a5f"}
+
+## The Macro Framework
+
+- Four macro regimes: **Expansion · Slowdown · Recession · Recovery**
+- Each regime has characteristic asset class returns
+- Regime identification: leading indicators, yield curve, PMI, credit spreads
+
+*→ Content: regime wheel diagram; asset class returns by regime table.*
+
+## Key Risk Premia
+
+| Premium | Driver | Asset class |
+|---------|--------|-------------|
+| Equity risk premium | Growth, earnings | Equities |
+| Term premium | Duration risk | Long bonds |
+| Credit spread | Default risk | Corp. bonds |
+| Inflation premium | Real rate uncertainty | TIPS, commodities |
+| Illiquidity premium | Lock-up cost | Alternatives |
+
+*→ Content: historical estimates for each premium.*
+
+## Valuation Signals
+
+- Equities: P/E, CAPE, earnings yield vs. bond yield (Fed model)
+- Bonds: real yield, breakeven inflation
+- Credit: option-adjusted spread vs. historical average
+- Valuation is a poor short-term timer but a strong long-run anchor
+
+*→ Content: current valuation dashboard from Cesim Economic Outlook screen.*
+
+# ESG & Sustainable Investing {background-color="#1e3a5f"}
+
+## The ESG Framework
+
+- **E**nvironmental: climate risk, carbon footprint, resource use
+- **S**ocial: labour standards, supply chain, community impact
+- **G**overnance: board structure, executive pay, shareholder rights
+
+*→ Content: ESG rating methodology overview; data providers.*
+
+## Integration Approaches
+
+| Approach | Description |
+|----------|-------------|
+| Exclusion | Remove sectors/companies (tobacco, weapons, etc.) |
+| ESG integration | Adjust return/risk estimates for ESG factors |
+| Best-in-class | Select top ESG scorers within each sector |
+| Impact investing | Target measurable positive outcomes |
+| Engagement | Active ownership to improve practices |
+
+## ESG in the IMAG Simulation
+
+- ESG score is a graded KPI — it affects your final result
+- Data available in Cesim: per-asset ESG ratings
+- Trade-off: higher ESG score may constrain return maximisation
+- You must justify your ESG approach in the IPS (Lesson 3)
+
+*→ Content: screenshot of ESG data in Cesim; worked example of ESG-adjusted allocation.*
+
+## Key Takeaways
+
+- Asset class choice drives the bulk of long-run portfolio returns
+- Macro regime awareness improves timing and risk management
+- ESG is not just a constraint — it is a source of risk-adjusted alpha
+
+## Simulation Task — Lesson 2
+
+::: {.callout-important}
+## Before next lesson
+1. In Cesim, open the **Markets** screen and record the available assets
+2. Identify each asset's asset class, geography, and ESG rating
+3. Form a preliminary view on the current macro regime (use Economic Outlook)
+4. Read: *Markets & Asset Classes* and *Sustainable Investing* chapters
+:::
+
+## Further Reading
+
+- Chapter: *Markets, Asset Classes, Instruments & Currencies*
+- Chapter: *Sustainable and Impact Investing*
+- Chapter: *Drivers of Asset Prices*

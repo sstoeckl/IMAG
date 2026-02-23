@@ -2,6 +2,10 @@
   title: "Portfolio Implementation"
 ---
 
+::: {.callout-tip title="Lecture Slides"}
+**Associated slides:** [Lesson 5 — Tactical Allocation & Security Selection](../slides/lesson-05-taa-security.html)
+:::
+
 ## Introduction
 Portfolio implementation is the critical phase where investment strategies and analyses are translated into actual portfolio holdings. This chapter will provide an in-depth look at the portfolio implementation process, including the steps involved in transitioning from analysis and strategy formulation to the construction and ongoing management of a portfolio. It will also highlight the importance of ensuring that the implementation phase aligns with predefined investment objectives and risk tolerance levels.
 

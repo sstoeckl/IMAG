@@ -2,6 +2,10 @@
 title: "Strategic Financial Analysis"
 ---
 
+::: {.callout-tip title="Lecture Slides"}
+**Associated slides:** [Lesson 4 — Strategic Asset Allocation](../slides/lesson-04-saa.html)
+:::
+
 ## Introduction
 
 Strategic financial analysis is a fundamental aspect of investment planning that involves evaluating the long-term financial environment and market conditions to inform investment decisions. This approach not only examines current financial data but also considers historical trends and future projections to develop a comprehensive understanding of potential investment opportunities and risks.

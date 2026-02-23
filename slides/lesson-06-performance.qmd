@@ -1,0 +1,164 @@
+---
+title: "Lesson 6: Performance Measurement & the Feedback Loop"
+subtitle: "IMAG — Investment Management Game"
+---
+
+## Learning Outcomes
+
+By the end of this lesson you will be able to:
+
+- Calculate and interpret risk-adjusted performance metrics
+- Decompose portfolio return into asset allocation and security selection effects
+- Conduct a structured post-mortem of your investment decisions
+- Close the feedback loop: update your IPS and views for the next round
+
+*Teaching chapters: Performance Measurement & Attribution · Feedback Loop*
+
+# Performance Measurement {background-color="#1e3a5f"}
+
+## Return Calculation
+
+- **Holding period return**: $(P_t - P_{t-1} + D_t) / P_{t-1}$
+- **Time-weighted return (TWR)**: eliminates impact of external cash flows — the industry standard
+- **Money-weighted return (MWR / IRR)**: reflects timing of investor cash flows — useful for client reporting
+- Distinguish: gross of fees vs. net of fees
+
+*→ Content: worked return calculation using IMAG Results screen.*
+
+## Risk-Adjusted Performance Metrics
+
+| Metric | Formula | What it tells you |
+|--------|---------|-------------------|
+| Sharpe ratio | $(R_p - R_f) / \sigma_p$ | Return per unit of total risk |
+| Sortino ratio | $(R_p - R_f) / \sigma_{downside}$ | Return per unit of downside risk |
+| Information ratio | $(R_p - R_b) / \text{TE}$ | Active return per unit of active risk |
+| Calmar ratio | Annualised return / Max drawdown | Return per unit of drawdown |
+| Maximum drawdown | Peak-to-trough loss | Worst-case loss |
+
+*→ Content: your team's metrics from Cesim Results.*
+
+## Benchmark Comparison
+
+- Did you outperform or underperform the benchmark?
+- Decompose: how much came from asset allocation vs. security selection vs. interaction?
+- Distinguish: good decision vs. lucky outcome (attribution analysis)
+
+*→ Content: benchmark return vs. portfolio return chart.*
+
+# Performance Attribution {background-color="#1e3a5f"}
+
+## The Brinson-Hood-Beebower Model
+
+Three effects explain the difference between portfolio and benchmark return:
+
+$$R_p - R_b = \underbrace{AA}_{\text{Allocation}} + \underbrace{SS}_{\text{Selection}} + \underbrace{IA}_{\text{Interaction}}$$
+
+*→ Content: attribution formula derivation; intuitive explanation.*
+
+## Asset Allocation Effect
+
+$$AA_i = (w_{p,i} - w_{b,i}) \times (R_{b,i} - R_b)$$
+
+- Did your **overweights / underweights** add value?
+- Positive if you overweighted asset classes that outperformed the benchmark
+- This is the TAA contribution (Lesson 5 decisions)
+
+*→ Content: allocation effect table for each IMAG asset class.*
+
+## Security Selection Effect
+
+$$SS_i = w_{b,i} \times (R_{p,i} - R_{b,i})$$
+
+- Did your **chosen instruments** outperform the asset class benchmark?
+- Positive if your picked securities beat their benchmark within each class
+- This is the security selection contribution (Lesson 5 decisions)
+
+*→ Content: selection effect table; best and worst contributors.*
+
+## Reading the Attribution Report
+
+*→ Content: annotated screenshot of Cesim attribution output; interpretation guide.*
+
+::: {.callout-note}
+A negative information ratio over multiple periods is a signal to reduce active risk — not increase conviction.
+:::
+
+## ESG Performance
+
+- How does your portfolio ESG score compare to the benchmark?
+- Did ESG integration help or hurt financial returns in this period?
+- Track ESG score evolution over rounds
+
+*→ Content: ESG score chart; financial vs. ESG performance scatter plot.*
+
+# The Feedback Loop {background-color="#1e3a5f"}
+
+## Why a Structured Post-Mortem?
+
+- The goal is not to explain away underperformance but to improve the process
+- Separate: **good process / bad outcome** from **bad process / good outcome**
+- Distinguish luck from skill — especially important in a short-horizon simulation
+
+*→ Content: 2×2 process/outcome matrix.*
+
+## Post-Mortem Framework
+
+For each major decision this round, answer:
+
+1. **What was the decision?** (specific weight or security)
+2. **What was the rationale?** (signal, conviction level)
+3. **What was the outcome?** (attribution contribution)
+4. **Was the process sound?** (would you make the same decision again?)
+5. **What will you do differently?**
+
+*→ Content: decision log template; worked example.*
+
+## Common Behavioural Pitfalls
+
+| Bias | Symptom | Antidote |
+|------|---------|----------|
+| Overconfidence | Excess tracking error | Respect risk limits |
+| Anchoring | Holding losers too long | Pre-commit to stop-loss rules |
+| Herding | Following consensus | Document independent views before group discussion |
+| Recency bias | Over-weighting last quarter | Use long-run CMA as anchor |
+| Confirmation bias | Seeking data that confirms view | Assign devil's advocate role |
+
+## Updating Your IPS & Views
+
+- Were any IPS constraints binding? Should they be revised?
+- Did your CMA forecasts hold? What needs updating?
+- Are your TAA signals still valid for the next round?
+- Carry lessons learned into the next round's decision process
+
+*→ Content: IPS review checklist; CMA update worksheet.*
+
+## Key Takeaways
+
+- Attribution is a diagnostic tool — use it to improve, not to justify
+- Separate process quality from outcome quality
+- The feedback loop is what turns a simulation into genuine learning
+
+## Simulation Task — Lesson 6
+
+::: {.callout-important}
+## Final Deliverables
+
+**Performance Report:**
+
+- [ ] Calculate TWR, Sharpe, IR for the full simulation period
+- [ ] Complete the attribution table (allocation + selection + interaction)
+- [ ] Compare ESG score to benchmark
+- [ ] Chart portfolio drawdown vs. IPS maximum drawdown limit
+
+**Post-Mortem:**
+
+- [ ] Complete the decision log for all rounds
+- [ ] Identify your best and worst decisions (process quality)
+- [ ] List three things you would do differently with hindsight
+- [ ] Prepare a 10-minute team presentation of your investment journey
+:::
+
+## Further Reading
+
+- Chapter: *Performance Measurement & Attribution*
+- Chapter: *Feedback Loop*

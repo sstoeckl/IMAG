@@ -1,0 +1,121 @@
+---
+title: "Lesson 1: Introduction & Simulation Setup"
+subtitle: "IMAG — Investment Management Game"
+---
+
+## Learning Outcomes
+
+By the end of this lesson you will be able to:
+
+- Explain the purpose and structure of the IMAG simulation
+- Navigate the Cesim Invest platform and locate key decision screens
+- Describe the round-by-round investment process
+- Assign team roles and agree on a collaborative workflow
+- Understand how the simulation is graded
+
+# The IMAG Project {background-color="#1e3a5f"}
+
+## What is IMAG?
+
+- An Erasmus+ project connecting universities across Europe
+- A structured investment simulation using the **Cesim Invest** platform
+- Six lessons that take you from blank mandate to full portfolio review
+- Designed to mirror real-world investment management processes
+
+*→ Content: project background, partner institutions, learning goals.*
+
+## Why a Simulation?
+
+- Safe environment to make — and learn from — real portfolio decisions
+- Immediate feedback through performance metrics each round
+- Exposure to the full investment cycle: research → decision → review
+
+*→ Content: simulation vs. classroom theory; what you can and cannot do in Cesim.*
+
+# The Cesim Invest Platform {background-color="#1e3a5f"}
+
+## Platform Overview
+
+- Browser-based; no installation required
+- Key navigation areas: **Economic Outlook · Strategy · Markets · Analyst · Results**
+- Data updates each round — decisions are locked at the round deadline
+
+*→ Content: annotated screenshot of the platform home screen.*
+
+## The Asset Universe
+
+- Equities (domestic & international)
+- Fixed income (government & corporate bonds)
+- Cash & money market instruments
+- Alternative assets (commodities, real estate, digital assets)
+- Currency exposure
+
+*→ Content: screenshot of the Markets screen with asset list.*
+
+## Key Performance Indicators
+
+| KPI | What it measures |
+|-----|-----------------|
+| Portfolio return | Absolute & relative to benchmark |
+| Sharpe ratio | Risk-adjusted return |
+| Tracking error | Deviation from benchmark |
+| ESG score | Sustainability integration |
+| Drawdown | Maximum loss from peak |
+
+*→ Content: where to find each KPI in Cesim Results.*
+
+# How the Game Works {background-color="#1e3a5f"}
+
+## Round Structure
+
+- Each round = one quarter (or one year, depending on setup)
+- Sequence: read data → form views → submit decisions → observe results
+- Decisions carry over; you must actively rebalance
+
+*→ Content: round timeline diagram.*
+
+## Decision Deadlines & Workflow
+
+- Deadlines are fixed — late submissions are not accepted
+- Recommended team workflow: research → debate → agree → submit
+- Document your reasoning (feeds into the feedback loop, Lesson 6)
+
+*→ Content: sample team calendar / decision log template.*
+
+## Scoring & Grading
+
+- *→ Content: grading rubric (risk-adjusted return, ESG, IPS consistency, reflection quality).*
+
+# Your Team {background-color="#1e3a5f"}
+
+## Suggested Role Allocation
+
+| Role | Responsibility |
+|------|---------------|
+| Chief Investment Officer | Final decision sign-off, IPS owner |
+| Macro Analyst | Economic outlook, scenario design |
+| Portfolio Manager | SAA/TAA, risk budgeting |
+| ESG Analyst | Sustainability scoring, impact assessment |
+| Performance Analyst | Results review, attribution |
+
+*→ Adapt roles to team size. Rotate if possible.*
+
+## Key Takeaways
+
+- IMAG replicates the full investment management process in six lessons
+- Every decision should be traceable to your IPS (Lesson 3)
+- Document your reasoning — you will review it in Lesson 6
+
+## Simulation Task — Lesson 1
+
+::: {.callout-important}
+## Before next lesson
+1. Log in to Cesim Invest and explore all five navigation sections
+2. Agree on team roles and a communication channel
+3. Read: *Introduction* chapter in the teaching materials
+:::
+
+## Further Reading
+
+- Teaching materials: *Introduction* chapter
+- Engine documentation: asset universe and KPI definitions

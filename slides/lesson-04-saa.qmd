@@ -1,0 +1,156 @@
+---
+title: "Lesson 4: Strategic Asset Allocation"
+subtitle: "IMAG — Investment Management Game"
+---
+
+## Learning Outcomes
+
+By the end of this lesson you will be able to:
+
+- Derive long-run capital market assumptions (returns, risks, correlations)
+- Design macro scenarios and assign probabilities
+- Construct an efficient SAA consistent with your IPS
+- Translate the SAA into Cesim Invest decision inputs
+
+*Teaching chapters: Drivers of Asset Prices · Data, Forecasting & Scenario Design · Strategic Research Toolkit · Strategic Asset Allocation*
+
+# Capital Market Assumptions {background-color="#1e3a5f"}
+
+## What Are Capital Market Assumptions?
+
+- Long-run (10-year) forecasts of: **expected returns · volatility · correlations**
+- The foundation of every SAA decision
+- Sources: historical data, factor models, building-block approach, survey consensus
+- Must be consistent with your macro view and the IPS return objective
+
+*→ Content: CMA table for IMAG asset classes (to be filled with Cesim data).*
+
+## The Building-Block Approach
+
+$$\text{Expected Return} = r_f + \text{Risk Premium}$$
+
+| Asset class | Components |
+|-------------|-----------|
+| Equities | Risk-free + equity risk premium + regional premium |
+| Corp. bonds | Risk-free + term premium + credit spread |
+| Commodities | Risk-free + convenience yield + roll return |
+
+*→ Content: calibrated estimates using current Cesim Economic Outlook data.*
+
+## Estimating Volatility & Correlations
+
+- Historical volatility: rolling 3- and 5-year windows
+- Correlation instability: correlations rise during crises (diversification fails when needed)
+- Shrinkage estimators: blend historical with prior (reduces estimation error)
+- Correlation matrix visualisation (heatmap)
+
+*→ Content: worked example with IMAG asset data.*
+
+# Scenario Design {background-color="#1e3a5f"}
+
+## Why Scenarios?
+
+- Point forecasts are always wrong — scenarios capture uncertainty
+- Force structured thinking about tail risks
+- Enable stress-testing of the SAA before committing
+- Required by many regulatory frameworks (IORP II, Solvency II)
+
+## A Three-Scenario Framework
+
+| Scenario | Probability | Description |
+|----------|------------|-------------|
+| Base case | 60% | Moderate growth, inflation normalising |
+| Upside | 25% | Strong recovery, risk-on environment |
+| Downside | 15% | Recession, credit stress, flight to quality |
+
+*→ Content: fill with IMAG-specific macro assumptions per scenario.*
+
+## Scenario Returns by Asset Class
+
+*→ Content: table of expected returns per asset class under each scenario; probability-weighted expected return column.*
+
+## Stress Testing the SAA
+
+- Apply downside scenario to candidate SAA
+- Check: does portfolio breach IPS risk constraints?
+- If yes: reduce risk → revisit return objective → update IPS
+
+*→ Content: stress test template; link to Cesim back-testing tools if available.*
+
+# Building the SAA {background-color="#1e3a5f"}
+
+## Mean-Variance Optimisation
+
+- Classic Markowitz framework: maximise return for a given level of risk
+- Inputs: expected returns, volatility, correlation matrix
+- Output: **efficient frontier** — the set of optimal portfolios
+
+*→ Content: efficient frontier diagram; locate the IPS-consistent portfolio.*
+
+## Practical Constraints on the Optimiser
+
+- No short-selling (long-only constraint)
+- Minimum and maximum weights per asset class (IPS constraints)
+- Turnover limit (transaction cost management)
+- ESG constraint: minimum portfolio ESG score
+
+::: {.callout-tip}
+Unconstrained optimisation produces extreme corner solutions. Always impose realistic bounds.
+:::
+
+## From Efficient Frontier to Strategic Weights
+
+- Select the portfolio that maximises expected return subject to the IPS risk budget
+- Round weights to practical increments (e.g. nearest 5%)
+- Check consistency with IPS: return target, risk limit, ESG score, liquidity
+
+*→ Content: final SAA weights table for IMAG (to be completed by each team).*
+
+## Rebalancing Policy
+
+- **Calendar rebalancing**: restore weights monthly/quarterly regardless of drift
+- **Threshold rebalancing**: trigger when any weight drifts > X% from target
+- Transaction costs vs. tracking error trade-off
+- Document policy in IPS
+
+*→ Content: comparison of rebalancing strategies; recommendation for IMAG.*
+
+# SAA in the IMAG Simulation {background-color="#1e3a5f"}
+
+## Entering Your SAA in Cesim
+
+- Navigate to: **Strategy → Strategic Asset Allocation**
+- Enter target weights for each eligible asset class
+- The system enforces that weights sum to 100%
+
+*→ Content: annotated screenshot of the Cesim SAA input screen.*
+
+## What Happens Each Round
+
+- Your SAA is the long-run anchor — you will deviate from it tactically in Lesson 5
+- Cesim calculates benchmark return based on your SAA weights
+- Active return = portfolio return minus SAA benchmark return
+
+## Key Takeaways
+
+- The SAA drives 80–90% of long-run portfolio return variation
+- Scenario analysis prevents over-confidence in point forecasts
+- Every SAA weight must be justified by your IPS and CMA
+
+## Simulation Task — Lesson 4
+
+::: {.callout-important}
+## Deliverable: Your SAA
+1. Build your capital market assumptions table (use Cesim Economic Outlook + own research)
+2. Design three scenarios with probabilities
+3. Run mean-variance optimisation (use provided template or Excel)
+4. Define final SAA weights — consistent with your IPS
+5. **Submit SAA in Cesim before the round deadline**
+:::
+
+## Further Reading
+
+- Chapter: *Drivers of Asset Prices*
+- Chapter: *Data, Forecasting & Scenario Design*
+- Chapter: *Strategic Research Toolkit*
+- Chapter: *Strategic Asset Allocation*

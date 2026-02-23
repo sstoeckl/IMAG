@@ -2,6 +2,10 @@
 title: "Tactical Asset Allocation"
 ---
 
+::: {.callout-tip title="Lecture Slides"}
+**Associated slides:** [Lesson 5 — Tactical Allocation & Security Selection](../slides/lesson-05-taa-security.html)
+:::
+
 ## Introduction
 Tactical Asset Allocation (TAA) represents a dynamic investment strategy aimed at enhancing portfolio returns and managing risk through short to medium-term adjustments to the asset mix. This chapter will explore the fundamentals of TAA, illustrating how it differs from and complements strategic asset allocation.
 

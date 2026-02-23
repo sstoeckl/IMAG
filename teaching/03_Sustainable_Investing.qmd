@@ -2,6 +2,10 @@
 title: "Sustainable Investing"
 ---
 
+::: {.callout-tip title="Lecture Slides"}
+**Associated slides:** [Lesson 2 — Markets, Asset Classes & ESG](../slides/lesson-02-markets-esg.html)
+:::
+
 ## Introduction
 
 ### Defining Sustainable Investing and Its Growing Importance

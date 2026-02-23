@@ -1,0 +1,180 @@
+---
+title: "Lesson 5: Tactical Allocation & Security Selection"
+subtitle: "IMAG — Investment Management Game"
+---
+
+## Learning Outcomes
+
+By the end of this lesson you will be able to:
+
+- Generate and evaluate short-term macro and factor signals
+- Translate signals into tactical tilts away from the SAA
+- Apply fundamental and quantitative approaches to security selection
+- Execute decisions under liquidity and transaction cost constraints
+
+*Teaching chapters: Tactical Research Toolkit · Tactical Asset Allocation & Security Selection · Portfolio Implementation*
+
+# Short-Term Research & Signals {background-color="#1e3a5f"}
+
+## What is Tactical Asset Allocation?
+
+- TAA = temporary, deliberate deviations from the SAA
+- Driven by short-term views on relative asset class attractiveness
+- Size of tilts is bounded by the risk budget (tracking error limit in IPS)
+- Horizon: weeks to months — not years (that is the SAA)
+
+::: {.callout-note}
+A good TAA process starts with the SAA as the neutral position and asks: what do we want to overweight or underweight *today*?
+:::
+
+## Macro Signals
+
+- **Business cycle indicators**: PMI, industrial production, unemployment claims
+- **Monetary policy signals**: central bank rate decisions, quantitative tightening
+- **Credit market signals**: high-yield spreads, loan officer surveys
+- **Sentiment indicators**: consumer confidence, VIX, fund flows
+
+*→ Content: IMAG Economic Outlook screen walkthrough; signal extraction exercise.*
+
+## Factor Signals
+
+| Factor | Signal | Typical asset class |
+|--------|--------|---------------------|
+| Value | Cheap vs. history (CAPE, yield spread) | Equities, credit |
+| Momentum | 12-1 month price return | Equities, commodities |
+| Quality | ROE, earnings stability | Equities |
+| Carry | Yield differential | FX, bonds |
+| Low volatility | Realised vol < market | Defensive equities |
+
+*→ Content: factor return history; current factor signal dashboard.*
+
+## Signal Aggregation & Scoring
+
+- Individual signals are noisy — combine them into a composite score
+- Simple approach: equal-weight signals after normalisation (z-scores)
+- Advanced: factor model or machine learning aggregation
+- Output: a ranked list of asset classes from most to least attractive
+
+*→ Content: worked scoring example using IMAG data.*
+
+# Tactical Asset Allocation {background-color="#1e3a5f"}
+
+## From Signal to Tilt
+
+- Composite score → rank asset classes → derive tilt direction and size
+- Tilt sizing: proportional to signal strength + inverse of tracking error cost
+- Constraints: IPS limits on tracking error; no short sales; maximum tilt per asset class
+
+*→ Content: tilt derivation table; IPS constraint check.*
+
+## Risk Budgeting
+
+- Total active risk = sum of all tilts' contribution to tracking error
+- Each tilt consumes a share of the active risk budget
+- Prioritise tilts with the highest expected information ratio (IR)
+
+$$IR = \frac{\text{Expected active return}}{\text{Tracking error}}$$
+
+*→ Content: risk budget allocation table; marginal contribution calculation.*
+
+## Overweights & Underweights
+
+*→ Content: final TAA tilts table — current round example (to be filled per round).*
+
+::: {.callout-tip}
+## Team Process
+1. Each analyst presents their top signal
+2. Debate and reach consensus on tilts
+3. Check total tracking error against IPS limit
+4. Document the rationale — you will review it in Lesson 6
+:::
+
+# Security Selection {background-color="#1e3a5f"}
+
+## Within-Asset-Class Selection
+
+- TAA sets *how much* to allocate to each asset class
+- Security selection determines *which specific instruments* to buy
+- Adds another layer of active return (and active risk)
+
+## Fundamental Analysis — Equities
+
+- **Top-down**: sector attractiveness → company analysis
+- **Valuation**: DCF, price multiples (P/E, EV/EBITDA), dividend yield
+- **Quality screening**: return on equity, earnings stability, balance sheet strength
+- **ESG overlay**: flag red-rated instruments; apply exclusion list from IPS
+
+*→ Content: equity screening template linked to Cesim Analyst screen.*
+
+## Fundamental Analysis — Fixed Income
+
+- **Credit analysis**: issuer financial health, coverage ratios, debt maturity
+- **Relative value**: spread vs. peers and history
+- **Duration positioning**: tilt toward short/long depending on rate view
+- **Curve positioning**: barbells vs. bullets
+
+*→ Content: bond selection scorecard.*
+
+## Quantitative Screening
+
+- Apply factor scores at the individual security level
+- Rank within each asset class; select top quintile
+- Combine with ESG filter and liquidity screen
+- Diversification check: avoid crowding in one sector/issuer
+
+*→ Content: quantitative scoring template for IMAG instruments.*
+
+# Portfolio Implementation {background-color="#1e3a5f"}
+
+## From Decision to Trade
+
+- Order types: market, limit, stop
+- Liquidity: check bid-ask spread and daily volume before sizing orders
+- Block trades vs. gradual accumulation
+
+*→ Content: Cesim order entry walkthrough.*
+
+## Transaction Costs
+
+- Explicit costs: commissions, stamp duty
+- Implicit costs: market impact, bid-ask spread
+- Round-trip cost estimate per asset class
+- Trade-off: conviction level must exceed transaction cost drag
+
+## Rebalancing vs. Tactical Repositioning
+
+- Rebalancing: restore SAA weights after drift (mechanical)
+- Tactical repositioning: intentional deviation from SAA (active decision)
+- Netting trades: offset buy and sell orders where possible to reduce costs
+
+## Key Takeaways
+
+- TAA adds value only if signals have positive predictive power — be disciplined
+- Document every tactical decision: signal source, conviction level, expected horizon
+- Transaction costs are silent return killers — always estimate before trading
+
+## Simulation Task — Lesson 5
+
+::: {.callout-important}
+## Deliverables: TAA + Security Picks
+
+**Tactical Asset Allocation:**
+
+- [ ] Score all asset classes using at least two signal types
+- [ ] Derive overweights and underweights (max tilt: per your IPS tracking error limit)
+- [ ] Check total tracking error vs. IPS limit
+- [ ] Submit TAA weights in Cesim → **Strategy → Tactical**
+
+**Security Selection:**
+
+- [ ] Apply fundamental screen to equities: top 3 picks with rationale
+- [ ] Apply credit screen to bonds: preferred maturities and issuers
+- [ ] Confirm all picks meet IPS ESG threshold
+- [ ] Submit selections in Cesim → **Strategy → Security Selection**
+:::
+
+## Further Reading
+
+- Chapter: *Tactical Research Toolkit*
+- Chapter: *Tactical Asset Allocation & Security Selection*
+- Chapter: *Portfolio Implementation*

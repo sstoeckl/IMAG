@@ -2,6 +2,10 @@
   title: "Security Analysis"
 ---
 
+::: {.callout-tip title="Lecture Slides"}
+**Associated slides:** [Lesson 5 — Tactical Allocation & Security Selection](../slides/lesson-05-taa-security.html)
+:::
+
 ## Introduction
 Security analysis is a fundamental aspect of the investment decision-making process, providing the necessary information and insights to evaluate the potential risks and returns of various investment securities. This chapter will define what security analysis entails, explore its critical role within the investment landscape, and introduce the various analytical approaches used to assess securities.
 

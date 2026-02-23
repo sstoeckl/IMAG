@@ -2,6 +2,10 @@
 title: "Strategic Asset Allocation"
 ---
 
+::: {.callout-tip title="Lecture Slides"}
+**Associated slides:** [Lesson 4 — Strategic Asset Allocation](../slides/lesson-04-saa.html)
+:::
+
 ## Introduction
 
 Strategic asset allocation is a fundamental component of investment management, serving as the backbone of a long-term investment strategy. It involves setting a baseline distribution of assets across various investment categories, based on predicted rates of return for each asset class, while considering the investor's risk tolerance and investment timeline.

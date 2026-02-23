@@ -2,6 +2,10 @@
 title: "Performance Analysis"
 ---
 
+::: {.callout-tip title="Lecture Slides"}
+**Associated slides:** [Lesson 6 — Performance Measurement & Feedback Loop](../slides/lesson-06-performance.html)
+:::
+
 ## Introduction
 
 Performance attribution is a crucial aspect of portfolio management that involves analyzing the reasons behind the performance of a portfolio relative to its benchmarks. This chapter will define performance attribution, discuss its significance, and provide an overview of the methodologies used to analyze and report on portfolio performance.
