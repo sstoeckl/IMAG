@@ -1,30 +1,33 @@
 /* =====================================================
    IMAG — shared partner-logo footer styles
-   All three sub-projects (slides, teaching, engine)
-   load this file.
+   Loaded by teaching/_quarto.yml via css:
 
    TO RESIZE ALL PARTNER LOGOS: change --logo-height
+   (same variable is also set in includes/head.html
+    for the engine and slides sub-projects)
    ===================================================== */
 
 :root {
-  --logo-height: 36px;   /* ← change this one value to resize every logo */
+  --logo-height: 16px;   /* ← change this value to resize every logo */
 }
 
-/* Row of partner logos — used in HTML page footers */
+/* Logos fill the full bar width; each gets an equal share (max 22%). */
 .imag-footer-logos {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 16px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding: 6px 0;
   box-sizing: border-box;
 }
 
 .imag-footer-logos img {
-  height: var(--logo-height);
+  flex: 1;
+  min-width: 0;
+  max-width: 22%;         /* 4 logos × 22% = 88 %, rest is spacing */
+  max-height: var(--logo-height);
+  height: auto;
   width: auto;
   object-fit: contain;
-  vertical-align: middle;
 }
