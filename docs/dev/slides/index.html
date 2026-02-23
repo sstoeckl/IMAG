@@ -77,6 +77,21 @@ ul.task-list li input[type="checkbox"] {
   html { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans"; }
   .wp-serif{ font-family: Merriweather, Georgia, serif; }
   .container { max-width: 1100px; margin-left:auto; margin-right:auto; }
+
+  /* ── Partner-logo bar (engine & slides) ───────────────────────────
+     To resize logos: change --logo-height (in px).
+     Logos always fill the full bar width via flex + max-width.       */
+  :root { --logo-height: 36px; }
+  .imag-footer-logos {
+    width: 100%; display: flex; align-items: center;
+    justify-content: space-around; flex-wrap: nowrap;
+    padding: 6px 0; box-sizing: border-box;
+  }
+  .imag-footer-logos img {
+    flex: 1; min-width: 0; max-width: 22%;
+    max-height: var(--logo-height); height: auto; width: auto;
+    object-fit: contain;
+  }
 </style>
 
 
