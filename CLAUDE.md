@@ -21,7 +21,17 @@ quarto render engine/
 quarto render slides/
 ```
 
-All outputs are written to `docs/` (i.e., `docs/teaching/`, `docs/engine/`, `docs/slides/`). There are no tests. CI/CD via GitHub Actions (`.github/workflows/quarto-build.yml`) renders all three projects on push to `master`/`main` and auto-commits the results back to the repo.
+All outputs are written to `docs/` (i.e., `docs/teaching/`, `docs/engine/`, `docs/slides/`). There are no tests.
+
+## CI/CD
+
+| Workflow | Trigger | What it does |
+|---|---|---|
+| `quarto-build.yml` | push to `master`/`main` | Renders all three sub-projects, auto-commits `docs/` back to `master`. This is the active production pipeline. |
+| `build-dev-preview.yml` | push to `dev` | Renders all three sub-projects with redirected `output-dir`, commits the result to `docs/dev/` on `master`. Preview is served at `sstoeckl.github.io/IMAG/dev/`. |
+| `publish.yml`, `publish_gh.yml` | push to `main` | Legacy/broken — run `quarto render` at repo root where no `_quarto.yml` exists. |
+
+The dev preview workflow temporarily patches each sub-project's `output-dir` via `sed` before rendering, then saves the output to `/tmp`, switches to `master`, and commits it to `docs/dev/`.
 
 ## Architecture
 

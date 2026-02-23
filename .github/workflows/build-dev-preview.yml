@@ -1,0 +1,67 @@
+name: Build dev preview to docs/dev
+
+on:
+  push:
+    branches: [ dev ]
+  workflow_dispatch:
+
+jobs:
+  build-dev:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout dev branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 'latest'
+
+      - uses: r-lib/actions/setup-tinytex@v2
+
+      - name: Render Teaching Book to docs/dev/teaching
+        working-directory: ./teaching
+        run: |
+          sed -i 's|output-dir: ../docs/teaching|output-dir: ../docs/dev/teaching|' _quarto.yml
+          quarto render
+
+      - name: Render Slides to docs/dev/slides
+        working-directory: ./slides
+        run: |
+          sed -i 's|output-dir: ../docs/slides|output-dir: ../docs/dev/slides|' _quarto.yml
+          quarto render
+
+      - name: Render Engine Docs to docs/dev/engine
+        working-directory: ./engine
+        run: |
+          sed -i 's|output-dir: ../docs/engine|output-dir: ../docs/dev/engine|' _quarto.yml
+          quarto render
+
+      - name: Create redirect files in docs/dev
+        run: |
+          mkdir -p docs/dev
+          echo '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=./teaching/"><link rel="canonical" href="./teaching/">' > docs/dev/teaching.html
+          echo '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=./slides/"><link rel="canonical" href="./slides/">' > docs/dev/slides.html
+          echo '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=./engine/"><link rel="canonical" href="./engine/">' > docs/dev/engine.html
+
+      - name: Commit dev preview to master
+        run: |
+          # Save rendered output before switching branches
+          cp -r docs/dev /tmp/imag-dev-build
+
+          # Switch to master
+          git fetch origin
+          git checkout -f -B master origin/master
+
+          # Place rendered output and commit
+          rm -rf docs/dev
+          cp -r /tmp/imag-dev-build docs/dev
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/dev/
+          git commit -m "CI: render dev preview to docs/dev" || echo "No changes to commit"
+          git push origin master
