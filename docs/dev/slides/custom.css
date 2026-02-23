@@ -1,26 +1,15 @@
-/* IMAG — custom RevealJS footer styles */
+/* IMAG — custom RevealJS footer styles
+   Logo styles live in ../includes/footer.css (loaded via _quarto.yml css:)
+   To resize logos change --logo-height there. */
 
 .reveal .footer.footer-default {
   background: #ffffff;
   border-top: 3px solid #1e3a5f;
-  padding: 5px 20px !important;
-  display: flex !important;
-  align-items: center;
-  gap: 18px;
-  font-size: 0.5em;
-  color: #64748b;
+  padding: 0 !important;
 }
 
-.reveal .footer.footer-default img {
-  height: 26px;
-  width: auto;
-  object-fit: contain;
-  vertical-align: middle;
-}
-
-.reveal .footer.footer-default .footer-label {
-  margin-left: auto;
-  font-size: 1em;
-  color: #94a3b8;
-  white-space: nowrap;
+/* Inside the RevealJS footer bar, spread logos with horizontal padding */
+.reveal .footer.footer-default .imag-footer-logos {
+  height: 100%;
+  padding: 4px 60px;
 }
