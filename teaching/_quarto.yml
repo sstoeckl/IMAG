@@ -34,7 +34,7 @@ book:
   page-footer:
     border: true
     center:
-      - text: "<div style='display:flex;align-items:center;justify-content:center;gap:28px;margin-bottom:8px;flex-wrap:wrap;'><img src='../assets/logos/uli.jpg' alt='University of Liechtenstein' style='height:38px;width:auto;object-fit:contain;'><img src='../assets/logos/unibz.jpg' alt='unibz' style='height:38px;width:auto;object-fit:contain;'><img src='../assets/logos/cesim.png' alt='Cesim' style='height:38px;width:auto;object-fit:contain;'><img src='../assets/logos/erasmus.jpg' alt='Erasmus+' style='height:38px;width:auto;object-fit:contain;'></div>"
+      - text: "<div class='imag-footer-logos'><img src='../assets/logos/uli.jpg' alt='University of Liechtenstein'><img src='../assets/logos/unibz.jpg' alt='unibz'><img src='../assets/logos/cesim.png' alt='Cesim'><img src='../assets/logos/erasmus.jpg' alt='Erasmus+'></div>"
       - text: "© 2025 Investment Management Game (IMAG). All rights reserved."
       - text: "Supported by <a href='https://erasmus-plus.ec.europa.eu/projects/search/details/2022-1-LI01-KA220-HED-000085536' target='_blank'>Erasmus+</a> and partner institutions. Logos and trademarks are property of their respective owners."
     
@@ -46,6 +46,7 @@ format:
     theme: default
     toc: true
     number-sections: true
+    css: ../includes/footer.css
     # Tailwind removes all margins from all html elements
     #include-in-header: ../includes/head.html
     #include-before-body: ../includes/header.html
