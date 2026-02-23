@@ -30,7 +30,6 @@
   </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-534cd8e3a96973385dffff3f4709048d.css">
   <link rel="stylesheet" href="custom.css">
-  <link rel="stylesheet" href="../includes/footer.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -132,21 +131,6 @@
     html { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans"; }
     .wp-serif{ font-family: Merriweather, Georgia, serif; }
     .container { max-width: 1100px; margin-left:auto; margin-right:auto; }
-
-    /* ── Partner-logo bar (engine & slides) ───────────────────────────
-       To resize logos: change --logo-height (in px).
-       Logos always fill the full bar width via flex + max-width.       */
-    :root { --logo-height: 36px; }
-    .imag-footer-logos {
-      width: 100%; display: flex; align-items: center;
-      justify-content: space-around; flex-wrap: nowrap;
-      padding: 6px 0; box-sizing: border-box;
-    }
-    .imag-footer-logos img {
-      flex: 1; min-width: 0; max-width: 22%;
-      max-height: var(--logo-height); height: auto; width: auto;
-      object-fit: contain;
-    }
   </style>
 </head>
 <body class="quarto-light">
@@ -443,7 +427,7 @@
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<div class="imag-footer-logos">
+<div class="slide-footer-logos">
 <img src="../assets/logos/uli.jpg" alt="uni.li"><img src="../assets/logos/unibz.jpg" alt="unibz"><img src="../assets/logos/cesim.png" alt="Cesim"><img src="../assets/logos/erasmus.jpg" alt="Erasmus+">
 </div>
 </div>
@@ -657,17 +641,18 @@
         ]
       });
     </script>
-    <!-- includes/footer.html
-         Logo size is controlled by --logo-height in includes/footer.css -->
-      <footer style="border-top: 1px solid #e2e8f0; padding: 12px 24px 16px; font-size: 0.875rem; color: #475569; text-align: center;">
-        <div class="imag-footer-logos" style="margin-bottom: 8px;">
-          <img src="../assets/logos/uli.jpg" alt="University of Liechtenstein">
-          <img src="../assets/logos/unibz.jpg" alt="unibz">
-          <img src="../assets/logos/cesim.png" alt="Cesim">
-          <img src="../assets/logos/erasmus.jpg" alt="Erasmus+">
+    <!-- includes/footer.html -->
+      <footer style="border-top: 1px solid #e2e8f0; padding: 16px 0; font-size: 0.875rem; color: #475569;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 24px; text-align: center;">
+          <div style="display: flex; align-items: center; justify-content: center; gap: 32px; margin-bottom: 10px; flex-wrap: wrap;">
+            <img src="../assets/logos/uli.jpg" alt="University of Liechtenstein" style="height:40px; width:auto; object-fit:contain;">
+            <img src="../assets/logos/unibz.jpg" alt="unibz" style="height:40px; width:auto; object-fit:contain;">
+            <img src="../assets/logos/cesim.png" alt="Cesim" style="height:40px; width:auto; object-fit:contain;">
+            <img src="../assets/logos/erasmus.jpg" alt="Erasmus+" style="height:40px; width:auto; object-fit:contain;">
+          </div>
+          <p style="margin: 4px 0;">© 2025 Investment Management Game (IMAG). All rights reserved.</p>
+          <p style="margin: 4px 0;">Supported by <a href="https://erasmus-plus.ec.europa.eu/projects/search/details/2022-1-LI01-KA220-HED-000085536" style="color: #2563eb;">Erasmus+</a> and partner institutions. Logos and trademarks are property of their respective owners.</p>
         </div>
-        <p style="margin: 4px 0;">© 2025 Investment Management Game (IMAG). All rights reserved.</p>
-        <p style="margin: 4px 0;">Supported by <a href="https://erasmus-plus.ec.europa.eu/projects/search/details/2022-1-LI01-KA220-HED-000085536" style="color: #2563eb;">Erasmus+</a> and partner institutions. Logos and trademarks are property of their respective owners.</p>
       </footer>
     
     <script id="quarto-html-after-body" type="application/javascript">
