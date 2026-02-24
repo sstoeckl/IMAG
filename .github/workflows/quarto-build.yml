@@ -1,4 +1,4 @@
-name: Build Quarto sites to docs
+name: Build Quarto sites to gh-pages
 
 on:
   push:
@@ -18,11 +18,6 @@ jobs:
 
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-        #with:
-        #  version: 'latest'
-
-      #Optional: TinyTeX if you plan to render PDFs later
-      - uses: r-lib/actions/setup-tinytex@v2
 
       - name: Render Teaching Book
         working-directory: ./teaching
@@ -36,21 +31,15 @@ jobs:
         working-directory: ./engine
         run: quarto render
 
-      - name: Ensure redirect files exist
+      - name: Create redirect files
         run: |
-          mkdir -p docs
           echo '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=./teaching/"><link rel="canonical" href="./teaching/">' > docs/teaching.html
           echo '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=./slides/"><link rel="canonical" href="./slides/">' > docs/slides.html
           echo '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=./engine/"><link rel="canonical" href="./engine/">' > docs/engine.html
 
-      - name: Commit built files
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A
-          git commit -m "CI: render Quarto projects to docs" || echo "No changes to commit"
-
-      - name: Push changes
-        run: |
-          git pull --rebase origin master
-          git push
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          publish_branch: gh-pages

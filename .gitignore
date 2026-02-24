@@ -4,3 +4,12 @@
 .Ruserdata
 
 /.quarto/
+
+# Rendered Quarto output — deployed to gh-pages branch by CI, not tracked on master
+/docs/teaching/
+/docs/engine/
+/docs/slides/
+/docs/dev/
+/docs/teaching.html
+/docs/slides.html
+/docs/engine.html

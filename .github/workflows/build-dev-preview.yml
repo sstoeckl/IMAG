@@ -1,4 +1,4 @@
-name: Build dev preview to docs/dev
+name: Build dev preview to gh-pages/dev
 
 on:
   push:
@@ -15,13 +15,9 @@ jobs:
     steps:
       - name: Checkout dev branch
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-
-      - uses: r-lib/actions/setup-tinytex@v2
 
       - name: Render Teaching Book to docs/dev/teaching
         working-directory: ./teaching
@@ -48,22 +44,11 @@ jobs:
           echo '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=./slides/"><link rel="canonical" href="./slides/">' > docs/dev/slides.html
           echo '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=./engine/"><link rel="canonical" href="./engine/">' > docs/dev/engine.html
 
-      - name: Commit dev preview to master
-        run: |
-          # Save rendered output before switching branches
-          cp -r docs/dev /tmp/imag-dev-build
-
-          # Switch to master
-          git fetch origin
-          git checkout -f -B master origin/master
-
-          # Place rendered output and commit
-          rm -rf docs/dev
-          cp -r /tmp/imag-dev-build docs/dev
-
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/dev/
-          git commit -m "CI: render dev preview to docs/dev" || echo "No changes to commit"
-          git pull --rebase origin master
-          git push origin master
+      - name: Deploy dev preview to gh-pages/dev
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/dev
+          destination_dir: dev
+          publish_branch: gh-pages
+          keep_files: true
