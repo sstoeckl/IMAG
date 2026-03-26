@@ -1,129 +1,94 @@
 [
   {
-    "objectID": "lesson-05-taa-security.html#learning-outcomes",
-    "href": "lesson-05-taa-security.html#learning-outcomes",
-    "title": "Lesson 5: Tactical Allocation & Security Selection",
+    "objectID": "lesson-01-introduction.html#learning-outcomes",
+    "href": "lesson-01-introduction.html#learning-outcomes",
+    "title": "Lesson 1: Introduction & Simulation Setup",
     "section": "Learning Outcomes",
-    "text": "Learning Outcomes\nBy the end of this lesson you will be able to:\n\nGenerate and evaluate short-term macro and factor signals\nTranslate signals into tactical tilts away from the SAA\nApply fundamental and quantitative approaches to security selection\nExecute decisions under liquidity and transaction cost constraints\n\nTeaching chapters: Tactical Research Toolkit · Tactical Asset Allocation & Security Selection · Portfolio Implementation"
+    "text": "Learning Outcomes\nBy the end of this lesson you will be able to:\n\nExplain the purpose and structure of the IMAG simulation\nNavigate the Cesim Invest platform and locate key decision screens\nDescribe the round-by-round investment process\nAssign team roles and agree on a collaborative workflow\nUnderstand how the simulation is graded"
   },
   {
-    "objectID": "lesson-05-taa-security.html#what-is-tactical-asset-allocation",
-    "href": "lesson-05-taa-security.html#what-is-tactical-asset-allocation",
-    "title": "Lesson 5: Tactical Allocation & Security Selection",
-    "section": "What is Tactical Asset Allocation?",
-    "text": "What is Tactical Asset Allocation?\n\nTAA = temporary, deliberate deviations from the SAA\nDriven by short-term views on relative asset class attractiveness\nSize of tilts is bounded by the risk budget (tracking error limit in IPS)\nHorizon: weeks to months — not years (that is the SAA)\n\n\n\n\n\n\n\nNote\n\n\nA good TAA process starts with the SAA as the neutral position and asks: what do we want to overweight or underweight today?"
+    "objectID": "lesson-01-introduction.html#what-is-imag",
+    "href": "lesson-01-introduction.html#what-is-imag",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "What is IMAG?",
+    "text": "What is IMAG?\n\nAn Erasmus+ project connecting universities across Europe\nA structured investment simulation using the Cesim Invest platform\nSix lessons that take you from blank mandate to full portfolio review\nDesigned to mirror real-world investment management processes\n\n→ Content: project background, partner institutions, learning goals."
   },
   {
-    "objectID": "lesson-05-taa-security.html#macro-signals",
-    "href": "lesson-05-taa-security.html#macro-signals",
-    "title": "Lesson 5: Tactical Allocation & Security Selection",
-    "section": "Macro Signals",
-    "text": "Macro Signals\n\nBusiness cycle indicators: PMI, industrial production, unemployment claims\nMonetary policy signals: central bank rate decisions, quantitative tightening\nCredit market signals: high-yield spreads, loan officer surveys\nSentiment indicators: consumer confidence, VIX, fund flows\n\n→ Content: IMAG Economic Outlook screen walkthrough; signal extraction exercise."
+    "objectID": "lesson-01-introduction.html#why-a-simulation",
+    "href": "lesson-01-introduction.html#why-a-simulation",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "Why a Simulation?",
+    "text": "Why a Simulation?\n\nSafe environment to make — and learn from — real portfolio decisions\nImmediate feedback through performance metrics each round\nExposure to the full investment cycle: research → decision → review\n\n→ Content: simulation vs. classroom theory; what you can and cannot do in Cesim."
   },
   {
-    "objectID": "lesson-05-taa-security.html#factor-signals",
-    "href": "lesson-05-taa-security.html#factor-signals",
-    "title": "Lesson 5: Tactical Allocation & Security Selection",
-    "section": "Factor Signals",
-    "text": "Factor Signals\n\n\n\nFactor\nSignal\nTypical asset class\n\n\n\n\nValue\nCheap vs. history (CAPE, yield spread)\nEquities, credit\n\n\nMomentum\n12-1 month price return\nEquities, commodities\n\n\nQuality\nROE, earnings stability\nEquities\n\n\nCarry\nYield differential\nFX, bonds\n\n\nLow volatility\nRealised vol &lt; market\nDefensive equities\n\n\n\n→ Content: factor return history; current factor signal dashboard."
+    "objectID": "lesson-01-introduction.html#platform-overview",
+    "href": "lesson-01-introduction.html#platform-overview",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "Platform Overview",
+    "text": "Platform Overview\n\nBrowser-based; no installation required\nKey navigation areas: Economic Outlook · Strategy · Markets · Analyst · Results\nData updates each round — decisions are locked at the round deadline\n\n→ Content: annotated screenshot of the platform home screen."
   },
   {
-    "objectID": "lesson-05-taa-security.html#signal-aggregation-scoring",
-    "href": "lesson-05-taa-security.html#signal-aggregation-scoring",
-    "title": "Lesson 5: Tactical Allocation & Security Selection",
-    "section": "Signal Aggregation & Scoring",
-    "text": "Signal Aggregation & Scoring\n\nIndividual signals are noisy — combine them into a composite score\nSimple approach: equal-weight signals after normalisation (z-scores)\nAdvanced: factor model or machine learning aggregation\nOutput: a ranked list of asset classes from most to least attractive\n\n→ Content: worked scoring example using IMAG data."
+    "objectID": "lesson-01-introduction.html#the-asset-universe",
+    "href": "lesson-01-introduction.html#the-asset-universe",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "The Asset Universe",
+    "text": "The Asset Universe\n\nEquities (domestic & international)\nFixed income (government & corporate bonds)\nCash & money market instruments\nAlternative assets (commodities, real estate, digital assets)\nCurrency exposure\n\n→ Content: screenshot of the Markets screen with asset list."
   },
   {
-    "objectID": "lesson-05-taa-security.html#from-signal-to-tilt",
-    "href": "lesson-05-taa-security.html#from-signal-to-tilt",
-    "title": "Lesson 5: Tactical Allocation & Security Selection",
-    "section": "From Signal to Tilt",
-    "text": "From Signal to Tilt\n\nComposite score → rank asset classes → derive tilt direction and size\nTilt sizing: proportional to signal strength + inverse of tracking error cost\nConstraints: IPS limits on tracking error; no short sales; maximum tilt per asset class\n\n→ Content: tilt derivation table; IPS constraint check."
+    "objectID": "lesson-01-introduction.html#key-performance-indicators",
+    "href": "lesson-01-introduction.html#key-performance-indicators",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "Key Performance Indicators",
+    "text": "Key Performance Indicators\n\n\n\nKPI\nWhat it measures\n\n\n\n\nPortfolio return\nAbsolute & relative to benchmark\n\n\nSharpe ratio\nRisk-adjusted return\n\n\nTracking error\nDeviation from benchmark\n\n\nESG score\nSustainability integration\n\n\nDrawdown\nMaximum loss from peak\n\n\n\n→ Content: where to find each KPI in Cesim Results."
   },
   {
-    "objectID": "lesson-05-taa-security.html#risk-budgeting",
-    "href": "lesson-05-taa-security.html#risk-budgeting",
-    "title": "Lesson 5: Tactical Allocation & Security Selection",
-    "section": "Risk Budgeting",
-    "text": "Risk Budgeting\n\nTotal active risk = sum of all tilts’ contribution to tracking error\nEach tilt consumes a share of the active risk budget\nPrioritise tilts with the highest expected information ratio (IR)\n\n\\[IR = \\frac{\\text{Expected active return}}{\\text{Tracking error}}\\]\n→ Content: risk budget allocation table; marginal contribution calculation."
+    "objectID": "lesson-01-introduction.html#round-structure",
+    "href": "lesson-01-introduction.html#round-structure",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "Round Structure",
+    "text": "Round Structure\n\nEach round = one quarter (or one year, depending on setup)\nSequence: read data → form views → submit decisions → observe results\nDecisions carry over; you must actively rebalance\n\n→ Content: round timeline diagram."
   },
   {
-    "objectID": "lesson-05-taa-security.html#overweights-underweights",
-    "href": "lesson-05-taa-security.html#overweights-underweights",
-    "title": "Lesson 5: Tactical Allocation & Security Selection",
-    "section": "Overweights & Underweights",
-    "text": "Overweights & Underweights\n→ Content: final TAA tilts table — current round example (to be filled per round).\n\n\n\n\n\n\nTeam Process\n\n\n\nEach analyst presents their top signal\nDebate and reach consensus on tilts\nCheck total tracking error against IPS limit\nDocument the rationale — you will review it in Lesson 6"
+    "objectID": "lesson-01-introduction.html#decision-deadlines-workflow",
+    "href": "lesson-01-introduction.html#decision-deadlines-workflow",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "Decision Deadlines & Workflow",
+    "text": "Decision Deadlines & Workflow\n\nDeadlines are fixed — late submissions are not accepted\nRecommended team workflow: research → debate → agree → submit\nDocument your reasoning (feeds into the feedback loop, Lesson 6)\n\n→ Content: sample team calendar / decision log template."
   },
   {
-    "objectID": "lesson-05-taa-security.html#within-asset-class-selection",
-    "href": "lesson-05-taa-security.html#within-asset-class-selection",
-    "title": "Lesson 5: Tactical Allocation & Security Selection",
-    "section": "Within-Asset-Class Selection",
-    "text": "Within-Asset-Class Selection\n\nTAA sets how much to allocate to each asset class\nSecurity selection determines which specific instruments to buy\nAdds another layer of active return (and active risk)"
+    "objectID": "lesson-01-introduction.html#scoring-grading",
+    "href": "lesson-01-introduction.html#scoring-grading",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "Scoring & Grading",
+    "text": "Scoring & Grading\n\n→ Content: grading rubric (risk-adjusted return, ESG, IPS consistency, reflection quality)."
   },
   {
-    "objectID": "lesson-05-taa-security.html#fundamental-analysis-equities",
-    "href": "lesson-05-taa-security.html#fundamental-analysis-equities",
-    "title": "Lesson 5: Tactical Allocation & Security Selection",
-    "section": "Fundamental Analysis — Equities",
-    "text": "Fundamental Analysis — Equities\n\nTop-down: sector attractiveness → company analysis\nValuation: DCF, price multiples (P/E, EV/EBITDA), dividend yield\nQuality screening: return on equity, earnings stability, balance sheet strength\nESG overlay: flag red-rated instruments; apply exclusion list from IPS\n\n→ Content: equity screening template linked to Cesim Analyst screen."
+    "objectID": "lesson-01-introduction.html#suggested-role-allocation",
+    "href": "lesson-01-introduction.html#suggested-role-allocation",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "Suggested Role Allocation",
+    "text": "Suggested Role Allocation\n\n\n\nRole\nResponsibility\n\n\n\n\nChief Investment Officer\nFinal decision sign-off, IPS owner\n\n\nMacro Analyst\nEconomic outlook, scenario design\n\n\nPortfolio Manager\nSAA/TAA, risk budgeting\n\n\nESG Analyst\nSustainability scoring, impact assessment\n\n\nPerformance Analyst\nResults review, attribution\n\n\n\n→ Adapt roles to team size. Rotate if possible."
   },
   {
-    "objectID": "lesson-05-taa-security.html#fundamental-analysis-fixed-income",
-    "href": "lesson-05-taa-security.html#fundamental-analysis-fixed-income",
-    "title": "Lesson 5: Tactical Allocation & Security Selection",
-    "section": "Fundamental Analysis — Fixed Income",
-    "text": "Fundamental Analysis — Fixed Income\n\nCredit analysis: issuer financial health, coverage ratios, debt maturity\nRelative value: spread vs. peers and history\nDuration positioning: tilt toward short/long depending on rate view\nCurve positioning: barbells vs. bullets\n\n→ Content: bond selection scorecard."
-  },
-  {
-    "objectID": "lesson-05-taa-security.html#quantitative-screening",
-    "href": "lesson-05-taa-security.html#quantitative-screening",
-    "title": "Lesson 5: Tactical Allocation & Security Selection",
-    "section": "Quantitative Screening",
-    "text": "Quantitative Screening\n\nApply factor scores at the individual security level\nRank within each asset class; select top quintile\nCombine with ESG filter and liquidity screen\nDiversification check: avoid crowding in one sector/issuer\n\n→ Content: quantitative scoring template for IMAG instruments."
-  },
-  {
-    "objectID": "lesson-05-taa-security.html#from-decision-to-trade",
-    "href": "lesson-05-taa-security.html#from-decision-to-trade",
-    "title": "Lesson 5: Tactical Allocation & Security Selection",
-    "section": "From Decision to Trade",
-    "text": "From Decision to Trade\n\nOrder types: market, limit, stop\nLiquidity: check bid-ask spread and daily volume before sizing orders\nBlock trades vs. gradual accumulation\n\n→ Content: Cesim order entry walkthrough."
-  },
-  {
-    "objectID": "lesson-05-taa-security.html#transaction-costs",
-    "href": "lesson-05-taa-security.html#transaction-costs",
-    "title": "Lesson 5: Tactical Allocation & Security Selection",
-    "section": "Transaction Costs",
-    "text": "Transaction Costs\n\nExplicit costs: commissions, stamp duty\nImplicit costs: market impact, bid-ask spread\nRound-trip cost estimate per asset class\nTrade-off: conviction level must exceed transaction cost drag"
-  },
-  {
-    "objectID": "lesson-05-taa-security.html#rebalancing-vs.-tactical-repositioning",
-    "href": "lesson-05-taa-security.html#rebalancing-vs.-tactical-repositioning",
-    "title": "Lesson 5: Tactical Allocation & Security Selection",
-    "section": "Rebalancing vs. Tactical Repositioning",
-    "text": "Rebalancing vs. Tactical Repositioning\n\nRebalancing: restore SAA weights after drift (mechanical)\nTactical repositioning: intentional deviation from SAA (active decision)\nNetting trades: offset buy and sell orders where possible to reduce costs"
-  },
-  {
-    "objectID": "lesson-05-taa-security.html#key-takeaways",
-    "href": "lesson-05-taa-security.html#key-takeaways",
-    "title": "Lesson 5: Tactical Allocation & Security Selection",
+    "objectID": "lesson-01-introduction.html#key-takeaways",
+    "href": "lesson-01-introduction.html#key-takeaways",
+    "title": "Lesson 1: Introduction & Simulation Setup",
     "section": "Key Takeaways",
-    "text": "Key Takeaways\n\nTAA adds value only if signals have positive predictive power — be disciplined\nDocument every tactical decision: signal source, conviction level, expected horizon\nTransaction costs are silent return killers — always estimate before trading"
+    "text": "Key Takeaways\n\nIMAG replicates the full investment management process in six lessons\nEvery decision should be traceable to your IPS (Lesson 3)\nDocument your reasoning — you will review it in Lesson 6"
   },
   {
-    "objectID": "lesson-05-taa-security.html#simulation-task-lesson-5",
-    "href": "lesson-05-taa-security.html#simulation-task-lesson-5",
-    "title": "Lesson 5: Tactical Allocation & Security Selection",
-    "section": "Simulation Task — Lesson 5",
-    "text": "Simulation Task — Lesson 5\n\n\n\n\n\n\nDeliverables: TAA + Security Picks\n\n\nTactical Asset Allocation:\n\nScore all asset classes using at least two signal types\nDerive overweights and underweights (max tilt: per your IPS tracking error limit)\nCheck total tracking error vs. IPS limit\nSubmit TAA weights in Cesim → Strategy → Tactical\n\nSecurity Selection:\n\nApply fundamental screen to equities: top 3 picks with rationale\nApply credit screen to bonds: preferred maturities and issuers\nConfirm all picks meet IPS ESG threshold\nSubmit selections in Cesim → Strategy → Security Selection"
+    "objectID": "lesson-01-introduction.html#simulation-task-lesson-1",
+    "href": "lesson-01-introduction.html#simulation-task-lesson-1",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "Simulation Task — Lesson 1",
+    "text": "Simulation Task — Lesson 1\n\n\n\n\n\n\nBefore next lesson\n\n\n\nLog in to Cesim Invest and explore all five navigation sections\nAgree on team roles and a communication channel\nRead: Introduction chapter in the teaching materials"
   },
   {
-    "objectID": "lesson-05-taa-security.html#further-reading",
-    "href": "lesson-05-taa-security.html#further-reading",
-    "title": "Lesson 5: Tactical Allocation & Security Selection",
+    "objectID": "lesson-01-introduction.html#further-reading",
+    "href": "lesson-01-introduction.html#further-reading",
+    "title": "Lesson 1: Introduction & Simulation Setup",
     "section": "Further Reading",
-    "text": "Further Reading\n\nChapter: Tactical Research Toolkit\nChapter: Tactical Asset Allocation & Security Selection\nChapter: Portfolio Implementation"
+    "text": "Further Reading\n\nTeaching materials: Introduction chapter\nEngine documentation: asset universe and KPI definitions"
   },
   {
     "objectID": "lesson-02-markets-esg.html#learning-outcomes",
@@ -229,118 +194,6 @@
     "title": "Lesson 2: Markets, Asset Classes & ESG",
     "section": "Further Reading",
     "text": "Further Reading\n\nChapter: Markets, Asset Classes, Instruments & Currencies\nChapter: Sustainable and Impact Investing\nChapter: Drivers of Asset Prices"
-  },
-  {
-    "objectID": "lesson-06-performance.html#learning-outcomes",
-    "href": "lesson-06-performance.html#learning-outcomes",
-    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
-    "section": "Learning Outcomes",
-    "text": "Learning Outcomes\nBy the end of this lesson you will be able to:\n\nCalculate and interpret risk-adjusted performance metrics\nDecompose portfolio return into asset allocation and security selection effects\nConduct a structured post-mortem of your investment decisions\nClose the feedback loop: update your IPS and views for the next round\n\nTeaching chapters: Performance Measurement & Attribution · Feedback Loop"
-  },
-  {
-    "objectID": "lesson-06-performance.html#return-calculation",
-    "href": "lesson-06-performance.html#return-calculation",
-    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
-    "section": "Return Calculation",
-    "text": "Return Calculation\n\nHolding period return: \\((P_t - P_{t-1} + D_t) / P_{t-1}\\)\nTime-weighted return (TWR): eliminates impact of external cash flows — the industry standard\nMoney-weighted return (MWR / IRR): reflects timing of investor cash flows — useful for client reporting\nDistinguish: gross of fees vs. net of fees\n\n→ Content: worked return calculation using IMAG Results screen."
-  },
-  {
-    "objectID": "lesson-06-performance.html#risk-adjusted-performance-metrics",
-    "href": "lesson-06-performance.html#risk-adjusted-performance-metrics",
-    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
-    "section": "Risk-Adjusted Performance Metrics",
-    "text": "Risk-Adjusted Performance Metrics\n\n\n\n\n\n\n\n\nMetric\nFormula\nWhat it tells you\n\n\n\n\nSharpe ratio\n\\((R_p - R_f) / \\sigma_p\\)\nReturn per unit of total risk\n\n\nSortino ratio\n\\((R_p - R_f) / \\sigma_{downside}\\)\nReturn per unit of downside risk\n\n\nInformation ratio\n\\((R_p - R_b) / \\text{TE}\\)\nActive return per unit of active risk\n\n\nCalmar ratio\nAnnualised return / Max drawdown\nReturn per unit of drawdown\n\n\nMaximum drawdown\nPeak-to-trough loss\nWorst-case loss\n\n\n\n→ Content: your team’s metrics from Cesim Results."
-  },
-  {
-    "objectID": "lesson-06-performance.html#benchmark-comparison",
-    "href": "lesson-06-performance.html#benchmark-comparison",
-    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
-    "section": "Benchmark Comparison",
-    "text": "Benchmark Comparison\n\nDid you outperform or underperform the benchmark?\nDecompose: how much came from asset allocation vs. security selection vs. interaction?\nDistinguish: good decision vs. lucky outcome (attribution analysis)\n\n→ Content: benchmark return vs. portfolio return chart."
-  },
-  {
-    "objectID": "lesson-06-performance.html#the-brinson-hood-beebower-model",
-    "href": "lesson-06-performance.html#the-brinson-hood-beebower-model",
-    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
-    "section": "The Brinson-Hood-Beebower Model",
-    "text": "The Brinson-Hood-Beebower Model\nThree effects explain the difference between portfolio and benchmark return:\n\\[R_p - R_b = \\underbrace{AA}_{\\text{Allocation}} + \\underbrace{SS}_{\\text{Selection}} + \\underbrace{IA}_{\\text{Interaction}}\\]\n→ Content: attribution formula derivation; intuitive explanation."
-  },
-  {
-    "objectID": "lesson-06-performance.html#asset-allocation-effect",
-    "href": "lesson-06-performance.html#asset-allocation-effect",
-    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
-    "section": "Asset Allocation Effect",
-    "text": "Asset Allocation Effect\n\\[AA_i = (w_{p,i} - w_{b,i}) \\times (R_{b,i} - R_b)\\]\n\nDid your overweights / underweights add value?\nPositive if you overweighted asset classes that outperformed the benchmark\nThis is the TAA contribution (Lesson 5 decisions)\n\n→ Content: allocation effect table for each IMAG asset class."
-  },
-  {
-    "objectID": "lesson-06-performance.html#security-selection-effect",
-    "href": "lesson-06-performance.html#security-selection-effect",
-    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
-    "section": "Security Selection Effect",
-    "text": "Security Selection Effect\n\\[SS_i = w_{b,i} \\times (R_{p,i} - R_{b,i})\\]\n\nDid your chosen instruments outperform the asset class benchmark?\nPositive if your picked securities beat their benchmark within each class\nThis is the security selection contribution (Lesson 5 decisions)\n\n→ Content: selection effect table; best and worst contributors."
-  },
-  {
-    "objectID": "lesson-06-performance.html#reading-the-attribution-report",
-    "href": "lesson-06-performance.html#reading-the-attribution-report",
-    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
-    "section": "Reading the Attribution Report",
-    "text": "Reading the Attribution Report\n→ Content: annotated screenshot of Cesim attribution output; interpretation guide.\n\n\n\n\n\n\nNote\n\n\nA negative information ratio over multiple periods is a signal to reduce active risk — not increase conviction."
-  },
-  {
-    "objectID": "lesson-06-performance.html#esg-performance",
-    "href": "lesson-06-performance.html#esg-performance",
-    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
-    "section": "ESG Performance",
-    "text": "ESG Performance\n\nHow does your portfolio ESG score compare to the benchmark?\nDid ESG integration help or hurt financial returns in this period?\nTrack ESG score evolution over rounds\n\n→ Content: ESG score chart; financial vs. ESG performance scatter plot."
-  },
-  {
-    "objectID": "lesson-06-performance.html#why-a-structured-post-mortem",
-    "href": "lesson-06-performance.html#why-a-structured-post-mortem",
-    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
-    "section": "Why a Structured Post-Mortem?",
-    "text": "Why a Structured Post-Mortem?\n\nThe goal is not to explain away underperformance but to improve the process\nSeparate: good process / bad outcome from bad process / good outcome\nDistinguish luck from skill — especially important in a short-horizon simulation\n\n→ Content: 2×2 process/outcome matrix."
-  },
-  {
-    "objectID": "lesson-06-performance.html#post-mortem-framework",
-    "href": "lesson-06-performance.html#post-mortem-framework",
-    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
-    "section": "Post-Mortem Framework",
-    "text": "Post-Mortem Framework\nFor each major decision this round, answer:\n\nWhat was the decision? (specific weight or security)\nWhat was the rationale? (signal, conviction level)\nWhat was the outcome? (attribution contribution)\nWas the process sound? (would you make the same decision again?)\nWhat will you do differently?\n\n→ Content: decision log template; worked example."
-  },
-  {
-    "objectID": "lesson-06-performance.html#common-behavioural-pitfalls",
-    "href": "lesson-06-performance.html#common-behavioural-pitfalls",
-    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
-    "section": "Common Behavioural Pitfalls",
-    "text": "Common Behavioural Pitfalls\n\n\n\n\n\n\n\n\nBias\nSymptom\nAntidote\n\n\n\n\nOverconfidence\nExcess tracking error\nRespect risk limits\n\n\nAnchoring\nHolding losers too long\nPre-commit to stop-loss rules\n\n\nHerding\nFollowing consensus\nDocument independent views before group discussion\n\n\nRecency bias\nOver-weighting last quarter\nUse long-run CMA as anchor\n\n\nConfirmation bias\nSeeking data that confirms view\nAssign devil’s advocate role"
-  },
-  {
-    "objectID": "lesson-06-performance.html#updating-your-ips-views",
-    "href": "lesson-06-performance.html#updating-your-ips-views",
-    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
-    "section": "Updating Your IPS & Views",
-    "text": "Updating Your IPS & Views\n\nWere any IPS constraints binding? Should they be revised?\nDid your CMA forecasts hold? What needs updating?\nAre your TAA signals still valid for the next round?\nCarry lessons learned into the next round’s decision process\n\n→ Content: IPS review checklist; CMA update worksheet."
-  },
-  {
-    "objectID": "lesson-06-performance.html#key-takeaways",
-    "href": "lesson-06-performance.html#key-takeaways",
-    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
-    "section": "Key Takeaways",
-    "text": "Key Takeaways\n\nAttribution is a diagnostic tool — use it to improve, not to justify\nSeparate process quality from outcome quality\nThe feedback loop is what turns a simulation into genuine learning"
-  },
-  {
-    "objectID": "lesson-06-performance.html#simulation-task-lesson-6",
-    "href": "lesson-06-performance.html#simulation-task-lesson-6",
-    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
-    "section": "Simulation Task — Lesson 6",
-    "text": "Simulation Task — Lesson 6\n\n\n\n\n\n\nFinal Deliverables\n\n\nPerformance Report:\n\nCalculate TWR, Sharpe, IR for the full simulation period\nComplete the attribution table (allocation + selection + interaction)\nCompare ESG score to benchmark\nChart portfolio drawdown vs. IPS maximum drawdown limit\n\nPost-Mortem:\n\nComplete the decision log for all rounds\nIdentify your best and worst decisions (process quality)\nList three things you would do differently with hindsight\nPrepare a 10-minute team presentation of your investment journey"
-  },
-  {
-    "objectID": "lesson-06-performance.html#further-reading",
-    "href": "lesson-06-performance.html#further-reading",
-    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
-    "section": "Further Reading",
-    "text": "Further Reading\n\nChapter: Performance Measurement & Attribution\nChapter: Feedback Loop"
   },
   {
     "objectID": "index.html",
@@ -469,95 +322,242 @@
     "text": "Further Reading\n\nChapter: Drivers of Asset Prices\nChapter: Data, Forecasting & Scenario Design\nChapter: Strategic Research Toolkit\nChapter: Strategic Asset Allocation"
   },
   {
-    "objectID": "lesson-01-introduction.html#learning-outcomes",
-    "href": "lesson-01-introduction.html#learning-outcomes",
-    "title": "Lesson 1: Introduction & Simulation Setup",
+    "objectID": "lesson-06-performance.html#learning-outcomes",
+    "href": "lesson-06-performance.html#learning-outcomes",
+    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
     "section": "Learning Outcomes",
-    "text": "Learning Outcomes\nBy the end of this lesson you will be able to:\n\nExplain the purpose and structure of the IMAG simulation\nNavigate the Cesim Invest platform and locate key decision screens\nDescribe the round-by-round investment process\nAssign team roles and agree on a collaborative workflow\nUnderstand how the simulation is graded"
+    "text": "Learning Outcomes\nBy the end of this lesson you will be able to:\n\nCalculate and interpret risk-adjusted performance metrics\nDecompose portfolio return into asset allocation and security selection effects\nConduct a structured post-mortem of your investment decisions\nClose the feedback loop: update your IPS and views for the next round\n\nTeaching chapters: Performance Measurement & Attribution · Feedback Loop"
   },
   {
-    "objectID": "lesson-01-introduction.html#what-is-imag",
-    "href": "lesson-01-introduction.html#what-is-imag",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "What is IMAG?",
-    "text": "What is IMAG?\n\nAn Erasmus+ project connecting universities across Europe\nA structured investment simulation using the Cesim Invest platform\nSix lessons that take you from blank mandate to full portfolio review\nDesigned to mirror real-world investment management processes\n\n→ Content: project background, partner institutions, learning goals."
+    "objectID": "lesson-06-performance.html#return-calculation",
+    "href": "lesson-06-performance.html#return-calculation",
+    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
+    "section": "Return Calculation",
+    "text": "Return Calculation\n\nHolding period return: \\((P_t - P_{t-1} + D_t) / P_{t-1}\\)\nTime-weighted return (TWR): eliminates impact of external cash flows — the industry standard\nMoney-weighted return (MWR / IRR): reflects timing of investor cash flows — useful for client reporting\nDistinguish: gross of fees vs. net of fees\n\n→ Content: worked return calculation using IMAG Results screen."
   },
   {
-    "objectID": "lesson-01-introduction.html#why-a-simulation",
-    "href": "lesson-01-introduction.html#why-a-simulation",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "Why a Simulation?",
-    "text": "Why a Simulation?\n\nSafe environment to make — and learn from — real portfolio decisions\nImmediate feedback through performance metrics each round\nExposure to the full investment cycle: research → decision → review\n\n→ Content: simulation vs. classroom theory; what you can and cannot do in Cesim."
+    "objectID": "lesson-06-performance.html#risk-adjusted-performance-metrics",
+    "href": "lesson-06-performance.html#risk-adjusted-performance-metrics",
+    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
+    "section": "Risk-Adjusted Performance Metrics",
+    "text": "Risk-Adjusted Performance Metrics\n\n\n\n\n\n\n\n\nMetric\nFormula\nWhat it tells you\n\n\n\n\nSharpe ratio\n\\((R_p - R_f) / \\sigma_p\\)\nReturn per unit of total risk\n\n\nSortino ratio\n\\((R_p - R_f) / \\sigma_{downside}\\)\nReturn per unit of downside risk\n\n\nInformation ratio\n\\((R_p - R_b) / \\text{TE}\\)\nActive return per unit of active risk\n\n\nCalmar ratio\nAnnualised return / Max drawdown\nReturn per unit of drawdown\n\n\nMaximum drawdown\nPeak-to-trough loss\nWorst-case loss\n\n\n\n→ Content: your team’s metrics from Cesim Results."
   },
   {
-    "objectID": "lesson-01-introduction.html#platform-overview",
-    "href": "lesson-01-introduction.html#platform-overview",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "Platform Overview",
-    "text": "Platform Overview\n\nBrowser-based; no installation required\nKey navigation areas: Economic Outlook · Strategy · Markets · Analyst · Results\nData updates each round — decisions are locked at the round deadline\n\n→ Content: annotated screenshot of the platform home screen."
+    "objectID": "lesson-06-performance.html#benchmark-comparison",
+    "href": "lesson-06-performance.html#benchmark-comparison",
+    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
+    "section": "Benchmark Comparison",
+    "text": "Benchmark Comparison\n\nDid you outperform or underperform the benchmark?\nDecompose: how much came from asset allocation vs. security selection vs. interaction?\nDistinguish: good decision vs. lucky outcome (attribution analysis)\n\n→ Content: benchmark return vs. portfolio return chart."
   },
   {
-    "objectID": "lesson-01-introduction.html#the-asset-universe",
-    "href": "lesson-01-introduction.html#the-asset-universe",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "The Asset Universe",
-    "text": "The Asset Universe\n\nEquities (domestic & international)\nFixed income (government & corporate bonds)\nCash & money market instruments\nAlternative assets (commodities, real estate, digital assets)\nCurrency exposure\n\n→ Content: screenshot of the Markets screen with asset list."
+    "objectID": "lesson-06-performance.html#the-brinson-hood-beebower-model",
+    "href": "lesson-06-performance.html#the-brinson-hood-beebower-model",
+    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
+    "section": "The Brinson-Hood-Beebower Model",
+    "text": "The Brinson-Hood-Beebower Model\nThree effects explain the difference between portfolio and benchmark return:\n\\[R_p - R_b = \\underbrace{AA}_{\\text{Allocation}} + \\underbrace{SS}_{\\text{Selection}} + \\underbrace{IA}_{\\text{Interaction}}\\]\n→ Content: attribution formula derivation; intuitive explanation."
   },
   {
-    "objectID": "lesson-01-introduction.html#key-performance-indicators",
-    "href": "lesson-01-introduction.html#key-performance-indicators",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "Key Performance Indicators",
-    "text": "Key Performance Indicators\n\n\n\nKPI\nWhat it measures\n\n\n\n\nPortfolio return\nAbsolute & relative to benchmark\n\n\nSharpe ratio\nRisk-adjusted return\n\n\nTracking error\nDeviation from benchmark\n\n\nESG score\nSustainability integration\n\n\nDrawdown\nMaximum loss from peak\n\n\n\n→ Content: where to find each KPI in Cesim Results."
+    "objectID": "lesson-06-performance.html#asset-allocation-effect",
+    "href": "lesson-06-performance.html#asset-allocation-effect",
+    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
+    "section": "Asset Allocation Effect",
+    "text": "Asset Allocation Effect\n\\[AA_i = (w_{p,i} - w_{b,i}) \\times (R_{b,i} - R_b)\\]\n\nDid your overweights / underweights add value?\nPositive if you overweighted asset classes that outperformed the benchmark\nThis is the TAA contribution (Lesson 5 decisions)\n\n→ Content: allocation effect table for each IMAG asset class."
   },
   {
-    "objectID": "lesson-01-introduction.html#round-structure",
-    "href": "lesson-01-introduction.html#round-structure",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "Round Structure",
-    "text": "Round Structure\n\nEach round = one quarter (or one year, depending on setup)\nSequence: read data → form views → submit decisions → observe results\nDecisions carry over; you must actively rebalance\n\n→ Content: round timeline diagram."
+    "objectID": "lesson-06-performance.html#security-selection-effect",
+    "href": "lesson-06-performance.html#security-selection-effect",
+    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
+    "section": "Security Selection Effect",
+    "text": "Security Selection Effect\n\\[SS_i = w_{b,i} \\times (R_{p,i} - R_{b,i})\\]\n\nDid your chosen instruments outperform the asset class benchmark?\nPositive if your picked securities beat their benchmark within each class\nThis is the security selection contribution (Lesson 5 decisions)\n\n→ Content: selection effect table; best and worst contributors."
   },
   {
-    "objectID": "lesson-01-introduction.html#decision-deadlines-workflow",
-    "href": "lesson-01-introduction.html#decision-deadlines-workflow",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "Decision Deadlines & Workflow",
-    "text": "Decision Deadlines & Workflow\n\nDeadlines are fixed — late submissions are not accepted\nRecommended team workflow: research → debate → agree → submit\nDocument your reasoning (feeds into the feedback loop, Lesson 6)\n\n→ Content: sample team calendar / decision log template."
+    "objectID": "lesson-06-performance.html#reading-the-attribution-report",
+    "href": "lesson-06-performance.html#reading-the-attribution-report",
+    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
+    "section": "Reading the Attribution Report",
+    "text": "Reading the Attribution Report\n→ Content: annotated screenshot of Cesim attribution output; interpretation guide.\n\n\n\n\n\n\nNote\n\n\nA negative information ratio over multiple periods is a signal to reduce active risk — not increase conviction."
   },
   {
-    "objectID": "lesson-01-introduction.html#scoring-grading",
-    "href": "lesson-01-introduction.html#scoring-grading",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "Scoring & Grading",
-    "text": "Scoring & Grading\n\n→ Content: grading rubric (risk-adjusted return, ESG, IPS consistency, reflection quality)."
+    "objectID": "lesson-06-performance.html#esg-performance",
+    "href": "lesson-06-performance.html#esg-performance",
+    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
+    "section": "ESG Performance",
+    "text": "ESG Performance\n\nHow does your portfolio ESG score compare to the benchmark?\nDid ESG integration help or hurt financial returns in this period?\nTrack ESG score evolution over rounds\n\n→ Content: ESG score chart; financial vs. ESG performance scatter plot."
   },
   {
-    "objectID": "lesson-01-introduction.html#suggested-role-allocation",
-    "href": "lesson-01-introduction.html#suggested-role-allocation",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "Suggested Role Allocation",
-    "text": "Suggested Role Allocation\n\n\n\nRole\nResponsibility\n\n\n\n\nChief Investment Officer\nFinal decision sign-off, IPS owner\n\n\nMacro Analyst\nEconomic outlook, scenario design\n\n\nPortfolio Manager\nSAA/TAA, risk budgeting\n\n\nESG Analyst\nSustainability scoring, impact assessment\n\n\nPerformance Analyst\nResults review, attribution\n\n\n\n→ Adapt roles to team size. Rotate if possible."
+    "objectID": "lesson-06-performance.html#why-a-structured-post-mortem",
+    "href": "lesson-06-performance.html#why-a-structured-post-mortem",
+    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
+    "section": "Why a Structured Post-Mortem?",
+    "text": "Why a Structured Post-Mortem?\n\nThe goal is not to explain away underperformance but to improve the process\nSeparate: good process / bad outcome from bad process / good outcome\nDistinguish luck from skill — especially important in a short-horizon simulation\n\n→ Content: 2×2 process/outcome matrix."
   },
   {
-    "objectID": "lesson-01-introduction.html#key-takeaways",
-    "href": "lesson-01-introduction.html#key-takeaways",
-    "title": "Lesson 1: Introduction & Simulation Setup",
+    "objectID": "lesson-06-performance.html#post-mortem-framework",
+    "href": "lesson-06-performance.html#post-mortem-framework",
+    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
+    "section": "Post-Mortem Framework",
+    "text": "Post-Mortem Framework\nFor each major decision this round, answer:\n\nWhat was the decision? (specific weight or security)\nWhat was the rationale? (signal, conviction level)\nWhat was the outcome? (attribution contribution)\nWas the process sound? (would you make the same decision again?)\nWhat will you do differently?\n\n→ Content: decision log template; worked example."
+  },
+  {
+    "objectID": "lesson-06-performance.html#common-behavioural-pitfalls",
+    "href": "lesson-06-performance.html#common-behavioural-pitfalls",
+    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
+    "section": "Common Behavioural Pitfalls",
+    "text": "Common Behavioural Pitfalls\n\n\n\n\n\n\n\n\nBias\nSymptom\nAntidote\n\n\n\n\nOverconfidence\nExcess tracking error\nRespect risk limits\n\n\nAnchoring\nHolding losers too long\nPre-commit to stop-loss rules\n\n\nHerding\nFollowing consensus\nDocument independent views before group discussion\n\n\nRecency bias\nOver-weighting last quarter\nUse long-run CMA as anchor\n\n\nConfirmation bias\nSeeking data that confirms view\nAssign devil’s advocate role"
+  },
+  {
+    "objectID": "lesson-06-performance.html#updating-your-ips-views",
+    "href": "lesson-06-performance.html#updating-your-ips-views",
+    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
+    "section": "Updating Your IPS & Views",
+    "text": "Updating Your IPS & Views\n\nWere any IPS constraints binding? Should they be revised?\nDid your CMA forecasts hold? What needs updating?\nAre your TAA signals still valid for the next round?\nCarry lessons learned into the next round’s decision process\n\n→ Content: IPS review checklist; CMA update worksheet."
+  },
+  {
+    "objectID": "lesson-06-performance.html#key-takeaways",
+    "href": "lesson-06-performance.html#key-takeaways",
+    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
     "section": "Key Takeaways",
-    "text": "Key Takeaways\n\nIMAG replicates the full investment management process in six lessons\nEvery decision should be traceable to your IPS (Lesson 3)\nDocument your reasoning — you will review it in Lesson 6"
+    "text": "Key Takeaways\n\nAttribution is a diagnostic tool — use it to improve, not to justify\nSeparate process quality from outcome quality\nThe feedback loop is what turns a simulation into genuine learning"
   },
   {
-    "objectID": "lesson-01-introduction.html#simulation-task-lesson-1",
-    "href": "lesson-01-introduction.html#simulation-task-lesson-1",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "Simulation Task — Lesson 1",
-    "text": "Simulation Task — Lesson 1\n\n\n\n\n\n\nBefore next lesson\n\n\n\nLog in to Cesim Invest and explore all five navigation sections\nAgree on team roles and a communication channel\nRead: Introduction chapter in the teaching materials"
+    "objectID": "lesson-06-performance.html#simulation-task-lesson-6",
+    "href": "lesson-06-performance.html#simulation-task-lesson-6",
+    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
+    "section": "Simulation Task — Lesson 6",
+    "text": "Simulation Task — Lesson 6\n\n\n\n\n\n\nFinal Deliverables\n\n\nPerformance Report:\n\nCalculate TWR, Sharpe, IR for the full simulation period\nComplete the attribution table (allocation + selection + interaction)\nCompare ESG score to benchmark\nChart portfolio drawdown vs. IPS maximum drawdown limit\n\nPost-Mortem:\n\nComplete the decision log for all rounds\nIdentify your best and worst decisions (process quality)\nList three things you would do differently with hindsight\nPrepare a 10-minute team presentation of your investment journey"
   },
   {
-    "objectID": "lesson-01-introduction.html#further-reading",
-    "href": "lesson-01-introduction.html#further-reading",
-    "title": "Lesson 1: Introduction & Simulation Setup",
+    "objectID": "lesson-06-performance.html#further-reading",
+    "href": "lesson-06-performance.html#further-reading",
+    "title": "Lesson 6: Performance Measurement & the Feedback Loop",
     "section": "Further Reading",
-    "text": "Further Reading\n\nTeaching materials: Introduction chapter\nEngine documentation: asset universe and KPI definitions"
+    "text": "Further Reading\n\nChapter: Performance Measurement & Attribution\nChapter: Feedback Loop"
+  },
+  {
+    "objectID": "lesson-05-taa-security.html#learning-outcomes",
+    "href": "lesson-05-taa-security.html#learning-outcomes",
+    "title": "Lesson 5: Tactical Allocation & Security Selection",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\nBy the end of this lesson you will be able to:\n\nGenerate and evaluate short-term macro and factor signals\nTranslate signals into tactical tilts away from the SAA\nApply fundamental and quantitative approaches to security selection\nExecute decisions under liquidity and transaction cost constraints\n\nTeaching chapters: Tactical Research Toolkit · Tactical Asset Allocation & Security Selection · Portfolio Implementation"
+  },
+  {
+    "objectID": "lesson-05-taa-security.html#what-is-tactical-asset-allocation",
+    "href": "lesson-05-taa-security.html#what-is-tactical-asset-allocation",
+    "title": "Lesson 5: Tactical Allocation & Security Selection",
+    "section": "What is Tactical Asset Allocation?",
+    "text": "What is Tactical Asset Allocation?\n\nTAA = temporary, deliberate deviations from the SAA\nDriven by short-term views on relative asset class attractiveness\nSize of tilts is bounded by the risk budget (tracking error limit in IPS)\nHorizon: weeks to months — not years (that is the SAA)\n\n\n\n\n\n\n\nNote\n\n\nA good TAA process starts with the SAA as the neutral position and asks: what do we want to overweight or underweight today?"
+  },
+  {
+    "objectID": "lesson-05-taa-security.html#macro-signals",
+    "href": "lesson-05-taa-security.html#macro-signals",
+    "title": "Lesson 5: Tactical Allocation & Security Selection",
+    "section": "Macro Signals",
+    "text": "Macro Signals\n\nBusiness cycle indicators: PMI, industrial production, unemployment claims\nMonetary policy signals: central bank rate decisions, quantitative tightening\nCredit market signals: high-yield spreads, loan officer surveys\nSentiment indicators: consumer confidence, VIX, fund flows\n\n→ Content: IMAG Economic Outlook screen walkthrough; signal extraction exercise."
+  },
+  {
+    "objectID": "lesson-05-taa-security.html#factor-signals",
+    "href": "lesson-05-taa-security.html#factor-signals",
+    "title": "Lesson 5: Tactical Allocation & Security Selection",
+    "section": "Factor Signals",
+    "text": "Factor Signals\n\n\n\nFactor\nSignal\nTypical asset class\n\n\n\n\nValue\nCheap vs. history (CAPE, yield spread)\nEquities, credit\n\n\nMomentum\n12-1 month price return\nEquities, commodities\n\n\nQuality\nROE, earnings stability\nEquities\n\n\nCarry\nYield differential\nFX, bonds\n\n\nLow volatility\nRealised vol &lt; market\nDefensive equities\n\n\n\n→ Content: factor return history; current factor signal dashboard."
+  },
+  {
+    "objectID": "lesson-05-taa-security.html#signal-aggregation-scoring",
+    "href": "lesson-05-taa-security.html#signal-aggregation-scoring",
+    "title": "Lesson 5: Tactical Allocation & Security Selection",
+    "section": "Signal Aggregation & Scoring",
+    "text": "Signal Aggregation & Scoring\n\nIndividual signals are noisy — combine them into a composite score\nSimple approach: equal-weight signals after normalisation (z-scores)\nAdvanced: factor model or machine learning aggregation\nOutput: a ranked list of asset classes from most to least attractive\n\n→ Content: worked scoring example using IMAG data."
+  },
+  {
+    "objectID": "lesson-05-taa-security.html#from-signal-to-tilt",
+    "href": "lesson-05-taa-security.html#from-signal-to-tilt",
+    "title": "Lesson 5: Tactical Allocation & Security Selection",
+    "section": "From Signal to Tilt",
+    "text": "From Signal to Tilt\n\nComposite score → rank asset classes → derive tilt direction and size\nTilt sizing: proportional to signal strength + inverse of tracking error cost\nConstraints: IPS limits on tracking error; no short sales; maximum tilt per asset class\n\n→ Content: tilt derivation table; IPS constraint check."
+  },
+  {
+    "objectID": "lesson-05-taa-security.html#risk-budgeting",
+    "href": "lesson-05-taa-security.html#risk-budgeting",
+    "title": "Lesson 5: Tactical Allocation & Security Selection",
+    "section": "Risk Budgeting",
+    "text": "Risk Budgeting\n\nTotal active risk = sum of all tilts’ contribution to tracking error\nEach tilt consumes a share of the active risk budget\nPrioritise tilts with the highest expected information ratio (IR)\n\n\\[IR = \\frac{\\text{Expected active return}}{\\text{Tracking error}}\\]\n→ Content: risk budget allocation table; marginal contribution calculation."
+  },
+  {
+    "objectID": "lesson-05-taa-security.html#overweights-underweights",
+    "href": "lesson-05-taa-security.html#overweights-underweights",
+    "title": "Lesson 5: Tactical Allocation & Security Selection",
+    "section": "Overweights & Underweights",
+    "text": "Overweights & Underweights\n→ Content: final TAA tilts table — current round example (to be filled per round).\n\n\n\n\n\n\nTeam Process\n\n\n\nEach analyst presents their top signal\nDebate and reach consensus on tilts\nCheck total tracking error against IPS limit\nDocument the rationale — you will review it in Lesson 6"
+  },
+  {
+    "objectID": "lesson-05-taa-security.html#within-asset-class-selection",
+    "href": "lesson-05-taa-security.html#within-asset-class-selection",
+    "title": "Lesson 5: Tactical Allocation & Security Selection",
+    "section": "Within-Asset-Class Selection",
+    "text": "Within-Asset-Class Selection\n\nTAA sets how much to allocate to each asset class\nSecurity selection determines which specific instruments to buy\nAdds another layer of active return (and active risk)"
+  },
+  {
+    "objectID": "lesson-05-taa-security.html#fundamental-analysis-equities",
+    "href": "lesson-05-taa-security.html#fundamental-analysis-equities",
+    "title": "Lesson 5: Tactical Allocation & Security Selection",
+    "section": "Fundamental Analysis — Equities",
+    "text": "Fundamental Analysis — Equities\n\nTop-down: sector attractiveness → company analysis\nValuation: DCF, price multiples (P/E, EV/EBITDA), dividend yield\nQuality screening: return on equity, earnings stability, balance sheet strength\nESG overlay: flag red-rated instruments; apply exclusion list from IPS\n\n→ Content: equity screening template linked to Cesim Analyst screen."
+  },
+  {
+    "objectID": "lesson-05-taa-security.html#fundamental-analysis-fixed-income",
+    "href": "lesson-05-taa-security.html#fundamental-analysis-fixed-income",
+    "title": "Lesson 5: Tactical Allocation & Security Selection",
+    "section": "Fundamental Analysis — Fixed Income",
+    "text": "Fundamental Analysis — Fixed Income\n\nCredit analysis: issuer financial health, coverage ratios, debt maturity\nRelative value: spread vs. peers and history\nDuration positioning: tilt toward short/long depending on rate view\nCurve positioning: barbells vs. bullets\n\n→ Content: bond selection scorecard."
+  },
+  {
+    "objectID": "lesson-05-taa-security.html#quantitative-screening",
+    "href": "lesson-05-taa-security.html#quantitative-screening",
+    "title": "Lesson 5: Tactical Allocation & Security Selection",
+    "section": "Quantitative Screening",
+    "text": "Quantitative Screening\n\nApply factor scores at the individual security level\nRank within each asset class; select top quintile\nCombine with ESG filter and liquidity screen\nDiversification check: avoid crowding in one sector/issuer\n\n→ Content: quantitative scoring template for IMAG instruments."
+  },
+  {
+    "objectID": "lesson-05-taa-security.html#from-decision-to-trade",
+    "href": "lesson-05-taa-security.html#from-decision-to-trade",
+    "title": "Lesson 5: Tactical Allocation & Security Selection",
+    "section": "From Decision to Trade",
+    "text": "From Decision to Trade\n\nOrder types: market, limit, stop\nLiquidity: check bid-ask spread and daily volume before sizing orders\nBlock trades vs. gradual accumulation\n\n→ Content: Cesim order entry walkthrough."
+  },
+  {
+    "objectID": "lesson-05-taa-security.html#transaction-costs",
+    "href": "lesson-05-taa-security.html#transaction-costs",
+    "title": "Lesson 5: Tactical Allocation & Security Selection",
+    "section": "Transaction Costs",
+    "text": "Transaction Costs\n\nExplicit costs: commissions, stamp duty\nImplicit costs: market impact, bid-ask spread\nRound-trip cost estimate per asset class\nTrade-off: conviction level must exceed transaction cost drag"
+  },
+  {
+    "objectID": "lesson-05-taa-security.html#rebalancing-vs.-tactical-repositioning",
+    "href": "lesson-05-taa-security.html#rebalancing-vs.-tactical-repositioning",
+    "title": "Lesson 5: Tactical Allocation & Security Selection",
+    "section": "Rebalancing vs. Tactical Repositioning",
+    "text": "Rebalancing vs. Tactical Repositioning\n\nRebalancing: restore SAA weights after drift (mechanical)\nTactical repositioning: intentional deviation from SAA (active decision)\nNetting trades: offset buy and sell orders where possible to reduce costs"
+  },
+  {
+    "objectID": "lesson-05-taa-security.html#key-takeaways",
+    "href": "lesson-05-taa-security.html#key-takeaways",
+    "title": "Lesson 5: Tactical Allocation & Security Selection",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n\nTAA adds value only if signals have positive predictive power — be disciplined\nDocument every tactical decision: signal source, conviction level, expected horizon\nTransaction costs are silent return killers — always estimate before trading"
+  },
+  {
+    "objectID": "lesson-05-taa-security.html#simulation-task-lesson-5",
+    "href": "lesson-05-taa-security.html#simulation-task-lesson-5",
+    "title": "Lesson 5: Tactical Allocation & Security Selection",
+    "section": "Simulation Task — Lesson 5",
+    "text": "Simulation Task — Lesson 5\n\n\n\n\n\n\nDeliverables: TAA + Security Picks\n\n\nTactical Asset Allocation:\n\nScore all asset classes using at least two signal types\nDerive overweights and underweights (max tilt: per your IPS tracking error limit)\nCheck total tracking error vs. IPS limit\nSubmit TAA weights in Cesim → Strategy → Tactical\n\nSecurity Selection:\n\nApply fundamental screen to equities: top 3 picks with rationale\nApply credit screen to bonds: preferred maturities and issuers\nConfirm all picks meet IPS ESG threshold\nSubmit selections in Cesim → Strategy → Security Selection"
+  },
+  {
+    "objectID": "lesson-05-taa-security.html#further-reading",
+    "href": "lesson-05-taa-security.html#further-reading",
+    "title": "Lesson 5: Tactical Allocation & Security Selection",
+    "section": "Further Reading",
+    "text": "Further Reading\n\nChapter: Tactical Research Toolkit\nChapter: Tactical Asset Allocation & Security Selection\nChapter: Portfolio Implementation"
   },
   {
     "objectID": "lesson-03-client-ips.html#learning-outcomes",
