@@ -246,9 +246,3 @@ The performance data from the market report places our results in competitive co
 ![Market Report](graphics/Performance_Analysis/IMAG-Market-Report-Performance.png){#fig-imag-market-report}
 
 Market share data, segmented by client type, reveals whether our performance is translating into client retention and growth. A team with strong returns but declining market share may be taking risks that clients did not sign up for. A team with moderate returns but growing market share may be delivering exactly what their clients expect. The numbers do not tell the whole story, but they frame the questions that the attribution analysis must answer.
-
-### Closing the Loop
-
-The simulation's performance analysis tools enable the same cycle we described in the chapter. Measurement establishes what happened. Attribution reveals why it happened. Appraisal determines what should change. If the attribution shows that our tactical tilts consistently detracted, the process for generating those tilts needs review. If the strategic allocation analysis shows misalignment with client targets, the strategic weights need adjustment. If the competitive metrics show underperformance relative to peers, the entire investment process must be examined.
-
-The discipline is the same one we applied to the Schmidt-Miller family. Performance analysis is not about celebrating wins or lamenting losses. It is about understanding outcomes, communicating them clearly, and using that understanding to improve future decisions. The simulation provides the data. The framework from this chapter provides the method. The quality of our analysis determines whether the cycle closes productively or spins without learning.
