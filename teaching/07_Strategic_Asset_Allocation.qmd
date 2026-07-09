@@ -7,7 +7,7 @@ bibliography: references.bib
 **Associated slides:** [Lesson 4 — Strategic Asset Allocation](../slides/lesson-04-saa.html)
 :::
 
-## 7.1 Introduction
+## Introduction
 
 Chapter 6 established the capital market assumptions. We now have expectations for returns, volatilities, and correlations. These assumptions describe the investment landscape. They do not, by themselves, tell us how to combine asset classes into a portfolio.
 
@@ -23,37 +23,45 @@ This discipline is simple in concept. It is difficult in practice. It is also a 
 
 This chapter develops the framework for strategic asset allocation. We begin with the investment guidelines that translate IPS constraints into actionable boundaries. We then examine mean-variance optimization and its modern extensions. We consider the Black-Litterman model. We explore geographic and currency decisions. We examine methods for determining the asset mix and the behavioral considerations that shape implementation. The chapter concludes with the application of these concepts to the Schmidt-Miller family.
 
-## 7.2 Establishing Investment Guidelines
+## Establishing Investment Guidelines
 
 Before determining the optimal mix of assets for any client, we must establish the investment guidelines that will govern the allocation process. These guidelines translate the client's documented objectives and constraints into actionable parameters that define the boundaries within which the portfolio will be constructed. They serve as the bridge between the Investment Policy Statement and the quantitative methods used to derive the strategic asset allocation.
 
 **Return Objective**
+
 The first guideline is the return objective. This is derived directly from the client's goals documented in the IPS. Whether the objective is capital appreciation, income generation, or preservation of purchasing power, it must be expressed in measurable terms—typically as an expected annualized return over the investment horizon. This target provides the benchmark against which the portfolio's performance will be evaluated and guides the selection of asset classes with appropriate return characteristics.
 
 **Risk Tolerance**
+
 Risk tolerance is perhaps the most critical guideline. As documented in the IPS, risk tolerance has two components: the client's ability to bear risk, which depends on time horizon, wealth, and the flexibility of goals, and the client's willingness to bear risk, which reflects their emotional comfort with volatility. When these diverge, the lower of the two must serve as the binding constraint. This guideline translates into a maximum acceptable drawdown—the worst loss the portfolio might experience in a severe bear market—which constrains how much equity risk the portfolio can take.
 
 **Time Horizon**
+
 The investment time horizon determines how long the portfolio has to recover from market downturns. Longer horizons typically allow for greater exposure to growth-oriented assets like equities, as there is time to ride out volatility. Shorter horizons require a greater emphasis on capital preservation. The time horizon may vary across different goals, requiring a segmented approach where funds are allocated to separate buckets with their own investment guidelines.
 
 **Liquidity Requirements**
+
 Liquidity refers to the need for readily accessible cash to fund near-term expenses. Some goals—such as a down payment on a home or funding a business venture—require specific sums of money at specific future dates. Others, such as retirement income, require ongoing cash flow. These liquidity needs dictate that a portion of the portfolio must be held in cash or highly liquid, low-volatility assets. Funds with no near-term liquidity needs can be invested with a longer-term orientation.
 
 **Tax Constraints**
+
 Tax considerations can significantly affect investment decisions. Assets held in tax-advantaged accounts have different implications than assets held in taxable accounts. Positions with embedded capital gains create a disincentive to sell. The client's marginal tax rate affects the after-tax return of different investment types. These constraints must be incorporated into the guidelines, influencing both asset location decisions and the timing of portfolio adjustments.
 
 **Permissible Asset Classes**
+
 Not all asset classes are suitable for every client. The guidelines should specify which asset classes are permissible based on the firm's investment philosophy and the client's objectives and constraints. For each asset class, permissible ranges should be established, reflecting its expected role in the portfolio. Equities provide growth potential but introduce volatility. Bonds provide stability and income. Alternatives may offer diversification and inflation protection. These ranges set the boundaries for the optimization process.
 
 **Rebalancing Policy**
+
 Over time, market movements will cause the portfolio to drift from its target allocation. The rebalancing policy specifies how and when the portfolio will be brought back into alignment. Common approaches include calendar-based rebalancing (e.g., quarterly or annually) and threshold-based rebalancing (e.g., when any asset class deviates by more than five percentage points from its target). The policy should also specify whether rebalancing will be accomplished through new cash flows or through selling overweight positions, with consideration given to transaction costs and tax consequences.
 
 **Currency Policy**
+
 For portfolios with international holdings, currency exposure is an important consideration. The guidelines should specify how currency risk will be managed. Options include leaving exposures unhedged to benefit from diversification, hedging all currency exposure back to the client's home currency, or a hybrid approach where certain currencies are hedged and others are not. The decision depends on the client's risk tolerance, investment horizon, and expectations about currency movements.
 
 With these guidelines established, the advisor has a clear framework for the asset allocation process. The guidelines define the boundaries within which the portfolio will be constructed, ensuring that the resulting allocation is consistent with the client's documented objectives and constraints. They also provide a basis for the quantitative methods—such as mean-variance optimization and Monte Carlo simulation—that will be used to derive the optimal mix of assets.
 
-## 7.3 Mean-Variance Optimization
+## Mean-Variance Optimization
 
 Mean-variance optimization, first formalized by @markowitz1952portfolio, provides the theoretical foundation for portfolio construction. Markowitz’s work transformed finance by moving the focus from individual security selection to the statistical relationships between all assets in a portfolio. It offers a systematic method for combining assets to achieve the highest expected return for a given level of risk, or the lowest risk for a given level of expected return. The inputs are the capital market assumptions from Chapter 6: expected returns, volatilities, and correlations for each asset class. The output is a set of efficient portfolios. Each portfolio on the efficient frontier offers the maximum expected return for its level of risk. No portfolio exists with a higher expected return for the same risk, or with lower risk for the same expected return.
 
@@ -103,7 +111,7 @@ This sensitivity is known as the garbage-in, garbage-out problem. If the expecte
 
 The practical consequence is that raw mean-variance optimization often produces concentrated portfolios that lack diversification. The optimizer identifies the asset class with the highest expected return and allocates heavily to it. When the future unfolds differently than the point estimates anticipated, the concentrated portfolio suffers disproportionately.
 
-## 7.4 Improving MVO: Resampling and Constraints
+## Improving MVO: Resampling and Constraints
 
 The sensitivity of mean-variance optimization to estimation error requires a response. Two complementary approaches have emerged: the imposition of constraints and the use of resampling techniques.
 
@@ -115,7 +123,7 @@ The recommended portfolio weights are the averages of the weights from all the s
 
 The distinction between constraints and resampling matters. Constraints are explicit. They reflect stated preferences and judgment about what constitutes a reasonable portfolio. Resampling is statistical. It reflects the uncertainty inherent in the estimation process. Both move the allocation away from the fragile optimum of a single optimization toward a more robust portfolio. These methods do not eliminate the need for judgment. The choice of constraints and the specification of the resampling process require decisions. But they provide a disciplined framework for incorporating uncertainty into the allocation process.
 
-## 7.5 Risk Perspectives: Shortfall and Downside Risk
+## Risk Perspectives: Shortfall and Downside Risk
 
 The mean-variance framework focuses on expected return and volatility. For many clients, particularly those in or near retirement, a different metric is more salient: the probability of falling short of their goals. This is shortfall risk.
 
@@ -151,7 +159,7 @@ The integration of these risk perspectives changes how candidate portfolios are 
 
 The final allocation should perform well across multiple risk dimensions. It should offer a reasonable expected return. It should have a high probability of meeting the threshold return. It should limit the magnitude of potential losses in adverse scenarios. No single metric captures all aspects of risk. A comprehensive evaluation requires considering the portfolio from multiple perspectives.
 
-## 7.6 The Black-Litterman Model
+## The Black-Litterman Model
 
 The Black-Litterman model, developed by @black1992global, addresses the instability of mean-variance optimization from a different angle. By utilizing a Bayesian framework, Black and Litterman allowed practitioners to blend market equilibrium with subjective investor views to produce stable, diversified asset weights. Rather than constraining or resampling from historical estimates, the model starts from market equilibrium and tilts only where the investor has specific views.
 
@@ -197,7 +205,7 @@ The Black-Litterman model has become an institutional standard for strategic ass
 
 The model does not eliminate the need for judgment. The choice of views, the calibration of $\tau$ and $\Omega$, and the estimation of the covariance matrix all require careful thought. But the framework provides a structured way to incorporate judgment into the allocation process. It anchors the portfolio in the market consensus and requires a reason to deviate. That discipline prevents the optimizer from chasing noise and produces allocations that are more likely to perform well in the future.
 
-## 7.7 Geographic and Currency Diversification
+## Geographic and Currency Diversification
 
 The strategic asset allocation framework developed to this point assumes a single-currency world. Investors operate in a multi-currency environment. The assets they hold are denominated in different currencies. Their spending is in their home currency. This introduces currency risk.
 
@@ -215,7 +223,7 @@ For equities, the case is less clear. Currency movements and equity returns are 
 
 A pragmatic approach, common in institutional practice, is to hedge the currency exposure of the fixed income allocation while leaving the equity allocation unhedged. This captures the volatility reduction benefits where the case is strongest while preserving the diversification of unhedged equities.
 
-## 7.8 Methods for Determining the Asset Mix
+## Methods for Determining the Asset Mix
 
 Several distinct philosophies compete for the attention of asset allocators. Each offers a different perspective on how to combine asset classes into a portfolio.
 
@@ -235,7 +243,7 @@ Goal-based allocation does not produce a single optimal portfolio in the mean-va
 
 Each method has its place. The traditional 60/40 portfolio suits investors who prefer simplicity. Risk parity suits those who seek a balanced risk profile and accept leverage. Goal-based allocation suits those with distinct goals and time horizons. The choice depends on circumstances, preferences, and investment philosophy.
 
-## 7.9 Behavioral Considerations in Asset Allocation
+## Behavioral Considerations in Asset Allocation
 
 The strategic asset allocation must be implemented. This is where behavioral considerations become paramount. A theoretically optimal allocation that the client cannot adhere to is not optimal.
 
@@ -253,7 +261,7 @@ Mental accounting also shapes implementation. Clients often treat different pool
 
 Behavioral considerations do not change the strategic allocation. They change how it is implemented and communicated. A successful advisor anticipates the behavioral obstacles and builds the implementation plan to navigate around them.
 
-## 7.10 Incorporating Sustainability and Global Trends
+## Incorporating Sustainability and Global Trends
 
 Many investors now wish to align their portfolios with environmental, social, and governance values. ESG investing has moved from a niche interest to a mainstream consideration. The strategic asset allocation must address how these preferences are incorporated.
 
@@ -269,7 +277,7 @@ What is clear is that ESG constraints affect portfolio construction. Exclusionar
 
 The debate over ESG and expected returns may miss the point. For many investors, the objective is not to maximize expected return. It is to achieve a satisfactory return while aligning the portfolio with their values. The strategic asset allocation should accommodate these preferences while being transparent about the trade-offs involved.
 
-## 7.11 Revisiting and Adjusting the Allocation
+## Revisiting and Adjusting the Allocation
 
 Strategic asset allocation is not a one-time decision. It requires ongoing maintenance. Markets move. Asset classes perform differently. The portfolio drifts from its target allocation.
 
@@ -287,7 +295,7 @@ The third line of defense is to prioritize sales of assets with the highest cost
 
 The strategic allocation itself should be reviewed periodically, typically annually, or when material changes occur in the client's circumstances or the capital market assumptions. A significant shift in valuations, a change in the interest rate environment, or a revision to the economic outlook may warrant an adjustment to the policy weights. The review process is documented in the IPS. It ensures that the allocation remains aligned with the client's objectives and with the evolving investment landscape.
 
-## 7.12 Application: The Schmidt-Miller Family
+## Application: The Schmidt-Miller Family
 
 We now apply the strategic asset allocation framework to the Schmidt-Miller family. The objective is to produce a policy portfolio that respects the constraints documented in the IPS, incorporates the capital market assumptions from Chapter 6, and addresses the behavioral considerations identified in Chapter 4.
 

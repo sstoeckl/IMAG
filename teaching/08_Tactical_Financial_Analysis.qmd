@@ -6,7 +6,7 @@ title: "Tactical Financial Analysis"
 **Associated slides:** [Lesson 5 — Tactical Allocation & Security Selection](../slides/lesson-05-taa-security.html)
 :::
 
-## 8.1 Introduction
+## Introduction
 
 Strategic asset allocation, the subject of Chapter 7, establishes the long-term policy mix. It anchors the portfolio. It determines exposure to systematic risk factors and drives the bulk of long-term returns. But the policy mix is static by design. It does not respond to changing market conditions, shifting valuations, or emerging opportunities.
 
@@ -22,7 +22,7 @@ This does not render tactical allocation futile. It demands humility. Deviations
 
 We turn now to the tools and frameworks that support tactical financial analysis. The sources of tactical opportunity will be examined. Methods for evaluating those opportunities will be explored. The disciplines required for effective implementation will be set out. Valuation signals, momentum, sentiment indicators, and macroeconomic analysis each play a role. So too do the behavioral pitfalls that make tactical allocation harder in practice than it appears on paper. The aim is not to promise easy alpha. It is to provide a clear-eyed assessment of what tactical allocation can achieve—and what it cannot.
 
-## 8.2 Theoretical Foundation: Why TAA is Possible (and Hard)
+## Theoretical Foundation: Why TAA is Possible (and Hard)
 
 Before examining how tactical asset allocation is implemented, we must understand why it might work—and why it so often fails. The theoretical foundation rests on three pillars: the Efficient Market Hypothesis, the behavioral critique of that hypothesis, and the Fundamental Law of Active Management, which quantifies the conditions under which tactical deviations can add value.
 
@@ -56,7 +56,7 @@ This does not mean tactical allocation should be abandoned. It means expectation
 
 The theoretical foundation yields a practical conclusion. Tactical deviations should be modest. The strategic allocation does the heavy lifting. Tactical overlays provide a marginal contribution, one that is welcome but not essential. Framed this way, tactical asset allocation becomes a reasonable pursuit rather than a false promise. It is a search for incremental alpha, pursued with discipline and humility, grounded in a clear understanding of the odds.
 
-## 8.3 Macro-Fundamental Tactical Analysis
+## Macro-Fundamental Tactical Analysis
 
 Chapter 6 established the economic variables that drive long-term asset class returns. Tactical analysis uses those same variables differently. Rather than forming ten-year expectations, it focuses on momentum and surprises—the deviation of current data from consensus forecasts and the speed at which conditions are changing.
 
@@ -88,7 +88,7 @@ Macro-fundamental tactical analysis integrates these approaches. Economic surpri
 
 Yet the fundamental challenge remains. These signals are widely followed. Any edge they provide erodes as more investors act on them. The tactical allocator must be faster, more disciplined, or more insightful than the competition. That is a demanding standard. It is also the reason tactical deviations should remain modest, a complement to the strategic allocation rather than a replacement for it.
 
-## 8.4 Sentiment and Behavioral Indicators
+## Sentiment and Behavioral Indicators
 
 Macro-fundamental analysis examines economic data and valuation relationships. Sentiment analysis examines the mood of the market. When fear or greed reaches an extreme, prices disconnect from fundamentals. The tactical allocator who can identify these extremes can position for the reversal.
 
@@ -108,7 +108,7 @@ The pain trade crystallizes this thinking. It describes the market movement that
 
 Sentiment analysis does not provide precise timing signals. Extreme readings can persist. Fear can deepen. Greed can extend further. The tactical allocator who acts too early absorbs losses while waiting for the reversal. Combining sentiment signals with other inputs improves the odds. A valuation extreme accompanied by a sentiment extreme is more powerful than either alone—the market is both expensive and complacent, or both cheap and fearful. These conjunctions are rare, but they offer the most compelling tactical opportunities. When they appear, the tactical allocator pays attention. When they are absent, patience is the wiser course.
 
-## 8.5 Technical Analysis in a Portfolio Context
+## Technical Analysis in a Portfolio Context
 
 Technical analysis occupies an uneasy place in the investment profession. Academics largely dismiss it. The Efficient Market Hypothesis, in its weak form, holds that past prices cannot predict future returns. Patterns in historical data should not generate excess returns. Applied managers, however, often take a different view. They use technical tools not to predict the future with certainty but to manage entry and exit points, to impose discipline on decision-making, and to assess the balance of supply and demand in markets.
 
@@ -132,7 +132,7 @@ Technical tools serve an integrating function. Fundamental analysis identifies t
 
 That process, however, must be followed with discipline. The tools are only as good as the hands that wield them. A trend-following signal ignored is worthless. A stop-loss that is repeatedly moved lower defeats its purpose. The behavioral pitfalls that make tactical allocation difficult—overconfidence, regret aversion, anchoring—apply as much to technical analysis as to any other approach. The tools provide structure. They do not provide immunity from human nature.
 
-## 8.6 Implementing TAA: The Tracking Error Budget
+## Implementing TAA: The Tracking Error Budget
 
 Tactical asset allocation cannot be implemented at will. A professional firm operates within constraints, and the most important of these is the tracking error budget. This budget defines how far the actual portfolio may stray from the strategic benchmark. It is the risk control that prevents tactical enthusiasm from overwhelming the long-term plan.
 
@@ -162,7 +162,7 @@ A disciplined implementation framework integrates the tracking error budget, act
 
 This framework keeps tactical allocation in its proper place. It is a supplement to the strategic allocation, not a replacement. It operates within defined boundaries. It must clear a cost hurdle before it is implemented. These constraints are not obstacles to performance. They are guardrails that prevent tactical enthusiasm from damaging the long-term plan.
 
-## 8.8 Case Study: The Schmidt-Miller Tactical Pivot
+## Case Study: The Schmidt-Miller Tactical Pivot
 
 The Schmidt-Miller family's strategic asset allocation, established in Chapter 7, positions the long-term portfolio at 35 percent global equities, 15 percent Swiss equities, 30 percent corporate bonds, and 20 percent government bonds. The equity allocation is capped at 50 percent. Portfolio volatility is held below 10 percent. These constraints reflect Klaus's loss aversion. The allocation is designed to deliver a 6 to 8 percent return over the long term while protecting against the downside scenarios that keep Klaus awake at night.
 

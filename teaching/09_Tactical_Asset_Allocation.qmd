@@ -6,7 +6,7 @@ title: "Tactical Asset Allocation"
 **Associated slides:** [Lesson 5 — Tactical Allocation & Security Selection](../slides/lesson-05-taa-security.html)
 :::
 
-## 9.1 Introduction: The Tactical Tilt
+## Introduction
 
 Chapter 8 established the theoretical foundation for tactical decision-making. We examined the economic signals, sentiment indicators, and technical tools that inform short-term deviations from the strategic allocation. We also examined the constraints—the tracking error budget, the cost hurdle, and the behavioral pitfalls—that keep tactical allocation in its proper place. This chapter turns from theory to practice. It addresses the mechanics of implementing tactical views within a portfolio that remains anchored to its long-term policy weights.
 
@@ -28,7 +28,7 @@ The funding requirement forces clarity. The tactical allocator cannot simply exp
 
 This chapter develops the mechanics of tactical implementation. We examine how active weights are constructed, how the funding decision shapes the overall risk profile, and how tactical tilts interact with the rebalancing policy that maintains the strategic allocation. We also address the practical challenges of implementing tactical views in a multi-asset, multi-currency portfolio. The goal is not to prescribe a single approach but to provide a framework within which disciplined tactical decisions can be made.
 
-## 9.2 Governing the Leash: Tactical Constraints
+## Tactical Constraints
 
 Tactical asset allocation operates within boundaries. The strategic allocation anchors the portfolio, and tactical tilts are deviations from that anchor. Without constraints, tactical enthusiasm overwhelms the long-term plan. The portfolio drifts. Risk increases. The client's objectives, carefully documented in the IPS, are no longer served.
 
@@ -50,7 +50,7 @@ These constraints also protect the tactical allocator from behavioral errors. Lo
 
 For a portfolio that does not use derivatives, these constraints are the primary risk management tool. There is no quick hedge to offset a tactical position that has gone wrong. The only way to reduce risk is to sell the position and return to strategic weights. The corridor sets the boundary at which that exit becomes mandatory. The tactical allocator can exit earlier, but the corridor ensures that exit cannot come later.
 
-## 9.3 Implementation: Physical Rebalancing
+## Physical Rebalancing
 
 Tactical decisions are made in the abstract. They are executed in the market. The difference between the two is friction, and friction costs money.
 
@@ -66,7 +66,7 @@ Cash drag introduces a further complication. When a tactical shift requires sell
 
 The tactical allocator who ignores implementation shortfall is flying blind. The allocator who measures it, estimates it in advance, and structures trades to minimize it has an edge. That edge is not alpha in the traditional sense—it is not a forecast of market direction. But costs avoided are returns earned. In a zero-sum game where gross alpha is scarce, operational discipline can make the difference between a tactical process that adds value and one that does not.
 
-## 9.4 Performance Attribution: The Brinson-Fachler Model
+## The Brinson-Fachler Model
 
 A tactical process makes promises. It promises that deviations from the strategic allocation will add value, that the tilts will be right more often than wrong, and that the net result after costs will be positive. Performance attribution tests these promises. It decomposes the portfolio's return into components that reveal exactly where value was added and where it was destroyed.
 
@@ -106,7 +106,7 @@ The Brinson-Fachler model serves multiple audiences. For the client, it provides
 
 Measurement without action is sterile. The tactical allocator uses the attribution results to refine the process. If the allocation effect is persistently negative, the signals require review. Perhaps the valuation metrics are mistimed. Perhaps the sentiment indicators are giving false readings. If the selection effect is negative, the choice of funds or securities within each asset class needs attention. The Brinson-Fachler framework not only answers the question of whether value was added. It shows where to look when value is not being added.
 
-## 9.5 The Black-Litterman Active Tilt
+## The Black-Litterman Active Tilt
 
 Chapter 7 introduced the Black-Litterman model as a framework for strategic asset allocation. The same framework extends naturally to tactical tilts. Where strategic Black-Litterman starts from market equilibrium weights and tilts toward long-term views, tactical Black-Litterman starts from the strategic allocation and tilts toward short-term views. The mechanism is the same. Only the reference portfolio and the horizon of the views differ.
 
@@ -126,7 +126,7 @@ For the Schmidt-Miller portfolio, tactical Black-Litterman operates within the c
 
 The process integrates conviction, risk, and cost into a single framework. The tactical allocator specifies the view and the confidence. The model calculates the trade. The constraints ensure that the trade remains within the bounds set by the IPS and the tracking error budget. What emerges is a disciplined approach to tactical allocation, one that respects both the opportunities that markets present and the frictions that real-world implementation imposes.
 
-## 9.6 Tax-Aware Execution: The Friction of Physical Trading
+## The Friction of Physical Trading
 
 Tactical asset allocation assumes that assets can be traded freely, that the only frictions are commissions and spreads. For taxable investors, this assumption breaks down. Every sale crystallizes a gain or a loss. Every gain triggers a tax liability. The tax cost of a tactical trade can exceed all other costs combined.
 
@@ -144,7 +144,7 @@ This approach requires coordination between the tactical process and the tax man
 
 The constraint is real, but it is not paralyzing. A taxable portfolio can still engage in tactical allocation. It simply must do so with greater care. Trades must be larger and more conviction-driven to overcome the tax hurdle. Holding periods must be longer to amortize the tax cost over more expected return. And the tactical process must integrate tax awareness into every decision, not as an afterthought but as a core component of the implementation framework. The tax tail does not wag the investment dog, but it certainly shapes how the dog moves.
 
-## 9.7 Behavioral Pitfalls in Execution
+## Behavioral Pitfalls in Execution
 
 Tactical allocation demands discipline. The frameworks are elegant. The models are precise. But the person executing the trades is human, subject to the same biases that distort all decision-making under uncertainty. Three pitfalls deserve particular attention.
 
@@ -158,7 +158,7 @@ Window dressing is a different kind of failure. It occurs when trades are motiva
 
 The antidote is transparency. Every trade should be linked to a documented rationale. The Brinson-Fachler attribution framework, introduced in Section 9.4, exposes cosmetic trades for what they are: deviations without purpose, costs without benefit. A quarterly review that traces each tactical decision back to its original signal and evaluates its contribution to performance leaves no room for window dressing.
 
-## 9.8 Case Study: Schmidt-Miller Tactical Audit
+## Case Study: Schmidt-Miller Tactical Audit
 
 The Schmidt-Miller portfolio held 12 percent in global government bonds as part of its strategic allocation. In early 2024, inflation data began to surprise to the upside. Energy prices rose. Wage growth accelerated. The Investment Clock rotated toward Stagflation. The tactical signal, based on the macro-fundamental analysis from Section 8.3, indicated an overweight to commodities and an underweight to long-term government bonds.
 
@@ -176,7 +176,7 @@ This is the reality of tactical allocation for a taxable investor. The trade was
 
 The audit reinforces the discipline. Every tactical decision carries a tax consequence. Every trade consumes a portion of the tracking error budget. Implementation shortfall is not a theoretical concept. It is measured in euros, and it compounds. The tactical allocator who internalizes these frictions—who treats the after-tax, after-cost return as the only return that matters—will trade less often, with greater conviction, and with a clearer understanding of what it takes to add value in the real world.
 
-### Exhibit 9.1: Brinson-Fachler Performance Attribution
+### Brinson-Fachler Performance Attribution
 
 *(Returns and weights for a 6-month tactical period)*
 

@@ -6,7 +6,7 @@ title: "Performance Analysis"
 **Associated slides:** [Lesson 6 — Performance Measurement & Feedback Loop](../slides/lesson-06-performance.html)
 :::
 
-## 12.1 Introduction: The Accountability Framework
+## Introduction
 
 The investment process is a cycle. It begins with understanding the client. It proceeds through setting policy, constructing the strategic allocation, considering tactical tilts, selecting securities, and implementing the portfolio. Performance analysis is the final stage—the point at which the cycle closes and begins again. It asks what happened, why it happened, and what should change as a result.
 
@@ -20,7 +20,7 @@ The Schmidt-Miller family will receive a year-end report that embodies this fram
 
 This chapter develops the tools of performance analysis. We begin with measurement—the calculation of returns using methodologies that are standard across the industry. We then turn to attribution, revisiting the Brinson-Fachler framework from Chapter 9 and extending it to multi-asset, multi-currency portfolios. We address the benchmarks against which performance should be evaluated and the common pitfalls that make performance appear better or worse than it truly is. The chapter concludes with the Schmidt-Miller performance review, a concrete application of the framework to the family's portfolio after its first year of operation.
 
-## 12.2 Performance Measurement: The Mathematics of Return
+## Performance Measurement
 
 Performance measurement begins with a simple question: what was the return? The answer depends on who is asking and why.
 
@@ -52,7 +52,7 @@ Reporting should present both gross and net returns. Gross returns enable the cl
 
 For the Schmidt-Miller family, the performance report will present TWR for evaluating the investment process and MWR for evaluating their actual wealth growth. Gross returns will be shown alongside the deduction of management fees, custody costs, and the tax impact of realized gains. The net return is the number that matters for their goals. The gross return is the number that matters for judging whether the advisory fees are justified. Both will be clearly labeled, clearly explained, and clearly distinguished. Klaus is too analytical to tolerate obfuscation, and the advisory relationship is too important to risk it.
 
-## 12.3 Risk-Adjusted Performance Appraisal
+## Risk-Adjusted Performance Appraisal
 
 A high return is meaningless without knowing the risk taken to achieve it. Two portfolios can both earn 8 percent. One achieved it through low-cost index funds that tracked the market. The other achieved it through leveraged bets that happened to pay off. The returns are identical. The quality of the outcomes is not. Risk-adjusted appraisal distinguishes between them. It asks not just what was earned but whether the return was adequate compensation for the risk borne.
 
@@ -96,7 +96,7 @@ The Fundamental Law of Active Management, introduced in Chapter 8, provides the 
 
 Each ratio illuminates a different dimension of performance. The Sharpe ratio evaluates total return relative to total risk. The Treynor ratio evaluates return relative to market risk. Jensen's alpha tests whether returns exceeded those predicted by the CAPM. The Information Ratio evaluates the efficiency of active management. No single measure tells the full story. A comprehensive appraisal uses all four, along with the qualitative context that numbers alone cannot provide. A high Sharpe ratio achieved through leveraged bets in a rising market is not the same as a high Sharpe ratio achieved through diversified, low-cost investing. The numbers are the starting point. Judgment is the destination.
 
-## 12.4 Macro Attribution: The Fund Sponsor's View
+## Macro Attribution: The Fund Sponsor's View
 
 Performance can be analyzed at multiple levels. Macro attribution examines decisions made at the highest level—the strategic asset allocation documented in the IPS and the tactical tilts applied to it. This is the view of the fund sponsor, the investment committee, or the family office that sets policy and delegates implementation.
 
@@ -110,7 +110,7 @@ Macro attribution frames the conversation. Before examining the details of which
 
 For the Schmidt-Miller family, macro attribution answers the questions Klaus will ask. Did the strategic allocation deliver the 6 to 8 percent return it was designed to achieve? Did the tactical tilts add or subtract? Was the tracking error incurred by those tilts justified by the excess return they generated? The answers appear in a simple table. Policy return, incremental return, active return. Positive numbers are good. Negative numbers demand explanation. The macro view sets the stage for the micro analysis that follows.
 
-## 12.5 Micro Attribution: The Brinson-Fachler Model
+## Micro Attribution: The Brinson-Fachler Model
 
 Micro attribution decomposes the active return into its components. Where macro attribution asks whether value was added, micro attribution asks how. The Brinson-Fachler model, introduced in Chapter 9, provides the framework. It separates the active return into allocation effects, selection effects, and an interaction term that captures the overlap between the two.
 
@@ -148,7 +148,7 @@ The total active return is $1.36\% + 0.24\% - 0.30\% + 0.20\% + 0.05\% = 1.55\%$
 
 Micro attribution provides a diagnostic tool. A consistently negative allocation effect suggests the tactical process requires review. A consistently negative selection effect suggests the choice of funds or securities within asset classes is flawed. The attribution points to where the problem lies. It does not prescribe the solution, but it narrows the search. For the Schmidt-Miller family, presented as part of the annual performance review, the attribution table will show exactly where value was added and where it was lost. Klaus will study it. The analysis must be robust enough to withstand his scrutiny.
 
-## 12.6 Factor-Based Attribution: The Fama-French Audit
+## Factor-Based Attribution: The Fama-French Audit
 
 Sector attribution tells part of the story. It reveals whether overweighting financials or underweighting technology added value. But sector classifications mask the underlying forces that drive returns. Two technology stocks can have very different factor exposures. One might be a large-cap growth stock trading at a high multiple. Another might be a mid-cap value stock with strong profitability. Their returns will be driven more by their factor characteristics than by their sector membership. Factor-based attribution addresses this reality.
 
@@ -162,7 +162,7 @@ Exposure analysis serves a second purpose: verifying that the manager stayed tru
 
 For the Schmidt-Miller portfolio, the global quality ETF selected in Chapter 10 should exhibit persistent exposure to the profitability factor. The Swiss value fund should load on the value factor. The annual attribution report will test these expectations. If the quality ETF behaved like a broad market fund, delivering no discernible quality tilt, the selection failed regardless of its absolute return. The factor audit holds the portfolio accountable not just for its returns but for its character.
 
-## 12.7 Fixed Income Attribution: The Yield Curve Audit
+## Fixed Income Attribution: The Yield Curve Audit
 
 Fixed income returns are driven by different forces than equity returns. The passage of time, the shape of the yield curve, and changes in credit spreads all affect bond prices in ways that have no equity counterpart. Fixed income attribution decomposes returns according to these distinct drivers.
 
@@ -180,7 +180,7 @@ For the Schmidt-Miller portfolio, fixed income attribution is essential. The gov
 
 The attribution report for fixed income will be presented alongside the equity attribution in the family's annual review. It will show, in currency terms, where each basis point of return came from. Klaus will see that the bond ladder performed as designed—low return, low volatility, reliable income. Elke will see that the corporate bond allocation contributed positively but with greater variability. The analysis confirms that the portfolio is doing what it was built to do. That confirmation is the purpose of performance analysis. Not to celebrate winners or lament losers, but to verify that outcomes align with intentions and to identify where they do not.
 
-## 12.8 Sustainability (ESG) Performance Audit
+## Sustainability (ESG) Performance Audit
 
 ESG integration was presented in Chapter 10 as a quality overlay, a lens through which to identify risks that financial statements had not yet priced. Performance analysis tests whether that lens improved outcomes. The question is empirical: did the ESG tilt add to returns, subtract from them, or leave them unchanged?
 
@@ -194,7 +194,7 @@ Governance risk mitigation is the most tangible benefit of ESG integration. A co
 
 The audit identifies governance-related losses in the benchmark that the portfolio avoided. It does not predict future scandals. It documents past ones. Over time, a pattern of avoided blow-ups provides evidence that the governance screen is working. A single avoided scandal can justify years of incremental ESG costs. The audit quantifies that benefit.
 
-## 12.9 Professional Standards: GIPS Compliance
+## Professional Standards: GIPS Compliance
 
 Performance figures are easily manipulated. A manager can present the returns of their best-performing account while ignoring the rest. They can choose a benchmark that flatters their results. They can report gross returns without disclosing the fees that reduce net returns to the client. The Global Investment Performance Standards, or GIPS, exist to prevent these abuses.
 
