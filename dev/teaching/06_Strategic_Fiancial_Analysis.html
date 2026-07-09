@@ -283,6 +283,11 @@ window.Quarto = {
   <li><a href="#scenario-analysis-for-the-schmidt-miller-portfolio" id="toc-scenario-analysis-for-the-schmidt-miller-portfolio" class="nav-link" data-scroll-target="#scenario-analysis-for-the-schmidt-miller-portfolio"><span class="header-section-number">6.7.6</span> Scenario Analysis for the Schmidt-Miller Portfolio</a></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">6.7.7</span> Conclusion</a></li>
   </ul></li>
+  <li><a href="#strategic-financial-analysis-in-the-imag-simulation" id="toc-strategic-financial-analysis-in-the-imag-simulation" class="nav-link" data-scroll-target="#strategic-financial-analysis-in-the-imag-simulation"><span class="header-section-number">6.8</span> Strategic Financial Analysis in the IMAG Simulation</a>
+  <ul class="collapse">
+  <li><a href="#reading-the-economic-outlook" id="toc-reading-the-economic-outlook" class="nav-link" data-scroll-target="#reading-the-economic-outlook"><span class="header-section-number">6.8.1</span> Reading the Economic Outlook</a></li>
+  <li><a href="#building-capital-market-assumptions" id="toc-building-capital-market-assumptions" class="nav-link" data-scroll-target="#building-capital-market-assumptions"><span class="header-section-number">6.8.2</span> Building Capital Market Assumptions</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -1675,6 +1680,67 @@ Figure&nbsp;6.4: The Investment Clock
 <p>The capital market assumptions developed in this section provide the foundation for the strategic asset allocation to be undertaken in Chapter 7. The assumptions reflect a careful synthesis of historical analysis, current market conditions, and economic forecasting. They acknowledge the challenging environment of low bond yields and moderate equity returns. They are tailored to the Schmidt-Miller family’s investment universe and constraints.</p>
 <p>The central insight is that the required return of 6 to 8 percent cannot be achieved without a meaningful allocation to equities. This allocation will expose the portfolio to volatility that tests Klaus’s loss aversion. The goal-based segmentation documented in the IPS provides the mechanism for managing this tension. The near-term goals are protected in conservative instruments. The long-term portfolio pursues growth. The combination allows the family to pursue their objectives while respecting Klaus’s psychological boundaries.</p>
 <p>With capital market assumptions established, we now turn to the task of strategic asset allocation. Chapter 7 will determine the specific mix of asset classes for each segment of the Schmidt-Miller portfolio, using the assumptions developed here as inputs to the optimization process.</p>
+</section>
+</section>
+<section id="strategic-financial-analysis-in-the-imag-simulation" class="level2" data-number="6.8">
+<h2 data-number="6.8" class="anchored" data-anchor-id="strategic-financial-analysis-in-the-imag-simulation"><span class="header-section-number">6.8</span> Strategic Financial Analysis in the IMAG Simulation</h2>
+<p>The framework developed in this chapter translates directly into the IMAG simulation. The same analytical sequence we applied to the Schmidt-Miller family, moving from economic data to capital market assumptions, becomes the process by which we form return expectations for our portfolio. The Economic Outlook tab provides the data we need. Our task is to interpret it.</p>
+<section id="reading-the-economic-outlook" class="level3" data-number="6.8.1">
+<h3 data-number="6.8.1" class="anchored" data-anchor-id="reading-the-economic-outlook"><span class="header-section-number">6.8.1</span> Reading the Economic Outlook</h3>
+<p>The Economic Outlook presents several categories of information, each of which connects to a concept from this chapter.</p>
+<div id="fig-elementwise" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-elementwise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="graphics/Strategic_Financial_Analysis/Interest-Rates.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-elementwise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.5: IMAG Interest Rates
+</figcaption>
+</figure>
+</div>
+<p>Interest rates are reported across five currencies and the full maturity spectrum, from short-term policy rates through ten-year government bond yields. These rates anchor our fixed income return expectations through the yield-based building block approach. The current yield to maturity on a government bond portfolio is the starting point for its expected return. When yields are low, as they are in EUR and JPY, expected bond returns are correspondingly low. When yields are higher, expected returns rise. The shape of the yield curve in each currency provides additional information. A steep curve suggests expectations of stronger growth and potentially higher inflation. A flat or inverted curve signals caution about the economic outlook.</p>
+<div id="fig-elementwise" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-elementwise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="graphics/Strategic_Financial_Analysis/Economic-Fundamentals.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-elementwise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.6: IMAG Economic Fundamentals
+</figcaption>
+</figure>
+</div>
+<p>Economic fundamentals track GDP, inflation, unemployment, and consumer and business confidence across the United States, United Kingdom, Eurozone, Switzerland, and Japan. These variables are the raw material for the business cycle analysis we developed earlier in this chapter. Where does each economy stand? The US, with rising confidence, improving GDP, and falling unemployment, shows signs of recovery. Europe reports rebounding growth alongside inflation below one percent and continued quantitative easing from the European Central Bank, suggesting an accommodative policy environment. Japan presents steady GDP growth paired with persistent unemployment and a stock market that has lagged the global rally, a mixed picture that demands careful interpretation. Identifying each region’s position in the business cycle tells us which asset classes are likely to lead and which to lag.</p>
+<div id="fig-elementwise" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-elementwise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="graphics/Strategic_Financial_Analysis/Global-Report.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-elementwise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.7: IMAG Global economic report
+</figcaption>
+</figure>
+</div>
+<p>Narrative reports provide context that numbers alone cannot capture. The global economic report frames the central question of the current environment. A strong equity rally following a downturn forces us to assess whether the recovery is sustainable or temporary. Regional outlooks add detail about growth trajectories, inflation dynamics, and central bank policy. The industry and factor outlook highlights sector-specific developments and factor performance trends. A breakthrough in healthcare may boost the sector while analysts remain skeptical about commercial potential, creating both opportunity and uncertainty. Factor returns on value, momentum, and robustness reveal which investment styles are currently driving performance.</p>
+<div id="fig-elementwise" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-elementwise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="graphics/Strategic_Financial_Analysis/Hist-Performance.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-elementwise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.8: IMAG Performance of market segments
+</figcaption>
+</figure>
+</div>
+<p>Historical performance data covers government bonds, corporate bonds, equities, and alternative assets. These figures provide the empirical context discussed in our historical risk and return analysis. Past returns establish a baseline but must be interpreted with caution. Strong recent equity performance does not guarantee strong future performance. The relationship between current yields and subsequent bond returns is more mechanical. The data also reveals how different segments have behaved under varying economic conditions, informing our assessment of how they might behave going forward.</p>
+<p>Corporate credit spreads and equity factor returns complete the dataset. Credit spreads tell us how the market is pricing default risk and risk appetite. Narrow spreads suggest confidence. Wide spreads signal concern. Equity factor returns indicate whether value, momentum, or robustness strategies are contributing to or detracting from overall equity performance.</p>
+</section>
+<section id="building-capital-market-assumptions" class="level3" data-number="6.8.2">
+<h3 data-number="6.8.2" class="anchored" data-anchor-id="building-capital-market-assumptions"><span class="header-section-number">6.8.2</span> Building Capital Market Assumptions</h3>
+<p>The simulation structures the investment universe along two dimensions: asset class and currency. Four asset classes are available: government bonds, corporate bonds, equities, and alternatives. Each is divided into five currency segments: USD, GBP, EUR, CHF, and JPY. Alternatives are available only in USD. A market segment is the intersection of the two, such as EUR corporate bonds or CHF equities.</p>
+<p>We must develop return expectations for each market segment. The process follows the logical chain we established in this chapter. Government bond yields provide the foundation. The current yield to maturity anchors the expected return. Adjustments for expected rate changes, reinvestment income, and the shape of the yield curve refine the estimate. Corporate bond expectations build on government bond yields by adding credit spreads and subtracting expected default losses. Equity expectations build from the risk-free rate and the equity risk premium, adjusted for factor exposures that may tilt returns above or below the broad market.</p>
+<p>The simulation provides analyst estimates as a starting point. These represent a baseline forecast grounded in the data. We can accept these estimates or adjust them based on our own interpretation of the economic environment. If we believe the European recovery will accelerate, we might raise expected returns for EUR equities. If we see inflation risks building in the US, we might lower expected returns for long-duration USD government bonds. Each adjustment reflects a judgment about how economic conditions will translate into asset class performance.</p>
+<p>Consistency across our assumptions is essential. An assumption of strong equity returns paired with weak economic growth requires a specific rationale, such as expanding profit margins. An assumption of rising bond yields paired with falling inflation is incoherent. The business cycle framework helps maintain this consistency. If the US is in recovery, we expect equities and corporate bonds to lead while government bonds lag. If Europe remains in an accommodative policy environment, low bond yields are consistent with supportive conditions for risk assets. Our capital market assumptions must tell a coherent story across asset classes and currencies.</p>
+<p>The output of this process is the set of expected returns, volatilities, and correlations that will serve as inputs for our strategic asset allocation. The quality of these assumptions depends on how carefully we read the data, how thoughtfully we apply the analytical frameworks from this chapter, and how honestly we acknowledge the uncertainty inherent in any forecast.</p>
 
 
 </section>
