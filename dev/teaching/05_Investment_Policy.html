@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -41,10 +41,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-fc191d7e8f366277d9793a5632231daa.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5a68c98b437a3c78657a768ab97f9fd3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -190,12 +190,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Performance Analysis</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./13_Feedback_Loop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Feedback Loop</span></span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -209,22 +203,28 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">5.1</span> Introduction</a></li>
   <li><a href="#firm-level-investment-policy" id="toc-firm-level-investment-policy" class="nav-link" data-scroll-target="#firm-level-investment-policy"><span class="header-section-number">5.2</span> Firm-Level Investment Policy</a>
   <ul class="collapse">
-  <li><a href="#components-of-a-firm-level-investment-policy" id="toc-components-of-a-firm-level-investment-policy" class="nav-link" data-scroll-target="#components-of-a-firm-level-investment-policy"><span class="header-section-number">5.2.1</span> Components of a Firm-Level Investment Policy</a></li>
-  <li><a href="#firm-level-policy-example" id="toc-firm-level-policy-example" class="nav-link" data-scroll-target="#firm-level-policy-example"><span class="header-section-number">5.2.2</span> Firm-Level Policy Example</a></li>
-  <li><a href="#how-investment-policies-attract-clients" id="toc-how-investment-policies-attract-clients" class="nav-link" data-scroll-target="#how-investment-policies-attract-clients"><span class="header-section-number">5.2.3</span> How Investment Policies Attract Clients</a></li>
+  <li><a href="#investment-philosophy" id="toc-investment-philosophy" class="nav-link" data-scroll-target="#investment-philosophy"><span class="header-section-number">5.2.1</span> Investment Philosophy</a></li>
+  <li><a href="#asset-allocation-framework" id="toc-asset-allocation-framework" class="nav-link" data-scroll-target="#asset-allocation-framework"><span class="header-section-number">5.2.2</span> Asset Allocation Framework</a></li>
+  <li><a href="#risk-management-principles" id="toc-risk-management-principles" class="nav-link" data-scroll-target="#risk-management-principles"><span class="header-section-number">5.2.3</span> Risk Management Principles</a></li>
+  <li><a href="#ethical-and-esg-considerations" id="toc-ethical-and-esg-considerations" class="nav-link" data-scroll-target="#ethical-and-esg-considerations"><span class="header-section-number">5.2.4</span> Ethical and ESG Considerations</a></li>
+  <li><a href="#the-function-of-a-firm-level-policy" id="toc-the-function-of-a-firm-level-policy" class="nav-link" data-scroll-target="#the-function-of-a-firm-level-policy"><span class="header-section-number">5.2.5</span> The Function of a Firm-Level Policy</a></li>
   </ul></li>
   <li><a href="#client-specific-investment-policy-statement" id="toc-client-specific-investment-policy-statement" class="nav-link" data-scroll-target="#client-specific-investment-policy-statement"><span class="header-section-number">5.3</span> Client-Specific Investment Policy Statement</a>
   <ul class="collapse">
-  <li><a href="#what-is-an-investment-policy-statement" id="toc-what-is-an-investment-policy-statement" class="nav-link" data-scroll-target="#what-is-an-investment-policy-statement"><span class="header-section-number">5.3.1</span> What Is an Investment Policy Statement?</a></li>
-  <li><a href="#structure-of-an-investment-policy-statement" id="toc-structure-of-an-investment-policy-statement" class="nav-link" data-scroll-target="#structure-of-an-investment-policy-statement"><span class="header-section-number">5.3.2</span> Structure of an Investment Policy Statement</a></li>
-  <li><a href="#the-ips-as-a-behavioral-guardrail" id="toc-the-ips-as-a-behavioral-guardrail" class="nav-link" data-scroll-target="#the-ips-as-a-behavioral-guardrail"><span class="header-section-number">5.3.3</span> The IPS as a Behavioral Guardrail</a></li>
-  <li><a href="#the-ips-as-a-living-document" id="toc-the-ips-as-a-living-document" class="nav-link" data-scroll-target="#the-ips-as-a-living-document"><span class="header-section-number">5.3.4</span> The IPS as a Living Document</a></li>
+  <li><a href="#structure-of-an-investment-policy-statement" id="toc-structure-of-an-investment-policy-statement" class="nav-link" data-scroll-target="#structure-of-an-investment-policy-statement"><span class="header-section-number">5.3.1</span> Structure of an Investment Policy Statement</a></li>
+  <li><a href="#the-ips-as-a-behavioral-guardrail" id="toc-the-ips-as-a-behavioral-guardrail" class="nav-link" data-scroll-target="#the-ips-as-a-behavioral-guardrail"><span class="header-section-number">5.3.2</span> The IPS as a Behavioral Guardrail</a></li>
+  <li><a href="#the-ips-as-a-living-document" id="toc-the-ips-as-a-living-document" class="nav-link" data-scroll-target="#the-ips-as-a-living-document"><span class="header-section-number">5.3.3</span> The IPS as a Living Document</a></li>
   </ul></li>
-  <li><a href="#drafting-the-schmidt-miller-ips" id="toc-drafting-the-schmidt-miller-ips" class="nav-link" data-scroll-target="#drafting-the-schmidt-miller-ips"><span class="header-section-number">5.4</span> Drafting the Schmidt-Miller IPS</a>
+  <li><a href="#drafting-the-schmidt-miller-investment-policy-statement" id="toc-drafting-the-schmidt-miller-investment-policy-statement" class="nav-link" data-scroll-target="#drafting-the-schmidt-miller-investment-policy-statement"><span class="header-section-number">5.4</span> Drafting the Schmidt-Miller Investment Policy Statement</a>
   <ul class="collapse">
   <li><a href="#client-identification-and-background" id="toc-client-identification-and-background" class="nav-link" data-scroll-target="#client-identification-and-background"><span class="header-section-number">5.4.1</span> Client Identification and Background</a></li>
+  <li><a href="#investment-objectives" id="toc-investment-objectives" class="nav-link" data-scroll-target="#investment-objectives"><span class="header-section-number">5.4.2</span> Investment Objectives</a></li>
+  <li><a href="#investment-constraints" id="toc-investment-constraints" class="nav-link" data-scroll-target="#investment-constraints"><span class="header-section-number">5.4.3</span> Investment Constraints</a></li>
+  <li><a href="#risk-tolerance-assessment" id="toc-risk-tolerance-assessment" class="nav-link" data-scroll-target="#risk-tolerance-assessment"><span class="header-section-number">5.4.4</span> Risk Tolerance Assessment</a></li>
+  <li><a href="#return-requirements" id="toc-return-requirements" class="nav-link" data-scroll-target="#return-requirements"><span class="header-section-number">5.4.5</span> Return Requirements</a></li>
+  <li><a href="#asset-allocation-and-investment-strategy-framework" id="toc-asset-allocation-and-investment-strategy-framework" class="nav-link" data-scroll-target="#asset-allocation-and-investment-strategy-framework"><span class="header-section-number">5.4.6</span> Asset Allocation and Investment Strategy Framework</a></li>
+  <li><a href="#schmidt-miller-family-investment-policy-statement-example" id="toc-schmidt-miller-family-investment-policy-statement-example" class="nav-link" data-scroll-target="#schmidt-miller-family-investment-policy-statement-example"><span class="header-section-number">5.4.7</span> Schmidt-Miller Family Investment Policy Statement (Example)</a></li>
   </ul></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">5.5</span> Conclusion</a></li>
   </ul>
 </nav>
     </div>
@@ -265,146 +265,206 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="introduction" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">5.1</span> Introduction</h2>
-<p>In the previous chapter we introduced a powerful framework for understanding clients. We learned to analyze their stage of life, the source of their wealth, their behavioral biases, and their personality types. We applied this framework to the Schmidt-Miller family, uncovering Klaus’s loss-averse conservatism, Elke’s emotional connection to her inherited portfolio, and Lukas’s overconfident risk-taking. We identified their goals, quantified their liquidity needs, assessed their risk tolerance, and calculated their return requirements. Now comes the task of translating the understanding of their finacial needs into an investment plan.</p>
-<p>An Investment Policy Statement, or IPS, is the document that bridges the gap between client analysis and portfolio construction. It takes everything we have learned about the client and translates it into a clear, written framework that will guide every investment decision made on their behalf. The IPS shows where the portfolio is going, it documents the agreement between advisor and client about how to get there.</p>
-<p>By the end of this chapter, you will understand not only what an Investment Policy Statement contains but also how to craft one that truly reflects the client’s complete financial needs. You will see how the concepts of client analysis translate into practical, actionable documents.</p>
+<p>In the previous chapter we introduced a framework for understanding clients. We learned to analyze their stage of life, the source of their wealth, their behavioral biases, and their personality types. We applied this framework to the Schmidt-Miller family and uncovered Klaus’s loss-averse conservatism, Elke’s emotional connection to her inherited portfolio, and Lukas’s overconfident risk-taking. We identified their goals, quantified their liquidity needs, assessed their risk tolerance, and calculated their return requirements.</p>
+<p>The analytical work is now complete. The task shifts from diagnosis to prescription. We must translate this understanding of the family’s financial needs into a concrete investment plan.</p>
+<p>An Investment Policy Statement, or IPS, is the document that bridges the gap between client analysis and portfolio construction. It takes everything we have learned about the client and translates it into a clear, written framework that will guide every investment decision made on their behalf. The IPS shows where the portfolio is going and documents the agreement between advisor and client about how to get there.</p>
+<p>By the end of this chapter, we will understand not only what an Investment Policy Statement contains but also how to craft one that reflects the client’s complete financial circumstances. We will see how the concepts of client analysis translate into practical, actionable documents.</p>
 </section>
 <section id="firm-level-investment-policy" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="firm-level-investment-policy"><span class="header-section-number">5.2</span> Firm-Level Investment Policy</h2>
-<p>Before we can write an Investment Policy Statement for an individual client, we must understand the context in which all such documents are created. Every investment firm operates according to a set of beliefs, principles, and practices that shape how it manages client portfolios. These may be formally documented in a firm-level investment policy or simply embedded in the firm’s culture. This firm-level policy provides the framework within which all client-specific IPS documents are developed.</p>
-<section id="components-of-a-firm-level-investment-policy" class="level3" data-number="5.2.1">
-<h3 data-number="5.2.1" class="anchored" data-anchor-id="components-of-a-firm-level-investment-policy"><span class="header-section-number">5.2.1</span> Components of a Firm-Level Investment Policy</h3>
-<p>A firm-level investment policy describes the investment philosophy, strategic approach, and guiding principles that define how a firm manages client assets. It serves as the foundation upon which every client-specific Investment Policy Statement is built. While the specific content varies from firm to firm, most investment policies address several key elements.</p>
-<section id="investment-philosophy" class="level4" data-number="5.2.1.1">
-<h4 data-number="5.2.1.1" class="anchored" data-anchor-id="investment-philosophy"><span class="header-section-number">5.2.1.1</span> Investment Philosophy</h4>
-<p>The investment philosophy expresses the firm’s beliefs about how financial markets work and how investment returns are generated. Does the firm believe that markets are generally efficient, meaning that it is difficult to consistently outperform through security selection? If so, it will likely favor passive investment strategies using low-cost index funds and exchange-traded funds. Does the firm believe that skilled investors can identify mispriced securities and generate excess returns? If so, it will dedicate resources to active management and manager research. Does the firm believe that certain factors, such as value, momentum, or quality, historically have delivered premium returns? If so, it may construct portfolios that tilt toward these factors.</p>
-<p>These beliefs have profound implications for how client portfolios will be constructed and managed. A clear philosophy ensures that all investment decisions are made consistently and that clients understand what they are buying.</p>
+<p>An Investment Policy Statement for an individual client does not exist in isolation. It is created within the context of the firm that will implement it, and every investment firm operates according to a set of beliefs, principles, and practices that shape how client portfolios are managed. These may be formally documented in a firm-level investment policy or embedded in the firm’s culture and decision-making processes. Regardless of the format, this firm-level framework establishes the boundaries within which all client-specific IPS documents are developed. It ensures consistency across client relationships and provides the philosophical foundation for the advice the firm delivers.</p>
+<p>A firm-level investment policy describes the investment philosophy, strategic approach, and guiding principles that define how the firm manages client assets. While the specific content varies from firm to firm, most investment policies address several core elements.</p>
+<section id="investment-philosophy" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="investment-philosophy"><span class="header-section-number">5.2.1</span> Investment Philosophy</h3>
+<p>The investment philosophy expresses the firm’s beliefs about how financial markets work and how investment returns are generated. These beliefs are not abstract. They shape every subsequent decision about portfolio construction and management.</p>
+<p>Consider a firm that believes markets are generally efficient. In its view, consistently outperforming through security selection is difficult, so the firm will favor passive investment strategies. Portfolios will be constructed using low-cost index funds and exchange-traded funds that capture broad market returns rather than attempting to beat them. A firm with the opposite conviction, one that believes skilled investors can identify mispriced securities and generate excess returns, will dedicate resources to active management. It will invest in manager research, due diligence, and ongoing monitoring of selected strategies. Between these poles sits a firm that believes certain factors, such as value, momentum, or quality, have historically delivered premium returns. Such a firm may construct portfolios that tilt systematically toward these characteristics.</p>
+<p>Each of these philosophical positions carries direct implications for how client portfolios will be built. A clear philosophy ensures that investment decisions are made consistently across the firm and that clients understand the intellectual framework underpinning the management of their assets.</p>
 </section>
-<section id="asset-allocation-framework" class="level4" data-number="5.2.1.2">
-<h4 data-number="5.2.1.2" class="anchored" data-anchor-id="asset-allocation-framework"><span class="header-section-number">5.2.1.2</span> Asset Allocation Framework</h4>
-<p>The asset allocation framework provides guidelines for how client portfolios should be diversified across different asset classes. This typically includes the asset classes the firm considers suitable for client portfolios, such as global equities, fixed income, real estate, commodities, or alternative investments. It may also include strategic allocation ranges that guide how these asset classes are combined for clients with different risk profiles.</p>
+<section id="asset-allocation-framework" class="level3" data-number="5.2.2">
+<h3 data-number="5.2.2" class="anchored" data-anchor-id="asset-allocation-framework"><span class="header-section-number">5.2.2</span> Asset Allocation Framework</h3>
+<p>The asset allocation framework provides guidelines for how client portfolios should be diversified across asset classes. This section identifies the asset classes the firm considers suitable for client portfolios, which typically include global equities, fixed income instruments across the maturity and credit spectrum, real estate, and in some cases commodities or alternative investments.</p>
+<p>The framework may also establish strategic allocation ranges that guide how these asset classes are combined for clients with different risk profiles. A conservative client might receive an allocation weighted heavily toward high-quality fixed income with a modest equity component. An aggressive client might hold a portfolio dominated by equities with smaller allocations to diversifying assets. By defining these building blocks and allocation ranges upfront, the framework ensures that all client portfolios, regardless of their specific circumstances, are constructed from a consistent set of components and adhere to the firm’s view of prudent diversification.</p>
 </section>
-<section id="risk-management-principles" class="level4" data-number="5.2.1.3">
-<h4 data-number="5.2.1.3" class="anchored" data-anchor-id="risk-management-principles"><span class="header-section-number">5.2.1.3</span> Risk Management Principles</h4>
-<p>Every firm must have a clear approach to managing the risks inherent in investing. The risk management principles section of the policy addresses how the firm identifies, measures, and mitigates market risk, credit risk, liquidity risk, and operational risk. This typically includes diversification requirements, such as limits on exposure to any single security, sector, or issuer. It may also include guidelines for the use of derivatives or other risk management tools and procedures for monitoring and responding to changing risk conditions.</p>
+<section id="risk-management-principles" class="level3" data-number="5.2.3">
+<h3 data-number="5.2.3" class="anchored" data-anchor-id="risk-management-principles"><span class="header-section-number">5.2.3</span> Risk Management Principles</h3>
+<p>Every firm must maintain a clear approach to managing the risks inherent in investing, and the risk management section of the policy translates this responsibility into a coherent framework. It addresses how the firm identifies, measures, and mitigates the various forms of risk that client portfolios face, moving from broad categories to specific, actionable limits.</p>
+<p>Diversification across asset classes and geographic regions is the primary defense against market risk, the possibility that broad market movements will erode portfolio value. By spreading exposures, the firm reduces the likelihood that a decline in any single market will inflict lasting damage on client portfolios. Credit risk, which arises when bond issuers default on their obligations, requires a different set of controls. The policy establishes minimum quality standards for fixed income holdings and caps the concentration of exposure to any single issuer, ensuring that no individual default can meaningfully impair a portfolio. Liquidity risk is addressed by restricting the proportion of client assets allocated to illiquid holdings and by maintaining adequate cash reserves. This protects against the scenario in which a client needs to raise cash but finds that assets cannot be sold without accepting a steep discount. Operational risk, rooted in failed processes, systems, or human error, is managed through documented procedures, segregation of duties, and regular testing of internal controls.</p>
+<p>These broad principles are reinforced through specific requirements that make them enforceable. The policy sets explicit limits on exposure to any single security, sector, or issuer. It provides guidelines for the use of derivatives and other instruments that may be employed for hedging or risk reduction. It also establishes the procedures for ongoing risk monitoring and defines the protocols that govern how the firm responds when limits are breached or when market conditions shift materially. What begins as a statement of principle becomes, through these mechanisms, a practical operating framework for protecting client assets.</p>
 </section>
-<section id="ethical-and-esg-considerations" class="level4" data-number="5.2.1.4">
-<h4 data-number="5.2.1.4" class="anchored" data-anchor-id="ethical-and-esg-considerations"><span class="header-section-number">5.2.1.4</span> Ethical and ESG Considerations</h4>
-<p>Increasingly, firms are incorporating environmental, social, and governance considerations into their investment policies. This section articulates the firm’s approach to ESG factors, whether through negative screening that excludes certain industries, positive screening that favors companies with strong practices, or full integration that considers ESG factors alongside traditional financial analysis. It may also address any firm-level commitments to responsible investing, such as signing the United Nations Principles for Responsible Investment.</p>
+<section id="ethical-and-esg-considerations" class="level3" data-number="5.2.4">
+<h3 data-number="5.2.4" class="anchored" data-anchor-id="ethical-and-esg-considerations"><span class="header-section-number">5.2.4</span> Ethical and ESG Considerations</h3>
+<p>Many firms now incorporate environmental, social, and governance considerations into their investment policies. Negative screening excludes companies or industries that conflict with the firm’s stated values. Positive screening actively seeks companies with strong ESG practices. Full integration considers ESG factors alongside traditional financial metrics in the investment analysis process. The policy may also address any firm-level commitments to responsible investing, such as adherence to established principles or participation in industry initiatives.</p>
+<p>By defining its stance on these issues, the firm provides guidance for advisors who must address client questions about the alignment of their portfolios with personal values.</p>
 </section>
-</section>
-<section id="firm-level-policy-example" class="level3" data-number="5.2.2">
-<h3 data-number="5.2.2" class="anchored" data-anchor-id="firm-level-policy-example"><span class="header-section-number">5.2.2</span> Firm-Level Policy Example</h3>
-<p>To make these concepts concrete, let us consider the investment policy of Elara Fischer’s firm, which we will call RockSolid Portfolio Partners. Understanding this policy will provide the foundation for the Schmidt-Miller IPS we develop in the following sections.</p>
-<p><strong>Investment Philosophy:</strong> RockSolid Portfolio Partners believes in evidence-based investing. The firm holds that markets are generally efficient but recognizes that certain factors - such as value, size, and profitability - have historically delivered premium returns that can be captured through systematic exposure. RockSolid combines low-cost passive vehicles for core market exposure with selective active strategies in areas where research suggests active management can add value, such as emerging market equities and high-yield bonds. The firm prioritizes after-tax returns and seeks to minimize unnecessary costs and tax drag.</p>
-<p><strong>Asset Allocation Framework:</strong> RockSolid considers global equities, developed and emerging market bonds, real estate investment trusts, and commodities as the core building blocks of client portfolios. The firm uses strategic asset allocation with client-specific adjustments based on risk tolerance, time horizon, and liquidity needs. For a client with moderate risk tolerance, the neutral allocation might be 50 percent equities, 35 percent fixed income, and 15 percent real assets, with permissible ranges that allow for tactical adjustments.</p>
-<p><strong>Risk Management Principles:</strong> RockSolid limits exposure to any single security to five percent of the portfolio and any single sector to twenty-five percent. The firm monitors portfolios continuously and rebalances whenever allocations deviate by more than five percentage points from targets. In periods of extreme market volatility, the firm may implement temporary measures to protect client portfolios, but only within the bounds of the investment policy and with appropriate client communication.</p>
-<p><strong>ESG Considerations:</strong> RockSolid offers ESG-integrated portfolios for clients who request them. For these clients, the firm applies negative screens to exclude companies involved in controversial industries such as tobacco, firearms, and thermal coal. It also applies positive screens to favor companies with strong environmental and social practices, using data from leading ESG research providers. For clients who do not request ESG integration, Alpine considers material ESG factors as part of its fundamental research but does not apply systematic screens.</p>
-<p>This firm-level policy provides the foundation for Elara to craft a tailored IPS for the Schmidt-Miller family. In the next section, we will explore the components of a client-specific Investment Policy Statement and begin developing one for Klaus, Elke, and Lukas, applying Alpine’s principles to their unique circumstances.</p>
-</section>
-<section id="how-investment-policies-attract-clients" class="level3" data-number="5.2.3">
-<h3 data-number="5.2.3" class="anchored" data-anchor-id="how-investment-policies-attract-clients"><span class="header-section-number">5.2.3</span> How Investment Policies Attract Clients</h3>
-<p>A well-articulated investment policy does more than guide internal decisions, it also signals to potential clients what the firm stands for and who it serves. RockSolid Partners’ policy, with its focus on evidence-based investing, global diversification, and disciplined risk management, naturally attracts clients who value these principles. Klaus and Elke Schmidt-Miller, for instance, were drawn to the firm precisely because its conservative approach aligned with Klaus’s need for capital preservation and Elke’s desire for thoughtful, values-driven management.</p>
-<p>Transparent policies also build trust by setting clear expectations. When clients understand the firm’s investment philosophy, they are less likely to be surprised by market volatility or disappointed by short-term performance. This clarity fosters the kind of long-term relationships that benefit both clients and advisors. Moreover, a well-documented policy demonstrates regulatory compliance and provides a defensible framework for investment decisions, protecting both the firm and its clients.</p>
+<section id="the-function-of-a-firm-level-policy" class="level3" data-number="5.2.5">
+<h3 data-number="5.2.5" class="anchored" data-anchor-id="the-function-of-a-firm-level-policy"><span class="header-section-number">5.2.5</span> The Function of a Firm-Level Policy</h3>
+<p>A well-articulated investment policy serves multiple functions beyond guiding internal decisions. It signals to potential clients what the firm believes and how it operates. A policy that emphasizes evidence-based investing, global diversification, and disciplined risk management will attract clients who value those principles, just as a policy that emphasizes active management and concentrated portfolios will draw a different clientele. The policy thus helps match the firm with clients whose expectations align with its approach.</p>
+<p>Transparent policies also build trust by setting clear expectations. Clients who understand the firm’s investment philosophy are less likely to be surprised by market volatility or disappointed by short-term performance. They recognize that returns will fluctuate and that the firm’s approach is designed for long-term outcomes rather than short-term gains. This clarity supports the durable relationships that benefit both clients and advisors.</p>
+<p>Finally, a well-documented policy demonstrates regulatory compliance and provides a defensible framework for investment decisions. It establishes that the firm operates according to a defined process rather than ad hoc judgment, protecting both the firm and its clients by ensuring that decisions can be explained and justified by reference to a documented set of principles and procedures.</p>
 </section>
 </section>
 <section id="client-specific-investment-policy-statement" class="level2" data-number="5.3">
 <h2 data-number="5.3" class="anchored" data-anchor-id="client-specific-investment-policy-statement"><span class="header-section-number">5.3</span> Client-Specific Investment Policy Statement</h2>
-<p>With the firm-level investment policy of RockSolid Portfolio Partners established, we now turn to the central task of this chapter: crafting a client-specific Investment Policy Statement for the Schmidt-Miller family. Where the firm-level policy provides the philosophical foundation and strategic framework, the client-specific IPS applies that framework to the unique circumstances of Klaus, Elke, and Lukas. It translates everything we learned so far about the Schmidt-Miller family into a actionable document that will guide every investment decision made on their behalf.</p>
-<section id="what-is-an-investment-policy-statement" class="level3" data-number="5.3.1">
-<h3 data-number="5.3.1" class="anchored" data-anchor-id="what-is-an-investment-policy-statement"><span class="header-section-number">5.3.1</span> What Is an Investment Policy Statement?</h3>
-<p>An Investment Policy Statement is a formal written document that outlines the investment objectives, constraints, and strategies for managing a specific client’s portfolio. It serves as reference for all investment decisions, ensuring that every trade, every allocation adjustment, and every rebalancing decision is made in accordance with the client’s expressed wishes and the advisor’s professional judgment.</p>
-<p>The IPS is many things at once. It is a roadmap, charting the course from the client’s current financial position to their desired destination. It is a contract, documenting the agreement between client and advisor about how the portfolio will be managed and what each party can expect from the relationship. It is a behavioral guardrail, providing discipline when emotions threaten to derail the long-term plan. And it is a living document, evolving as the client’s circumstances change and as markets deliver their inevitable surprises.</p>
-<p>For the Schmidt-Miller family, the IPS will need to address the complexity of a multi-generational situation with multiple goals, distinct risk profiles, and significant tax considerations. It must integrate Klaus’s need for capital preservation while still generating the returns necessary to fund their retirement. It must respect Elke’s emotional attachment to her inherited portfolio while building a diversified strategy. And it must provide clear guidance for Lukas’s separate financial journey, ensuring that his speculative instincts do not jeopardize his genuine needs.</p>
+<p>With the firm-level investment policy established, we now turn to the central task of this chapter: crafting a client-specific Investment Policy Statement. The firm-level policy provides the philosophical foundation and strategic framework. The client-specific IPS applies that framework to the unique circumstances of the individual or family, translating everything we have learned through the client analysis process into an actionable document that will guide every investment decision made on their behalf.</p>
+<p>An Investment Policy Statement is a formal written document that outlines the investment objectives, constraints, and strategies for managing a specific client’s portfolio. It serves as the reference point for all investment decisions, ensuring that every trade, every allocation adjustment, and every rebalancing decision aligns with the client’s expressed wishes and the advisor’s professional judgment.</p>
+<p>The IPS performs multiple functions simultaneously. It is a roadmap, charting the course from the client’s current financial position to their desired destination. It is an agreement, documenting the understanding between client and advisor about how the portfolio will be managed and what each party can expect from the relationship. It is a behavioral guardrail, providing discipline when emotions threaten to derail the long-term plan. And it is a living document, evolving as the client’s circumstances change and as markets deliver their inevitable surprises.</p>
+<section id="structure-of-an-investment-policy-statement" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="structure-of-an-investment-policy-statement"><span class="header-section-number">5.3.1</span> Structure of an Investment Policy Statement</h3>
+<p>While IPS documents vary across firms and clients, most follow a structure that ensures all essential elements are addressed. A comprehensive IPS typically includes the following sections.</p>
+<p><strong>Section 1: Client Identification and Background</strong> records basic identifying information about the client and provides a brief summary of their personal and financial circumstances. It captures the key facts that emerged from the client analysis process, including life stage, source of wealth, and any unique circumstances that will shape the investment strategy.</p>
+<p><strong>Section 2: Investment Objectives</strong> articulates the client’s financial goals in specific, measurable terms. Rather than vague aspirations, the IPS states concrete objectives with defined dollar amounts, time horizons, and priority levels. Each objective should be accompanied by any relevant assumptions about inflation or taxes that affect the required funding.</p>
+<p><strong>Section 3: Investment Constraints</strong> documents the factors that limit or constrain the investment strategy. These typically include time horizon, which may differ across goals; liquidity requirements, specifying the need for ready access to cash; tax considerations, including any strategies for tax-efficient investing; legal and regulatory constraints that affect investment choices; and any unique circumstances that bear on investment decisions, such as behavioral biases or emotional attachments to specific assets.</p>
+<p><strong>Section 4: Risk Tolerance</strong> captures the client’s willingness and ability to bear risk, drawing on the quantitative and qualitative assessments conducted during client analysis. It distinguishes between the client’s objective capacity for risk and their subjective comfort with volatility, and it specifies how any mismatches between ability and willingness will be resolved.</p>
+<p><strong>Section 5: Asset Allocation and Investment Strategy</strong> establishes the principles and governance framework that will guide asset allocation decisions. It does not specify the actual allocation percentages, since those are determined through a separate strategic asset allocation process and documented in a companion Investment Strategy Summary. Instead, this section focuses on the rules and guidelines that govern how allocation decisions are made and maintained.</p>
+<p>Several key elements sit within this framework. Asset allocation principles articulate the core beliefs that will guide decisions, such as diversification, goal segmentation, and respect for risk constraints. Portfolio segmentation describes how the portfolio will be divided into distinct components aligned with each goal’s time horizon and liquidity requirements. Permissible asset classes define the types of investments that may be used in portfolio construction. The rebalancing policy specifies the conditions under which the portfolio will be rebalanced to maintain target allocations, including review frequency, tolerance bands, and methods for implementation. Investment selection criteria provide guidelines for evaluating and selecting individual securities or managers, consistent with the firm-level investment policy.</p>
+<p>The specific strategic asset allocation targets, including the actual percentages allocated to each asset class, are determined through the process described in a later chapter and documented in a separate Investment Strategy Summary that accompanies the IPS. Keeping the targets separate from the IPS ensures that the IPS remains a stable governance document while the allocation can evolve with changing market conditions and client circumstances.</p>
+<p><strong>Section 6: Monitoring and Reporting</strong> specifies how the portfolio’s performance will be evaluated and how progress will be communicated to the client. It covers appropriate performance benchmarks for each asset class and for the portfolio as a whole, the frequency of formal portfolio reviews, and the content and format of reports provided to the client.</p>
+<p><strong>Section 7: Responsibilities</strong> clarifies the roles and duties of all parties involved in the investment process. Client responsibilities include providing accurate information, communicating changes in circumstances, and adhering to the agreed-upon plan. Advisor responsibilities include managing the portfolio in accordance with the IPS, providing timely reporting, and communicating material developments. The section may also address the responsibilities of custodians and other service providers.</p>
+<p><strong>Section 8: Review and Amendment Procedures</strong> establishes how the IPS will be maintained as a living document. It specifies the circumstances under which the IPS should be reviewed, the process for making amendments, and the requirement that any changes to the investment strategy be agreed upon by both parties and reflected in an updated IPS.</p>
 </section>
-<section id="structure-of-an-investment-policy-statement" class="level3" data-number="5.3.2">
-<h3 data-number="5.3.2" class="anchored" data-anchor-id="structure-of-an-investment-policy-statement"><span class="header-section-number">5.3.2</span> Structure of an Investment Policy Statement</h3>
-<p>While IPS documents vary across firms and clients, most follow a similar structure that ensures all essential elements are addressed. A comprehensive IPS typically includes the following sections:</p>
-<p><strong>Section 1: Client Identification and Background</strong></p>
-<p>This section records basic identifying information about the client, including names, contact details, and a brief summary of their personal and financial circumstances. For the Schmidt-Miller family, this would include Klaus and Elke as the primary clients, with Lukas identified as a related party whose financial situation intersects with the family’s planning. It would also note key facts from the client analysis: Klaus’s imminent retirement from his medical practice, Elke’s inherited portfolio and her art gallery aspirations, and Lukas’s startup equity and down payment goal.</p>
-<p><strong>Section 2: Investment Objectives</strong></p>
-<p>This section articulates the client’s financial goals in specific, measurable terms. Rather than vague aspirations like “financial security,” the IPS should state concrete objectives such as “generate €160,000 in annual after-tax income, indexed for inflation, to fund retirement” or “accumulate €500,000 within 12 months for the establishment of an art gallery.” Each objective should be accompanied by its time horizon, priority level, and any relevant assumptions about inflation or taxes.</p>
-<p><strong>Section 3: Investment Constraints</strong></p>
-<p>This section documents the various factors that limit or constrain the investment strategy. These typically include:</p>
-<ul>
-<li><strong>Time Horizon:</strong> The expected duration of the investment period, which may differ for different goals. Klaus and Elke have a long-term horizon of 30-plus years for their retirement portfolio, but the gallery funding has a 12-month horizon and the down payment gift has a 3-to-5-year horizon.</li>
-<li><strong>Liquidity Requirements:</strong> The need for ready access to cash. The Schmidt-Millers require immediate liquidity for annual retirement withdrawals and near-term liquidity for the gallery and down payment.</li>
-<li><strong>Tax Considerations:</strong> The client’s tax situation and any strategies for tax-efficient investing. For Elke, the low-basis inherited portfolio creates a significant tax constraint that must be managed through careful harvesting and asset location decisions.</li>
-<li><strong>Legal and Regulatory Constraints:</strong> Any laws or regulations that affect investment choices. For the Schmidt-Millers, this includes the tax treatment of their Swiss residence and any cross-border considerations related to Lukas’s Berlin residency.</li>
-<li><strong>Unique Circumstances:</strong> Any other factors that bear on investment decisions. For Elke, this includes her endowment bias and emotional attachment to inherited assets. For Klaus, it includes his extreme loss aversion. For Lukas, it includes his speculative startup equity.</li>
-</ul>
-<p><strong>Section 4: Risk Tolerance</strong></p>
-<p>This section documents the client’s willingness and ability to bear risk, drawing on the quantitative and qualitative assessments conducted during the client analysis. It should distinguish between the client’s objective capacity for risk and their subjective comfort with volatility, and it should specify how any mismatches will be resolved. For Klaus, whose high ability to take risk is offset by his low willingness, the IPS must clearly state that the portfolio will be managed conservatively to respect his psychological need for security.</p>
-<p><strong>Section 5: Asset Allocation and Investment Strategy</strong></p>
-<p>This section establishes the principles and governance framework that will guide asset allocation decisions. It does not specify the actual allocation percentages, those are determined through a separate strategic asset allocation process and documented in a companion Investment Strategy Summary. Instead, this section focuses on the rules and guidelines that will govern how allocation decisions are made and maintained.</p>
-<p>Key elements include:</p>
-<ul>
-<li><strong>Asset Allocation Principles:</strong> The core beliefs that will guide allocation decisions, such as diversification, goal segmentation, respect for the client’s risk constraints, and tax efficiency.</li>
-<li><strong>Portfolio Segmentation:</strong> How the portfolio will be divided into distinct buckets aligned with each goal’s time horizon and liquidity requirements. For the Schmidt-Millers, this includes a liquidity bucket for the art gallery, medium-term buckets for the down payment and Lake Garda property, and a long-term bucket for retirement and legacy.</li>
-<li><strong>Permissible Asset Classes:</strong> The types of investments that may be used in portfolio construction, such as global equities, fixed income, real assets, and cash equivalents. This provides boundaries while allowing flexibility for the strategic asset allocation process.</li>
-<li><strong>Rebalancing Policy:</strong> The conditions under which the portfolio will be rebalanced to maintain target allocations, including review frequency, tolerance bands, and methods for implementation.</li>
-<li><strong>Investment Selection Criteria:</strong> Guidelines for evaluating and selecting individual securities or managers, consistent with the firm-level investment policy.</li>
-</ul>
-<p>The specific strategic asset allocation targets, including the actual percentages allocated to each asset class, are determined through the process described in Chapter 7 and documented in a separate Investment Strategy Summary that accompanies this IPS. This separation ensures that the IPS remains a stable, long-term governance document while the allocation can evolve with changing market conditions and client circumstances.</p>
-<p><strong>Section 6: Monitoring and Reporting</strong></p>
-<p>This section specifies how the portfolio’s performance will be evaluated and how progress will be communicated to the client. It typically includes:</p>
-<ul>
-<li><strong>Performance Benchmarks:</strong> Appropriate benchmarks for each asset class and for the portfolio as a whole. For a balanced portfolio, this might be a blended benchmark reflecting the target allocation.</li>
-<li><strong>Review Schedule:</strong> The frequency of formal portfolio reviews, typically quarterly or semi-annually, with a comprehensive annual review.</li>
-<li><strong>Reporting Requirements:</strong> The content and format of reports provided to the client, including performance data, fee disclosures, and commentary on significant events.</li>
-</ul>
-<p><strong>Section 7: Responsibilities</strong></p>
-<p>This section clarifies the roles and responsibilities of all parties involved in the investment process. It typically specifies:</p>
-<ul>
-<li><strong>Client Responsibilities:</strong> Providing accurate information, communicating changes in circumstances, and adhering to the agreed-upon plan.</li>
-<li><strong>Advisor Responsibilities:</strong> Managing the portfolio in accordance with the IPS, providing timely reporting, and communicating material developments.</li>
-<li><strong>Custodian and Other Service Provider Responsibilities:</strong> Holding assets safely, executing trades, and providing accurate record-keeping.</li>
-</ul>
-<p><strong>Section 8: Review and Amendment Procedures</strong></p>
-<p>This section establishes how the IPS will be maintained as a living document. It specifies the circumstances under which the IPS should be reviewed and the process for making amendments. It also documents that any changes to the investment strategy must be agreed upon by both parties and reflected in an updated IPS.</p>
+<section id="the-ips-as-a-behavioral-guardrail" class="level3" data-number="5.3.2">
+<h3 data-number="5.3.2" class="anchored" data-anchor-id="the-ips-as-a-behavioral-guardrail"><span class="header-section-number">5.3.2</span> The IPS as a Behavioral Guardrail</h3>
+<p>One of the most important functions of the IPS is its role as a behavioral guardrail. As we learned in the previous chapter, even sophisticated clients are subject to cognitive and emotional biases that can lead to poor investment decisions. Loss aversion causes investors to sell during downturns. Overconfidence leads to excessive trading and inadequate diversification. Endowment bias prevents rational decisions about inherited assets.</p>
+<p>A well-crafted IPS anticipates these biases and builds in safeguards. For a client prone to loss aversion, the IPS can specify that rebalancing occurs according to a predetermined schedule rather than in response to market movements. It can require that major changes to the investment strategy be discussed during a scheduled review rather than made impulsively. For a client with endowment bias, the IPS can explicitly acknowledge the attachment to certain assets and establish a plan for gradual diversification over time, perhaps committing to sell a fixed percentage each year regardless of market conditions. For a client with overconfidence, the IPS can clearly separate speculative holdings from conservative goal funding, establishing different investment policies for different purposes.</p>
+<p>By documenting the agreed-upon strategy in advance, the IPS creates a commitment device that helps clients stay the course when emotions run high. When markets decline and the urge to sell arises, the client can refer to the IPS and recall that this volatility was anticipated and that the plan calls for remaining invested. When a difficult decision about a legacy holding must be made, the client can see that the decision is part of a thoughtful, long-term strategy rather than an impulsive act.</p>
 </section>
-<section id="the-ips-as-a-behavioral-guardrail" class="level3" data-number="5.3.3">
-<h3 data-number="5.3.3" class="anchored" data-anchor-id="the-ips-as-a-behavioral-guardrail"><span class="header-section-number">5.3.3</span> The IPS as a Behavioral Guardrail</h3>
-<p>One of the most important yet often overlooked functions of the IPS is its role as a behavioral guardrail. As we learned in Chapter 4, even the most sophisticated clients are subject to cognitive and emotional biases that can lead to poor investment decisions. Loss aversion causes investors to panic-sell during downturns. Overconfidence leads to excessive trading and inadequate diversification. Endowment bias prevents rational decisions about inherited assets.</p>
-<p>A well-crafted IPS anticipates these biases and builds in safeguards that protect clients from themselves. For Klaus, whose loss aversion makes him prone to selling during market declines, the IPS can specify that the portfolio will be rebalanced according to a predetermined schedule rather than in response to market movements. It can also require that any major changes to the investment strategy be discussed during a scheduled review rather than made impulsively.</p>
-<p>For Elke, whose endowment bias makes her reluctant to sell inherited assets, the IPS can explicitly acknowledge this attachment and establish a plan for gradually diversifying the portfolio over time, perhaps by committing to sell a certain percentage each year regardless of market conditions.</p>
-<p>For Lukas, whose overconfidence might lead him to take excessive risks with his down payment funds, the IPS can clearly separate his speculative startup equity from his conservative down payment savings, establishing different investment policies for different goals. The document can also require that any changes to the down payment strategy be discussed with his parents and advisor, adding a layer of oversight to his natural impulsivity.</p>
-<p>By documenting the agreed-upon strategy in advance, the IPS creates a commitment device that helps clients stay the course when emotions run high. When markets are falling and Klaus feels the urge to sell, he can look at the IPS and remember that this volatility was anticipated and that the plan calls for staying invested. When Elke struggles with the decision to sell a portion of her inherited portfolio, she can refer to the IPS and see that this sale is part of a thoughtful, long-term strategy rather than a betrayal of her parents’ memory.</p>
-</section>
-<section id="the-ips-as-a-living-document" class="level3" data-number="5.3.4">
-<h3 data-number="5.3.4" class="anchored" data-anchor-id="the-ips-as-a-living-document"><span class="header-section-number">5.3.4</span> The IPS as a Living Document</h3>
-<p>An Investment Policy Statement is not a static document. Instead it is a living document that should evolve as the client’s circumstances change and as markets deliver their inevitable surprises.</p>
-<p>Most IPS documents specify a formal review schedule, typically annually, during which the advisor and client assess whether the investment strategy remains appropriate given any changes in the client’s life or financial situation. These reviews also provide an opportunity to evaluate portfolio performance against benchmarks and to discuss any adjustments that may be needed.</p>
-<p>Beyond scheduled reviews, certain trigger events should prompt an immediate review of the IPS. These include:</p>
-<ul>
-<li>Significant changes in the client’s personal circumstances, such as marriage, divorce, birth of a child, death of a spouse, or a major health event.</li>
-<li>Significant changes in the client’s financial circumstances, such as an inheritance, a business sale, a career change, or a large unexpected expense.</li>
-<li>Significant changes in market conditions or the economic outlook that might warrant a strategic adjustment.</li>
-<li>Significant changes in tax laws or regulations that affect the investment strategy.</li>
-<li>A material change in the client’s risk tolerance, as evidenced by their reaction to market events.</li>
-</ul>
-<p>When such events occur, the advisor and client should review the IPS together, determine whether any adjustments are needed, and document any changes in a revised version of the document. This process ensures that the IPS remains aligned with the client’s current situation and that both parties maintain a shared understanding of the investment strategy.</p>
+<section id="the-ips-as-a-living-document" class="level3" data-number="5.3.3">
+<h3 data-number="5.3.3" class="anchored" data-anchor-id="the-ips-as-a-living-document"><span class="header-section-number">5.3.3</span> The IPS as a Living Document</h3>
+<p>An Investment Policy Statement is not static. It evolves as the client’s circumstances change, and most IPS documents specify a formal review schedule, typically annually, during which the advisor and client assess whether the investment strategy remains appropriate. These scheduled reviews provide a natural opportunity to evaluate portfolio performance against benchmarks and to discuss any adjustments that may be needed in light of changing conditions.</p>
+<p>Not all reviews can wait for the annual cycle, however. Certain events should prompt an immediate reassessment of the IPS because they alter the foundation on which the original strategy was built. Significant changes in the client’s personal circumstances fall into this category. Marriage, divorce, the birth of a child, the death of a spouse, or a major health event can fundamentally reshape financial priorities and time horizons. Financial circumstances carry the same weight. An inheritance, a business sale, a career change, or a large unexpected expense shifts the resources available to fund the client’s goals and may change the return requirement or the risk that can be tolerated. External forces matter as well. A significant shift in market conditions or the economic outlook may justify a strategic adjustment to the portfolio. Changes in tax laws or regulations can alter the relative attractiveness of different asset classes or investment vehicles. Even a shift in the client’s own psychology, such as a material change in risk tolerance revealed by their reaction to a market event, should trigger a fresh conversation about whether the current strategy still fits.</p>
+<p>When any of these events occur, the advisor and client return to the IPS together. They determine whether adjustments are needed and document any changes in a revised version of the document. This ongoing cycle of review and revision ensures that the IPS remains aligned with the client’s current situation and that both parties maintain a shared understanding of the investment strategy over the full course of their relationship.</p>
 </section>
 </section>
-<section id="drafting-the-schmidt-miller-ips" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="drafting-the-schmidt-miller-ips"><span class="header-section-number">5.4</span> Drafting the Schmidt-Miller IPS</h2>
-<p>With a clear understanding of the IPS structure and purpose, we now begin the practical work of drafting a comprehensive Investment Policy Statement for the Schmidt-Miller family. This section focuses on the foundational elements of any IPS: a clear statement of the client’s investment objectives and the constraints within which the portfolio must be managed. These elements flow directly from the client analysis conducted in Chapter 4 and must be documented with precision to ensure that all subsequent investment decisions align with the family’s true needs.</p>
+<section id="drafting-the-schmidt-miller-investment-policy-statement" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="drafting-the-schmidt-miller-investment-policy-statement"><span class="header-section-number">5.4</span> Drafting the Schmidt-Miller Investment Policy Statement</h2>
+<p>With a clear understanding of the IPS structure and purpose, we now begin the practical work of drafting a comprehensive Investment Policy Statement for the Schmidt-Miller family. This section focuses on the foundational elements of any IPS: a clear statement of the client’s investment objectives and the constraints within which the portfolio must be managed. These elements flow directly from the client analysis conducted in the previous chapter and must be documented with precision to ensure that all subsequent investment decisions align with the family’s circumstances.</p>
 <section id="client-identification-and-background" class="level3" data-number="5.4.1">
 <h3 data-number="5.4.1" class="anchored" data-anchor-id="client-identification-and-background"><span class="header-section-number">5.4.1</span> Client Identification and Background</h3>
-<p>Every IPS begins with a clear identification of the client and a brief summary of their relevant personal and financial circumstances. This section serves both as a reference for the advisor and as documentation that the advisor has conducted a thorough inquiry into the client’s situation.</p>
-<p>For the Schmidt-Miller family, this section would read as follows:</p>
-<section id="client-identification" class="level4" data-number="5.4.1.1">
-<h4 data-number="5.4.1.1" class="anchored" data-anchor-id="client-identification"><span class="header-section-number">5.4.1.1</span> Client Identification</h4>
-<p>|Primary Clients | Klaus Schmidt-Miller (age 58) and Elke Schmidt-Miller (age 55) | |Related Party | Lukas Schmidt-Miller (age 28), son | |Date of IPS | [Current Date] | |Prepared by | Elara Fischer, CFA, RockSolid Portfolio Partners |</p>
-<p>Klaus Schmidt-Miller is a orthopaedic surgeon who has practiced for over three decades. He is in the process of selling his stake in the surgical practice he co-founded, which will result in after-tax proceeds of approximately €18 million within the next 60 days. Klaus intends to retire fully upon completion of this sale.</p>
-<p>Elke Schmidt-Miller retired two years ago from her career as a high school principal. She receives an inflation-indexed pension of €45,000 annually. Elke recently inherited a diversified portfolio of stocks and bonds from her parents, valued at €2.5 million. This portfolio has a very low cost basis, creating significant unrealized capital gains.</p>
-<p>Lukas Schmidt-Miller is a software engineer residing in Berlin. He holds a 5 percent equity stake in his startup employer, which is currently valued at €50,000 for tax purposes but is highly speculative. Lukas is financially independent from his parents and manages his own affairs, though he expects to receive financial support from them for a future home down payment.</p>
-<p>The family resides in Switzerland and is subject to Swiss tax law, including progressive income tax up to 40 percent and capital gains tax of 20 percent on realized gains. The family has no debt and owns their primary residence free and clear, valued at €2.2 million.</p>
+<p>Every IPS begins with a clear identification of the client and a brief summary of their relevant personal and financial circumstances. The section serves as a reference for the advisor and as documentation that a thorough inquiry into the client’s situation has been conducted.</p>
+<p>For the Schmidt-Miller family, the identification section reads as follows.</p>
+<p><strong>Primary Clients:</strong> Klaus Schmidt-Miller, age 68, and Elke Schmidt-Miller, age 65.</p>
+<p><strong>Related Party:</strong> Lukas Schmidt-Miller, age 28, son.</p>
+<p>Klaus Schmidt-Miller is an orthopedic surgeon who has practiced for over three decades. He is in the process of selling his stake in the surgical practice he co-founded, a transaction that will result in after-tax proceeds of approximately €18 million within the next sixty days, and he intends to retire fully upon completion of this sale. Elke Schmidt-Miller retired two years ago from her career as a high school principal. She receives an inflation-indexed pension of €45,000 annually and recently inherited a diversified portfolio of stocks and bonds from her parents, valued at €2.5 million. The inherited portfolio has a low cost basis, creating significant unrealized capital gains that will influence any decision to reposition those assets. Lukas Schmidt-Miller, their son, is a software engineer residing in Berlin. He holds a 5 percent equity stake in his startup employer, currently valued at €50,000 for tax purposes but highly speculative. Lukas is financially independent from his parents and manages his own affairs, though he expects to receive financial support from them for a future home down payment.</p>
+<p>The family resides in a stable Central European jurisdiction with a progressive income tax system. The top marginal rate on ordinary income is 40 percent, and realized capital gains are taxed at a flat 20 percent rate. Tax-advantaged retirement accounts exist within the local framework. The family has no debt and owns their primary residence free and clear, valued at €2.2 million.</p>
 </section>
-<section id="investment-objectives" class="level4" data-number="5.4.1.2">
-<h4 data-number="5.4.1.2" class="anchored" data-anchor-id="investment-objectives"><span class="header-section-number">5.4.1.2</span> Investment Objectives</h4>
-<p>The investment objectives section translates the family’s goals into specific, measurable targets that will guide portfolio construction and performance evaluation. Each objective should be clearly defined, quantified, and assigned a priority level. This clarity ensures that when trade-offs must be made the advisor knows which objectives take precedence.</p>
-<p>For the Schmidt-Miller family, Elara has identified five distinct objectives through her client analysis. These are presented in order of priority:</p>
+<section id="investment-objectives" class="level3" data-number="5.4.2">
+<h3 data-number="5.4.2" class="anchored" data-anchor-id="investment-objectives"><span class="header-section-number">5.4.2</span> Investment Objectives</h3>
+<p>The investment objectives section translates the family’s goals into specific, measurable targets that will guide portfolio construction and performance evaluation. Each objective is clearly defined, quantified, and assigned a priority level so that when trade-offs must be made, the advisor knows which objectives take precedence. Client analysis has identified five distinct objectives for the Schmidt-Miller family, spanning immediate cash flow needs through multi-decade legacy goals.</p>
+<p>The family’s most pressing need is retirement income. The portfolio must generate €160,000 in annual after-tax income, indexed for inflation, to fund Klaus and Elke’s retirement lifestyle. Funded from the core portfolio of approximately €18.55 million, this objective is immediate and ongoing with a time horizon exceeding thirty years, and it is non-negotiable. All other goals are subordinate to this requirement. Next in priority, Elke’s art gallery requires €500,000 within approximately twelve months to establish a gallery in Lucerne. While this project matters deeply to her, it remains discretionary and could be delayed if circumstances require. The funds will be set aside from the core portfolio and held in instruments that preserve capital with near certainty.</p>
+<p>Lukas’s down payment introduces a medium-term need of €400,000 within three to five years to assist with the purchase of a home in Berlin. Both the amount and the timing carry some flexibility, which broadens the range of suitable investment approaches for this capital. The Lake Garda retreat, calling for €2 million within five years to acquire and renovate a vacation property, is similarly discretionary, and the purchase date can be adjusted if markets perform poorly. This flexibility will inform how the funds are invested during the accumulation period. Finally, the family seeks legacy preservation. After all other goals have been funded, the remaining portfolio must preserve its real value over a horizon exceeding thirty years to transfer wealth to Lukas and future grandchildren. This objective anchors the longest time horizon in the plan and provides the strongest case for growth-oriented investments.</p>
+<p>The retirement income objective is stated after tax, so the portfolio must generate sufficient pre-tax returns to meet this requirement given the family’s tax situation. All monetary amounts are stated in current euros, and future values will be adjusted for inflation as documented in the IPS review process.</p>
+</section>
+<section id="investment-constraints" class="level3" data-number="5.4.3">
+<h3 data-number="5.4.3" class="anchored" data-anchor-id="investment-constraints"><span class="header-section-number">5.4.3</span> Investment Constraints</h3>
+<p>The investment constraints section documents the factors that limit or shape the investment strategy. These constraints arise from the client’s personal circumstances, the legal and regulatory environment, and the firm’s policies. Together with the investment objectives, they define the boundaries within which the portfolio must be constructed.</p>
+<p>Multiple time horizons coexist within the Schmidt-Miller household, each corresponding to a different goal. The retirement income objective has a horizon exceeding thirty years, which would ordinarily allow for growth-oriented investments in the core portfolio. This must be balanced against Klaus’s low risk tolerance. At the other extreme, the art gallery objective has a one-year horizon requiring near-complete capital preservation, and these funds cannot be exposed to equity market risk. Between these poles sit the down payment objective, with a three-to-five-year horizon that allows modest risk but demands increasing conservatism as the target date approaches, and the Lake Garda objective, with a five-year horizon and some flexibility to delay the purchase if markets perform poorly. The legacy objective stretches beyond thirty years, permitting a growth orientation in the residual portfolio after other goals have been funded.</p>
+<p>Liquidity needs are equally varied and pressing. Annual retirement withdrawals of €160,000 require that the first year’s spending be held in cash or very short-term instruments. The €500,000 for the art gallery is needed in approximately twelve months. The €400,000 for Lukas’s down payment may be needed within three years, and the €2 million for the Lake Garda property falls due in five years. These requirements mean the portfolio cannot be invested as a single block. Funds must be segmented into distinct components, each with its own investment approach aligned to its time horizon and liquidity need.</p>
+<p>Tax considerations add further complexity. Klaus’s €18 million sale proceeds are after-tax, so no embedded capital gain liability exists for these funds. Elke’s inherited portfolio of €2.5 million, by contrast, has a low cost basis and substantial unrealized capital gains that would trigger tax at the 20 percent rate upon sale. Annual portfolio income will be taxed at progressive rates up to 40 percent, making the tax efficiency of different asset classes and structures a material concern. Klaus’s retirement account of €800,000 grows tax-free in the interim, though withdrawals will be taxed as ordinary income. These factors will influence asset location decisions, the timing of any sales from Elke’s inherited portfolio, and the selection of tax-efficient investment vehicles.</p>
+<p>The family is subject to the tax and regulatory requirements of their jurisdiction. Lukas’s residence in Berlin introduces cross-border considerations for any gifts or transfers, which should be reviewed with tax specialists. All investments must comply with applicable securities laws and regulations.</p>
+<p>The client analysis also revealed several unique circumstances that constrain the investment strategy. Klaus’s loss aversion is the most significant. He views the €18 million as the fruit of a lifetime of labor and is averse to losses, so any strategy that exposes significant principal to market volatility will cause him anxiety and may lead to poor decisions during downturns. The portfolio must be structured to minimize the frequency and severity of losses, even at the cost of lower expected returns.</p>
+<p>Elke’s endowment bias creates a different kind of constraint. Her strong emotional connection to the inherited portfolio makes her reluctant to sell those assets, even when diversification would be prudent. The investment strategy must accommodate this attachment while still building a diversified overall portfolio, which may involve keeping a core holding of inherited stocks while diversifying around them. Lukas’s overconfidence and separate goals require compartmentalization. His speculative startup equity is separate from the family’s core wealth and should be treated as such, while his down payment funds must be managed conservatively despite his personal risk tolerance. Finally, Elke’s art gallery is a passion project rather than a financial investment. The €500,000 allocated to this goal should be treated as an expense with an expected return of zero, not as part of the investment portfolio seeking growth.</p>
+</section>
+<section id="risk-tolerance-assessment" class="level3" data-number="5.4.4">
+<h3 data-number="5.4.4" class="anchored" data-anchor-id="risk-tolerance-assessment"><span class="header-section-number">5.4.4</span> Risk Tolerance Assessment</h3>
+<p>The risk tolerance section documents both the client’s ability to take risk and their willingness to do so. Where these two dimensions diverge, the section specifies how the mismatch will be resolved.</p>
+<p>Klaus Schmidt-Miller presents a clear divergence. His ability to take risk is high, grounded in a long time horizon exceeding thirty years, substantial wealth, no debt, and flexible discretionary goals. His willingness to take risk, however, is low. Extreme loss aversion rooted in his view of wealth as hard-won, a history of conservative financial decisions, and an expressed discomfort with market volatility all point toward a conservative posture. In this case, willingness governs. The portfolio will be managed according to Klaus’s low risk tolerance, and this becomes the binding constraint for all investment decisions affecting the joint portfolio.</p>
+<p>Elke Schmidt-Miller’s profile is more balanced. Her ability to take risk is moderate: she has a long horizon but is already in retirement, though her pension provides baseline income security. Her willingness to take risk is also moderate. She is open to complexity but constrained by the emotional attachment she holds toward her inherited assets. Her moderate tolerance will be accommodated within the framework set by Klaus’s more conservative boundary, with specific provisions for the inherited holdings.</p>
+<p>Lukas Schmidt-Miller’s personal wealth sits at the opposite end of the spectrum. Both his ability and willingness to take risk are high, supported by a forty-year horizon, an early-career position with developing human capital, and a temperament comfortable with volatility. He views his startup equity as a speculative opportunity and expresses confidence in his ability to recover from losses. His personal wealth will be managed according to this aggressive profile. The down payment funds, however, are a different matter. Despite Lukas’s personal risk tolerance, the short three-to-five-year horizon and the commitment of these funds to a specific purchase mean the ability to take risk is low. Lukas agrees these funds must be preserved, and they will be managed conservatively.</p>
+<p>Synthesizing these individual profiles, the core family portfolio funding Klaus and Elke’s retirement and legacy goals will be managed according to Klaus’s low risk tolerance as the binding constraint. Elke’s moderate tolerance and endowment bias will be accommodated within this framework. Lukas’s separate goals will be managed independently, with the down payment funds in a conservative strategy and his personal wealth following an aggressive profile.</p>
+</section>
+<section id="return-requirements" class="level3" data-number="5.4.5">
+<h3 data-number="5.4.5" class="anchored" data-anchor-id="return-requirements"><span class="header-section-number">5.4.5</span> Return Requirements</h3>
+<p>After setting aside funds for the specific shorter-term goals, approximately €18.55 million remains for the long-term retirement and legacy portfolio. This capital must generate €160,000 in annual after-tax income, indexed for inflation, for Klaus and Elke’s lifetime, while also preserving the real value of the remaining principal for legacy transfer to Lukas and future generations.</p>
+<p>A simple spending rate calculation, dividing €160,000 by €18.55 million, yields 0.86 percent. This figure understates the true return requirement because it ignores both inflation and taxes. Assuming 2.5 percent average inflation, the withdrawal needed in year ten rises to approximately €205,000 simply to maintain purchasing power. Taxes further increase the required pre-tax return, since withdrawals and portfolio income will be taxed at rates up to 40 percent. To deliver €160,000 after tax, the portfolio must earn considerably more before tax, and to maintain the real value of the principal, returns must at least keep pace with inflation after both withdrawals and taxes.</p>
+<p>A complete analysis incorporating these factors indicates that the portfolio needs to earn a real after-tax return of approximately 3.5 to 4.5 percent to sustainably fund the desired spending while preserving the real value of the legacy. This translates to a nominal pre-tax return target in the range of 6 to 8 percent, depending on inflation and the tax efficiency of portfolio construction.</p>
+<p>The funds allocated to specific shorter-term goals carry different return requirements. The €500,000 for the art gallery has a one-year horizon and requires near-zero return, with capital preservation as the paramount concern. These funds will be held in cash or very short-term bonds. The €400,000 for the down payment has a three-to-five-year horizon and requires a modest return with preservation priority. These funds will be held in a short-term bond ladder or conservative balanced fund. The €2 million for the Lake Garda property has a five-year horizon and requires a moderate return. Some growth is needed to offset inflation, but preservation remains important, and these funds will be held in a medium-term bond ladder with a modest equity allocation if flexibility exists in the purchase date.</p>
+<p>A nominal pre-tax return target of 6 to 8 percent for the core portfolio is realistic but not guaranteed. Historical returns on a diversified portfolio of global equities and bonds have averaged in this range over long periods, yet this average masks significant variability. A portfolio constructed to achieve the target will likely carry an equity allocation of 40 to 60 percent, implying potential peak-to-trough losses of 20 to 30 percent in severe bear markets. This level of volatility sits at the upper limit of what Klaus’s loss aversion can tolerate.</p>
+<p>The portfolio must therefore be structured to minimize the frequency and severity of losses while still pursuing the required return. Achieving this balance may require a higher allocation to high-quality bonds than a purely mathematical optimization would suggest, the use of strategies that provide downside protection, and a dedicated income component that offers psychological comfort even if it is not mathematically optimal.</p>
+</section>
+<section id="asset-allocation-and-investment-strategy-framework" class="level3" data-number="5.4.6">
+<h3 data-number="5.4.6" class="anchored" data-anchor-id="asset-allocation-and-investment-strategy-framework"><span class="header-section-number">5.4.6</span> Asset Allocation and Investment Strategy Framework</h3>
+<p>With the client’s objectives, constraints, risk tolerance, and return requirements documented, we now establish the governance framework that will guide asset allocation and investment decisions. The actual allocation percentages are determined through the strategic asset allocation process and documented in a separate Investment Strategy Summary. What follows are the principles, boundaries, and procedures that will govern how those allocation decisions are made and maintained over time.</p>
+<p>The Schmidt-Miller portfolio will be constructed according to six core principles.</p>
+<p>Diversification requires spreading the portfolio across multiple asset classes to reduce reliance on any single source of return and to manage overall volatility. Different asset classes perform differently under varying economic conditions, and a balanced portfolio can achieve more consistent returns than any single asset class alone.</p>
+<p>Goal segmentation requires allocating funds to distinct sub-portfolios, each aligned with the time horizon and liquidity requirements of a specific financial goal. Short-term goals will be funded with capital preservation instruments, while long-term goals may include growth-oriented assets. This segmentation ensures that near-term needs never compromise the long-term strategy.</p>
+<p>Respect for the binding constraint means that Klaus’s low risk tolerance governs the core retirement portfolio. All allocation decisions will respect this boundary even if it implies lower expected returns. The portfolio will be structured to minimize the frequency and severity of losses to ensure that Klaus can adhere to the plan through market cycles.</p>
+<p>Tax efficiency requires that asset location decisions be made with careful attention to tax consequences. Tax-inefficient assets such as taxable bonds will be prioritized for Klaus’s retirement account, while tax-efficient assets such as equities will be prioritized for taxable accounts. Sales from Elke’s inherited portfolio will be managed over time to control tax impact.</p>
+<p>Cost awareness means that all investment decisions will consider the impact of costs on net returns. Where appropriate, low-cost passive vehicles such as index funds and exchange-traded funds will be used to gain core market exposure. Active strategies will be considered only in areas where research suggests the potential for excess returns sufficient to justify higher fees.</p>
+<p>Behavioral accommodation requires that the portfolio be structured to address the biases identified during client analysis, as detailed in the unique circumstances section.</p>
+<p>Based on the family’s multiple goals with different time horizons, the portfolio will be divided into four segments. The liquidity bucket will fund the art gallery with a one-year horizon, using capital preservation instruments such as cash or very short-term bonds. The first medium-term bucket will fund Lukas’s down payment with a three-to-five-year horizon, using a conservative approach that becomes increasingly conservative as the target date approaches. The second medium-term bucket will fund the Lake Garda property with a five-year horizon, using a moderate approach that allows some growth potential while maintaining preservation as the priority. The long-term bucket will fund retirement income and legacy with a horizon exceeding thirty years, using a growth-oriented approach constrained by Klaus’s low risk tolerance. The specific amounts allocated to each bucket and the detailed investment approach will be documented in the Investment Strategy Summary that accompanies this IPS.</p>
+<p>The asset classes considered suitable for the Schmidt-Miller portfolio include developed market equities across Swiss, European, North American, and Asia-Pacific markets; emerging market equities in selected markets with appropriate risk controls; government bonds from Switzerland and developed markets; investment-grade corporate bonds diversified across issuers and sectors; inflation-linked bonds for inflation protection; real estate investment trusts for diversification and income; and cash and cash equivalents including money market funds, short-term government bonds, and bank deposits. Private equity and hedge funds are excluded due to liquidity constraints and complexity. Cryptocurrencies and other speculative digital assets are excluded, as are structured products with opaque fee structures or inappropriate risk characteristics.</p>
+<p>The portfolio will be rebalanced quarterly, with rebalancing triggered when any asset class deviates from its target allocation by more than five percentage points. Rebalancing will be accomplished by directing new cash flows to underweight asset classes and, when necessary, selling overweight positions. All rebalancing decisions will consider tax implications, with a preference for using new contributions and dividend reinvestments to adjust allocations in taxable accounts.</p>
+<p>Investment selection criteria vary by vehicle type. For passive investments such as index funds and exchange-traded funds, the criteria include low expense ratio relative to category peers, tracking error consistent with the stated index, sufficient assets under management and trading liquidity, and provider reputation and operational stability. For active investments, the criteria include demonstrated performance relative to benchmark over a full market cycle, a consistent and well-understood investment process, a stable and experienced investment team, fees that are reasonable given the strategy, and alignment of interests between manager and investors. For fixed income investments, the criteria include credit quality appropriate to the role in the portfolio, duration consistent with the strategic allocation, and, for individual bonds, diversification across issuers and sectors.</p>
+<p>For Elke’s inherited holdings, a core portion of the most emotionally significant stocks may be maintained, subject to a maximum concentration limit of 5 percent of total portfolio value and regular review to ensure continued suitability. The remaining inherited assets will be gradually diversified over time according to a schedule documented in the Investment Strategy Summary. This accommodation respects Elke’s endowment bias while ensuring that the overall portfolio moves steadily toward a fully diversified structure.</p>
+</section>
+<section id="schmidt-miller-family-investment-policy-statement-example" class="level3" data-number="5.4.7">
+<h3 data-number="5.4.7" class="anchored" data-anchor-id="schmidt-miller-family-investment-policy-statement-example"><span class="header-section-number">5.4.7</span> Schmidt-Miller Family Investment Policy Statement (Example)</h3>
+<p>The preceding discussion described the content and rationale for each section of the Schmidt-Miller IPS. Exhibit 5.1 now presents the complete, formatted document as it would appear in practice. This exhibit also serves as a template that can be adapted for other client engagements.</p>
+<p><strong>Schmidt-Miller Family</strong></p>
+<p><strong>Date of Adoption:</strong> [Current Date]</p>
+<p><strong>Prepared by:</strong> RockSolid Portfolio Partners</p>
+<section id="section-1-client-identification-and-background" class="level4">
+<h4 class="anchored" data-anchor-id="section-1-client-identification-and-background">Section 1: Client Identification and Background</h4>
+<p><strong>Primary Clients</strong></p>
+<ul>
+<li>Klaus Schmidt-Miller, age 68</li>
+<li>Elke Schmidt-Miller, age 65</li>
+</ul>
+<p><strong>Related Party</strong></p>
+<ul>
+<li>Lukas Schmidt-Miller, age 28, son</li>
+</ul>
+<p><strong>Client Summary</strong></p>
+<p>Klaus Schmidt-Miller is an orthopedic surgeon who has practiced for over three decades. He has sold his stake in the surgical practice he co-founded, resulting in after-tax proceeds of approximately €18 million, and intends to retire fully upon completion of this sale.</p>
+<p>Elke Schmidt-Miller retired two years ago from her career as a school principal. She receives an inflation-indexed pension of €45,000 annually and holds an inherited portfolio of stocks and bonds from her parents, valued at €2.5 million. This portfolio has a low cost basis, creating significant unrealized capital gains.</p>
+<p>Lukas Schmidt-Miller is a software engineer residing in Berlin. He holds a 5 percent equity stake in his startup employer, currently valued at €50,000 for tax purposes but highly speculative. Lukas is financially independent and manages his own affairs, though he expects to receive financial support from his parents for a future home down payment.</p>
+<p>The family resides in a stable Central European jurisdiction with a progressive income tax system. The top marginal rate on ordinary income is 40 percent, and realized capital gains are taxed at a flat 20 percent rate. Tax-advantaged retirement accounts exist within the local framework. The family has no debt and owns their primary residence free and clear, valued at €2.2 million.</p>
+<p><strong>Total Investment Assets</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Asset</th>
+<th>Value (€)</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Practice Sale Proceeds</td>
+<td>18,000,000</td>
+<td>After-tax, available within 60 days</td>
+</tr>
+<tr class="even">
+<td>Elke’s Inherited Portfolio</td>
+<td>2,500,000</td>
+<td>Low cost basis, unrealized gains</td>
+</tr>
+<tr class="odd">
+<td>Klaus’s Retirement Account</td>
+<td>800,000</td>
+<td>Tax-advantaged</td>
+</tr>
+<tr class="even">
+<td>Cash and Savings</td>
+<td>150,000</td>
+<td>High-yield deposit account</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td><strong>21,450,000</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="section-2-investment-objectives" class="level4">
+<h4 class="anchored" data-anchor-id="section-2-investment-objectives">Section 2: Investment Objectives</h4>
+<p>The following objectives are presented in order of priority.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 20%">
@@ -419,7 +479,7 @@ ul.task-list li input[type="checkbox"] {
 <th>Objective</th>
 <th>Description</th>
 <th>Time Horizon</th>
-<th>Current Funding</th>
+<th>Funding Source</th>
 </tr>
 </thead>
 <tbody>
@@ -428,51 +488,44 @@ ul.task-list li input[type="checkbox"] {
 <td>Retirement Income</td>
 <td>Generate €160,000 in annual after-tax income, indexed for inflation, to fund Klaus and Elke’s retirement lifestyle.</td>
 <td>Immediate and ongoing (30+ years)</td>
-<td>€18.55 million (core portfolio)</td>
+<td>Core portfolio</td>
 </tr>
 <tr class="even">
 <td>2</td>
 <td>Art Gallery</td>
 <td>Provide €500,000 within approximately 12 months for Elke to establish an art gallery in Lucerne.</td>
 <td>1 year</td>
-<td>To be set aside from core portfolio</td>
+<td>Set aside from core portfolio</td>
 </tr>
 <tr class="odd">
 <td>3</td>
 <td>Down Payment Support</td>
 <td>Provide €400,000 within 3-5 years to assist Lukas with the purchase of a home in Berlin.</td>
 <td>3-5 years</td>
-<td>To be set aside from core portfolio</td>
+<td>Set aside from core portfolio</td>
 </tr>
 <tr class="even">
 <td>4</td>
 <td>Lake Garda Retreat</td>
-<td>Accumulate €2 million within 5 years for the purchase and renovation of a vacation home on Lake Garda.</td>
+<td>Accumulate €2,000,000 within 5 years for the purchase and renovation of a vacation home on Lake Garda.</td>
 <td>5 years</td>
-<td>To be set aside from core portfolio</td>
+<td>Set aside from core portfolio</td>
 </tr>
 <tr class="odd">
 <td>5</td>
 <td>Legacy Preservation</td>
 <td>Preserve the real value of remaining wealth for Lukas and future grandchildren, ensuring intergenerational transfer.</td>
 <td>30+ years</td>
-<td>Remaining portfolio after funding other goals</td>
+<td>Remaining portfolio</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Additional Considerations</strong></p>
-<ul>
-<li>The retirement income objective is non-negotiable and must be funded before any other goals. All other objectives are discretionary and may be adjusted, delayed, or scaled back if market conditions or other circumstances require.</li>
-<li>The retirement income need is stated after tax. The portfolio must generate sufficient pre-tax returns to meet this after-tax requirement, considering the family’s tax situation.</li>
-<li>All monetary amounts are stated in current euros. Future values will be adjusted for inflation as documented in the IPS review process.</li>
-</ul>
+<p>The retirement income objective is non-negotiable and must be funded before any other goals. All other objectives are discretionary and may be adjusted, delayed, or scaled back if market conditions or other circumstances require. The retirement income need is stated after tax, so the portfolio must generate sufficient pre-tax returns to meet this requirement. All monetary amounts are stated in current euros, and future values will be adjusted for inflation as documented in the IPS review process.</p>
 </section>
-<section id="investment-constraints" class="level4" data-number="5.4.1.3">
-<h4 data-number="5.4.1.3" class="anchored" data-anchor-id="investment-constraints"><span class="header-section-number">5.4.1.3</span> Investment Constraints</h4>
-<p>The investment constraints section documents the various factors that limit or shape the investment strategy. These constraints arise from the client’s personal circumstances, the legal and regulatory environment, and the firm’s policies. Together with the investment objectives, they define the boundaries within which the portfolio must be constructed.</p>
-<p>For the Schmidt-Miller family, Elara has identified the following constraints:</p>
+<section id="section-3-investment-constraints" class="level4">
+<h4 class="anchored" data-anchor-id="section-3-investment-constraints">Section 3: Investment Constraints</h4>
 <p><strong>Time Horizon</strong></p>
-<p>The Schmidt-Miller family presents multiple time horizons corresponding to their different goals:</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -490,79 +543,84 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>Retirement Income</td>
 <td>30+ years</td>
-<td>Long horizon allows for growth-oriented investments in the core portfolio, but must be balanced against Klause’s low risk tolerance.</td>
+<td>Long horizon allows for growth-oriented investments, balanced against Klaus’s low risk tolerance.</td>
 </tr>
 <tr class="even">
 <td>Art Gallery</td>
 <td>1 year</td>
-<td>Very short horizon requires near-complete capital preservation; these funds cannot be exposed to equity market risk.</td>
+<td>Very short horizon requires capital preservation. No equity market exposure.</td>
 </tr>
 <tr class="odd">
 <td>Down Payment</td>
 <td>3-5 years</td>
-<td>Medium horizon allows for modest risk but requires increasing conservatism as the target date approaches.</td>
+<td>Medium horizon allows modest risk with increasing conservatism as target approaches.</td>
 </tr>
 <tr class="even">
 <td>Lake Garda</td>
 <td>5 years</td>
-<td>Medium horizon with some flexibility; if markets perform poorly, the purchase could potentially be delayed.</td>
+<td>Medium horizon with some flexibility. Purchase may be delayed if markets perform poorly.</td>
 </tr>
 <tr class="odd">
 <td>Legacy</td>
 <td>30+ years</td>
-<td>Long horizon allows for growth orientation in the residual portfolio after funding other goals.</td>
+<td>Long horizon allows for growth orientation in residual portfolio.</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Liquidity Requirements</strong></p>
-<p>The family has significant and immediate liquidity needs:</p>
-<ul>
-<li>Annual retirement withdrawals of €160,000, requiring that the first year’s spending be held in cash or very short-term instruments.</li>
-<li>€500,000 for the art gallery, needed in approximately 12 months.</li>
-<li>€400,000 for Lukas’s down payment, with the first portion potentially needed within 3 years.</li>
-<li>€2 million for the Lake Garda property, needed in 5 years.</li>
-</ul>
-<p>These requirements dictate that the portfolio cannot be invested as a single monolithic block. Instead, funds must be segmented into distinct buckets, each with its own investment approach aligned with its time horizon and liquidity need.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Requirement</th>
+<th>Amount (€)</th>
+<th>Timing</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Annual Retirement Withdrawal</td>
+<td>160,000</td>
+<td>Year 1 and ongoing</td>
+</tr>
+<tr class="even">
+<td>Art Gallery</td>
+<td>500,000</td>
+<td>Within 12 months</td>
+</tr>
+<tr class="odd">
+<td>Down Payment</td>
+<td>400,000</td>
+<td>Within 3-5 years</td>
+</tr>
+<tr class="even">
+<td>Lake Garda Property</td>
+<td>2,000,000</td>
+<td>Within 5 years</td>
+</tr>
+</tbody>
+</table>
+<p>These requirements mean the portfolio cannot be invested as a single block. Funds must be segmented into distinct components, each with its own investment approach aligned with its time horizon and liquidity need.</p>
 <p><strong>Tax Considerations</strong></p>
-<p>The family faces several significant tax considerations:</p>
-<ul>
-<li>Klaus’s €18 million sale proceeds are after-tax, meaning no embedded capital gain liability exists for these funds.</li>
-<li>Elke’s inherited portfolio of €2.5 million has a very low cost basis, creating substantial unrealized capital gains. Selling these assets would trigger tax at the 20 percent capital gains rate.</li>
-<li>Annual portfolio income will be taxed at progressive rates up to 40 percent. Investment decisions should consider the tax efficiency of different asset classes and structures.</li>
-<li>Klaus’s retirement account of €800,000 is tax-advantaged; withdrawals will be taxed as ordinary income, but the account grows tax-free in the meantime.</li>
-<li>The family resides in Switzerland, which may impose annual wealth tax in some cantons.</li>
-</ul>
-<p>These tax considerations will influence asset location decisions (which assets are held in taxable versus tax-advantaged accounts), the timing of sales from Elke’s inherited portfolio, and the selection of tax-efficient investment vehicles.</p>
+<p>Klaus’s €18 million sale proceeds are after-tax, so no embedded capital gain liability exists for these funds. Elke’s inherited portfolio of €2.5 million, by contrast, has a low cost basis, creating substantial unrealized capital gains. Selling these assets would trigger tax at the 20 percent capital gains rate. Annual portfolio income will be taxed at progressive rates up to 40 percent, and investment decisions should therefore consider the tax efficiency of different asset classes. Klaus’s retirement account of €800,000 is tax-advantaged. Withdrawals will be taxed as ordinary income, but the account grows tax-free in the interim.</p>
 <p><strong>Legal and Regulatory Constraints</strong></p>
-<ul>
-<li>The family is subject to Swiss tax and regulatory requirements, which must be considered in all investment decisions.</li>
-<li>Lukas’s residence in Berlin introduces cross-border considerations for any gifts or transfers, which should be reviewed with tax specialists.</li>
-<li>All investments must comply with applicable securities laws and regulations in Switzerland and any other relevant jurisdictions.</li>
-</ul>
+<p>The family is subject to the tax and regulatory requirements of their jurisdiction. Lukas’s residence in Berlin introduces cross-border considerations for any gifts or transfers, which must be reviewed with tax specialists. All investments must comply with applicable securities laws and regulations. The advisor operates under a fiduciary standard and is obligated to act in the clients’ best interest at all times.</p>
 <p><strong>Unique Circumstances and Behavioral Considerations</strong></p>
-<p>The client analysis revealed several unique circumstances that constrain the investment strategy:</p>
-<ul>
-<li><strong>Klaus’s Loss Aversion:</strong> Klaus views the €18 million as the hard-won fruit of a lifetime of labor and is extremely averse to losses. Any strategy that exposes significant principal to market volatility will cause him anxiety and may lead to poor decisions during downturns. The portfolio must be structured to minimize the frequency and severity of losses, even at the cost of lower expected returns.</li>
-<li><strong>Elke’s Endowment Bias:</strong> Elke feels a strong emotional connection to her inherited portfolio and is reluctant to sell these assets, even when diversification would be prudent. The investment strategy must accommodate this attachment while still building a diversified overall portfolio. This may involve keeping a core holding of inherited stocks while diversifying around them.</li>
-<li><strong>Lukas’s Overconfidence and Separate Goals:</strong> Lukas’s speculative startup equity is separate from the family’s core wealth and should be treated as such. His down payment funds, however, must be managed conservatively despite his personal risk tolerance. These funds should be held separately and invested according to their own short-term horizon.</li>
-<li><strong>Elke’s Art Gallery:</strong> The gallery is a passion project, not a financial investment. The €500,000 allocated to this goal should be treated as an expense, not as part of the investment portfolio, and its expected return is zero.</li>
-</ul>
+<p>Klaus’s loss aversion is the dominant behavioral constraint. He views the €18 million as the fruit of a lifetime of labor and is averse to losses. Any strategy that exposes significant principal to market volatility will cause him anxiety and may lead to poor decisions during downturns. The portfolio must therefore be structured to minimize the frequency and severity of losses.</p>
+<p>Elke’s endowment bias means she feels a strong emotional connection to her inherited portfolio and is reluctant to sell these assets. The investment strategy must accommodate this attachment while still building a diversified overall portfolio. Lukas’s overconfidence and separate goals require compartmentalization. His speculative startup equity is separate from the family’s core wealth, and his down payment funds must be managed conservatively despite his personal risk tolerance. Finally, Elke’s art gallery is a passion project, not a financial investment. The €500,000 allocated to this goal should be treated as an expense with an expected return of zero.</p>
 </section>
-<section id="risk-tolerance-assessment" class="level4" data-number="5.4.1.4">
-<h4 data-number="5.4.1.4" class="anchored" data-anchor-id="risk-tolerance-assessment"><span class="header-section-number">5.4.1.4</span> Risk Tolerance Assessment</h4>
-<p>The risk tolerance section documents both the client’s ability to take risk and their willingness to do so, drawing on the quantitative and qualitative assessments conducted during client analysis. For clients where ability and willingness diverge, this section specifies how the mismatch will be resolved.</p>
-<p>For the Schmidt-Miller family, Elara has assessed risk tolerance as follows:</p>
+<section id="section-4-risk-tolerance" class="level4">
+<h4 class="anchored" data-anchor-id="section-4-risk-tolerance">Section 4: Risk Tolerance</h4>
 <p><strong>Klaus Schmidt-Miller</strong></p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 35%">
-<col style="width: 35%">
-<col style="width: 29%">
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
+<th>Component</th>
 <th>Assessment</th>
-<th>Risk Level</th>
 <th>Rationale</th>
 </tr>
 </thead>
@@ -570,26 +628,26 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>Ability to Take Risk</td>
 <td>High</td>
-<td>Long time horizon (30+ years), substantial wealth, no debt, flexible discretionary goals</td>
+<td>Long time horizon, substantial wealth, no debt, flexible goals</td>
 </tr>
 <tr class="even">
 <td>Willingness to Take Risk</td>
 <td>Low</td>
-<td>Extreme loss aversion rooted in view of wealth as hard-won; history of conservative financial decisions; expresses discomfort with market volatility</td>
+<td>Extreme loss aversion, conservative financial history</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Elke Schmidt-Miller</strong></p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 35%">
-<col style="width: 35%">
-<col style="width: 29%">
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
+<th>Component</th>
 <th>Assessment</th>
-<th>Risk Level</th>
 <th>Rationale</th>
 </tr>
 </thead>
@@ -597,26 +655,26 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>Ability to Take Risk</td>
 <td>Moderate</td>
-<td>Long time horizon but already in retirement; pension provides baseline income security</td>
+<td>Long horizon but in retirement, pension provides baseline security</td>
 </tr>
 <tr class="even">
 <td>Willingness to Take Risk</td>
 <td>Moderate</td>
-<td>Open to complexity but constrained by emotional attachment to inherited assets</td>
+<td>Open to complexity, constrained by emotional attachment to inherited assets</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Lukas Schmidt-Miller (Personal Wealth)</strong></p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 35%">
-<col style="width: 35%">
-<col style="width: 29%">
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
+<th>Component</th>
 <th>Assessment</th>
-<th>Risk Level</th>
 <th>Rationale</th>
 </tr>
 </thead>
@@ -624,26 +682,26 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>Ability to Take Risk</td>
 <td>High</td>
-<td>Very long time horizon (40+ years), early career, human capital still developing</td>
+<td>Long horizon, early career, human capital developing</td>
 </tr>
 <tr class="even">
 <td>Willingness to Take Risk</td>
 <td>High</td>
-<td>Comfortable with volatility; views startup equity as lottery ticket; expresses confidence in ability to recover from losses</td>
+<td>Comfortable with volatility, confident in ability to recover</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Lukas Schmidt-Miller (Down Payment Funds)</strong></p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 35%">
-<col style="width: 35%">
-<col style="width: 29%">
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
+<th>Component</th>
 <th>Assessment</th>
-<th>Risk Level</th>
 <th>Rationale</th>
 </tr>
 </thead>
@@ -651,106 +709,73 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>Ability to Take Risk</td>
 <td>Low</td>
-<td>Short time horizon (3-5 years); funds committed to specific purchase</td>
+<td>Short horizon, funds committed to specific purchase</td>
 </tr>
 <tr class="even">
 <td>Willingness to Take Risk</td>
-<td>Low (for these funds)</td>
-<td>While personally risk-tolerant, Lukas agrees these funds must be preserved</td>
+<td>Low</td>
+<td>Agrees these funds must be preserved</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Overall Family Portfolio Risk Profile</strong></p>
-<p>The core family portfolio, which funds Klaus and Elke’s retirement and legacy goals, will be managed according to Klaus’s low risk tolerance. This is the binding constraint that must govern all investment decisions for the joint portfolio. Elke’s moderate risk tolerance and endowment bias will be accommodated within this framework through specific provisions for her inherited assets. Lukas’s separate goals will be managed independently, with his down payment funds held in a conservative strategy and his personal wealth managed according to his aggressive profile.</p>
+<p>The core family portfolio, which funds Klaus and Elke’s retirement and legacy goals, will be managed according to Klaus’s low risk tolerance. This is the binding constraint that governs all investment decisions for the joint portfolio. Elke’s moderate risk tolerance and endowment bias will be accommodated within this framework through specific provisions for her inherited assets. Lukas’s separate goals will be managed independently, with his down payment funds held in a conservative strategy.</p>
 </section>
-<section id="return-requirements" class="level4" data-number="5.4.1.5">
-<h4 data-number="5.4.1.5" class="anchored" data-anchor-id="return-requirements"><span class="header-section-number">5.4.1.5</span> Return Requirements</h4>
+<section id="section-5-return-requirements" class="level4">
+<h4 class="anchored" data-anchor-id="section-5-return-requirements">Section 5: Return Requirements</h4>
 <p><strong>Core Retirement Portfolio</strong></p>
-<p>After setting aside funds for the specific shorter-term goals, approximately €18.55 million remains for the long-term retirement and legacy portfolio. This portfolio must:</p>
-<ol type="1">
-<li>Generate €160,000 in annual after-tax income, indexed for inflation, for Klaus and Elke’s lifetime.</li>
-<li>Preserve the real value of the remaining principal for legacy transfer to Lukas and future generations.</li>
-</ol>
-<p>The simple spending rate is €160,000 / €18,550,000 = 0.86%. However, this naive calculation understates the true return requirement because it ignores:</p>
-<ul>
-<li><strong>Inflation:</strong> Assuming 2.5% average inflation, the withdrawal in year 10 will need to be approximately €205,000 to maintain the same purchasing power.</li>
-<li><strong>Taxes:</strong> Withdrawals and portfolio income will be taxed at rates up to 40%. To have €160,000 after tax, the portfolio must earn significantly more before tax.</li>
-<li><strong>Legacy Preservation:</strong> To maintain the real value of the principal, the portfolio must earn returns that at least keep pace with inflation after withdrawals and taxes.</li>
-</ul>
-<p>A more realistic analysis suggests that the portfolio needs to earn a real after-tax return of approximately 4% to sustainably fund the desired spending while preserving the real value of the legacy. This translates to a nominal pre-tax return in the range of 6-8% , depending on inflation and the tax efficiency of portfolio construction.</p>
-<p><strong>Short-Term and Medium-Term Buckets</strong></p>
-<p>The funds allocated to specific shorter-term goals have different return requirements:</p>
+<p>After setting aside funds for specific shorter-term goals, approximately €18.39 million remains for the long-term retirement and legacy portfolio. This figure represents total investable assets of €21.45 million less the €500,000 gallery funding, €400,000 down payment, €2 million Lake Garda reserve, and €160,000 first-year retirement income held in cash. The core portfolio must generate €160,000 in annual after-tax income, indexed for inflation, and preserve the real value of the remaining principal for legacy transfer. A complete analysis indicates a required real after-tax return of approximately 3.5 to 4.5 percent to sustainably fund the desired spending while preserving the real value of the legacy. This translates to a nominal pre-tax return target of 6 to 8 percent, depending on inflation and the tax efficiency of portfolio construction.</p>
+<p><strong>Short-Term and Medium-Term Goals</strong></p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 9%">
-<col style="width: 12%">
-<col style="width: 14%">
-<col style="width: 30%">
-<col style="width: 33%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Goal</th>
-<th>Amount</th>
+<th>Amount (€)</th>
 <th>Horizon</th>
 <th>Return Requirement</th>
-<th>Investment Approach</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Art Gallery</td>
-<td>€500,000</td>
+<td>500,000</td>
 <td>1 year</td>
 <td>Near-zero; capital preservation paramount</td>
-<td>Cash or very short-term bonds</td>
 </tr>
 <tr class="even">
 <td>Down Payment</td>
-<td>€400,000</td>
+<td>400,000</td>
 <td>3-5 years</td>
 <td>Modest; preservation priority</td>
-<td>Short-term bond ladder or conservative balanced fund</td>
 </tr>
 <tr class="odd">
 <td>Lake Garda</td>
-<td>€2,000,000</td>
+<td>2,000,000</td>
 <td>5 years</td>
-<td>Moderate; some growth needed to offset inflation but preservation important</td>
-<td>Medium-term bond ladder with modest equity allocation if flexibility exists</td>
+<td>Moderate; some growth with preservation</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Feasibility Assessment</strong></p>
-<p>A nominal pre-tax return target of 6-8% for the core portfolio is realistic but not guaranteed. Historical returns on a diversified portfolio of global equities and bonds have averaged in this range over long periods, but with significant variability. A portfolio constructed to achieve this target will likely have an equity allocation of 40-60%, which implies potential peak-to-trough losses of 20-30% in severe bear markets.</p>
-<p>This level of volatility is at the upper limit of what Klaus’s loss aversion can tolerate. The portfolio must be structured to minimize the frequency and severity of losses while still pursuing the required return. This may involve:</p>
-<ul>
-<li>A higher allocation to high-quality bonds than a purely mathematical optimization would suggest.</li>
-<li>Use of structured products or other strategies that provide downside protection.</li>
-<li>A dedicated income bucket that provides psychological comfort even if not mathematically optimal.</li>
-</ul>
+<p>A nominal pre-tax return target of 6 to 8 percent for the core portfolio is realistic but not guaranteed. A portfolio constructed to achieve this target will likely have an equity allocation of 40 to 60 percent, implying potential peak-to-trough losses of 20 to 30 percent in severe bear markets. This level of volatility sits at the upper limit of what Klaus’s loss aversion can tolerate. The portfolio must therefore be structured to minimize the frequency and severity of losses while still pursuing the required return.</p>
 </section>
-<section id="asset-allocation-and-investment-strategy-framework" class="level4" data-number="5.4.1.6">
-<h4 data-number="5.4.1.6" class="anchored" data-anchor-id="asset-allocation-and-investment-strategy-framework"><span class="header-section-number">5.4.1.6</span> Asset Allocation and Investment Strategy Framework</h4>
-<p>With the client’s objectives, constraints, risk tolerance, and return requirements clearly documented, we now establish the governance framework that will guide asset allocation and investment decisions. This section does not specify the actual allocation percentages, those are determined through the strategic asset allocation process described in Chapter 7 and documented in a separate Investment Strategy Summary. Instead, it establishes the principles, boundaries, and procedures that will govern how allocation decisions are made and maintained over time.</p>
+<section id="section-6-asset-allocation-and-investment-strategy-framework" class="level4">
+<h4 class="anchored" data-anchor-id="section-6-asset-allocation-and-investment-strategy-framework">Section 6: Asset Allocation and Investment Strategy Framework</h4>
 <p><strong>Asset Allocation Principles</strong></p>
-<p>The Schmidt-Miller portfolio will be constructed according to the following principles:</p>
-<ul>
-<li><strong>Diversification:</strong> The portfolio will be diversified across multiple asset classes to reduce reliance on any single source of return and to manage overall portfolio volatility. Diversification recognizes that different asset classes perform differently under varying economic conditions and that a balanced portfolio can achieve more consistent returns than any single asset class alone.</li>
-<li><strong>Goal Segmentation:</strong> Funds will be allocated to distinct sub-portfolios or “buckets” aligned with each financial goal’s time horizon and liquidity requirements. Short-term goals will be funded with capital preservation instruments, while long-term goals may include growth-oriented assets. This segmentation ensures that short-term needs do not compromise long-term strategy.</li>
-<li><strong>Respect for the Binding Constraint:</strong> Klaus’s low risk tolerance is the binding constraint for the core retirement portfolio. All allocation decisions will respect this constraint, even if it implies lower expected returns. The portfolio will be structured to minimize the frequency and severity of losses to ensure that Klaus can adhere to the plan through market cycles.</li>
-<li><strong>Tax Efficiency:</strong> Asset location decisions will be made with careful attention to tax efficiency. Tax-inefficient assets such as taxable bonds will be prioritized for Klaus’s retirement account, while tax-efficient assets such as equities will be prioritized for taxable accounts. Sales from Elke’s inherited portfolio will be managed over time to control tax impact.</li>
-<li><strong>Cost Awareness:</strong> All investment decisions will consider the impact of costs on net returns. Where appropriate, low-cost passive vehicles such as index funds and ETFs will be used to gain core market exposure. Active strategies will be considered only in areas where research suggests the potential for excess returns sufficient to justify higher fees.</li>
-<li><strong>Behavioral Accommodation:</strong> The portfolio will be structured to accommodate the behavioral biases identified during client analysis, as detailed in the Unique Circumstances section above.</li>
-</ul>
+<p>The Schmidt-Miller portfolio will be constructed according to the following principles. Diversification requires that the portfolio be spread across multiple asset classes to reduce reliance on any single source of return and to manage overall portfolio volatility. Goal segmentation requires that funds be allocated to distinct sub-portfolios aligned with each financial goal’s time horizon and liquidity requirements. Respect for the binding constraint means that Klaus’s low risk tolerance governs the core retirement portfolio, and all allocation decisions will respect this constraint. Tax efficiency requires that asset location decisions be made with careful attention to tax consequences. Cost awareness means that all investment decisions will consider the impact of costs on net returns. Behavioral accommodation requires that the portfolio be structured to address the biases identified during client analysis.</p>
 <p><strong>Portfolio Segmentation</strong></p>
-<p>Based on the family’s multiple goals with different time horizons, the portfolio will be segmented as follows:</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 15%">
-<col style="width: 17%">
-<col style="width: 26%">
-<col style="width: 40%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -762,73 +787,77 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td>Liquidity Bucket</td>
+<td>Liquidity</td>
 <td>Art gallery funding</td>
 <td>1 year</td>
 <td>Capital preservation; cash or very short-term bonds</td>
 </tr>
 <tr class="even">
-<td>Medium-Term Bucket 1</td>
+<td>Medium-Term 1</td>
 <td>Lukas’s down payment</td>
 <td>3-5 years</td>
-<td>Conservative, with increasing conservatism as target approaches</td>
+<td>Conservative, increasing conservatism as target approaches</td>
 </tr>
 <tr class="odd">
-<td>Medium-Term Bucket 2</td>
+<td>Medium-Term 2</td>
 <td>Lake Garda property</td>
 <td>5 years</td>
-<td>Moderate, with some growth potential but preservation priority</td>
+<td>Moderate, some growth potential with preservation priority</td>
 </tr>
 <tr class="even">
-<td>Long-Term Bucket</td>
+<td>Long-Term</td>
 <td>Retirement income and legacy</td>
 <td>30+ years</td>
-<td>Growth-oriented but constrained by Klaus’s low risk tolerance</td>
+<td>Growth-oriented, constrained by Klaus’s low risk tolerance</td>
 </tr>
 </tbody>
 </table>
-<p>The specific amounts allocated to each bucket and the detailed investment approach for each will be documented in the Investment Strategy Summary that accompanies this IPS.</p>
 <p><strong>Permissible Asset Classes</strong></p>
-<p>The following asset classes are considered suitable for the Schmidt-Miller portfolio, subject to the strategic asset allocation process and the client’s risk constraints:</p>
-<ul>
-<li><strong>Developed Market Equities:</strong> Swiss, European, North American, Japan</li>
-<li><strong>Emerging Market Equities:</strong> Selected markets with appropriate risk controls</li>
-<li><strong>Government Bonds:</strong> Swiss and developed market government bonds</li>
-<li><strong>Investment-Grade Corporate Bonds:</strong> Diversified across issuers and sectors</li>
-<li><strong>Inflation-Linked Bonds:</strong> For inflation protection</li>
-<li><strong>Cash and Cash Equivalents:</strong> Money market funds, short-term government bonds, bank deposits</li>
-</ul>
-<p><strong>Excluded Asset Classes</strong></p>
-<p>The following asset classes are not considered suitable for this portfolio:</p>
-<ul>
-<li>Private equity and hedge funds (due to liquidity constraints and complexity)</li>
-<li>Cryptocurrencies and other speculative digital assets</li>
-<li>Structured products with opaque fee structures or inappropriate risk characteristics</li>
-</ul>
+<p>Suitable asset classes include developed market equities, emerging market equities in selected markets, government bonds, investment-grade corporate bonds, inflation-linked bonds, real estate investment trusts, and cash and cash equivalents. Excluded are private equity and hedge funds due to liquidity constraints, cryptocurrencies and speculative digital assets, and structured products with opaque fee structures.</p>
 <p><strong>Rebalancing Policy</strong></p>
-<p>The portfolio will be rebalanced to maintain target allocations using the following guidelines:</p>
-<ul>
-<li><strong>Review Frequency:</strong> The portfolio will be reviewed quarterly for rebalancing needs.</li>
-<li><strong>Tolerance Bands:</strong> Rebalancing will be triggered when any asset class deviates from its target allocation by more than five percentage points.</li>
-<li><strong>Method:</strong> Rebalancing will be accomplished through a combination of directing new cash flows to underweight asset classes and, when necessary, selling overweight positions.</li>
-<li><strong>Tax Awareness:</strong> Rebalancing decisions will consider tax implications, with a preference for using new contributions and dividend reinvestments to adjust allocations in taxable accounts.</li>
-</ul>
+<p>The portfolio will be reviewed quarterly for rebalancing needs. Rebalancing will be triggered when any asset class deviates from its target allocation by more than five percentage points, and it will be accomplished through directing new cash flows to underweight asset classes and, when necessary, selling overweight positions. All rebalancing decisions will consider tax implications.</p>
 <p><strong>Investment Selection Criteria</strong></p>
-<p>All investments selected for the Schmidt-Miller portfolio will be evaluated against the following criteria:</p>
-<ul>
-<li><strong>Passive Investments (Index Funds and ETFs):</strong> Low expense ratio relative to category peers; tracking error consistent with the stated index; sufficient assets under management and trading liquidity; provider reputation and operational stability.</li>
-<li><strong>Active Investments (Selected Strategies):</strong> Demonstrated performance relative to benchmark over a full market cycle; consistent investment process that is well understood; stable and experienced investment team; fees that are reasonable given the strategy; alignment of interests between manager and investors.</li>
-<li><strong>Fixed Income Investments:</strong> Credit quality appropriate to the role in the portfolio; duration consistent with the strategic allocation; for individual bonds, diversification across issuers and sectors.</li>
-<li><strong>Elke’s Inherited Holdings:</strong> A core holding of the most emotionally significant inherited stocks may be maintained, subject to a maximum concentration limit of 5% of total portfolio value and regular review to ensure continued suitability. The remaining inherited assets will be gradually diversified over time according to a schedule documented in the Investment Strategy Summary.</li>
-</ul>
+<p>For passive investments, the criteria include low expense ratio, tracking error consistent with the stated index, sufficient assets under management and liquidity, and provider reputation and operational stability. For active investments, the criteria include demonstrated performance over a full market cycle, a consistent investment process, a stable and experienced team, reasonable fees, and alignment of interests. For fixed income, the criteria include credit quality appropriate to the role, duration consistent with the strategic allocation, and diversification across issuers and sectors.</p>
+<p><strong>Elke’s Inherited Holdings</strong></p>
+<p>A core holding of the most emotionally significant inherited stocks may be maintained, subject to a maximum concentration limit of 5 percent of total portfolio value and regular review to ensure continued suitability. The remaining inherited assets will be gradually diversified over time according to a schedule documented in the Investment Strategy Summary.</p>
 </section>
+<section id="section-7-monitoring-and-reporting" class="level4">
+<h4 class="anchored" data-anchor-id="section-7-monitoring-and-reporting">Section 7: Monitoring and Reporting</h4>
+<p><strong>Performance Benchmarks</strong></p>
+<p>The portfolio will be evaluated against a blended benchmark reflecting its target asset allocation. The benchmark composition will be documented in the Investment Strategy Summary.</p>
+<p><strong>Review Schedule</strong></p>
+<p>Formal portfolio reviews will be conducted quarterly. A comprehensive annual review will assess progress toward goals, evaluate performance, and determine whether any adjustments to the investment strategy are warranted.</p>
+<p><strong>Reporting Requirements</strong></p>
+<p>The advisor will provide quarterly reports including portfolio valuation, performance relative to benchmarks, transactions during the period, fees and expenses, and commentary on significant market events or portfolio changes.</p>
 </section>
+<section id="section-8-responsibilities" class="level4">
+<h4 class="anchored" data-anchor-id="section-8-responsibilities">Section 8: Responsibilities</h4>
+<p><strong>Client Responsibilities</strong></p>
+<p>The client agrees to provide accurate and complete information regarding their financial situation, goals, and risk tolerance. The client agrees to notify the advisor promptly of any material changes in their circumstances and to review all reports and communications, raising any questions or concerns in a timely manner.</p>
+<p><strong>Advisor Responsibilities</strong></p>
+<p>The advisor agrees to manage the portfolio in accordance with this Investment Policy Statement, to provide timely and accurate reporting as specified in Section 7, to communicate material developments that may affect the portfolio or the client’s financial plan, and to act in the client’s best interest at all times in accordance with the fiduciary standard.</p>
+<p><strong>Custodian Responsibilities</strong></p>
+<p>The custodian is responsible for holding assets safely, executing trades as directed, and providing accurate record-keeping and statements.</p>
 </section>
-<section id="conclusion" class="level2" data-number="5.5">
-<h2 data-number="5.5" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">5.5</span> Conclusion</h2>
-<p>In summary, a well-defined investment policy is vital for the effective management of client portfolios and the overall success of the investment firm. It ensures operational consistency, risk management, regulatory compliance, and client satisfaction. Regular reviews and adaptations of the investment policy are necessary to keep pace with changes in market conditions, regulatory environments, and client requirements. By prioritizing a robust investment policy, investment firms can enhance their strategic decision-making, maintain high standards of client service, and achieve sustained success in the competitive world of investment management.</p>
+<section id="section-9-review-and-amendment-procedures" class="level4">
+<h4 class="anchored" data-anchor-id="section-9-review-and-amendment-procedures">Section 9: Review and Amendment Procedures</h4>
+<p>This Investment Policy Statement will be reviewed annually or upon the occurrence of any material change in the client’s circumstances, including changes in marital status, health, employment, financial condition, or goals. Any amendments to this IPS must be agreed upon by both parties and documented in writing. The advisor will maintain a record of all versions of this document.</p>
+<p><strong>Acknowledgment and Acceptance</strong></p>
+<p>We, the undersigned, have read and understand this Investment Policy Statement. We acknowledge that it accurately reflects our financial circumstances, investment objectives, constraints, and risk tolerance as of the date below. We agree to the investment strategy and governance framework described herein.</p>
+<hr>
+<p><strong>Klaus Schmidt-Miller</strong><br>
+Date</p>
+<hr>
+<p><strong>Elke Schmidt-Miller</strong><br>
+Date</p>
+<hr>
+<p><strong>RockSolid Portfolio Partners</strong><br>
+Date</p>
+<hr>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->

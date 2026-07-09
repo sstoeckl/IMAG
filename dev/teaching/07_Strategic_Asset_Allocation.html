@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -23,7 +23,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -41,10 +60,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-fc191d7e8f366277d9793a5632231daa.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5a68c98b437a3c78657a768ab97f9fd3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,6 +93,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="custom.css">
 </head>
@@ -190,12 +238,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Performance Analysis</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./13_Feedback_Loop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Feedback Loop</span></span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -206,67 +248,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">7.1</span> Introduction</a>
-  <ul class="collapse">
-  <li><a href="#definition-and-purpose-of-strategic-asset-allocation" id="toc-definition-and-purpose-of-strategic-asset-allocation" class="nav-link" data-scroll-target="#definition-and-purpose-of-strategic-asset-allocation"><span class="header-section-number">7.1.1</span> Definition and Purpose of Strategic Asset Allocation</a></li>
-  <li><a href="#importance-of-aligning-strategic-asset-allocation-with-long-term-investment-objectives-and-risk-tolerance" id="toc-importance-of-aligning-strategic-asset-allocation-with-long-term-investment-objectives-and-risk-tolerance" class="nav-link" data-scroll-target="#importance-of-aligning-strategic-asset-allocation-with-long-term-investment-objectives-and-risk-tolerance"><span class="header-section-number">7.1.2</span> Importance of Aligning Strategic Asset Allocation with Long-Term Investment Objectives and Risk Tolerance</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">7.1.3</span> Conclusion</a></li>
-  </ul></li>
-  <li><a href="#establishing-investment-guidelines" id="toc-establishing-investment-guidelines" class="nav-link" data-scroll-target="#establishing-investment-guidelines"><span class="header-section-number">7.2</span> Establishing Investment Guidelines</a>
-  <ul class="collapse">
-  <li><a href="#developing-investment-guidelines" id="toc-developing-investment-guidelines" class="nav-link" data-scroll-target="#developing-investment-guidelines"><span class="header-section-number">7.2.1</span> Developing Investment Guidelines</a></li>
-  <li><a href="#constructing-a-strategic-asset-allocation-model" id="toc-constructing-a-strategic-asset-allocation-model" class="nav-link" data-scroll-target="#constructing-a-strategic-asset-allocation-model"><span class="header-section-number">7.2.2</span> Constructing a Strategic Asset Allocation Model</a></li>
-  <li><a href="#conclusion-1" id="toc-conclusion-1" class="nav-link" data-scroll-target="#conclusion-1"><span class="header-section-number">7.2.3</span> Conclusion</a></li>
-  </ul></li>
-  <li><a href="#defining-asset-classes-for-allocation" id="toc-defining-asset-classes-for-allocation" class="nav-link" data-scroll-target="#defining-asset-classes-for-allocation"><span class="header-section-number">7.3</span> Defining Asset Classes for Allocation</a>
-  <ul class="collapse">
-  <li><a href="#traditional-asset-classes" id="toc-traditional-asset-classes" class="nav-link" data-scroll-target="#traditional-asset-classes"><span class="header-section-number">7.3.1</span> Traditional Asset Classes</a></li>
-  <li><a href="#alternative-asset-classes" id="toc-alternative-asset-classes" class="nav-link" data-scroll-target="#alternative-asset-classes"><span class="header-section-number">7.3.2</span> Alternative Asset Classes</a></li>
-  <li><a href="#conclusion-2" id="toc-conclusion-2" class="nav-link" data-scroll-target="#conclusion-2"><span class="header-section-number">7.3.3</span> Conclusion</a></li>
-  </ul></li>
-  <li><a href="#geographic-diversification" id="toc-geographic-diversification" class="nav-link" data-scroll-target="#geographic-diversification"><span class="header-section-number">7.4</span> Geographic Diversification</a>
-  <ul class="collapse">
-  <li><a href="#rationale-for-country-specific-investments" id="toc-rationale-for-country-specific-investments" class="nav-link" data-scroll-target="#rationale-for-country-specific-investments"><span class="header-section-number">7.4.1</span> Rationale for Country-Specific Investments</a></li>
-  <li><a href="#benefits-of-international-diversification" id="toc-benefits-of-international-diversification" class="nav-link" data-scroll-target="#benefits-of-international-diversification"><span class="header-section-number">7.4.2</span> Benefits of International Diversification</a></li>
-  <li><a href="#considerations-for-emerging-markets-vs.-developed-markets" id="toc-considerations-for-emerging-markets-vs.-developed-markets" class="nav-link" data-scroll-target="#considerations-for-emerging-markets-vs.-developed-markets"><span class="header-section-number">7.4.3</span> Considerations for Emerging Markets vs.&nbsp;Developed Markets</a></li>
-  <li><a href="#conclusion-3" id="toc-conclusion-3" class="nav-link" data-scroll-target="#conclusion-3"><span class="header-section-number">7.4.4</span> Conclusion</a></li>
-  </ul></li>
-  <li><a href="#currency-allocation" id="toc-currency-allocation" class="nav-link" data-scroll-target="#currency-allocation"><span class="header-section-number">7.5</span> Currency Allocation</a>
-  <ul class="collapse">
-  <li><a href="#impact-of-currency-exposure-on-international-investments" id="toc-impact-of-currency-exposure-on-international-investments" class="nav-link" data-scroll-target="#impact-of-currency-exposure-on-international-investments"><span class="header-section-number">7.5.1</span> Impact of Currency Exposure on International Investments</a></li>
-  <li><a href="#strategies-for-currency-diversification-and-managing-currency-risk" id="toc-strategies-for-currency-diversification-and-managing-currency-risk" class="nav-link" data-scroll-target="#strategies-for-currency-diversification-and-managing-currency-risk"><span class="header-section-number">7.5.2</span> Strategies for Currency Diversification and Managing Currency Risk</a></li>
-  <li><a href="#conclusion-4" id="toc-conclusion-4" class="nav-link" data-scroll-target="#conclusion-4"><span class="header-section-number">7.5.3</span> Conclusion</a></li>
-  </ul></li>
-  <li><a href="#deciding-on-the-asset-mix" id="toc-deciding-on-the-asset-mix" class="nav-link" data-scroll-target="#deciding-on-the-asset-mix"><span class="header-section-number">7.6</span> Deciding on the Asset Mix</a>
-  <ul class="collapse">
-  <li><a href="#methods-for-determining-the-appropriate-mix-of-asset-classes" id="toc-methods-for-determining-the-appropriate-mix-of-asset-classes" class="nav-link" data-scroll-target="#methods-for-determining-the-appropriate-mix-of-asset-classes"><span class="header-section-number">7.6.1</span> Methods for Determining the Appropriate Mix of Asset Classes</a></li>
-  <li><a href="#utilizing-optimization-models-to-derive-the-asset-mix" id="toc-utilizing-optimization-models-to-derive-the-asset-mix" class="nav-link" data-scroll-target="#utilizing-optimization-models-to-derive-the-asset-mix"><span class="header-section-number">7.6.2</span> Utilizing Optimization Models to Derive the Asset Mix</a></li>
-  </ul></li>
-  <li><a href="#strategic-asset-allocation-in-cesim-invest" id="toc-strategic-asset-allocation-in-cesim-invest" class="nav-link" data-scroll-target="#strategic-asset-allocation-in-cesim-invest"><span class="header-section-number">7.7</span> Strategic Asset Allocation in Cesim Invest</a>
-  <ul class="collapse">
-  <li><a href="#conclusion-5" id="toc-conclusion-5" class="nav-link" data-scroll-target="#conclusion-5"><span class="header-section-number">7.7.1</span> Conclusion</a></li>
-  </ul></li>
-  <li><a href="#incorporating-sustainability-and-global-trends" id="toc-incorporating-sustainability-and-global-trends" class="nav-link" data-scroll-target="#incorporating-sustainability-and-global-trends"><span class="header-section-number">7.8</span> Incorporating Sustainability and Global Trends</a>
-  <ul class="collapse">
-  <li><a href="#influence-of-global-economic-trends-and-sustainability-on-asset-allocation" id="toc-influence-of-global-economic-trends-and-sustainability-on-asset-allocation" class="nav-link" data-scroll-target="#influence-of-global-economic-trends-and-sustainability-on-asset-allocation"><span class="header-section-number">7.8.1</span> Influence of Global Economic Trends and Sustainability on Asset Allocation</a></li>
-  <li><a href="#adapting-allocation-to-incorporate-green-investments" id="toc-adapting-allocation-to-incorporate-green-investments" class="nav-link" data-scroll-target="#adapting-allocation-to-incorporate-green-investments"><span class="header-section-number">7.8.2</span> Adapting Allocation to Incorporate Green Investments</a></li>
-  <li><a href="#strategies-for-integrating-sustainability-into-asset-allocation" id="toc-strategies-for-integrating-sustainability-into-asset-allocation" class="nav-link" data-scroll-target="#strategies-for-integrating-sustainability-into-asset-allocation"><span class="header-section-number">7.8.3</span> Strategies for Integrating Sustainability into Asset Allocation</a></li>
-  <li><a href="#conclusion-6" id="toc-conclusion-6" class="nav-link" data-scroll-target="#conclusion-6"><span class="header-section-number">7.8.4</span> Conclusion</a></li>
-  </ul></li>
-  <li><a href="#revisiting-and-adjusting-the-allocation" id="toc-revisiting-and-adjusting-the-allocation" class="nav-link" data-scroll-target="#revisiting-and-adjusting-the-allocation"><span class="header-section-number">7.9</span> Revisiting and Adjusting the Allocation</a>
-  <ul class="collapse">
-  <li><a href="#portfolio-rebalancing" id="toc-portfolio-rebalancing" class="nav-link" data-scroll-target="#portfolio-rebalancing"><span class="header-section-number">7.9.1</span> Portfolio Rebalancing</a></li>
-  <li><a href="#ongoing-monitoring-and-rebalancing-procedures" id="toc-ongoing-monitoring-and-rebalancing-procedures" class="nav-link" data-scroll-target="#ongoing-monitoring-and-rebalancing-procedures"><span class="header-section-number">7.9.2</span> Ongoing Monitoring and Rebalancing Procedures</a></li>
-  <li><a href="#adjusting-the-strategic-asset-allocation" id="toc-adjusting-the-strategic-asset-allocation" class="nav-link" data-scroll-target="#adjusting-the-strategic-asset-allocation"><span class="header-section-number">7.9.3</span> Adjusting the Strategic Asset Allocation</a></li>
-  <li><a href="#best-practices-for-revisiting-and-adjusting-the-allocation" id="toc-best-practices-for-revisiting-and-adjusting-the-allocation" class="nav-link" data-scroll-target="#best-practices-for-revisiting-and-adjusting-the-allocation"><span class="header-section-number">7.9.4</span> Best Practices for Revisiting and Adjusting the Allocation</a></li>
-  <li><a href="#conclusion-7" id="toc-conclusion-7" class="nav-link" data-scroll-target="#conclusion-7"><span class="header-section-number">7.9.5</span> Conclusion</a></li>
-  </ul></li>
-  <li><a href="#conclusion-the-essential-role-of-strategic-asset-allocation" id="toc-conclusion-the-essential-role-of-strategic-asset-allocation" class="nav-link" data-scroll-target="#conclusion-the-essential-role-of-strategic-asset-allocation"><span class="header-section-number">7.10</span> Conclusion: The Essential Role of Strategic Asset Allocation</a>
-  <ul class="collapse">
-  <li><a href="#summarizing-the-importance-of-strategic-asset-allocation" id="toc-summarizing-the-importance-of-strategic-asset-allocation" class="nav-link" data-scroll-target="#summarizing-the-importance-of-strategic-asset-allocation"><span class="header-section-number">7.10.1</span> Summarizing the Importance of Strategic Asset Allocation</a></li>
-  <li><a href="#reinforcing-the-need-for-flexibility-and-adaptation" id="toc-reinforcing-the-need-for-flexibility-and-adaptation" class="nav-link" data-scroll-target="#reinforcing-the-need-for-flexibility-and-adaptation"><span class="header-section-number">7.10.2</span> Reinforcing the Need for Flexibility and Adaptation</a></li>
-  <li><a href="#final-conclusion" id="toc-final-conclusion" class="nav-link" data-scroll-target="#final-conclusion"><span class="header-section-number">7.10.3</span> Final Conclusion</a></li>
-  </ul></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">7.1</span> 7.1 Introduction</a></li>
+  <li><a href="#establishing-investment-guidelines" id="toc-establishing-investment-guidelines" class="nav-link" data-scroll-target="#establishing-investment-guidelines"><span class="header-section-number">7.2</span> 7.2 Establishing Investment Guidelines</a></li>
+  <li><a href="#mean-variance-optimization" id="toc-mean-variance-optimization" class="nav-link" data-scroll-target="#mean-variance-optimization"><span class="header-section-number">7.3</span> 7.3 Mean-Variance Optimization</a></li>
+  <li><a href="#improving-mvo-resampling-and-constraints" id="toc-improving-mvo-resampling-and-constraints" class="nav-link" data-scroll-target="#improving-mvo-resampling-and-constraints"><span class="header-section-number">7.4</span> 7.4 Improving MVO: Resampling and Constraints</a></li>
+  <li><a href="#risk-perspectives-shortfall-and-downside-risk" id="toc-risk-perspectives-shortfall-and-downside-risk" class="nav-link" data-scroll-target="#risk-perspectives-shortfall-and-downside-risk"><span class="header-section-number">7.5</span> 7.5 Risk Perspectives: Shortfall and Downside Risk</a></li>
+  <li><a href="#the-black-litterman-model" id="toc-the-black-litterman-model" class="nav-link" data-scroll-target="#the-black-litterman-model"><span class="header-section-number">7.6</span> 7.6 The Black-Litterman Model</a></li>
+  <li><a href="#geographic-and-currency-diversification" id="toc-geographic-and-currency-diversification" class="nav-link" data-scroll-target="#geographic-and-currency-diversification"><span class="header-section-number">7.7</span> 7.7 Geographic and Currency Diversification</a></li>
+  <li><a href="#methods-for-determining-the-asset-mix" id="toc-methods-for-determining-the-asset-mix" class="nav-link" data-scroll-target="#methods-for-determining-the-asset-mix"><span class="header-section-number">7.8</span> 7.8 Methods for Determining the Asset Mix</a></li>
+  <li><a href="#behavioral-considerations-in-asset-allocation" id="toc-behavioral-considerations-in-asset-allocation" class="nav-link" data-scroll-target="#behavioral-considerations-in-asset-allocation"><span class="header-section-number">7.9</span> 7.9 Behavioral Considerations in Asset Allocation</a></li>
+  <li><a href="#incorporating-sustainability-and-global-trends" id="toc-incorporating-sustainability-and-global-trends" class="nav-link" data-scroll-target="#incorporating-sustainability-and-global-trends"><span class="header-section-number">7.10</span> 7.10 Incorporating Sustainability and Global Trends</a></li>
+  <li><a href="#revisiting-and-adjusting-the-allocation" id="toc-revisiting-and-adjusting-the-allocation" class="nav-link" data-scroll-target="#revisiting-and-adjusting-the-allocation"><span class="header-section-number">7.11</span> 7.11 Revisiting and Adjusting the Allocation</a></li>
+  <li><a href="#application-the-schmidt-miller-family" id="toc-application-the-schmidt-miller-family" class="nav-link" data-scroll-target="#application-the-schmidt-miller-family"><span class="header-section-number">7.12</span> 7.12 Application: The Schmidt-Miller Family</a></li>
   </ul>
 </nav>
     </div>
@@ -306,540 +299,377 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <section id="introduction" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">7.1</span> Introduction</h2>
-<p>Strategic asset allocation is a fundamental component of investment management, serving as the backbone of a long-term investment strategy. It involves setting a baseline distribution of assets across various investment categories, based on predicted rates of return for each asset class, while considering the investor’s risk tolerance and investment timeline.</p>
-<section id="definition-and-purpose-of-strategic-asset-allocation" class="level3" data-number="7.1.1">
-<h3 data-number="7.1.1" class="anchored" data-anchor-id="definition-and-purpose-of-strategic-asset-allocation"><span class="header-section-number">7.1.1</span> Definition and Purpose of Strategic Asset Allocation</h3>
-<p>Strategic asset allocation refers to the process of establishing a long-term ‘base policy mix’—a proportionate combination of assets that aims to balance the risk versus return trade-off based on an investor’s specific objectives and constraints. The core purpose of this approach is to optimize the potential return for a given level of risk by carefully selecting the proportion of various asset classes such as stocks, bonds, real estate, and alternatives.</p>
-<ul>
-<li><strong>Foundational Strategy:</strong> Unlike tactical asset allocation, which seeks to take advantage of short-term market movements, strategic asset allocation provides a foundation for building a portfolio that can weather market fluctuations and adhere to a predetermined investment approach.</li>
-</ul>
-</section>
-<section id="importance-of-aligning-strategic-asset-allocation-with-long-term-investment-objectives-and-risk-tolerance" class="level3" data-number="7.1.2">
-<h3 data-number="7.1.2" class="anchored" data-anchor-id="importance-of-aligning-strategic-asset-allocation-with-long-term-investment-objectives-and-risk-tolerance"><span class="header-section-number">7.1.2</span> Importance of Aligning Strategic Asset Allocation with Long-Term Investment Objectives and Risk Tolerance</h3>
-<ul>
-<li><strong>Meeting Investment Objectives:</strong> Strategic asset allocation is crucial for ensuring that investment decisions are aligned with the investor’s long-term goals, whether these goals are growth, income, or preservation of capital. By defining how assets should be distributed across different categories, investors can aim to achieve their financial targets within their expected time horizon.</li>
-<li><strong>Risk Management:</strong> Effective asset allocation inherently involves managing risk by diversifying investments across a variety of asset classes. This diversification helps reduce the risk of significant losses by spreading exposure across assets that have varying reactions to the same economic events.</li>
-<li><strong>Consistency and Discipline:</strong> A well-defined strategic asset allocation strategy helps investors maintain a disciplined approach in their investing practices. It reduces the risk of making impulsive decisions based on short-term market trends and focuses on broader financial goals.</li>
-<li><strong>Adaptability to Changing Financial Goals and Risk Profiles:</strong> Over time, an investor’s financial situation, goals, and risk tolerance may evolve due to changes in personal life, economic conditions, or market environments. Regular reviews and adjustments of the asset allocation ensure that the portfolio continues to meet the investor’s needs.</li>
-</ul>
-</section>
-<section id="conclusion" class="level3" data-number="7.1.3">
-<h3 data-number="7.1.3" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">7.1.3</span> Conclusion</h3>
-<p>Strategic asset allocation is not just about choosing the right mix of assets; it’s about creating a robust framework that guides investment decisions over the long term. By aligning asset allocation with an individual’s financial goals and risk tolerance, investors can forge a path toward achieving their financial aspirations with confidence. This chapter will explore the intricate details and methodologies behind strategic asset allocation, providing investors and financial advisors with the insights needed to construct effective and resilient investment portfolios.</p>
-<div class="callout callout-style-default callout-note callout-titled" title="Alignment with CFA Curriculum">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Alignment with CFA Curriculum
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Strategic asset allocation is a core component of the CFA curriculum’s Portfolio Management topic. The CFA program emphasizes the importance of aligning asset allocation with an investor’s risk tolerance and investment horizon to optimize portfolio performance. It teaches candidates about the critical role of diversification in reducing risk while potentially enhancing returns. Understanding these principles is essential for CFA candidates aiming to develop robust investment strategies that are responsive to client needs and market conditions.</p>
-</div>
-</div>
-</section>
+<h2 data-number="7.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">7.1</span> 7.1 Introduction</h2>
+<p>Chapter 6 established the capital market assumptions. We now have expectations for returns, volatilities, and correlations. These assumptions describe the investment landscape. They do not, by themselves, tell us how to combine asset classes into a portfolio.</p>
+<p>Strategic asset allocation answers this question. It is the process of establishing a long-term policy mix. This mix balances risk and return against the investor’s objectives and constraints. The resulting allocation is the policy portfolio. It serves as the anchor for all investment decisions.</p>
+<p>The policy portfolio is not a forecast. It does not predict which asset class will outperform next year. It states how the portfolio will be positioned over the long term to achieve its goals. This positioning reflects the investor’s willingness and ability to bear risk, expressed through the strategic beta of the portfolio. Strategic beta is the long-term exposure to systematic risk factors that drive returns over full market cycles.</p>
+<p>Strategic asset allocation differs from tactical asset allocation. Tactical allocation seeks to exploit short-term market dislocations. It temporarily deviates from the policy mix. If the strategic allocation calls for 50 percent equities, a tactical overlay might increase that to 55 percent when equities appear cheap or reduce it to 45 percent when they appear expensive. Tactical allocation is about market timing. Strategic allocation is about discipline.</p>
+<p>This distinction matters. Tactical allocation requires skill in forecasting short-term market movements. Evidence suggests this skill is rare and difficult to sustain. Strategic allocation requires discipline in maintaining exposure to the asset classes that deliver returns over time. The policy portfolio is not abandoned when markets fall. It is rebalanced back to target. Assets that have become cheaper are bought. Assets that have become dearer are sold.</p>
+<p>This discipline is simple in concept. It is difficult in practice. It is also a primary source of long-term investment success. This is supported by the landmark study by <span class="citation" data-cites="brinson1986determinants">Brinson et al. (<a href="#ref-brinson1986determinants" role="doc-biblioref">1986</a>)</span>, which concluded that asset allocation policy accounts for over 90% of the variation in a portfolio’s quarterly returns.</p>
+<p>This chapter develops the framework for strategic asset allocation. We begin with the investment guidelines that translate IPS constraints into actionable boundaries. We then examine mean-variance optimization and its modern extensions. We consider the Black-Litterman model. We explore geographic and currency decisions. We examine methods for determining the asset mix and the behavioral considerations that shape implementation. The chapter concludes with the application of these concepts to the Schmidt-Miller family.</p>
 </section>
 <section id="establishing-investment-guidelines" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="establishing-investment-guidelines"><span class="header-section-number">7.2</span> Establishing Investment Guidelines</h2>
-<section id="developing-investment-guidelines" class="level3" data-number="7.2.1">
-<h3 data-number="7.2.1" class="anchored" data-anchor-id="developing-investment-guidelines"><span class="header-section-number">7.2.1</span> Developing Investment Guidelines</h3>
-<p>Investment guidelines serve as the operational framework for managing a client’s portfolio, ensuring that all investment decisions are aligned with the client’s specific financial objectives, risk tolerance, and investment horizon. These guidelines are crucial for maintaining discipline in the investment process, providing clear instructions for how to manage the portfolio under normal market conditions and when adjustments are needed.</p>
-<ul>
-<li><strong>Incorporation of Client’s Financial Goals:</strong>
-<ul>
-<li>Investment guidelines begin with a thorough understanding of the client’s financial aspirations, such as retirement savings, purchasing a home, funding education, or building an emergency fund.</li>
-<li>Specific goals should be quantified where possible (e.g., “accumulate $500,000 for retirement by 2040”) and prioritized to help determine the appropriate asset allocation and risk level.</li>
-</ul></li>
-<li><strong>Consideration of Risk Tolerance:</strong>
-<ul>
-<li>The guidelines must reflect the client’s risk tolerance, which influences the asset mix and the selection of individual investments.</li>
-<li>This involves an assessment of how much volatility the client is willing to accept, and their capacity to endure potential financial losses, especially in adverse market conditions.</li>
-</ul></li>
-<li><strong>Accounting for Investment Horizon:</strong>
-<ul>
-<li>The client’s investment horizon, or the time frame they have to achieve their financial goals, is a critical factor in setting investment guidelines.</li>
-<li>Longer horizons typically allow for a higher allocation to riskier assets like equities, which may fluctuate more in the short term but tend to offer higher returns over the long term.</li>
-</ul></li>
-</ul>
+<h2 data-number="7.2" class="anchored" data-anchor-id="establishing-investment-guidelines"><span class="header-section-number">7.2</span> 7.2 Establishing Investment Guidelines</h2>
+<p>Before determining the optimal mix of assets for any client, we must establish the investment guidelines that will govern the allocation process. These guidelines translate the client’s documented objectives and constraints into actionable parameters that define the boundaries within which the portfolio will be constructed. They serve as the bridge between the Investment Policy Statement and the quantitative methods used to derive the strategic asset allocation.</p>
+<p><strong>Return Objective</strong> The first guideline is the return objective. This is derived directly from the client’s goals documented in the IPS. Whether the objective is capital appreciation, income generation, or preservation of purchasing power, it must be expressed in measurable terms—typically as an expected annualized return over the investment horizon. This target provides the benchmark against which the portfolio’s performance will be evaluated and guides the selection of asset classes with appropriate return characteristics.</p>
+<p><strong>Risk Tolerance</strong> Risk tolerance is perhaps the most critical guideline. As documented in the IPS, risk tolerance has two components: the client’s ability to bear risk, which depends on time horizon, wealth, and the flexibility of goals, and the client’s willingness to bear risk, which reflects their emotional comfort with volatility. When these diverge, the lower of the two must serve as the binding constraint. This guideline translates into a maximum acceptable drawdown—the worst loss the portfolio might experience in a severe bear market—which constrains how much equity risk the portfolio can take.</p>
+<p><strong>Time Horizon</strong> The investment time horizon determines how long the portfolio has to recover from market downturns. Longer horizons typically allow for greater exposure to growth-oriented assets like equities, as there is time to ride out volatility. Shorter horizons require a greater emphasis on capital preservation. The time horizon may vary across different goals, requiring a segmented approach where funds are allocated to separate buckets with their own investment guidelines.</p>
+<p><strong>Liquidity Requirements</strong> Liquidity refers to the need for readily accessible cash to fund near-term expenses. Some goals—such as a down payment on a home or funding a business venture—require specific sums of money at specific future dates. Others, such as retirement income, require ongoing cash flow. These liquidity needs dictate that a portion of the portfolio must be held in cash or highly liquid, low-volatility assets. Funds with no near-term liquidity needs can be invested with a longer-term orientation.</p>
+<p><strong>Tax Constraints</strong> Tax considerations can significantly affect investment decisions. Assets held in tax-advantaged accounts have different implications than assets held in taxable accounts. Positions with embedded capital gains create a disincentive to sell. The client’s marginal tax rate affects the after-tax return of different investment types. These constraints must be incorporated into the guidelines, influencing both asset location decisions and the timing of portfolio adjustments.</p>
+<p><strong>Permissible Asset Classes</strong> Not all asset classes are suitable for every client. The guidelines should specify which asset classes are permissible based on the firm’s investment philosophy and the client’s objectives and constraints. For each asset class, permissible ranges should be established, reflecting its expected role in the portfolio. Equities provide growth potential but introduce volatility. Bonds provide stability and income. Alternatives may offer diversification and inflation protection. These ranges set the boundaries for the optimization process.</p>
+<p><strong>Rebalancing Policy</strong> Over time, market movements will cause the portfolio to drift from its target allocation. The rebalancing policy specifies how and when the portfolio will be brought back into alignment. Common approaches include calendar-based rebalancing (e.g., quarterly or annually) and threshold-based rebalancing (e.g., when any asset class deviates by more than five percentage points from its target). The policy should also specify whether rebalancing will be accomplished through new cash flows or through selling overweight positions, with consideration given to transaction costs and tax consequences.</p>
+<p><strong>Currency Policy</strong> For portfolios with international holdings, currency exposure is an important consideration. The guidelines should specify how currency risk will be managed. Options include leaving exposures unhedged to benefit from diversification, hedging all currency exposure back to the client’s home currency, or a hybrid approach where certain currencies are hedged and others are not. The decision depends on the client’s risk tolerance, investment horizon, and expectations about currency movements.</p>
+<p>With these guidelines established, the advisor has a clear framework for the asset allocation process. The guidelines define the boundaries within which the portfolio will be constructed, ensuring that the resulting allocation is consistent with the client’s documented objectives and constraints. They also provide a basis for the quantitative methods—such as mean-variance optimization and Monte Carlo simulation—that will be used to derive the optimal mix of assets.</p>
 </section>
-<section id="constructing-a-strategic-asset-allocation-model" class="level3" data-number="7.2.2">
-<h3 data-number="7.2.2" class="anchored" data-anchor-id="constructing-a-strategic-asset-allocation-model"><span class="header-section-number">7.2.2</span> Constructing a Strategic Asset Allocation Model</h3>
-<p>A strategic asset allocation model acts as a blueprint for building and maintaining a client’s portfolio. It specifies how assets should be allocated across various asset classes to optimize the potential for return while managing risk appropriately.</p>
-<ul>
-<li><strong>Defining Asset Classes:</strong>
-<ul>
-<li>Determine which asset classes will be included in the portfolio, such as equities, bonds, real estate, commodities, and alternatives.</li>
-<li>Each asset class should be chosen based on its expected role in achieving the portfolio’s goals and its behavior under different market conditions.</li>
-</ul></li>
-<li><strong>Setting Allocation Percentages:</strong>
-<ul>
-<li>Establish the target allocation percentages for each asset class based on the client’s risk tolerance and investment horizon.</li>
-<li>These percentages are designed to balance the growth potential with risk mitigation, aiming to maximize returns while keeping risk within acceptable limits.</li>
-</ul></li>
-<li><strong>Rebalancing Criteria:</strong>
-<ul>
-<li>Define clear criteria for when and how the portfolio should be rebalanced to its target allocations. This could involve setting thresholds for deviation from the original allocations (e.g., rebalance when any asset class deviates by more than 5% from its target).</li>
-<li>Rebalancing ensures that the portfolio remains aligned with the client’s strategic asset allocation over time, even as market movements may cause shifts in the actual asset mix.</li>
-</ul></li>
-</ul>
-</section>
-<section id="conclusion-1" class="level3" data-number="7.2.3">
-<h3 data-number="7.2.3" class="anchored" data-anchor-id="conclusion-1"><span class="header-section-number">7.2.3</span> Conclusion</h3>
-<p>Developing robust investment guidelines and constructing a strategic asset allocation model are critical steps in ensuring that investment management aligns with the client’s long-term objectives. These frameworks not only guide day-to-day decision-making but also provide a structured approach to handling market volatility and adjusting to changes in the client’s life circumstances or financial goals. By adhering to these guidelines, financial advisors can help clients navigate through the complexities of investing and achieve their financial aspirations with confidence.</p>
-<div class="callout callout-style-default callout-note callout-titled" title="Crafting Effective Investment Guidelines">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Crafting Effective Investment Guidelines
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>When developing investment guidelines, always ensure they are clear, measurable, and easily understandable by all stakeholders. Use templates to standardize the investment guideline process across portfolios but customize them to fit specific client needs. Regularly review these guidelines in consultation with clients to ensure they remain aligned with their evolving financial goals and market conditions.</p>
-</div>
-</div>
-</section>
-</section>
-<section id="defining-asset-classes-for-allocation" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="defining-asset-classes-for-allocation"><span class="header-section-number">7.3</span> Defining Asset Classes for Allocation</h2>
-<p>Asset allocation is a critical element of strategic investment planning, involving the distribution of investment funds across various asset classes. Each class offers distinct risk and return characteristics, and plays a unique role in portfolio diversification. Understanding these differences is key to constructing a balanced portfolio that meets specific financial goals and risk tolerance.</p>
-<section id="traditional-asset-classes" class="level3" data-number="7.3.1">
-<h3 data-number="7.3.1" class="anchored" data-anchor-id="traditional-asset-classes"><span class="header-section-number">7.3.1</span> Traditional Asset Classes</h3>
-<ul>
-<li><strong>Stocks (Equities):</strong>
-<ul>
-<li><strong>Description:</strong> Stocks represent ownership in a company. Investors who buy stocks expect to earn returns from dividends and capital appreciation.</li>
-<li><strong>Role in Portfolio:</strong> Stocks are typically associated with higher potential returns compared to other asset classes, but also higher volatility and risk. They play a crucial role in growth-oriented portfolios.</li>
-<li><strong>Correlation:</strong> Generally, stocks have a low correlation with bonds and certain alternative assets, making them a good tool for diversification.</li>
-</ul></li>
-<li><strong>Bonds (Fixed-Income Securities):</strong>
-<ul>
-<li><strong>Description:</strong> Bonds are debt instruments issued by corporations or governments. Investors receive regular interest payments, and the principal amount is returned at maturity.</li>
-<li><strong>Role in Portfolio:</strong> Bonds are considered lower risk compared to stocks, often providing steady income with less volatility. They are crucial for income generation and capital preservation.</li>
-<li><strong>Correlation:</strong> Bonds often move inversely to stocks, especially government bonds, which can increase in value during stock market downturns due to their perceived safety.</li>
-</ul></li>
-<li><strong>Cash and Cash Equivalents:</strong>
-<ul>
-<li><strong>Description:</strong> This class includes highly liquid securities with short maturities, such as treasury bills, money market funds, and certificates of deposit.</li>
-<li><strong>Role in Portfolio:</strong> Cash provides stability and quick access to funds without risking capital. It is essential for liquidity needs and safety in a portfolio.</li>
-<li><strong>Correlation:</strong> Cash has a very low or negative correlation with other asset classes, offering an excellent buffer during market turbulence.</li>
-</ul></li>
-</ul>
-</section>
-<section id="alternative-asset-classes" class="level3" data-number="7.3.2">
-<h3 data-number="7.3.2" class="anchored" data-anchor-id="alternative-asset-classes"><span class="header-section-number">7.3.2</span> Alternative Asset Classes</h3>
-<ul>
-<li><strong>Real Estate:</strong>
-<ul>
-<li><strong>Description:</strong> Real estate investment can be direct (purchasing property) or indirect (REITs - Real Estate Investment Trusts). It includes both residential and commercial properties.</li>
-<li><strong>Role in Portfolio:</strong> Real estate typically offers appreciation in value, rental income, and diversification benefits. It can act as a hedge against inflation since property values and rents tend to rise with inflation.</li>
-<li><strong>Correlation:</strong> Real estate often has a low correlation with stocks and bonds, providing diversification benefits.</li>
-</ul></li>
-<li><strong>Commodities:</strong>
-<ul>
-<li><strong>Description:</strong> Commodities include physical goods like oil, gold, and agricultural products. Investments can be made directly in physical commodities or through futures contracts and commodity-focused funds.</li>
-<li><strong>Role in Portfolio:</strong> Commodities can protect against inflation and provide diversification. Prices often move based on different factors than financial securities, such as weather or geopolitical tensions.</li>
-<li><strong>Correlation:</strong> Typically, commodities exhibit a different return pattern compared to traditional securities, offering strong diversification benefits in a multi-asset portfolio.</li>
-</ul></li>
-<li><strong>Private Equity:</strong>
-<ul>
-<li><strong>Description:</strong> Private equity involves investing in companies that are not publicly traded on a stock exchange. This includes venture capital, buyouts, and private investment in public equity (PIPE).</li>
-<li><strong>Role in Portfolio:</strong> Private equity aims for higher returns than public markets can potentially provide, though with higher risk and liquidity constraints.</li>
-<li><strong>Correlation:</strong> Due to the long investment horizons and capital commitment, private equity may show lower correlation with public equities and bonds, enhancing portfolio diversification.</li>
-</ul></li>
-</ul>
-</section>
-<section id="conclusion-2" class="level3" data-number="7.3.3">
-<h3 data-number="7.3.3" class="anchored" data-anchor-id="conclusion-2"><span class="header-section-number">7.3.3</span> Conclusion</h3>
-<p>Understanding the characteristics, roles, and correlations of various asset classes is fundamental to effective strategic asset allocation. By appropriately combining traditional and alternative asset classes, investors can achieve a diversified portfolio that balances the potential for higher returns with risk management, aligning with their long-term financial objectives and risk tolerance.</p>
-</section>
-</section>
-<section id="geographic-diversification" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="geographic-diversification"><span class="header-section-number">7.4</span> Geographic Diversification</h2>
-<p>Geographic diversification is an essential strategy within portfolio management, aimed at spreading investment risk and opportunity across various global markets. This approach can protect against local or regional economic downturns and capitalize on growth in different parts of the world.</p>
-<section id="rationale-for-country-specific-investments" class="level3" data-number="7.4.1">
-<h3 data-number="7.4.1" class="anchored" data-anchor-id="rationale-for-country-specific-investments"><span class="header-section-number">7.4.1</span> Rationale for Country-Specific Investments</h3>
-<ul>
-<li><strong>Access to Unique Opportunities:</strong> Investing in specific countries can provide access to unique economic sectors or industries that are not as prevalent or developed in the investor’s home market. For instance, investing in a country with a booming technology sector or a growing renewable energy market.</li>
-<li><strong>Benefit from Economic Growth:</strong> Country-specific investments allow investors to benefit directly from the economic growth of a particular region. Fast-growing economies, often found in emerging markets, can offer higher returns, although with higher risk.</li>
-<li><strong>Hedge Against Local Market Volatility:</strong> By diversifying geographically, investors can reduce the impact of volatility in their local markets. If one market performs poorly, losses can potentially be offset by gains in another.</li>
-</ul>
-</section>
-<section id="benefits-of-international-diversification" class="level3" data-number="7.4.2">
-<h3 data-number="7.4.2" class="anchored" data-anchor-id="benefits-of-international-diversification"><span class="header-section-number">7.4.2</span> Benefits of International Diversification</h3>
-<ul>
-<li><strong>Reduced Portfolio Risk:</strong> International diversification spreads investment risk across a broader economic base, reducing the impact of country-specific shocks such as political instability, economic recessions, or currency fluctuations.</li>
-<li><strong>Enhanced Return Potential:</strong> Global markets do not always move in tandem; thus, international diversification can capitalize on growth in different regions, potentially enhancing overall portfolio returns.</li>
-<li><strong>Exposure to Foreign Currencies:</strong> Investing internationally involves exposure to foreign currencies, which can provide an additional layer of diversification and an opportunity to profit from currency movements.</li>
-</ul>
-</section>
-<section id="considerations-for-emerging-markets-vs.-developed-markets" class="level3" data-number="7.4.3">
-<h3 data-number="7.4.3" class="anchored" data-anchor-id="considerations-for-emerging-markets-vs.-developed-markets"><span class="header-section-number">7.4.3</span> Considerations for Emerging Markets vs.&nbsp;Developed Markets</h3>
-<ul>
-<li><strong>Risk and Growth Potential:</strong> * <em>Emerging Markets:</em> Typically offer higher growth potential due to rapid economic development, urbanization, and population growth. However, these markets also carry higher risks, including political instability, less mature financial markets, and greater volatility.
-<ul>
-<li><em>Developed Markets:</em> Generally provide more stability, well-established market structures, and lower volatility. While the growth rates in developed markets might be lower, these markets often offer safer investment environments and more predictable returns.</li>
-</ul></li>
-<li><strong>Regulatory and Operational Considerations:</strong> Investors must consider the regulatory environment, market liquidity, and the ease of doing business in each country. Emerging markets might have less stringent regulations and greater bureaucratic challenges, which can increase operational risks.</li>
-<li><strong>Economic and Political Climate:</strong> The economic policies, government stability, and geopolitical situation of a country significantly impact its market’s risk and return profiles. These factors must be carefully evaluated when considering investments in both emerging and developed markets.</li>
-</ul>
-</section>
-<section id="conclusion-3" class="level3" data-number="7.4.4">
-<h3 data-number="7.4.4" class="anchored" data-anchor-id="conclusion-3"><span class="header-section-number">7.4.4</span> Conclusion</h3>
-<p>Geographic diversification is a sophisticated strategy that requires an understanding of global economic dynamics, local market conditions, and specific regional risks and opportunities. By effectively allocating assets across various geographic regions, investors can mitigate risks associated with any single country while potentially enhancing portfolio performance. This strategy is crucial for those seeking to build resilient, well-rounded investment portfolios capable of navigating the complexities of the global economy.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Tips for Implementing Geographic Diversification
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Utilize country-specific ETFs and mutual funds to achieve geographic diversification without the need for in-depth knowledge of foreign markets. These instruments provide an effective way to gain exposure while mitigating individual stock risk. Also, consider using currency-hedged ETFs to reduce the impact of foreign exchange volatility on your international investments.</p>
-</div>
-</div>
-<hr>
-</section>
-</section>
-<section id="currency-allocation" class="level2" data-number="7.5">
-<h2 data-number="7.5" class="anchored" data-anchor-id="currency-allocation"><span class="header-section-number">7.5</span> Currency Allocation</h2>
-<p>Currency allocation is a critical aspect of international investing. As investors diversify their portfolios globally, they must also consider the impact of currency exposure on their investments. Currency movements can significantly affect the overall returns of international assets, making it essential to understand and manage currency risks.</p>
-<section id="impact-of-currency-exposure-on-international-investments" class="level3" data-number="7.5.1">
-<h3 data-number="7.5.1" class="anchored" data-anchor-id="impact-of-currency-exposure-on-international-investments"><span class="header-section-number">7.5.1</span> Impact of Currency Exposure on International Investments</h3>
-<ul>
-<li><strong>Influence on Returns:</strong> Currency fluctuations can either enhance or erode the returns from international investments. For example, if an investor holds stocks in a country whose currency appreciates against their home currency, the returns could be magnified when converted back to the home currency. Conversely, a depreciating currency can diminish returns.</li>
-<li><strong>Portfolio Volatility:</strong> Currency variations can add an extra layer of volatility to a portfolio. Exchange rates are influenced by numerous factors including economic indicators, central bank policies, political stability, and market sentiment. This volatility can be especially pronounced in regions with unstable economic conditions.</li>
-</ul>
-</section>
-<section id="strategies-for-currency-diversification-and-managing-currency-risk" class="level3" data-number="7.5.2">
-<h3 data-number="7.5.2" class="anchored" data-anchor-id="strategies-for-currency-diversification-and-managing-currency-risk"><span class="header-section-number">7.5.2</span> Strategies for Currency Diversification and Managing Currency Risk</h3>
-<ul>
-<li><strong>Currency Hedging:</strong>
-<ul>
-<li><strong>Hedging Instruments:</strong> Investors can use financial instruments such as futures, options, and forwards to hedge against currency risk. These instruments can be structured to offset potential losses caused by adverse currency movements.</li>
-<li><strong>Hedging Strategies:</strong> Deciding whether to hedge currency exposure depends on the investor’s risk tolerance, investment horizon, and the cost of hedging. Some investors may choose to hedge significant exposures in highly volatile currencies while accepting the currency risk in more stable or strategically important regions.</li>
-</ul></li>
-<li><strong>Currency Diversification:</strong>
-<ul>
-<li><strong>Multiple Currency Exposure:</strong> Just as diversifying investments across different asset classes and geographies can reduce risk, holding assets in a variety of currencies can also buffer against currency volatility. By spreading currency exposure, investors can potentially mitigate the risk of any single currency’s adverse movement significantly impacting their portfolio.</li>
-<li><strong>Balanced Currency Portfolio:</strong> Creating a balanced portfolio that includes a mix of currencies from developed and emerging markets can provide both stability and growth potential. Developed market currencies often offer stability, while emerging market currencies can offer growth opportunities, albeit with higher risk.</li>
-</ul></li>
-<li><strong>Natural Currency Hedging:</strong>
-<ul>
-<li><strong>Revenue Matching:</strong> Investors can engage in natural hedging by matching foreign currency revenues with costs incurred in the same currency. For example, if an investor owns a business or assets that incur expenses in a foreign currency, holding investments that generate revenue in the same currency can naturally offset currency fluctuations.</li>
-<li><strong>Asset Location:</strong> Choosing investment locations can also serve as a natural hedge. Investing in markets that are likely to appreciate against the investor’s home currency can strategically position the portfolio to benefit from these movements.</li>
-</ul></li>
-</ul>
-</section>
-<section id="conclusion-4" class="level3" data-number="7.5.3">
-<h3 data-number="7.5.3" class="anchored" data-anchor-id="conclusion-4"><span class="header-section-number">7.5.3</span> Conclusion</h3>
-<p>Managing currency risk is an indispensable part of international investing. Effective currency allocation strategies, including hedging, diversification, and natural hedging methods, can help investors minimize unwanted currency exposure and enhance the risk-return profile of their portfolios. By carefully considering the impact of currency movements and employing strategies to manage these risks, investors can achieve more stable and potentially higher returns on their international investments.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Currency Allocation Best Practices
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>For practical currency risk management, start by identifying your natural currency exposures and consider matching these with corresponding assets or liabilities. Utilize currency forward contracts to hedge against unwanted exposure. Always monitor exchange rate forecasts and adjust your hedging strategies accordingly to align with anticipated market trends.</p>
-</div>
-</div>
-<hr>
-</section>
-</section>
-<section id="deciding-on-the-asset-mix" class="level2" data-number="7.6">
-<h2 data-number="7.6" class="anchored" data-anchor-id="deciding-on-the-asset-mix"><span class="header-section-number">7.6</span> Deciding on the Asset Mix</h2>
-<p>Determining the appropriate asset mix is a pivotal task in strategic asset allocation. This process involves selecting the right combination of asset classes to meet specific investment objectives while managing risk effectively. The asset mix not only influences the potential returns and risk profile of a portfolio but also reflects the investor’s financial situation, risk tolerance, and market expectations.</p>
-<section id="methods-for-determining-the-appropriate-mix-of-asset-classes" class="level3" data-number="7.6.1">
-<h3 data-number="7.6.1" class="anchored" data-anchor-id="methods-for-determining-the-appropriate-mix-of-asset-classes"><span class="header-section-number">7.6.1</span> Methods for Determining the Appropriate Mix of Asset Classes</h3>
-<ul>
-<li><strong>Historical Performance Analysis:</strong>
-<ul>
-<li><strong>Role of Historical Data:</strong> Historical performance data of various asset classes provide insights into their risk and return profiles over different market conditions. This analysis helps in understanding how each asset class has reacted to economic cycles, interest rate changes, and geopolitical events.</li>
-<li><strong>Application:</strong> By analyzing trends and volatility from historical data, investors can gauge which asset classes are likely to perform well under current or expected economic conditions, and how they contribute to the overall portfolio volatility.</li>
-</ul></li>
-<li><strong>Future Outlooks:</strong>
-<ul>
-<li><strong>Economic and Market Forecasts:</strong> Consideration of future market outlooks involves evaluating economic forecasts, including GDP growth, inflation rates, and monetary policy changes, which can impact asset classes differently.</li>
-<li><strong>Impact on Asset Classes:</strong> For example, a forecasted rise in interest rates may negatively impact bond prices, suggesting a reduced allocation to fixed income in favor of asset classes less sensitive to interest rate changes, like equities or real estate.</li>
-</ul></li>
-<li><strong>Client-Specific Factors:</strong>
-<ul>
-<li><strong>Risk Tolerance and Time Horizon:</strong> The asset mix must align with the client’s risk tolerance and investment horizon. Clients with higher risk tolerance and longer time horizons may be more suited for a higher allocation to equities, while more conservative investors or those nearing retirement might prefer bonds or cash.</li>
-<li><strong>Financial Goals:</strong> Specific financial goals can dictate adjustments in the asset mix. For instance, funding a child’s education within a decade may require maintaining a certain percentage of the portfolio in less volatile assets as the goal approaches.</li>
-</ul></li>
-</ul>
-</section>
-<section id="utilizing-optimization-models-to-derive-the-asset-mix" class="level3" data-number="7.6.2">
-<h3 data-number="7.6.2" class="anchored" data-anchor-id="utilizing-optimization-models-to-derive-the-asset-mix"><span class="header-section-number">7.6.2</span> Utilizing Optimization Models to Derive the Asset Mix</h3>
-<ul>
-<li><strong>Mean-Variance Optimization (MVO):</strong>
-<ul>
-<li><strong>Description:</strong> MVO is a quantitative tool used to calculate the best possible asset allocation that maximizes returns for a given level of risk. This model uses the expected returns, standard deviations, and correlations of the asset classes to generate an efficient frontier of optimal portfolios.</li>
-<li><strong>Application:</strong> By plotting various potential portfolios on the efficient frontier, investors can select a portfolio that offers the highest expected return for a specific level of risk.</li>
-</ul></li>
-<li><strong>Monte Carlo Simulations:</strong>
-<ul>
-<li><strong>Description:</strong> This method uses computer algorithms to simulate thousands of possible scenarios for different asset mixes, allowing investors to see a range of outcomes based on a combination of historical data and projected economic conditions.</li>
-<li><strong>Application:</strong> Monte Carlo simulations help in understanding the potential range of outcomes and the likelihood of achieving specific investment targets, thus aiding in making informed decisions about the asset mix.</li>
-</ul></li>
-<li><strong>Constraint-Based Optimization:</strong>
-<ul>
-<li><strong>Incorporating Constraints:</strong> Real-world portfolios often face various constraints such as liquidity requirements, legal restrictions, and specific client mandates. Constraint-based optimization models incorporate these limitations to refine the asset allocation process.</li>
-<li><strong>Balancing Needs and Constraints:</strong> These models help balance the theoretical ideal portfolio with practical considerations, ensuring the asset mix is both optimized and feasible under actual investing conditions.</li>
-</ul></li>
-</ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Adapting Asset Mix Tips
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Leverage software tools like portfolio management systems that support mean-variance optimization and Monte Carlo simulations to streamline the process of deciding on asset mixes. Consider the use of sensitivity analysis to understand how different input assumptions affect your asset allocation outcomes, thereby enhancing decision-making confidence.</p>
-</div>
-</div>
-</section>
-</section>
-<section id="strategic-asset-allocation-in-cesim-invest" class="level2" data-number="7.7">
-<h2 data-number="7.7" class="anchored" data-anchor-id="strategic-asset-allocation-in-cesim-invest"><span class="header-section-number">7.7</span> Strategic Asset Allocation in Cesim Invest</h2>
-<p>Similarly to strategic financial analysis, the strategic asset allocation in Cesim Invest can be performed in the app that is available under the link below: <a href="https://inno.uni.li/apps/invest/">https://inno.uni.li/apps/invest/</a>.</p>
-<p>Under Stepwise Optimisation/Group Constraints Currency and Asset Class Group Constraints can be specified based on the outcomes of client and strategic financial analyses.</p>
-<div id="fig-elementwise" class="quarto-float quarto-figure quarto-figure-center anchored">
+<section id="mean-variance-optimization" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="mean-variance-optimization"><span class="header-section-number">7.3</span> 7.3 Mean-Variance Optimization</h2>
+<p>Mean-variance optimization, first formalized by <span class="citation" data-cites="markowitz1952portfolio">Markowitz (<a href="#ref-markowitz1952portfolio" role="doc-biblioref">1952</a>)</span>, provides the theoretical foundation for portfolio construction. Markowitz’s work transformed finance by moving the focus from individual security selection to the statistical relationships between all assets in a portfolio. It offers a systematic method for combining assets to achieve the highest expected return for a given level of risk, or the lowest risk for a given level of expected return. The inputs are the capital market assumptions from Chapter 6: expected returns, volatilities, and correlations for each asset class. The output is a set of efficient portfolios. Each portfolio on the efficient frontier offers the maximum expected return for its level of risk. No portfolio exists with a higher expected return for the same risk, or with lower risk for the same expected return.</p>
+<p>The mathematics is straightforward. The expected return of a portfolio is the weighted average of the expected returns of its constituents. The portfolio’s risk, measured by variance, depends on both the variances of the individual assets and the covariances among them. Assets that move together offer less diversification than assets that move independently. This is the core insight of modern portfolio theory: risk depends not only on what you own but on how those holdings interact.</p>
+<div id="fig-efficient-frontier" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-elementwise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="graphics/Strategic_Asset_Allocation/Screenshot 2025-05-08 at 10.54.43.png" class="img-fluid figure-img">
+<div aria-describedby="fig-efficient-frontier-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="graphics/Strategic_Asset_Allocation/efficient-frontier.png" class="img-fluid figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-elementwise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.1: Currency and Asset Class Group Constraints
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-efficient-frontier-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.1: The Markowitz Efficient Frontier
 </figcaption>
 </figure>
 </div>
-<p>As a starting point one could use the recommendation available under Decisions/Analyst.</p>
-<div id="fig-elementwise" class="quarto-float quarto-figure quarto-figure-center anchored">
+<p>The introduction of a risk-free asset transforms the problem. A risk-free asset offers a guaranteed return with zero volatility. In practice, short-term government bonds serve as the proxy. When a risk-free asset is available, investors can combine it with any portfolio on the efficient frontier. This combination creates a straight line in risk-return space, extending from the risk-free rate to the chosen risky portfolio.</p>
+<p>The Capital Market Line is the steepest possible line from the risk-free rate to the efficient frontier. It touches the frontier at exactly one point: the tangency portfolio. This portfolio offers the highest Sharpe ratio of any portfolio on the frontier. The Sharpe ratio measures the excess return per unit of risk:</p>
+<p><span class="math display">\[
+\text{Sharpe Ratio} = \frac{E(R_p) - R_f}{\sigma_p}
+\]</span></p>
+<p>The tangency portfolio maximizes this ratio. All investors, regardless of their risk aversion, should hold a combination of the risk-free asset and the tangency portfolio. More risk-averse investors hold more of the risk-free asset. Less risk-averse investors hold more of the tangency portfolio, and may even borrow at the risk-free rate to invest more than 100 percent in the tangency portfolio.</p>
+<p>The equation of the Capital Market Line is:</p>
+<p><span class="math display">\[
+E(R_p) = R_f + \sigma_p \left( \frac{E(R_m) - R_f}{\sigma_m} \right)
+\]</span></p>
+<p>Where <span class="math inline">\(E(R_p)\)</span> is the expected return of the combined portfolio, <span class="math inline">\(R_f\)</span> is the risk-free rate, <span class="math inline">\(\sigma_p\)</span> is the portfolio’s volatility, and <span class="math inline">\(E(R_m)\)</span> and <span class="math inline">\(\sigma_m\)</span> are the expected return and volatility of the tangency portfolio. The term in parentheses is the Sharpe ratio of the tangency portfolio.</p>
+<p>This result is powerful. It separates the investment decision into two parts. Known as the ‘Separation Theorem’ (<span class="citation" data-cites="tobin1958liquidity">Tobin (<a href="#ref-tobin1958liquidity" role="doc-biblioref">1958</a>)</span>), this principle states that the technical task of finding the optimal risky portfolio is independent of the investor’s personal risk preferences. First, identify the tangency portfolio. This is a purely technical exercise, requiring only the capital market assumptions. Second, decide how much to allocate to the tangency portfolio versus the risk-free asset. This depends on the investor’s risk aversion.</p>
+<div id="fig-cml" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-elementwise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="graphics/Strategic_Asset_Allocation/Capture.JPG" class="img-fluid figure-img">
+<div aria-describedby="fig-cml-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="graphics/Strategic_Asset_Allocation/cml.png" class="img-fluid figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-elementwise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.2: Example of analyst recommendations
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cml-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.2: Capital Market Line and the Tangency portfolio
 </figcaption>
 </figure>
 </div>
-<p>Portfolio optimisation based on defined constraints is performed in two steps. At the currency optimisation step minimum variance and maximum Sharpe portfolios per asset class (equities, corporate bonds, government bonds), constrained by currency weights, become available.</p>
-<div id="fig-elementwise" class="quarto-float quarto-figure quarto-figure-center anchored">
+<p>The investor must select a portfolio from the efficient frontier. When no risk-free asset exists, this selection requires a utility function. A common formulation is:</p>
+<p><span class="math display">\[
+U = E(R_p) - \frac{1}{2} A \sigma_p^2
+\]</span></p>
+<p>Where <span class="math inline">\(A\)</span> is the coefficient of risk aversion. A higher value of <span class="math inline">\(A\)</span> indicates greater aversion to risk. The investor chooses the portfolio that maximizes utility.</p>
+<div id="fig-utility" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-elementwise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="graphics/Strategic_Asset_Allocation/Screenshot 2025-05-08 at 11.28.10.png" class="img-fluid figure-img">
+<div aria-describedby="fig-utility-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="graphics/Strategic_Asset_Allocation/utility.png" class="img-fluid figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-elementwise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.3: Portfolio Optimisation. Step 1
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-utility-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.3: Utility Maximization and Risk Aversion
 </figcaption>
 </figure>
 </div>
-<p>There is also an option to create a portfolio with manually edited weights, such as equal ones.</p>
-<p><img src="graphics/Strategic_Asset_Allocation/Screenshot 2025-05-08 at 11.29.00.png" id="fig-elementwise" class="img-fluid"> One of these portfolios (Minimum Variance, Maximum Sharpe Ratio or Manual), based on the client profile, should be selected for the final step of the portfolio optimisation. For example, selecting MaxSR with the constraints set to a minimum of 0 and a maximum of 1 for each as above, will result in the following output below.</p>
-<p><img src="graphics/Strategic_Asset_Allocation/Screenshot 2025-05-08 at 12.04.48.png" id="fig-elementwise" class="img-fluid" alt="Portfolio Optimisation. Step 2"> <img src="graphics/Strategic_Asset_Allocation/Screenshot 2025-05-08 at 12.15.47.png" id="fig-elementwise" class="img-fluid"> The above individual asset weights serve as input for Strategic Allocation available under Decisions/Investment strategy in Cesim Invest.</p>
-<div id="fig-elementwise" class="quarto-float quarto-figure quarto-figure-center anchored">
+<p>With a risk-free asset available, the problem simplifies. Every investor holds the same tangency portfolio of risky assets. Only the mix between the risk-free asset and the tangency portfolio varies.</p>
+<p>The elegance of mean-variance optimization is also its weakness. The framework is highly sensitive to the input assumptions. Small changes in expected returns produce large changes in the optimal portfolio weights, including the composition of the tangency portfolio. The optimizer takes the inputs as given. It lacks skepticism. It produces an allocation that is optimal for the specific set of assumptions but may be fragile in practice.</p>
+<p>This sensitivity is known as the garbage-in, garbage-out problem. If the expected return assumptions are noisy, the optimizer amplifies that noise. It concentrates the portfolio in asset classes with seemingly high returns and excludes those with seemingly low returns.</p>
+<div id="fig-fragility" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-elementwise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="graphics/Strategic_Asset_Allocation/Screenshot 2025-05-08 at 13.48.01.png" id="fig-elementwise" class="img-fluid figure-img">
+<div aria-describedby="fig-fragility-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="graphics/Strategic_Asset_Allocation/fragility.png" class="img-fluid figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-elementwise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.4
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fragility-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.4: The Fragility of Point Estimates
 </figcaption>
 </figure>
 </div>
-<section id="conclusion-5" class="level3" data-number="7.7.1">
-<h3 data-number="7.7.1" class="anchored" data-anchor-id="conclusion-5"><span class="header-section-number">7.7.1</span> Conclusion</h3>
-<p>Deciding on the appropriate asset mix is a nuanced process that requires balancing historical data, future projections, and individual investor needs with sophisticated optimization models. By meticulously applying these methods, investors can craft a portfolio that not only aims for optimal financial returns but also aligns closely with personal or institutional investment goals, ensuring a strategic approach to asset allocation.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Practical Tips for Defining Asset Mix
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>When defining your asset mix, consider using interactive tools like asset allocation calculators to visualize the potential impact of different asset class combinations on your portfolio’s risk and return profiles. Additionally, regularly update your market research to keep abreast of how shifts in economic indicators could impact asset classes differently, ensuring your mix remains optimized for current conditions.</p>
-</div>
-</div>
+<p>The practical consequence is that raw mean-variance optimization often produces concentrated portfolios that lack diversification. The optimizer identifies the asset class with the highest expected return and allocates heavily to it. When the future unfolds differently than the point estimates anticipated, the concentrated portfolio suffers disproportionately.</p>
 </section>
+<section id="improving-mvo-resampling-and-constraints" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="improving-mvo-resampling-and-constraints"><span class="header-section-number">7.4</span> 7.4 Improving MVO: Resampling and Constraints</h2>
+<p>The sensitivity of mean-variance optimization to estimation error requires a response. Two complementary approaches have emerged: the imposition of constraints and the use of resampling techniques.</p>
+<p>Constraints translate qualitative guidelines into mathematical bounds. An equity allocation cap prevents the optimizer from allocating too heavily to equities, regardless of what the expected return assumptions suggest. A minimum position size ensures that every asset class receives some allocation. Constraints impose structure on the problem. They reflect the belief that a portfolio concentrated in a single asset class is not reasonable for a long-term investor. They also serve a statistical purpose. By limiting the optimizer’s freedom, constraints reduce the influence of estimation error. The optimizer can no longer chase small differences in expected returns into extreme allocations. The resulting portfolio is less sensitive to the precise values of the inputs.</p>
+<p>Resampling offers a different perspective. Developed by <span class="citation" data-cites="michaud1989markowitz">Michaud (<a href="#ref-michaud1989markowitz" role="doc-biblioref">1989</a>)</span>, resampled efficiency recognizes that the inputs to the optimization are estimates, not known parameters. Michaud demonstrated that by averaging many simulated frontiers, an advisor can create portfolios that are significantly more robust to estimation error than traditional Markowitz models. The method uses Monte Carlo simulation to generate many alternative sets of capital market assumptions, each consistent with the estimated means and the uncertainty around those estimates. The process is straightforward. A multivariate normal distribution is specified with means equal to the point estimates of expected returns. Random draws are taken from this distribution, producing new sets of expected returns that differ from the point estimates but are statistically plausible. An optimization is performed using each set of drawn returns. The process is repeated hundreds or thousands of times.</p>
+<p>The recommended portfolio weights are the averages of the weights from all the simulations. The result is a resampled efficient frontier that is smoother than the traditional frontier. Portfolios on the resampled frontier are better diversified and less sensitive to small changes in the input assumptions. The logic is compelling. The point estimates are our best guess, but they are not the truth. There is a distribution of plausible true values around each estimate. Resampling explores that distribution. It asks what allocation would be optimal across the range of plausible scenarios. The answer is an allocation that does not bet heavily on any single scenario.</p>
+<p>The distinction between constraints and resampling matters. Constraints are explicit. They reflect stated preferences and judgment about what constitutes a reasonable portfolio. Resampling is statistical. It reflects the uncertainty inherent in the estimation process. Both move the allocation away from the fragile optimum of a single optimization toward a more robust portfolio. These methods do not eliminate the need for judgment. The choice of constraints and the specification of the resampling process require decisions. But they provide a disciplined framework for incorporating uncertainty into the allocation process.</p>
 </section>
-<section id="incorporating-sustainability-and-global-trends" class="level2" data-number="7.8">
-<h2 data-number="7.8" class="anchored" data-anchor-id="incorporating-sustainability-and-global-trends"><span class="header-section-number">7.8</span> Incorporating Sustainability and Global Trends</h2>
-<p>In today’s investment landscape, sustainability and global economic trends significantly influence strategic asset allocation decisions. As awareness of environmental, social, and governance (ESG) factors grows, investors are increasingly considering how these elements can affect long-term investment returns and risk profiles. This subchapter explores the integration of sustainability and global trends into asset allocation strategies, focusing on the inclusion of green investments and the drive towards a low-carbon economy.</p>
-<section id="influence-of-global-economic-trends-and-sustainability-on-asset-allocation" class="level3" data-number="7.8.1">
-<h3 data-number="7.8.1" class="anchored" data-anchor-id="influence-of-global-economic-trends-and-sustainability-on-asset-allocation"><span class="header-section-number">7.8.1</span> Influence of Global Economic Trends and Sustainability on Asset Allocation</h3>
-<ul>
-<li><strong>Impact of Global Trends:</strong>
-<ul>
-<li><strong>Economic Shifts:</strong> Changes in global economic dynamics, such as the rise of emerging markets, technological advancements, and demographic shifts, can alter the investment landscape. These trends may affect various asset classes differently, necessitating adjustments in asset allocation to capitalize on growth opportunities or mitigate risks.</li>
-<li><strong>Regulatory Changes:</strong> Increasingly stringent regulations on carbon emissions and corporate governance worldwide impact industries and asset classes. For instance, carbon-heavy sectors may face higher costs and regulatory risks, making them less attractive to sustainability-conscious investors.</li>
-</ul></li>
-<li><strong>Sustainability Factors:</strong>
-<ul>
-<li><strong>Environmental Concerns:</strong> As the effects of climate change become more pronounced, there is a growing emphasis on investments that support environmental sustainability. This includes sectors like renewable energy, sustainable agriculture, and green technology.</li>
-<li><strong>Social and Governance Issues:</strong> Social trends, including concerns about social inequality and corporate governance practices, are pushing investors to consider the societal impact of their investments. This shift can influence the attractiveness of certain companies or sectors based on their ESG performance.</li>
-</ul></li>
-</ul>
+<section id="risk-perspectives-shortfall-and-downside-risk" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="risk-perspectives-shortfall-and-downside-risk"><span class="header-section-number">7.5</span> 7.5 Risk Perspectives: Shortfall and Downside Risk</h2>
+<p>The mean-variance framework focuses on expected return and volatility. For many clients, particularly those in or near retirement, a different metric is more salient: the probability of falling short of their goals. This is shortfall risk.</p>
+<p>Shortfall risk addresses a simple question. What is the probability that the portfolio fails to meet the minimum return required to fund the client’s objectives? The probability can be estimated using Monte Carlo simulation. Given the portfolio’s expected return and volatility, the simulation generates a distribution of outcomes. The proportion of outcomes in which the portfolio fails to meet the threshold return is the shortfall probability.</p>
+<p>A portfolio with an expected return of 7 percent and volatility of 14 percent might have a shortfall probability of 25 percent against a 6 percent threshold. A portfolio with an expected return of 5.5 percent and volatility of 8 percent might have a shortfall probability of only 15 percent. Despite the lower expected return, the second portfolio offers greater certainty of meeting the threshold. This trade-off is central to the allocation decision for a loss-averse client.</p>
+<p>The Safety-First criterion, developed by <span class="citation" data-cites="roy1952safety">Roy (<a href="#ref-roy1952safety" role="doc-biblioref">1952</a>)</span>, formalizes this intuition. <span class="citation" data-cites="roy1952safety">Roy (<a href="#ref-roy1952safety" role="doc-biblioref">1952</a>)</span> provides a mathematical framework for investors whose primary concern is not maximizing utility, but rather minimizing the probability of a ‘disastrous’ outcome. Roy’s ratio measures the distance between the portfolio’s expected return and the threshold return, expressed in units of volatility:</p>
+<p><span class="math display">\[
+SF = \frac{E(R_p) - R_{\text{threshold}}}{\sigma_p}
+\]</span></p>
+<p>A higher ratio indicates a lower probability of falling short, assuming normally distributed returns. The portfolio that maximizes Roy’s ratio is the one that minimizes the shortfall probability. This is a different objective than maximizing expected return for a given level of risk. It explicitly incorporates the threshold that matters to the client.</p>
+<p>Shortfall risk addresses the probability of missing a target. It does not directly measure the magnitude of potential losses. For a loss-averse client, understanding the severity of possible losses is as important as understanding their likelihood.</p>
+<p>Value at Risk, or VaR, addresses this need. VaR measures the maximum expected loss over a specified time horizon at a given confidence level. A one-year 95 percent VaR of 15 percent means that there is a 5 percent probability of losing more than 15 percent of the portfolio’s value in a given year. VaR is expressed as a single number. It is easy to communicate. A client can understand that, in most years, losses will not exceed a certain threshold.</p>
+<p>VaR has limitations. It does not describe the severity of losses beyond the threshold. If the 5 percent tail event occurs, how bad could it be? VaR provides no answer.</p>
+<p>Conditional Value at Risk, or CVaR, addresses this limitation. CVaR measures the expected loss given that the loss exceeds the VaR threshold. It is the average of all losses in the tail of the distribution. If the 95 percent VaR is 15 percent, the 95 percent CVaR might be 22 percent. This tells the client that, in the worst 5 percent of outcomes, the average loss is 22 percent.</p>
+<p>The difference between VaR and CVaR is substantial for portfolios with fat-tailed return distributions. As discussed in Chapter 6, financial returns exhibit negative skew and high kurtosis. Extreme losses occur more frequently than a normal distribution would predict. VaR, which only looks at the threshold, may understate the true risk. CVaR, which averages across the entire tail, provides a more complete picture.</p>
+<p><em>[Placeholder for Figure 7.6: VaR and CVaR for a hypothetical portfolio return distribution]</em></p>
+<p>The Safety-First criterion and the downside risk metrics serve complementary roles. Roy’s ratio addresses the probability of missing the return threshold. VaR and CVaR address the magnitude of potential losses. Together, they provide a comprehensive framework for evaluating portfolios from the perspective of a loss-averse client.</p>
+<p>These metrics translate qualitative loss aversion into quantitative constraints. The advisor might specify that the one-year 95 percent VaR cannot exceed a certain threshold, or that the 95 percent CVaR must be contained within a specified limit. These constraints become additional inputs to the optimization process.</p>
+<p>The integration of these risk perspectives changes how candidate portfolios are evaluated. A portfolio that looks attractive under mean-variance optimization may be rejected when evaluated against shortfall and downside risk metrics. The concentrated equity portfolio produced by naive optimization has a high expected return but also high VaR and CVaR. More balanced portfolios have lower expected returns but also lower downside risk metrics.</p>
+<p>The final allocation should perform well across multiple risk dimensions. It should offer a reasonable expected return. It should have a high probability of meeting the threshold return. It should limit the magnitude of potential losses in adverse scenarios. No single metric captures all aspects of risk. A comprehensive evaluation requires considering the portfolio from multiple perspectives.</p>
 </section>
-<section id="adapting-allocation-to-incorporate-green-investments" class="level3" data-number="7.8.2">
-<h3 data-number="7.8.2" class="anchored" data-anchor-id="adapting-allocation-to-incorporate-green-investments"><span class="header-section-number">7.8.2</span> Adapting Allocation to Incorporate Green Investments</h3>
-<ul>
-<li><strong>Green Investments:</strong>
-<ul>
-<li><strong>Renewable Energy Assets:</strong> Including assets like solar and wind power facilities in the portfolio not only supports sustainability goals but also positions the portfolio to benefit from the growth potential in these sectors.</li>
-<li><strong>Green Bonds:</strong> Investing in green bonds, which are specifically used to fund projects that have positive environmental and/or climate benefits, offers a way to contribute to environmental sustainability while receiving steady income.</li>
-</ul></li>
-<li><strong>Incorporating Low-Carbon Economy Assets:</strong>
-<ul>
-<li><strong>Low-Carbon Index Funds:</strong> These funds focus on companies that generate lower carbon emissions and are better positioned to thrive in a low-carbon economy. Such funds can be a strategic component of the asset mix, reducing the portfolio’s carbon footprint and aligning with global carbon reduction goals.</li>
-<li><strong>Sustainable Real Estate and Infrastructure:</strong> Investments in green buildings and sustainable infrastructure projects that use energy-efficient materials and technologies can offer long-term benefits both financially and environmentally.</li>
-</ul></li>
-</ul>
+<section id="the-black-litterman-model" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="the-black-litterman-model"><span class="header-section-number">7.6</span> 7.6 The Black-Litterman Model</h2>
+<p>The Black-Litterman model, developed by <span class="citation" data-cites="black1992global">Black and Litterman (<a href="#ref-black1992global" role="doc-biblioref">1992</a>)</span>, addresses the instability of mean-variance optimization from a different angle. By utilizing a Bayesian framework, Black and Litterman allowed practitioners to blend market equilibrium with subjective investor views to produce stable, diversified asset weights. Rather than constraining or resampling from historical estimates, the model starts from market equilibrium and tilts only where the investor has specific views.</p>
+<p>The insight is powerful. Market prices reflect the collective wisdom of all investors. The market portfolio, in which each asset is held in proportion to its market capitalization, is the ultimate benchmark. If the investor has no special information, the market portfolio is the optimal portfolio. Deviations from the market portfolio should be based on views that the investor holds with conviction.</p>
+<p>This starting point is fundamentally different from the traditional approach. Mean-variance optimization begins with expected return estimates, often derived from historical data or building block models. These estimates are noisy. The optimizer amplifies the noise. The Black-Litterman model begins with the implied equilibrium returns that are consistent with the market portfolio. These returns are derived through reverse optimization: given the market weights of each asset class and the covariance matrix, what expected returns would make those weights optimal?</p>
+<p>The resulting implied returns are stable. They reflect the market’s collective assessment of risk and return. They do not require forecasting. They are the returns that justify the current market capitalization of each asset class.</p>
+<p>The investor then specifies views. A view is a statement about the expected return of one or more asset classes, expressed with a degree of confidence. For example, the investor might hold the view that domestic equities will outperform global equities by a certain margin over the next decade. Or that corporate bonds will underperform government bonds. Each view is accompanied by a confidence level, reflecting the investor’s uncertainty.</p>
+<p>The model combines the implied equilibrium returns with the investor’s views using Bayesian updating. The resulting expected returns are a weighted average of the equilibrium returns and the views. The weights depend on the confidence in the views and the precision of the equilibrium estimates. A view held with high confidence receives more weight. A view held with low confidence receives less weight. If the investor has no views, the model simply returns the equilibrium portfolio.</p>
+<p>The formula for the combined expected return vector is:</p>
+<p><span class="math display">\[
+E(R) = [(\tau\Sigma)^{-1} + P^T\Omega^{-1}P]^{-1} [(\tau\Sigma)^{-1}\Pi + P^T\Omega^{-1}Q]
+\]</span></p>
+<p>Where <span class="math inline">\(\Pi\)</span> is the vector of implied equilibrium returns, <span class="math inline">\(\Sigma\)</span> is the covariance matrix, <span class="math inline">\(\tau\)</span> is a scaling parameter reflecting uncertainty in the equilibrium returns, <span class="math inline">\(P\)</span> is a matrix specifying the investor’s views, <span class="math inline">\(Q\)</span> is the vector of view expected returns, and <span class="math inline">\(\Omega\)</span> is the covariance matrix of the views, reflecting their uncertainty.</p>
+<p>The mathematics is complex. The intuition is simple. Start with the market. Tilt only where you have a genuine insight.</p>
+<p>The parameters <span class="math inline">\(\tau\)</span> and <span class="math inline">\(\Omega\)</span> control how far the portfolio tilts away from the market equilibrium. Understanding these parameters is essential for applying the model effectively.</p>
+<p>The parameter <span class="math inline">\(\tau\)</span> represents the overall uncertainty in the equilibrium returns. A higher value of <span class="math inline">\(\tau\)</span> indicates less confidence in the equilibrium estimates, allowing the investor’s views to have greater influence on the final allocation. A lower value of <span class="math inline">\(\tau\)</span> indicates greater confidence in equilibrium, anchoring the portfolio more firmly to market weights. In practice, <span class="math inline">\(\tau\)</span> is often set to a small value, reflecting the belief that market prices contain substantial information. A common choice is to set <span class="math inline">\(\tau\)</span> inversely proportional to the number of historical observations used to estimate the covariance matrix, or simply to use a value between 0.01 and 0.05.</p>
+<p>The matrix <span class="math inline">\(\Omega\)</span> captures the uncertainty in each view. It is a diagonal matrix when views are independent, with each diagonal element <span class="math inline">\(\omega_k\)</span> representing the variance of the <span class="math inline">\(k\)</span>-th view. A smaller <span class="math inline">\(\omega_k\)</span> indicates higher confidence in that view. A larger <span class="math inline">\(\omega_k\)</span> indicates lower confidence.</p>
+<p>The relationship between <span class="math inline">\(\tau\)</span> and <span class="math inline">\(\Omega\)</span> determines the relative weight given to equilibrium versus views. The weight on the views is proportional to <span class="math inline">\((\tau\Sigma)^{-1}\)</span> relative to <span class="math inline">\(P^T\Omega^{-1}P\)</span>. When <span class="math inline">\(\Omega\)</span> contains small values, indicating high confidence in the views, the term <span class="math inline">\(P^T\Omega^{-1}P\)</span> becomes large, and the views dominate the final expected returns. When <span class="math inline">\(\Omega\)</span> contains large values, indicating low confidence, the equilibrium returns dominate.</p>
+<p>Consider an example. Suppose the equilibrium return for an asset class is 5 percent. The investor holds a view that the return will be 7 percent. If the investor has high confidence in this view, the corresponding <span class="math inline">\(\omega\)</span> is small, and the final expected return might be 6.5 percent. If the investor has low confidence, <span class="math inline">\(\omega\)</span> is large, and the final expected return might be 5.2 percent. The difference reflects the strength of conviction.</p>
+<p>The calibration of <span class="math inline">\(\Omega\)</span> is a critical step. One approach is to set <span class="math inline">\(\omega_k\)</span> equal to the variance of the view portfolio, scaled by the investor’s confidence. If the view is that asset A will outperform asset B by 2 percent, and the historical volatility of a long-short portfolio capturing this view is 10 percent, then <span class="math inline">\(\omega_k\)</span> might be set to <span class="math inline">\(0.10^2 = 0.01\)</span>. A more confident investor might scale this down by a factor of two or four. A less confident investor might scale it up.</p>
+<p>The interplay between <span class="math inline">\(\tau\)</span> and <span class="math inline">\(\Omega\)</span> means that the same view can produce different portfolio tilts depending on how these parameters are set. An investor who sets <span class="math inline">\(\tau\)</span> very low and <span class="math inline">\(\Omega\)</span> very high will stay close to the market portfolio regardless of views. An investor who sets <span class="math inline">\(\tau\)</span> higher and <span class="math inline">\(\Omega\)</span> lower will tilt more aggressively.</p>
+<p>The practical benefits of the Black-Litterman model are substantial. Portfolios constructed using this approach are better diversified and more aligned with market weights. They do not exhibit the extreme concentrations that plague raw mean-variance optimization. They are also more stable over time. Small changes in the input assumptions do not produce large changes in the recommended allocation.</p>
+<p>The model also addresses a practical problem in institutional asset management. Investment committees often struggle to agree on expected return assumptions. The Black-Litterman framework separates the problem into two parts. The equilibrium returns are derived from observable market weights and the covariance matrix. They are not subject to debate. The views are the only part of the process that requires judgment. The committee can focus its discussion on the areas where it has genuine insights, rather than trying to forecast returns for every asset class.</p>
+<p>The Black-Litterman model has become an institutional standard for strategic asset allocation. It combines the discipline of mean-variance optimization with the stability of market equilibrium and the flexibility to incorporate investor-specific views. It produces portfolios that are theoretically sound, practically robust, and defensible to clients and committees.</p>
+<p>The model does not eliminate the need for judgment. The choice of views, the calibration of <span class="math inline">\(\tau\)</span> and <span class="math inline">\(\Omega\)</span>, and the estimation of the covariance matrix all require careful thought. But the framework provides a structured way to incorporate judgment into the allocation process. It anchors the portfolio in the market consensus and requires a reason to deviate. That discipline prevents the optimizer from chasing noise and produces allocations that are more likely to perform well in the future.</p>
 </section>
-<section id="strategies-for-integrating-sustainability-into-asset-allocation" class="level3" data-number="7.8.3">
-<h3 data-number="7.8.3" class="anchored" data-anchor-id="strategies-for-integrating-sustainability-into-asset-allocation"><span class="header-section-number">7.8.3</span> Strategies for Integrating Sustainability into Asset Allocation</h3>
-<ul>
-<li><strong>ESG Integration:</strong>
-<ul>
-<li><strong>Comprehensive ESG Evaluation:</strong> Systematically incorporate ESG criteria into the investment analysis process. This includes evaluating potential investments based on their ESG scores, which reflect their adherence to sustainable practices.</li>
-<li><strong>Stakeholder Engagement:</strong> Actively engage with companies to encourage them to improve their sustainability practices, which can enhance long-term returns and reduce investment risks.</li>
-</ul></li>
-<li><strong>Thematic Investing:</strong>
-<ul>
-<li><strong>Focus on Sustainability Themes:</strong> Allocate assets to investment opportunities that are likely to benefit from sustainability trends, such as water management, clean energy, and sustainable consumer products.</li>
-</ul></li>
-</ul>
+<section id="geographic-and-currency-diversification" class="level2" data-number="7.7">
+<h2 data-number="7.7" class="anchored" data-anchor-id="geographic-and-currency-diversification"><span class="header-section-number">7.7</span> 7.7 Geographic and Currency Diversification</h2>
+<p>The strategic asset allocation framework developed to this point assumes a single-currency world. Investors operate in a multi-currency environment. The assets they hold are denominated in different currencies. Their spending is in their home currency. This introduces currency risk.</p>
+<p>Home bias is the tendency of investors to overweight domestic assets relative to their share of the global market portfolio. The phenomenon is pervasive. Investors in every country hold more domestic equities than global market capitalization would justify. In Switzerland, domestic equities represent approximately 3 percent of global market capitalization, yet Swiss investors typically allocate 15 to 30 percent of their equity portfolios to Swiss stocks.</p>
+<p>This bias is not entirely irrational. Domestic assets are familiar. They are not subject to currency risk, as their returns and the investor’s spending are in the same currency. Their performance is more correlated with the domestic economy and, by extension, with the investor’s labor income and the value of their home. In a severe global downturn, domestic assets may hold up better than foreign assets.</p>
+<p>The cost of home bias is reduced diversification. By overweighting domestic assets, the investor forgoes the risk reduction that comes from holding a globally diversified portfolio. The optimal balance depends on circumstances. A young investor with a long horizon and flexible spending may benefit from a global market-cap-weighted portfolio. A retiree whose spending is entirely in the home currency may benefit from a modest home bias.</p>
+<p>Currency hedging addresses a related question. When the portfolio holds foreign assets, it is exposed to movements in exchange rates. A strengthening home currency reduces the home-currency value of foreign holdings. A weakening home currency increases it.</p>
+<p>For fixed income, the case for currency hedging is strong. Foreign bonds offer a yield that may differ from domestic bonds. Currency movements can overwhelm this differential. A favorable yield pickup can be erased by an adverse currency movement. Hedging isolates the yield differential and reduces portfolio volatility. The cost of hedging is typically low.</p>
+<p>For equities, the case is less clear. Currency movements and equity returns are often negatively correlated. When the home currency strengthens, it often coincides with global risk aversion. Foreign equity prices fall, but the currency loss is partially offset. This natural hedge reduces the need for explicit hedging.</p>
+<p>A pragmatic approach, common in institutional practice, is to hedge the currency exposure of the fixed income allocation while leaving the equity allocation unhedged. This captures the volatility reduction benefits where the case is strongest while preserving the diversification of unhedged equities.</p>
 </section>
-<section id="conclusion-6" class="level3" data-number="7.8.4">
-<h3 data-number="7.8.4" class="anchored" data-anchor-id="conclusion-6"><span class="header-section-number">7.8.4</span> Conclusion</h3>
-<p>Incorporating sustainability and adapting to global economic trends are increasingly important in strategic asset allocation. By aligning investment strategies with these factors, investors can not only enhance potential financial returns and manage risks more effectively but also contribute to broader societal goals. This approach requires a dynamic and forward-looking investment strategy that remains responsive to both emerging opportunities and evolving risks in the global marketplace.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Integrating ESG Considerations as per the CFA Curriculum
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The CFA curriculum increasingly recognizes the significance of ESG factors in investment decision-making, aligning with global trends towards sustainable investing. Ethical and professional standards within the curriculum encourage CFA candidates to consider environmental, social, and governance factors as integral components of comprehensive investment analysis. This approach not only aligns with ethical investing practices but also caters to a growing demand within the financial industry to deploy capital in sustainability-focused initiatives.</p>
-</div>
-</div>
+<section id="methods-for-determining-the-asset-mix" class="level2" data-number="7.8">
+<h2 data-number="7.8" class="anchored" data-anchor-id="methods-for-determining-the-asset-mix"><span class="header-section-number">7.8</span> 7.8 Methods for Determining the Asset Mix</h2>
+<p>Several distinct philosophies compete for the attention of asset allocators. Each offers a different perspective on how to combine asset classes into a portfolio.</p>
+<p>The traditional 60/40 portfolio allocates 60 percent to equities and 40 percent to bonds. It is simple, transparent, and has a long track record. For many investors, it remains a reasonable baseline. The 60/40 portfolio provides growth through equities and stability through bonds. Its primary limitation is that it concentrates risk in the equity allocation. In a severe bear market, the equity decline dominates performance. A 60/40 portfolio might experience 90 percent or more of its total risk from equities. It is not balanced from a risk perspective.</p>
+<p>Risk parity addresses this limitation. Rather than allocating capital equally, risk parity allocates risk equally. Each asset class is weighted so that its contribution to total portfolio risk is the same. This approach, formalized by <span class="citation" data-cites="qian2005risk">Qian (<a href="#ref-qian2005risk" role="doc-biblioref">2005</a>)</span> as ‘Risk Parity,’ seeks to build a portfolio that can perform across different economic regimes by diversifying risk rather than just capital. This typically results in a much higher allocation to bonds than a 60/40 portfolio. Because bonds have lower volatility, a larger capital allocation is required for them to contribute the same amount of risk.</p>
+<p>The expected return of a risk parity portfolio is lower than that of a 60/40 portfolio. To bring the expected return up, leverage is applied. The portfolio borrows to invest more in the risk parity mix. This introduces additional costs and risks. If borrowing costs rise or assets perform poorly, the leveraged portfolio can experience magnified losses. Risk parity also requires accurate estimates of volatilities and correlations, as the risk contributions depend on these estimates.</p>
+<p>Goal-based allocation takes a different approach. It does not treat the portfolio as a single pool. It recognizes that different goals have different time horizons and different risk tolerances. Near-term goals are funded with conservative instruments. Long-term goals are funded with growth-oriented assets.</p>
+<p>The goal-based framework begins with an inventory of the client’s goals. Each goal is assigned a time horizon and a priority. Assets are allocated to distinct buckets. The liquidity bucket holds cash and short-term bonds. The medium-term bucket holds a balanced mix. The long-term bucket holds growth-oriented assets.</p>
+<p>This approach offers transparency. The client sees exactly how each goal is funded. The trade-offs are visible. If spending on a near-term goal increases, the impact on the long-term portfolio is clear. There is also a psychological benefit. Knowing that near-term spending is protected may increase willingness to accept volatility in the long-term portfolio.</p>
+<p>Goal-based allocation does not produce a single optimal portfolio in the mean-variance sense. It produces a set of portfolios, each aligned with a specific goal. The overall allocation is the sum of the parts.</p>
+<p>Each method has its place. The traditional 60/40 portfolio suits investors who prefer simplicity. Risk parity suits those who seek a balanced risk profile and accept leverage. Goal-based allocation suits those with distinct goals and time horizons. The choice depends on circumstances, preferences, and investment philosophy.</p>
 </section>
+<section id="behavioral-considerations-in-asset-allocation" class="level2" data-number="7.9">
+<h2 data-number="7.9" class="anchored" data-anchor-id="behavioral-considerations-in-asset-allocation"><span class="header-section-number">7.9</span> 7.9 Behavioral Considerations in Asset Allocation</h2>
+<p>The strategic asset allocation must be implemented. This is where behavioral considerations become paramount. A theoretically optimal allocation that the client cannot adhere to is not optimal.</p>
+<p>Regret aversion is the tendency to avoid decisions that could later be a source of regret. An investor who fears regret may delay investing altogether, preferring the perceived safety of cash to the possibility of an immediate loss. This bias is particularly acute after a large liquidity event, such as the sale of a business or the receipt of an inheritance. The investor has a lump sum. The market feels uncertain. The fear of investing just before a downturn is paralyzing.</p>
+<p>A glide path addresses this concern. Rather than investing the full amount immediately, the allocation to equities is phased in over time. The first tranche is invested at the outset. The second tranche follows six months later. The third after a year. This reduces the risk of investing everything at a market peak. The expected return is slightly lower due to the time out of the market, but the psychological benefit may justify the cost. For a client paralyzed by regret aversion, a glide path can be the difference between implementing the plan and remaining in cash indefinitely.</p>
+<p>The glide path must be documented. It is not a tactical decision to time the market. It is a behavioral accommodation, a structured way to ease the client into the target allocation. The schedule is set in advance and followed regardless of market movements.</p>
+<p>Framing matters. How the allocation is presented affects how it is perceived. A portfolio with an expected volatility of 12 percent sounds risky. The same portfolio, framed as having a 90 percent probability of meeting the client’s spending needs over thirty years, sounds reassuring. Both statements are true. The framing determines which aspect of the distribution the client focuses on.</p>
+<p>Loss aversion, introduced in Chapter 4, makes framing particularly important. A loss-averse client experiences the pain of a decline more intensely than the pleasure of an equivalent gain. Presenting the allocation in terms of standard deviation emphasizes the potential for decline. Presenting it in terms of goal achievement emphasizes the long-term outcome. The Monte Carlo simulation from Chapter 6 provides the tool. The advisor can show the distribution of terminal wealth and highlight the high probability of success.</p>
+<p>Mental accounting also shapes implementation. Clients often treat different pools of money differently, even when the pools are part of the same economic whole. An inheritance is treated as more sacred than earned income. A retirement account is treated as untouchable. The strategic allocation must accommodate these mental accounts. The goal-based segmentation discussed in Section 7.8 provides a natural framework. Each bucket aligns with a mental account, and the allocation within each bucket respects the client’s emotional relationship with that money. This behavioral accommodation is grounded in <span class="citation" data-cites="thaler1985mental">Thaler (<a href="#ref-thaler1985mental" role="doc-biblioref">1985</a>)</span> theory of Mental Accounting, which describes the human tendency to categorize funds into non-fungible ‘bins’ based on their source or intended use.</p>
+<p>Behavioral considerations do not change the strategic allocation. They change how it is implemented and communicated. A successful advisor anticipates the behavioral obstacles and builds the implementation plan to navigate around them.</p>
 </section>
-<section id="revisiting-and-adjusting-the-allocation" class="level2" data-number="7.9">
-<h2 data-number="7.9" class="anchored" data-anchor-id="revisiting-and-adjusting-the-allocation"><span class="header-section-number">7.9</span> Revisiting and Adjusting the Allocation</h2>
-<section id="portfolio-rebalancing" class="level3" data-number="7.9.1">
-<h3 data-number="7.9.1" class="anchored" data-anchor-id="portfolio-rebalancing"><span class="header-section-number">7.9.1</span> Portfolio Rebalancing</h3>
-<p>Strategic asset allocation is not a set-it-and-forget-it strategy. It requires continuous monitoring and periodic adjustments to ensure that the investment portfolio remains aligned with the client’s financial goals, risk tolerance, and time horizon. This subchapter discusses the processes of ongoing monitoring, rebalancing, and adjusting asset allocations in response to significant market changes or personal life events.</p>
+<section id="incorporating-sustainability-and-global-trends" class="level2" data-number="7.10">
+<h2 data-number="7.10" class="anchored" data-anchor-id="incorporating-sustainability-and-global-trends"><span class="header-section-number">7.10</span> 7.10 Incorporating Sustainability and Global Trends</h2>
+<p>Many investors now wish to align their portfolios with environmental, social, and governance values. ESG investing has moved from a niche interest to a mainstream consideration. The strategic asset allocation must address how these preferences are incorporated.</p>
+<p>ESG implementation takes several forms. Negative screening excludes companies or industries that conflict with the investor’s values. Tobacco, weapons, and fossil fuels are common exclusions. Positive screening seeks companies with strong ESG practices relative to their peers. ESG integration considers ESG factors alongside traditional financial metrics in the investment process. Impact investing targets measurable social or environmental outcomes alongside financial returns.</p>
+<p>The effect of ESG constraints on expected returns is debated. One view holds that ESG screens reduce the investable universe and therefore reduce expected returns. Excluding entire sectors, such as fossil fuels, reduces diversification and eliminates potential sources of return. The portfolio is constrained, and constraints reduce expected utility.</p>
+<p>The opposing view holds that companies with strong ESG practices are better managed and face lower risks. They may be less likely to experience environmental disasters, regulatory penalties, or reputational damage. This lower risk profile may translate into a lower cost of capital and, over time, superior risk-adjusted returns. The constraint is not a cost but a source of alpha.</p>
+<p>The academic evidence is mixed. Some studies find that ESG screens have no material effect on returns. Others find a small positive effect. Others find a small negative effect. The variation across time periods, markets, and methodologies makes definitive conclusions difficult.</p>
+<p>What is clear is that ESG constraints affect portfolio construction. Exclusionary screens reduce diversification and may introduce tracking error relative to broad market benchmarks. The magnitude depends on the breadth of the screens. A screen that excludes only tobacco has minimal impact. A screen that excludes all fossil fuel companies has a material impact on sector weights.</p>
+<p>The debate over ESG and expected returns may miss the point. For many investors, the objective is not to maximize expected return. It is to achieve a satisfactory return while aligning the portfolio with their values. The strategic asset allocation should accommodate these preferences while being transparent about the trade-offs involved.</p>
 </section>
-<section id="ongoing-monitoring-and-rebalancing-procedures" class="level3" data-number="7.9.2">
-<h3 data-number="7.9.2" class="anchored" data-anchor-id="ongoing-monitoring-and-rebalancing-procedures"><span class="header-section-number">7.9.2</span> Ongoing Monitoring and Rebalancing Procedures</h3>
-<ul>
-<li><strong>Monitoring the Portfolio:</strong>
-<ul>
-<li><strong>Performance Tracking:</strong> Regularly assess the performance of each asset class within the portfolio against its benchmarks and the overall investment objectives. This helps identify any deviations that may require corrective actions.</li>
-<li><strong>Market Condition Observations:</strong> Keep abreast of economic and market developments that could impact the investment landscape. This includes tracking interest rate movements, economic indicators, and geopolitical events that could influence asset performances.</li>
-</ul></li>
-<li><strong>Rebalancing Strategies:</strong>
-<ul>
-<li><strong>Scheduled Rebalancing:</strong> Implement a rebalancing schedule (e.g., quarterly, biannually) to adjust the portfolio’s asset allocation to its target mix. This systematic approach helps in maintaining the desired level of risk and return characteristics over time.</li>
-<li><strong>Threshold-based Rebalancing:</strong> Set specific thresholds for rebalancing, such as when an asset class’s actual allocation deviates by more than a predetermined percentage (e.g., 5%) from its target allocation. This strategy ensures that the portfolio does not drift too far from its strategic asset allocation, minimizing risk and optimizing returns.</li>
-</ul></li>
-</ul>
+<section id="revisiting-and-adjusting-the-allocation" class="level2" data-number="7.11">
+<h2 data-number="7.11" class="anchored" data-anchor-id="revisiting-and-adjusting-the-allocation"><span class="header-section-number">7.11</span> 7.11 Revisiting and Adjusting the Allocation</h2>
+<p>Strategic asset allocation is not a one-time decision. It requires ongoing maintenance. Markets move. Asset classes perform differently. The portfolio drifts from its target allocation.</p>
+<p>Rebalancing is the process of restoring the portfolio to its target weights. It serves two purposes. First, it maintains the portfolio’s risk profile, preventing the equity allocation from becoming larger than intended after a bull market. Second, it enforces a discipline of buying low and selling high, which can enhance long-term returns.</p>
+<p>The frequency and method of rebalancing matter. Continuous rebalancing incurs transaction costs and, in taxable accounts, capital gains taxes. Infrequent rebalancing allows the portfolio to drift, altering its risk profile. A common approach is to rebalance when asset class weights deviate from their targets by more than a specified tolerance band, such as five percentage points. This threshold-based approach balances the benefits of maintaining the target allocation against the costs of trading.</p>
+<p>Tax considerations complicate rebalancing. Selling assets that have appreciated triggers capital gains taxes. For a client with embedded gains, such as an inherited portfolio with a low cost basis, the tax cost of rebalancing can be substantial. The rebalancing policy should accommodate this constraint.</p>
+<p>The first line of defense is to use cash flows. New contributions, dividends, and interest payments can be directed to underweight asset classes. This rebalances the portfolio without triggering taxes. Only when cash flows are insufficient should sales be considered.</p>
+<p>The second line of defense is to widen the tolerance bands for assets with embedded gains. A typical band might be five percentage points. For a highly appreciated position, the band might be widened to ten percentage points. The portfolio is allowed to drift further before rebalancing is triggered.</p>
+<p>The third line of defense is to prioritize sales of assets with the highest cost basis. Within an asset class, specific lots can be selected to minimize the realized gain. This requires careful record-keeping and coordination with the client’s tax advisor.</p>
+<p>The strategic allocation itself should be reviewed periodically, typically annually, or when material changes occur in the client’s circumstances or the capital market assumptions. A significant shift in valuations, a change in the interest rate environment, or a revision to the economic outlook may warrant an adjustment to the policy weights. The review process is documented in the IPS. It ensures that the allocation remains aligned with the client’s objectives and with the evolving investment landscape.</p>
 </section>
-<section id="adjusting-the-strategic-asset-allocation" class="level3" data-number="7.9.3">
-<h3 data-number="7.9.3" class="anchored" data-anchor-id="adjusting-the-strategic-asset-allocation"><span class="header-section-number">7.9.3</span> Adjusting the Strategic Asset Allocation</h3>
-<ul>
-<li><strong>Response to Market Changes:</strong>
-<ul>
-<li><strong>Short-term Adjustments:</strong> In the face of significant market volatility, consider tactical adjustments to the asset allocation to protect the portfolio from losses or to capitalize on temporary market opportunities. However, these adjustments should always align with the long-term strategic objectives of the portfolio.</li>
-<li><strong>Long-term Adjustments:</strong> Larger shifts in the economic environment, such as a recession or a booming market, might necessitate more substantial changes to the asset allocation to optimize the portfolio for the new conditions.</li>
-</ul></li>
-<li><strong>Adapting to Life Events:</strong>
-<ul>
-<li><strong>Personal Milestones:</strong> Significant life events such as marriage, the birth of a child, approaching retirement, or receiving a large inheritance may alter a client’s financial situation, goals, or risk tolerance. Such events require a review and potential adjustment of the asset allocation to reflect the new circumstances.</li>
-<li><strong>Financial Changes:</strong> Changes in the client’s financial status, such as a career change, buying a home, or significant changes in income levels, can also impact their investment objectives and need to be considered in the asset allocation strategy.</li>
-</ul></li>
-</ul>
-</section>
-<section id="best-practices-for-revisiting-and-adjusting-the-allocation" class="level3" data-number="7.9.4">
-<h3 data-number="7.9.4" class="anchored" data-anchor-id="best-practices-for-revisiting-and-adjusting-the-allocation"><span class="header-section-number">7.9.4</span> Best Practices for Revisiting and Adjusting the Allocation</h3>
-<ul>
-<li><strong>Use of Technology:</strong> Utilize financial technology tools to aid in monitoring market trends and portfolio performance, providing timely data that supports informed decision-making.</li>
-<li><strong>Client Communication:</strong> Maintain open lines of communication with clients to ensure that any changes in their life circumstances or financial goals are promptly reflected in their investment strategy.</li>
-<li><strong>Professional Guidance:</strong> Regular consultations with financial advisors or investment professionals can provide expert insights and recommendations for adjusting asset allocations in line with evolving market conditions and personal needs.</li>
-</ul>
-</section>
-<section id="conclusion-7" class="level3" data-number="7.9.5">
-<h3 data-number="7.9.5" class="anchored" data-anchor-id="conclusion-7"><span class="header-section-number">7.9.5</span> Conclusion</h3>
-<p>Effective asset allocation requires a dynamic approach that considers continuous monitoring, regular rebalancing, and timely adjustments. By establishing robust procedures for revisiting and adjusting the portfolio, investors can ensure that their investment strategy remains responsive to both market dynamics and personal circumstances, thereby optimizing the potential for achieving their long-term financial objectives.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Adapting Asset Allocation in Response to Market Conditions — CFA Insights
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>According to the CFA curriculum, effective asset allocation requires not only initial strategic planning but also ongoing adjustments based on systematic market analysis and emerging risks. The curriculum covers quantitative methods, including Monte Carlo simulations, that help in understanding and managing portfolio risks through dynamic modeling. Furthermore, the CFA standards advocate for periodic portfolio reviews and rebalancing, ensuring that asset allocations continue to reflect the investor’s objectives and market realities, thereby maintaining the relevance and effectiveness of the investment strategy.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Text Box: Updating Portfolio Allocations
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Set automated alerts to notify you when portfolio allocations deviate from target thresholds to prompt timely rebalancing. Use decision matrices to outline specific actions under various market scenarios, simplifying the adjustment process. Engage in bi-annual strategy sessions with clients to discuss and potentially revise asset allocations based on new financial data or changes in life circumstances.</p>
-</div>
-</div>
-<hr>
-</section>
-</section>
-<section id="conclusion-the-essential-role-of-strategic-asset-allocation" class="level2" data-number="7.10">
-<h2 data-number="7.10" class="anchored" data-anchor-id="conclusion-the-essential-role-of-strategic-asset-allocation"><span class="header-section-number">7.10</span> Conclusion: The Essential Role of Strategic Asset Allocation</h2>
-<section id="summarizing-the-importance-of-strategic-asset-allocation" class="level3" data-number="7.10.1">
-<h3 data-number="7.10.1" class="anchored" data-anchor-id="summarizing-the-importance-of-strategic-asset-allocation"><span class="header-section-number">7.10.1</span> Summarizing the Importance of Strategic Asset Allocation</h3>
-<p>Strategic asset allocation stands as a cornerstone of effective investment management, crucial for navigating the complexities of the financial markets and achieving long-term investment success. This disciplined approach involves distributing investments across a carefully selected mix of asset classes to optimize the balance between risk and return. It is designed to align closely with an investor’s financial goals, risk tolerance, and investment horizon, providing a structured framework that guides the portfolio construction process.</p>
-<p>The critical role of strategic asset allocation lies in its ability to enhance portfolio performance through diversification. By spreading investments across different asset classes, geographical regions, and sectors, strategic asset allocation helps mitigate risks associated with market volatility and economic downturns. It leverages the strengths of various asset types, taking advantage of their unique characteristics and performance patterns, which can lead to more stable and potentially higher returns over the long term.</p>
-</section>
-<section id="reinforcing-the-need-for-flexibility-and-adaptation" class="level3" data-number="7.10.2">
-<h3 data-number="7.10.2" class="anchored" data-anchor-id="reinforcing-the-need-for-flexibility-and-adaptation"><span class="header-section-number">7.10.2</span> Reinforcing the Need for Flexibility and Adaptation</h3>
-<p>While strategic asset allocation provides a blueprint for building a portfolio, it is important to recognize that it should not be a static strategy. The financial markets are dynamic, influenced by a myriad of factors including economic shifts, geopolitical events, and technological advancements. These changes can alter the risk-return profile of different asset classes, necessitating periodic reviews and adjustments to the asset allocation.</p>
-<p>Regular monitoring of the portfolio and the broader market conditions is essential. This ongoing oversight ensures that the asset allocation continues to meet the investor’s objectives and adapts to any changes in their personal circumstances, financial goals, or risk tolerance. Scheduled rebalancing helps in realigning the portfolio to its target asset allocation, correcting any deviations that may occur due to market movements.</p>
-<p>Moreover, life events such as retirement, changes in income, or shifts in financial goals also require adjustments to the asset allocation. Such personal changes can impact an investor’s capacity to bear risk or alter their financial needs, making it imperative to modify the asset allocation to reflect the new reality.</p>
-</section>
-<section id="final-conclusion" class="level3" data-number="7.10.3">
-<h3 data-number="7.10.3" class="anchored" data-anchor-id="final-conclusion"><span class="header-section-number">7.10.3</span> Final Conclusion</h3>
-<p>Strategic asset allocation is not merely a set of investment guidelines but a fundamental strategy that requires commitment, discipline, and responsiveness. It plays a pivotal role in the pursuit of investment success, helping investors navigate through market uncertainties and achieve their long-term financial objectives. By embracing flexibility and adapting to both market and personal changes, investors can maintain a relevant and effective investment strategy that supports their evolving needs and aspirations. This approach underscores the importance of asset allocation not just as a foundation for investment decisions but as a dynamic and integral part of ongoing financial management.</p>
+<section id="application-the-schmidt-miller-family" class="level2" data-number="7.12">
+<h2 data-number="7.12" class="anchored" data-anchor-id="application-the-schmidt-miller-family"><span class="header-section-number">7.12</span> 7.12 Application: The Schmidt-Miller Family</h2>
+<p>We now apply the strategic asset allocation framework to the Schmidt-Miller family. The objective is to produce a policy portfolio that respects the constraints documented in the IPS, incorporates the capital market assumptions from Chapter 6, and addresses the behavioral considerations identified in Chapter 4.</p>
+<p>The family’s goals require a segmented approach. The liquidity bucket funds the art gallery and the first year of retirement spending. The medium-term buckets fund Lukas’s down payment and the Lake Garda property. The long-term bucket funds the ongoing retirement spending and the legacy goal. Each bucket has its own time horizon and risk tolerance.</p>
+<p>The long-term portfolio is the core of the family’s wealth. It must generate the 6 to 8 percent return required to sustain retirement spending while respecting Klaus’s binding constraint on risk. The equity allocation is capped at 50 percent. Portfolio volatility is capped at 10 percent.</p>
+<p>We evaluate candidate allocations using the methods developed in this chapter. Mean-variance optimization, constrained by the equity cap and volatility limit, provides a starting point. Resampling addresses estimation uncertainty. The Safety-First criterion ensures a high probability of meeting the threshold return.</p>
+<p>The recommended strategic allocation for the long-term portfolio is as follows.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Asset Class</th>
+<th>Weight</th>
+<th>Rationale</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Global Equities</td>
+<td>35%</td>
+<td>Core growth exposure, diversified across regions</td>
+</tr>
+<tr class="even">
+<td>Swiss Equities</td>
+<td>15%</td>
+<td>Home bias, lower volatility, currency match</td>
+</tr>
+<tr class="odd">
+<td>Global Government Bonds</td>
+<td>10%</td>
+<td>Crisis protection, negative correlation with equities</td>
+</tr>
+<tr class="even">
+<td>Swiss Government Bonds</td>
+<td>10%</td>
+<td>Safety, currency match, low volatility</td>
+</tr>
+<tr class="odd">
+<td>Global Corporate Bonds</td>
+<td>30%</td>
+<td>Enhanced yield with moderate credit risk</td>
+</tr>
+</tbody>
+</table>
+<p>This allocation has an expected return of 5.3 percent and expected volatility of 9.0 percent. The expected return is at the lower end of the target range but is achievable within Klaus’s risk constraints. The Roy’s ratio, using a threshold return of 6 percent, is approximately negative 0.08. This indicates a meaningful probability of falling short of the threshold, a reality that must be communicated clearly.</p>
+<p>The overall portfolio, including the conservative buckets, has an expected return of approximately 5.0 percent and expected volatility of 7.5 percent. The total equity allocation across all buckets is 45 percent, below the 50 percent cap.</p>
+<p>Klaus will want to know how this portfolio would have performed in a severe crisis. We stress-test the allocation using historical data from the 2008 financial crisis. The long-term portfolio would have declined by approximately 22 percent from peak to trough. The overall portfolio, including the conservative buckets, would have declined by approximately 16 percent.</p>
+<p>This is the level of decline Klaus must be prepared to accept. The historical record shows that declines of this magnitude occur periodically. It also shows that the portfolio would have recovered. By 2010, the portfolio would have returned to its pre-crisis value. By 2015, it would have grown substantially beyond it.</p>
+<p>The stress test provides a concrete basis for the conversation with Klaus. It moves the discussion from abstract percentages to the lived experience of a past crisis. Klaus can assess whether he could tolerate a decline of this magnitude in exchange for the long-term returns required to fund the family’s goals.</p>
+<p>Elke’s inherited portfolio of Swiss equities, valued at €2.5 million, is integrated into the Swiss equity allocation. The inherited holdings have a low cost basis. Selling them would trigger a 20 percent capital gains tax. The rebalancing policy accommodates this constraint. Cash flows are directed to other asset classes to maintain the target allocation. Sales from the inherited portfolio are minimized and occur only when deviations exceed a widened tolerance band of ten percentage points.</p>
+<p>The final strategic allocation across all segments of the Schmidt-Miller portfolio is summarized in the following table.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Asset Class</th>
+<th>Liquidity</th>
+<th>Medium-Term 1</th>
+<th>Medium-Term 2</th>
+<th>Long-Term</th>
+<th>Total</th>
+<th>Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Global Equities</td>
+<td>—</td>
+<td>—</td>
+<td>200,000</td>
+<td>6,436,500</td>
+<td>6,636,500</td>
+<td>31%</td>
+</tr>
+<tr class="even">
+<td>Swiss Equities</td>
+<td>—</td>
+<td>—</td>
+<td>200,000</td>
+<td>2,758,500</td>
+<td>2,958,500</td>
+<td>14%</td>
+</tr>
+<tr class="odd">
+<td>Global Gov Bonds</td>
+<td>—</td>
+<td>200,000</td>
+<td>600,000</td>
+<td>1,839,000</td>
+<td>2,639,000</td>
+<td>12%</td>
+</tr>
+<tr class="even">
+<td>Swiss Gov Bonds</td>
+<td>—</td>
+<td>200,000</td>
+<td>600,000</td>
+<td>1,839,000</td>
+<td>2,639,000</td>
+<td>12%</td>
+</tr>
+<tr class="odd">
+<td>Corporate Bonds</td>
+<td>—</td>
+<td>—</td>
+<td>400,000</td>
+<td>5,517,000</td>
+<td>5,917,000</td>
+<td>28%</td>
+</tr>
+<tr class="even">
+<td>Cash</td>
+<td>660,000</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>660,000</td>
+<td>3%</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td><strong>660,000</strong></td>
+<td><strong>400,000</strong></td>
+<td><strong>2,000,000</strong></td>
+<td><strong>18,390,000</strong></td>
+<td><strong>21,450,000</strong></td>
+<td><strong>100%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>This allocation represents a compromise. It pursues the highest expected return achievable within Klaus’s binding constraint on risk. It respects Elke’s emotional attachment to her inherited assets while providing a path toward greater diversification. It protects near-term goals in conservative instruments while positioning long-term capital for growth.</p>
+<p>The compromise is visible in the numbers. The expected return of 5.0 to 5.3 percent falls slightly short of the 6 to 8 percent target. The shortfall probability is not zero. The family may need to adjust expectations, reduce spending, or accept a slightly higher probability of falling short. The IPS review process provides the mechanism for monitoring outcomes and making adjustments over time.</p>
+<p>The allocation is not static. It will be rebalanced according to the policy documented in the IPS. It will be reviewed annually. It provides the framework within which all future investment decisions will be made. The Investment Policy Statement and the strategic asset allocation together form a complete plan, grounded in the family’s circumstances and adaptable to the unfolding future.</p>
 
 
-</section>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-black1992global" class="csl-entry" role="listitem">
+Black, Fischer, and Robert Litterman. 1992. <span>“Global Portfolio Optimization.”</span> <em>Financial Analysts Journal</em> 48 (5): 28–43.
+</div>
+<div id="ref-brinson1986determinants" class="csl-entry" role="listitem">
+Brinson, Gary P., L. Randolph Hood, and Gilbert L. Beebower. 1986. <span>“Determinants of Portfolio Performance.”</span> <em>Financial Analysts Journal</em> 42 (4): 39–44.
+</div>
+<div id="ref-markowitz1952portfolio" class="csl-entry" role="listitem">
+Markowitz, Harry. 1952. <span>“Portfolio Selection.”</span> <em>The Journal of Finance</em> 7 (1): 77–91.
+</div>
+<div id="ref-michaud1989markowitz" class="csl-entry" role="listitem">
+Michaud, Richard O. 1989. <span>“The Markowitz Optimization Enigma: Is’optimized’optimal?”</span> <em>Financial Analysts Journal</em> 45 (1): 31–42.
+</div>
+<div id="ref-qian2005risk" class="csl-entry" role="listitem">
+Qian, Edward E. 2005. <span>“Risk Parity Portfolios: Efficient Portfolios Through True Diversification.”</span> <em>PanAgora Asset Management White Paper</em>.
+</div>
+<div id="ref-roy1952safety" class="csl-entry" role="listitem">
+Roy, Andrew D. 1952. <span>“Safety First and the Holding of Assets.”</span> <em>Econometrica</em> 20 (3): 431–49.
+</div>
+<div id="ref-thaler1985mental" class="csl-entry" role="listitem">
+Thaler, Richard. 1985. <span>“Mental Accounting and Consumer Choice.”</span> <em>Marketing Science</em> 4 (3): 199–214.
+</div>
+<div id="ref-tobin1958liquidity" class="csl-entry" role="listitem">
+Tobin, James. 1958. <span>“Liquidity Preference as Behavior Towards Risk.”</span> <em>The Review of Economic Studies</em> 25 (2): 65–86.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

@@ -1,94 +1,122 @@
 [
   {
-    "objectID": "lesson-01-introduction.html#learning-outcomes",
-    "href": "lesson-01-introduction.html#learning-outcomes",
-    "title": "Lesson 1: Introduction & Simulation Setup",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "IMAG Teaching Slides",
+    "section": "",
+    "text": "INVESTMENT MANAGEMENT GAME (IMAG)\n    \n      Project\n      Team\n      Outcomes\n      Events\n      Game\n      Contact\n    \n  \n\n\n\n\n\nThese slide decks accompany the IMAG Teaching Materials and are designed for six 90-minute lessons. Each deck is self-contained and links back to the relevant chapters for deeper reading.\n\n\n\nLesson\nTopic\nKey Simulation Task\n\n\n\n\nLesson 1\nIntroduction & Simulation Setup\nGet started with Cesim Invest\n\n\nLesson 2\nMarkets, Asset Classes & ESG\nMap the investable universe\n\n\nLesson 3\nClient Discovery & Investment Policy Statement\nDraft the IPS\n\n\nLesson 4\nStrategic Asset Allocation\nBuild & submit the SAA\n\n\nLesson 5\nTactical Allocation & Security Selection\nTactical tilts & security picks\n\n\nLesson 6\nPerformance Measurement & Feedback Loop\nAnalyse results & iterate"
+  },
+  {
+    "objectID": "lesson-03-client-ips.html#learning-outcomes",
+    "href": "lesson-03-client-ips.html#learning-outcomes",
+    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
     "section": "Learning Outcomes",
-    "text": "Learning Outcomes\nBy the end of this lesson you will be able to:\n\nExplain the purpose and structure of the IMAG simulation\nNavigate the Cesim Invest platform and locate key decision screens\nDescribe the round-by-round investment process\nAssign team roles and agree on a collaborative workflow\nUnderstand how the simulation is graded"
+    "text": "Learning Outcomes\nBy the end of this lesson you will be able to:\n\nProfile a client and translate qualitative preferences into quantitative objectives\nFormulate a complete Investment Policy Statement (IPS)\nDefine risk tolerance, return requirements, constraints, and ESG policy\nUse the IPS as the governing document for all subsequent decisions\n\nTeaching chapters: Client Discovery & Personas · Investment Policy & Risk Governance"
   },
   {
-    "objectID": "lesson-01-introduction.html#what-is-imag",
-    "href": "lesson-01-introduction.html#what-is-imag",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "What is IMAG?",
-    "text": "What is IMAG?\n\nAn Erasmus+ project connecting universities across Europe\nA structured investment simulation using the Cesim Invest platform\nSix lessons that take you from blank mandate to full portfolio review\nDesigned to mirror real-world investment management processes\n\n→ Content: project background, partner institutions, learning goals."
+    "objectID": "lesson-03-client-ips.html#client-typology",
+    "href": "lesson-03-client-ips.html#client-typology",
+    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
+    "section": "Client Typology",
+    "text": "Client Typology\n\nInstitutional clients: pension funds, endowments, insurance companies, sovereign wealth funds\nRetail clients: high-net-worth individuals, family offices\nKey differences: time horizon, liability structure, regulatory constraints, reporting requirements\n\n→ Content: IMAG client persona description (who is the simulated investor?)."
   },
   {
-    "objectID": "lesson-01-introduction.html#why-a-simulation",
-    "href": "lesson-01-introduction.html#why-a-simulation",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "Why a Simulation?",
-    "text": "Why a Simulation?\n\nSafe environment to make — and learn from — real portfolio decisions\nImmediate feedback through performance metrics each round\nExposure to the full investment cycle: research → decision → review\n\n→ Content: simulation vs. classroom theory; what you can and cannot do in Cesim."
+    "objectID": "lesson-03-client-ips.html#the-client-discovery-process",
+    "href": "lesson-03-client-ips.html#the-client-discovery-process",
+    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
+    "section": "The Client Discovery Process",
+    "text": "The Client Discovery Process\n\nGoals: what does the client want to achieve?\nConstraints: what limits what they can do?\nPreferences: what do they care about beyond returns?\nTime horizon: when do they need the money?\nLiquidity needs: how much cash must be accessible?\n\n→ Content: worked example with IMAG client profile."
   },
   {
-    "objectID": "lesson-01-introduction.html#platform-overview",
-    "href": "lesson-01-introduction.html#platform-overview",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "Platform Overview",
-    "text": "Platform Overview\n\nBrowser-based; no installation required\nKey navigation areas: Economic Outlook · Strategy · Markets · Analyst · Results\nData updates each round — decisions are locked at the round deadline\n\n→ Content: annotated screenshot of the platform home screen."
+    "objectID": "lesson-03-client-ips.html#translating-qualitative-to-quantitative",
+    "href": "lesson-03-client-ips.html#translating-qualitative-to-quantitative",
+    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
+    "section": "Translating Qualitative to Quantitative",
+    "text": "Translating Qualitative to Quantitative\n\n\n\nQualitative statement\nQuantitative objective\n\n\n\n\n“Preserve capital”\nMax drawdown ≤ 10%; real return ≥ 0%\n\n\n“Moderate risk taker”\nPortfolio volatility 8–12% p.a.\n\n\n“Long-term growth”\nTarget return: CPI + 4% over 10 years\n\n\n“ESG-conscious”\nPortfolio ESG score ≥ 7/10\n\n\n\n→ Content: IMAG-specific calibration table."
   },
   {
-    "objectID": "lesson-01-introduction.html#the-asset-universe",
-    "href": "lesson-01-introduction.html#the-asset-universe",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "The Asset Universe",
-    "text": "The Asset Universe\n\nEquities (domestic & international)\nFixed income (government & corporate bonds)\nCash & money market instruments\nAlternative assets (commodities, real estate, digital assets)\nCurrency exposure\n\n→ Content: screenshot of the Markets screen with asset list."
+    "objectID": "lesson-03-client-ips.html#risk-tolerance-assessment",
+    "href": "lesson-03-client-ips.html#risk-tolerance-assessment",
+    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
+    "section": "Risk Tolerance Assessment",
+    "text": "Risk Tolerance Assessment\n\nRisk capacity: ability to absorb losses (financial situation)\nRisk willingness: psychological comfort with volatility\nTools: questionnaires, scenario testing, loss aversion probes\nResult: a defined risk budget (max volatility, max drawdown, VaR)\n\n→ Content: risk questionnaire template; scoring guide."
   },
   {
-    "objectID": "lesson-01-introduction.html#key-performance-indicators",
-    "href": "lesson-01-introduction.html#key-performance-indicators",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "Key Performance Indicators",
-    "text": "Key Performance Indicators\n\n\n\nKPI\nWhat it measures\n\n\n\n\nPortfolio return\nAbsolute & relative to benchmark\n\n\nSharpe ratio\nRisk-adjusted return\n\n\nTracking error\nDeviation from benchmark\n\n\nESG score\nSustainability integration\n\n\nDrawdown\nMaximum loss from peak\n\n\n\n→ Content: where to find each KPI in Cesim Results."
+    "objectID": "lesson-03-client-ips.html#what-is-an-ips",
+    "href": "lesson-03-client-ips.html#what-is-an-ips",
+    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
+    "section": "What is an IPS?",
+    "text": "What is an IPS?\n\nThe governing document of the portfolio\nAgreed upon by client and manager before any investment is made\nServes as the benchmark for every subsequent decision\nMust be reviewed at least annually (or after major market events)"
   },
   {
-    "objectID": "lesson-01-introduction.html#round-structure",
-    "href": "lesson-01-introduction.html#round-structure",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "Round Structure",
-    "text": "Round Structure\n\nEach round = one quarter (or one year, depending on setup)\nSequence: read data → form views → submit decisions → observe results\nDecisions carry over; you must actively rebalance\n\n→ Content: round timeline diagram."
+    "objectID": "lesson-03-client-ips.html#ips-structure",
+    "href": "lesson-03-client-ips.html#ips-structure",
+    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
+    "section": "IPS Structure",
+    "text": "IPS Structure\n\nClient background & objectives\nReturn requirement (absolute or relative to benchmark)\nRisk tolerance (quantified)\nTime horizon\nLiquidity requirements\nTax considerations (if applicable)\nLegal & regulatory constraints\nESG & exclusion policy\nBenchmark definition\nRebalancing policy"
   },
   {
-    "objectID": "lesson-01-introduction.html#decision-deadlines-workflow",
-    "href": "lesson-01-introduction.html#decision-deadlines-workflow",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "Decision Deadlines & Workflow",
-    "text": "Decision Deadlines & Workflow\n\nDeadlines are fixed — late submissions are not accepted\nRecommended team workflow: research → debate → agree → submit\nDocument your reasoning (feeds into the feedback loop, Lesson 6)\n\n→ Content: sample team calendar / decision log template."
+    "objectID": "lesson-03-client-ips.html#return-requirement",
+    "href": "lesson-03-client-ips.html#return-requirement",
+    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
+    "section": "Return Requirement",
+    "text": "Return Requirement\n\nRequired return = spending needs + inflation + fees\nMust be realistic given the risk budget\nDistinguish: nominal vs. real, absolute vs. relative\nExample: “Achieve CPI + 3.5% net of fees over rolling 5-year periods”\n\n→ Content: return decomposition diagram; link to Cesim scoring benchmark."
   },
   {
-    "objectID": "lesson-01-introduction.html#scoring-grading",
-    "href": "lesson-01-introduction.html#scoring-grading",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "Scoring & Grading",
-    "text": "Scoring & Grading\n\n→ Content: grading rubric (risk-adjusted return, ESG, IPS consistency, reflection quality)."
+    "objectID": "lesson-03-client-ips.html#risk-constraints",
+    "href": "lesson-03-client-ips.html#risk-constraints",
+    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
+    "section": "Risk Constraints",
+    "text": "Risk Constraints\n\nMaximum portfolio volatility (annualised standard deviation)\nMaximum drawdown from peak\nTracking error limit vs. benchmark\nValue-at-Risk (VaR) at 95% confidence\n\n\n\n\n\n\n\nNote\n\n\nIn IMAG, the risk constraints you set here will govern your SAA (Lesson 4) and all TAA decisions (Lesson 5)."
   },
   {
-    "objectID": "lesson-01-introduction.html#suggested-role-allocation",
-    "href": "lesson-01-introduction.html#suggested-role-allocation",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "Suggested Role Allocation",
-    "text": "Suggested Role Allocation\n\n\n\nRole\nResponsibility\n\n\n\n\nChief Investment Officer\nFinal decision sign-off, IPS owner\n\n\nMacro Analyst\nEconomic outlook, scenario design\n\n\nPortfolio Manager\nSAA/TAA, risk budgeting\n\n\nESG Analyst\nSustainability scoring, impact assessment\n\n\nPerformance Analyst\nResults review, attribution\n\n\n\n→ Adapt roles to team size. Rotate if possible."
+    "objectID": "lesson-03-client-ips.html#constraints-liquidity-legal-esg",
+    "href": "lesson-03-client-ips.html#constraints-liquidity-legal-esg",
+    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
+    "section": "Constraints: Liquidity, Legal, ESG",
+    "text": "Constraints: Liquidity, Legal, ESG\n\nLiquidity: minimum cash allocation; redemption notice period\nLegal: eligible instruments; prohibited sectors\nESG: minimum portfolio ESG score; explicit exclusions (e.g. coal, weapons)\nConcentration: maximum single-issuer or single-sector weight\n\n→ Content: IMAG constraint checklist."
   },
   {
-    "objectID": "lesson-01-introduction.html#key-takeaways",
-    "href": "lesson-01-introduction.html#key-takeaways",
-    "title": "Lesson 1: Introduction & Simulation Setup",
+    "objectID": "lesson-03-client-ips.html#benchmark-definition",
+    "href": "lesson-03-client-ips.html#benchmark-definition",
+    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
+    "section": "Benchmark Definition",
+    "text": "Benchmark Definition\n\nThe benchmark is the reference point for relative performance\nChoices: market-cap index, custom blended index, CPI-linked target\nMust reflect the client’s strategic asset allocation\nDefines what is “active risk” vs. “passive market risk”\n\n→ Content: worked example of composite benchmark construction for IMAG."
+  },
+  {
+    "objectID": "lesson-03-client-ips.html#the-governance-framework",
+    "href": "lesson-03-client-ips.html#the-governance-framework",
+    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
+    "section": "The Governance Framework",
+    "text": "The Governance Framework\n\nWho makes decisions? Who approves? Who monitors?\nInvestment Committee: strategy decisions, IPS approval\nPortfolio Manager: day-to-day execution\nRisk Officer: limit monitoring, breach escalation\nCompliance: regulatory adherence\n\n→ Content: governance org-chart; decision rights matrix."
+  },
+  {
+    "objectID": "lesson-03-client-ips.html#monitoring-reporting",
+    "href": "lesson-03-client-ips.html#monitoring-reporting",
+    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
+    "section": "Monitoring & Reporting",
+    "text": "Monitoring & Reporting\n\nFrequency: daily (risk limits), monthly (performance), quarterly (IPS review)\nKey reports: factsheet, attribution report, risk dashboard\nBreach protocol: when does a breach trigger a rebalancing?\n\n→ Content: sample reporting template."
+  },
+  {
+    "objectID": "lesson-03-client-ips.html#key-takeaways",
+    "href": "lesson-03-client-ips.html#key-takeaways",
+    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
     "section": "Key Takeaways",
-    "text": "Key Takeaways\n\nIMAG replicates the full investment management process in six lessons\nEvery decision should be traceable to your IPS (Lesson 3)\nDocument your reasoning — you will review it in Lesson 6"
+    "text": "Key Takeaways\n\nThe IPS is the most important document you will produce in this course\nEvery investment decision in Lessons 4–6 must be traceable to the IPS\nA well-defined IPS prevents emotion-driven decisions under market stress"
   },
   {
-    "objectID": "lesson-01-introduction.html#simulation-task-lesson-1",
-    "href": "lesson-01-introduction.html#simulation-task-lesson-1",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "Simulation Task — Lesson 1",
-    "text": "Simulation Task — Lesson 1\n\n\n\n\n\n\nBefore next lesson\n\n\n\nLog in to Cesim Invest and explore all five navigation sections\nAgree on team roles and a communication channel\nRead: Introduction chapter in the teaching materials"
+    "objectID": "lesson-03-client-ips.html#simulation-task-lesson-3",
+    "href": "lesson-03-client-ips.html#simulation-task-lesson-3",
+    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
+    "section": "Simulation Task — Lesson 3",
+    "text": "Simulation Task — Lesson 3\n\n\n\n\n\n\nDeliverable: Your IPS\n\n\nDraft a complete IPS for the IMAG simulation covering:\n\nReturn objective (quantified)\nRisk tolerance (max volatility, max drawdown)\nTime horizon\nLiquidity requirement\nESG policy (minimum score + any exclusions)\nBenchmark definition\nRebalancing policy (trigger-based or calendar-based)\n\nSubmit before Lesson 4. Your SAA must be consistent with this document."
   },
   {
-    "objectID": "lesson-01-introduction.html#further-reading",
-    "href": "lesson-01-introduction.html#further-reading",
-    "title": "Lesson 1: Introduction & Simulation Setup",
+    "objectID": "lesson-03-client-ips.html#further-reading",
+    "href": "lesson-03-client-ips.html#further-reading",
+    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
     "section": "Further Reading",
-    "text": "Further Reading\n\nTeaching materials: Introduction chapter\nEngine documentation: asset universe and KPI definitions"
+    "text": "Further Reading\n\nChapter: Client Discovery & Personas\nChapter: Investment Policy, Risk & Governance"
   },
   {
     "objectID": "lesson-02-markets-esg.html#learning-outcomes",
@@ -194,132 +222,6 @@
     "title": "Lesson 2: Markets, Asset Classes & ESG",
     "section": "Further Reading",
     "text": "Further Reading\n\nChapter: Markets, Asset Classes, Instruments & Currencies\nChapter: Sustainable and Impact Investing\nChapter: Drivers of Asset Prices"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "IMAG Teaching Slides",
-    "section": "",
-    "text": "INVESTMENT MANAGEMENT GAME (IMAG)\n    \n      Project\n      Team\n      Outcomes\n      Events\n      Game\n      Contact\n    \n  \n\n\n\n\n\nThese slide decks accompany the IMAG Teaching Materials and are designed for six 90-minute lessons. Each deck is self-contained and links back to the relevant chapters for deeper reading.\n\n\n\nLesson\nTopic\nKey Simulation Task\n\n\n\n\nLesson 1\nIntroduction & Simulation Setup\nGet started with Cesim Invest\n\n\nLesson 2\nMarkets, Asset Classes & ESG\nMap the investable universe\n\n\nLesson 3\nClient Discovery & Investment Policy Statement\nDraft the IPS\n\n\nLesson 4\nStrategic Asset Allocation\nBuild & submit the SAA\n\n\nLesson 5\nTactical Allocation & Security Selection\nTactical tilts & security picks\n\n\nLesson 6\nPerformance Measurement & Feedback Loop\nAnalyse results & iterate"
-  },
-  {
-    "objectID": "lesson-04-saa.html#learning-outcomes",
-    "href": "lesson-04-saa.html#learning-outcomes",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "Learning Outcomes",
-    "text": "Learning Outcomes\nBy the end of this lesson you will be able to:\n\nDerive long-run capital market assumptions (returns, risks, correlations)\nDesign macro scenarios and assign probabilities\nConstruct an efficient SAA consistent with your IPS\nTranslate the SAA into Cesim Invest decision inputs\n\nTeaching chapters: Drivers of Asset Prices · Data, Forecasting & Scenario Design · Strategic Research Toolkit · Strategic Asset Allocation"
-  },
-  {
-    "objectID": "lesson-04-saa.html#what-are-capital-market-assumptions",
-    "href": "lesson-04-saa.html#what-are-capital-market-assumptions",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "What Are Capital Market Assumptions?",
-    "text": "What Are Capital Market Assumptions?\n\nLong-run (10-year) forecasts of: expected returns · volatility · correlations\nThe foundation of every SAA decision\nSources: historical data, factor models, building-block approach, survey consensus\nMust be consistent with your macro view and the IPS return objective\n\n→ Content: CMA table for IMAG asset classes (to be filled with Cesim data)."
-  },
-  {
-    "objectID": "lesson-04-saa.html#the-building-block-approach",
-    "href": "lesson-04-saa.html#the-building-block-approach",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "The Building-Block Approach",
-    "text": "The Building-Block Approach\n\\[\\text{Expected Return} = r_f + \\text{Risk Premium}\\]\n\n\n\nAsset class\nComponents\n\n\n\n\nEquities\nRisk-free + equity risk premium + regional premium\n\n\nCorp. bonds\nRisk-free + term premium + credit spread\n\n\nCommodities\nRisk-free + convenience yield + roll return\n\n\n\n→ Content: calibrated estimates using current Cesim Economic Outlook data."
-  },
-  {
-    "objectID": "lesson-04-saa.html#estimating-volatility-correlations",
-    "href": "lesson-04-saa.html#estimating-volatility-correlations",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "Estimating Volatility & Correlations",
-    "text": "Estimating Volatility & Correlations\n\nHistorical volatility: rolling 3- and 5-year windows\nCorrelation instability: correlations rise during crises (diversification fails when needed)\nShrinkage estimators: blend historical with prior (reduces estimation error)\nCorrelation matrix visualisation (heatmap)\n\n→ Content: worked example with IMAG asset data."
-  },
-  {
-    "objectID": "lesson-04-saa.html#why-scenarios",
-    "href": "lesson-04-saa.html#why-scenarios",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "Why Scenarios?",
-    "text": "Why Scenarios?\n\nPoint forecasts are always wrong — scenarios capture uncertainty\nForce structured thinking about tail risks\nEnable stress-testing of the SAA before committing\nRequired by many regulatory frameworks (IORP II, Solvency II)"
-  },
-  {
-    "objectID": "lesson-04-saa.html#a-three-scenario-framework",
-    "href": "lesson-04-saa.html#a-three-scenario-framework",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "A Three-Scenario Framework",
-    "text": "A Three-Scenario Framework\n\n\n\nScenario\nProbability\nDescription\n\n\n\n\nBase case\n60%\nModerate growth, inflation normalising\n\n\nUpside\n25%\nStrong recovery, risk-on environment\n\n\nDownside\n15%\nRecession, credit stress, flight to quality\n\n\n\n→ Content: fill with IMAG-specific macro assumptions per scenario."
-  },
-  {
-    "objectID": "lesson-04-saa.html#scenario-returns-by-asset-class",
-    "href": "lesson-04-saa.html#scenario-returns-by-asset-class",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "Scenario Returns by Asset Class",
-    "text": "Scenario Returns by Asset Class\n→ Content: table of expected returns per asset class under each scenario; probability-weighted expected return column."
-  },
-  {
-    "objectID": "lesson-04-saa.html#stress-testing-the-saa",
-    "href": "lesson-04-saa.html#stress-testing-the-saa",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "Stress Testing the SAA",
-    "text": "Stress Testing the SAA\n\nApply downside scenario to candidate SAA\nCheck: does portfolio breach IPS risk constraints?\nIf yes: reduce risk → revisit return objective → update IPS\n\n→ Content: stress test template; link to Cesim back-testing tools if available."
-  },
-  {
-    "objectID": "lesson-04-saa.html#mean-variance-optimisation",
-    "href": "lesson-04-saa.html#mean-variance-optimisation",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "Mean-Variance Optimisation",
-    "text": "Mean-Variance Optimisation\n\nClassic Markowitz framework: maximise return for a given level of risk\nInputs: expected returns, volatility, correlation matrix\nOutput: efficient frontier — the set of optimal portfolios\n\n→ Content: efficient frontier diagram; locate the IPS-consistent portfolio."
-  },
-  {
-    "objectID": "lesson-04-saa.html#practical-constraints-on-the-optimiser",
-    "href": "lesson-04-saa.html#practical-constraints-on-the-optimiser",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "Practical Constraints on the Optimiser",
-    "text": "Practical Constraints on the Optimiser\n\nNo short-selling (long-only constraint)\nMinimum and maximum weights per asset class (IPS constraints)\nTurnover limit (transaction cost management)\nESG constraint: minimum portfolio ESG score\n\n\n\n\n\n\n\nTip\n\n\nUnconstrained optimisation produces extreme corner solutions. Always impose realistic bounds."
-  },
-  {
-    "objectID": "lesson-04-saa.html#from-efficient-frontier-to-strategic-weights",
-    "href": "lesson-04-saa.html#from-efficient-frontier-to-strategic-weights",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "From Efficient Frontier to Strategic Weights",
-    "text": "From Efficient Frontier to Strategic Weights\n\nSelect the portfolio that maximises expected return subject to the IPS risk budget\nRound weights to practical increments (e.g. nearest 5%)\nCheck consistency with IPS: return target, risk limit, ESG score, liquidity\n\n→ Content: final SAA weights table for IMAG (to be completed by each team)."
-  },
-  {
-    "objectID": "lesson-04-saa.html#rebalancing-policy",
-    "href": "lesson-04-saa.html#rebalancing-policy",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "Rebalancing Policy",
-    "text": "Rebalancing Policy\n\nCalendar rebalancing: restore weights monthly/quarterly regardless of drift\nThreshold rebalancing: trigger when any weight drifts &gt; X% from target\nTransaction costs vs. tracking error trade-off\nDocument policy in IPS\n\n→ Content: comparison of rebalancing strategies; recommendation for IMAG."
-  },
-  {
-    "objectID": "lesson-04-saa.html#entering-your-saa-in-cesim",
-    "href": "lesson-04-saa.html#entering-your-saa-in-cesim",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "Entering Your SAA in Cesim",
-    "text": "Entering Your SAA in Cesim\n\nNavigate to: Strategy → Strategic Asset Allocation\nEnter target weights for each eligible asset class\nThe system enforces that weights sum to 100%\n\n→ Content: annotated screenshot of the Cesim SAA input screen."
-  },
-  {
-    "objectID": "lesson-04-saa.html#what-happens-each-round",
-    "href": "lesson-04-saa.html#what-happens-each-round",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "What Happens Each Round",
-    "text": "What Happens Each Round\n\nYour SAA is the long-run anchor — you will deviate from it tactically in Lesson 5\nCesim calculates benchmark return based on your SAA weights\nActive return = portfolio return minus SAA benchmark return"
-  },
-  {
-    "objectID": "lesson-04-saa.html#key-takeaways",
-    "href": "lesson-04-saa.html#key-takeaways",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "Key Takeaways",
-    "text": "Key Takeaways\n\nThe SAA drives 80–90% of long-run portfolio return variation\nScenario analysis prevents over-confidence in point forecasts\nEvery SAA weight must be justified by your IPS and CMA"
-  },
-  {
-    "objectID": "lesson-04-saa.html#simulation-task-lesson-4",
-    "href": "lesson-04-saa.html#simulation-task-lesson-4",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "Simulation Task — Lesson 4",
-    "text": "Simulation Task — Lesson 4\n\n\n\n\n\n\nDeliverable: Your SAA\n\n\n\nBuild your capital market assumptions table (use Cesim Economic Outlook + own research)\nDesign three scenarios with probabilities\nRun mean-variance optimisation (use provided template or Excel)\nDefine final SAA weights — consistent with your IPS\nSubmit SAA in Cesim before the round deadline"
-  },
-  {
-    "objectID": "lesson-04-saa.html#further-reading",
-    "href": "lesson-04-saa.html#further-reading",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "Further Reading",
-    "text": "Further Reading\n\nChapter: Drivers of Asset Prices\nChapter: Data, Forecasting & Scenario Design\nChapter: Strategic Research Toolkit\nChapter: Strategic Asset Allocation"
   },
   {
     "objectID": "lesson-06-performance.html#learning-outcomes",
@@ -560,115 +462,213 @@
     "text": "Further Reading\n\nChapter: Tactical Research Toolkit\nChapter: Tactical Asset Allocation & Security Selection\nChapter: Portfolio Implementation"
   },
   {
-    "objectID": "lesson-03-client-ips.html#learning-outcomes",
-    "href": "lesson-03-client-ips.html#learning-outcomes",
-    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
+    "objectID": "lesson-01-introduction.html#learning-outcomes",
+    "href": "lesson-01-introduction.html#learning-outcomes",
+    "title": "Lesson 1: Introduction & Simulation Setup",
     "section": "Learning Outcomes",
-    "text": "Learning Outcomes\nBy the end of this lesson you will be able to:\n\nProfile a client and translate qualitative preferences into quantitative objectives\nFormulate a complete Investment Policy Statement (IPS)\nDefine risk tolerance, return requirements, constraints, and ESG policy\nUse the IPS as the governing document for all subsequent decisions\n\nTeaching chapters: Client Discovery & Personas · Investment Policy & Risk Governance"
+    "text": "Learning Outcomes\nBy the end of this lesson you will be able to:\n\nExplain the purpose and structure of the IMAG simulation\nNavigate the Cesim Invest platform and locate key decision screens\nDescribe the round-by-round investment process\nAssign team roles and agree on a collaborative workflow\nUnderstand how the simulation is graded"
   },
   {
-    "objectID": "lesson-03-client-ips.html#client-typology",
-    "href": "lesson-03-client-ips.html#client-typology",
-    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
-    "section": "Client Typology",
-    "text": "Client Typology\n\nInstitutional clients: pension funds, endowments, insurance companies, sovereign wealth funds\nRetail clients: high-net-worth individuals, family offices\nKey differences: time horizon, liability structure, regulatory constraints, reporting requirements\n\n→ Content: IMAG client persona description (who is the simulated investor?)."
+    "objectID": "lesson-01-introduction.html#what-is-imag",
+    "href": "lesson-01-introduction.html#what-is-imag",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "What is IMAG?",
+    "text": "What is IMAG?\n\nAn Erasmus+ project connecting universities across Europe\nA structured investment simulation using the Cesim Invest platform\nSix lessons that take you from blank mandate to full portfolio review\nDesigned to mirror real-world investment management processes\n\n→ Content: project background, partner institutions, learning goals."
   },
   {
-    "objectID": "lesson-03-client-ips.html#the-client-discovery-process",
-    "href": "lesson-03-client-ips.html#the-client-discovery-process",
-    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
-    "section": "The Client Discovery Process",
-    "text": "The Client Discovery Process\n\nGoals: what does the client want to achieve?\nConstraints: what limits what they can do?\nPreferences: what do they care about beyond returns?\nTime horizon: when do they need the money?\nLiquidity needs: how much cash must be accessible?\n\n→ Content: worked example with IMAG client profile."
+    "objectID": "lesson-01-introduction.html#why-a-simulation",
+    "href": "lesson-01-introduction.html#why-a-simulation",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "Why a Simulation?",
+    "text": "Why a Simulation?\n\nSafe environment to make — and learn from — real portfolio decisions\nImmediate feedback through performance metrics each round\nExposure to the full investment cycle: research → decision → review\n\n→ Content: simulation vs. classroom theory; what you can and cannot do in Cesim."
   },
   {
-    "objectID": "lesson-03-client-ips.html#translating-qualitative-to-quantitative",
-    "href": "lesson-03-client-ips.html#translating-qualitative-to-quantitative",
-    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
-    "section": "Translating Qualitative to Quantitative",
-    "text": "Translating Qualitative to Quantitative\n\n\n\nQualitative statement\nQuantitative objective\n\n\n\n\n“Preserve capital”\nMax drawdown ≤ 10%; real return ≥ 0%\n\n\n“Moderate risk taker”\nPortfolio volatility 8–12% p.a.\n\n\n“Long-term growth”\nTarget return: CPI + 4% over 10 years\n\n\n“ESG-conscious”\nPortfolio ESG score ≥ 7/10\n\n\n\n→ Content: IMAG-specific calibration table."
+    "objectID": "lesson-01-introduction.html#platform-overview",
+    "href": "lesson-01-introduction.html#platform-overview",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "Platform Overview",
+    "text": "Platform Overview\n\nBrowser-based; no installation required\nKey navigation areas: Economic Outlook · Strategy · Markets · Analyst · Results\nData updates each round — decisions are locked at the round deadline\n\n→ Content: annotated screenshot of the platform home screen."
   },
   {
-    "objectID": "lesson-03-client-ips.html#risk-tolerance-assessment",
-    "href": "lesson-03-client-ips.html#risk-tolerance-assessment",
-    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
-    "section": "Risk Tolerance Assessment",
-    "text": "Risk Tolerance Assessment\n\nRisk capacity: ability to absorb losses (financial situation)\nRisk willingness: psychological comfort with volatility\nTools: questionnaires, scenario testing, loss aversion probes\nResult: a defined risk budget (max volatility, max drawdown, VaR)\n\n→ Content: risk questionnaire template; scoring guide."
+    "objectID": "lesson-01-introduction.html#the-asset-universe",
+    "href": "lesson-01-introduction.html#the-asset-universe",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "The Asset Universe",
+    "text": "The Asset Universe\n\nEquities (domestic & international)\nFixed income (government & corporate bonds)\nCash & money market instruments\nAlternative assets (commodities, real estate, digital assets)\nCurrency exposure\n\n→ Content: screenshot of the Markets screen with asset list."
   },
   {
-    "objectID": "lesson-03-client-ips.html#what-is-an-ips",
-    "href": "lesson-03-client-ips.html#what-is-an-ips",
-    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
-    "section": "What is an IPS?",
-    "text": "What is an IPS?\n\nThe governing document of the portfolio\nAgreed upon by client and manager before any investment is made\nServes as the benchmark for every subsequent decision\nMust be reviewed at least annually (or after major market events)"
+    "objectID": "lesson-01-introduction.html#key-performance-indicators",
+    "href": "lesson-01-introduction.html#key-performance-indicators",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "Key Performance Indicators",
+    "text": "Key Performance Indicators\n\n\n\nKPI\nWhat it measures\n\n\n\n\nPortfolio return\nAbsolute & relative to benchmark\n\n\nSharpe ratio\nRisk-adjusted return\n\n\nTracking error\nDeviation from benchmark\n\n\nESG score\nSustainability integration\n\n\nDrawdown\nMaximum loss from peak\n\n\n\n→ Content: where to find each KPI in Cesim Results."
   },
   {
-    "objectID": "lesson-03-client-ips.html#ips-structure",
-    "href": "lesson-03-client-ips.html#ips-structure",
-    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
-    "section": "IPS Structure",
-    "text": "IPS Structure\n\nClient background & objectives\nReturn requirement (absolute or relative to benchmark)\nRisk tolerance (quantified)\nTime horizon\nLiquidity requirements\nTax considerations (if applicable)\nLegal & regulatory constraints\nESG & exclusion policy\nBenchmark definition\nRebalancing policy"
+    "objectID": "lesson-01-introduction.html#round-structure",
+    "href": "lesson-01-introduction.html#round-structure",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "Round Structure",
+    "text": "Round Structure\n\nEach round = one quarter (or one year, depending on setup)\nSequence: read data → form views → submit decisions → observe results\nDecisions carry over; you must actively rebalance\n\n→ Content: round timeline diagram."
   },
   {
-    "objectID": "lesson-03-client-ips.html#return-requirement",
-    "href": "lesson-03-client-ips.html#return-requirement",
-    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
-    "section": "Return Requirement",
-    "text": "Return Requirement\n\nRequired return = spending needs + inflation + fees\nMust be realistic given the risk budget\nDistinguish: nominal vs. real, absolute vs. relative\nExample: “Achieve CPI + 3.5% net of fees over rolling 5-year periods”\n\n→ Content: return decomposition diagram; link to Cesim scoring benchmark."
+    "objectID": "lesson-01-introduction.html#decision-deadlines-workflow",
+    "href": "lesson-01-introduction.html#decision-deadlines-workflow",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "Decision Deadlines & Workflow",
+    "text": "Decision Deadlines & Workflow\n\nDeadlines are fixed — late submissions are not accepted\nRecommended team workflow: research → debate → agree → submit\nDocument your reasoning (feeds into the feedback loop, Lesson 6)\n\n→ Content: sample team calendar / decision log template."
   },
   {
-    "objectID": "lesson-03-client-ips.html#risk-constraints",
-    "href": "lesson-03-client-ips.html#risk-constraints",
-    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
-    "section": "Risk Constraints",
-    "text": "Risk Constraints\n\nMaximum portfolio volatility (annualised standard deviation)\nMaximum drawdown from peak\nTracking error limit vs. benchmark\nValue-at-Risk (VaR) at 95% confidence\n\n\n\n\n\n\n\nNote\n\n\nIn IMAG, the risk constraints you set here will govern your SAA (Lesson 4) and all TAA decisions (Lesson 5)."
+    "objectID": "lesson-01-introduction.html#scoring-grading",
+    "href": "lesson-01-introduction.html#scoring-grading",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "Scoring & Grading",
+    "text": "Scoring & Grading\n\n→ Content: grading rubric (risk-adjusted return, ESG, IPS consistency, reflection quality)."
   },
   {
-    "objectID": "lesson-03-client-ips.html#constraints-liquidity-legal-esg",
-    "href": "lesson-03-client-ips.html#constraints-liquidity-legal-esg",
-    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
-    "section": "Constraints: Liquidity, Legal, ESG",
-    "text": "Constraints: Liquidity, Legal, ESG\n\nLiquidity: minimum cash allocation; redemption notice period\nLegal: eligible instruments; prohibited sectors\nESG: minimum portfolio ESG score; explicit exclusions (e.g. coal, weapons)\nConcentration: maximum single-issuer or single-sector weight\n\n→ Content: IMAG constraint checklist."
+    "objectID": "lesson-01-introduction.html#suggested-role-allocation",
+    "href": "lesson-01-introduction.html#suggested-role-allocation",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "Suggested Role Allocation",
+    "text": "Suggested Role Allocation\n\n\n\nRole\nResponsibility\n\n\n\n\nChief Investment Officer\nFinal decision sign-off, IPS owner\n\n\nMacro Analyst\nEconomic outlook, scenario design\n\n\nPortfolio Manager\nSAA/TAA, risk budgeting\n\n\nESG Analyst\nSustainability scoring, impact assessment\n\n\nPerformance Analyst\nResults review, attribution\n\n\n\n→ Adapt roles to team size. Rotate if possible."
   },
   {
-    "objectID": "lesson-03-client-ips.html#benchmark-definition",
-    "href": "lesson-03-client-ips.html#benchmark-definition",
-    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
-    "section": "Benchmark Definition",
-    "text": "Benchmark Definition\n\nThe benchmark is the reference point for relative performance\nChoices: market-cap index, custom blended index, CPI-linked target\nMust reflect the client’s strategic asset allocation\nDefines what is “active risk” vs. “passive market risk”\n\n→ Content: worked example of composite benchmark construction for IMAG."
-  },
-  {
-    "objectID": "lesson-03-client-ips.html#the-governance-framework",
-    "href": "lesson-03-client-ips.html#the-governance-framework",
-    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
-    "section": "The Governance Framework",
-    "text": "The Governance Framework\n\nWho makes decisions? Who approves? Who monitors?\nInvestment Committee: strategy decisions, IPS approval\nPortfolio Manager: day-to-day execution\nRisk Officer: limit monitoring, breach escalation\nCompliance: regulatory adherence\n\n→ Content: governance org-chart; decision rights matrix."
-  },
-  {
-    "objectID": "lesson-03-client-ips.html#monitoring-reporting",
-    "href": "lesson-03-client-ips.html#monitoring-reporting",
-    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
-    "section": "Monitoring & Reporting",
-    "text": "Monitoring & Reporting\n\nFrequency: daily (risk limits), monthly (performance), quarterly (IPS review)\nKey reports: factsheet, attribution report, risk dashboard\nBreach protocol: when does a breach trigger a rebalancing?\n\n→ Content: sample reporting template."
-  },
-  {
-    "objectID": "lesson-03-client-ips.html#key-takeaways",
-    "href": "lesson-03-client-ips.html#key-takeaways",
-    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
+    "objectID": "lesson-01-introduction.html#key-takeaways",
+    "href": "lesson-01-introduction.html#key-takeaways",
+    "title": "Lesson 1: Introduction & Simulation Setup",
     "section": "Key Takeaways",
-    "text": "Key Takeaways\n\nThe IPS is the most important document you will produce in this course\nEvery investment decision in Lessons 4–6 must be traceable to the IPS\nA well-defined IPS prevents emotion-driven decisions under market stress"
+    "text": "Key Takeaways\n\nIMAG replicates the full investment management process in six lessons\nEvery decision should be traceable to your IPS (Lesson 3)\nDocument your reasoning — you will review it in Lesson 6"
   },
   {
-    "objectID": "lesson-03-client-ips.html#simulation-task-lesson-3",
-    "href": "lesson-03-client-ips.html#simulation-task-lesson-3",
-    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
-    "section": "Simulation Task — Lesson 3",
-    "text": "Simulation Task — Lesson 3\n\n\n\n\n\n\nDeliverable: Your IPS\n\n\nDraft a complete IPS for the IMAG simulation covering:\n\nReturn objective (quantified)\nRisk tolerance (max volatility, max drawdown)\nTime horizon\nLiquidity requirement\nESG policy (minimum score + any exclusions)\nBenchmark definition\nRebalancing policy (trigger-based or calendar-based)\n\nSubmit before Lesson 4. Your SAA must be consistent with this document."
+    "objectID": "lesson-01-introduction.html#simulation-task-lesson-1",
+    "href": "lesson-01-introduction.html#simulation-task-lesson-1",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "Simulation Task — Lesson 1",
+    "text": "Simulation Task — Lesson 1\n\n\n\n\n\n\nBefore next lesson\n\n\n\nLog in to Cesim Invest and explore all five navigation sections\nAgree on team roles and a communication channel\nRead: Introduction chapter in the teaching materials"
   },
   {
-    "objectID": "lesson-03-client-ips.html#further-reading",
-    "href": "lesson-03-client-ips.html#further-reading",
-    "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
+    "objectID": "lesson-01-introduction.html#further-reading",
+    "href": "lesson-01-introduction.html#further-reading",
+    "title": "Lesson 1: Introduction & Simulation Setup",
     "section": "Further Reading",
-    "text": "Further Reading\n\nChapter: Client Discovery & Personas\nChapter: Investment Policy, Risk & Governance"
+    "text": "Further Reading\n\nTeaching materials: Introduction chapter\nEngine documentation: asset universe and KPI definitions"
+  },
+  {
+    "objectID": "lesson-04-saa.html#learning-outcomes",
+    "href": "lesson-04-saa.html#learning-outcomes",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\nBy the end of this lesson you will be able to:\n\nDerive long-run capital market assumptions (returns, risks, correlations)\nDesign macro scenarios and assign probabilities\nConstruct an efficient SAA consistent with your IPS\nTranslate the SAA into Cesim Invest decision inputs\n\nTeaching chapters: Drivers of Asset Prices · Data, Forecasting & Scenario Design · Strategic Research Toolkit · Strategic Asset Allocation"
+  },
+  {
+    "objectID": "lesson-04-saa.html#what-are-capital-market-assumptions",
+    "href": "lesson-04-saa.html#what-are-capital-market-assumptions",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "What Are Capital Market Assumptions?",
+    "text": "What Are Capital Market Assumptions?\n\nLong-run (10-year) forecasts of: expected returns · volatility · correlations\nThe foundation of every SAA decision\nSources: historical data, factor models, building-block approach, survey consensus\nMust be consistent with your macro view and the IPS return objective\n\n→ Content: CMA table for IMAG asset classes (to be filled with Cesim data)."
+  },
+  {
+    "objectID": "lesson-04-saa.html#the-building-block-approach",
+    "href": "lesson-04-saa.html#the-building-block-approach",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "The Building-Block Approach",
+    "text": "The Building-Block Approach\n\\[\\text{Expected Return} = r_f + \\text{Risk Premium}\\]\n\n\n\nAsset class\nComponents\n\n\n\n\nEquities\nRisk-free + equity risk premium + regional premium\n\n\nCorp. bonds\nRisk-free + term premium + credit spread\n\n\nCommodities\nRisk-free + convenience yield + roll return\n\n\n\n→ Content: calibrated estimates using current Cesim Economic Outlook data."
+  },
+  {
+    "objectID": "lesson-04-saa.html#estimating-volatility-correlations",
+    "href": "lesson-04-saa.html#estimating-volatility-correlations",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "Estimating Volatility & Correlations",
+    "text": "Estimating Volatility & Correlations\n\nHistorical volatility: rolling 3- and 5-year windows\nCorrelation instability: correlations rise during crises (diversification fails when needed)\nShrinkage estimators: blend historical with prior (reduces estimation error)\nCorrelation matrix visualisation (heatmap)\n\n→ Content: worked example with IMAG asset data."
+  },
+  {
+    "objectID": "lesson-04-saa.html#why-scenarios",
+    "href": "lesson-04-saa.html#why-scenarios",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "Why Scenarios?",
+    "text": "Why Scenarios?\n\nPoint forecasts are always wrong — scenarios capture uncertainty\nForce structured thinking about tail risks\nEnable stress-testing of the SAA before committing\nRequired by many regulatory frameworks (IORP II, Solvency II)"
+  },
+  {
+    "objectID": "lesson-04-saa.html#a-three-scenario-framework",
+    "href": "lesson-04-saa.html#a-three-scenario-framework",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "A Three-Scenario Framework",
+    "text": "A Three-Scenario Framework\n\n\n\nScenario\nProbability\nDescription\n\n\n\n\nBase case\n60%\nModerate growth, inflation normalising\n\n\nUpside\n25%\nStrong recovery, risk-on environment\n\n\nDownside\n15%\nRecession, credit stress, flight to quality\n\n\n\n→ Content: fill with IMAG-specific macro assumptions per scenario."
+  },
+  {
+    "objectID": "lesson-04-saa.html#scenario-returns-by-asset-class",
+    "href": "lesson-04-saa.html#scenario-returns-by-asset-class",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "Scenario Returns by Asset Class",
+    "text": "Scenario Returns by Asset Class\n→ Content: table of expected returns per asset class under each scenario; probability-weighted expected return column."
+  },
+  {
+    "objectID": "lesson-04-saa.html#stress-testing-the-saa",
+    "href": "lesson-04-saa.html#stress-testing-the-saa",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "Stress Testing the SAA",
+    "text": "Stress Testing the SAA\n\nApply downside scenario to candidate SAA\nCheck: does portfolio breach IPS risk constraints?\nIf yes: reduce risk → revisit return objective → update IPS\n\n→ Content: stress test template; link to Cesim back-testing tools if available."
+  },
+  {
+    "objectID": "lesson-04-saa.html#mean-variance-optimisation",
+    "href": "lesson-04-saa.html#mean-variance-optimisation",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "Mean-Variance Optimisation",
+    "text": "Mean-Variance Optimisation\n\nClassic Markowitz framework: maximise return for a given level of risk\nInputs: expected returns, volatility, correlation matrix\nOutput: efficient frontier — the set of optimal portfolios\n\n→ Content: efficient frontier diagram; locate the IPS-consistent portfolio."
+  },
+  {
+    "objectID": "lesson-04-saa.html#practical-constraints-on-the-optimiser",
+    "href": "lesson-04-saa.html#practical-constraints-on-the-optimiser",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "Practical Constraints on the Optimiser",
+    "text": "Practical Constraints on the Optimiser\n\nNo short-selling (long-only constraint)\nMinimum and maximum weights per asset class (IPS constraints)\nTurnover limit (transaction cost management)\nESG constraint: minimum portfolio ESG score\n\n\n\n\n\n\n\nTip\n\n\nUnconstrained optimisation produces extreme corner solutions. Always impose realistic bounds."
+  },
+  {
+    "objectID": "lesson-04-saa.html#from-efficient-frontier-to-strategic-weights",
+    "href": "lesson-04-saa.html#from-efficient-frontier-to-strategic-weights",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "From Efficient Frontier to Strategic Weights",
+    "text": "From Efficient Frontier to Strategic Weights\n\nSelect the portfolio that maximises expected return subject to the IPS risk budget\nRound weights to practical increments (e.g. nearest 5%)\nCheck consistency with IPS: return target, risk limit, ESG score, liquidity\n\n→ Content: final SAA weights table for IMAG (to be completed by each team)."
+  },
+  {
+    "objectID": "lesson-04-saa.html#rebalancing-policy",
+    "href": "lesson-04-saa.html#rebalancing-policy",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "Rebalancing Policy",
+    "text": "Rebalancing Policy\n\nCalendar rebalancing: restore weights monthly/quarterly regardless of drift\nThreshold rebalancing: trigger when any weight drifts &gt; X% from target\nTransaction costs vs. tracking error trade-off\nDocument policy in IPS\n\n→ Content: comparison of rebalancing strategies; recommendation for IMAG."
+  },
+  {
+    "objectID": "lesson-04-saa.html#entering-your-saa-in-cesim",
+    "href": "lesson-04-saa.html#entering-your-saa-in-cesim",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "Entering Your SAA in Cesim",
+    "text": "Entering Your SAA in Cesim\n\nNavigate to: Strategy → Strategic Asset Allocation\nEnter target weights for each eligible asset class\nThe system enforces that weights sum to 100%\n\n→ Content: annotated screenshot of the Cesim SAA input screen."
+  },
+  {
+    "objectID": "lesson-04-saa.html#what-happens-each-round",
+    "href": "lesson-04-saa.html#what-happens-each-round",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "What Happens Each Round",
+    "text": "What Happens Each Round\n\nYour SAA is the long-run anchor — you will deviate from it tactically in Lesson 5\nCesim calculates benchmark return based on your SAA weights\nActive return = portfolio return minus SAA benchmark return"
+  },
+  {
+    "objectID": "lesson-04-saa.html#key-takeaways",
+    "href": "lesson-04-saa.html#key-takeaways",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n\nThe SAA drives 80–90% of long-run portfolio return variation\nScenario analysis prevents over-confidence in point forecasts\nEvery SAA weight must be justified by your IPS and CMA"
+  },
+  {
+    "objectID": "lesson-04-saa.html#simulation-task-lesson-4",
+    "href": "lesson-04-saa.html#simulation-task-lesson-4",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "Simulation Task — Lesson 4",
+    "text": "Simulation Task — Lesson 4\n\n\n\n\n\n\nDeliverable: Your SAA\n\n\n\nBuild your capital market assumptions table (use Cesim Economic Outlook + own research)\nDesign three scenarios with probabilities\nRun mean-variance optimisation (use provided template or Excel)\nDefine final SAA weights — consistent with your IPS\nSubmit SAA in Cesim before the round deadline"
+  },
+  {
+    "objectID": "lesson-04-saa.html#further-reading",
+    "href": "lesson-04-saa.html#further-reading",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "Further Reading",
+    "text": "Further Reading\n\nChapter: Drivers of Asset Prices\nChapter: Data, Forecasting & Scenario Design\nChapter: Strategic Research Toolkit\nChapter: Strategic Asset Allocation"
   }
 ]
