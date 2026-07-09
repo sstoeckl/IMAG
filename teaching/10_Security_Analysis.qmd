@@ -6,313 +6,226 @@
 **Associated slides:** [Lesson 5 — Tactical Allocation & Security Selection](../slides/lesson-05-taa-security.html)
 :::
 
-## Introduction
-Security analysis is a fundamental aspect of the investment decision-making process, providing the necessary information and insights to evaluate the potential risks and returns of various investment securities. This chapter will define what security analysis entails, explore its critical role within the investment landscape, and introduce the various analytical approaches used to assess securities.
+## 10.1 Introduction: The Selection Effect
 
-### Definition and Importance of Security Analysis
+The preceding chapters moved from the client's circumstances to the strategic asset allocation. We established the policy mix. We examined tactical tilts. We addressed the constraints of implementation. What remains is the final step: selecting the specific securities that will populate each asset class allocation.
 
-#### What is Security Analysis?:
-* **Definition:** Security analysis involves the examination and evaluation of various financial instruments, such as stocks, bonds, and derivatives, to determine their investment potential.
-* **Purpose:** The primary purpose of security analysis is to ascertain the intrinsic value of these securities to help investors make informed buying, holding, or selling decisions.
+Security analysis is the process of evaluating individual investments for their suitability. It asks not whether equities as a class are attractive, but whether a particular stock, bond, or fund merits the capital it would receive. The strategic allocation provides the architecture. Security analysis provides the materials. A sound allocation can be undermined by poor security selection, just as a well-designed building can be compromised by faulty materials.
 
-#### Critical Role in Investment Decisions:
-* **Risk Assessment:** Security analysis helps in identifying and understanding the risks associated with different securities. This risk assessment is crucial for developing strategies that align with an investor's risk tolerance and investment objectives.
-* **Return Evaluation:** By estimating potential returns, security analysis aids in portfolio construction and asset allocation, ensuring that investments meet the expected return profiles for specific risk levels.
+This distinction connects directly to the Brinson-Fachler attribution framework from Chapter 9. Recall that the model decomposes active return into allocation effects and selection effects. The allocation effect captures whether overweighting or underweighting an asset class added value. The selection effect captures whether the specific securities chosen within that asset class beat its benchmark. Security analysis feeds the selection effect. It is the engine that drives the $R_{p,i} - R_{b,i}$ term in the Brinson-Fachler formula. A positive selection effect means the securities chosen outperformed the asset class benchmark. Security analysis is the discipline that seeks to make that happen.
 
-### Overview of Multi-Faceted Analytical Approaches
+At its core, security analysis rests on a simple distinction: intrinsic value versus market price. Intrinsic value is what an asset is worth, based on its expected future cash flows, its risk, and its growth prospects. Market price is what the market is willing to pay for it today. The two are not always equal. Markets are mostly efficient, as Chapter 8 discussed, but they are not perfectly efficient. Sentiment, liquidity, and institutional constraints can push prices away from intrinsic value. Security analysis seeks to identify those gaps, to buy assets trading below their intrinsic value and to avoid or sell those trading above it.
 
-#### Fundamental Analysis:
-* **Company Evaluation:** Involves a deep dive into a company's financial statements, market position, competitive landscape, management quality, and growth prospects.
-* **Economic and Sector Trends:** Also considers broader economic indicators and sector-specific trends that could affect the company's future performance.
+The approach taken depends on the asset class. For equities, fundamental analysis examines financial statements, competitive position, and management quality. For bonds, credit analysis assesses the issuer's ability to meet its obligations. For funds and ETFs, the analysis shifts to the manager's process, the fee structure, and the tracking error relative to the benchmark. Each asset class requires its own analytical framework, but the underlying question is the same: is this security priced in a way that compensates us adequately for the risks we are taking?
 
-#### Quantitative Analysis:
-* **Statistical Models:** Uses mathematical models to predict stock prices and market movements based on historical data and quantitative metrics.
-* **Risk Quantification:** Employs statistical methods to assess the volatility and risk associated with securities, enhancing the risk management process.
+This chapter surveys the methods of security analysis. We begin with the macroeconomic context, then examine fundamental equity analysis, fixed income analysis, and quantitative screening approaches. The treatment is not exhaustive—entire textbooks are devoted to each method—but it provides the framework within which security selection decisions are made. The chapter concludes by populating the Schmidt-Miller portfolio with specific securities, translating the strategic weights from Chapter 7 into a concrete set of holdings.
 
-#### Sustainability Analysis:
-* **ESG Factors:** Incorporates Environmental, Social, and Governance (ESG) factors into the analysis to evaluate how sustainability issues can impact the financial performance and reputation of the investment.
-* **Long-Term Impact:** Focuses on the long-term implications of sustainability practices on business stability and growth, aligning investment decisions with ethical standards and sustainability goals.
+## 10.2 Fundamental Equity Analysis: The Bottom-Up Approach
 
-### Conclusion
-Security analysis is an indispensable tool for investors, allowing them to make educated decisions based on comprehensive evaluations of securities across various dimensions. By integrating fundamental, quantitative, and sustainability analyses, investors can gain a holistic view of potential investments, balancing risk and return effectively while adhering to ethical investment principles. This chapter sets the stage for a deeper exploration into each analytical approach, providing the foundation needed to navigate complex investment landscapes proficiently.
+Fundamental equity analysis seeks to determine the intrinsic value of a company by examining its financial statements, its competitive position, and its prospects for future growth. It is a bottom-up approach. It begins with the company itself, not with the economy or the sector, though both provide context for the assessment.
 
-::: {.callout-note title="CFA Curriculum Alignment"}
-The CFA curriculum places a strong emphasis on the principles of security analysis, covering both fundamental and quantitative approaches. It teaches candidates how to assess the value and risk of securities based on financial statement analysis, economic factors, and market data. Understanding these principles is crucial for CFA candidates, as they form the basis for making informed investment decisions and constructing robust investment portfolios. Mastery of these skills is essential for achieving the CFA designation and succeeding in finance professions.
-:::
+Financial statement analysis forms the foundation. The three primary statements—the income statement, the balance sheet, and the cash flow statement—tell the story of a business in numbers. Revenue growth reveals whether the company is expanding or stagnating. Profit margins reveal its pricing power and cost discipline. Return on equity reveals how efficiently it deploys shareholder capital. But the raw numbers are only a starting point. The analyst must assess their quality.
 
-## Understanding Multi-Factor Models
-Multi-factor models represent a sophisticated approach used in financial analysis to predict asset returns by considering multiple factors that might affect those returns. This section introduces the concept of multi-factor models, discusses their application in investment strategy, and outlines some of the common factors incorporated in these models.
+Quality of earnings refers to the sustainability and reliability of reported profits. A company that consistently meets or beats earnings estimates may be managing earnings through aggressive revenue recognition, changes in inventory accounting, or the timing of expenses. Cash flow conversion provides a check. If reported earnings are strong but operating cash flow is weak, the earnings may be of low quality. The cash flow statement strips away non-cash items and reveals how much actual cash the business generates. A high ratio of operating cash flow to net income suggests that earnings are backed by real cash. A low ratio suggests the opposite.
 
-### Introduction and Application of Multi-Factor Models
+Capital structure analysis examines how the company finances its operations. The mix of debt and equity affects both risk and return. High leverage amplifies returns when business conditions are favorable but increases the risk of financial distress when they deteriorate. The analyst assesses whether the company's debt load is sustainable given its cash flow, the maturity profile of its obligations, and the covenants that govern its borrowing.
 
-**What Are Multi-Factor Models?:**
+Valuation translates the analysis of the business into an estimate of what its shares are worth. Two broad approaches exist. Absolute valuation models estimate intrinsic value directly, based on the present value of expected future cash flows. Relative valuation models compare the company's pricing multiples to those of similar firms. Both approaches require a discount rate, and the choice of discount rate depends on which cash flows are being discounted.
 
-* **Definition:** Multi-factor models are quantitative tools that use various economic and market indicators to explain and predict asset returns. These models analyze a combination of factors to assess their collective impact on an investment's performance.
-* **Purpose:** The primary goal is to enhance the accuracy of return predictions and to inform better risk management and asset allocation decisions.
+The distinction between the cost of equity and the weighted average cost of capital is essential. When valuing equity directly, by discounting free cash flow to equity, the appropriate discount rate is the cost of equity, derived from the CAPM or a multi-factor model. When valuing the entire enterprise, by discounting free cash flow to the firm, the appropriate discount rate is the weighted average cost of capital, or WACC. The WACC blends the cost of equity and the after-tax cost of debt, weighted by their proportions in the company's capital structure:
 
-**Application in Asset Returns Prediction:**
+$$
+\text{WACC} = \frac{E}{E + D} \cdot r_e + \frac{D}{E + D} \cdot r_d \cdot (1 - t)
+$$
 
-* **Predictive Power:** By considering multiple influences simultaneously, multi-factor models provide a more nuanced and robust framework for forecasting asset returns compared to single-factor models.
-* **Diversification:** These models help identify which factors contribute to returns under different market conditions, supporting effective diversification.
+Where $E$ is the market value of equity, $D$ is the market value of debt, $r_e$ is the cost of equity, $r_d$ is the cost of debt, and $t$ is the corporate tax rate. The tax shield on debt reduces the effective cost of borrowing, reflecting the deductibility of interest payments in most jurisdictions. A company with significant debt financing will have a WACC below its cost of equity, all else equal.
 
-### Common Factors in Multi-Factor Models
+The discounted cash flow model, or DCF, can be applied to either equity or the enterprise. When applied to equity, it projects the free cash flows available to shareholders after all expenses, taxes, and debt payments, then discounts them at the cost of equity:
 
-* **Size Factor:**
-    * **Definition:** The size factor refers to the tendency of smaller-cap stocks to outperform larger-cap stocks over time.
-    * **Application:** Used to gauge the potential higher returns of small-cap investments relative to their larger counterparts.
-* **Value Factor:**
-    * **Definition:** The value factor is based on the observation that stocks with lower price-to-earnings ratios or high dividend yields tend to perform better over the long term.
-    * **Application:** Helps identify undervalued stocks that may offer superior returns as their market pricing corrects over time.
-* **Momentum Factor:**
-    * **Definition:** This factor captures the continuation of an asset’s existing price trend. Stocks that have performed well in the recent past are expected to continue performing well in the short to medium term, and vice versa.
-    * **Application:** Used to capitalize on the persistence of asset price trends.
-* **Industry Factors:**
-    * **Definition:** Industry factors consider the impact of specific sector characteristics on stock performance.
-    * **Application:** Useful for identifying which industries are likely to outperform or underperform the market based on current economic cycles and technological advancements.
+$$
+V_0 = \sum_{t=1}^{n} \frac{FCFE_t}{(1 + r_e)^t} + \frac{TV}{(1 + r_e)^n}
+$$
 
-### Integrating Multi-Factor Analysis into Security Selection and Portfolio Construction
+When applied to the enterprise, it projects the free cash flows available to all capital providers—both equity holders and debt holders—and discounts them at the WACC. The resulting enterprise value is then reduced by net debt to arrive at equity value. The terminal value, regardless of which approach is used, typically accounts for more than half of the total valuation. Small changes in the long-term growth rate or the terminal multiple produce large changes in the estimated intrinsic value.
 
-**Security Selection:**
+The residual income model offers an alternative. It values equity directly as the sum of current book value and the present value of future residual income—the earnings that exceed the required return on equity. This approach is particularly useful for financial companies, where book value is a meaningful metric, and for companies that do not generate positive free cash flow.
 
-* **Tailored Analysis:** Apply multi-factor models to identify securities that exhibit strong characteristics across several desired factors, such as good value, strong momentum, and appropriate size.
-* **Risk and Return Profile:** Evaluate how these factors contribute to the risk and return profile of each security, aiding in the selection process that aligns with investment objectives.
+Relative valuation sidesteps the complexity of forecasting cash flows. It values a company by comparing its pricing multiples to those of comparable firms. The price-to-earnings ratio, or P/E, is the most common. A company trading at a lower P/E than its peers may be undervalued, or it may deserve a lower multiple because of slower growth, higher risk, or poorer management. Enterprise value to EBITDA, or EV/EBITDA, is popular precisely because it uses the enterprise value, reflecting the claims of both equity and debt holders, and a measure of operating profit before depreciation and amortization. This neutrality toward capital structure makes it easier to compare companies with different levels of debt. Price-to-book, or P/B, is used for asset-heavy industries like banking and insurance. Each multiple has strengths and weaknesses. The skilled analyst uses several in combination, looking for consistency across metrics rather than relying on any single one.
 
-**Portfolio Construction:**
+Qualitative factors are harder to measure but no less important. A company's competitive position—its moat—determines whether it can sustain its profits against rivals. Porter's Five Forces framework assesses the threat of new entrants, the bargaining power of suppliers and customers, the threat of substitute products, and the intensity of rivalry within the industry. A wide moat, built on brand strength, switching costs, network effects, or cost advantages, protects profitability and justifies a higher valuation.
 
-* **Balanced Exposure:** Construct portfolios with a balanced exposure to various factors to harness different sources of potential alpha while managing risk through diversification.
-* **Dynamic Adjustments:** Regularly update the factor weightings in the portfolio based on ongoing factor performance analysis and changing market conditions.
+Management quality matters. A skilled management team allocates capital wisely, invests in projects that earn returns above the cost of capital, and communicates honestly with shareholders. A poor management team destroys value through ill-considered acquisitions, excessive compensation, or strategic missteps. Assessing management requires reading earnings call transcripts, shareholder letters, and the track record of capital allocation decisions over time. The cost of capital is not merely a mechanical input to a DCF model. It is the hurdle rate against which management's investment decisions should be judged. A management team that consistently earns returns above the WACC creates value. One that earns returns below it destroys value, regardless of how rapidly earnings are growing.
 
-### Conclusion
-Multi-factor models are essential tools for modern investors, offering a comprehensive way to analyze and predict asset returns by considering various market and economic indicators. By effectively integrating these models into security selection and portfolio construction processes, investors can make more informed decisions, potentially enhancing portfolio returns while managing exposure to risk. This approach underscores the importance of a nuanced understanding of various market drivers in achieving investment success.
+Scalability of the business model determines the pace at which growth can be achieved. A software company with a product that can be distributed globally at near-zero marginal cost can grow far faster than a manufacturing company that must build new factories to increase output. The market size, the competitive landscape, and the company's ability to execute all factor into the growth assumptions that drive the valuation.
 
-::: {.callout-note title="Practical Applicationß"}
-In practice, quantitative models are invaluable for analyzing large datasets quickly and efficiently. For instance, deploying regression models to forecast future earnings based on historical data or using Monte Carlo simulations to assess the probability distribution of returns under various scenarios. Financial professionals can enhance these models by integrating machine learning algorithms to detect patterns and predict trends. Practical training in statistical software and programming languages such as R or Python is highly recommended to effectively implement these models.
-:::
+Fundamental equity analysis ends with a decision. If the estimated intrinsic value exceeds the market price by a sufficient margin of safety, the stock is a candidate for purchase. If the market price exceeds intrinsic value, it is a candidate for sale or avoidance. The margin of safety protects against errors in the analysis. No valuation is precise. The analyst who demands a discount to intrinsic value before buying builds a cushion against the unknown. That discipline is at the heart of fundamental investing.
 
-## Fundamental Analysis
-Fundamental analysis is a cornerstone of investment decision-making, providing a deep dive into the financial health, value, and potential of various asset classes. This subchapter will detail how fundamental analysis is applied to equities, bonds, commodities, and currencies, focusing on key metrics and factors that influence their valuation and investment attractiveness.
+## 10.3 Quantitative Equity Analysis: Multi-Factor Models
 
-### Fundamental Analysis of Equities
+Fundamental analysis examines one company at a time. Quantitative analysis examines thousands. It uses statistical models to identify characteristics that explain differences in returns across securities. Where the fundamental analyst reads annual reports, the quantitative analyst runs regressions.
 
-**Key Financial Metrics:**
+The shift began with the recognition that the Capital Asset Pricing Model, introduced in Chapter 6, provides an incomplete description of equity returns. Beta captures sensitivity to the market portfolio, but it does not capture everything. Stocks with similar betas can have very different returns if they differ on other dimensions. This observation gave rise to Arbitrage Pricing Theory and, from there, to the multi-factor models that now dominate quantitative equity analysis.
 
-* **Price-to-Earnings (P/E) Ratio:** Measures a company's current share price relative to its per-share earnings. A lower P/E ratio may suggest that the stock is undervalued, assuming all other factors are equal.
-* **Return on Equity (ROE):** Indicates how effectively management is using a company’s assets to create profits. Higher ROE values typically signify better financial performance and management efficiency.
-* **Price-to-Book (P/B) Ratio:** Compares a firm's market capitalization to its book value. A P/B ratio under 1 can indicate that the stock is trading below its book value and may be undervalued.
+The Fama-French framework is the cornerstone. It begins with the market factor from the CAPM and adds two additional factors: size and value. The size factor, called SMB for Small Minus Big, captures the historical tendency of smaller companies to outperform larger ones. The value factor, called HML for High Minus Low, captures the tendency of companies with high book-to-market ratios—value stocks—to outperform those with low ratios—growth stocks.
 
-**Significance in Stock Valuation:**
-These metrics provide critical insights into a company's financial status and market valuation, helping investors assess whether a stock is overpriced, fairly valued, or underpriced. They are crucial for comparing companies within the same industry or sector.
+The three-factor model expresses expected return as:
 
-### Fundamental Analysis of Bonds
+$$
+E(R_i) = R_f + \beta_i [E(R_m) - R_f] + s_i \cdot \text{SMB} + h_i \cdot \text{HML}
+$$
 
-**Analysis Metrics:**
+Where $s_i$ is the stock's sensitivity to the size factor and $h_i$ is its sensitivity to the value factor. A small-cap value stock would have positive loadings on both SMB and HML. A large-cap growth stock would have negative loadings on both.
 
-* **Yield:** The return an investor will receive by holding the bond until maturity. Higher yields often indicate higher risk.
-* **Duration:** Measures the bond's sensitivity to changes in interest rates. Longer duration bonds are more sensitive to interest rate changes, affecting their price more significantly.
+The three-factor model was a significant improvement over the CAPM. It explained a larger portion of the cross-sectional variation in equity returns. But it was not complete. Subsequent research identified additional factors. The momentum factor, WML for Winners Minus Losers, captures the tendency of stocks that have performed well in the recent past to continue performing well in the near term. The quality factor captures the tendency of companies with strong profitability, low leverage, and stable earnings to deliver higher risk-adjusted returns.
 
-* **Credit Ratings:** Provided by rating agencies, they assess the risk of default by the bond issuer. Bonds with lower ratings (e.g., junk bonds) offer higher yields but come with higher risk.
+A five-factor model incorporating market, size, value, profitability, and investment has become the standard in academic research. In practice, different managers emphasize different factors based on their investment philosophy and the evidence they find most compelling.
 
-**Issuer Financial Health:**
-Examining the issuer's financial stability is crucial. This includes analyzing their cash flow, revenue stability, debt levels, and economic conditions that may affect their ability to meet bond obligations.
+Factor tilting translates this framework into portfolio construction. Each stock in the universe is assigned a score on each factor. The scores are typically expressed as Z-scores, measuring how many standard deviations the stock's characteristic lies from the cross-sectional mean. A stock with a high book-to-market ratio, a low market capitalization, and strong recent momentum would score positively on value, size, and momentum. A stock with the opposite characteristics would score negatively.
 
-### Fundamental Analysis of Commodities and Currencies
+The quantitative analyst combines these scores into a composite signal. The weights assigned to each factor reflect the analyst's conviction and the empirical evidence on factor efficacy. The composite signal ranks stocks from most attractive to least attractive. The portfolio overweights the former and underweights or excludes the latter.
 
-**Commodities:**
+Factor tilting is not without challenges. Factor premiums vary over time. A value tilt that underperforms for years tests the conviction of the manager and the patience of the client. Momentum can reverse violently when market conditions change. The factors themselves can become crowded, as the growing popularity of factor-based strategies compresses the premiums they seek to capture.
 
-* **Supply-Demand Dynamics:** Fundamental analysis of commodities involves assessing current and future supply and demand trends. Factors such as weather conditions, geopolitical tensions, and production changes are significant.
-* **Geopolitical Influences:** Political stability in commodity-rich regions can affect global supply chains and pricing.
+These challenges do not invalidate the approach. They counsel humility in its application. Factor tilts should be modest, diversified across multiple factors, and evaluated over full market cycles. The quantitative analyst who expects every factor to work every year will be disappointed. The analyst who understands that factor premiums are compensation for bearing systematic risk—and that risk sometimes shows up—will be better prepared for the inevitable periods of underperformance.
 
-**Currencies:**
+The rise of multi-factor investing has blurred the line between active and passive management. A portfolio that tilts systematically toward value, size, and quality is not actively managed in the traditional sense. It does not rely on stock-specific research or market timing. But neither is it passive, in the sense of simply tracking a market-cap-weighted index. It occupies a middle ground, sometimes called smart beta or factor investing. For the Schmidt-Miller portfolio, this approach offers a way to pursue incremental returns within the equity allocation without the higher costs and concentration risk of traditional active management.
 
-* **Macroeconomic Indicators:** Economic data such as GDP growth rates, inflation, interest rates, and employment figures play a crucial role in currency valuation.
-* **Political Stability and Economic Policies:** Fiscal and monetary policies, along with political stability, can influence investor confidence and currency strength.
+## 10.4 Fixed Income Analysis: Government and Corporate Bonds
 
-### Conclusion
-Fundamental analysis provides a robust framework for evaluating various asset classes through a detailed examination of financial metrics, economic indicators, and other qualitative and quantitative factors. Whether assessing stocks, bonds, commodities, or currencies, fundamental analysis helps investors gauge the intrinsic value of an investment, aiding in the identification of investment opportunities and potential risks. By employing this analysis, investors can make more informed decisions, aligning their portfolios with their financial goals and risk tolerance.
+Equity analysis seeks to estimate future cash flows and the discount rate at which they should be valued. Fixed income analysis, by contrast, deals largely in contractual cash flows. The coupon payments and principal repayment are specified in advance, at least for bonds free of default risk. This certainty shifts the analytical focus from forecasting growth to measuring risk. Interest rate risk and credit risk dominate the fixed income landscape.
 
-::: {.callout-note title="Practical Application"}
-A practical example of fundamental analysis in equities involves examining a company's financial statements to calculate ratios such as P/E, ROE, and P/B. Consider a scenario where an analyst evaluates Company X, which has a P/E ratio significantly lower than the industry average. To understand why, the analyst delves into recent earnings reports, discovering that the company has made substantial investments in R&D that are expected to generate revenue in the future, but currently depress earnings. The analyst then compares ROE with competitors and industry benchmarks, considering not just profitability but also how effectively the company utilizes its equity. This comprehensive analysis might conclude that Company X is undervalued, presenting a buying opportunity if the market hasn’t yet recognized its future growth potential.
-:::
+The return on a bond comes from three sources. The first is the yield, the coupon income earned on the bond's face value. For a government bond held to maturity with no default, the yield to maturity at the time of purchase is the primary driver of return. The second source is rolldown. As a bond ages and its maturity shortens, its yield typically declines along the yield curve. The bond's price rises as it rolls down the curve, adding to total return even if the level of interest rates remains unchanged. The third source is the change in spreads, relevant for bonds that carry credit risk. When a bond's credit spread narrows, its price rises relative to otherwise similar government bonds. When spreads widen, the price falls.
 
-## Industry Factors
-Understanding the impact of industry-specific factors is crucial for evaluating asset performance and making informed investment decisions. This subchapter explores how sector-specific trends, economic cycles, and other industry-related metrics influence the valuation and performance of assets within different industries.
+These components decompose the return into what is earned passively, through the passage of time and the receipt of coupons, and what is earned actively, through changes in the interest rate and credit environment.
 
-### Impact of Sector-Specific Trends and Economic Cycles
+Interest rate risk is measured by duration and convexity. Duration captures the sensitivity of a bond's price to a small change in its yield. Modified duration provides an approximation of the percentage price change for a one percentage point change in yield. A bond with a modified duration of 7 would be expected to rise approximately 7 percent if yields fell by one percentage point, or fall by the same amount if yields rose.
 
-**Sector-Specific Trends:**
+Convexity refines this estimate. Duration assumes a linear relationship between price and yield, but the true relationship is curved. Convexity measures the degree of that curvature. For large changes in yield, the duration-only estimate becomes inaccurate, and convexity must be added to the calculation.
 
-* **Defining Trends:** Trends can include changes in consumer behavior, technological advancements, or shifts in regulatory environments that specifically affect certain sectors.
-* **Impact on Asset Performance:** For example, the rapid growth of technology and digital transformation directly benefits the tech sector but may adversely affect traditional retail businesses not adapting quickly to e-commerce.
+$$
+\%\Delta P \approx -D_{\text{mod}} \Delta y + \frac{1}{2} C (\Delta y)^2
+$$
 
-**Economic Cycles:**
+Where $D_{\text{mod}}$ is the modified duration, $C$ is the convexity, and $\Delta y$ is the change in yield. Convexity is always positive for standard bonds, meaning that a bond's price rises more when yields fall than it declines when yields rise by the same amount. This asymmetry is valuable. All else equal, investors prefer bonds with higher convexity.
 
-* **Cyclical vs. Non-Cyclical Sectors:** Some industries, like consumer discretionary, are highly sensitive to macroeconomic cycles, flourishing during economic booms and suffering during downturns. In contrast, sectors like utilities or consumer staples tend to be more resilient, as they provide essential services that remain in demand regardless of economic conditions.
-* **Timing Investments:** Understanding where sectors stand in relation to economic cycles can guide investors on when to enter or exit positions, optimizing their investment returns based on cyclical patterns.
+For corporate bonds and sovereign bonds of less creditworthy issuers, credit analysis joins interest rate analysis. The framework rests on the traditional Four Cs of credit. Capacity refers to the issuer's ability to generate sufficient cash flow to meet its obligations. It is assessed through financial ratios—interest coverage, debt to EBITDA, free cash flow to debt—and through an understanding of the issuer's business model and competitive position. Collateral refers to the assets available to secure the debt in the event of default. Secured bonds backed by specific assets offer greater recovery than unsecured bonds that rely only on the general credit of the issuer.
 
-### Evaluating Industry Health through Key Metrics
+Covenants are the contractual protections embedded in the bond agreement. They may restrict the issuer from taking on additional debt, paying dividends, or selling assets without creditor consent. Strong covenants protect bondholders. Weak covenants leave them exposed. Character refers to the willingness of management to honor its obligations, a qualitative assessment based on the issuer's track record, its communication with creditors, and the alignment of management's incentives with those of bondholders.
 
-* **Growth Rates:**
-    * **Importance of Growth Metrics:** Assessing the growth rates of revenue, earnings, and market share within an industry provides insights into its health and trajectory. High growth rates often indicate a thriving sector with potential for robust returns.
-    * **Comparative Analysis:** Comparing these growth metrics against historical performance and peer industries can reveal outperformers and underperformers, guiding more strategic investment choices.
-* **Regulatory Changes:**
-    * **Impact on Industry:** Changes in regulations can have significant implications for industries. For example, stricter environmental regulations might increase operational costs for manufacturing sectors but could create opportunities in renewable energy and pollution control industries.
-    * **Adaptation and Compliance:** How well companies adapt to regulatory changes can also inform investment decisions, as those that manage to comply efficiently often sustain less financial impact and may gain competitive advantages.
-* **Technological Innovation:**
-    * **Disruptive vs. Incremental Innovation:** Industries that are at the forefront of major technological innovations (e.g., AI, biotechnology) often offer high growth potential. Conversely, sectors slow to adopt new technologies may face declines or disruption.
-    * **Investment in R&D:** The level of investment in research and development within an industry can be a strong indicator of future growth and sustainability, positioning companies for long-term success.
+Spread analysis evaluates whether a bond offers adequate compensation for the risks identified through the Four Cs. The credit spread is the difference between the bond's yield and the yield of a comparable government bond. It reflects expected default losses and a risk premium for bearing uncertainty around those losses. A bond trading at a spread wider than its peers, after accounting for differences in credit quality, duration, and liquidity, may be cheap. A bond trading at a narrower spread may be rich.
 
-### Conclusion
-The analysis of industry factors plays a pivotal role in the broader context of asset evaluation and investment strategy. By understanding and analyzing sector-specific trends, economic cycles, and essential industry metrics, investors can make more informed decisions, aligning their investment strategies with industry performance potentials. This approach not only enhances the likelihood of achieving favorable returns but also helps in managing investment risks by providing a deeper insight into the factors driving industry dynamics.
+Spread analysis often begins with the benchmark curve, typically the government bond yield curve for the currency in which the bond is denominated. A corporate bond's yield is decomposed into the risk-free rate at the relevant maturity plus a spread. That spread can be further decomposed into the expected loss component and the risk premium component. The analyst judges whether the spread is sufficient given the credit profile of the issuer and the prevailing level of spreads in the market. Spreads that are tight by historical standards suggest that investors are being poorly compensated for credit risk. Spreads that are wide suggest attractive compensation, though they may also signal elevated default risk that justifies the wider spread.
 
-## Sustainability Analysis
-In today's investment landscape, integrating Environmental, Social, and Governance (ESG) factors into the security analysis process is not just an ethical decision but a financial one. This subchapter explores how ESG considerations are incorporated into security evaluations, the tools available for assessing sustainability performance, and the relationship between ESG scores and financial performance.
+Fixed income analysis, whether applied to government bonds or corporate credit, is fundamentally an exercise in assessing risk and return at the security level. The analysis does not ask whether bonds as an asset class belong in the portfolio—that is the strategic allocation decision. It asks which specific bonds best fulfill the role that the strategic allocation has assigned to them. For a government bond allocation designed to provide safety and liquidity, the emphasis falls on duration management and the issuer's creditworthiness. For a corporate bond allocation designed to enhance yield, the emphasis shifts to credit selection and spread analysis. The tools described in this section serve both purposes, adapted to the specific objectives of each allocation.
 
-### Incorporating ESG Factors into Security Analysis
+## 10.5 Analyzing Alternative Assets: Commodities and Cryptocurrencies
 
-**Definition and Importance:**
+Equities generate cash flows. Bonds pay coupons. Commodities and cryptocurrencies do neither. They are alternative assets, distinct in structure and in the analytical frameworks required to evaluate them. Their inclusion in a portfolio is not mandatory. The Schmidt-Miller IPS excludes cryptocurrencies and limits commodities to a tactical role. But the analyst must understand these assets, if only to explain why they are excluded.
 
-* **ESG Integration:** Incorporating ESG factors involves evaluating how environmental stewardship, social responsibility, and governance practices of a company impact its financial health and risk profile.
-* **Strategic Relevance:** Integrating ESG factors helps investors identify potential risks and opportunities not apparent through traditional financial analysis, enhancing long-term investment returns and reducing risk exposure.
+Commodity analysis begins with supply and demand. The price of oil, copper, or wheat is determined by the balance between production and consumption. When demand outstrips supply, prices rise. When supply exceeds demand, prices fall. The analyst tracks inventory levels, production forecasts, and consumption trends to gauge the direction of that balance. Geopolitical shocks—a pipeline disruption, a trade embargo, a war in a producing region—can shift supply abruptly. Weather can destroy crops. Technological change can unlock new sources of supply or reduce demand for existing ones.
 
-**Process of ESG Integration:**
+The cost of carry links spot prices to futures prices. It includes storage costs, insurance, and the interest cost of financing the commodity position. When the futures price exceeds the spot price, the market is in contango. When the spot price exceeds the futures price, it is in backwardation. The shape of the futures curve determines the roll yield, the return earned by rolling a futures contract forward as it approaches expiration.
 
-1.  **Data Collection:** Gather data on ESG practices from company reports, third-party ESG data providers, and sustainability indices.
-2.  **Analysis:** Assess the effectiveness of a company's ESG practices and how these practices impact financial performance, risk management, and company reputation.
-3.  **Application:** Use ESG analysis to influence investment decisions, such as including or excluding securities based on their ESG performance relative to peers.
+In a contango market, rolling a long position incurs a cost. The expiring contract is sold at a lower price, and the new contract is purchased at a higher one. The roll yield is negative. In a backwardated market, the roll yield is positive. The expiring contract is sold at a higher price than the new contract is purchased. Over time, the roll yield can dominate the total return from commodity exposure, outweighing the change in the spot price. The commodity analyst must understand the futures curve. Ignoring it is not an option.
 
-### Tools and Resources for Assessing Sustainability Performance
+Cryptocurrency analysis operates on entirely different principles. There are no cash flows, no physical supply constraints in the traditional sense, and no central authority managing supply. The analysis focuses on network fundamentals. Bitcoin and Ethereum are networks, and their value depends on adoption, usage, and security.
 
-**ESG Rating Agencies:**
+Metcalfe's Law provides a framework. It states that the value of a network is proportional to the square of the number of its users. More users create more connections, and more connections create more value. Active addresses on the blockchain serve as a proxy for users. Transaction volumes and frequency provide additional metrics. A network with growing adoption and increasing usage has a plausible claim to increasing value. A network with stagnant or declining usage faces headwinds.
 
-* **Role:** Agencies like MSCI, S&P Global, and Morningstar provide ESG ratings that help investors gauge a company's relative ESG performance.
-* **Methodology:** Understand the criteria and methodology used by these agencies to rate companies, as this affects the interpretation and application of the ratings.
+Hash rate measures the computational power securing proof-of-work networks like Bitcoin. A higher hash rate indicates greater security, as more computing power would be required to attack the network. It also reflects miner confidence, as miners invest in equipment and electricity based on their expectation of future prices. Declining hash rates can signal miner capitulation and network stress.
 
-**Sustainability Indexes:**
+Tokenomics refers to the economic design of a cryptocurrency. Supply is governed by protocol rules, not by central bank committees. Bitcoin's supply is capped at twenty-one million coins, with the rate of new issuance halving every four years. This halving cycle creates predictable supply shocks that have historically preceded price appreciation. Other cryptocurrencies employ different mechanisms: burning tokens to reduce supply, distributing staking rewards to incentivize network participation, or adjusting issuance algorithmically based on network conditions. The analyst must understand the rules governing supply. They are as fundamental to cryptocurrency valuation as earnings growth is to equity valuation.
 
-* **Examples:** Indexes like the Dow Jones Sustainability Index (DJSI) or the FTSE4Good Index Series aggregate data on companies excelling in various ESG criteria.
-* **Usage:** Investors can use these indexes as benchmarks or as a tool to screen for potential investments that meet specific sustainability criteria.
+On-chain analysis exploits the transparency of public blockchains. Every transaction is recorded on a distributed ledger, visible to anyone. Analysts track the movements of large holders, known as whales, whose transactions can signal impending selling pressure or accumulation. Exchange flows—the movement of coins between wallets and exchanges—provide insight into investor behavior. Large inflows to exchanges suggest that holders are preparing to sell. Large outflows suggest accumulation and a preference for self-custody. These signals are noisy, but they provide a window into market dynamics that is unavailable in traditional asset classes.
 
-### Relationship Between Sustainability Scores and Financial Performance
+The inclusion of alternative assets in a portfolio is a strategic decision. The analytical frameworks described here inform that decision. For the Schmidt-Miller family, commodities may play a limited tactical role, as discussed in Chapter 8. Cryptocurrencies are excluded from the policy portfolio due to their volatility, their uncertain regulatory status, and their incompatibility with Klaus's loss aversion. The analyst understands them regardless, because understanding what is excluded is as important as understanding what is included. The boundaries of the permissible investment universe are not arbitrary. They are the product of analysis, grounded in the characteristics of the assets and the circumstances of the client.
 
-**Correlation Studies:**
+## 10.6 Sustainability Analysis: ESG as a Risk/Return Overlay
 
-* **Research Findings:** Studies have shown that companies with high ESG scores tend to exhibit lower volatility, better operational performance, and are less likely to face costly environmental or governance failures.
-* **Risk Mitigation:** High ESG ratings can indicate better risk management, potentially leading to more stable returns and lower risk of significant negative events.
+The preceding sections treated security analysis as a purely financial exercise. Cash flows, discount rates, and valuation multiples drove the assessment. A growing body of evidence suggests that non-financial factors—environmental, social, and governance characteristics—also affect risk and return. Sustainability analysis integrates these factors into the security selection process.
 
-**Long-Term Performance:**
+ESG analysis is not a single method. It spans a spectrum from exclusionary screening to full integration. Exclusionary screening removes companies or entire sectors that conflict with the investor's values. Tobacco, controversial weapons, and thermal coal are common exclusions. Integration, by contrast, treats ESG factors as inputs to the investment process, alongside traditional financial metrics. A company with strong environmental practices, good labor relations, and a well-structured board may warrant a higher valuation or a lower risk premium than a peer with weaker characteristics.
 
-* **Investment Horizon:** Over longer investment horizons, companies with robust ESG practices often outperform their less sustainable peers in terms of stock price performance and profitability.
-* **Investor Perception:** Changing investor sentiments towards sustainability can impact stock prices. Companies perceived as sustainability leaders may attract more investment, driving up their stock prices.
+The rationale is twofold. First, strong ESG practices may serve as a proxy for quality. A company that manages its environmental footprint carefully, treats its employees fairly, and maintains robust board oversight is likely well-managed in other respects. The discipline required to excel on ESG dimensions correlates with the discipline required to allocate capital efficiently and execute strategy effectively. Second, weak ESG practices expose a company to risks that financial statements may not yet reflect. An oil company with a poor environmental record faces potential regulatory penalties, cleanup costs, and reputational damage. A bank with weak governance may be vulnerable to fraud or excessive risk-taking. These risks can remain dormant for years and then materialize suddenly, destroying shareholder value.
 
-### Conclusion
-Sustainability analysis is a critical component of modern security analysis, providing essential insights that go beyond traditional financial metrics. By effectively integrating ESG factors into the investment analysis process, investors can enhance their ability to identify companies that are not only leaders in their industries but also in corporate responsibility and governance. This approach aligns investment portfolios with broader societal values while aiming to improve financial returns and reduce investment risks.
+The data challenge complicates ESG analysis. Unlike financial statements, which follow standardized accounting principles, ESG reporting lacks uniformity. Companies disclose different metrics, use different methodologies, and report with varying degrees of rigor. Third-party rating agencies attempt to fill the gap, but their ratings often diverge. A company rated highly by one provider may score poorly on another. The lack of standardization creates noise and opens the door to greenwashing—the practice of making misleading claims about environmental credentials to attract capital or enhance reputation.
 
-::: {.callout-note title="CFA Curriculum Alignment"}
-The CFA curriculum increasingly recognizes the importance of integrating ESG factors into investment analysis, reflecting a global trend towards sustainable investing. The curriculum covers how to evaluate the impact of environmental, social, and governance issues on investment performance and risk, preparing candidates to incorporate these factors into their professional practice. This alignment is crucial for investment professionals to meet growing investor demand for sustainable investment options and to adhere to regulatory standards promoting sustainability.
-:::
+Greenwashing takes many forms. A company may announce ambitious emissions targets without a credible plan to achieve them. It may highlight its investments in renewable energy while ignoring the far larger emissions from its core operations. It may publish glossy sustainability reports while lobbying against environmental regulation. The analyst must distinguish between genuine commitment and cosmetic disclosure. This requires going beyond the ratings to examine the underlying data, the track record of follow-through, and the alignment between the company's stated values and its actions.
 
-::: {.callout-note title="Practical Application"}
-Practically applying ESG considerations involves using specialized ESG data services and sustainability reports to evaluate a company’s ESG performance. Investment professionals should consider establishing partnerships with ESG rating agencies or subscribing to platforms that provide comprehensive ESG metrics. Implementing a checklist for ESG compliance in investment analysis can ensure systematic integration of sustainability factors. Regularly attending workshops and seminars on ESG trends will also help professionals stay updated on best practices and regulatory changes.
-:::
+Materiality focuses the analysis. Not every ESG factor matters for every sector. Environmental factors are material for energy companies, miners, and heavy manufacturers, where emissions, water usage, and waste disposal directly affect costs and regulatory exposure. Social factors are material for consumer-facing companies, where labor practices, supply chain conditions, and product safety shape brand reputation and customer loyalty. Governance factors are material across all sectors but are particularly important for banks and financial institutions, where risk management, board independence, and executive compensation structures determine the resilience of the franchise.
 
-## Quantitative Analysis and Expected Returns
-Quantitative analysis uses mathematical and statistical models to evaluate securities, providing a rigorous framework for assessing risk, return, and valuation. This subchapter delves into the methodologies employed in quantitative analysis to forecast expected returns and explains how these techniques can inform better investment decisions.
+The Sustainability Accounting Standards Board and similar bodies have developed sector-specific materiality maps that identify the ESG issues most likely to affect financial performance in each industry. These maps provide a starting point. The analyst uses them to focus attention where it matters most, avoiding the trap of treating all ESG factors as equally relevant for all companies.
 
-### Utilizing Statistical and Mathematical Models
+Integrating ESG into security analysis does not require abandoning traditional financial metrics. It requires supplementing them. A discounted cash flow model remains the core of equity valuation. The ESG overlay adjusts the inputs—reducing the growth rate for a company facing regulatory headwinds, increasing the discount rate for a company with governance concerns, or extending the competitive advantage period for a company with strong stakeholder relationships. The adjustment is judgmental. It is not formulaic. But it brings the analysis closer to the full reality of the business.
 
-**Risk and Return Assessment:**
+For the Schmidt-Miller portfolio, ESG integration is not a binding constraint. The family has expressed no specific values-based exclusions. But the quality dimension of ESG aligns with Klaus's preference for stability and downside protection. Companies with strong governance and prudent risk management are less likely to experience the sudden collapses that trigger his loss aversion. The ESG lens, applied as a quality overlay rather than an exclusionary screen, serves the family's objectives without limiting the investable universe. It is not about ethics. It is about identifying risks that the financial statements have not yet priced.
 
-* **Statistical Models:** Employ models such as the Capital Asset Pricing Model (CAPM) and the Arbitrage Pricing Theory (APT) to estimate the expected return of a security based on its risk relative to the overall market.
-* **Volatility Measurement:** Use statistical measures like standard deviation and variance to quantify the risk associated with securities. These measures help determine the volatility of returns and the potential for wide fluctuations in security prices.
+## 10.7 Security Selection in a Portfolio Context
 
-**Valuation Techniques:**
+Security analysis ends with a list of candidates. Portfolio construction begins with that list and asks a different set of questions. Not every undervalued stock belongs in the portfolio. Not every attractively priced bond is suitable. The transition from analysis to selection requires weighing conviction against concentration, opportunity against capacity.
 
-* **Discounted Cash Flow (DCF):** Calculate the present value of expected future cash flows to determine the intrinsic value of securities. This method is particularly useful for assessing the value of stocks, bonds, and other income-generating assets.
-* **Monte Carlo Simulations:** Use random sampling techniques to model possible price paths for securities under various market conditions, providing a probabilistic view of returns and valuations.
+Active share measures how much a portfolio differs from its benchmark. It is calculated as the sum of absolute active weights divided by two:
 
+$$
+\text{Active Share} = \frac{1}{2} \sum_{i=1}^{N} |w_{p,i} - w_{b,i}|
+$$
 
-### Forecasting Expected Returns
+Where $w_{p,i}$ is the portfolio weight of security $i$ and $w_{b,i}$ is its weight in the benchmark. An active share of zero means the portfolio mirrors the benchmark exactly. An active share of one hundred percent means it holds nothing in common with the benchmark. High active share implies high conviction. The manager is betting that the selected securities will outperform the index by a margin sufficient to justify the deviation.
 
-**Using Historical Data:**
+Active share alone does not capture risk. Two portfolios can have identical active shares but very different risk profiles. One might be diversified across many sectors with modest stock-specific tilts. The other might be concentrated in a single sector with large stock-specific bets. The tracking error, introduced in Chapter 9, captures the risk dimension:
 
-* **Trend Analysis:** Analyze historical return data to identify patterns or trends that might continue into the future. This includes looking at price movements, trading volumes, and other market data over time.
-* **Regression Analysis:** Employ regression techniques to understand the relationship between multiple independent variables (like economic indicators) and the dependent variable (security returns), which can help predict future performance based on past relationships.
+$$
+\sigma_{\text{active}} = \sqrt{w_a^T \Sigma w_a}
+$$
 
-**Incorporating Market Conditions:**
+Where $w_a$ is the vector of active weights and $\Sigma$ is the covariance matrix of security returns. A high active share combined with low tracking error suggests many small, uncorrelated bets. A high active share with high tracking error suggests a few concentrated bets. The desired combination depends on the manager's skill and the breadth of opportunities, as the Fundamental Law of Active Management established:
 
-* **Economic Indicators:** Integrate key economic indicators such as GDP growth rates, unemployment rates, inflation, and consumer confidence into models to assess how macroeconomic changes influence market conditions and security returns.
-* **Market Sentiment:** Evaluate market sentiment indicators, including the put/call ratio, advance/decline line, and market volatility indices, to gauge investor mood and its potential impact on future returns.
+$$
+IR = IC \times \sqrt{BR}
+$$
 
-**Forward-Looking Indicators:**
+Conviction and concentration travel together. A manager who identifies ten stocks as deeply undervalued and allocates capital equally among them is expressing higher conviction—and accepting greater concentration risk—than one who holds two hundred names with modest active weights. The former portfolio will deviate significantly from the benchmark. If the analysis is correct, the returns will be exceptional. If the analysis is wrong, the losses will be equally so.
 
-* **Leading Indicators:** Use leading economic indicators that predict future movements in the economy and, by extension, in financial markets. These can include new orders for manufactured goods, stock market returns, and housing permits.
-* **Earnings Forecasts:** Incorporate analysts' earnings forecasts and future earnings guidance provided by companies to model expected future returns and assess the potential for stock appreciation or depreciation.
+The trade-off can be formalized through the expected excess return and its variance. Suppose the manager has an expected alpha of $\alpha_i$ for each security, with an expected tracking error of $\sigma_{\alpha,i}$. The portfolio's expected alpha is the weighted sum of individual alphas. Its variance depends on the covariance of those alphas and the number of independent positions:
 
-### Conclusion
-Quantitative analysis provides a powerful set of tools for assessing the expected returns of securities, utilizing a blend of historical data analysis, mathematical modeling, and economic forecasting. By applying these sophisticated analytical techniques, investors can gain deeper insights into risk and valuation, enabling them to make more informed decisions that align with their investment objectives. This methodical approach to forecasting returns helps in constructing robust investment portfolios that are well-equipped to navigate the complexities of the financial markets.
+$$
+\sigma_{\alpha,p}^2 = \sum_{i=1}^{N} w_{a,i}^2 \sigma_{\alpha,i}^2 + \sum_{i=1}^{N} \sum_{j \neq i} w_{a,i} w_{a,j} \rho_{ij} \sigma_{\alpha,i} \sigma_{\alpha,j}
+$$
 
-::: {.callout-note title="Practical Application"}
-Regression analysis is a powerful quantitative tool for predicting stock prices. For example, an analyst may use a multivariate regression model to predict the stock price of an automotive company based on variables such as the GDP growth rate, the price of raw materials (e.g., steel), and consumer confidence indices. By inputting historical data into the model, the analyst can forecast how changes in these independent variables are likely to impact the stock price. This model allows the analyst to make informed predictions about future stock price movements based on current economic conditions and industry-specific factors, aiding in both stock selection and timing of trades.
-:::
+Greater diversification reduces the portfolio-level tracking error, but at the cost of diluting the expected alpha per unit of active risk. The optimal number of positions balances these forces.
 
-## Integration in Investment Strategies
-Integrating the findings from security analysis into comprehensive investment strategies is crucial for achieving desired financial goals. This subchapter outlines how the insights gained from security analysis, particularly quantitative and fundamental evaluations, are used to inform asset allocation, stock selection, and tactical investment decisions. It also discusses preparing these insights for use in advanced optimization models and portfolio management frameworks.
+Closet indexing arises when active share is low and tracking error is minimal. The manager charges active fees but delivers benchmark-like returns. The investor pays for conviction but receives a portfolio that hugs the index. This failure mode has a mathematical footprint. The active share is below sixty percent. The tracking error is below two percent. The R-squared with the benchmark exceeds 0.95. These metrics, taken together, are a diagnostic for a portfolio that is active in name only.
 
-### Application of Security Analysis Outcomes
+Capacity and liquidity impose further constraints. Every security has a maximum position size beyond which trading becomes difficult. The market impact of a trade can be modeled as a function of the trade size relative to average daily volume:
 
-**Asset Allocation:**
+$$
+\text{Impact Cost} \approx \sigma_{\text{daily}} \times \sqrt{\frac{Q}{\text{ADV}}}
+$$
 
-* **Informed Decisions:** Use the outcomes of fundamental and quantitative analysis to determine the appropriate asset mix in a portfolio. This includes deciding the proportions of equities, bonds, commodities, and alternative investments based on evaluated risks and expected returns.
-* **Strategic Adjustments:** Adjust asset allocation in response to changes in market conditions, economic indicators, or shifts in risk tolerance. Insights from security analysis help identify which asset classes are likely to perform well under current and forecasted economic scenarios.
+Where $Q$ is the quantity traded and $ADV$ is the average daily volume. The larger the trade relative to normal market activity, the greater the price movement against the trader. A small-cap stock with limited volume cannot absorb a large order without significant impact. The manager who identifies an opportunity in such a stock must either accept a smaller position than conviction warrants or incur higher costs that reduce the net alpha.
 
-**Stock Selection:**
+Liquidity constraints are particularly binding for large portfolios. The Schmidt-Miller long-term portfolio, at over €18 million, is not large by institutional standards, but position sizing still requires attention. An allocation of 2 percent is €360,000. In a liquid large-cap stock, this is easily absorbed. In a smaller company, it may represent several days of average volume. The resulting implementation shortfall, modeled in Chapter 9, would consume a material portion of the expected excess return.
 
-* **Selection Criteria:** Leverage detailed company analysis—including financial health, growth potential, and ESG factors—to pick stocks that align with both the investment strategy’s return objectives and risk profile.
-* **Sector Allocation:** Use industry analysis outcomes to decide on sector weightings within an equity portfolio, choosing sectors that are positioned for growth based on current and anticipated economic conditions.
+Security selection is the point at which analysis meets action. Candidates are identified through fundamental or quantitative analysis. Their contribution to the portfolio's expected excess return and tracking error is evaluated. Positions are sized to reflect conviction while respecting concentration limits, liquidity constraints, and the risk budget. The process is iterative and quantitative, blending judgment with the discipline that the mathematical framework imposes. The final portfolio is not simply a collection of good ideas. It is a deliberate combination of securities, each chosen because its expected contribution to alpha exceeds its marginal contribution to risk.
 
-**Tactical Investment Decisions:**
+## 10.8 Case Study: Selecting the Schmidt-Miller Securities
 
-* **Timing the Market:** Apply findings from quantitative models to make tactical bets. For example, using momentum indicators to increase exposure to rising stocks or reduce it in those that are falling.
-* **Risk Management:** Implement hedging strategies based on risk assessment outputs from security analysis to protect the portfolio against downside risks.
+The strategic asset allocation from Chapter 7 established the policy weights. The long-term portfolio holds 35 percent global equities, 15 percent Swiss equities, 30 percent corporate bonds, and 20 percent government bonds. These weights are abstract. They must be translated into specific securities, selected according to the analytical frameworks developed in this chapter. The challenge is not simply to find a fund or a bond that fits each category. It is to select securities that serve the family's distinct circumstances—Klaus's loss aversion, Elke's emotional attachment to her inheritance, and the need for reliable income.
 
-### Preparing Groundwork for Advanced Portfolio Management
+The equity allocation requires two distinct solutions. The global equity component, at 35 percent of the long-term portfolio, demands broad diversification and low cost. A global quality ETF, screening for companies with high profitability, low leverage, and stable earnings, serves this purpose. Quality companies tend to decline less in bear markets, a characteristic that aligns with Klaus's binding constraint on downside risk. The screening criteria include return on equity above 15 percent, debt-to-equity below 50 percent, and positive earnings growth over the past five years. Companies that fail these screens are excluded, regardless of their valuation. The result is a portfolio tilted toward businesses with durable competitive advantages and conservative financial management.
 
-**Optimization Models:**
+The Swiss equity component presents a more complex problem. Elke already holds €2.5 million in inherited Swiss equities with a low cost basis. Selling these positions outright would trigger a 20 percent capital gains tax, consuming €500,000 of value. The solution is to treat the inherited holdings as a Swiss equity allocation and supplement them with a Swiss value fund that tilts toward high-dividend, low-volatility stocks. The inherited stocks are concentrated in a few names—likely the large-cap industrials and financials that dominated the Swiss market a generation ago. The value fund adds diversification across sectors and introduces a systematic, factor-based approach that the inherited portfolio lacks.
 
-* **Portfolio Optimization:** Use modern portfolio theory (MPT) models to optimize the portfolio for the best possible return for a given level of risk. This involves inputting expected returns, volatilities, and correlations, which are calculated through security analysis.
+The inherited holdings are mapped against the fund's holdings. Overlapping positions are retained in the inherited account to avoid realizing gains. Non-overlapping positions are added through the fund. Over time, as the inherited stocks appreciate further or as tax-loss harvesting opportunities arise, the portfolio migrates toward the factor-based fund. The transition is gradual. Elke's emotional attachment is respected. No stock is sold without her understanding and consent. But the direction of travel is clear: from a concentrated, legacy portfolio to a diversified, systematically managed one.
 
-* **Constraints Integration:** Incorporate constraints such as budget limits, risk aversion levels, and regulatory requirements into the optimization process to ensure practical and implementable portfolio solutions.
+Fixed income selection serves a different purpose. The government bond allocation is not designed to generate return. It is designed to immunize the family's commitment to €160,000 in annual retirement spending. The approach is liability-driven. A ladder of high-quality CHF-denominated bonds is constructed, with maturities staggered to match the expected withdrawals over the next ten years. Each bond is held to maturity, eliminating interest rate risk for that portion of the portfolio. The credit quality is impeccable. Swiss Confederation bonds and obligations of Swiss cantons with the highest credit ratings form the core.
 
-**Machine Learning Algorithms:**
+The yield on these bonds is low, consistent with the capital market assumptions from Chapter 6. A ten-year Swiss government bond yields approximately 1.2 percent. The ladder produces an average yield slightly higher, reflecting the inclusion of slightly longer maturities and the modest credit spread of cantonal bonds. The expected return is not exciting. It is not meant to be. These bonds exist so that Klaus can sleep at night, knowing that the family's spending needs are met regardless of what happens in equity markets.
 
-* **Enhancing Predictive Accuracy:** Employ machine learning techniques to refine predictions regarding security performance and risk, learning from vast datasets that include historical prices, economic indicators, and transaction metadata.
-* **Behavioral Patterns:** Analyze investor behavior patterns and market sentiment from unstructured data sources like social media and news articles to anticipate market movements.
+The corporate bond allocation seeks a higher yield while maintaining investment-grade quality. The selection criteria emphasize issuer diversification, duration management, and credit quality. Bonds are selected from a universe of Swiss and European corporate issuers with ratings of BBB or higher. The average duration is held below five years to limit interest rate sensitivity. The portfolio avoids sectors with elevated ESG risk—thermal coal, controversial weapons, tobacco—not as an ethical screen but because these sectors face uncertain regulatory futures that could impair credit quality.
 
-**Black-Litterman Framework:**
+The question of commodities or gold arises from the tactical discussion in Chapter 8. The strategic allocation does not include commodities. But the Investment Clock framework and the stagflation scenario suggest that a small allocation to an inflation-hedging asset may reduce shortfall risk without materially increasing volatility. Gold, rather than a broad commodity ETF, is the preferred vehicle. Gold's negative correlation with real interest rates and its role as a safe haven during periods of market stress complement the portfolio's existing exposures. A 2 percent allocation, funded from the government bond allocation, adds diversification without consuming significant tracking error.
 
-* **Personalized Views:** Incorporate personal views and insights from security analysis into the Black-Litterman model to adjust the expected returns used in the optimization process based on the investor’s unique perspective.
-* **Global Equilibrium:** Use the framework to combine equilibrium market returns (a result of market cap-based asset allocation) with the adjusted returns based on individual views, leading to a tailored and theoretically well-founded asset allocation.
+Bitcoin is considered and rejected. The network fundamentals are compelling. Metcalfe's Law suggests that value scales with adoption. On-chain metrics show growing usage. But volatility exceeds 60 percent per year. Drawdowns of 80 percent or more are common. For a family whose binding constraint is Klaus's loss aversion, an asset with this risk profile is incompatible with the IPS. The analysis does not dismiss Bitcoin as worthless. It dismisses it as unsuitable for this particular client.
 
-### Conclusion
-The integration of comprehensive security analysis into investment strategies is pivotal for crafting portfolios that are not only optimized for maximum returns relative to risk but also align with individual investment goals and market conditions. By systematically applying these insights across asset allocation, stock selection, and tactical decision-making, and by preparing them for use in sophisticated modeling techniques, investors can enhance both the efficacy and responsiveness of their investment strategies in dynamic markets.
-
-::: {.callout-note title="Practical Application"}
-The Black-Litterman model is an advanced tool that combines market equilibrium expected returns with an investor's specific views to generate customized portfolio allocations. Here’s a practical example: Suppose an investment manager believes that due to recent innovations in technology, the tech sector will outperform the overall market by 5% over the next year. This view can be integrated into the Black-Litterman model, which initially starts with the market equilibrium returns (e.g., derived from the CAPM model) and adjusts the expected returns of the tech sector upwards. The model then recalculates the optimal asset allocation, increasing the weight of the tech sector in the portfolio. This approach not only provides a systematic way to incorporate personal views but also maintains a well-diversified portfolio that aligns with the overall market and the investor's risk profile.
-:::
-
-## The Crucial Role of Comprehensive Security Analysis
-Security analysis stands as a foundational pillar in the field of investment management, essential for both identifying lucrative investment opportunities and effectively managing risks. This comprehensive approach allows investors to delve deeply into the financial and operational facets of potential investments, from individual securities to entire sectors.
-
-**Core Benefits of Security Analysis:**
-
-* **Informed Investment Decisions:** The rigorous evaluation of financial metrics, market conditions, and company fundamentals that security analysis provides is crucial for making well-informed investment decisions. This process helps investors understand the intrinsic value of assets and determine the appropriate timing for entry and exit, maximizing potential returns.
-* **Risk Management:** By identifying and quantifying the risks associated with different investment opportunities, security analysis aids in constructing portfolios that align with specific risk tolerance levels. This includes assessing market volatility, credit risks, operational risks, and more, ensuring that all potential vulnerabilities are considered and addressed.
-* **Strategic Asset Allocation:** Security analysis informs asset allocation by highlighting which asset classes, sectors, or geographic regions show the most promise based on current market analysis. This strategic allocation plays a pivotal role in balancing portfolio risk and return, catering to the long-term financial goals of investors.
-
-### Evolving Nature of Security Analysis
-* **Adaptation to Market Changes:** The field of security analysis is continuously evolving, adapting to changes in financial markets, investment technology, and economic conditions. Innovations in data analytics, for example, have introduced more sophisticated quantitative models that can predict market movements with greater accuracy, enhancing the traditional methods of security evaluation.
-* **Integration of Sustainability:** In recent years, there has been a significant shift towards integrating Environmental, Social, and Governance (ESG) factors into the security analysis process. This change reflects a broader recognition of the impact that sustainability has on financial performance and risk profiles. Investors are increasingly aware that companies with robust sustainability practices are likely to offer better long-term returns and present lower risks, due to their forward-looking management strategies and compliance with regulatory standards.
-* **Future Trends:** As markets continue to evolve, security analysis is expected to incorporate more advanced technologies and methodologies, such as artificial intelligence and machine learning, to further refine the accuracy and efficiency of investment evaluations. Additionally, as global economic and environmental challenges intensify, the integration of ESG factors into security analysis will become even more critical, aligning investment strategies with global sustainability goals.
-
-### Conclusion
-Comprehensive security analysis remains indispensable in navigating the complexities of modern financial markets. It not only equips investors with the necessary tools to identify and capitalize on investment opportunities but also ensures that these investments are secure and aligned with both financial objectives and ethical considerations. As the practice continues to evolve, incorporating new analytical tools and responding to global trends, its role in shaping successful investment strategies becomes ever more significant.
+The final portfolio of securities reflects the layered logic of the entire investment process. The strategic allocation provides the architecture. The tactical analysis provides the tilt. Security selection provides the materials. Each layer is consistent with the layer above it. Each security is chosen not because it is the best in isolation but because it contributes something the portfolio needs—and because it does so without violating the constraints that define the Schmidt-Miller family's relationship with their wealth.

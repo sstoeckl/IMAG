@@ -2,6 +2,9 @@ project:
   type: book
   output-dir: ../docs/teaching
 
+number-sections: true
+number-depth: 3
+
 book:
   title: "IMAG Teaching Materials"
   #subtitle: ""
@@ -30,7 +33,7 @@ book:
     - 10_Security_Analysis.qmd
     - 11_Portfolio_Implementation.qmd
     - 12_Portfolio_Analysis.qmd
-    - 13_Feedback_Loop.qmd
+    #- 13_Feedback_Loop.qmd
   page-footer:
     border: true
     center:
@@ -45,6 +48,7 @@ format:
     css: custom.css
     toc: true
     number-sections: true
+    number-depth: 3
     # Tailwind removes all margins from all html elements
     #include-in-header: ../includes/head.html
     #include-before-body: ../includes/header.html
@@ -52,4 +56,5 @@ format:
     page-layout: full
     smooth-scroll: true
     anchor-sections: true
+
 
