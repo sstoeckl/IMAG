@@ -243,6 +243,6 @@ The analyst recommendations provide additional guidance. "Balanced allocation. M
 
 The performance data from the market report places our results in competitive context. The ranking table shows cumulative profit, assets under management, and key risk metrics for each team. The Sharpe ratio tells us whether our returns are adequate compensation for the risk we took. The Information Ratio tells us whether our active decisions added value relative to the benchmark. These are the same metrics we examined in the chapter, applied here to evaluate our performance relative to peers.
 
-![Market Report](graphics/Performance_Analysis/IMAG-Market-Report-Performance.png){#fig-imag-market-report}
+![Market Report](graphics/Portfolio_Implementation/IMAG-Market-Report.png){#fig-imag-market-report}
 
 Market share data, segmented by client type, reveals whether our performance is translating into client retention and growth. A team with strong returns but declining market share may be taking risks that clients did not sign up for. A team with moderate returns but growing market share may be delivering exactly what their clients expect. The numbers do not tell the whole story, but they frame the questions that the attribution analysis must answer.
