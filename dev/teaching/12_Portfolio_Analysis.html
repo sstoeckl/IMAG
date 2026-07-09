@@ -238,6 +238,13 @@ window.Quarto = {
   <li><a href="#sustainability-esg-performance-audit" id="toc-sustainability-esg-performance-audit" class="nav-link" data-scroll-target="#sustainability-esg-performance-audit"><span class="header-section-number">12.8</span> Sustainability (ESG) Performance Audit</a></li>
   <li><a href="#professional-standards-gips-compliance" id="toc-professional-standards-gips-compliance" class="nav-link" data-scroll-target="#professional-standards-gips-compliance"><span class="header-section-number">12.9</span> Professional Standards: GIPS Compliance</a></li>
   <li><a href="#performance-reporting-the-schmidt-miller-final-review" id="toc-performance-reporting-the-schmidt-miller-final-review" class="nav-link" data-scroll-target="#performance-reporting-the-schmidt-miller-final-review"><span class="header-section-number">12.10</span> 12.10 Performance Reporting: The Schmidt-Miller Final Review</a></li>
+  <li><a href="#performance-analysis-in-the-imag" id="toc-performance-analysis-in-the-imag" class="nav-link" data-scroll-target="#performance-analysis-in-the-imag"><span class="header-section-number">12.11</span> Performance Analysis in the IMAG</a>
+  <ul class="collapse">
+  <li><a href="#performance-attribution" id="toc-performance-attribution" class="nav-link" data-scroll-target="#performance-attribution"><span class="header-section-number">12.11.1</span> Performance Attribution</a></li>
+  <li><a href="#strategic-allocation-analysis" id="toc-strategic-allocation-analysis" class="nav-link" data-scroll-target="#strategic-allocation-analysis"><span class="header-section-number">12.11.2</span> Strategic Allocation Analysis</a></li>
+  <li><a href="#competitive-context" id="toc-competitive-context" class="nav-link" data-scroll-target="#competitive-context"><span class="header-section-number">12.11.3</span> Competitive Context</a></li>
+  <li><a href="#closing-the-loop" id="toc-closing-the-loop" class="nav-link" data-scroll-target="#closing-the-loop"><span class="header-section-number">12.11.4</span> Closing the Loop</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -415,8 +422,54 @@ IR = \frac{R_p - R_b}{\sigma_{\text{active}}}
 </ul></li>
 <li><strong>The “So What?”:</strong> Based on the audit, should the SAA be adjusted for the next year?</li>
 </ul>
+</section>
+<section id="performance-analysis-in-the-imag" class="level2" data-number="12.11">
+<h2 data-number="12.11" class="anchored" data-anchor-id="performance-analysis-in-the-imag"><span class="header-section-number">12.11</span> Performance Analysis in the IMAG</h2>
+<p>The framework developed in this chapter is applied directly in the IMAG simulation. Performance analysis closes the investment cycle. We have set the strategic allocation, made tactical tilts, selected securities, and implemented the portfolio. Now we must evaluate what happened, why it happened, and what should change as a result. Without this feedback, the process cannot learn. The simulation provides the tools for this evaluation through the Analyst page.</p>
+<section id="performance-attribution" class="level3" data-number="12.11.1">
+<h3 data-number="12.11.1" class="anchored" data-anchor-id="performance-attribution"><span class="header-section-number">12.11.1</span> Performance Attribution</h3>
+<p>The Analyst page decomposes our returns using the same attribution framework we examined in this chapter. The performance attribution analysis allows us to view returns through different lenses: by currency, by asset class, by industry, by maturity, and by factor exposure. This is the Brinson-Fachler model in practice, adapted to the multi-currency, multi-asset structure of the simulation.</p>
+<div id="fig-imag-analyst" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-imag-analyst-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="graphics/Tactical_Asset_Allocation/IMAG-Analyst.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-imag-analyst-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.1: Analyst Page
+</figcaption>
+</figure>
+</div>
+<p>The attribution matrix shows the contribution of each market segment to total portfolio return. A positive number in the USD Equity cell means that our US equity positions added value. A negative number in the JPY Government Bonds cell means our Japanese bond positions detracted. The decomposition allows us to identify exactly where our decisions paid off and where they cost us. If we overweighted European equities based on our reading of the Economic Outlook, the EUR Equity attribution tells us whether that decision was correct.</p>
+<p>The horizontal and vertical variable selectors let us change the perspective. We can examine returns by currency to assess whether our geographic tilts added value. We can examine returns by asset class to assess whether our allocation between equities, bonds, and alternatives was sound. We can drill into industry or factor exposures to understand the more granular drivers of performance. Each view answers a different question, and together they provide the comprehensive picture that the chapter’s framework demands.</p>
+</section>
+<section id="strategic-allocation-analysis" class="level3" data-number="12.11.2">
+<h3 data-number="12.11.2" class="anchored" data-anchor-id="strategic-allocation-analysis"><span class="header-section-number">12.11.2</span> Strategic Allocation Analysis</h3>
+<p>Below the attribution matrix, the strategic allocation analysis compares our portfolio weights to the optimal ranges embedded in the simulation. For each market segment, our last round allocation is shown alongside the target range and the analyst’s recommendation. This is the accountability mechanism that closes the loop between client analysis and portfolio construction.</p>
+<p>The analysis tells us whether we are within the ranges that the client’s profile demands. A Conservative client requires a different allocation than a Dynamic one. If our strategic allocation was set correctly, reflecting the client’s risk tolerance and return objectives, the analysis will confirm alignment. If we misjudged the client—allocating too heavily to equities for a loss-averse Conservative client, or too conservatively for a growth-oriented Dynamic client—the gap will be visible here.</p>
+<p>The analyst recommendations provide additional guidance. “Balanced allocation. Maintain position” confirms that our weight is appropriate. A recommendation to increase or decrease would signal a deviation from the optimal range. This analysis does not replace judgment, but it provides a structured check on whether our portfolio is doing what it was designed to do.</p>
+</section>
+<section id="competitive-context" class="level3" data-number="12.11.3">
+<h3 data-number="12.11.3" class="anchored" data-anchor-id="competitive-context"><span class="header-section-number">12.11.3</span> Competitive Context</h3>
+<p>The performance data from the market report places our results in competitive context. The ranking table shows cumulative profit, assets under management, and key risk metrics for each team. The Sharpe ratio tells us whether our returns are adequate compensation for the risk we took. The Information Ratio tells us whether our active decisions added value relative to the benchmark. These are the same metrics we examined in the chapter, applied here to evaluate our performance relative to peers.</p>
+<div id="fig-imag-market-report" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-imag-market-report-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="graphics/Performance_Analysis/IMAG-Market-Report-Performance.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-imag-market-report-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.2: Market Report
+</figcaption>
+</figure>
+</div>
+<p>Market share data, segmented by client type, reveals whether our performance is translating into client retention and growth. A team with strong returns but declining market share may be taking risks that clients did not sign up for. A team with moderate returns but growing market share may be delivering exactly what their clients expect. The numbers do not tell the whole story, but they frame the questions that the attribution analysis must answer.</p>
+</section>
+<section id="closing-the-loop" class="level3" data-number="12.11.4">
+<h3 data-number="12.11.4" class="anchored" data-anchor-id="closing-the-loop"><span class="header-section-number">12.11.4</span> Closing the Loop</h3>
+<p>The simulation’s performance analysis tools enable the same cycle we described in the chapter. Measurement establishes what happened. Attribution reveals why it happened. Appraisal determines what should change. If the attribution shows that our tactical tilts consistently detracted, the process for generating those tilts needs review. If the strategic allocation analysis shows misalignment with client targets, the strategic weights need adjustment. If the competitive metrics show underperformance relative to peers, the entire investment process must be examined.</p>
+<p>The discipline is the same one we applied to the Schmidt-Miller family. Performance analysis is not about celebrating wins or lamenting losses. It is about understanding outcomes, communicating them clearly, and using that understanding to improve future decisions. The simulation provides the data. The framework from this chapter provides the method. The quality of our analysis determines whether the cycle closes productively or spins without learning.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

@@ -236,7 +236,13 @@ window.Quarto = {
   <li><a href="#portfolio-rebalancing-maintaining-the-blueprint" id="toc-portfolio-rebalancing-maintaining-the-blueprint" class="nav-link" data-scroll-target="#portfolio-rebalancing-maintaining-the-blueprint"><span class="header-section-number">11.5</span> 11.5 Portfolio Rebalancing: Maintaining the Blueprint</a></li>
   <li><a href="#performance-measurement-and-reporting" id="toc-performance-measurement-and-reporting" class="nav-link" data-scroll-target="#performance-measurement-and-reporting"><span class="header-section-number">11.6</span> 11.6 Performance Measurement and Reporting</a></li>
   <li><a href="#machine-learning-and-ai-in-implementation" id="toc-machine-learning-and-ai-in-implementation" class="nav-link" data-scroll-target="#machine-learning-and-ai-in-implementation"><span class="header-section-number">11.7</span> 11.7 Machine Learning and AI in Implementation</a></li>
-  <li><a href="#case-study-implementing-the-schmidt-miller-plan" id="toc-case-study-implementing-the-schmidt-miller-plan" class="nav-link" data-scroll-target="#case-study-implementing-the-schmidt-miller-plan"><span class="header-section-number">11.8</span> 11.8 Case Study: Implementing the Schmidt-Miller Plan</a></li>
+  <li><a href="#case-study-implementing-the-schmidt-miller-plan" id="toc-case-study-implementing-the-schmidt-miller-plan" class="nav-link" data-scroll-target="#case-study-implementing-the-schmidt-miller-plan"><span class="header-section-number">11.8</span> Case Study: Implementing the Schmidt-Miller Plan</a></li>
+  <li><a href="#portfolio-implementation-in-the-imag-simulation" id="toc-portfolio-implementation-in-the-imag-simulation" class="nav-link" data-scroll-target="#portfolio-implementation-in-the-imag-simulation"><span class="header-section-number">11.9</span> Portfolio Implementation in the IMAG Simulation</a>
+  <ul class="collapse">
+  <li><a href="#from-allocation-to-positions" id="toc-from-allocation-to-positions" class="nav-link" data-scroll-target="#from-allocation-to-positions"><span class="header-section-number">11.9.1</span> From Allocation to Positions</a></li>
+  <li><a href="#the-flow-of-funds-between-rounds" id="toc-the-flow-of-funds-between-rounds" class="nav-link" data-scroll-target="#the-flow-of-funds-between-rounds"><span class="header-section-number">11.9.2</span> The Flow of Funds Between Rounds</a></li>
+  <li><a href="#evaluating-implementation-quality" id="toc-evaluating-implementation-quality" class="nav-link" data-scroll-target="#evaluating-implementation-quality"><span class="header-section-number">11.9.3</span> Evaluating Implementation Quality</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -365,12 +371,54 @@ window.Quarto = {
 <p>This hybrid model, sometimes called cyborg advising, combines the efficiency of automation with the empathy of human judgment. The machine does what machines do well. The human does what humans do well. The client benefits from both. As machine learning tools become more sophisticated, the boundary between what is automated and what is advised will shift. But the core of the advisory relationship—trust, understanding, and judgment under uncertainty—remains stubbornly human. That is not a limitation to be overcome. It is the foundation on which the entire investment process rests.</p>
 </section>
 <section id="case-study-implementing-the-schmidt-miller-plan" class="level2" data-number="11.8">
-<h2 data-number="11.8" class="anchored" data-anchor-id="case-study-implementing-the-schmidt-miller-plan"><span class="header-section-number">11.8</span> 11.8 Case Study: Implementing the Schmidt-Miller Plan</h2>
+<h2 data-number="11.8" class="anchored" data-anchor-id="case-study-implementing-the-schmidt-miller-plan"><span class="header-section-number">11.8</span> Case Study: Implementing the Schmidt-Miller Plan</h2>
 <p><strong>The Trade List:</strong> Translating the weights from Chapter 7 into a multi-million euro buy/sell list.</p>
 <p><strong>The “Step-In” Strategy:</strong> Using a 6-month Glide Path to invest the cash to manage Klaus’s “Regret Aversion.”</p>
 <p><strong>Elke’s Inheritance:</strong> A detailed look at how the “HIFO” tax-lot method was used to keep her capital gains tax to a minimum during the diversification process.</p>
+</section>
+<section id="portfolio-implementation-in-the-imag-simulation" class="level2" data-number="11.9">
+<h2 data-number="11.9" class="anchored" data-anchor-id="portfolio-implementation-in-the-imag-simulation"><span class="header-section-number">11.9</span> Portfolio Implementation in the IMAG Simulation</h2>
+<p>The framework developed in this chapter is applied directly in the IMAG simulation. The strategic allocation has been set. The tactical tilts have been determined. The securities have been selected. What remains is execution: translating the model portfolio into actual positions that deliver the returns our clients expect. Implementation is where the plans from earlier chapters meet the market, and where the frictions we examined—trading costs, taxes, and operational constraints—either erode returns or are managed effectively.</p>
+<section id="from-allocation-to-positions" class="level3" data-number="11.9.1">
+<h3 data-number="11.9.1" class="anchored" data-anchor-id="from-allocation-to-positions"><span class="header-section-number">11.9.1</span> From Allocation to Positions</h3>
+<p>The simulation handles the transition from allocation to positions through its automation layers. When asset-level automation is enabled, the tactical allocation is translated into specific holdings within each market segment. Equities are distributed according to market value weights by default. Other segments use equal weighting. This automation reflects the principle that for most market segments, the allocation decision drives the bulk of returns. The specific securities within the segment are secondary.</p>
+<div id="fig-imag-markets" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-imag-markets-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="graphics/Tactical_Asset_Allocation/IMAG-Markets.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-imag-markets-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11.1: Markets Page
+</figcaption>
+</figure>
+</div>
+<p>When we disable the automation, we take direct control over which assets populate each segment. This is the point where security analysis meets implementation. The same discipline applies: deviate from the automated benchmark only when we have a specific, analytically grounded reason. If our analysis identified a corporate bond with an attractive spread or a quality equity fund with lower downside capture, we can overweight those positions. Without such a thesis, the automation provides a cost-effective implementation.</p>
+<p>The Markets page provides the data we need to make these decisions. Performance figures, benchmark weights, and factor loadings are visible for every asset. We can filter by asset class, currency, and industry. Clicking on an asset reveals historical prices and fundamental data. This is the same information set we used to construct the Schmidt-Miller portfolio: screening for quality, evaluating factor exposures, and ensuring that each position serves the client’s objectives without violating their constraints.</p>
+</section>
+<section id="the-flow-of-funds-between-rounds" class="level3" data-number="11.9.2">
+<h3 data-number="11.9.2" class="anchored" data-anchor-id="the-flow-of-funds-between-rounds"><span class="header-section-number">11.9.2</span> The Flow of Funds Between Rounds</h3>
+<p>Between rounds, portfolio weights drift. Assets deliver different returns. The equity allocation that was 35 percent becomes 38 percent after a strong quarter. Bonds decline relative to equities. Fund inflows from new clients add capital. Outflows from redemptions remove it. The simulation handles these changes automatically, but the implementation discipline we discussed in this chapter determines whether the resulting portfolio remains aligned with its design.</p>
+<p>New funds are invested using the existing allocation weights. If the automation is enabled, the portfolio is then rebalanced back to target at the start of each round. This mirrors the threshold-based rebalancing we examined. Assets that have drifted above their target are sold. Assets that have drifted below are bought. The process maintains the risk profile that the strategic allocation was designed to achieve.</p>
+<p>The friction of implementation is present, though not always visible as a line item. Frequent trading generates costs. Selling appreciated positions in taxable accounts realizes gains. The simulation does not itemize every commission or spread, but the cumulative effect of these frictions is embedded in the portfolio’s net performance. The discipline we advocated applies: trade with conviction, minimize unnecessary turnover, and use cash flows to rebalance where possible rather than selling existing positions.</p>
+</section>
+<section id="evaluating-implementation-quality" class="level3" data-number="11.9.3">
+<h3 data-number="11.9.3" class="anchored" data-anchor-id="evaluating-implementation-quality"><span class="header-section-number">11.9.3</span> Evaluating Implementation Quality</h3>
+<p>The quality of our implementation is ultimately judged by the results. The market report provides the competitive context. It shows our market share by both number of clients and assets under management, segmented by client type. These figures reveal whether our implementation is attracting and retaining clients relative to our competitors.</p>
+<div id="fig-imag-market-report" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-imag-market-report-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="graphics/Portfolio_Implementation/IMAG-Market-Report.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-imag-market-report-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11.2: Market Report
+</figcaption>
+</figure>
+</div>
+<p>The ranking table provides a more granular view. Cumulative profit, assets under management, and return metrics are displayed alongside those of competing teams. The Sharpe ratio and Information Ratio, which we examined in this chapter and the previous one, translate our implementation quality into comparable metrics. A high Sharpe ratio relative to competitors suggests that our portfolio is generating returns efficiently per unit of risk. A positive Information Ratio confirms that our tactical tilts and security selection are adding value relative to the benchmark.</p>
+<p>The connection to the chapter is direct. Implementation is not merely operational. It is where the theoretical portfolio becomes a real one, subject to the frictions we discussed. The simulation rewards the same discipline: manage costs, respect constraints, rebalance with purpose, and evaluate outcomes against both absolute and relative benchmarks. The market report tells us whether we are succeeding.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
