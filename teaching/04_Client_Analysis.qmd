@@ -9,78 +9,10 @@ bibliography: references.bib
 
 ## Introduction
 
-In professional investment management, constructing a portfolio is only one part of the full process. Before any allocation decision is made, the manager must understand the individual for whom the portfolio is built. A strategy that fails to reflect a client's specific circumstances, goals, and behavioral biases cannot endure. The entire investment process depends on a thorough understanding of each client's needs, and this foundational step is termed client analysis.
+In professional investment management, building a portfolio is only one part of the process. Before deciding how to invest, the manager must understand the person the portfolio is being built for. A strategy that ignores a client's circumstances, goals, and behavioral biases is unlikely to work over time. Good investment management begins with a clear understanding of each client's needs.
 
-Client analysis is the systematic work of gathering, verifying, and documenting both quantitative and qualitative information about the client. Its purpose is to ensure that every investment decision reflects what the client requires financially. The process provides the foundation for a strategy that is customized, ethically sound, and positioned to succeed. The framework for this analysis is formalized through the Know Your Client process, widely referred to as KYC. At its core, KYC compels the advisor to move beyond surface-level facts and develop a clear understanding of the client's financial situation, investment experience, and capacity to bear risk. Effective client analysis, however, treats KYC as only the starting point. The deeper goal is to move from "Know Your Client" to "Know Your Person." This shift means looking past the balance sheet and into the human dynamics that drive financial decisions. The product of a thorough client analysis is the Investment Policy Statement, or IPS. This written document serves as the blueprint for the investment relationship. It formally states the client's objectives and constraints, establishes the framework for portfolio construction, and provides a benchmark against which performance can be evaluated.
+Client analysis means collecting, checking, and recording information about a client. This includes both financial facts and personal information. The goal is to make sure that investment decisions fit the client's needs. This process provides the basis for a strategy that is suitable, responsible, and realistic. It is formalized through the "Know Your Client" process, commonly called KYC. KYC requires the advisor to understand the client's financial situation, investment experience, and ability to take on risk. However, KYC should be only the starting point. The broader goal is to move from "Know Your Client" to "Know Your Person." This means looking beyond the balance sheet and understanding the personal factors that influence financial decisions. The main output of a complete client analysis is the Investment Policy Statement, or IPS. The IPS is a written plan for the investment relationship. It describes the client's objectives and constraints, guides portfolio construction, and provides a basis for evaluating performance.
 
-
-::: {.callout-tip title="In IMAG"}
-Throughout the IMAG simulation, participants encounter a diverse range of investors—from growth-oriented entrepreneurs seeking aggressive capital appreciation to conservative clients prioritizing capital preservation. Success requires more than identifying surface-level characteristics. Participants must develop a comprehensive understanding of each investor's complete financial profile, including risk tolerance, investment horizon, liquidity needs, income requirements, and behavioral biases.
-
-The consequences of misalignment between investor profiles and asset allocations extend beyond theoretical discomfort. Client satisfaction directly impacts fund demand and, consequently, assets under management (AUM). When allocations align with expectations, clients maintain their investments through market cycles, supporting stable AUM growth. Conversely, misaligned portfolios lead to redemptions during downturns or impatience during flat markets, eroding AUM and limiting future opportunities.
-
-This chapter establishes the foundation for all subsequent portfolio decisions by guiding participants through the systematic process of translating investor descriptions into actionable constraints—minimum and maximum allocations, acceptable asset classes, and currency preferences that will shape the strategic asset allocation.
-:::
-
-## Case Study
-
-### Scenario
-
-We examine the financial position of the Schmidt-Miller family, who have engaged a wealth management firm to structure their affairs and construct an investment plan suited to their circumstances. The family resides in a stable Central European nation with robust economic fundamentals. The local tax framework imposes a progressive income tax with a top marginal rate of 40 percent on ordinary income and a separate 20 percent levy on realized capital gains. Tax-advantaged retirement vehicles are also available, permitting investments to compound without annual tax drag until funds are withdrawn.
-
-### Meet the Schmidt-Miller Family
-
-The household consists of three individuals: Klaus Schmidt-Miller (68), his wife Elke Schmidt-Miller (65), and their son Lukas Schmidt-Miller (28). Klaus and Elke have been married for three decades.
-
-Klaus is an orthopedic surgeon nearing the end of an active career. Decades of long hours and procedural precision have earned him high professional standing, and he has served as the primary source of family income throughout the marriage. Elke spent twenty-five years as a school principal before retiring two years prior to this engagement. She stepped away from her career to pursue personal interests and spend more time with family. Their son Lukas works as a software engineer for a technology startup based in Berlin. He is unmarried and lives independently.
-
-### Current Financial Situation and Upcoming Events
-
-The family's financial position is approaching a period of significant change. Klaus has executed an agreement to sell his ownership stake in the surgical practice he helped to establish. The transaction is scheduled to close in approximately sixty days, and after settling all associated tax obligations, the family will receive a cash sum of €18 million. Meanwhile, Elke holds a portfolio of equities and fixed income instruments inherited from her parents. The current market value stands at €2.5 million, and the cost basis of these holdings is low. Disposing of the assets would therefore generate a substantial realized capital gain and a corresponding tax liability under the 20 percent rate.
-
-The following table summarizes the family's balance sheet prior to the receipt of the €18 million from the practice sale.
-
-| Asset Category | Value (€) | Notes |
-|----------------|-----------|-------|
-| Primary Residence (Zug) | 2,200,000 | Jointly held, unencumbered by debt. |
-| Elke's Inherited Portfolio | 2,500,000 | Diversified holdings with low cost basis. |
-| Klaus's Retirement Account | 800,000 | Tax-advantaged account invested in a conservative allocation. |
-| Lukas's Startup Equity | 50,000 | Illiquid 5% stake in a private, pre-profit company. Value for tax purposes only; future value unknown. |
-| Cash and Savings | 150,000 | High-yield deposit account. |
-
-Klaus's current salary from the practice is €350,000 per year, a stream that will cease upon the sale closing. Elke receives an inflation-adjusted pension of €45,000 annually, and Lukas earns a salary of €70,000. Current household living expenses total approximately €150,000 per year. The Schmidt-Millers anticipate a modest increase in this figure during retirement to accommodate travel. The family carries no debt.
-
-### Family Goals and Objectives
-
-We begin by considering each family member's stated objectives and then integrate these individual goals into a single, coherent family strategy.
-
-Klaus and Elke share several joint goals. Their primary objective is to generate a stable, after-tax cash flow of €160,000 per year, adjusted for inflation, starting immediately upon Klaus's retirement. This income stream must be reliable and sustainable over a multi-decade horizon. Within five years, the family also plans to acquire a vacation property on Lake Garda in Italy. The estimated total capital outlay is €2 million, including necessary renovations, and the property is viewed as a long-term family asset intended for eventual transfer to Lukas. Beyond the vacation home, Klaus and Elke wish to gift €400,000 to their son for a down payment on a primary residence in Berlin, a need they anticipate arising within three to five years. Underpinning all of these goals is a clear preference for wealth preservation to benefit Lukas and future generations.
-
-Elke also holds a personal goal. She plans to allocate €500,000 from her inherited portfolio to establish a small art gallery in Lucerne. This is a commercial venture rather than a hobby, and while she accepts that early profitability is unlikely and operating losses may occur, she remains fully committed to the project. The capital is firmly earmarked and scheduled for deployment within one year. Lukas, for his part, seeks financial independence from his parents. He intends to remain with his current employer for at least three to five years to allow his equity stake to mature, though he views this holding as a speculative opportunity rather than a reliable source of future wealth. He will accept the €400,000 gift from his parents for a down payment on a Berlin condominium within that three-to-five-year window, while concurrently building his own savings.
-
-### Observations and Risk Profiles
-
-The financial data reveals specific constraints, and the psychological profiles reveal specific biases. We synthesize both to define the investment parameters for each family member.
-
-**Klaus Schmidt-Miller**
-
-Klaus exhibits a methodical and risk-averse disposition shaped by professional training that demanded precision and aversion to error. He regards the €18 million liquidity event as the tangible output of a career's labor, and his binding constraint follows directly from this view: the preservation of principal. He states outright that he cannot tolerate significant portfolio volatility or the prospect of permanent capital loss. While he supports Elke's gallery concept, he remains wary of the financial exposure it entails. His time horizon spans twenty-plus years in the retirement phase, and his risk tolerance is low.
-
-**Elke Schmidt-Miller**
-
-Elke demonstrates a values-oriented approach to capital. A strong sentimental connection to the securities she inherited makes her reluctant to sell specific positions, even when doing so would improve tax efficiency or portfolio diversification. She is enthusiastic about the gallery and views it as a meaningful use of her time, though her grasp of business risk may be incomplete relative to the capital commitment the project demands. Her time horizon is long-term for personal assets but shortens to one year for the gallery funding. Her risk tolerance is moderate, though it remains subject to the emotional attachment she holds toward the inherited holdings.
-
-**Lukas Schmidt-Miller**
-
-Lukas presents as an optimist comfortable with illiquidity and uncertainty. His professional environment in the startup sector reinforces a high tolerance for risk, and he perceives his parents' conservative stance as outdated. He is prepared to accept large short-term drawdowns in pursuit of long-term appreciation. His time horizon extends thirty-plus years. His risk tolerance is high for personal speculative assets but moderate for the near-term down payment requirement.
-
-**Liquidity and Tax Constraints**
-
-The plan must address a series of specific, dated liquidity demands. The immediate annual withdrawal of €160,000 must be funded from portfolio cash flow. Within one year, €500,000 must be available for the gallery. Within three to five years, a separate €400,000 must be available for Lukas's housing, and within five years, €2 million must be available for the Lake Garda property.
-
-The €18 million from the practice sale arrives post-tax and can be deployed with full flexibility. Elke's €2.5 million portfolio, by contrast, carries an embedded tax liability. The 20 percent capital gains rate acts as a friction on any rebalancing or repositioning of those assets. Furthermore, the plan must account for the startup equity, an illiquid position with an undefined terminal value and no current income.
-
-The central challenge lies in reconciling the family's aggregate return requirement with Klaus Schmidt-Miller's narrow tolerance for drawdown.
 
 ## Analyzing Client's Investment Goals
 
@@ -174,9 +106,6 @@ The following table summarizes the behavioral profiles associated with each weal
 | Inherited Wealth | Endowment Bias | Emotional attachment to specific assets; focus on stewardship over growth. |
 | Speculative/Windfall | Overconfidence or Anxiety | Distorted risk perception; requires structure and education. |
 
-**Key Questions for Source of Wealth Analysis**
-
-When analyzing a client's source of wealth, we explore several questions. How was this wealth created? Through years of effort, through inheritance, or through a single fortunate event? What emotions are attached to the money? Pride, guilt, anxiety, or a sense of burden? Has the client managed significant wealth before, or is this their first experience with substantial assets? Are there concentrated positions with emotional significance, such as inherited stock, company shares, or family business interests? How does the client view risk in relation to their wealth: as a threat to hard-won gains or as an opportunity to grow what was freely given? And finally, what legacy does the client wish to leave? Is wealth preservation for heirs a primary motivator?
 
 
 ### Behavioral Biases and Personality Types
@@ -215,7 +144,7 @@ Emotional biases arise from impulses, feelings, and intuition. They are harder t
 
 #### Personality Types in Investing {#sec-personality-types}
 
-Beyond specific cognitive and emotional biases, investor behavior is shaped by broader personality archetypes. In applied portfolio management, the standard framework for categorizing these behavioral patterns is the model developed by @bailard1986personal, which is widely adopted in professional wealth management curricula [@maginn2007managing]. 
+In addition to understanding the sources of a client's wealth, it is important to consider how the client's personality influences financial decision-making. In applied portfolio management, the standard framework for categorizing these behavioral patterns is the model developed by @bailard1986personal, which is widely adopted in professional wealth management curricula [@maginn2007managing].
 
 The BBK model evaluates investors along two primary axes: their level of confidence in their financial decisions, and their approach to information processing (ranging from highly analytical to highly impulsive). Based on the intersection of these dimensions, investors are typically classified into five distinct personality types. Understanding these archetypes allows us to anticipate behavioral drivers, tailor our communication, and design a portfolio structure that aligns with the client's natural decision-making style.
 
@@ -247,49 +176,6 @@ Spontaneous investors exhibit low confidence in their deep analytical abilities 
 | Individualist | High | Independent | Objective stress-testing; respect for contrarian views |
 | Spontaneous | Low | Impulsive | Strict discipline, automated processes, and trading guardrails |
 
-#### Integrating Behavioral Dimensions
-
-The most complete client analysis integrates three dimensions: life stage, source of wealth, and behavioral profile. Together, they create a full picture of the client's investment personality. The following framework guides this integration.
-
-First, we identify the client's position in the financial lifecycle. This establishes the appropriate balance between growth and preservation based on time horizon and proximity to retirement. Second, we examine the origin of the client's wealth, which reveals emotional connections to money and potential psychological friction points in the investment process. Third, we assess the client's dominant behavioral biases and map them to the BBK personality types. This final step determines which constraints are flexible and which are fixed.
-
-The output of this integration is a clear statement of the client's primary objective and binding constraint. The objective defines what the portfolio must achieve. The constraint defines what the portfolio cannot do.
-
-#### Application to the Schmidt-Miller Family
-
-We now apply this framework to each member of the Schmidt-Miller household, integrating life stage, wealth source, and behavioral profile into a clear statement of objectives and constraints for every individual.
-
-**Klaus Schmidt-Miller**
-
-Klaus stands in the pre-retirement life stage. Although his time horizon extends twenty-plus years, the shift from earning to spending is imminent, and his primary objective reflects this transition: capital preservation to guard against sequence-of-returns risk. The wealth at stake is earned. The €18 million from the sale of his practice represents decades of labor and sacrifice, and Klaus regards this sum as the tangible output of his career. His emotional connection to the capital is one of deep ownership and protectiveness.
-
-Loss aversion dominates his behavioral profile. For Klaus, the pain of a potential loss outweighs the pleasure of an equivalent gain by a factor of approximately two. His personality aligns with the Cautious investor type in the Bailard, Biehl, and Kaiser framework [@bailard1986personal]. Although his profession as a surgeon required meticulous, analytical thinking, his low willingness to accept market risk and deep aversion to losses define his investment personality. Cautious investors have a strong need for financial security and are deeply averse to potential losses, often leading to an excessive preference for capital preservation and a reluctance to accept necessary risk. Taken together, these dimensions produce a sharply defined profile. His primary objective is capital preservation to fund a sustainable retirement income stream of €160,000 annually, adjusted for inflation. His binding constraint is extreme loss aversion. The portfolio cannot expose principal to significant volatility, because any strategy that risks material drawdowns will cause psychological distress and may trigger panic selling during market declines.
-
-**Elke Schmidt-Miller**
-
-Elke is in the early retirement life stage. She has already ceased earned income and receives only a small pension, yet her time horizon remains long at twenty-plus years. Her objective from this stage blends income generation with continued modest growth. The composition of her wealth is mixed. She shares in the family's joint assets derived from Klaus's earned wealth, but she also holds a separate €2.5 million portfolio that is inherited. It is the inherited portion that creates a distinct psychological profile, one governed by a different set of emotional rules.
-
-Endowment bias is Elke's dominant behavioral tendency. Her baseline personality aligns with the Straight Arrow type, representing a moderate, balanced approach to financial decisions. However, her inherited portfolio is heavily distorted by the endowment effect and mental accounting. While a typical Straight Arrow might objectively evaluate the entire portfolio, Elke treats the inherited assets as a separate mental account, exhibiting Cautious traits specifically regarding this legacy. She is deeply averse to the potential "loss" of her parents' securities, valuing them more simply because she owns them and because they connect her to her past. The integration of these dimensions yields a profile centered on honoring her parents' legacy while contributing to the family's income needs and funding her art gallery venture. Her binding constraint is the reluctance to sell inherited positions, even when diversification or tax efficiency would improve the overall portfolio. The plan must either accommodate this attachment or address it through gradual education rather than forced liquidation.
-
-**Lukas Schmidt-Miller**
-
-Lukas occupies the early career life stage. His time horizon for retirement savings exceeds thirty years, and his objective is aggressive wealth accumulation. He can accept significant volatility in pursuit of long-term growth. His personal wealth combines earned salary with speculative startup equity. The equity stake, a 5 percent holding in a private, pre-profit company, is illiquid and carries an undefined terminal value. Its source is speculative.
-
-Overconfidence is Lukas's dominant bias. He believes in his ability to identify opportunities and succeed where others might fail. His personality matches the Individualist type. Individualists are highly confident, independent thinkers who are comfortable with ambiguity and willing to take calculated risks. They place immense faith in their own insights and are not afraid to deviate from consensus views, such as investing in a speculative startup. These traits serve him well in his professional environment but create risk when applied to near-term financial goals. His primary objective is wealth accumulation and financial independence through continued career growth and his equity stake. The binding constraint is that his overconfidence and Individualist tendencies, while appropriate for long-term speculative assets, must not influence the management of the €400,000 down payment for a Berlin condominium due within three to five years. These two pools of capital require separate treatment.
-
-**Synthesis of Family Profiles**
-
-The following table consolidates the three-dimensional analysis for each family member, mapping them to the BBK personality framework.
-
-| Family Member | Life Stage | Wealth Source | Dominant Bias | BBK Personality Type | Primary Objective | Binding Constraint |
-|---------------|------------|---------------|---------------|----------------------|-------------------|--------------------|
-| Klaus | Pre-Retirement | Earned | Loss Aversion | Cautious | Capital preservation for retirement income | Cannot tolerate principal volatility |
-| Elke | Early Retirement | Inherited | Endowment Bias | Straight Arrow (with Cautious traits for inherited assets) | Honor legacy; fund gallery; support income | Reluctant to sell inherited assets |
-| Lukas | Early Career | Speculative | Overconfidence | Individualist | Long-term wealth accumulation | Must separate speculation from near-term needs |
-
-This synthesis confirms the central challenge we identified at the outset. The family's aggregate investable assets total approximately €21.45 million, and the stated goals demand a nominal pre-tax return of 6 to 8 percent. Achieving such a return typically requires a portfolio allocation with material exposure to equities and other growth assets. Klaus's Cautious personality and extreme loss aversion, however, set a hard boundary on acceptable volatility. A standard portfolio built to deliver 6 to 8 percent will almost certainly exceed his tolerance for drawdown. Elke's endowment bias compounds the difficulty, because her €2.5 million inherited portfolio carries both a low cost basis and an emotional weight that resists repositioning.
-
-The plan we construct must bridge this gap. It must pursue the required return without violating Klaus's psychological limits or dismissing Elke's connection to her inheritance. Meeting this challenge demands a departure from a simple, single-portfolio approach. We must consider structuring distinct sub-portfolios, each aligned to a specific goal and time horizon. This technique is the subject of the sections that follow.
 
 ### Identifying Short-term and Long-term Financial Goals
 
@@ -325,55 +211,10 @@ The time horizon is the expected number of years until funds will be needed. Thi
 
 These two dimensions interact in predictable ways. A goal with a short time horizon and a high liquidity requirement demands the most conservative positioning. A goal with a long time horizon and a low liquidity requirement can be positioned for growth. The portfolio as a whole must therefore be constructed not as a single block with a single allocation but as a series of segments, each aligned with the time horizon and liquidity requirements of a specific goal. This approach prevents the forced sale of volatile assets during market downturns to meet near-term cash needs. The assets funding short-term goals are held in stable, liquid instruments, while the assets funding long-term goals can be invested for growth because they will not be touched during periods of market stress. The client can observe that their essential near-term needs are fully secured, which provides the psychological comfort necessary to tolerate volatility in the long-term segment.
 
-#### Application to the Schmidt-Miller Family
-
-We now apply these frameworks to the specific goals of the Schmidt-Miller household. The family's goals span all three time horizons and carry distinct liquidity requirements, making them a useful illustration of how time and liquidity interact in practice.
-
-**Immediate Income Requirement**
-
-The most pressing need is the €160,000 annual income required to fund their retirement lifestyle, starting immediately upon the sale of Klaus's practice. This is not a lump-sum goal but an ongoing liquidity requirement that will persist for the remainder of their lives.
-
-The time horizon is immediate and ongoing, and the liquidity need is high. The first year's withdrawals must be readily accessible in cash or near-cash instruments. This means a portion of the portfolio must be held in highly liquid, low-volatility assets to fund this spending without forcing the sale of growth assets during a market decline.
-
-**Elke's Art Gallery**
-
-Elke requires €500,000 within approximately one year to open her gallery in Lucerne. This qualifies as a short-term goal with a one-year horizon and a high liquidity need, since the full amount must be available on a specific date. These funds must therefore be kept in instruments offering near-complete capital preservation. There is no time to recover from a loss, and equity market exposure is inappropriate for this specific goal.
-
-**Lukas's Down Payment**
-
-The parents intend to provide a gift of €400,000 to assist Lukas with a down payment on a Berlin condominium. The expected timing is three to five years, placing this goal in the medium-term category. The liquidity need is moderate to high at the target date. This capital can tolerate modest volatility but must be protected from significant decline. A portfolio of high-quality short-to-intermediate term bonds or a conservative balanced fund may be suitable, and the allocation should become more conservative as the target date approaches. The family should also determine whether the purchase date is fixed or flexible, because flexibility would allow for slightly more growth exposure.
-
-**Lake Garda Residence**
-
-The family intends to purchase a vacation property on Lake Garda in five years at an estimated cost of €2 million. This goal sits at the boundary between medium-term and long-term, with a five-year horizon and high liquidity required at the target date. Five years is a relatively short horizon for full equity exposure. The family could consider a modest allocation to growth assets if they have flexibility in the purchase timing. If the market declines in year four, could they delay the purchase by one or two years? A fixed and non-negotiable date would warrant a more conservative approach, and this must be clarified during plan construction.
-
-**Legacy and Long-Term Wealth Preservation**
-
-The family expresses a firm desire to preserve wealth for Lukas and future grandchildren. This is an open-ended long-term goal with a horizon of thirty-plus years and a low liquidity need. This portion of the portfolio can therefore be invested for growth. It can accept significant volatility in exchange for the higher returns needed to fund decades of retirement spending and to preserve wealth across generations.
-
-**Aggregate Capital Segmentation**
-
-After accounting for the specific dated goals and the initial income reserve, we can estimate the segmentation of the family's total investable assets. The total core investable assets are approximately €21.45 million, comprising the €18 million from the practice sale, Elke's €2.5 million inherited portfolio, Klaus's €800,000 retirement account, and €150,000 in cash savings.
-
-The following table summarizes the goal-based segmentation.
-
-| Goal | Amount (€) | Time Horizon | Category | Recommended Asset Focus |
-|------|------------|--------------|----------|--------------------------|
-| Year 1 Retirement Income | 160,000 | Immediate | Short-Term | Cash or cash equivalents. |
-| Elke's Art Gallery | 500,000 | 1 year | Short-Term | Capital preservation; high liquidity. |
-| Lukas's Down Payment | 400,000 | 3 to 5 years | Medium-Term | Conservative blend; shift to preservation. |
-| Lake Garda Residence | 2,000,000 | 5 years | Medium/Long-Term | Modest growth with flexibility; or conservative if fixed. |
-| Long-Term Portfolio | ~18,390,000 | 30+ years | Long-Term | Growth-oriented to meet return target and legacy goals. |
-
-This segmentation clarifies the path forward. The near-term and medium-term goals require approximately €3.06 million in capital allocated to conservative, liquid instruments. The remaining long-term portfolio of approximately €18.39 million must generate the bulk of the return required to meet the family's 6 to 8 percent target.
-
-The central challenge, however, remains unchanged. The long-term portfolio must pursue growth to achieve the required return, yet Klaus's loss aversion limits the volatility this portfolio can exhibit. The plan must reconcile this tension, likely through a combination of a clearly defined liquidity reserve for near-term needs and a carefully calibrated growth allocation for the long-term portfolio that respects Klaus's psychological boundary.
-
-![Liquidity and Time Horizon](graphics/Client_Analysis/Liquidity and Time Horizon.png){#fig-elementwise}
 
 ## Assessing Risk Tolerance
 
-With the family's goals defined and understood in the context of their life stages, sources of wealth, and behavioral profiles, we must now assess their risk tolerance with precision. Risk tolerance is not a single number. It is a construct comprising two distinct components that must be evaluated separately and then reconciled.
+With the goals defined and understood in the context of their life stages, sources of wealth, and behavioral profiles, we must now assess their risk tolerance with precision. Risk tolerance is not a single number. It is a construct comprising two distinct components that must be evaluated separately and then reconciled.
 
 The first component is the ability to take risk. This is objective and quantifiable. It depends on factors that can be measured and verified: the length of the investment time horizon, the stability of income sources, the size of existing wealth relative to spending needs, and the flexibility embedded within stated goals. A client with a long time horizon, stable employment, substantial assets, and discretionary goals possesses a high ability to take risk. They can absorb market declines without altering their lifestyle or abandoning their plans. A client who is about to retire, has no earned income, limited assets, and non-negotiable spending needs possesses a low ability to take risk. For such a client, a significant loss would force material changes to their intended retirement. Ability is about capacity, not preference, and it defines the upper boundary of prudent risk-taking.
 
@@ -423,30 +264,6 @@ Risk tolerance is not necessarily uniform across all of a client's assets. The g
 
 ![Mapping Risk Aversion to Asset Allocation](graphics/Client_Analysis/risk_aversion_allocation_mapping.png){#fig-elementwise}
 
-### Application to the Schmidt-Miller Family
-
-We now apply this risk assessment framework to each member of the Schmidt-Miller household. The analysis reveals distinct profiles that must be reconciled within a single family plan.
-
-Klaus Schmidt-Miller presents a clear case of misalignment between ability and willingness. His ability to take risk is substantial. He has a long time horizon of twenty-plus years for retirement spending, significant wealth with €18 million arriving post-tax from the sale of his practice, and additional assets providing a buffer against adversity. His goals include discretionary items such as the Lake Garda property that could be delayed if necessary. A purely objective assessment of his financial circumstances would conclude that Klaus can afford to accept meaningful portfolio volatility in pursuit of higher returns.
-
-His willingness to take risk, however, is low. The earned wealth creates a deep sense of ownership and protectiveness. The €18 million represents decades of work, sacrifice, and skill, and Klaus views this capital not as an abstract pool of assets but as the tangible output of his career. His loss aversion bias means that market declines cause disproportionate psychological pain, while his prudent planner personality demands predictability and safety. In an interview, Klaus would likely state that he cannot tolerate seeing his account balance decline by more than 10 percent in any given year. A questionnaire would confirm a conservative profile, and the risk aversion experiment would likely yield a coefficient above 7, implying an equity allocation below 20 percent for his comfort level.
-
-The implication is clear. Klaus's willingness to take risk, not his ability, is the binding constraint for the core family portfolio. The portfolio must be structured to minimize the frequency and severity of losses, even if this means accepting lower long-term returns. Any portfolio that exceeds Klaus's comfort level, even if mathematically justified by his time horizon and wealth, will be abandoned during the first significant market decline. The plan must respect this psychological boundary.
-
-Elke Schmidt-Miller presents a more layered profile. Her ability to take risk is also substantial. She is retired but has a long horizon, shares in the family's significant wealth, and receives a stable pension of €45,000 annually that covers a portion of baseline expenses. Her willingness to take risk is moderate in the abstract. She might indicate on a questionnaire that she can tolerate moderate portfolio fluctuations, and the risk aversion experiment might yield a coefficient between 4 and 5, suggesting a balanced allocation.
-
-This stated tolerance, however, applies unevenly across her assets. When the conversation turns to her inherited portfolio of €2.5 million, her responses become more protective. Her endowment bias creates an emotional attachment to these specific securities. They belonged to her parents, and selling them feels like a betrayal of that legacy, even when doing so would improve diversification or tax efficiency. Her risk tolerance for those specific holdings is lower than her tolerance for the family's other assets. The plan must accommodate this attachment. The inherited portfolio cannot simply be liquidated and folded into a unified allocation without causing significant distress. A different approach is required, one that respects the emotional meaning of these assets while still pursuing the family's overall objectives.
-
-Lukas Schmidt-Miller presents yet another distinct profile. His ability to take risk for his long-term wealth is high. He is twenty-eight years old with a thirty-plus year horizon, his human capital as a software engineer is substantial and growing, and he has no dependents and limited fixed expenses. His willingness to take risk is also high. His confident risk-taker personality and overconfidence bias lead him to embrace volatility. A questionnaire would indicate an aggressive profile, and the risk aversion experiment would likely yield a coefficient below 2, implying an equity allocation above 80 percent.
-
-This high tolerance is appropriate only for his long-term speculative assets, primarily his startup equity. His near-term goal of purchasing a home in Berlin within three to five years requires a different risk posture. The €400,000 down payment gift from his parents cannot be exposed to the same volatility as his startup equity. A significant decline in the value of those funds would jeopardize his ability to purchase the home on schedule. Lukas's personal risk tolerance for his speculative holdings must therefore be separated from the risk management required for the down payment capital. The plan must compartmentalize these two pools of assets, applying an aggressive strategy to the former and a conservative strategy to the latter.
-
-The synthesis of these individual profiles confirms the central tension in the Schmidt-Miller case. The family's long-term portfolio, representing approximately €18.39 million after setting aside funds for near-term and medium-term goals, has a high ability to take risk. A standard portfolio construction approach would allocate a significant portion to equities to achieve the required 6 to 8 percent return. Klaus's willingness to take risk, however, is low. His loss aversion and prudent planner personality set a hard boundary on acceptable volatility. Elke's endowment bias adds a further layer of complexity, requiring that her inherited assets be treated with special care.
-
-The resolution of this tension will require a departure from a single-portfolio approach. We must consider structuring the family's assets into distinct segments, each aligned with a specific goal and risk profile. The near-term liquidity needs, including the €160,000 annual income, the €500,000 gallery funding, and the €400,000 down payment, must be fully secured in conservative instruments. This provides Klaus with the psychological safety he requires. He can see, in concrete terms, that the family's essential goals are protected regardless of market conditions. The long-term portfolio can then pursue growth with a somewhat higher equity allocation, because Klaus understands that this capital is not needed for immediate spending and that short-term volatility will not threaten the family's lifestyle.
-
-This segmented approach, combined with clear communication about the purpose and time horizon of each portfolio segment, offers a path to reconcile Klaus's low willingness to take risk with the family's need for long-term growth. The plan does not attempt to change Klaus's psychology. It accommodates it, building a structure that allows the family to pursue their required return without violating the psychological boundaries that define Klaus's relationship with his wealth.
-
 
 ## Identifying Rate of Return Requirements
 
@@ -473,36 +290,6 @@ This creates the central tension in investment planning: the required return may
 The required return is not a fixed target. It is a starting point for a conversation about the trade-offs between return, risk, and goals. The final investment strategy will reflect a negotiated balance among these competing demands, respecting both the mathematical requirements of the plan and the psychological realities of the client.
 
 ![Risk-Return Trade-off (Source: @mi_research_team_2018)](graphics/Client_Analysis/Risk-vs.-Return-1.png){#fig-elementwise}
-
-### Application to the Schmidt-Miller Family
-
-We now apply this framework to the Schmidt-Miller household. The calculation of the family's required return begins with an inventory of available capital and a precise definition of each financial goal.
-
-The total investment assets available to fund the family's goals amount to approximately €21.45 million. This figure includes the €18 million in post-tax proceeds from the sale of Klaus's medical practice, Elke's €2.5 million inherited portfolio, Klaus's €800,000 tax-advantaged retirement account, and the €150,000 currently held in cash savings. The family's primary residence in Zug, valued at €2.2 million, is excluded from this calculation because it is not available for investment. Lukas's startup equity is also excluded, as it remains separate from the core family portfolio and carries no current liquidity or defined value.
-
-The family's goals, as identified earlier, must now be funded from this capital base. The €500,000 required for Elke's art gallery in one year will be set aside immediately. Given the short time horizon and the non-negotiable nature of this commitment, these funds will be held in near-cash instruments earning essentially zero real return. The €400,000 designated for Lukas's down payment, needed in three to five years, will be invested in a conservative allocation of high-quality short-to-intermediate term bonds. We assume this portfolio will earn a modest nominal return of approximately 2 to 3 percent annually, roughly keeping pace with inflation. The €2 million allocated for the Lake Garda property, targeted for five years from now, will be invested with a moderate allocation that includes some equity exposure, given the assumed flexibility in the purchase date. We estimate a nominal return of approximately 4 to 5 percent for this segment.
-
-After setting aside funds for these specific dated goals, approximately €18.39 million remains for the long-term portfolio. This portfolio must fund the family's ongoing retirement income requirement of €160,000 annually, adjusted for inflation, for the remainder of Klaus and Elke's lives. It must also preserve sufficient capital to leave a meaningful legacy for Lukas and future grandchildren. A simple calculation based on the first year's withdrawal suggests a minimal required return, since the €160,000 represents only 0.86 percent of the €18.39 million portfolio. This calculation, however, is misleading because it ignores both inflation and taxes.
-
-If inflation averages 2.5 percent annually, the withdrawal required in year ten will be approximately €205,000. By year twenty, it will exceed €260,000. The portfolio's return must cover this growing withdrawal stream. Taxes further increase the required pre-tax return. The family's jurisdiction imposes a top marginal rate of 40 percent on ordinary income and a 20 percent rate on realized capital gains. Investment income, whether from bond interest, stock dividends, or realized gains, will be subject to taxation. If taxes consume approximately 25 to 30 percent of the portfolio's total return over time, the pre-tax return must be meaningfully higher than the after-tax spending need.
-
-A more complete analysis, incorporating reasonable assumptions for inflation, taxes, and a thirty-year retirement horizon, indicates that the long-term portfolio must earn a real return after taxes of approximately 3.5 to 4.5 percent to sustain the desired spending, preserve purchasing power, and maintain the real value of the legacy. This translates to a nominal pre-tax return requirement in the range of 6 to 8 percent.
-
-This return target is realistic but not guaranteed. Historical returns on a diversified portfolio with a balanced allocation to equities and fixed income have averaged in this range over long periods. Achieving this return, however, requires a material allocation to equities. A portfolio expected to earn 7 percent nominally over the long term will likely require an equity allocation of 50 to 60 percent, and such a portfolio will experience volatility. In a severe bear market, it could decline by 20 to 30 percent or more from its peak value.
-
-This is where the tension between the required return and the client's risk tolerance becomes acute. Klaus's loss aversion, identified earlier, sets a hard boundary on his willingness to accept portfolio declines. He has stated that he cannot tolerate significant volatility or the prospect of material principal loss. A portfolio with a 60 percent equity allocation, while mathematically aligned with the family's return requirement, would almost certainly exceed Klaus's psychological comfort level. During a market decline, he would experience distress and might demand that the portfolio be liquidated at the worst possible moment.
-
-The resolution of this tension requires more than a simple asset allocation decision. It requires a portfolio structure that addresses Klaus's psychological needs while still pursuing the required return. The goal-based segmentation described earlier provides the foundation for this structure. By clearly separating the assets funding near-term and medium-term goals into conservative, stable instruments, we create a visible buffer that protects the family's essential objectives. Klaus can see that the income for the next several years, the gallery, the down payment, and the Lake Garda property are all funded with assets that will not be subject to market fluctuations. This security may allow him to accept a somewhat higher equity allocation in the long-term portfolio, because he understands that volatility in that segment will not threaten the family's lifestyle.
-
-Additional accommodations may be necessary. The portfolio's fixed income allocation could be implemented through direct bond holdings with staggered maturities rather than through bond funds. Direct bond holdings provide the psychological comfort of knowing that each bond will mature at par and return its principal, regardless of interim market fluctuations. This visibility can reduce the perceived risk of the fixed income segment, even if the underlying economics are similar to a bond fund. The equity allocation could be implemented through low-volatility strategies or funds that emphasize stable, dividend-paying companies, reducing the frequency and severity of large drawdowns.
-
-For Elke's inherited portfolio, the return calculation must account for her endowment bias. She is reluctant to sell the specific securities she inherited from her parents, and those holdings may have different risk and return characteristics than a fully diversified portfolio would offer. Some may be concentrated in particular sectors or companies, and some may be tax-inefficient, generating taxable income or carrying large embedded gains that would be triggered upon sale. The plan must model the expected return of the actual inherited holdings, not a theoretical optimal portfolio, and ensure that the overall family plan remains on track. If the inherited holdings are expected to underperform or add uncompensated risk, the long-term portfolio may need to adjust its allocation to compensate, or Elke may need to be gradually educated about the benefits of diversification without being forced to act against her emotional attachments.
-
-For Lukas, the required return on the down payment funds set aside by his parents is essentially the preservation of principal. These funds are not intended to grow. They are intended to be available in full when he is ready to purchase his home, and the modest return earned on the conservative instruments holding these funds is incidental to the primary objective of capital certainty.
-
-The required return for the Schmidt-Miller family, then, is not a single number applied uniformly to all assets. It is a set of requirements that vary by goal and by portfolio segment. The gallery funds require safety. The down payment funds require safety with a modest return. The Lake Garda funds require a balance of growth and preservation. The long-term portfolio requires a return of 6 to 8 percent to sustain retirement spending and preserve the legacy. The challenge is to achieve this long-term return without violating Klaus's psychological limits on risk and without forcing Elke to abandon the inherited assets she holds dear. The solution lies not in a single portfolio allocation but in a carefully segmented structure that respects both the mathematical requirements of the goals and the psychological realities of the clients.
-
-![From Spending Need to Required Return](graphics/Client_Analysis/return_requirement_waterfall.png){#fig-elementwise}
 
 
 ## Other Client Requirements and Constraints
@@ -535,33 +322,61 @@ The most fundamental regulatory distinction is the standard of care to which the
 
 Regulations also require extensive disclosure and documentation. The investment management agreement specifies the scope of services, the fee structure, and the responsibilities of each party. The Investment Policy Statement documents the client's objectives and constraints and serves as the benchmark against which portfolio performance and advisor conduct will be evaluated. Regular reporting provides clients with clear information about portfolio performance, fees paid, and any material changes to their investments. These reports must be understandable and accurate, enabling clients to assess whether their advisor is meeting expectations.
 
-### Application to the Schmidt-Miller Family
-
-We now apply this framework to the specific circumstances of the Schmidt-Miller household. The family's legal, tax, ethical, and regulatory context shapes the investment plan in several material ways.
-
-The family resides in a stable Central European jurisdiction with a progressive income tax system. The top marginal rate on ordinary income is 40 percent, and realized capital gains are taxed at a flat 20 percent rate. Tax-advantaged retirement accounts exist within the local framework, permitting investments to compound without annual tax drag until funds are withdrawn. Klaus's €800,000 retirement account benefits from this treatment. The family's primary residence is unencumbered and held jointly.
-
-The most significant tax consideration in this case is the embedded capital gain in Elke's inherited portfolio. The portfolio's current market value is €2.5 million, and its cost basis is low, meaning that selling the holdings would trigger a substantial realized gain and a corresponding tax liability at the 20 percent rate. This tax friction reinforces Elke's endowment bias. The emotional reluctance to sell her parents' stocks is now joined by a financial disincentive. Liquidating the portfolio to reinvest in a more diversified or tax-efficient structure would generate an immediate tax bill, reducing the capital available to fund the family's goals. The plan must address this reality. Options include retaining the inherited holdings and managing them within the overall asset allocation, gradually selling portions over time to spread the tax impact across multiple years, or using the holdings to fund charitable gifts if the family has philanthropic intentions. The decision will be made in consultation with the family's tax advisor.
-
-The legal ownership structure of the family's assets is straightforward. Assets are held directly by Klaus and Elke, either jointly or individually. No trusts or complex entities are involved. This simplifies administration but also means that the assets are fully exposed to the family's personal liabilities and will be subject to the jurisdiction's inheritance laws upon death. The family should be encouraged to consult with an estate planning attorney to ensure that their wishes regarding the transfer of wealth to Lukas and future grandchildren are properly documented and that the appropriate beneficiary designations are in place for retirement accounts.
-
-The family has expressed no specific religious constraints on their investments. They have not indicated a desire to apply Shariah-compliant screens or to adhere to other faith-based investment guidelines, nor have they expressed strong views regarding environmental, social, or governance factors. Elke's gallery venture reflects a personal interest in the arts, but this is a separate business endeavor rather than an investment constraint on the family portfolio. Should the family later express interest in aligning their investments with specific values, the plan can be adjusted to incorporate appropriate screens or tilts, provided the family understands the potential impact on diversification and expected returns.
-
-The regulatory context for this engagement is defined by the fiduciary standard. The advisor managing the Schmidt-Miller family's wealth is held to a duty of loyalty and care. Every recommendation must be made in the family's best interest, conflicts of interest must be disclosed and managed, and the fee structure must be transparent and reasonable. The Investment Policy Statement that emerges from this analysis will document the family's objectives, constraints, and the agreed-upon investment strategy. It will serve as the governing document for the relationship, ensuring that both the advisor and the family have a shared understanding of the plan and a clear benchmark against which to measure progress.
-
-The documentation of this plan is particularly important given the differing risk profiles and objectives within the family. Klaus's conservative preferences and Elke's attachment to her inherited assets create potential points of tension. A clearly articulated Investment Policy Statement, signed by both Klaus and Elke, establishes a formal record of their agreed-upon approach. It protects the advisor by demonstrating that the strategy was developed with full knowledge of the family's circumstances and with their informed consent. It protects the family by providing a reference point for future decisions and a mechanism for resolving disagreements should they arise.
-
-The combination of tax considerations, legal structure, and regulatory obligations does not fundamentally alter the central challenge of this case. The required return remains 6 to 8 percent. Klaus's loss aversion remains the binding constraint. Elke's inherited portfolio remains a distinct pool of assets requiring special handling. The additional constraints identified in this section refine the implementation of the plan without changing its essential character. The task remains to construct a portfolio that pursues the required return without violating Klaus's psychological limits on risk, while respecting the tax implications and emotional significance of Elke's inheritance and operating within the fiduciary standards that govern the advisory relationship.
 
 ## Client Analysis in the IMAG
 
-The framework developed in this chapter is applied directly in the IMAG simulation. Participants manage portfolios for a diverse client base, and the accuracy of their client analysis directly determines their ability to attract and retain assets. The same principles that guided our analysis of the Schmidt-Miller family become operational necessities in the simulated market. Identifying life stage, understanding wealth source, and recognizing behavioral biases are not preparatory exercises. They are the work of portfolio management itself.
+The framework developed in this chapter is applied directly in the IMAG simulation. Participants manage portfolios for a diverse client base, and the accuracy of their client analysis directly determines their ability to attract and retain assets. The same principles that guided our analysis of the Schmidt-Miller family become operational necessities in the simulated market. The following profile illustrates how a short client description must be translated into an investable set of objectives and constraints.
 
 ![IMAG Meet your Clients](graphics/Client_Analysis/IMAG-Client.png){#fig-elementwise}
 
+### Case Study: Mr. Miller
+
+Mr. Miller is a thirty-nine-year-old fintech entrepreneur from New York. Following the initial public offering of his company, his net worth has risen to USD 11 million. He lives in a modern loft overlooking Central Park and is eager to pursue new investment opportunities. His profile can be interpreted using the three questions developed in this chapter: where is he in the life cycle, how was his wealth created, and how does he approach investment decisions?
+
+#### Life Stage and Source of Wealth
+
+Mr. Miller is in the mid-career phase. His human capital is still substantial and typically approaching its peak, but it is not equivalent to a risk-free bond. His income and career prospects are highly correlated with the growth of the technology and equity markets. This exposure must be considered alongside the financial portfolio. A portfolio that is diversified across several technology stocks may still leave Mr. Miller's total wealth concentrated in the same economic forces that determine his employment income.
+
+His wealth is earned wealth. He created it through entrepreneurial effort, and the IPO has converted part of that business wealth into financial capital. This is an important distinction from inherited wealth or a purely speculative windfall. At the same time, the IPO is a liquidity event, and the sudden increase in wealth may encourage him to pursue new opportunities too quickly. The advisor should establish whether he still owns company shares, whether those shares are subject to selling restrictions, and how much of his net worth remains linked to the fintech business.
+
+#### Objectives and Risk Tolerance
+
+Mr. Miller's objectives lie between wealth accumulation and wealth consolidation with continued growth. He wants to protect the wealth created through the IPO while continuing to build wealth over a long investment horizon. His age, substantial net worth, and distance from retirement indicate a high ability to take risk. His enthusiasm for new investment opportunities indicates a high willingness to take risk. The final assessment would still require information about his spending needs, tax position, income after the IPO, and response to previous market losses.
+
+The profile is also consistent with the Individualist type in the BBK model. Mr. Miller is confident, independent, and likely to place considerable weight on his own views. His entrepreneurial success may reinforce overconfidence and encourage concentrated positions or frequent attempts to identify the next opportunity. The advisor should respect his independence while providing objective stress tests, clear diversification limits, and a disciplined rebalancing policy.
+
+### Translating the Profile into Portfolio Constraints
+
+In the simulation, the investable universe is narrower than the general asset-class framework described earlier in this chapter. Participants can invest in US equities, EU equities, US government bonds, and EU government bonds. Corporate bonds and alternative investments are therefore not available. The client description specifies the following permitted allocation ranges for the asset classes that are available:
+
+| Asset Class | Minimum Allocation | Maximum Allocation | Role in the Portfolio |
+|-------------|-------------------:|-------------------:|-----------------------|
+| Government bonds | 7% | 35% | Stability, liquidity, and portfolio ballast |
+| Equities | 30% | 100% | Long-term growth and capital appreciation |
+
+These ranges are binding constraints, not a recommendation to invest at every maximum. Because the allocations must sum to 100 percent, the upper limits cannot all be reached at the same time. For Mr. Miller, the risk-aversion coefficient provides an additional way to connect the qualitative assessment to a portfolio allocation. A coefficient of approximately 2 is consistent with an aggressive investor who places a high proportion of wealth in risky assets. In this case, an illustrative allocation is:
+
+| Asset Class | Illustrative Allocation | Purpose |
+|-------------|------------------------:|---------|
+| US equities | 55.0% | Primary source of long-term growth |
+| EU equities | 25.0% | Regional diversification and additional growth exposure |
+| US government bonds | 12.5% | Stable anchor and liquidity |
+| EU government bonds | 7.5% | Fixed-income diversification |
+| **Total** | **100.0%** | |
+
+This allocation provides 80 percent in equities and 20 percent in government bonds. It is consistent with Mr. Miller's high ability and willingness to take risk while preserving a stable anchor. The allocation also introduces a home bias: US assets represent 67.5 percent of the portfolio, while EU assets represent 32.5 percent. This preference may be reasonable for a client living and working in the United States, whose future spending, income, and tax obligations are primarily denominated in US dollars. It reduces currency and familiarity risks, but it also increases exposure to the US economy and should therefore be recognized as a deliberate trade-off rather than described as complete geographic diversification.
+
+The allocation must also be evaluated against Mr. Miller's total wealth. If he retains a large position in his former company, the portfolio manager should avoid adding unnecessary exposure to the same technology and fintech risks. Diversification across the four available instruments is not sufficient if employment income, company shares, and portfolio holdings all respond to the same market shock. The exact weights should therefore be reviewed alongside the retained IPO shares, liquidity needs, taxes, and the client's actual experience of losses. The risk-aversion coefficient is a useful quantitative anchor, but it does not replace the broader client analysis.
+
+### Return Objective and ESG Preference
+
+Mr. Miller's primary objective is to maximize returns, subject to the allocation ranges and the requirement for diversification. This is consistent with his age, wealth-accumulation history, and long investment horizon. It does not mean that the portfolio should maximize risk without limit. The advisor must compare the return required to fund his stated goals with the return that can reasonably be expected from the permitted asset universe. Until his spending, future commitments, and desired legacy are known, the IPS should describe the objective as long-term capital growth rather than assign an unsupported numerical return target.
+
+Mr. Miller recognizes the importance of environmental, social, and governance considerations, but ESG is a secondary preference rather than an absolute exclusion policy. The appropriate approach is therefore to consider ESG information when selecting investments and to explore ESG opportunities when they are compatible with his growth objective. The advisor should explain any expected effect on diversification, tracking error, liquidity, and return potential. Unless Mr. Miller specifies otherwise, ESG should guide the selection process without overriding the primary requirement to pursue long-term growth within the stated constraints.
+
 The simulation provides two layers of client information. The main screen displays a broad client type profile offering a general sense of the segment's characteristics. Behind the "Meet client X" button lies a detailed representative profile that reveals an individual client's life circumstances, goals, and needs. It is here that the discipline of client analysis becomes essential. Vaguely expressed preferences must be translated into specific risk tolerance assessments. Implicit time horizons must be extracted from life circumstances. Behavioral tendencies that appear in the narrative must be recognized and accommodated within the portfolio structure.
 
-The investor profiles encountered in the simulation mirror the typologies examined throughout this chapter. Growth-oriented entrepreneurs, often holding speculative wealth and exhibiting overconfidence, demand equity-heavy portfolios that would be inappropriate for a loss-averse retiree. Conservative clients, typically with earned wealth and a Cautious personality type, cannot tolerate significant drawdowns. Some clients display endowment bias, refusing to sell inherited holdings even when diversification suffers. Others exhibit mental accounting, treating different pools of capital as though they were unrelated to one another. Each profile requires the same disciplined approach we applied to Klaus, Elke, and Lukas: translate the narrative into a clear statement of objectives and binding constraints.
+The investor profiles encountered in the simulation mirror the typologies examined throughout this chapter. Mr. Miller demonstrates how a growth-oriented entrepreneur can have both high risk capacity and behavioral vulnerabilities associated with overconfidence, concentration, and a recent windfall. His case should be contrasted with a loss-averse retiree or a cautious client whose earned wealth must be protected. Each profile requires the same disciplined approach we applied to Klaus, Elke, and Lukas: translate the narrative into a clear statement of objectives and binding constraints.
 
 Misalignment between investor profiles and portfolio construction carries immediate and measurable consequences. Client satisfaction, assessed through surveys that examine different areas of fund management, directly drives fund demand and assets under management. When portfolios respect the client's risk tolerance, accommodating loss aversion rather than confronting it and honoring emotional attachments rather than dismissing them, clients remain invested through market cycles. When these psychological boundaries are violated, redemptions follow. The asset base erodes and future opportunities shrink. The discipline of client analysis is therefore not preparation for portfolio management. It is the foundation on which all subsequent decisions rest.
 
