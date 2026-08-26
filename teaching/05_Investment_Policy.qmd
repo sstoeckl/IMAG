@@ -9,13 +9,11 @@ bibliography: references.bib
 
 ## Introduction
 
-In the previous chapter we introduced a framework for understanding clients. We learned to analyze their stage of life, the source of their wealth, their behavioral biases, and their personality types. We applied this framework to the Schmidt-Miller family and uncovered Klaus's loss-averse conservatism, Elke's emotional connection to her inherited portfolio, and Lukas's overconfident risk-taking. We identified their goals, quantified their liquidity needs, assessed their risk tolerance, and calculated their return requirements.
-
-The analytical work is now complete. The task shifts from diagnosis to prescription. We must translate this understanding of the family's financial needs into a concrete investment plan.
+In the previous chapter we introduced a framework for understanding clients. We learned to analyze their stage of life, the source of their wealth, their behavioral biases, and their personality types. With the analytical work being complete, the task shifts from diagnosis to prescription. We must translate this understanding of the financial needs into a concrete investment plan.
 
 An Investment Policy Statement, or IPS, is the document that bridges the gap between client analysis and portfolio construction. It takes everything we have learned about the client and translates it into a clear, written framework that will guide every investment decision made on their behalf. The IPS shows where the portfolio is going and documents the agreement between advisor and client about how to get there.
 
-By the end of this chapter, we will understand not only what an Investment Policy Statement contains but also how to craft one that reflects the client's complete financial circumstances. We will see how the concepts of client analysis translate into practical, actionable documents.
+By the end of this chapter, we will understand not only what an Investment Policy Statement contains but also how to craft one that reflects the client's complete financial circumstances. 
 
 ## Firm-Level Investment Policy
 
@@ -27,9 +25,9 @@ A firm-level investment policy describes the investment philosophy, strategic ap
 
 The investment philosophy expresses the firm's beliefs about how financial markets work and how investment returns are generated. These beliefs are not abstract. They shape every subsequent decision about portfolio construction and management.
 
-Consider a firm that believes markets are generally efficient. In its view, consistently outperforming through security selection is difficult, so the firm will favor passive investment strategies. Portfolios will be constructed using low-cost index funds and exchange-traded funds that capture broad market returns rather than attempting to beat them. A firm with the opposite conviction, one that believes skilled investors can identify mispriced securities and generate excess returns, will dedicate resources to active management. It will invest in manager research, due diligence, and ongoing monitoring of selected strategies. Between these poles sits a firm that believes certain factors, such as value, momentum, or quality, have historically delivered premium returns. Such a firm may construct portfolios that tilt systematically toward these characteristics.
+Consider a firm that believes markets are generally efficient. In its view, consistently outperforming through security selection is difficult, so the firm will favor passive investment strategies. Portfolios will be constructed using low-cost index funds and exchange-traded funds that capture broad market returns rather than attempting to beat them. A firm with the opposite conviction, one that believes skilled investors can identify mispriced securities and generate excess returns, will dedicate resources to active management. It will invest in manager research, due diligence, and ongoing monitoring of selected strategies. Between these approaches sits a firm that believes certain factors, such as value, momentum, or quality, have historically delivered premium returns. Such a firm may construct portfolios that tilt systematically toward these characteristics.
 
-Each of these philosophical positions carries direct implications for how client portfolios will be built. A clear philosophy ensures that investment decisions are made consistently across the firm and that clients understand the intellectual framework underpinning the management of their assets.
+Each of these philosophical positions carries direct implications for how client portfolios will be built. A clear philosophy ensures that investment decisions are made consistently across the firm and that clients understand the framework underlying the management of their assets.
 
 ### Asset Allocation Framework
 
@@ -61,7 +59,7 @@ Finally, a well-documented policy demonstrates regulatory compliance and provide
 
 ## Client-Specific Investment Policy Statement
 
-With the firm-level investment policy established, we now turn to the central task of this chapter: crafting a client-specific Investment Policy Statement. The firm-level policy provides the philosophical foundation and strategic framework. The client-specific IPS applies that framework to the unique circumstances of the individual or family, translating everything we have learned through the client analysis process into an actionable document that will guide every investment decision made on their behalf.
+With the firm-level investment policy established, we now turn to the central task of this chapter: crafting a client-specific Investment Policy Statement. The firm-level policy provides the philosophical foundation and strategic framework. The client-specific IPS applies that framework to the unique circumstances of the clients, translating everything we have learned through the client analysis process into an actionable document that will guide every investment decision made on their behalf.
 
 An Investment Policy Statement is a formal written document that outlines the investment objectives, constraints, and strategies for managing a specific client's portfolio. It serves as the reference point for all investment decisions, ensuring that every trade, every allocation adjustment, and every rebalancing decision aligns with the client's expressed wishes and the advisor's professional judgment.
 
@@ -106,6 +104,163 @@ An Investment Policy Statement is not static. It evolves as the client's circums
 Not all reviews can wait for the annual cycle, however. Certain events should prompt an immediate reassessment of the IPS because they alter the foundation on which the original strategy was built. Significant changes in the client's personal circumstances fall into this category. Marriage, divorce, the birth of a child, the death of a spouse, or a major health event can fundamentally reshape financial priorities and time horizons. Financial circumstances carry the same weight. An inheritance, a business sale, a career change, or a large unexpected expense shifts the resources available to fund the client's goals and may change the return requirement or the risk that can be tolerated. External forces matter as well. A significant shift in market conditions or the economic outlook may justify a strategic adjustment to the portfolio. Changes in tax laws or regulations can alter the relative attractiveness of different asset classes or investment vehicles. Even a shift in the client's own psychology, such as a material change in risk tolerance revealed by their reaction to a market event, should trigger a fresh conversation about whether the current strategy still fits.
 
 When any of these events occur, the advisor and client return to the IPS together. They determine whether adjustments are needed and document any changes in a revised version of the document. This ongoing cycle of review and revision ensures that the IPS remains aligned with the client's current situation and that both parties maintain a shared understanding of the investment strategy over the full course of their relationship.
+
+## Drafting an Investment Policy Statement for Mr. Miller
+
+The framework above can now be applied to Mr. Miller. The aim is to turn a short client profile into an IPS that an advisor can use when making and reviewing investment decisions.
+
+Mr. Miller's age, location, source of wealth, net worth, investment preference, and allocation ranges are known. His spending needs, tax position, retained IPO shares, liquidity requirements, and reaction to previous losses are not. The IPS should record those gaps rather than quietly filling them with assumptions.
+
+### Section 1: Client Identification and Background
+
+The identification and background section establishes the context for every later decision. It records that Mr. Miller is 39, lives in New York, works as a fintech entrepreneur, and recently saw his net worth rise to approximately USD 11 million after his company's IPO.
+
+His wealth was created through entrepreneurial effort. Some of it may still be tied to the fintech business. The advisor therefore needs to find out whether Mr. Miller still owns shares in the former company, whether those shares are subject to selling restrictions, and how much of his wealth and future income depends on technology and equity markets.
+
+This matters because a portfolio can look diversified by security while remaining concentrated in the same economic risk as the client's business.
+
+### Section 2: Investment Objectives
+
+Mr. Miller's primary objective is long-term capital growth with meaningful diversification. His age, mid-career position, substantial wealth, and distance from retirement support a long investment horizon. They also suggest that he can accept substantial short-term volatility.
+
+That conclusion still needs to be tested against his spending needs and his actual response to losses. The advisor should also collect information about future commitments, income after the IPO, taxes, and any desired legacy. Until then, a qualitative objective is more defensible than a numerical return target: pursue long-term capital appreciation within the approved constraints. Returns are uncertain.
+
+### Section 3: Investment Constraints
+
+The constraints section turns the simulation's allocation rules into enforceable portfolio boundaries. The investable portfolio must satisfy all four ranges below, and the allocations must sum to 100 percent.
+
+| Asset Class | Minimum Allocation | Maximum Allocation |
+|---|---:|---:|
+| Government bonds | 7% | 35% |
+| Corporate bonds | 5% | 20% |
+| Equities | 30% | 100% |
+| Alternatives | 0% | 15% |
+
+These are limits, not a recommendation to use every maximum. The maximums cannot all be reached at once because the total must equal 100 percent. The final strategic allocation belongs in the accompanying Investment Strategy Summary. It should follow an assessment of Mr. Miller's total wealth, retained IPO exposure, liquidity needs, tax position, and response to risk.
+
+Several facts remain to be collected before implementation: near-term spending and other commitments, the liquidity and selling restrictions attached to IPO shares, the tax treatment of the portfolio and IPO shares, and any legal or regulatory limits relevant to the advisory agreement.
+
+Illiquid investments should not be selected until these questions have been answered.
+
+### Section 4: Risk Tolerance
+
+Mr. Miller's ability to take risk is high. He is 39, has substantial wealth, remains in mid-career, and has a long investment horizon. His willingness also appears high: he is eager to pursue new opportunities and comfortable with volatility in pursuit of growth.
+
+That does not settle the portfolio design. As an Individualist, Mr. Miller may rely heavily on his own judgment, trade frequently, or concentrate in opportunities that resemble his business experience. The IPS can accommodate his growth objective while putting guardrails around those tendencies through diversification limits, stress testing, monitoring of technology exposure across his balance sheet, and a predetermined rebalancing process.
+
+### Section 5: Asset Allocation and Investment Strategy
+
+Mr. Miller recognizes the importance of ESG considerations, but his primary objective is maximizing returns. ESG is therefore a selection preference, not an exclusion rule. It may inform investment choices when the opportunity remains compatible with the growth objective and the required diversification.
+
+The case does not establish a negative screen, a positive screen, or a mandatory ESG mandate, so the IPS should not invent one. Any ESG-oriented choice should be evaluated for its effect on expected return, risk, fees, liquidity, and tracking error. Unless Mr. Miller gives further instructions, ESG considerations remain subordinate to the allocation ranges and the primary objective of long-term growth. The strategy explains how the portfolio will be managed; it does not need to contain final percentages, which belong in the Investment Strategy Summary. Its main principles are diversification across asset classes and regions, attention to total-wealth exposure including the former fintech company, cost awareness, liquidity management, and disciplined rebalancing.
+
+The portfolio should be reviewed at least quarterly, with rebalancing when an asset-class weight moves outside its approved range, subject to tax and transaction costs. New contributions and cash flows can often correct smaller deviations, while a material change in Mr. Miller's circumstances may require a broader strategic review. Each permitted investment should be assessed by its role in the portfolio: equities should contribute to long-term growth without simply repeating the risks of Mr. Miller's business; government and corporate bonds require attention to credit quality, duration, liquidity, and diversification; and alternatives belong in the portfolio only when their liquidity, fees, transparency, and diversification benefit justify their inclusion.
+
+### Section 6: Monitoring and Reporting
+
+The monitoring section explains how performance and compliance will be assessed. A blended benchmark should reflect the approved strategic allocation, not an arbitrary market index. If the final weights have not yet been selected, the IPS can refer to the benchmark composition in the accompanying Investment Strategy Summary.
+
+Reports should cover valuation, performance relative to the benchmark, asset-class weights, fees, transactions, concentration exposures, and breaches of the permitted ranges. Include the retained IPO shares and related technology exposure. An account-level report may otherwise conceal concentration in total wealth.
+
+### Section 7: Responsibilities
+
+The responsibilities section turns the IPS into an agreement about conduct. Mr. Miller must provide complete and accurate information, disclose retained IPO shares and selling restrictions, explain spending and future commitments, and report changes in his business, income, tax position, or willingness to bear risk. An attractive opportunity does not automatically belong in the portfolio.
+
+The advisor manages within the approved ranges, evaluates investments in the context of the whole portfolio, monitors concentration and liquidity, documents rebalancing decisions, and communicates material developments. The custodian safeguards assets, executes authorized trades, and maintains accurate records. These duties are more useful when written in operational terms than as a general promise to act prudently.
+
+### Section 8: Review and Amendment Procedures
+
+Review the IPS at least annually and whenever a material change occurs. For Mr. Miller, triggers include a change in the fintech business or retained IPO position, the end of a selling restriction, a major change in net worth or income, new spending or liquidity needs, a change in tax circumstances, or a demonstrated change in his response to market losses.
+
+Amendments require agreement between Mr. Miller and the advisor and should be recorded in a dated version of the IPS. The Investment Strategy Summary may change as allocations are reviewed, but changes to the governing objectives, constraints, or risk assessment belong in the IPS itself.
+
+
+<!-- The following commented material is retained as an archival draft and is not part of the textbook task.
+
+### Mr. Miller Investment Policy Statement (Example)
+
+**Client:** Mr. Miller, age 39
+
+**Residence:** New York, United States
+
+**Date of Adoption:** [Current Date]
+
+**Prepared by:** Investment Advisor
+
+#### Section 1: Client Identification and Background
+
+Mr. Miller is a fintech entrepreneur from New York whose company's initial public offering increased his net worth to approximately USD 11 million. He lives in a modern loft overlooking Central Park and remains actively interested in new investment opportunities.
+
+His wealth is earned wealth created through entrepreneurial effort and recently converted in part from business wealth into financial capital. The advisor must confirm whether Mr. Miller retains shares in the former company, whether those shares are subject to selling restrictions, and how much of his total wealth remains linked to the fintech sector.
+
+#### Section 2: Investment Objectives
+
+The primary objective is to maximize long-term capital growth while maintaining a diversified portfolio. Mr. Miller is in the mid-career phase and has a long investment horizon, so the portfolio may accept substantial short-term volatility in pursuit of higher expected returns.
+
+Specific spending needs, future commitments, income after the IPO, desired legacy, and tax circumstances must be documented before a numerical return target or a detailed cash-flow schedule is adopted. Any retained IPO shares will be considered part of the total wealth picture when setting portfolio exposures.
+
+#### Section 3: Investment Constraints
+
+**Time Horizon:** The default horizon is long term, consistent with Mr. Miller's age and mid-career status. Near-term liquidity requirements and any restrictions on selling IPO-related holdings must be identified before implementation.
+
+**Liquidity:** The portfolio must retain sufficient readily marketable assets to meet documented spending and commitments. Illiquid investments may be used only after these needs and any lock-up periods have been confirmed.
+
+**Asset Allocation Ranges:** The following ranges are binding constraints for the investable portfolio.
+
+| Asset Class | Minimum Allocation | Maximum Allocation |
+|---|---:|---:|
+| Government bonds | 7% | 35% |
+| Corporate bonds | 5% | 20% |
+| Equities | 30% | 100% |
+| Alternatives | 0% | 15% |
+
+The allocations must sum to 100 percent. Alternatives are permitted but not required, and their use must be justified by their liquidity, fees, transparency, and contribution to diversification.
+
+**ESG Preference:** Mr. Miller recognizes the importance of ESG considerations but prioritizes return maximization. ESG information may therefore inform security and manager selection when the opportunity remains consistent with the growth objective. ESG criteria do not override diversification, liquidity, cost, or expected-return requirements unless Mr. Miller provides further instructions.
+
+**Legal and Tax Considerations:** The advisor must confirm the applicable tax treatment of the portfolio, IPO shares, and any gifts or transfers before implementation. All investments must comply with applicable securities laws and the client's advisory agreement.
+
+#### Section 4: Risk Tolerance
+
+Mr. Miller has a high ability to take risk, supported by his age, substantial net worth, long investment horizon, and ongoing earning capacity. His willingness to take risk is also high: he is eager to pursue new opportunities and is comfortable accepting volatility in pursuit of growth.
+
+This assessment is moderated by the behavioral risks associated with entrepreneurial success and a recent windfall. His confidence and independence may encourage concentrated positions, frequent trading, or attempts to identify the next opportunity. The advisor will use diversification limits, stress testing, and a disciplined rebalancing process to reduce these risks without substituting a conservative policy for Mr. Miller's stated growth objective.
+
+#### Section 5: Return Requirements and Investment Strategy
+
+The portfolio's primary return objective is long-term capital appreciation. A numerical return target will be established only after the advisor has documented spending needs, taxes, retained IPO exposure, and future commitments. Returns are not guaranteed, and the pursuit of higher expected returns will involve meaningful fluctuations and possible losses.
+
+The portfolio will be diversified across equities, government bonds, corporate bonds, and, where appropriate, alternatives. Equity exposure will provide the principal source of growth. Government bonds will provide stability and liquidity, corporate bonds will provide income and diversification, and alternatives may be used selectively where their role and risks are clearly understood.
+
+Investment selection will consider expected return, risk, valuation, liquidity, costs, concentration, and the relationship of each holding to Mr. Miller's business and human-capital exposure. Exposure to technology and fintech companies will be reviewed across the entire balance sheet, not only within the investment account.
+
+#### Section 6: Monitoring and Reporting
+
+The portfolio will be reviewed at least quarterly against a blended benchmark reflecting its approved strategic allocation. Reports will include valuation, performance, asset-class weights, benchmark comparisons, fees, transactions, and any breaches of the permitted ranges.
+
+The IPS will be revisited promptly after a material change in Mr. Miller's financial position, employment or business exposure, liquidity needs, tax circumstances, or willingness to bear risk.
+
+#### Section 7: Responsibilities
+
+Mr. Miller will provide complete and accurate information, disclose retained IPO holdings and restrictions, communicate changes in circumstances, and review reports in a timely manner. The advisor will manage the portfolio in accordance with this IPS, monitor the allocation ranges, communicate material developments, and act in Mr. Miller's best interest. The custodian will safeguard assets, execute authorized trades, and maintain accurate records.
+
+#### Section 8: Review and Amendment Procedures
+
+This IPS will be reviewed annually and whenever a material change occurs. Amendments must be agreed upon by Mr. Miller and the advisor and documented in writing. The advisor will retain a record of each approved version.
+
+**Acknowledgment and Acceptance**
+
+We, the undersigned, have read and understand this Investment Policy Statement and agree that it reflects Mr. Miller's circumstances, objectives, constraints, and risk tolerance as of the date below.
+
+________________________  
+**Mr. Miller**  
+Date
+
+________________________  
+**Investment Advisor**  
+Date
+
+<!--
 
 ## Drafting the Schmidt-Miller Investment Policy Statement
 
@@ -437,3 +592,4 @@ Date
 
 
 
+-->
