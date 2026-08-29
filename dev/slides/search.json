@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "IMAG Teaching Slides",
-    "section": "",
-    "text": "INVESTMENT MANAGEMENT GAME (IMAG)\n    \n      Project\n      Team\n      Outcomes\n      Events\n      Game\n      Contact\n    \n  \n\n\n\n\n\nThese slide decks accompany the IMAG Teaching Materials and are designed for six 90-minute lessons. Each deck is self-contained and links back to the relevant chapters for deeper reading.\n\n\n\nLesson\nTopic\nKey Simulation Task\n\n\n\n\nLesson 1\nIntroduction & Simulation Setup\nGet started with Cesim Invest\n\n\nLesson 2\nMarkets, Asset Classes & ESG\nMap the investable universe\n\n\nLesson 3\nClient Discovery & Investment Policy Statement\nDraft the IPS\n\n\nLesson 4\nStrategic Asset Allocation\nBuild & submit the SAA\n\n\nLesson 5\nTactical Allocation & Security Selection\nTactical tilts & security picks\n\n\nLesson 6\nPerformance Measurement & Feedback Loop\nAnalyse results & iterate"
-  },
-  {
     "objectID": "lesson-03-client-ips.html#learning-outcomes",
     "href": "lesson-03-client-ips.html#learning-outcomes",
     "title": "Lesson 3: Client Discovery & the Investment Policy Statement",
@@ -119,111 +112,6 @@
     "text": "Further Reading\n\nChapter: Client Discovery & Personas\nChapter: Investment Policy, Risk & Governance"
   },
   {
-    "objectID": "lesson-02-markets-esg.html#learning-outcomes",
-    "href": "lesson-02-markets-esg.html#learning-outcomes",
-    "title": "Lesson 2: Markets, Asset Classes & ESG",
-    "section": "Learning Outcomes",
-    "text": "Learning Outcomes\nBy the end of this lesson you will be able to:\n\nClassify the main asset classes available in IMAG and explain their risk-return characteristics\nDescribe how macro drivers influence asset prices across the cycle\nIntegrate ESG criteria into asset class analysis\nMap the investable universe to the Cesim Invest platform\n\nTeaching chapters: Markets & Asset Classes · Sustainable Investing"
-  },
-  {
-    "objectID": "lesson-02-markets-esg.html#the-investable-universe",
-    "href": "lesson-02-markets-esg.html#the-investable-universe",
-    "title": "Lesson 2: Markets, Asset Classes & ESG",
-    "section": "The Investable Universe",
-    "text": "The Investable Universe\n\nFour broad asset classes: Equities · Fixed Income · Alternatives · Cash\nEach has a distinct risk-return profile, liquidity, and ESG footprint\nThe IMAG universe is a subset of the global investable universe\n\n→ Content: table of asset classes with expected return, volatility, and correlation."
-  },
-  {
-    "objectID": "lesson-02-markets-esg.html#equities",
-    "href": "lesson-02-markets-esg.html#equities",
-    "title": "Lesson 2: Markets, Asset Classes & ESG",
-    "section": "Equities",
-    "text": "Equities\n\nRepresent ownership in firms; residual claim on cash flows\nPriced by: earnings growth, discount rate, sentiment\nKey dimensions: geography, sector, size, style (value vs. growth)\nESG dimension: governance quality, climate exposure\n\n→ Content: equity risk premium history; sector heatmap."
-  },
-  {
-    "objectID": "lesson-02-markets-esg.html#fixed-income",
-    "href": "lesson-02-markets-esg.html#fixed-income",
-    "title": "Lesson 2: Markets, Asset Classes & ESG",
-    "section": "Fixed Income",
-    "text": "Fixed Income\n\nGovernment bonds: risk-free benchmark; duration & yield curve risk\nCorporate bonds: credit spread as compensation for default risk\nYield curve dynamics: steepening, flattening, inversion\nCash & money market: liquidity reserve; real rate exposure\n\n→ Content: yield curve diagram; credit spread history."
-  },
-  {
-    "objectID": "lesson-02-markets-esg.html#alternative-assets-digital-assets",
-    "href": "lesson-02-markets-esg.html#alternative-assets-digital-assets",
-    "title": "Lesson 2: Markets, Asset Classes & ESG",
-    "section": "Alternative Assets & Digital Assets",
-    "text": "Alternative Assets & Digital Assets\n\nCommodities: inflation hedge; supply-demand dynamics\nReal estate: income + capital appreciation; illiquidity premium\nDigital assets: high volatility; low correlation (historically)\nRole in a diversified portfolio: diversification benefit vs. complexity cost\n\n→ Content: correlation matrix across asset classes."
-  },
-  {
-    "objectID": "lesson-02-markets-esg.html#currencies-fx-risk",
-    "href": "lesson-02-markets-esg.html#currencies-fx-risk",
-    "title": "Lesson 2: Markets, Asset Classes & ESG",
-    "section": "Currencies & FX Risk",
-    "text": "Currencies & FX Risk\n\nMulti-currency portfolio: returns affected by exchange rate moves\nHedging choices: full hedge, partial hedge, unhedged\nCurrency as an active return source vs. unintended risk\n\n→ Content: FX impact illustration on a cross-border equity position."
-  },
-  {
-    "objectID": "lesson-02-markets-esg.html#the-macro-framework",
-    "href": "lesson-02-markets-esg.html#the-macro-framework",
-    "title": "Lesson 2: Markets, Asset Classes & ESG",
-    "section": "The Macro Framework",
-    "text": "The Macro Framework\n\nFour macro regimes: Expansion · Slowdown · Recession · Recovery\nEach regime has characteristic asset class returns\nRegime identification: leading indicators, yield curve, PMI, credit spreads\n\n→ Content: regime wheel diagram; asset class returns by regime table."
-  },
-  {
-    "objectID": "lesson-02-markets-esg.html#key-risk-premia",
-    "href": "lesson-02-markets-esg.html#key-risk-premia",
-    "title": "Lesson 2: Markets, Asset Classes & ESG",
-    "section": "Key Risk Premia",
-    "text": "Key Risk Premia\n\n\n\nPremium\nDriver\nAsset class\n\n\n\n\nEquity risk premium\nGrowth, earnings\nEquities\n\n\nTerm premium\nDuration risk\nLong bonds\n\n\nCredit spread\nDefault risk\nCorp. bonds\n\n\nInflation premium\nReal rate uncertainty\nTIPS, commodities\n\n\nIlliquidity premium\nLock-up cost\nAlternatives\n\n\n\n→ Content: historical estimates for each premium."
-  },
-  {
-    "objectID": "lesson-02-markets-esg.html#valuation-signals",
-    "href": "lesson-02-markets-esg.html#valuation-signals",
-    "title": "Lesson 2: Markets, Asset Classes & ESG",
-    "section": "Valuation Signals",
-    "text": "Valuation Signals\n\nEquities: P/E, CAPE, earnings yield vs. bond yield (Fed model)\nBonds: real yield, breakeven inflation\nCredit: option-adjusted spread vs. historical average\nValuation is a poor short-term timer but a strong long-run anchor\n\n→ Content: current valuation dashboard from Cesim Economic Outlook screen."
-  },
-  {
-    "objectID": "lesson-02-markets-esg.html#the-esg-framework",
-    "href": "lesson-02-markets-esg.html#the-esg-framework",
-    "title": "Lesson 2: Markets, Asset Classes & ESG",
-    "section": "The ESG Framework",
-    "text": "The ESG Framework\n\nEnvironmental: climate risk, carbon footprint, resource use\nSocial: labour standards, supply chain, community impact\nGovernance: board structure, executive pay, shareholder rights\n\n→ Content: ESG rating methodology overview; data providers."
-  },
-  {
-    "objectID": "lesson-02-markets-esg.html#integration-approaches",
-    "href": "lesson-02-markets-esg.html#integration-approaches",
-    "title": "Lesson 2: Markets, Asset Classes & ESG",
-    "section": "Integration Approaches",
-    "text": "Integration Approaches\n\n\n\nApproach\nDescription\n\n\n\n\nExclusion\nRemove sectors/companies (tobacco, weapons, etc.)\n\n\nESG integration\nAdjust return/risk estimates for ESG factors\n\n\nBest-in-class\nSelect top ESG scorers within each sector\n\n\nImpact investing\nTarget measurable positive outcomes\n\n\nEngagement\nActive ownership to improve practices"
-  },
-  {
-    "objectID": "lesson-02-markets-esg.html#esg-in-the-imag-simulation",
-    "href": "lesson-02-markets-esg.html#esg-in-the-imag-simulation",
-    "title": "Lesson 2: Markets, Asset Classes & ESG",
-    "section": "ESG in the IMAG Simulation",
-    "text": "ESG in the IMAG Simulation\n\nESG score is a graded KPI — it affects your final result\nData available in Cesim: per-asset ESG ratings\nTrade-off: higher ESG score may constrain return maximisation\nYou must justify your ESG approach in the IPS (Lesson 3)\n\n→ Content: screenshot of ESG data in Cesim; worked example of ESG-adjusted allocation."
-  },
-  {
-    "objectID": "lesson-02-markets-esg.html#key-takeaways",
-    "href": "lesson-02-markets-esg.html#key-takeaways",
-    "title": "Lesson 2: Markets, Asset Classes & ESG",
-    "section": "Key Takeaways",
-    "text": "Key Takeaways\n\nAsset class choice drives the bulk of long-run portfolio returns\nMacro regime awareness improves timing and risk management\nESG is not just a constraint — it is a source of risk-adjusted alpha"
-  },
-  {
-    "objectID": "lesson-02-markets-esg.html#simulation-task-lesson-2",
-    "href": "lesson-02-markets-esg.html#simulation-task-lesson-2",
-    "title": "Lesson 2: Markets, Asset Classes & ESG",
-    "section": "Simulation Task — Lesson 2",
-    "text": "Simulation Task — Lesson 2\n\n\n\n\n\n\nBefore next lesson\n\n\n\nIn Cesim, open the Markets screen and record the available assets\nIdentify each asset’s asset class, geography, and ESG rating\nForm a preliminary view on the current macro regime (use Economic Outlook)\nRead: Markets & Asset Classes and Sustainable Investing chapters"
-  },
-  {
-    "objectID": "lesson-02-markets-esg.html#further-reading",
-    "href": "lesson-02-markets-esg.html#further-reading",
-    "title": "Lesson 2: Markets, Asset Classes & ESG",
-    "section": "Further Reading",
-    "text": "Further Reading\n\nChapter: Markets, Asset Classes, Instruments & Currencies\nChapter: Sustainable and Impact Investing\nChapter: Drivers of Asset Prices"
-  },
-  {
     "objectID": "lesson-06-performance.html#learning-outcomes",
     "href": "lesson-06-performance.html#learning-outcomes",
     "title": "Lesson 6: Performance Measurement & the Feedback Loop",
@@ -334,6 +222,328 @@
     "title": "Lesson 6: Performance Measurement & the Feedback Loop",
     "section": "Further Reading",
     "text": "Further Reading\n\nChapter: Performance Measurement & Attribution\nChapter: Feedback Loop"
+  },
+  {
+    "objectID": "lesson-02-markets-esg.html#learning-outcomes",
+    "href": "lesson-02-markets-esg.html#learning-outcomes",
+    "title": "Lesson 2: Markets, Asset Classes & ESG",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\nBy the end of this lesson you will be able to:\n\nClassify the main asset classes available in IMAG and explain their risk-return characteristics\nDescribe how macro drivers influence asset prices across the cycle\nIntegrate ESG criteria into asset class analysis\nMap the investable universe to the Cesim Invest platform\n\nTeaching chapters: Markets & Asset Classes · Sustainable Investing"
+  },
+  {
+    "objectID": "lesson-02-markets-esg.html#the-investable-universe",
+    "href": "lesson-02-markets-esg.html#the-investable-universe",
+    "title": "Lesson 2: Markets, Asset Classes & ESG",
+    "section": "The Investable Universe",
+    "text": "The Investable Universe\n\nFour broad asset classes: Equities · Fixed Income · Alternatives · Cash\nEach has a distinct risk-return profile, liquidity, and ESG footprint\nThe IMAG universe is a subset of the global investable universe\n\n→ Content: table of asset classes with expected return, volatility, and correlation."
+  },
+  {
+    "objectID": "lesson-02-markets-esg.html#equities",
+    "href": "lesson-02-markets-esg.html#equities",
+    "title": "Lesson 2: Markets, Asset Classes & ESG",
+    "section": "Equities",
+    "text": "Equities\n\nRepresent ownership in firms; residual claim on cash flows\nPriced by: earnings growth, discount rate, sentiment\nKey dimensions: geography, sector, size, style (value vs. growth)\nESG dimension: governance quality, climate exposure\n\n→ Content: equity risk premium history; sector heatmap."
+  },
+  {
+    "objectID": "lesson-02-markets-esg.html#fixed-income",
+    "href": "lesson-02-markets-esg.html#fixed-income",
+    "title": "Lesson 2: Markets, Asset Classes & ESG",
+    "section": "Fixed Income",
+    "text": "Fixed Income\n\nGovernment bonds: risk-free benchmark; duration & yield curve risk\nCorporate bonds: credit spread as compensation for default risk\nYield curve dynamics: steepening, flattening, inversion\nCash & money market: liquidity reserve; real rate exposure\n\n→ Content: yield curve diagram; credit spread history."
+  },
+  {
+    "objectID": "lesson-02-markets-esg.html#alternative-assets-digital-assets",
+    "href": "lesson-02-markets-esg.html#alternative-assets-digital-assets",
+    "title": "Lesson 2: Markets, Asset Classes & ESG",
+    "section": "Alternative Assets & Digital Assets",
+    "text": "Alternative Assets & Digital Assets\n\nCommodities: inflation hedge; supply-demand dynamics\nReal estate: income + capital appreciation; illiquidity premium\nDigital assets: high volatility; low correlation (historically)\nRole in a diversified portfolio: diversification benefit vs. complexity cost\n\n→ Content: correlation matrix across asset classes."
+  },
+  {
+    "objectID": "lesson-02-markets-esg.html#currencies-fx-risk",
+    "href": "lesson-02-markets-esg.html#currencies-fx-risk",
+    "title": "Lesson 2: Markets, Asset Classes & ESG",
+    "section": "Currencies & FX Risk",
+    "text": "Currencies & FX Risk\n\nMulti-currency portfolio: returns affected by exchange rate moves\nHedging choices: full hedge, partial hedge, unhedged\nCurrency as an active return source vs. unintended risk\n\n→ Content: FX impact illustration on a cross-border equity position."
+  },
+  {
+    "objectID": "lesson-02-markets-esg.html#the-macro-framework",
+    "href": "lesson-02-markets-esg.html#the-macro-framework",
+    "title": "Lesson 2: Markets, Asset Classes & ESG",
+    "section": "The Macro Framework",
+    "text": "The Macro Framework\n\nFour macro regimes: Expansion · Slowdown · Recession · Recovery\nEach regime has characteristic asset class returns\nRegime identification: leading indicators, yield curve, PMI, credit spreads\n\n→ Content: regime wheel diagram; asset class returns by regime table."
+  },
+  {
+    "objectID": "lesson-02-markets-esg.html#key-risk-premia",
+    "href": "lesson-02-markets-esg.html#key-risk-premia",
+    "title": "Lesson 2: Markets, Asset Classes & ESG",
+    "section": "Key Risk Premia",
+    "text": "Key Risk Premia\n\n\n\nPremium\nDriver\nAsset class\n\n\n\n\nEquity risk premium\nGrowth, earnings\nEquities\n\n\nTerm premium\nDuration risk\nLong bonds\n\n\nCredit spread\nDefault risk\nCorp. bonds\n\n\nInflation premium\nReal rate uncertainty\nTIPS, commodities\n\n\nIlliquidity premium\nLock-up cost\nAlternatives\n\n\n\n→ Content: historical estimates for each premium."
+  },
+  {
+    "objectID": "lesson-02-markets-esg.html#valuation-signals",
+    "href": "lesson-02-markets-esg.html#valuation-signals",
+    "title": "Lesson 2: Markets, Asset Classes & ESG",
+    "section": "Valuation Signals",
+    "text": "Valuation Signals\n\nEquities: P/E, CAPE, earnings yield vs. bond yield (Fed model)\nBonds: real yield, breakeven inflation\nCredit: option-adjusted spread vs. historical average\nValuation is a poor short-term timer but a strong long-run anchor\n\n→ Content: current valuation dashboard from Cesim Economic Outlook screen."
+  },
+  {
+    "objectID": "lesson-02-markets-esg.html#the-esg-framework",
+    "href": "lesson-02-markets-esg.html#the-esg-framework",
+    "title": "Lesson 2: Markets, Asset Classes & ESG",
+    "section": "The ESG Framework",
+    "text": "The ESG Framework\n\nEnvironmental: climate risk, carbon footprint, resource use\nSocial: labour standards, supply chain, community impact\nGovernance: board structure, executive pay, shareholder rights\n\n→ Content: ESG rating methodology overview; data providers."
+  },
+  {
+    "objectID": "lesson-02-markets-esg.html#integration-approaches",
+    "href": "lesson-02-markets-esg.html#integration-approaches",
+    "title": "Lesson 2: Markets, Asset Classes & ESG",
+    "section": "Integration Approaches",
+    "text": "Integration Approaches\n\n\n\nApproach\nDescription\n\n\n\n\nExclusion\nRemove sectors/companies (tobacco, weapons, etc.)\n\n\nESG integration\nAdjust return/risk estimates for ESG factors\n\n\nBest-in-class\nSelect top ESG scorers within each sector\n\n\nImpact investing\nTarget measurable positive outcomes\n\n\nEngagement\nActive ownership to improve practices"
+  },
+  {
+    "objectID": "lesson-02-markets-esg.html#esg-in-the-imag-simulation",
+    "href": "lesson-02-markets-esg.html#esg-in-the-imag-simulation",
+    "title": "Lesson 2: Markets, Asset Classes & ESG",
+    "section": "ESG in the IMAG Simulation",
+    "text": "ESG in the IMAG Simulation\n\nESG score is a graded KPI — it affects your final result\nData available in Cesim: per-asset ESG ratings\nTrade-off: higher ESG score may constrain return maximisation\nYou must justify your ESG approach in the IPS (Lesson 3)\n\n→ Content: screenshot of ESG data in Cesim; worked example of ESG-adjusted allocation."
+  },
+  {
+    "objectID": "lesson-02-markets-esg.html#key-takeaways",
+    "href": "lesson-02-markets-esg.html#key-takeaways",
+    "title": "Lesson 2: Markets, Asset Classes & ESG",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n\nAsset class choice drives the bulk of long-run portfolio returns\nMacro regime awareness improves timing and risk management\nESG is not just a constraint — it is a source of risk-adjusted alpha"
+  },
+  {
+    "objectID": "lesson-02-markets-esg.html#simulation-task-lesson-2",
+    "href": "lesson-02-markets-esg.html#simulation-task-lesson-2",
+    "title": "Lesson 2: Markets, Asset Classes & ESG",
+    "section": "Simulation Task — Lesson 2",
+    "text": "Simulation Task — Lesson 2\n\n\n\n\n\n\nBefore next lesson\n\n\n\nIn Cesim, open the Markets screen and record the available assets\nIdentify each asset’s asset class, geography, and ESG rating\nForm a preliminary view on the current macro regime (use Economic Outlook)\nRead: Markets & Asset Classes and Sustainable Investing chapters"
+  },
+  {
+    "objectID": "lesson-02-markets-esg.html#further-reading",
+    "href": "lesson-02-markets-esg.html#further-reading",
+    "title": "Lesson 2: Markets, Asset Classes & ESG",
+    "section": "Further Reading",
+    "text": "Further Reading\n\nChapter: Markets, Asset Classes, Instruments & Currencies\nChapter: Sustainable and Impact Investing\nChapter: Drivers of Asset Prices"
+  },
+  {
+    "objectID": "lesson-04-saa.html#learning-outcomes",
+    "href": "lesson-04-saa.html#learning-outcomes",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\nBy the end of this lesson you will be able to:\n\nDerive long-run capital market assumptions (returns, risks, correlations)\nDesign macro scenarios and assign probabilities\nConstruct an efficient SAA consistent with your IPS\nTranslate the SAA into Cesim Invest decision inputs\n\nTeaching chapters: Drivers of Asset Prices · Data, Forecasting & Scenario Design · Strategic Research Toolkit · Strategic Asset Allocation"
+  },
+  {
+    "objectID": "lesson-04-saa.html#what-are-capital-market-assumptions",
+    "href": "lesson-04-saa.html#what-are-capital-market-assumptions",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "What Are Capital Market Assumptions?",
+    "text": "What Are Capital Market Assumptions?\n\nLong-run (10-year) forecasts of: expected returns · volatility · correlations\nThe foundation of every SAA decision\nSources: historical data, factor models, building-block approach, survey consensus\nMust be consistent with your macro view and the IPS return objective\n\n→ Content: CMA table for IMAG asset classes (to be filled with Cesim data)."
+  },
+  {
+    "objectID": "lesson-04-saa.html#the-building-block-approach",
+    "href": "lesson-04-saa.html#the-building-block-approach",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "The Building-Block Approach",
+    "text": "The Building-Block Approach\n\\[\\text{Expected Return} = r_f + \\text{Risk Premium}\\]\n\n\n\nAsset class\nComponents\n\n\n\n\nEquities\nRisk-free + equity risk premium + regional premium\n\n\nCorp. bonds\nRisk-free + term premium + credit spread\n\n\nCommodities\nRisk-free + convenience yield + roll return\n\n\n\n→ Content: calibrated estimates using current Cesim Economic Outlook data."
+  },
+  {
+    "objectID": "lesson-04-saa.html#estimating-volatility-correlations",
+    "href": "lesson-04-saa.html#estimating-volatility-correlations",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "Estimating Volatility & Correlations",
+    "text": "Estimating Volatility & Correlations\n\nHistorical volatility: rolling 3- and 5-year windows\nCorrelation instability: correlations rise during crises (diversification fails when needed)\nShrinkage estimators: blend historical with prior (reduces estimation error)\nCorrelation matrix visualisation (heatmap)\n\n→ Content: worked example with IMAG asset data."
+  },
+  {
+    "objectID": "lesson-04-saa.html#why-scenarios",
+    "href": "lesson-04-saa.html#why-scenarios",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "Why Scenarios?",
+    "text": "Why Scenarios?\n\nPoint forecasts are always wrong — scenarios capture uncertainty\nForce structured thinking about tail risks\nEnable stress-testing of the SAA before committing\nRequired by many regulatory frameworks (IORP II, Solvency II)"
+  },
+  {
+    "objectID": "lesson-04-saa.html#a-three-scenario-framework",
+    "href": "lesson-04-saa.html#a-three-scenario-framework",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "A Three-Scenario Framework",
+    "text": "A Three-Scenario Framework\n\n\n\nScenario\nProbability\nDescription\n\n\n\n\nBase case\n60%\nModerate growth, inflation normalising\n\n\nUpside\n25%\nStrong recovery, risk-on environment\n\n\nDownside\n15%\nRecession, credit stress, flight to quality\n\n\n\n→ Content: fill with IMAG-specific macro assumptions per scenario."
+  },
+  {
+    "objectID": "lesson-04-saa.html#scenario-returns-by-asset-class",
+    "href": "lesson-04-saa.html#scenario-returns-by-asset-class",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "Scenario Returns by Asset Class",
+    "text": "Scenario Returns by Asset Class\n→ Content: table of expected returns per asset class under each scenario; probability-weighted expected return column."
+  },
+  {
+    "objectID": "lesson-04-saa.html#stress-testing-the-saa",
+    "href": "lesson-04-saa.html#stress-testing-the-saa",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "Stress Testing the SAA",
+    "text": "Stress Testing the SAA\n\nApply downside scenario to candidate SAA\nCheck: does portfolio breach IPS risk constraints?\nIf yes: reduce risk → revisit return objective → update IPS\n\n→ Content: stress test template; link to Cesim back-testing tools if available."
+  },
+  {
+    "objectID": "lesson-04-saa.html#mean-variance-optimisation",
+    "href": "lesson-04-saa.html#mean-variance-optimisation",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "Mean-Variance Optimisation",
+    "text": "Mean-Variance Optimisation\n\nClassic Markowitz framework: maximise return for a given level of risk\nInputs: expected returns, volatility, correlation matrix\nOutput: efficient frontier — the set of optimal portfolios\n\n→ Content: efficient frontier diagram; locate the IPS-consistent portfolio."
+  },
+  {
+    "objectID": "lesson-04-saa.html#practical-constraints-on-the-optimiser",
+    "href": "lesson-04-saa.html#practical-constraints-on-the-optimiser",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "Practical Constraints on the Optimiser",
+    "text": "Practical Constraints on the Optimiser\n\nNo short-selling (long-only constraint)\nMinimum and maximum weights per asset class (IPS constraints)\nTurnover limit (transaction cost management)\nESG constraint: minimum portfolio ESG score\n\n\n\n\n\n\n\nTip\n\n\nUnconstrained optimisation produces extreme corner solutions. Always impose realistic bounds."
+  },
+  {
+    "objectID": "lesson-04-saa.html#from-efficient-frontier-to-strategic-weights",
+    "href": "lesson-04-saa.html#from-efficient-frontier-to-strategic-weights",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "From Efficient Frontier to Strategic Weights",
+    "text": "From Efficient Frontier to Strategic Weights\n\nSelect the portfolio that maximises expected return subject to the IPS risk budget\nRound weights to practical increments (e.g. nearest 5%)\nCheck consistency with IPS: return target, risk limit, ESG score, liquidity\n\n→ Content: final SAA weights table for IMAG (to be completed by each team)."
+  },
+  {
+    "objectID": "lesson-04-saa.html#rebalancing-policy",
+    "href": "lesson-04-saa.html#rebalancing-policy",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "Rebalancing Policy",
+    "text": "Rebalancing Policy\n\nCalendar rebalancing: restore weights monthly/quarterly regardless of drift\nThreshold rebalancing: trigger when any weight drifts &gt; X% from target\nTransaction costs vs. tracking error trade-off\nDocument policy in IPS\n\n→ Content: comparison of rebalancing strategies; recommendation for IMAG."
+  },
+  {
+    "objectID": "lesson-04-saa.html#entering-your-saa-in-cesim",
+    "href": "lesson-04-saa.html#entering-your-saa-in-cesim",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "Entering Your SAA in Cesim",
+    "text": "Entering Your SAA in Cesim\n\nNavigate to: Strategy → Strategic Asset Allocation\nEnter target weights for each eligible asset class\nThe system enforces that weights sum to 100%\n\n→ Content: annotated screenshot of the Cesim SAA input screen."
+  },
+  {
+    "objectID": "lesson-04-saa.html#what-happens-each-round",
+    "href": "lesson-04-saa.html#what-happens-each-round",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "What Happens Each Round",
+    "text": "What Happens Each Round\n\nYour SAA is the long-run anchor — you will deviate from it tactically in Lesson 5\nCesim calculates benchmark return based on your SAA weights\nActive return = portfolio return minus SAA benchmark return"
+  },
+  {
+    "objectID": "lesson-04-saa.html#key-takeaways",
+    "href": "lesson-04-saa.html#key-takeaways",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n\nThe SAA drives 80–90% of long-run portfolio return variation\nScenario analysis prevents over-confidence in point forecasts\nEvery SAA weight must be justified by your IPS and CMA"
+  },
+  {
+    "objectID": "lesson-04-saa.html#simulation-task-lesson-4",
+    "href": "lesson-04-saa.html#simulation-task-lesson-4",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "Simulation Task — Lesson 4",
+    "text": "Simulation Task — Lesson 4\n\n\n\n\n\n\nDeliverable: Your SAA\n\n\n\nBuild your capital market assumptions table (use Cesim Economic Outlook + own research)\nDesign three scenarios with probabilities\nRun mean-variance optimisation (use provided template or Excel)\nDefine final SAA weights — consistent with your IPS\nSubmit SAA in Cesim before the round deadline"
+  },
+  {
+    "objectID": "lesson-04-saa.html#further-reading",
+    "href": "lesson-04-saa.html#further-reading",
+    "title": "Lesson 4: Strategic Asset Allocation",
+    "section": "Further Reading",
+    "text": "Further Reading\n\nChapter: Drivers of Asset Prices\nChapter: Data, Forecasting & Scenario Design\nChapter: Strategic Research Toolkit\nChapter: Strategic Asset Allocation"
+  },
+  {
+    "objectID": "lesson-01-introduction.html#learning-outcomes",
+    "href": "lesson-01-introduction.html#learning-outcomes",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\nBy the end of this lesson you will be able to:\n\nExplain the purpose and structure of the IMAG simulation\nNavigate the Cesim Invest platform and locate key decision screens\nDescribe the round-by-round investment process\nAssign team roles and agree on a collaborative workflow\nUnderstand how the simulation is graded"
+  },
+  {
+    "objectID": "lesson-01-introduction.html#what-is-imag",
+    "href": "lesson-01-introduction.html#what-is-imag",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "What is IMAG?",
+    "text": "What is IMAG?\n\nAn Erasmus+ project connecting universities across Europe\nA structured investment simulation using the Cesim Invest platform\nSix lessons that take you from blank mandate to full portfolio review\nDesigned to mirror real-world investment management processes\n\n→ Content: project background, partner institutions, learning goals."
+  },
+  {
+    "objectID": "lesson-01-introduction.html#why-a-simulation",
+    "href": "lesson-01-introduction.html#why-a-simulation",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "Why a Simulation?",
+    "text": "Why a Simulation?\n\nSafe environment to make — and learn from — real portfolio decisions\nImmediate feedback through performance metrics each round\nExposure to the full investment cycle: research → decision → review\n\n→ Content: simulation vs. classroom theory; what you can and cannot do in Cesim."
+  },
+  {
+    "objectID": "lesson-01-introduction.html#platform-overview",
+    "href": "lesson-01-introduction.html#platform-overview",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "Platform Overview",
+    "text": "Platform Overview\n\nBrowser-based; no installation required\nKey navigation areas: Economic Outlook · Strategy · Markets · Analyst · Results\nData updates each round — decisions are locked at the round deadline\n\n→ Content: annotated screenshot of the platform home screen."
+  },
+  {
+    "objectID": "lesson-01-introduction.html#the-asset-universe",
+    "href": "lesson-01-introduction.html#the-asset-universe",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "The Asset Universe",
+    "text": "The Asset Universe\n\nEquities (domestic & international)\nFixed income (government & corporate bonds)\nCash & money market instruments\nAlternative assets (commodities, real estate, digital assets)\nCurrency exposure\n\n→ Content: screenshot of the Markets screen with asset list."
+  },
+  {
+    "objectID": "lesson-01-introduction.html#key-performance-indicators",
+    "href": "lesson-01-introduction.html#key-performance-indicators",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "Key Performance Indicators",
+    "text": "Key Performance Indicators\n\n\n\nKPI\nWhat it measures\n\n\n\n\nPortfolio return\nAbsolute & relative to benchmark\n\n\nSharpe ratio\nRisk-adjusted return\n\n\nTracking error\nDeviation from benchmark\n\n\nESG score\nSustainability integration\n\n\nDrawdown\nMaximum loss from peak\n\n\n\n→ Content: where to find each KPI in Cesim Results."
+  },
+  {
+    "objectID": "lesson-01-introduction.html#round-structure",
+    "href": "lesson-01-introduction.html#round-structure",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "Round Structure",
+    "text": "Round Structure\n\nEach round = one quarter (or one year, depending on setup)\nSequence: read data → form views → submit decisions → observe results\nDecisions carry over; you must actively rebalance\n\n→ Content: round timeline diagram."
+  },
+  {
+    "objectID": "lesson-01-introduction.html#decision-deadlines-workflow",
+    "href": "lesson-01-introduction.html#decision-deadlines-workflow",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "Decision Deadlines & Workflow",
+    "text": "Decision Deadlines & Workflow\n\nDeadlines are fixed — late submissions are not accepted\nRecommended team workflow: research → debate → agree → submit\nDocument your reasoning (feeds into the feedback loop, Lesson 6)\n\n→ Content: sample team calendar / decision log template."
+  },
+  {
+    "objectID": "lesson-01-introduction.html#scoring-grading",
+    "href": "lesson-01-introduction.html#scoring-grading",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "Scoring & Grading",
+    "text": "Scoring & Grading\n\n→ Content: grading rubric (risk-adjusted return, ESG, IPS consistency, reflection quality)."
+  },
+  {
+    "objectID": "lesson-01-introduction.html#suggested-role-allocation",
+    "href": "lesson-01-introduction.html#suggested-role-allocation",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "Suggested Role Allocation",
+    "text": "Suggested Role Allocation\n\n\n\nRole\nResponsibility\n\n\n\n\nChief Investment Officer\nFinal decision sign-off, IPS owner\n\n\nMacro Analyst\nEconomic outlook, scenario design\n\n\nPortfolio Manager\nSAA/TAA, risk budgeting\n\n\nESG Analyst\nSustainability scoring, impact assessment\n\n\nPerformance Analyst\nResults review, attribution\n\n\n\n→ Adapt roles to team size. Rotate if possible."
+  },
+  {
+    "objectID": "lesson-01-introduction.html#key-takeaways",
+    "href": "lesson-01-introduction.html#key-takeaways",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n\nIMAG replicates the full investment management process in six lessons\nEvery decision should be traceable to your IPS (Lesson 3)\nDocument your reasoning — you will review it in Lesson 6"
+  },
+  {
+    "objectID": "lesson-01-introduction.html#simulation-task-lesson-1",
+    "href": "lesson-01-introduction.html#simulation-task-lesson-1",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "Simulation Task — Lesson 1",
+    "text": "Simulation Task — Lesson 1\n\n\n\n\n\n\nBefore next lesson\n\n\n\nLog in to Cesim Invest and explore all five navigation sections\nAgree on team roles and a communication channel\nRead: Introduction chapter in the teaching materials"
+  },
+  {
+    "objectID": "lesson-01-introduction.html#further-reading",
+    "href": "lesson-01-introduction.html#further-reading",
+    "title": "Lesson 1: Introduction & Simulation Setup",
+    "section": "Further Reading",
+    "text": "Further Reading\n\nTeaching materials: Introduction chapter\nEngine documentation: asset universe and KPI definitions"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "IMAG Teaching Slides",
+    "section": "",
+    "text": "INVESTMENT MANAGEMENT GAME (IMAG)\n    \n      Project\n      Team\n      Outcomes\n      Events\n      Game\n      Contact\n    \n  \n\n\n\n\n\nThese slide decks accompany the IMAG Teaching Materials and are designed for six 90-minute lessons. Each deck is self-contained and links back to the relevant chapters for deeper reading.\n\n\n\nLesson\nTopic\nKey Simulation Task\n\n\n\n\nLesson 1\nIntroduction & Simulation Setup\nGet started with Cesim Invest\n\n\nLesson 2\nMarkets, Asset Classes & ESG\nMap the investable universe\n\n\nLesson 3\nClient Discovery & Investment Policy Statement\nDraft the IPS\n\n\nLesson 4\nStrategic Asset Allocation\nBuild & submit the SAA\n\n\nLesson 5\nTactical Allocation & Security Selection\nTactical tilts & security picks\n\n\nLesson 6\nPerformance Measurement & Feedback Loop\nAnalyse results & iterate"
   },
   {
     "objectID": "lesson-05-taa-security.html#learning-outcomes",
@@ -460,215 +670,5 @@
     "title": "Lesson 5: Tactical Allocation & Security Selection",
     "section": "Further Reading",
     "text": "Further Reading\n\nChapter: Tactical Research Toolkit\nChapter: Tactical Asset Allocation & Security Selection\nChapter: Portfolio Implementation"
-  },
-  {
-    "objectID": "lesson-01-introduction.html#learning-outcomes",
-    "href": "lesson-01-introduction.html#learning-outcomes",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "Learning Outcomes",
-    "text": "Learning Outcomes\nBy the end of this lesson you will be able to:\n\nExplain the purpose and structure of the IMAG simulation\nNavigate the Cesim Invest platform and locate key decision screens\nDescribe the round-by-round investment process\nAssign team roles and agree on a collaborative workflow\nUnderstand how the simulation is graded"
-  },
-  {
-    "objectID": "lesson-01-introduction.html#what-is-imag",
-    "href": "lesson-01-introduction.html#what-is-imag",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "What is IMAG?",
-    "text": "What is IMAG?\n\nAn Erasmus+ project connecting universities across Europe\nA structured investment simulation using the Cesim Invest platform\nSix lessons that take you from blank mandate to full portfolio review\nDesigned to mirror real-world investment management processes\n\n→ Content: project background, partner institutions, learning goals."
-  },
-  {
-    "objectID": "lesson-01-introduction.html#why-a-simulation",
-    "href": "lesson-01-introduction.html#why-a-simulation",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "Why a Simulation?",
-    "text": "Why a Simulation?\n\nSafe environment to make — and learn from — real portfolio decisions\nImmediate feedback through performance metrics each round\nExposure to the full investment cycle: research → decision → review\n\n→ Content: simulation vs. classroom theory; what you can and cannot do in Cesim."
-  },
-  {
-    "objectID": "lesson-01-introduction.html#platform-overview",
-    "href": "lesson-01-introduction.html#platform-overview",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "Platform Overview",
-    "text": "Platform Overview\n\nBrowser-based; no installation required\nKey navigation areas: Economic Outlook · Strategy · Markets · Analyst · Results\nData updates each round — decisions are locked at the round deadline\n\n→ Content: annotated screenshot of the platform home screen."
-  },
-  {
-    "objectID": "lesson-01-introduction.html#the-asset-universe",
-    "href": "lesson-01-introduction.html#the-asset-universe",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "The Asset Universe",
-    "text": "The Asset Universe\n\nEquities (domestic & international)\nFixed income (government & corporate bonds)\nCash & money market instruments\nAlternative assets (commodities, real estate, digital assets)\nCurrency exposure\n\n→ Content: screenshot of the Markets screen with asset list."
-  },
-  {
-    "objectID": "lesson-01-introduction.html#key-performance-indicators",
-    "href": "lesson-01-introduction.html#key-performance-indicators",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "Key Performance Indicators",
-    "text": "Key Performance Indicators\n\n\n\nKPI\nWhat it measures\n\n\n\n\nPortfolio return\nAbsolute & relative to benchmark\n\n\nSharpe ratio\nRisk-adjusted return\n\n\nTracking error\nDeviation from benchmark\n\n\nESG score\nSustainability integration\n\n\nDrawdown\nMaximum loss from peak\n\n\n\n→ Content: where to find each KPI in Cesim Results."
-  },
-  {
-    "objectID": "lesson-01-introduction.html#round-structure",
-    "href": "lesson-01-introduction.html#round-structure",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "Round Structure",
-    "text": "Round Structure\n\nEach round = one quarter (or one year, depending on setup)\nSequence: read data → form views → submit decisions → observe results\nDecisions carry over; you must actively rebalance\n\n→ Content: round timeline diagram."
-  },
-  {
-    "objectID": "lesson-01-introduction.html#decision-deadlines-workflow",
-    "href": "lesson-01-introduction.html#decision-deadlines-workflow",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "Decision Deadlines & Workflow",
-    "text": "Decision Deadlines & Workflow\n\nDeadlines are fixed — late submissions are not accepted\nRecommended team workflow: research → debate → agree → submit\nDocument your reasoning (feeds into the feedback loop, Lesson 6)\n\n→ Content: sample team calendar / decision log template."
-  },
-  {
-    "objectID": "lesson-01-introduction.html#scoring-grading",
-    "href": "lesson-01-introduction.html#scoring-grading",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "Scoring & Grading",
-    "text": "Scoring & Grading\n\n→ Content: grading rubric (risk-adjusted return, ESG, IPS consistency, reflection quality)."
-  },
-  {
-    "objectID": "lesson-01-introduction.html#suggested-role-allocation",
-    "href": "lesson-01-introduction.html#suggested-role-allocation",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "Suggested Role Allocation",
-    "text": "Suggested Role Allocation\n\n\n\nRole\nResponsibility\n\n\n\n\nChief Investment Officer\nFinal decision sign-off, IPS owner\n\n\nMacro Analyst\nEconomic outlook, scenario design\n\n\nPortfolio Manager\nSAA/TAA, risk budgeting\n\n\nESG Analyst\nSustainability scoring, impact assessment\n\n\nPerformance Analyst\nResults review, attribution\n\n\n\n→ Adapt roles to team size. Rotate if possible."
-  },
-  {
-    "objectID": "lesson-01-introduction.html#key-takeaways",
-    "href": "lesson-01-introduction.html#key-takeaways",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "Key Takeaways",
-    "text": "Key Takeaways\n\nIMAG replicates the full investment management process in six lessons\nEvery decision should be traceable to your IPS (Lesson 3)\nDocument your reasoning — you will review it in Lesson 6"
-  },
-  {
-    "objectID": "lesson-01-introduction.html#simulation-task-lesson-1",
-    "href": "lesson-01-introduction.html#simulation-task-lesson-1",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "Simulation Task — Lesson 1",
-    "text": "Simulation Task — Lesson 1\n\n\n\n\n\n\nBefore next lesson\n\n\n\nLog in to Cesim Invest and explore all five navigation sections\nAgree on team roles and a communication channel\nRead: Introduction chapter in the teaching materials"
-  },
-  {
-    "objectID": "lesson-01-introduction.html#further-reading",
-    "href": "lesson-01-introduction.html#further-reading",
-    "title": "Lesson 1: Introduction & Simulation Setup",
-    "section": "Further Reading",
-    "text": "Further Reading\n\nTeaching materials: Introduction chapter\nEngine documentation: asset universe and KPI definitions"
-  },
-  {
-    "objectID": "lesson-04-saa.html#learning-outcomes",
-    "href": "lesson-04-saa.html#learning-outcomes",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "Learning Outcomes",
-    "text": "Learning Outcomes\nBy the end of this lesson you will be able to:\n\nDerive long-run capital market assumptions (returns, risks, correlations)\nDesign macro scenarios and assign probabilities\nConstruct an efficient SAA consistent with your IPS\nTranslate the SAA into Cesim Invest decision inputs\n\nTeaching chapters: Drivers of Asset Prices · Data, Forecasting & Scenario Design · Strategic Research Toolkit · Strategic Asset Allocation"
-  },
-  {
-    "objectID": "lesson-04-saa.html#what-are-capital-market-assumptions",
-    "href": "lesson-04-saa.html#what-are-capital-market-assumptions",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "What Are Capital Market Assumptions?",
-    "text": "What Are Capital Market Assumptions?\n\nLong-run (10-year) forecasts of: expected returns · volatility · correlations\nThe foundation of every SAA decision\nSources: historical data, factor models, building-block approach, survey consensus\nMust be consistent with your macro view and the IPS return objective\n\n→ Content: CMA table for IMAG asset classes (to be filled with Cesim data)."
-  },
-  {
-    "objectID": "lesson-04-saa.html#the-building-block-approach",
-    "href": "lesson-04-saa.html#the-building-block-approach",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "The Building-Block Approach",
-    "text": "The Building-Block Approach\n\\[\\text{Expected Return} = r_f + \\text{Risk Premium}\\]\n\n\n\nAsset class\nComponents\n\n\n\n\nEquities\nRisk-free + equity risk premium + regional premium\n\n\nCorp. bonds\nRisk-free + term premium + credit spread\n\n\nCommodities\nRisk-free + convenience yield + roll return\n\n\n\n→ Content: calibrated estimates using current Cesim Economic Outlook data."
-  },
-  {
-    "objectID": "lesson-04-saa.html#estimating-volatility-correlations",
-    "href": "lesson-04-saa.html#estimating-volatility-correlations",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "Estimating Volatility & Correlations",
-    "text": "Estimating Volatility & Correlations\n\nHistorical volatility: rolling 3- and 5-year windows\nCorrelation instability: correlations rise during crises (diversification fails when needed)\nShrinkage estimators: blend historical with prior (reduces estimation error)\nCorrelation matrix visualisation (heatmap)\n\n→ Content: worked example with IMAG asset data."
-  },
-  {
-    "objectID": "lesson-04-saa.html#why-scenarios",
-    "href": "lesson-04-saa.html#why-scenarios",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "Why Scenarios?",
-    "text": "Why Scenarios?\n\nPoint forecasts are always wrong — scenarios capture uncertainty\nForce structured thinking about tail risks\nEnable stress-testing of the SAA before committing\nRequired by many regulatory frameworks (IORP II, Solvency II)"
-  },
-  {
-    "objectID": "lesson-04-saa.html#a-three-scenario-framework",
-    "href": "lesson-04-saa.html#a-three-scenario-framework",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "A Three-Scenario Framework",
-    "text": "A Three-Scenario Framework\n\n\n\nScenario\nProbability\nDescription\n\n\n\n\nBase case\n60%\nModerate growth, inflation normalising\n\n\nUpside\n25%\nStrong recovery, risk-on environment\n\n\nDownside\n15%\nRecession, credit stress, flight to quality\n\n\n\n→ Content: fill with IMAG-specific macro assumptions per scenario."
-  },
-  {
-    "objectID": "lesson-04-saa.html#scenario-returns-by-asset-class",
-    "href": "lesson-04-saa.html#scenario-returns-by-asset-class",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "Scenario Returns by Asset Class",
-    "text": "Scenario Returns by Asset Class\n→ Content: table of expected returns per asset class under each scenario; probability-weighted expected return column."
-  },
-  {
-    "objectID": "lesson-04-saa.html#stress-testing-the-saa",
-    "href": "lesson-04-saa.html#stress-testing-the-saa",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "Stress Testing the SAA",
-    "text": "Stress Testing the SAA\n\nApply downside scenario to candidate SAA\nCheck: does portfolio breach IPS risk constraints?\nIf yes: reduce risk → revisit return objective → update IPS\n\n→ Content: stress test template; link to Cesim back-testing tools if available."
-  },
-  {
-    "objectID": "lesson-04-saa.html#mean-variance-optimisation",
-    "href": "lesson-04-saa.html#mean-variance-optimisation",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "Mean-Variance Optimisation",
-    "text": "Mean-Variance Optimisation\n\nClassic Markowitz framework: maximise return for a given level of risk\nInputs: expected returns, volatility, correlation matrix\nOutput: efficient frontier — the set of optimal portfolios\n\n→ Content: efficient frontier diagram; locate the IPS-consistent portfolio."
-  },
-  {
-    "objectID": "lesson-04-saa.html#practical-constraints-on-the-optimiser",
-    "href": "lesson-04-saa.html#practical-constraints-on-the-optimiser",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "Practical Constraints on the Optimiser",
-    "text": "Practical Constraints on the Optimiser\n\nNo short-selling (long-only constraint)\nMinimum and maximum weights per asset class (IPS constraints)\nTurnover limit (transaction cost management)\nESG constraint: minimum portfolio ESG score\n\n\n\n\n\n\n\nTip\n\n\nUnconstrained optimisation produces extreme corner solutions. Always impose realistic bounds."
-  },
-  {
-    "objectID": "lesson-04-saa.html#from-efficient-frontier-to-strategic-weights",
-    "href": "lesson-04-saa.html#from-efficient-frontier-to-strategic-weights",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "From Efficient Frontier to Strategic Weights",
-    "text": "From Efficient Frontier to Strategic Weights\n\nSelect the portfolio that maximises expected return subject to the IPS risk budget\nRound weights to practical increments (e.g. nearest 5%)\nCheck consistency with IPS: return target, risk limit, ESG score, liquidity\n\n→ Content: final SAA weights table for IMAG (to be completed by each team)."
-  },
-  {
-    "objectID": "lesson-04-saa.html#rebalancing-policy",
-    "href": "lesson-04-saa.html#rebalancing-policy",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "Rebalancing Policy",
-    "text": "Rebalancing Policy\n\nCalendar rebalancing: restore weights monthly/quarterly regardless of drift\nThreshold rebalancing: trigger when any weight drifts &gt; X% from target\nTransaction costs vs. tracking error trade-off\nDocument policy in IPS\n\n→ Content: comparison of rebalancing strategies; recommendation for IMAG."
-  },
-  {
-    "objectID": "lesson-04-saa.html#entering-your-saa-in-cesim",
-    "href": "lesson-04-saa.html#entering-your-saa-in-cesim",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "Entering Your SAA in Cesim",
-    "text": "Entering Your SAA in Cesim\n\nNavigate to: Strategy → Strategic Asset Allocation\nEnter target weights for each eligible asset class\nThe system enforces that weights sum to 100%\n\n→ Content: annotated screenshot of the Cesim SAA input screen."
-  },
-  {
-    "objectID": "lesson-04-saa.html#what-happens-each-round",
-    "href": "lesson-04-saa.html#what-happens-each-round",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "What Happens Each Round",
-    "text": "What Happens Each Round\n\nYour SAA is the long-run anchor — you will deviate from it tactically in Lesson 5\nCesim calculates benchmark return based on your SAA weights\nActive return = portfolio return minus SAA benchmark return"
-  },
-  {
-    "objectID": "lesson-04-saa.html#key-takeaways",
-    "href": "lesson-04-saa.html#key-takeaways",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "Key Takeaways",
-    "text": "Key Takeaways\n\nThe SAA drives 80–90% of long-run portfolio return variation\nScenario analysis prevents over-confidence in point forecasts\nEvery SAA weight must be justified by your IPS and CMA"
-  },
-  {
-    "objectID": "lesson-04-saa.html#simulation-task-lesson-4",
-    "href": "lesson-04-saa.html#simulation-task-lesson-4",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "Simulation Task — Lesson 4",
-    "text": "Simulation Task — Lesson 4\n\n\n\n\n\n\nDeliverable: Your SAA\n\n\n\nBuild your capital market assumptions table (use Cesim Economic Outlook + own research)\nDesign three scenarios with probabilities\nRun mean-variance optimisation (use provided template or Excel)\nDefine final SAA weights — consistent with your IPS\nSubmit SAA in Cesim before the round deadline"
-  },
-  {
-    "objectID": "lesson-04-saa.html#further-reading",
-    "href": "lesson-04-saa.html#further-reading",
-    "title": "Lesson 4: Strategic Asset Allocation",
-    "section": "Further Reading",
-    "text": "Further Reading\n\nChapter: Drivers of Asset Prices\nChapter: Data, Forecasting & Scenario Design\nChapter: Strategic Research Toolkit\nChapter: Strategic Asset Allocation"
   }
 ]
