@@ -20,7 +20,7 @@ The evidence is sobering. Decades of research on mutual fund performance demonst
 
 This does not render tactical allocation futile. It demands humility. Deviations from the strategic allocation should be modest, grounded in a clear and testable thesis, and evaluated over periods long enough to separate skill from luck. A sound process will endure stretches of underperformance. That is the nature of the endeavor. What matters is whether the process adds value over a full cycle, net of costs.
 
-We turn now to the tools and frameworks that support tactical financial analysis. The sources of tactical opportunity will be examined. Methods for evaluating those opportunities will be explored. The disciplines required for effective implementation will be set out. Valuation signals, momentum, sentiment indicators, and macroeconomic analysis each play a role. So too do the behavioral pitfalls that make tactical allocation harder in practice than it appears on paper. The aim is not to promise easy alpha. It is to provide a clear-eyed assessment of what tactical allocation can achieve—and what it cannot.
+The tools and frameworks that support tactical financial analysis follow. Valuation signals, momentum, sentiment indicators, and macroeconomic analysis each play a role. So too do the behavioral pitfalls that make tactical allocation harder in practice than it appears on paper. The aim is not to promise easy alpha. It is to provide a clear-eyed assessment of what tactical allocation can achieve—and what it cannot.
 
 ## Theoretical Foundation: Why TAA is Possible (and Hard)
 
@@ -60,6 +60,63 @@ The theoretical foundation yields a practical conclusion. Tactical deviations sh
 
 Chapter 6 established the economic variables that drive long-term asset class returns. Tactical analysis uses those same variables differently. Rather than forming ten-year expectations, it focuses on momentum and surprises—the deviation of current data from consensus forecasts and the speed at which conditions are changing.
 
+### The Business Cycle as a Tactical Frame
+
+Economic variables do not move independently. They evolve together through a recurring pattern of expansion and contraction known as the business cycle. Understanding where the economy stands within this cycle is the starting point for tactical positioning. It determines which asset classes are likely to lead and which are likely to lag over the coming quarters.
+
+The business cycle refers to the fluctuations in economic activity that occur over time, measured by indicators such as GDP growth, employment, industrial production, and consumer spending. These fluctuations are not regular in duration or amplitude. Expansions have lasted as little as a year and as long as a decade. Recessions have been brief and shallow or prolonged and severe. Yet despite this variation, the cycle follows a recognizable sequence. Activity rises to a peak, declines to a trough, and then begins to rise again. The transition points matter. The peak marks the end of expansion and the onset of contraction. The trough marks the end of recession and the beginning of recovery.
+
+#### Phases of the Business Cycle
+
+The cycle moves through four distinct phases, each defined by a particular configuration of growth, inflation, and monetary policy. The phases do not arrive on a fixed schedule, nor do they always proceed in the same order. Stagflation, for instance, does not occur in every cycle. But the framework provides a mental model for interpreting economic data and positioning portfolios.
+
+Recovery follows a recession and marks the period when growth begins to accelerate from a low base. GDP turns positive after a period of contraction, often posting above-trend rates as idle capacity is brought back online. Unemployment, which tends to lag the broader economy, may remain elevated for some time but eventually stabilizes and begins to decline. Inflation remains subdued. Excess capacity in product and labor markets prevents firms from raising prices, and inflation expectations remain anchored. Central banks maintain accommodative monetary policy, keeping interest rates low to nurture the expansion. In this environment, equities tend to perform strongly. Earnings recover from depressed levels, and valuations expand as confidence returns. Credit spreads narrow as default concerns recede, benefiting corporate bonds. Government bonds may face modest headwinds as investors begin to anticipate eventual rate increases, but the low starting point for yields provides a cushion.
+
+Expansion represents the mature phase of the cycle. Growth is robust, often running above the economy's long-term potential. Labor markets tighten. Unemployment falls to low levels, and wage pressures begin to build as firms compete for scarce workers. Inflation rises. Demand outstrips supply in key sectors, and firms gain pricing power. Central banks respond by shifting toward tighter monetary policy. Interest rates rise to prevent the economy from overheating and to keep inflation expectations from becoming unanchored. Equities may continue to perform well, as strong earnings growth offsets the headwind from rising discount rates. Sectors tied to economic activity, such as industrials and materials, often lead. Commodities perform strongly as demand for physical resources increases and as investors seek hedges against rising inflation. Government bonds typically struggle. Rising rates reduce bond prices, and real returns are compressed.
+
+Contraction, or recession, occurs when growth turns negative. GDP declines. Unemployment rises as firms cut costs in response to falling demand. Inflation falls, and deflation may become a concern if the downturn is severe and prolonged. Central banks reverse course, cutting interest rates to stimulate the economy and prevent a deflationary spiral. Equities fall as earnings disappoint and risk aversion spikes. Defensive sectors, such as consumer staples and healthcare, hold up better than cyclical sectors tied to discretionary spending and industrial activity. Government bonds perform well. Investors seek safety, and falling rates boost bond prices. The negative correlation between equities and government bonds reasserts itself. Credit spreads widen as default concerns rise, and corporate bonds, particularly lower-quality issues, may decline even as government bonds rally.
+
+Stagflation is a distinct phase that combines weak or negative growth with elevated inflation. This combination, most notably experienced during the 1970s, confounds traditional portfolio construction. Equities suffer from weak earnings and from the high discount rates that accompany inflation. Bonds suffer from inflation eroding real returns and from central banks maintaining tight policy to combat price pressures, even in the face of weak growth. Real assets, including commodities and gold, tend to perform best. Commodities benefit from the inflationary impulse and from their role as a store of value when paper currencies lose purchasing power. Gold benefits from declining real interest rates and from safe-haven demand during periods of economic and policy uncertainty.
+
+#### The Investment Clock Framework
+
+The Investment Clock framework maps these four phases to a stylized cycle. It illustrates how the leadership of different asset classes rotates as the economy moves from recovery through expansion, contraction, and stagflation. This framework, known as the 'Investment Clock,' was popularized by Trevor Greetham (2004) at Merrill Lynch to help practitioners rotate capital into assets with the highest 'regime-based' probability of success. The framework does not predict the precise timing of transitions. Cycles vary in duration and amplitude, and not every cycle includes a stagflationary phase. The sequence, however, is consistent enough to provide a useful mental model.
+
+During recovery, equities and corporate bonds lead. Earnings are rebounding, credit conditions are improving, and monetary policy remains supportive. Government bonds, having performed well during the preceding recession, begin to lag as investors rotate toward risk assets and as the outlook for rates shifts.
+
+During expansion, commodities join equities at the forefront. Strong global demand drives consumption of industrial resources, and rising inflation increases the appeal of real assets. Government bonds continue to lag as central banks raise rates and inflation expectations rise.
+
+During contraction, government bonds provide the best returns. Investors flee risk assets and seek the safety of sovereign debt. Falling rates boost bond prices. Equities and commodities fall as earnings decline and demand for physical resources wanes.
+
+During stagflation, cash and real assets offer the best protection. Equities and bonds both struggle. Commodities and gold benefit from the inflationary environment and from their role as alternative stores of value.
+
+The following table summarizes the characteristics of each phase.
+
+| Phase | Growth | Inflation | Monetary Policy | Leading Assets |
+|-------|--------|-----------|-----------------|----------------|
+| Recovery | Accelerating | Low | Accommodative | Equities, Corporate Bonds |
+| Expansion | Robust | Rising | Tightening | Commodities, Equities |
+| Contraction | Negative | Falling | Easing | Government Bonds |
+| Stagflation | Weak/Negative | Elevated | Tight | Commodities, Gold |
+
+![The Investment Clock](graphics/Strategic_Financial_Analysis/Investment-Clock.png){#fig-elementwise}
+
+#### Drivers of the Business Cycle
+
+The business cycle is driven by several interacting forces. No single factor determines the path of the economy. Instead, monetary policy, fiscal policy, consumer behavior, and exogenous shocks combine to shape the trajectory of growth and inflation.
+
+Monetary policy, set by central banks, influences the availability and cost of credit. By adjusting short-term interest rates and, in some cases, by purchasing assets to suppress longer-term yields, central banks seek to stabilize the economy and maintain price stability. Low rates encourage borrowing and investment, stimulating growth. High rates discourage borrowing and slow the economy. The Taylor rule, discussed below, provides a framework for understanding these decisions. The transmission of monetary policy operates with lags, which complicates the timing of adjustments and increases the risk of policy errors. For the tactical allocator, those lags create opportunity: markets often misprice the eventual effect of a policy shift, and positioning ahead of the full transmission can generate excess returns.
+
+Fiscal policy, set by governments, influences aggregate demand through taxation and spending. Expansionary fiscal policy, whether through tax cuts or increased government expenditure, can stimulate growth during a downturn. It can also exacerbate inflation during an expansion if the economy is already operating near capacity. Contractionary fiscal policy, through tax increases or spending cuts, can slow an overheating economy and reduce inflationary pressures. The interaction of monetary and fiscal policy shapes the overall policy stance. The two can work in concert, as when both are accommodative during a deep recession. They can also work at cross-purposes, as when fiscal policy is expansionary while monetary policy is tightening to contain inflation. The latter configuration is particularly relevant for tactical positioning, as it tends to produce higher real rates and pressure long-duration assets.
+
+Consumer demand and consumption represent the largest component of GDP in most developed economies. Household spending depends on disposable income, wealth, and confidence. When employment is strong and wages are rising, consumers spend. When uncertainty rises or balance sheets are stressed, they pull back. The saving rate rises during recessions and falls during expansions. Consumer confidence indices provide leading signals about the direction of spending—signals the tactical allocator can act on before they show up in GDP. The consumer is both a driver of the cycle and a reflection of its underlying health.
+
+Exogenous shocks can alter the trajectory of the cycle abruptly and unpredictably. Geopolitical events, including wars and trade disputes, can disrupt supply chains, shift energy prices, and alter the outlook for growth and inflation. Natural disasters can destroy productive capacity and require rebuilding, creating a temporary drag followed by a boost to activity. Pandemics can shut down entire sectors of the economy. Technological disruptions can reshape industries, rendering established business models obsolete and creating new sources of growth. These shocks must be incorporated into scenario analysis and stress testing rather than point forecasts. The investment process must be robust to their occurrence, because no tactical framework can anticipate them reliably.
+
+The business cycle framework provides a lens through which to interpret economic data and to form tactical expectations. It does not eliminate uncertainty. It imposes discipline on the tactical process by anchoring allocation decisions in a coherent view of the economic environment.
+
+### Economic Surprises and Valuation Spreads
+
 Economic surprise indices track how reported data compare to analyst expectations. When GDP growth, inflation, employment, or industrial production come in above consensus, the surprise is positive. When they fall short, it is negative. These surprises move markets. An economy that consistently beats expectations tends to see equity outperformance and bond underperformance, as growth strengthens and rate expectations adjust upward. An economy that consistently disappoints sees the opposite.
 
 The tactical signal lies not in the level of the data but in its direction and momentum. A single positive surprise may be noise. A series of positive surprises suggests that the consensus is behind the curve, that conditions are improving faster than analysts recognize. The tactical allocator can position for further positive surprises by overweighting equities and underweighting bonds. The trade works until the consensus catches up, at which point the edge disappears.
@@ -88,6 +145,112 @@ Macro-fundamental tactical analysis integrates these approaches. Economic surpri
 
 Yet the fundamental challenge remains. These signals are widely followed. Any edge they provide erodes as more investors act on them. The tactical allocator must be faster, more disciplined, or more insightful than the competition. That is a demanding standard. It is also the reason tactical deviations should remain modest, a complement to the strategic allocation rather than a replacement for it.
 
+### The Taylor Rule as a Policy Gauge
+
+Monetary policy shapes the interest rate environment that drives asset class returns, and anticipating shifts in policy is one of the tactical allocator's primary tasks. The Taylor rule provides a systematic benchmark for judging whether a central bank's policy rate is appropriately calibrated to inflation and output conditions—and, by extension, whether policy is unusually loose or tight relative to historical norms. Developed by John Taylor (1993), the rule is not a mechanical prescription that central banks follow blindly. It is a benchmark that helps the tactical allocator assess the current stance of policy and the likely direction of future changes.
+
+The Taylor rule expresses the nominal policy rate as a function of four components: the neutral real interest rate, current inflation, the deviation of inflation from target, and the deviation of output from potential. In its standard form, the rule is written as follows.
+
+$$
+i_t = r^* + \pi_t + 0.5(\pi_t - \pi^*) + 0.5(y_t - y^*)
+$$
+
+Where the variables are defined as:
+
+- $i_t$: the nominal policy rate set by the central bank
+- $r^*$: the neutral real interest rate, the rate consistent with full employment and stable inflation
+- $\pi_t$: the current inflation rate
+- $\pi^*$: the central bank's target inflation rate
+- $y_t$: the log of real GDP
+- $y^*$: the log of potential GDP, the level of output the economy can sustain without generating inflationary pressures
+- $(y_t - y^*)$: the output gap, measuring the degree of economic slack or overheating
+
+The logic of the rule is straightforward. The first two terms, $r^* + \pi_t$, establish a baseline nominal rate that would prevail if inflation were at target and output at potential. This baseline ensures that the real policy rate equals the neutral rate. The third term, $0.5(\pi_t - \pi^*)$, adjusts the policy rate in response to deviations of inflation from target. When inflation exceeds the target, the rule prescribes a higher nominal rate, which raises the real rate and slows the economy. When inflation falls below target, the rule prescribes a lower rate to stimulate activity. The fourth term, $0.5(y_t - y^*)$, adjusts the policy rate in response to the output gap. When output exceeds potential, signaling an overheating economy, the rule prescribes a higher rate. When output falls short of potential, signaling slack, the rule prescribes a lower rate.
+
+The coefficients of 0.5 on both the inflation gap and the output gap reflect the original calibration proposed by Taylor. In practice, different formulations of the rule may use different weights, and central banks may respond more aggressively to one variable than the other depending on their mandate and the prevailing economic circumstances.
+
+Consider an example. Suppose the neutral real rate is 1 percent, the central bank's inflation target is 2 percent, and current inflation is running at 3 percent. The output gap is estimated at 1 percent, indicating that the economy is operating above potential. The Taylor rule would prescribe a policy rate of:
+
+$$
+i_t = 1\% + 3\% + 0.5(3\% - 2\%) + 0.5(1\%) = 1\% + 3\% + 0.5\% + 0.5\% = 5\%
+$$
+
+The prescribed rate of 5 percent is above the neutral nominal rate of 3 percent (which is $r^* + \pi^* = 1\% + 2\%$). This reflects the need to tighten policy in response to above-target inflation and an overheating economy.
+
+Now consider an alternative scenario. Inflation is at 1 percent, below target, and the output gap is negative 2 percent, indicating a recession. The Taylor rule would prescribe:
+
+$$
+i_t = 1\% + 1\% + 0.5(1\% - 2\%) + 0.5(-2\%) = 1\% + 1\% - 0.5\% - 1\% = 0.5\%
+$$
+
+The prescribed rate of 0.5 percent is well below neutral, reflecting the need for accommodative policy to stimulate the economy and return inflation to target.
+
+The Taylor rule has significant limitations. The neutral real rate, $r^*$, is not directly observable. It must be estimated from economic data, and estimates vary across models and over time. Potential output, $y^*$, is similarly unobservable and subject to revision. The output gap is measured with error, and those errors can lead to policy mistakes. A central bank that overestimates potential output may keep rates too low for too long, fueling inflation. A central bank that underestimates potential may tighten prematurely, choking off a recovery.
+
+No central bank follows the Taylor rule mechanically. Policy decisions incorporate a wider range of information than the rule captures, including financial stability concerns, global economic conditions, and the judgment of policymakers about the likely path of the economy. The rule also does not account for the zero lower bound on nominal interest rates. When the prescribed rate falls below zero, as it did during the 2008 financial crisis and the 2020 pandemic, central banks must resort to unconventional tools such as quantitative easing and forward guidance.
+
+Despite these limitations, the Taylor rule remains a valuable framework for the tactical allocator. It provides a benchmark against which actual policy can be assessed. When the actual policy rate deviates significantly from the rate prescribed by the rule, it signals that policy is unusually accommodative or restrictive relative to historical norms. Investors can use this information to form expectations about the future path of rates and to assess the risks to their tactical positions.
+
+A prolonged period of policy rates below the Taylor rule prescription suggests that monetary policy is stimulative. This may support equity valuations and compress risk premiums in the short term, but it also raises the risk of future tightening and the potential for inflation to become unanchored. A period of rates above the prescription suggests that policy is restrictive, which may slow growth and pressure corporate earnings, but which also creates room for future rate cuts if the economy weakens.
+
+### Inflation, Deflation, and Regime-Based Positioning
+
+Inflation and deflation represent opposite risks to the purchasing power of investment portfolios. For the tactical allocator, they define the regime that determines which asset classes are likely to outperform. Chapter 6 established the mechanics of inflation, the sources from which it arises, and the Fisher relationship between nominal and real returns. What matters tactically is how each asset class behaves when the inflation regime shifts.
+
+Equities offer a partial hedge against moderate inflation. Companies can raise prices to pass through cost increases, and nominal revenues and earnings tend to rise with the price level over time. This protection is imperfect. During periods of high or volatile inflation, the relationship breaks down. Uncertainty about future costs and pricing power compresses valuations. Central banks raise rates, increasing the discount rate applied to future earnings. Equities can struggle even as the nominal economy grows. Deflation is unambiguously negative for equities. Falling prices mean falling revenues and profits. The real burden of corporate debt rises. Consumers delay purchases. Earnings decline, and valuations contract as uncertainty rises.
+
+Government bonds are highly vulnerable to unexpected inflation. Their fixed coupon payments and principal repayment lose purchasing power when prices rise faster than anticipated. Inflation-linked bonds address this vulnerability by adjusting their cash flows to reflect changes in the price level. In a deflationary environment, nominal government bonds perform well. Falling prices increase the real value of fixed payments, and central banks typically cut rates, boosting bond prices.
+
+Corporate bonds share the inflation sensitivity of government bonds but add credit risk. In an inflationary environment, rising rates pressure prices, but strong nominal growth may support corporate creditworthiness. In a deflationary environment, falling rates support prices, but rising default risk may offset this benefit, particularly for lower-quality issues.
+
+Real assets provide the most direct inflation protection. Commodities tend to rise with the price level, as the real value of physical resources is preserved. Real estate benefits from rising replacement costs and the ability to increase rents. Gold benefits from falling real interest rates, which typically accompany rising inflation expectations, and from its role as a store of value when confidence in paper currencies erodes. In deflation, real assets suffer. Commodity prices fall as demand for physical resources collapses. Real estate values decline as rents fall and vacancies rise. Gold may hold up better than other real assets if deflation is accompanied by financial instability and safe-haven demand, but falling prices are generally negative for assets that do not generate fixed cash flows.
+
+The following table summarizes the sensitivity of major asset classes to inflation and deflation.
+
+| Asset Class | Moderate Inflation | High/Volatile Inflation | Deflation |
+|-------------|-------------------|------------------------|-----------|
+| Equities | Partial hedge | Negative | Negative |
+| Nominal Government Bonds | Negative | Negative | Positive |
+| Inflation-Linked Bonds | Positive | Positive | Neutral to Negative |
+| Corporate Bonds | Negative | Negative | Mixed (rates positive, credit negative) |
+| Commodities | Positive | Positive | Negative |
+| Gold | Positive | Positive | Mixed (safe-haven may offset) |
+
+These dynamics interact with the business cycle framework. During recovery and early expansion, inflation is typically low, and deflation risks may linger from the preceding recession. During late expansion, inflation rises and becomes the primary concern. During contraction, inflation falls, and deflation may emerge. During stagflation, high inflation coexists with weak growth. Recognizing where the economy stands within this cycle, and how inflation expectations are evolving, allows the tactical allocator to position for the most likely regime while maintaining resilience against alternative scenarios.
+
+### Asset Class Responses Across the Cycle
+
+Chapter 6 established the long-run relationships between the major asset classes and the economic variables that drive their returns. This subsection maps those relationships onto the cycle phases so that the tactical allocator can see, at a glance, which assets are likely to lead and which are likely to lag in each regime.
+
+Equities are driven primarily by earnings growth and the discount rate applied to those earnings. Both are sensitive to the cycle. Performance is strongest during recovery and early expansion, when earnings are rebounding from depressed levels and valuations expand as confidence returns. Performance is weakest during recession, when earnings fall and risk aversion rises, and during stagflation, when weak growth and high discount rates compress both earnings and multiples. The table below summarizes the pattern.
+
+| Cycle Phase | Growth | Rates | Typical Equity Performance |
+|-------------|--------|-------|---------------------------|
+| Recovery | Accelerating | Low | Strong |
+| Expansion | Robust | Rising | Moderate to Strong |
+| Recession | Negative | Falling | Weak |
+| Stagflation | Weak | High | Weak |
+
+Government bonds perform best during recessions. Growth is falling, inflation is falling, and central banks are cutting rates. All three forces align to boost bond prices. They perform worst during expansions when growth is strong and inflation is rising, and during stagflation when inflation is high even as growth weakens. The safe-haven demand that emerges during crises provides an additional source of support, driving the negative correlation with equities that underpins diversified portfolio construction.
+
+Corporate bonds occupy a middle position. They perform best during recovery, when growth is accelerating and default concerns are receding but interest rates have not yet risen significantly. They struggle during recessions when default risk spikes, even though falling rates provide a partial offset. Lower-quality corporate bonds are more sensitive to credit conditions than to interest rates. Higher-quality corporate bonds are more sensitive to interest rates than to credit conditions. The choice between them is itself a tactical decision about which phase of the cycle is coming.
+
+Commodities are driven by global demand and inflation. They perform best during expansion, when strong global demand and rising inflation align, and during stagflation, when inflation remains elevated even as growth slows. They perform worst during recessions, when demand collapses and prices fall.
+
+Gold is driven primarily by real interest rates and risk aversion. It performs best during stagflation, when weak growth and high inflation combine to depress real rates, and during recessions, when risk aversion spikes and central banks cut rates. It performs worst during expansions, when real rates are rising and risk appetite is strong.
+
+The following table synthesizes these relationships.
+
+| Asset Class | GDP Growth | Inflation | Interest Rates | Best Phase | Worst Phase |
+|-------------|------------|-----------|----------------|------------|-------------|
+| Equities | Positive | Mixed | Negative | Recovery, Expansion | Recession, Stagflation |
+| Government Bonds | Neutral | Negative | Negative | Recession | Expansion, Stagflation |
+| Corporate Bonds | Positive | Negative | Negative | Recovery | Recession |
+| Commodities | Positive | Positive | Negative | Expansion, Stagflation | Recession |
+| Gold | Neutral | Positive | Negative | Stagflation, Recession | Expansion |
+
+These relationships are not mechanical. They are tendencies, not certainties. The magnitude and timing of asset class responses vary across cycles, and structural changes in the economy can alter historical patterns. Yet the framework provides a starting point for tactical positioning. It allows the allocator to form expectations that are grounded in economic logic rather than simple extrapolation of past returns.
+
 ## Sentiment and Behavioral Indicators
 
 Macro-fundamental analysis examines economic data and valuation relationships. Sentiment analysis examines the mood of the market. When fear or greed reaches an extreme, prices disconnect from fundamentals. The tactical allocator who can identify these extremes can position for the reversal.
@@ -112,7 +275,7 @@ Sentiment analysis does not provide precise timing signals. Extreme readings can
 
 Technical analysis occupies an uneasy place in the investment profession. Academics largely dismiss it. The Efficient Market Hypothesis, in its weak form, holds that past prices cannot predict future returns. Patterns in historical data should not generate excess returns. Applied managers, however, often take a different view. They use technical tools not to predict the future with certainty but to manage entry and exit points, to impose discipline on decision-making, and to assess the balance of supply and demand in markets.
 
-The distinction matters. Technical analysis as fortune-telling is speculation. Technical analysis as a framework for risk management and execution is something else entirely. It provides a structured way to act on the signals generated by fundamental and sentiment analysis. It answers the question: we have a view, now how do we implement it?
+Technical analysis as fortune-telling is speculation. Technical analysis as a framework for risk management and execution is something else entirely. It provides a structured way to act on the signals generated by fundamental and sentiment analysis. It answers the question: we have a view, now how do we implement it?
 
 Trend following is among the most widely used approaches. The premise is simple. Markets that have been rising tend to continue rising. Markets that have been falling tend to continue falling. Trends persist. The tactical allocator identifies the trend and positions with it, rather than against it.
 
@@ -168,7 +331,7 @@ The Schmidt-Miller family's strategic asset allocation, established in Chapter 7
 
 Strategic allocations are built for normal times. They assume that the future will resemble the past, that correlations will hold, and that the economic environment will fluctuate within historical ranges. When the environment shifts, the assumptions underlying the strategic allocation come under pressure.
 
-Consider a scenario. Global inflation, dormant for years, begins to rise. Supply chain disruptions, rising energy prices, and tight labor markets combine to push consumer prices higher. Central banks, initially slow to respond, begin to signal that rate increases are coming. The economic data weakens even as inflation remains elevated. The Investment Clock, introduced in Chapter 6, rotates from Expansion toward Stagflation.
+Consider a scenario. Global inflation, dormant for years, begins to rise. Supply chain disruptions, rising energy prices, and tight labor markets combine to push consumer prices higher. Central banks, initially slow to respond, begin to signal that rate increases are coming. The economic data weakens even as inflation remains elevated. The Investment Clock, introduced earlier in this chapter, rotates from Expansion toward Stagflation.
 
 This is the environment that most threatens the Schmidt-Miller portfolio. Stagflation punishes both equities and bonds. Equities suffer from weak growth and compressed margins. Bonds suffer from rising inflation and the rate increases that follow. The negative correlation between equities and bonds, which provides the diversification benefit at the heart of the strategic allocation, can break down. In the 1970s, both asset classes delivered negative real returns for years.
 
@@ -178,7 +341,7 @@ The proposed tactical pivot is to shift 5 percent of the portfolio from long-ter
 
 The trade reduces the portfolio's exposure to the asset class most at risk and increases exposure to the asset best positioned to benefit. The cost is modest. Gold is liquid. The bid-ask spread is narrow. The 5 percent shift consumes a portion of the tracking error budget but remains well within the limits set by the IPS.
 
-The tactical pivot alters the portfolio's risk profile. The expected return changes little. Gold has no earnings and pays no dividends. Its long-term expected return, as estimated in Chapter 6, is roughly in line with inflation. The benefit lies not in higher expected return but in lower expected shortfall risk under the stagflation scenario. If inflation accelerates and bonds sell off, gold provides a buffer. If the stagflation threat recedes and the Investment Clock rotates back toward Recovery, the tactical position is closed. The portfolio returns to its strategic weights.
+The tactical pivot alters the portfolio's risk profile. The expected return changes little. Gold has no earnings and pays no dividends. Its long-term expected return, as estimated in Chapter 7, is roughly in line with inflation. The benefit lies not in higher expected return but in lower expected shortfall risk under the stagflation scenario. If inflation accelerates and bonds sell off, gold provides a buffer. If the stagflation threat recedes and the Investment Clock rotates back toward Recovery, the tactical position is closed. The portfolio returns to its strategic weights.
 
 The result is evaluated against two metrics. The first is shortfall risk, introduced in Chapter 7. Does the tactical pivot reduce the probability that the portfolio fails to fund the family's €160,000 annual withdrawal? Under the stagflation scenario, the answer is yes. The gold position cushions the portfolio against the simultaneous decline in equities and bonds. The shortfall probability, estimated through Monte Carlo simulation, declines by a measurable amount.
 

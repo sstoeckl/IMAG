@@ -1,5 +1,5 @@
 ---
-  title: "Security Analysis"
+title: "Security Analysis"
 ---
 
 ::: {.callout-tip title="Lecture Slides"}
@@ -30,6 +30,53 @@ Quality of earnings refers to the sustainability and reliability of reported pro
 
 Capital structure analysis examines how the company finances its operations. The mix of debt and equity affects both risk and return. High leverage amplifies returns when business conditions are favorable but increases the risk of financial distress when they deteriorate. The analyst assesses whether the company's debt load is sustainable given its cash flow, the maturity profile of its obligations, and the covenants that govern its borrowing.
 
+### Reading the Ratios: A Worked Example
+
+The ratios that drive this analysis are most useful when read as a set. Consider a European financials company. The table below presents five years of selected fundamentals.
+
+| Metric | Last year | Two years ago | Three years ago | Four years ago | Five years ago |
+|--------|-----------|---------------|-----------------|----------------|----------------|
+| Earnings per share, EUR | 11.24 | 6.01 | 4.78 | −4.35 | 6.03 |
+| Price-to-earnings | 11.38 | 16.16 | 20.94 | −18.73 | 39.86 |
+| Return on equity, % | 16.89 | 8.87 | 7.17 | −5.29 | 7.13 |
+| Debt-to-equity | 774.42 | 1039.81 | 1043.16 | 1111.11 | 1206.94 |
+| Dividend yield, % | 1.56 | 1.80 | 1.50 | 1.84 | 0.56 |
+| Free cash flow per share, EUR | 78.94 | 24.30 | 13.25 | −5.04 | −5.38 |
+| Revenue, m EUR | 93,194 | 91,688 | 89,315 | 92,232 | 85,397 |
+| Operating margin, % | 14.21 | 10.90 | 7.51 | 5.62 | 10.17 |
+
+The individual numbers tell different stories depending on which year you look at. Read as a trend, they tell one story: a business that deteriorated sharply four years ago, then recovered, and is now operating at levels well above where it stood before the downturn.
+
+Start with earnings. Five years ago, the company earned €6.03 per share. Four years ago, it lost €4.35 per share. That swing, from positive to negative earnings, is the most important fact in the table. It is what the rest of the ratios are responding to. The loss depressed return on equity to −5.29 percent and produced a negative price-to-earnings ratio, which occurs whenever earnings are negative and the ratio becomes mathematically meaningless. The recovery that followed—€4.78, then €6.01, then €11.24—restored profitability and brought the P/E back into a normal range.
+
+The trajectory of free cash flow per share is more striking still. It went from −€5.38 five years ago to €78.94 last year. That is not a typo. A financials company can generate large swings in cash flow as balance sheet positions turn over, and the recovery from a loss year can produce cash flow that far exceeds reported earnings. The analyst's task is to determine how much of that €78.94 represents sustainable cash generation and how much reflects one-time reversals or balance sheet effects. If the cash flow is durable, the quality of earnings is high and the recovery is real. If it is not, the earnings may be paper gains.
+
+Debt-to-equity tells the deleveraging story. Five years ago the ratio stood at 1,206.94. It has fallen to 774.42. For a financials company, a debt-to-equity ratio in the high hundreds is not unusual—banks and insurers operate with leverage that would be alarming in an industrial. The relevant question is not whether the absolute level is high but whether it is falling and whether the trend is sustainable. It is falling, and steadily. The analyst notes the direction and asks what is driving it: retained earnings, asset sales, or a deliberate reduction in risk-weighted assets.
+
+Operating margin shows the recovery in profitability at the operating level. It bottomed at 5.62 percent four years ago and has climbed to 14.21 percent. Revenue, by contrast, has barely moved. The company is not growing its top line. It is improving its margins. The analyst must judge whether margin expansion can continue or whether it has run its course. If the improvement came from cost cuts, there is a limit to how much more can be extracted. If it came from a shift in business mix toward higher-margin activities, the improvement may be more durable.
+
+The dividend yield is modest, 1.56 percent, and has been stable across the period. The company maintained its dividend even during the loss year, which tells the analyst something about management's commitment to shareholder returns—and about the strength of its capital position. A company that can sustain a dividend through a loss year is not in distress.
+
+The P/E ratio of 11.38 requires interpretation. Is the company cheap? Relative to the broader European financials sector, a P/E in the low teens may be normal. Relative to its own history, the current multiple is well below the 39.86 of five years ago and the 20.94 of three years ago. But those prior multiples were calculated on much lower earnings, and the ratio is mechanically distorted by the loss year. The relevant comparison is the current P/E against the sector and against the company's own sustainable earnings power, not against ratios computed during a period of depressed or negative earnings.
+
+The final layer of analysis is the four-factor model. The table reports the company's factor betas as of the last round.
+
+| Factor | Beta |
+|--------|------|
+| Alpha, % | 0.18 |
+| Market beta | 0.93 |
+| HML beta | −0.01 |
+| MOM beta | −0.27 |
+| RMW beta | −0.31 |
+
+The market beta of 0.93 is close to one, meaning the stock moves roughly in line with the market. The HML beta of −0.01 is neutral on value versus growth—the stock is neither strongly value-tilted nor strongly growth-tilted, despite the low P/E. The negative MOM beta of −0.27 indicates that the stock has not participated in recent momentum, which is consistent with a recovery story that has not yet been fully recognized by the market. The negative RMW beta of −0.31 is the most interesting. RMW stands for Robust Minus Weak, the profitability factor. A negative loading means the stock is tilted toward less profitable companies. Yet the ROE of 16.89 percent is strong by any standard. The discrepancy suggests that the profitability factor is capturing something the trailing ROE does not—perhaps the volatility of earnings across the cycle, or the capital intensity of the business, or the market's judgment that current profitability is not sustainable.
+
+This is the kind of tension that separates mechanical factor screening from genuine analysis. A purely quantitative screen would flag the negative RMW loading as a negative signal and reduce the position. A fundamental analyst would look at the ROE and the FCF trajectory and conclude the opposite. The resolution comes from understanding what the factor is measuring and whether that measurement is informative in this particular case. Factor models are tools. They do not replace judgment.
+
+The worked example illustrates the discipline that financial statement analysis requires. Each ratio is meaningless in isolation. The P/E of 11.38 looks cheap, but not if earnings are about to decline. The ROE of 16.89 looks strong, but not if it is the peak of a cyclical recovery. The FCF of €78.94 per share looks impressive, but not if it cannot be repeated. The analyst's job is to construct a coherent narrative that explains the ratios and to test that narrative against the qualitative factors that numbers cannot capture.
+
+### Valuation
+
 Valuation translates the analysis of the business into an estimate of what its shares are worth. Two broad approaches exist. Absolute valuation models estimate intrinsic value directly, based on the present value of expected future cash flows. Relative valuation models compare the company's pricing multiples to those of similar firms. Both approaches require a discount rate, and the choice of discount rate depends on which cash flows are being discounted.
 
 The distinction between the cost of equity and the weighted average cost of capital is essential. When valuing equity directly, by discounting free cash flow to equity, the appropriate discount rate is the cost of equity, derived from the CAPM or a multi-factor model. When valuing the entire enterprise, by discounting free cash flow to the firm, the appropriate discount rate is the weighted average cost of capital, or WACC. The WACC blends the cost of equity and the after-tax cost of debt, weighted by their proportions in the company's capital structure:
@@ -40,23 +87,78 @@ $$
 
 Where $E$ is the market value of equity, $D$ is the market value of debt, $r_e$ is the cost of equity, $r_d$ is the cost of debt, and $t$ is the corporate tax rate. The tax shield on debt reduces the effective cost of borrowing, reflecting the deductibility of interest payments in most jurisdictions. A company with significant debt financing will have a WACC below its cost of equity, all else equal.
 
-The discounted cash flow model, or DCF, can be applied to either equity or the enterprise. When applied to equity, it projects the free cash flows available to shareholders after all expenses, taxes, and debt payments, then discounts them at the cost of equity:
+#### The Discounted Cash Flow Model
+
+The discounted cash flow framework is the foundation of all valuation. It expresses the value of any asset as the present value of its expected future cash flows. For equities, those cash flows are dividends or free cash flow to equity. The analyst projects them over an explicit forecast period, typically five to ten years, and then estimates a terminal value to capture everything beyond the forecast horizon.
+
+The model in its equity form is written as:
 
 $$
 V_0 = \sum_{t=1}^{n} \frac{FCFE_t}{(1 + r_e)^t} + \frac{TV}{(1 + r_e)^n}
 $$
 
-When applied to the enterprise, it projects the free cash flows available to all capital providers—both equity holders and debt holders—and discounts them at the WACC. The resulting enterprise value is then reduced by net debt to arrive at equity value. The terminal value, regardless of which approach is used, typically accounts for more than half of the total valuation. Small changes in the long-term growth rate or the terminal multiple produce large changes in the estimated intrinsic value.
+Where $FCFE_t$ is the free cash flow to equity in year $t$, $r_e$ is the cost of equity, and $TV$ is the terminal value. The cost of equity comes from the CAPM or a multifactor model, as discussed in Chapter 6. The forecast period is long enough to reach a steady state, where growth, margins, and reinvestment have normalized. Everything before that point is projected year by year, with separate assumptions for revenue growth, operating margin, capital expenditure, working capital changes, and net borrowing.
 
-The residual income model offers an alternative. It values equity directly as the sum of current book value and the present value of future residual income—the earnings that exceed the required return on equity. This approach is particularly useful for financial companies, where book value is a meaningful metric, and for companies that do not generate positive free cash flow.
+The model can also be applied to the enterprise rather than to equity directly. In that form, the analyst projects free cash flow to the firm—the cash available to all capital providers, both equity and debt holders—and discounts at the WACC. The resulting enterprise value is then reduced by net debt to arrive at equity value. The two approaches should produce the same answer if the assumptions are consistent. In practice, the enterprise approach is more common for companies with significant debt or changing capital structure, because it avoids the need to forecast financing flows separately.
+
+The terminal value typically accounts for more than half of the total valuation. This is not a flaw in the model. It reflects the reality that most of a company's value comes from cash flows beyond the explicit forecast horizon. But it means that small changes in the terminal assumptions produce large changes in the estimated value. The terminal value is usually calculated using the Gordon Growth Model:
+
+$$
+TV = \frac{FCFE_{n+1}}{r_e - g}
+$$
+
+Where $g$ is the perpetual growth rate. The Gordon Growth Model (Gordon, 1959) provides the mathematical link between a company's required return, its cash flow, and its long-term growth rate. The constraint is that $g$ must be less than $r_e$, or the formula produces a negative or infinite value. In practice, $g$ is set close to the long-run growth rate of the economy—typically 2 to 3 percent for a developed market—because no company can grow faster than the economy forever. An analyst who assumes a perpetual growth rate above the long-run rate is implicitly assuming that the company eventually becomes larger than the economy.
+
+An alternative to the Gordon Growth Model is the exit multiple approach. Instead of assuming a perpetual growth rate, the analyst assumes that the company will be sold at the end of the forecast period for a multiple of some financial metric—EBITDA, earnings, or book value—based on the multiples at which comparable companies currently trade. This approach anchors the terminal value in observable market pricing rather than in a growth assumption. Its weakness is that it assumes the exit multiple will be whatever the analyst chooses, and a terminal value based on a rich exit multiple can hide an otherwise undemanding valuation.
+
+The DCF process is intensive. It requires detailed projections of revenue, margins, capital expenditures, and working capital. It requires assumptions about the long-term growth rate, the appropriate discount rate, and the terminal multiple or growth rate. Small changes in any of these can produce large changes in the estimated value. The analyst who builds a DCF is not producing a precise number. The analyst is producing a framework within which the key drivers of value can be identified and tested.
+
+Sensitivity analysis makes this explicit. Rather than presenting a single intrinsic value estimate, the analyst varies the key assumptions across a plausible range and observes how the estimated value responds. A typical sensitivity table shows intrinsic value as a function of the discount rate and the terminal growth rate, each varied across a grid. The pattern of results is often more informative than any single cell. If the intrinsic value remains comfortably above the market price across the full range of reasonable assumptions, the margin of safety is robust. If the intrinsic value crosses the market price within that range, the valuation is fragile and the investment case depends on assumptions that may not hold.
+
+For the European financials company in the worked example, a standard DCF is difficult to apply. The free cash flow per share has swung from −€5.38 to €78.94 over five years, and a financials company's cash flows are driven by balance sheet turnover in ways that a standard FCFE forecast does not capture well. The residual income model, discussed below, is usually a better fit for banks and insurers. The DCF framework still applies in principle—the value of the equity is still the present value of the cash flows accruing to shareholders—but the practical implementation requires a different projection structure than the one used for an industrial company.
+
+#### The Residual Income Model
+
+The residual income model offers an alternative to the DCF. It values equity directly as the sum of current book value and the present value of future residual income—the earnings that exceed the required return on equity:
+
+$$
+V_0 = B_0 + \sum_{t=1}^{n} \frac{RI_t}{(1 + r_e)^t} + \frac{TV}{(1 + r_e)^n}
+$$
+
+Where $B_0$ is the current book value of equity, $RI_t$ is residual income in year $t$, and $r_e$ is the cost of equity. Residual income is defined as net income less the equity charge, which is the cost of equity multiplied by the beginning book value. In other words, a company creates value only to the extent that it earns more than its shareholders could earn elsewhere at equivalent risk.
+
+The residual income model is particularly useful for financial companies, where book value is a meaningful metric, and for companies that do not generate positive free cash flow. For the European financials company in the worked example, the residual income model may be more appropriate than a standard DCF. The large swings in free cash flow per share make it difficult to project a stable FCFE stream, but book value is well defined for a bank or insurer, and return on equity—the key driver of residual income—is directly observable and has been recovering steadily. The current ROE of 16.89 percent, against an assumed cost of equity in the range of 8 to 10 percent, implies that the company is generating positive residual income. Whether that will continue depends on the sustainability of the recovery and the discipline of management's capital allocation, which the qualitative analysis is designed to assess.
+
+#### Relative Valuation
 
 Relative valuation sidesteps the complexity of forecasting cash flows. It values a company by comparing its pricing multiples to those of comparable firms. The price-to-earnings ratio, or P/E, is the most common. A company trading at a lower P/E than its peers may be undervalued, or it may deserve a lower multiple because of slower growth, higher risk, or poorer management. Enterprise value to EBITDA, or EV/EBITDA, is popular precisely because it uses the enterprise value, reflecting the claims of both equity and debt holders, and a measure of operating profit before depreciation and amortization. This neutrality toward capital structure makes it easier to compare companies with different levels of debt. Price-to-book, or P/B, is used for asset-heavy industries like banking and insurance. Each multiple has strengths and weaknesses. The skilled analyst uses several in combination, looking for consistency across metrics rather than relying on any single one.
+
+For the financials company in the worked example, the relevant peer group would be European banks and insurers with similar business mixes. The P/E of 11.38 would be compared to the sector median. The debt-to-equity of 774.42 would be assessed against the leverage norms of the peer group. The ROE of 16.89 percent would be compared to the sector's average return on equity. If the company trades at a discount to peers on P/E while delivering a higher ROE, it may be undervalued. If the discount reflects a lower-quality earnings stream, higher risk, or weaker growth prospects, the discount may be justified.
+
+### Qualitative Factors
 
 Qualitative factors are harder to measure but no less important. A company's competitive position—its moat—determines whether it can sustain its profits against rivals. Porter's Five Forces framework assesses the threat of new entrants, the bargaining power of suppliers and customers, the threat of substitute products, and the intensity of rivalry within the industry. A wide moat, built on brand strength, switching costs, network effects, or cost advantages, protects profitability and justifies a higher valuation.
 
 Management quality matters. A skilled management team allocates capital wisely, invests in projects that earn returns above the cost of capital, and communicates honestly with shareholders. A poor management team destroys value through ill-considered acquisitions, excessive compensation, or strategic missteps. Assessing management requires reading earnings call transcripts, shareholder letters, and the track record of capital allocation decisions over time. The cost of capital is not merely a mechanical input to a DCF model. It is the hurdle rate against which management's investment decisions should be judged. A management team that consistently earns returns above the WACC creates value. One that earns returns below it destroys value, regardless of how rapidly earnings are growing.
 
+The financials company in the worked example offers a case in point. The debt-to-equity ratio has fallen from 1,206.94 to 774.42 over five years. That deleveraging did not happen by accident. It reflects a series of decisions about which businesses to grow, which to shrink, and how to allocate capital across the balance sheet. The analyst who wants to understand whether the improvement is sustainable must understand those decisions. Was the reduction in leverage achieved by selling assets, by retaining earnings, or by reducing the risk profile of the loan book? Each path implies a different forward trajectory. The numbers show what happened. The narrative explains why, and whether it will continue.
+
 Scalability of the business model determines the pace at which growth can be achieved. A software company with a product that can be distributed globally at near-zero marginal cost can grow far faster than a manufacturing company that must build new factories to increase output. The market size, the competitive landscape, and the company's ability to execute all factor into the growth assumptions that drive the valuation.
+
+### ESG as a Quality Overlay
+
+ESG analysis enters the fundamental framework as an overlay on the qualitative assessment. The financials company in the worked example reports ESG scores that have improved materially over four years.
+
+| Score type | Last year | Two years ago | Three years ago | Four years ago |
+|------------|-----------|---------------|-----------------|----------------|
+| Environmental | 90.76 | 59.44 | 61.25 | 28.38 |
+| Social | 69.15 | 53.48 | 5.90 | 14.71 |
+| Governance | 84.23 | 86.20 | 48.98 | 76.91 |
+| Overall | 73.53 | 63.59 | 26.73 | 37.63 |
+
+The overall score has risen from 26.73 to 73.53. The environmental score has more than tripled. The governance score, already reasonably strong four years ago, has been maintained. The social score shows the most dramatic improvement, from 5.90 three years ago to 69.15 last year—a swing large enough to warrant scrutiny. Scores that improve this quickly can reflect genuine operational change, or they can reflect changes in disclosure and reporting. The analyst's task is to distinguish the two. If the improvement came from new policies, new leadership, or new business practices, it may signal a durable reduction in risk. If it came primarily from expanded reporting, the underlying risk may be unchanged.
+
+For a financials company, governance is the most material of the three dimensions. Board independence, risk management practices, and executive compensation structures determine whether the institution can weather periods of stress without requiring external support. The governance score of 84.23 is strong. Combined with the falling leverage and improving profitability, it suggests an institution that has strengthened its foundations since the loss year. This is the kind of qualitative signal that supports a positive view of the security, not because ESG is a separate criterion but because it is informative about the risks that the financial statements may not yet fully reflect.
 
 Fundamental equity analysis ends with a decision. If the estimated intrinsic value exceeds the market price by a sufficient margin of safety, the stock is a candidate for purchase. If the market price exceeds intrinsic value, it is a candidate for sale or avoidance. The margin of safety protects against errors in the analysis. No valuation is precise. The analyst who demands a discount to intrinsic value before buying builds a cushion against the unknown. That discipline is at the heart of fundamental investing.
 
@@ -76,9 +178,11 @@ $$
 
 Where $s_i$ is the stock's sensitivity to the size factor and $h_i$ is its sensitivity to the value factor. A small-cap value stock would have positive loadings on both SMB and HML. A large-cap growth stock would have negative loadings on both.
 
-The three-factor model was a significant improvement over the CAPM. It explained a larger portion of the cross-sectional variation in equity returns. But it was not complete. Subsequent research identified additional factors. The momentum factor, WML for Winners Minus Losers, captures the tendency of stocks that have performed well in the recent past to continue performing well in the near term. The quality factor captures the tendency of companies with strong profitability, low leverage, and stable earnings to deliver higher risk-adjusted returns.
+The three-factor model was a significant improvement over the CAPM. It explained a larger portion of the cross-sectional variation in equity returns. But it was not complete. Subsequent research identified additional factors. The momentum factor, WML for Winners Minus Losers, captures the tendency of stocks that have performed well in the recent past to continue performing well in the near term. The quality factor, often measured as RMW for Robust Minus Weak, captures the tendency of companies with strong profitability, low leverage, and stable earnings to deliver higher risk-adjusted returns.
 
 A five-factor model incorporating market, size, value, profitability, and investment has become the standard in academic research. In practice, different managers emphasize different factors based on their investment philosophy and the evidence they find most compelling.
+
+The worked example from the previous section shows how the factor betas are reported for a single security. The HML beta of −0.01, the MOM beta of −0.27, and the RMW beta of −0.31 together place the stock in a specific region of factor space: neutral on value, negative on momentum, negative on profitability. That profile is unusual for a company with a low P/E and a high ROE. It suggests that the market is pricing in something that the trailing financials do not capture—perhaps uncertainty about the sustainability of the recovery, or a view that the profitability is cyclical rather than structural. Whether the factor profile is a signal to avoid the stock or an opportunity to buy a misunderstood business depends on the analyst's view of the underlying fundamentals. The factors describe. They do not prescribe.
 
 Factor tilting translates this framework into portfolio construction. Each stock in the universe is assigned a score on each factor. The scores are typically expressed as Z-scores, measuring how many standard deviations the stock's characteristic lies from the cross-sectional mean. A stock with a high book-to-market ratio, a low market capitalization, and strong recent momentum would score positively on value, size, and momentum. A stock with the opposite characteristics would score negatively.
 
@@ -116,6 +220,8 @@ Spread analysis evaluates whether a bond offers adequate compensation for the ri
 
 Spread analysis often begins with the benchmark curve, typically the government bond yield curve for the currency in which the bond is denominated. A corporate bond's yield is decomposed into the risk-free rate at the relevant maturity plus a spread. That spread can be further decomposed into the expected loss component and the risk premium component. The analyst judges whether the spread is sufficient given the credit profile of the issuer and the prevailing level of spreads in the market. Spreads that are tight by historical standards suggest that investors are being poorly compensated for credit risk. Spreads that are wide suggest attractive compensation, though they may also signal elevated default risk that justifies the wider spread.
 
+The statement analysis techniques developed for equities apply, with modifications, to corporate credit. The debt-to-equity ratio of 774.42 in the worked example would be assessed differently for a corporate bond investor than for an equity investor. The bondholder cares less about upside earnings growth and more about the stability of cash flows and the adequacy of assets to cover obligations in a stress scenario. A company with high leverage but stable, predictable cash flows may be a better credit than a company with low leverage and volatile earnings. The Four Cs framework captures these distinctions. Capacity is the primary concern. Character is the secondary concern. Collateral and covenants provide the backstop.
+
 Fixed income analysis, whether applied to government bonds or corporate credit, is fundamentally an exercise in assessing risk and return at the security level. The analysis does not ask whether bonds as an asset class belong in the portfolio—that is the strategic allocation decision. It asks which specific bonds best fulfill the role that the strategic allocation has assigned to them. For a government bond allocation designed to provide safety and liquidity, the emphasis falls on duration management and the issuer's creditworthiness. For a corporate bond allocation designed to enhance yield, the emphasis shifts to credit selection and spread analysis. The tools described in this section serve both purposes, adapted to the specific objectives of each allocation.
 
 ## Analyzing Alternative Assets: Commodities and Cryptocurrencies
@@ -139,26 +245,6 @@ Tokenomics refers to the economic design of a cryptocurrency. Supply is governed
 On-chain analysis exploits the transparency of public blockchains. Every transaction is recorded on a distributed ledger, visible to anyone. Analysts track the movements of large holders, known as whales, whose transactions can signal impending selling pressure or accumulation. Exchange flows—the movement of coins between wallets and exchanges—provide insight into investor behavior. Large inflows to exchanges suggest that holders are preparing to sell. Large outflows suggest accumulation and a preference for self-custody. These signals are noisy, but they provide a window into market dynamics that is unavailable in traditional asset classes.
 
 The inclusion of alternative assets in a portfolio is a strategic decision. The analytical frameworks described here inform that decision. For the Schmidt-Miller family, commodities may play a limited tactical role, as discussed in Chapter 8. Cryptocurrencies are excluded from the policy portfolio due to their volatility, their uncertain regulatory status, and their incompatibility with Klaus's loss aversion. The analyst understands them regardless, because understanding what is excluded is as important as understanding what is included. The boundaries of the permissible investment universe are not arbitrary. They are the product of analysis, grounded in the characteristics of the assets and the circumstances of the client.
-
-## Sustainability Analysis: ESG as a Risk/Return Overlay
-
-The preceding sections treated security analysis as a purely financial exercise. Cash flows, discount rates, and valuation multiples drove the assessment. A growing body of evidence suggests that non-financial factors—environmental, social, and governance characteristics—also affect risk and return. Sustainability analysis integrates these factors into the security selection process.
-
-ESG analysis is not a single method. It spans a spectrum from exclusionary screening to full integration. Exclusionary screening removes companies or entire sectors that conflict with the investor's values. Tobacco, controversial weapons, and thermal coal are common exclusions. Integration, by contrast, treats ESG factors as inputs to the investment process, alongside traditional financial metrics. A company with strong environmental practices, good labor relations, and a well-structured board may warrant a higher valuation or a lower risk premium than a peer with weaker characteristics.
-
-The rationale is twofold. First, strong ESG practices may serve as a proxy for quality. A company that manages its environmental footprint carefully, treats its employees fairly, and maintains robust board oversight is likely well-managed in other respects. The discipline required to excel on ESG dimensions correlates with the discipline required to allocate capital efficiently and execute strategy effectively. Second, weak ESG practices expose a company to risks that financial statements may not yet reflect. An oil company with a poor environmental record faces potential regulatory penalties, cleanup costs, and reputational damage. A bank with weak governance may be vulnerable to fraud or excessive risk-taking. These risks can remain dormant for years and then materialize suddenly, destroying shareholder value.
-
-The data challenge complicates ESG analysis. Unlike financial statements, which follow standardized accounting principles, ESG reporting lacks uniformity. Companies disclose different metrics, use different methodologies, and report with varying degrees of rigor. Third-party rating agencies attempt to fill the gap, but their ratings often diverge. A company rated highly by one provider may score poorly on another. The lack of standardization creates noise and opens the door to greenwashing—the practice of making misleading claims about environmental credentials to attract capital or enhance reputation.
-
-Greenwashing takes many forms. A company may announce ambitious emissions targets without a credible plan to achieve them. It may highlight its investments in renewable energy while ignoring the far larger emissions from its core operations. It may publish glossy sustainability reports while lobbying against environmental regulation. The analyst must distinguish between genuine commitment and cosmetic disclosure. This requires going beyond the ratings to examine the underlying data, the track record of follow-through, and the alignment between the company's stated values and its actions.
-
-Materiality focuses the analysis. Not every ESG factor matters for every sector. Environmental factors are material for energy companies, miners, and heavy manufacturers, where emissions, water usage, and waste disposal directly affect costs and regulatory exposure. Social factors are material for consumer-facing companies, where labor practices, supply chain conditions, and product safety shape brand reputation and customer loyalty. Governance factors are material across all sectors but are particularly important for banks and financial institutions, where risk management, board independence, and executive compensation structures determine the resilience of the franchise.
-
-The Sustainability Accounting Standards Board and similar bodies have developed sector-specific materiality maps that identify the ESG issues most likely to affect financial performance in each industry. These maps provide a starting point. The analyst uses them to focus attention where it matters most, avoiding the trap of treating all ESG factors as equally relevant for all companies.
-
-Integrating ESG into security analysis does not require abandoning traditional financial metrics. It requires supplementing them. A discounted cash flow model remains the core of equity valuation. The ESG overlay adjusts the inputs—reducing the growth rate for a company facing regulatory headwinds, increasing the discount rate for a company with governance concerns, or extending the competitive advantage period for a company with strong stakeholder relationships. The adjustment is judgmental. It is not formulaic. But it brings the analysis closer to the full reality of the business.
-
-For the Schmidt-Miller portfolio, ESG integration is not a binding constraint. The family has expressed no specific values-based exclusions. But the quality dimension of ESG aligns with Klaus's preference for stability and downside protection. Companies with strong governance and prudent risk management are less likely to experience the sudden collapses that trigger his loss aversion. The ESG lens, applied as a quality overlay rather than an exclusionary screen, serves the family's objectives without limiting the investable universe. It is not about ethics. It is about identifying risks that the financial statements have not yet priced.
 
 ## Security Selection in a Portfolio Context
 
@@ -217,6 +303,8 @@ The equity allocation requires two distinct solutions. The global equity compone
 The Swiss equity component presents a more complex problem. Elke already holds €2.5 million in inherited Swiss equities with a low cost basis. Selling these positions outright would trigger a 20 percent capital gains tax, consuming €500,000 of value. The solution is to treat the inherited holdings as a Swiss equity allocation and supplement them with a Swiss value fund that tilts toward high-dividend, low-volatility stocks. The inherited stocks are concentrated in a few names—likely the large-cap industrials and financials that dominated the Swiss market a generation ago. The value fund adds diversification across sectors and introduces a systematic, factor-based approach that the inherited portfolio lacks.
 
 The inherited holdings are mapped against the fund's holdings. Overlapping positions are retained in the inherited account to avoid realizing gains. Non-overlapping positions are added through the fund. Over time, as the inherited stocks appreciate further or as tax-loss harvesting opportunities arise, the portfolio migrates toward the factor-based fund. The transition is gradual. Elke's emotional attachment is respected. No stock is sold without her understanding and consent. But the direction of travel is clear: from a concentrated, legacy portfolio to a diversified, systematically managed one.
+
+The financials company from the worked example illustrates the type of security the analyst would assess in this context. It is a European financials stock with a recovering earnings profile, a declining debt-to-equity ratio, and a low P/E relative to its own history. It could belong in either the global equity sleeve or the Swiss equity sleeve, depending on its domicile. If it passes the quality screens—ROE above 15 percent, debt-to-equity below the sector norm, positive earnings growth—it becomes a candidate. If its factor profile (negative momentum, negative profitability loading) suggests that the recovery has not been recognized by the market, the analyst may see an opportunity. If the negative profitability loading reflects genuine concerns about the sustainability of the recovery, the analyst may pass. The decision rests on the fundamental analysis, not on the factor betas alone.
 
 Fixed income selection serves a different purpose. The government bond allocation is not designed to generate return. It is designed to immunize the family's commitment to €160,000 in annual retirement spending. The approach is liability-driven. A ladder of high-quality CHF-denominated bonds is constructed, with maturities staggered to match the expected withdrawals over the next ten years. Each bond is held to maturity, eliminating interest rate risk for that portion of the portfolio. The credit quality is impeccable. Swiss Confederation bonds and obligations of Swiss cantons with the highest credit ratings form the core.
 
