@@ -137,6 +137,151 @@ The yield curve is not infallible, and the timing of any relationship between it
 
 The economic variables examined in this section provide the raw inputs for the historical analysis and forecasting methods that follow. Historical risk and return analysis examines how asset classes have behaved across past cycles. Forecasting methods translate current conditions and long-run relationships into forward-looking capital market assumptions. The tactical application of these same variables, through the business cycle, monetary policy rules and regime-based positioning, is developed separately in the chapter on Tactical Financial Analysis.
 
+
+## From Anchors to Assumptions
+The economic variables establish the anchors. The historical record provides the volatility and correlation inputs. The building block models convert the anchors into forward-looking assumptions. This section brings all three together into a single process that produces the capital market assumptions for the strategic allocation.
+
+### The Historical Record
+
+Historical risk and return analysis examines how asset classes have performed over previous market cycles, how they have behaved during crises, and what long-term relationships exist between them. In this way, history provides context for the forward-looking assumptions we develop. Historical analysis reveals the range of possible outcomes. For global equities, the data shows average returns of 8 to 10 percent, while individual years have ranged from gains exceeding 50 percent to losses exceeding 40 percent. Understanding this range helps investors prepare for the volatility they will experience. A 20 percent loss in a single year does not mean that the strategy has failed. Such losses are a normal part of equity investing and have occurred many times in the past. History also shows how asset classes behave during periods of market stress. Global equities crashed in the 2008 financial crisis, while government bonds gained as investors sought safety. During the 2020 pandemic, equities fell sharply but recovered quickly, and bonds again provided a buffer. Although these patterns are not guaranteed to repeat, they offer a baseline for understanding how portfolios might perform in future crises.
+
+Long-term relationships between asset classes emerge from the historical record as well. Correlations can change, but the available data still provides a baseline for understanding how assets tend to relate to one another. For example Swiss equities and global equities tend to move together while still offering some diversification benefit. By contrast, the historical correlation between equities and government bonds has been near zero, a relationship that has supported balanced portfolio construction for decades.
+
+For all its value, historical analysis has significant limitations. Most importantly, past returns do not guarantee future returns. A decade of strong equity returns does not ensure that the next decade will be similar, and elevated valuations after a strong period often suggest that future returns will be lower. Additionally, structural changes can alter relationships between asset classes because financial markets are not static. The decline of inflation since the 1980s has changed the relationship between bonds and inflation. At the same time, the integration of global markets has increased correlations between international equities, while the rise of passive investing has changed market dynamics. A history spanning multiple regimes may therefore be an unreliable guide to a regime that has changed.
+
+Correlations between asset classes are not stable over time, a property known as non-stationarity. Equities and bonds may be uncorrelated in normal conditions, yet their correlations often increase during a crisis as investors sell broadly to raise cash. This phenomenon is known as correlation breakdown. During an equity-market crash, assets that were previously uncorrelated can move together and fall simultaneously as investors sell whatever they can to raise cash. The 2008 financial crisis provides a clear example. Equities fell sharply. Corporate bonds fell. Commodities fell. Real estate fell. Only the safest sovereign debt, such as US Treasuries and bonds issued by other reserve currency nations, provided the negative correlation that investors expected from their fixed income allocation. The diversification that worked in normal times partially failed when it was needed most. The 2020 pandemic offered a similar lesson, though with a faster recovery.
+
+For portfolio construction, correlation breakdown has clear implications. Diversification should not be taken for granted. The assets that provide true diversification during stress are those with a fundamental reason to behave differently, not merely those with a low historical correlation. Government bonds, particularly those issued by reserve currency sovereigns, offer this fundamental differentiation. Their safe-haven status drives flows that are uncorrelated with, or negatively correlated to, risk assets during crises.
+
+Two metrics from the historical record are used directly in the strategic allocation process. The first is volatility, measured by standard deviation, which captures the degree of fluctuation around the average return. Higher volatility implies greater uncertainty and a wider range of potential outcomes.
+
+$$
+\sigma = \sqrt{\frac{\sum_{t=1}^{n} (r_t - \bar{r})^2}{n - 1}}
+$$
+
+The second is correlation, which measures the degree to which two assets move together. Low or negative correlations provide diversification benefits.
+
+$$
+\rho_{x,y} = \frac{\text{Cov}(r_x, r_y)}{\sigma_x \sigma_y}
+$$
+
+Where the covariance between the returns of asset x and asset y is calculated as:
+
+$$
+\text{Cov}(r_x, r_y) = \frac{\sum_{t=1}^{n} (r_{x,t} - \bar{r}_x)(r_{y,t} - \bar{r}_y)}{n - 1}
+$$
+
+These two metrics, sourced from the historical record, provide the volatility and correlation inputs to the strategic allocation. They are not sufficient on their own. The limitations discussed in this subsection, including non-stationarity, correlation breakdown, and survivorship bias, must be incorporated into any forward-looking assessment.
+
+### The Building Block Models
+
+Building block models decompose expected returns into components that can be estimated separately. This provides transparency because the approach reveals the assumptions driving the final number instead of producing a single opaque forecast. Each component can be debated, refined, and updated as new information becomes available.
+
+#### The Grinold-Kroner Model for Equities
+
+Formulated by Richard Grinold and Kenneth Kroner (2002), the Grinold-Kroner model provides a comprehensive framework for decomposing equity returns. It expresses the expected nominal return as the sum of four components: dividend yield, expected earnings growth, expected change in the valuation multiple, and expected change in shares outstanding.
+
+$$
+E(R) \approx \frac{D}{P} + g + \Delta(P/E) - \Delta S
+$$
+
+Each term captures a distinct source of return.
+
+The dividend yield, $\frac{D}{P}$, is the income component of equity returns and is directly observable. A market index with a current dividend yield of 2 percent begins with a baseline expected return contribution of 2 percent from dividends alone. This is the least uncertain component because dividends are paid in cash and remain relatively stable over time.
+
+Expected earnings growth, $g$, drives capital appreciation over long periods. The framework uses expected nominal earnings-per-share growth, which can be decomposed into real earnings growth and inflation. Real earnings growth derives from real GDP growth and changes in corporate profit margins. If the economy is expected to grow by 2 percent in real terms and inflation is expected to average 2 percent, nominal earnings growth would be approximately 4 percent before considering margin changes.
+
+The third component, $\Delta(P/E)$, captures the effect of changing valuations. Expansion enhances returns beyond what earnings growth alone would produce, while contraction reduces them. Over very long periods, valuations tend to mean-revert, with high multiples eventually falling and low multiples eventually rising. The framework therefore requires an explicit assumption about the direction and magnitude of repricing. Over long horizons this contribution is often assumed to be zero because valuations are considered equally likely to expand or contract. Extreme valuations can justify a non-zero assumption.
+
+Finally, $\Delta S$ captures changes in shares outstanding. Share repurchases reduce the share count and increase earnings per share even when total earnings are unchanged, which enhances returns for remaining shareholders. New share issuance has the opposite effect. In many developed markets, buybacks have historically exceeded issuance and contributed positively to per-share earnings growth. The framework subtracts the change in shares outstanding because a reduction increases returns while an increase reduces them.
+
+![Grinold-Kroner Waterfall Chart](graphics/Strategic_Financial_Analysis/Grinold-Kroner.png)
+
+Consider a worked example. A global equity index has a current dividend yield of 2.0 percent. Consensus forecasts suggest nominal earnings growth of 4.5 percent, consistent with real GDP growth of 2.0 percent, inflation of 2.0 percent, and stable profit margins. The current P/E ratio of 18 is modestly above the long-term average of 16, suggesting a gradual mean reversion that might subtract 0.3 percent per year over the next decade. Share buybacks are expected to reduce the share count by 0.5 percent per year. The expected nominal return is:
+
+$$
+E(R) = 2.0\% + 4.5\% - 0.3\% - (-0.5\%) = 2.0\% + 4.5\% - 0.3\% + 0.5\% = 6.7\%
+$$
+
+The transparency of the model allows each assumption to be examined. Is the earnings growth assumption consistent with the economic outlook? Is the valuation adjustment reasonable given current multiples? Is the buyback assumption sustainable? The strengths of the framework lie in this transparency and in its grounding in fundamental drivers of return. The limitations are equally clear. The model is sensitive to the assumed earnings growth rate, the valuation adjustment is highly uncertain, and the model does not explicitly account for changes in the equity risk premium.
+
+The Grinold-Kroner model requires four inputs: dividend yield, earnings growth, valuation change, and share count change. In some data environments, not all four are available. When they are not, the analyst uses the simpler equity risk premium approach described below, which requires only the risk-free rate and the equity risk premium. The choice of method depends on what the data supports.
+
+#### The Yield-Based Model for Fixed Income
+
+The building block approach for fixed income is simpler than for equities because bonds are contracts with defined cash flows. Their expected return can therefore be estimated with greater precision, at least for government bonds where default risk is absent.
+
+$$
+E(R) = \text{Yield to Maturity} + \text{Reinvestment Income} - \text{Expected Default Losses}
+$$
+
+Yield to maturity is the internal rate of return that equates the present value of a bond's promised cash flows with its current market price. It is directly observable and provides the starting point for the expected return estimate.
+
+Reinvestment income requires an assumption because the yield-to-maturity calculation presumes that all coupon payments can be reinvested at the same yield. Reinvestment at the current yield is a reasonable long-term baseline, but it remains an assumption rather than a certainty.
+
+Expected default losses apply only to corporate bonds and other credit-risky instruments. For bonds issued by stable sovereigns, expected default losses are effectively zero, so the expected return is simply the yield to maturity adjusted for reinvestment assumptions. For corporate bonds, the expected return is the yield to maturity less expected default losses.
+
+Consider a worked example. A portfolio of Swiss government bonds has a yield to maturity of 1.2 percent. With zero default risk and assuming reinvestment at the current yield, the expected nominal return is 1.2 percent. A portfolio of global corporate bonds has a yield to maturity of 4.0 percent. Expected default losses are estimated at 0.2 percent per year based on the credit quality of the portfolio and historical default experience. The expected nominal return is 4.0 percent less 0.2 percent, or 3.8 percent.
+
+The strength of the yield-based approach lies in its anchor to observable market prices. Yield to maturity is a current market fact rather than a forecast, which provides a solid foundation for expectations. It also makes clear that low yields imply low expected returns. No amount of clever portfolio construction can escape this mathematical reality. The main limitations involve reinvestment risk and default estimation, both of which are uncertain over long horizons. The yield-based model provides a reasonable central estimate but not the full distribution of outcomes.
+
+### The Equity Risk Premium and the CAPM
+
+The building block models produce the fixed income assumption directly. For equities, the building block model produces an expected return when the four inputs are available, but in many data environments they are not. The alternative is the CAPM framework, which expresses the expected return on an asset as the risk-free rate plus a risk premium proportional to the asset's sensitivity to the market.
+
+$$
+E(R_i) = R_f + \beta_i [E(R_m) - R_f]
+$$
+
+For a broad equity index, beta is approximately 1.0 by construction, because the index is the market portfolio. The expression simplifies to the risk-free rate plus the equity risk premium.
+
+$$
+E(R_{\text{equity}}) = R_f + \text{ERP}
+$$
+
+Two inputs are required: the risk-free rate and the equity risk premium.
+
+The risk-free rate is the current ten-year government bond yield in the relevant currency. It is provided directly by the market data, and it is the same anchor that drives the government bond assumption.
+
+The equity risk premium is the excess return that investors expect to earn from holding equities rather than government bonds. It is the most important risk premium in finance because it determines the expected return on equities, the cost of capital for companies, and the relative attractiveness of stocks compared to bonds. It is not directly observable and must be estimated. Three broad approaches exist.
+
+Historical realized premiums provide the most common baseline. Over the long term, global equities have outperformed government bonds by 3 to 5 percent per year, depending on the market and the time period. The historical approach answers the question of what premium investors actually earned. Its limitation is that the past may not represent the future. If the historical premium was driven partly by falling discount rates and expanding valuations, it may overstate the forward-looking premium.
+
+Forward-looking estimates derive the premium from current market conditions rather than historical averages. Subtracting the current yield on government bonds from the expected equity return in the Grinold-Kroner model produces an estimate of the forward-looking equity risk premium. If equities are expected to return 6.5 percent and government bonds yield 2.5 percent, the implied equity risk premium is 4.0 percent. This approach anchors the premium in current market conditions rather than historical averages.
+
+Survey-based estimates gather expectations from professional investors, academics, and corporate managers. They offer a direct measure of what market participants expect, although they remain subject to the behavioral biases that affect all forecasts. Survey estimates have typically ranged from 3 to 5 percent.
+
+In developed markets, the typical range for the equity risk premium is 3 to 5 percent. For strategic asset allocation over a long horizon, a point estimate of 4 percent is a reasonable baseline. Scenario analysis can explore the implications of higher or lower premiums.
+
+The CAPM has significant limitations. Beta does not fully capture risk, so assets with identical betas can have different expected returns if they differ in size, valuation, or momentum. Nor is the equity risk premium stable. It varies with economic conditions and investor sentiment. Finally, the market portfolio is unobservable. Equity indices serve as practical proxies, but they exclude risky assets such as private equity, real estate, and human capital. Despite these limitations, the CAPM remains a useful benchmark. A large gap between a bottom-up forecast and the CAPM prediction should be examined. The forecast may be flawed, or the market may be offering an unusual opportunity.
+
+### Assembling the Assumptions
+
+The building blocks and the CAPM produce a set of expected returns for each asset class in the investment universe. The historical record produces the volatility and correlation inputs. Together these form the complete set of capital market assumptions that the strategic allocation requires.
+
+The following table presents a simplified set of capital market assumptions for a representative universe, illustrating the format the strategic analyst produces.
+
+| Asset Class | Expected Return | Expected Volatility | Yield | Key Rationale |
+|-------------|----------------|--------------------|-------|---------------|
+| Global Equities | 6.5% | 16% | 2.0% | Moderate growth, elevated valuations temper returns |
+| Swiss Equities | 6.0% | 14% | 2.5% | Stable domestic economy, lower volatility |
+| Global Government Bonds | 2.5% | 6% | 2.5% | Current yields anchor low expected returns |
+| Swiss Government Bonds | 1.5% | 4% | 1.2% | Safe-haven status, exceptionally low yields |
+| Global Corporate Bonds | 4.0% | 8% | 4.0% | Yield premium over governments, credit risk |
+| Cash | 1.0% | 1% | 1.0% | Short-term policy rate |
+
+These assumptions reflect a deliberate conservatism. Bond returns are anchored to current yields, which are low by historical standards. Equity returns are adjusted downward from historical averages to reflect elevated valuations. The result is a set of assumptions that acknowledges the current investment environment and provides a realistic foundation for strategic asset allocation.
+
+Before the assumptions are used, they must be checked for coherence. The expected returns must align with the risk levels. Equities should have higher expected returns than government bonds in the same currency, because equities carry more risk. The correlation matrix must be internally consistent and positive definite, a mathematical property required for valid portfolio optimization. An assumption of strong equity returns paired with an assumption of weak economic growth is incoherent unless accompanied by a specific rationale, such as a dramatic expansion of profit margins.
+
+Capital market assumptions are not static. They should be reviewed regularly, typically annually, and updated as market conditions change. A significant shift in valuations, a change in the interest rate environment, or a revision to the economic outlook should prompt a reassessment. The assumptions documented in the Investment Policy Statement serve as the baseline. Material changes should be communicated to the client and reflected in the strategic asset allocation.
+
+With capital market assumptions established, we now have the inputs required for strategic asset allocation. The next chapter will examine how to combine these asset classes into portfolios that balance risk and return in accordance with client objectives and constraints.
+
+
+
+<!--
+
 ## Historical Risk and Return Analysis
 
 Capital market assumptions look forward, but they are built on a foundation of past data. Historical risk and return analysis examines how asset classes have performed over previous market cycles, how they have behaved during crises, and what long-term relationships exist between them. In this way, history provides context and discipline for the forward-looking assumptions we develop.
@@ -760,6 +905,7 @@ Capital market assumptions are not static. They should be reviewed regularly, ty
 
 With capital market assumptions established, we now have the inputs required for strategic asset allocation. The next chapter will examine how to combine these asset classes into portfolios that balance risk and return in accordance with client objectives and constraints.
 
+-->
 
 ## Strategic Financial Analysis in the IMAG Simulation
 
@@ -775,9 +921,7 @@ The strategic analysis in IMAG follows five steps.
 4. Check the assumption set for coherence.
 5. Translate the assumptions into USD real terms and prepare them for the SAA.
 
-At each step, the analyst uses the numbers provided by the simulation. If an input is missing, it is sourced from the historical data or from the simulation's analyst defaults. Values are not invented.
-
-The client in this section is US-based. The investment universe is restricted to USD and EUR government bonds and equities. There are no corporate bonds, no currencies other than USD and EUR, and no alternative assets.
+At each step, the analyst uses the numbers provided by the simulation. The client in this section is US-based. The investment universe is restricted to USD and EUR government bonds and equities. There are no corporate bonds, no currencies other than USD and EUR, and no alternative assets.
 
 ### Step 1: Extract the Anchor Values
 
