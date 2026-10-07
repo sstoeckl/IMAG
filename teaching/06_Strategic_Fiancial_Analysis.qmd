@@ -1,5 +1,6 @@
 ---
 title: "Strategic Financial Analysis"
+bibliography: references.bib
 ---
 
 ::: {.callout-tip title="Lecture Slides"}
@@ -38,10 +39,6 @@ The two documents therefore form a dynamic relationship. The IPS sets the target
 
 Strategic financial analysis provides the inputs for strategic asset allocation. Chapter 7 examines how to determine the optimal mix of asset classes for a given client, an exercise that requires three estimates for each asset class: expected return, expected volatility, and expected correlation with the others. Together, these estimates form the capital market assumptions produced by this analysis.
 
-Absent well-reasoned capital market assumptions, asset allocation can become arbitrary. An advisor might simply default to a standard balanced portfolio without asking whether it suits current market conditions. A disciplined set of assumptions instead supports a portfolio that reflects both the client's circumstances and a sober assessment of the investment landscape.
-
-Nor is strategic financial analysis a one-time exercise. It remains an ongoing discipline: capital market assumptions must be reviewed regularly and updated as conditions change. Failing to revise them leaves portfolios anchored to outdated expectations, effectively creating an institutional form of anchoring bias.
-
 The process follows a logical sequence. Historical data, current market conditions, and economic forecasts feed three analytical components: economic analysis, historical risk and return analysis, and forecasting methods. Their combined output is the set of capital market assumptions used in strategic asset allocation. Once the long-term asset mix has been determined, it is documented in the Investment Strategy Summary that accompanies the IPS, completing the bridge from client analysis to portfolio implementation.
 
 ![The four stages of an investor’s life](graphics/Strategic_Financial_Analysis/strategic_financial_analysis_framework.png){#fig-elementwise}
@@ -49,30 +46,28 @@ The process follows a logical sequence. Historical data, current market conditio
 ## Analyzing Economic Variables
 Capital market assumptions begin with economic analysis. Because markets are forward-looking, today's prices reflect what investors expect tomorrow, and those expectations are shaped by the surrounding economy. Anyone constructing these assumptions therefore needs to understand both what drives economic activity and how changing conditions eventually appear in asset prices.
 
-The strategic use of economic data has a specific purpose. Rather than asking what the economy will do next quarter, we ask what current inflation, growth, and interest rates reveal about the long-run environment in which the portfolio will operate. Current inflation serves as a proxy for long-run inflation, current growth as a proxy for long-run growth, and current yields as the mathematical anchor for bond returns over the bond's duration. In other words, the data establishes an anchor. It is not treated as a short-term forecast.
-
-The tactical chapter uses the same data differently. Its question is whether current conditions deviate from long-run norms enough to justify a temporary tilt away from the policy portfolio. Strategic analysis sets the anchor. Tactical analysis responds to the weather.
+The strategic use of economic data has a specific purpose. Rather than asking what the economy will do next quarter, we ask what current inflation, growth, and interest rates reveal about the long-run environment in which the portfolio will operate. Current inflation serves as a proxy for long-run inflation, current growth as a proxy for long-run growth, and current yields as the mathematical anchor for bond returns over the bond's duration. 
 
 ### The Key Economic Variables
-Investment professionals track economic indicators to assess economic health and market direction. Although the most useful indicators vary by context, a core set remains broadly relevant and forms the basis for capital market assumptions.
+Investment professionals track economic indicators to assess economic health and market direction. Although the most useful indicators vary by context, a core set remains broadly relevant and forms the basis for capital market assumptions. This chapter will focus on the economic variables that are present in the IMAG simulation: gross domestic product, inflation, interest rates, employment, consumer confidence, exchange rates, and the yield curve. 
 
 #### Gross Domestic Product
-Gross domestic product measures the total value of goods and services produced within an economy over a specified period. It is the most comprehensive indicator of economic activity. GDP can be stated in nominal terms, reflecting current prices, or in real terms, adjusted for inflation to isolate changes in actual output. The growth rate of real GDP is calculated as the percentage change from one period to the next.
+The text book for gross domestic product (GDP) is: a measure of the total value of goods and services produced within an economy over a specified period. It is the most comprehensive indicator of economic activity. GDP can be stated in nominal terms, reflecting current prices, or in real terms, adjusted for inflation to isolate changes in actual output. The growth rate of real GDP is calculated as the percentage change from one period to the next.
 
 
 $$
 \text{GDP Growth} = \frac{\text{Real GDP}_t - \text{Real GDP}_{t-1}}{\text{Real GDP}_{t-1}} \times 100
 $$
 
-For investors, GDP growth matters because it directly influences corporate earnings. When the economy expands, companies sell more goods and services. Revenues rise. Profits follow. Equity markets tend to appreciate in response. When the economy contracts, earnings decline, and equities typically suffer.
+For investors, GDP is a indicator of the overall health of the economy. When the economy expands, companies sell more goods and services. Revenues rise. Profits follow. Equity markets tend to appreciate in response. When the economy contracts, earnings decline, and equities typically suffer.
 
 The relationship between GDP growth and asset returns is not uniform across all asset classes. Equities are most sensitive to growth expectations because corporate profits are a direct function of economic activity. Bonds are affected through a different channel. When GDP grows strongly, central banks tend to raise interest rates to prevent overheating, and higher rates reduce bond prices. Over long horizons, real assets such as real estate and commodities have historically participated in nominal growth, though their returns are driven by additional factors including supply conditions and inflation.
 
-GDP data is most useful here as an anchor for long-run earnings growth. Because nominal GDP combines real growth and inflation, it sets a ceiling on nominal earnings growth for the corporate sector as a whole. Individual companies may outgrow GDP for a time, but the aggregate cannot outrun the economy indefinitely. Accordingly, nominal GDP growth provides the natural starting point for the long-run earnings assumption in the Grinold-Kroner framework developed later in this chapter.
+GDP data is useful as an anchor for long-run earnings growth. Because nominal GDP combines real growth and inflation, it sets a ceiling on nominal earnings growth for the corporate sector as a whole. Individual companies may outgrow GDP for a time, but the aggregate cannot outrun the economy indefinitely. Accordingly, nominal GDP growth provides the starting point for the long-run earnings assumption in the Grinold-Kroner framework developed later in this chapter.
 
 
 #### Inflation
-Inflation measures the rate at which the level of prices for goods and services rises over time. The most important measure is the Consumer Price Index, which tracks the cost of a representative basket of goods and services purchased by households. The inflation rate is calculated as the percentage change in the index.
+Another important economic indicator is inflation. It measures the rate at which the level of prices for goods and services rises over time. The most important measure is the Consumer Price Index, which tracks the cost of a representative basket of goods and services purchased by households. The inflation rate is calculated as the percentage change in the index.
 
 $$
 \pi = \frac{\text{CPI}_t - \text{CPI}_{t-1}}{\text{CPI}_{t-1}} \times 100
@@ -84,8 +79,7 @@ Different asset classes respond differently to inflation over the long run. Equi
 
 Two roles make inflation central to the strategic analysis. It converts nominal returns into real returns, which determine the client's purchasing power, and it feeds into the nominal earnings-growth assumption for equities and nominal-yield assumption for bonds. The current rate can serve as a long-run proxy, with an adjustment toward the central bank's target when it is unusually high or low.
 
-#### The Fisher Equation
-The relationship between nominal returns, real returns, and inflation is formalized in the Fisher equation. First proposed by Irving Fisher, this equation serves as the foundation for all valuation models by separating the 'price of time' from the 'erosion of value' caused by inflation. In its exact form:
+The relationship between nominal returns, real returns, and inflation is formalized in the Fisher equation. Proposed by @fisher1930theory, this equation separates the "price of time" from the "erosion of value" caused by inflation. In its exact form:
 
 $$
 1 + r_{\text{nom}} = (1 + r_{\text{real}})(1 + \pi^e)
@@ -97,9 +91,14 @@ $$
 r_{\text{nom}} \approx r_{\text{real}} + \pi^e
 $$
 
-This relationship underpins the pricing of all financial assets. When inflation expectations rise, nominal yields must rise to deliver the same real return. When inflation expectations fall, nominal yields can fall. For bond investors, the Fisher equation explains why unexpected inflation erodes real returns. If actual inflation exceeds expected inflation, the realized real return falls below the ex-ante real rate.
+This relationship can serve as explanation for the pricing of all financial assets. When inflation expectations rise, nominal yields must rise to deliver the same real return. When inflation expectations fall, nominal yields can fall. For bond investors, the Fisher equation explains why unexpected inflation erodes real returns. If actual inflation exceeds expected inflation, the realized real return falls below the ex-ante real rate.
 
-The Fisher equation is the tool that converts nominal capital market assumptions into real ones. If the strategic analysis produces a 4.2 percent nominal expected return on USD government bonds and the inflation assumption for USD is 1.7 percent, the real expected return is approximately 2.5 percent. This real return is what the client should compare to the return target in the IPS, because the IPS is expressed in terms of the client's spending needs, which are real.
+The Fisher equation is the tool that converts nominal capital market assumptions into real ones. If the strategic analysis produces a 4.2 percent nominal expected return on USD government bonds and the inflation assumption for USD is 1.7 percent, the real expected return is approximately 2.5 percent. 
+$$
+  r_{\text{real}} = \frac{1 + r_{\text{nom}}}{1 + \pi^e} - 1 = \frac{1.042}{1.017} - 1 \approx 2.46\%
+$$
+
+This real return is what the client should compare to the return target in the IPS, because the IPS is expressed in terms of the client's spending needs, which are real.
 
 #### Interest Rates
 Interest rates, set by central banks and shaped by market forces, represent the price of money. They influence the cost of borrowing for companies and households, the discount rate used to value future cash flows, and the relative attractiveness of different asset classes. Central banks set short-term policy rates to guide economic activity. Market forces determine longer-term yields based on expectations for future policy rates, inflation, and term premiums.
@@ -122,16 +121,16 @@ For internationally diversified portfolios, exchange rates matter. When an inves
 
 The decision to hedge currency exposure depends on the investor's objectives, time horizon, and tolerance for short-term volatility. For long-term investors, currency fluctuations tend to even out over time, and the cost of hedging may outweigh the benefits. For those with shorter horizons or specific liability streams in their home currency, hedging can reduce unwanted volatility.
 
-Exchange rates matter for two strategic reasons. They determine how foreign returns translate into the investor's home currency and provide information about relative inflation and interest-rate differentials across markets. Over a long horizon, the usual base case is convergence toward purchasing power parity, implying that currencies with higher inflation depreciate against those with lower inflation. This is a modeling assumption rather than a forecast, so its sensitivity should be tested.
+For a bondholder, exchange rate uncertainty is particularly consequential. A bond's coupon and principal are fixed in the currency of issuance, so a strengthening of the investor's home currency directly reduces the value of those payments when they are translated back. The nominal cash flows are unchanged, but what they are worth to the investor in their own currency falls. Currency volatility for major pairs is often larger than the yield on the bond itself. An investor holding a EUR government bond that yields 1.6 percent is exposed to currency movements that can easily exceed that yield in either direction within a single year. 
+
 
 #### The Yield Curve
 The yield curve plots the yields of bonds of different maturities at a given point in time. Under normal conditions, the curve slopes upward. Longer-term bonds offer higher yields than shorter-term bonds, compensating investors for the risk of holding fixed payments over extended periods.
 
-The shape of the yield curve reflects market expectations about future interest rates, inflation, and term premiums. Because these expectations are embedded in the prices of bonds with capital at risk, the curve provides a continuous read on how the market views the path ahead. The slope of the curve (the difference between long-term and short-term yields) varies over time, and periods in which short-term yields exceed long-term yields have historically coincided with episodes of economic weakness. Campbell Harvey (1986) documented the relationship between the slope of the curve and subsequent business cycle conditions, establishing the yield curve as one of the most closely watched indicators in macro-financial analysis.
+The shape of the yield curve reflects market expectations about future interest rates, inflation, and term premiums. Because these expectations are embedded in the prices of bonds with capital at risk, the curve provides a continuous read on how the market views the path ahead. The slope of the curve (the difference between long-term and short-term yields) varies over time, and periods in which short-term yields exceed long-term yields have historically coincided with episodes of economic weakness. @harvey1988real documented the relationship between the slope of the curve and subsequent business cycle conditions, establishing the yield curve as one of the most closely watched indicators in macro-financial analysis.
 
 The yield curve supplies one basis for the term-premium assumption in long-horizon bond forecasts. The difference between the ten-year yield and the short-term policy rate measures the premium the market is demanding. A wide spread supports a positive contribution to long-bond returns. A narrow or negative one argues for a smaller contribution or none at all.
 
-The yield curve is not infallible, and the timing of any relationship between its shape and future economic conditions is variable. It is best understood as one input among many in the assessment of the economic environment. 
 
 ![Yield Curve Shapes](graphics/Strategic_Financial_Analysis/yield-curve.png){#fig-elementwise}
 
@@ -143,13 +142,9 @@ The economic variables establish the anchors. The historical record provides the
 
 ### The Historical Record
 
-Historical risk and return analysis examines how asset classes have performed over previous market cycles, how they have behaved during crises, and what long-term relationships exist between them. In this way, history provides context for the forward-looking assumptions we develop. Historical analysis reveals the range of possible outcomes. For global equities, the data shows average returns of 8 to 10 percent, while individual years have ranged from gains exceeding 50 percent to losses exceeding 40 percent. Understanding this range helps investors prepare for the volatility they will experience. A 20 percent loss in a single year does not mean that the strategy has failed. Such losses are a normal part of equity investing and have occurred many times in the past. History also shows how asset classes behave during periods of market stress. Global equities crashed in the 2008 financial crisis, while government bonds gained as investors sought safety. During the 2020 pandemic, equities fell sharply but recovered quickly, and bonds again provided a buffer. Although these patterns are not guaranteed to repeat, they offer a baseline for understanding how portfolios might perform in future crises.
+Historical risk and return analysis examines how asset classes have performed over previous market cycles, how they have behaved during crises, and what long-term relationships exist between them. In this way, history provides context for the assumptions we develop. 
 
-Long-term relationships between asset classes emerge from the historical record as well. Correlations can change, but the available data still provides a baseline for understanding how assets tend to relate to one another. For example Swiss equities and global equities tend to move together while still offering some diversification benefit. By contrast, the historical correlation between equities and government bonds has been near zero, a relationship that has supported balanced portfolio construction for decades.
-
-For all its value, historical analysis has significant limitations. Most importantly, past returns do not guarantee future returns. A decade of strong equity returns does not ensure that the next decade will be similar, and elevated valuations after a strong period often suggest that future returns will be lower. Additionally, structural changes can alter relationships between asset classes because financial markets are not static. The decline of inflation since the 1980s has changed the relationship between bonds and inflation. At the same time, the integration of global markets has increased correlations between international equities, while the rise of passive investing has changed market dynamics. A history spanning multiple regimes may therefore be an unreliable guide to a regime that has changed.
-
-Correlations between asset classes are not stable over time, a property known as non-stationarity. Equities and bonds may be uncorrelated in normal conditions, yet their correlations often increase during a crisis as investors sell broadly to raise cash. This phenomenon is known as correlation breakdown. During an equity-market crash, assets that were previously uncorrelated can move together and fall simultaneously as investors sell whatever they can to raise cash. The 2008 financial crisis provides a clear example. Equities fell sharply. Corporate bonds fell. Commodities fell. Real estate fell. Only the safest sovereign debt, such as US Treasuries and bonds issued by other reserve currency nations, provided the negative correlation that investors expected from their fixed income allocation. The diversification that worked in normal times partially failed when it was needed most. The 2020 pandemic offered a similar lesson, though with a faster recovery.
+For all its value, historical analysis has significant limitations. Most importantly, past returns do not guarantee future returns. A decade of strong equity returns does not ensure that the next decade will be similar, and elevated valuations after a strong period often suggest that future returns will be lower. Additionally, structural changes can alter relationships between asset classes because financial markets are not static. Equities and bonds may be uncorrelated in normal conditions, yet their correlations often increase during a crisis as investors sell broadly to raise cash. This phenomenon is known as correlation breakdown. 
 
 For portfolio construction, correlation breakdown has clear implications. Diversification should not be taken for granted. The assets that provide true diversification during stress are those with a fundamental reason to behave differently, not merely those with a low historical correlation. Government bonds, particularly those issued by reserve currency sovereigns, offer this fundamental differentiation. Their safe-haven status drives flows that are uncorrelated with, or negatively correlated to, risk assets during crises.
 
@@ -171,7 +166,7 @@ $$
 \text{Cov}(r_x, r_y) = \frac{\sum_{t=1}^{n} (r_{x,t} - \bar{r}_x)(r_{y,t} - \bar{r}_y)}{n - 1}
 $$
 
-These two metrics, sourced from the historical record, provide the volatility and correlation inputs to the strategic allocation. They are not sufficient on their own. The limitations discussed in this subsection, including non-stationarity, correlation breakdown, and survivorship bias, must be incorporated into any forward-looking assessment.
+These two metrics, sourced from the historical record, provide the volatility and correlation inputs to the strategic allocation. They are not sufficient on their own. 
 
 ### The Building Block Models
 
@@ -179,33 +174,24 @@ Building block models decompose expected returns into components that can be est
 
 #### The Grinold-Kroner Model for Equities
 
-Formulated by Richard Grinold and Kenneth Kroner (2002), the Grinold-Kroner model provides a comprehensive framework for decomposing equity returns. It expresses the expected nominal return as the sum of four components: dividend yield, expected earnings growth, expected change in the valuation multiple, and expected change in shares outstanding.
+Formulated by @grinoldkroner2002, the Grinold-Kroner model provides a comprehensive framework for decomposing equity returns. It expresses the expected nominal return as the sum of five components: dividend yield, expected inflation, real earnings growth, expected change in shares outstanding, and expected change in the valuation multiple.
 
 $$
-E(R) \approx \frac{D}{P} + g + \Delta(P/E) - \Delta S
+\mathbb{E}[R] = \frac{\text{Div}_1}{P_0} + i + g - \Delta S + \Delta(P/E)
 $$
 
 Each term captures a distinct source of return.
 
-The dividend yield, $\frac{D}{P}$, is the income component of equity returns and is directly observable. A market index with a current dividend yield of 2 percent begins with a baseline expected return contribution of 2 percent from dividends alone. This is the least uncertain component because dividends are paid in cash and remain relatively stable over time.
+The dividend yield, $\frac{\text{Div}_1}{P_0}$, is the income component of equity returns and is directly observable. A market index with a current dividend yield of 2 percent begins with a baseline expected return contribution of 2 percent from dividends alone. This is the least uncertain component because dividends are paid in cash and remain relatively stable over time.
 
-Expected earnings growth, $g$, drives capital appreciation over long periods. The framework uses expected nominal earnings-per-share growth, which can be decomposed into real earnings growth and inflation. Real earnings growth derives from real GDP growth and changes in corporate profit margins. If the economy is expected to grow by 2 percent in real terms and inflation is expected to average 2 percent, nominal earnings growth would be approximately 4 percent before considering margin changes.
+The expected inflation rate, $i$, is the second component. Inflation contributes to nominal returns because the prices of goods and services rise over time, and corporate revenues and earnings rise with them. An investor who holds an equity position through a period of 2 percent inflation needs a nominal return 2 percent higher than the real return to preserve purchasing power. The model captures this by adding inflation as a separate term.
 
-The third component, $\Delta(P/E)$, captures the effect of changing valuations. Expansion enhances returns beyond what earnings growth alone would produce, while contraction reduces them. Over very long periods, valuations tend to mean-revert, with high multiples eventually falling and low multiples eventually rising. The framework therefore requires an explicit assumption about the direction and magnitude of repricing. Over long horizons this contribution is often assumed to be zero because valuations are considered equally likely to expand or contract. Extreme valuations can justify a non-zero assumption.
+Real earnings growth, $g$, drives capital appreciation over long periods. It derives from real GDP growth and changes in corporate profit margins. If the economy is expected to grow by 2 percent in real terms and margins are stable, real earnings growth is approximately 2 percent. Combined with the inflation term, this produces the nominal earnings growth figure that drives long-run equity returns.
 
-Finally, $\Delta S$ captures changes in shares outstanding. Share repurchases reduce the share count and increase earnings per share even when total earnings are unchanged, which enhances returns for remaining shareholders. New share issuance has the opposite effect. In many developed markets, buybacks have historically exceeded issuance and contributed positively to per-share earnings growth. The framework subtracts the change in shares outstanding because a reduction increases returns while an increase reduces them.
+The fourth component, $-\Delta S$, captures changes in shares outstanding. The negative sign reflects the fact that an increase in the share count dilutes existing shareholders and reduces per-share returns, while a decrease enhances them. Share repurchases reduce the share count and increase earnings per share even when total earnings are unchanged, which benefits remaining shareholders. New share issuance has the opposite effect. In many developed markets, buybacks have historically exceeded issuance and contributed positively to per-share earnings growth.
 
-![Grinold-Kroner Waterfall Chart](graphics/Strategic_Financial_Analysis/Grinold-Kroner.png)
+The final component, $\Delta(P/E)$, captures the effect of changing valuations. Expansion enhances returns beyond what earnings growth alone would produce, while contraction reduces them. Over very long periods, valuations tend to mean-revert, with high multiples eventually falling and low multiples eventually rising. The framework therefore requires an explicit assumption about the direction and magnitude of repricing. Over long horizons this contribution is often assumed to be zero because valuations are considered equally likely to expand or contract. Extreme valuations can justify a non-zero assumption. Inflation also affects this term indirectly. When inflation expectations rise, the discount rate applied to future earnings increases, and the multiple investors are willing to pay for those earnings tends to fall. Rising inflation therefore often shows up in the model as a negative contribution from the valuation change term, even though it also appears as a positive contribution through the standalone inflation term.
 
-Consider a worked example. A global equity index has a current dividend yield of 2.0 percent. Consensus forecasts suggest nominal earnings growth of 4.5 percent, consistent with real GDP growth of 2.0 percent, inflation of 2.0 percent, and stable profit margins. The current P/E ratio of 18 is modestly above the long-term average of 16, suggesting a gradual mean reversion that might subtract 0.3 percent per year over the next decade. Share buybacks are expected to reduce the share count by 0.5 percent per year. The expected nominal return is:
-
-$$
-E(R) = 2.0\% + 4.5\% - 0.3\% - (-0.5\%) = 2.0\% + 4.5\% - 0.3\% + 0.5\% = 6.7\%
-$$
-
-The transparency of the model allows each assumption to be examined. Is the earnings growth assumption consistent with the economic outlook? Is the valuation adjustment reasonable given current multiples? Is the buyback assumption sustainable? The strengths of the framework lie in this transparency and in its grounding in fundamental drivers of return. The limitations are equally clear. The model is sensitive to the assumed earnings growth rate, the valuation adjustment is highly uncertain, and the model does not explicitly account for changes in the equity risk premium.
-
-The Grinold-Kroner model requires four inputs: dividend yield, earnings growth, valuation change, and share count change. In some data environments, not all four are available. When they are not, the analyst uses the simpler equity risk premium approach described below, which requires only the risk-free rate and the equity risk premium. The choice of method depends on what the data supports.
 
 #### The Yield-Based Model for Fixed Income
 
@@ -227,7 +213,7 @@ The strength of the yield-based approach lies in its anchor to observable market
 
 ### The Equity Risk Premium and the CAPM
 
-The building block models produce the fixed income assumption directly. For equities, the building block model produces an expected return when the four inputs are available, but in many data environments they are not. The alternative is the CAPM framework, which expresses the expected return on an asset as the risk-free rate plus a risk premium proportional to the asset's sensitivity to the market.
+The building block models produce the fixed income assumption directly. For equities, the building block model produces an expected return when the four inputs are available, but in many data environments they are not. The alternative is the CAPM framework, which expresses the expected return on an asset ($E(R_i)$) as the risk-free rate ($R_f$) plus a risk premium proportional to the asset's sensitivity to the market ($\beta_i [E(R_m) - R_f]$).
 
 $$
 E(R_i) = R_f + \beta_i [E(R_m) - R_f]
@@ -239,44 +225,11 @@ $$
 E(R_{\text{equity}}) = R_f + \text{ERP}
 $$
 
-Two inputs are required: the risk-free rate and the equity risk premium.
+Two inputs are required: the risk-free rate ($R_f$) and the equity risk premium ($\text{ERP}$).
 
 The risk-free rate is the current ten-year government bond yield in the relevant currency. It is provided directly by the market data, and it is the same anchor that drives the government bond assumption.
 
-The equity risk premium is the excess return that investors expect to earn from holding equities rather than government bonds. It is the most important risk premium in finance because it determines the expected return on equities, the cost of capital for companies, and the relative attractiveness of stocks compared to bonds. It is not directly observable and must be estimated. Three broad approaches exist.
-
-Historical realized premiums provide the most common baseline. Over the long term, global equities have outperformed government bonds by 3 to 5 percent per year, depending on the market and the time period. The historical approach answers the question of what premium investors actually earned. Its limitation is that the past may not represent the future. If the historical premium was driven partly by falling discount rates and expanding valuations, it may overstate the forward-looking premium.
-
-Forward-looking estimates derive the premium from current market conditions rather than historical averages. Subtracting the current yield on government bonds from the expected equity return in the Grinold-Kroner model produces an estimate of the forward-looking equity risk premium. If equities are expected to return 6.5 percent and government bonds yield 2.5 percent, the implied equity risk premium is 4.0 percent. This approach anchors the premium in current market conditions rather than historical averages.
-
-Survey-based estimates gather expectations from professional investors, academics, and corporate managers. They offer a direct measure of what market participants expect, although they remain subject to the behavioral biases that affect all forecasts. Survey estimates have typically ranged from 3 to 5 percent.
-
-In developed markets, the typical range for the equity risk premium is 3 to 5 percent. For strategic asset allocation over a long horizon, a point estimate of 4 percent is a reasonable baseline. Scenario analysis can explore the implications of higher or lower premiums.
-
-The CAPM has significant limitations. Beta does not fully capture risk, so assets with identical betas can have different expected returns if they differ in size, valuation, or momentum. Nor is the equity risk premium stable. It varies with economic conditions and investor sentiment. Finally, the market portfolio is unobservable. Equity indices serve as practical proxies, but they exclude risky assets such as private equity, real estate, and human capital. Despite these limitations, the CAPM remains a useful benchmark. A large gap between a bottom-up forecast and the CAPM prediction should be examined. The forecast may be flawed, or the market may be offering an unusual opportunity.
-
-### Assembling the Assumptions
-
-The building blocks and the CAPM produce a set of expected returns for each asset class in the investment universe. The historical record produces the volatility and correlation inputs. Together these form the complete set of capital market assumptions that the strategic allocation requires.
-
-The following table presents a simplified set of capital market assumptions for a representative universe, illustrating the format the strategic analyst produces.
-
-| Asset Class | Expected Return | Expected Volatility | Yield | Key Rationale |
-|-------------|----------------|--------------------|-------|---------------|
-| Global Equities | 6.5% | 16% | 2.0% | Moderate growth, elevated valuations temper returns |
-| Swiss Equities | 6.0% | 14% | 2.5% | Stable domestic economy, lower volatility |
-| Global Government Bonds | 2.5% | 6% | 2.5% | Current yields anchor low expected returns |
-| Swiss Government Bonds | 1.5% | 4% | 1.2% | Safe-haven status, exceptionally low yields |
-| Global Corporate Bonds | 4.0% | 8% | 4.0% | Yield premium over governments, credit risk |
-| Cash | 1.0% | 1% | 1.0% | Short-term policy rate |
-
-These assumptions reflect a deliberate conservatism. Bond returns are anchored to current yields, which are low by historical standards. Equity returns are adjusted downward from historical averages to reflect elevated valuations. The result is a set of assumptions that acknowledges the current investment environment and provides a realistic foundation for strategic asset allocation.
-
-Before the assumptions are used, they must be checked for coherence. The expected returns must align with the risk levels. Equities should have higher expected returns than government bonds in the same currency, because equities carry more risk. The correlation matrix must be internally consistent and positive definite, a mathematical property required for valid portfolio optimization. An assumption of strong equity returns paired with an assumption of weak economic growth is incoherent unless accompanied by a specific rationale, such as a dramatic expansion of profit margins.
-
-Capital market assumptions are not static. They should be reviewed regularly, typically annually, and updated as market conditions change. A significant shift in valuations, a change in the interest rate environment, or a revision to the economic outlook should prompt a reassessment. The assumptions documented in the Investment Policy Statement serve as the baseline. Material changes should be communicated to the client and reflected in the strategic asset allocation.
-
-With capital market assumptions established, we now have the inputs required for strategic asset allocation. The next chapter will examine how to combine these asset classes into portfolios that balance risk and return in accordance with client objectives and constraints.
+The equity risk premium is the excess return that investors expect to earn from holding equities rather than government bonds. It is not directly observable and must be estimated.
 
 
 
@@ -909,64 +862,71 @@ With capital market assumptions established, we now have the inputs required for
 
 ## Strategic Financial Analysis in the IMAG Simulation
 
-The framework developed in this chapter translates into the IMAG simulation. This section walks through the analysis as a continuous workflow. The goal is not to summarize the chapter but to show what the strategic analyst actually does when facing the simulation data. Read this section after you have formed your own view from the data. Then compare what you did with what follows.
+The framework developed in this chapter translates into the IMAG simulation. This section walks through the analysis as a continuous workflow.
 
 ### The Workflow
 
-The strategic analysis in IMAG follows five steps.
+We suggest following these steps in the strategic analysis in IMAG:
 
 1. Read the Economic Outlook tab and extract the anchor values for each currency.
 2. Build the government bond assumptions from the current yields.
 3. Build the equity assumptions from the risk-free rate and the equity risk premium.
-4. Check the assumption set for coherence.
-5. Translate the assumptions into USD real terms and prepare them for the SAA.
 
-At each step, the analyst uses the numbers provided by the simulation. The client in this section is US-based. The investment universe is restricted to USD and EUR government bonds and equities. There are no corporate bonds, no currencies other than USD and EUR, and no alternative assets.
+It is important to pair the assumptions with the client's objectives and constraints. The client is US-based and the investment universe is restricted to USD and EUR government bonds and equities.
 
 ### Step 1: Extract the Anchor Values
 
-The Economic Outlook tab provides the anchor values. The relevant inputs are the interest rates across maturities in USD and EUR, the inflation rates in both currencies, and the GDP growth rates in both regions.
+From the Economic Outlook we can extract the interest rates across maturities in USD and EUR, the inflation rates in both currencies, and the GDP growth rates in both regions. These are the anchors that the building block models will use.
 
 ![IMAG Interest Rates](graphics/Strategic_Financial_Analysis/Interest-Rates.png){#fig-elementwise}
 
-The Interest Rates section reports short-term and long-term yields for each currency. For the fixed income assumption, the ten-year yield is the relevant anchor because it is closest to the duration of a long-horizon bond portfolio. The term premium assumption is anchored to the difference between the ten-year yield and the short-term rate.
-
-The data shows the following anchors.
+The Interest Rates section reports short-term and long-term yields for each currency. To build the fixed income assumption, the ten-year yield is most relevant because it is close to the duration of a long-horizon bond portfolio. The short-term rate serves only as a reference for the term premium.
 
 | Currency | Short-Term Rate | Ten-Year Yield | Term Spread |
 |----------|-----------------|----------------|-------------|
 | USD | 4.06% | 4.16% | 0.10% |
 | EUR | 1.48% | 1.62% | 0.14% |
 
-The central fact for the fixed income analysis is the dispersion between the currencies. The USD market offers a starting yield approximately 254 basis points higher than the EUR market, and this difference is taken as given. Both curves slope upward modestly, with small positive term spreads that support a small positive term premium contribution to long-bond returns. Because the spreads are modest, the contribution remains minor.
+Also important is the dispersion between the currencies. The USD market offers a yield approximately 254 basis points higher than the EUR market, and this difference is taken as given. Both curves slope upward modestly, with small positive term spreads that support a small positive term premium contribution to long-bond returns. The ten-year yield is the anchor for the government bond assumption in Step 2, where no further interpretation is required: the current yield becomes the expected return for that currency's government bonds.
 
 ![IMAG Economic Fundamentals](graphics/Strategic_Financial_Analysis/Economic-Fundamentals.png){#fig-elementwise}
 
-The Economic Fundamentals section reports GDP, inflation, unemployment, and confidence. The anchor values for the strategic analysis are inflation and GDP growth.
-
-The inflation anchors are shown below.
+Further down in the Economic Outlook tab, the Economic Fundamentals section provides a snapshot of the macroeconomic environment. It reports GDP, inflation, unemployment, and confidence for each currency. The anchor values for the strategic analysis are inflation and GDP growth. Inflation feeds into the conversion of nominal to real returns. GDP growth feeds into the macroeconomic backdrop that informs the equity assumption and serves as a sanity check on the narrative about each region.
 
 | Currency | Current Inflation |
 |----------|-------------------|
 | USD | 1.69% |
 | EUR | 0.42% |
 
-USD inflation is close to the Federal Reserve's 2 percent target, while EUR inflation is well below the European Central Bank's target. These readings anchor the long-run inflation assumptions. The EUR figure is assumed to converge toward target because the current rate is unusually low.
+USD inflation is close to the Federal Reserve's 2 percent target, while EUR inflation is well below the European Central Bank's target. The current rate is the starting point for the long-run inflation assumption, adjusted toward target where the current rate is unusually low.
 
-The GDP growth anchors are computed from the trailing twelve-month figures in the table. The year-over-year change in GDP in USD terms provides a rough measure of nominal growth, though for the EUR figure it is contaminated by currency movements. For the strategic analysis, the analyst uses these figures as a starting point and adjusts toward a reasonable long-run range.
+For USD, the current rate of 1.69 percent is close enough to the 2 percent target that it can be used directly. The analyst commits to a long-run USD inflation assumption of 1.7 percent. For EUR, the current rate of 0.42 percent is far below the ECB's target. The analyst assumes convergence toward target over the horizon, though the pace of convergence is uncertain. A reasonable long-run assumption is the midpoint between the current rate and the target, approximately 1.2 percent. The analyst commits to a long-run EUR inflation assumption of 1.2 percent. These two numbers are the inflation inputs to the model, used in Step 5 to convert nominal returns into real returns.
+
+GDP growth is computed from the trailing twelve-month figures in the table. The year-over-year change in GDP in USD terms provides a rough measure of nominal growth, though for the EUR figure it is contaminated by currency movements.
 
 | Currency | GDP One Year Ago | GDP Current | Year-over-Year Change |
 |----------|------------------|-------------|----------------------|
 | USD | 12.22 trillion | 13.49 trillion | +10.4% |
 | EUR | 10.18 trillion | 10.56 trillion | +3.7% |
 
-Because they are measured in USD, these year-over-year changes do not equal nominal growth in local currency. Exchange-rate movements are embedded in them. They are therefore used as directional indicators, while long-run nominal growth is assumed to converge toward 3 to 5 percent for developed markets, with the US at the upper end and the Eurozone at the lower end.
+Because they are measured in USD, these year-over-year changes do not equal nominal growth in local currency. Exchange-rate movements are embedded in them, and the USD figure in particular reflects an unusually strong period. They are therefore used as directional indicators rather than as inputs to a specific calculation. The GDP figures establish the macroeconomic backdrop and inform the narrative about which region is growing faster. They also provide a sanity check on the equity assumptions that follow, because no market can sustain an earnings growth rate far above its long-run nominal growth rate indefinitely.
+
+The long-run nominal growth assumption is an interpretive judgment informed by the GDP data and the narratives, not a direct calculation from the tabulated figures. On the basis of the quantitative data and the narratives that follow, the analyst commits to a long-run USD nominal growth assumption of 4.5 percent and a long-run EUR nominal growth assumption of 3.5 percent. These figures describe the growth environment in which the equity assumptions operate. They do not feed directly into the CAPM calculation in Step 3, which uses only the risk-free rate and the equity risk premium, but they provide the context for evaluating whether those inputs are reasonable.
 
 ![IMAG Global economic report](graphics/Strategic_Financial_Analysis/Global-Report.png){#fig-elementwise}
 
-The narrative reports add context. Investment Perspectives describes robust recent returns, rising bond yields, and a forward outlook of "steady and more stable developments" with "measured risk-taking and cautious optimism." The regional narratives present the US as technology-driven, with AI and quantum computing supporting future productivity, while Europe faces structural headwinds including demographic challenges and sluggish growth.
+As a last step in the process, the narrative reports add context. Investment Perspectives describes robust recent returns, rising bond yields, and a forward outlook of "steady and more stable developments" with "measured risk-taking and cautious optimism." The regional narratives present the US as technology-driven, with AI and quantum computing supporting future productivity, while Europe faces structural headwinds including demographic challenges and sluggish growth.
 
-The narratives help position the growth assumptions within the ranges derived from the quantitative data. Technology-led US growth supports the upper end of the 4 to 5 percent range, while Europe's structural headwinds support the lower end of the 3 to 4 percent range. These narratives do not change the anchors. Instead, they inform the judgment about which end of each range is more plausible.
+These narratives help position the growth assumptions within the ranges derived from the quantitative data. Technology-led US growth supports the upper end of the 4 to 5 percent range, while Europe's structural headwinds support the lower end of the 3 to 4 percent range. The narratives do not change the anchors. Instead, they inform the judgment about which end of each range is more plausible.
+
+At the end of Step 1, the analysis has committed to the following anchor values, which will be carried forward into the remaining steps.
+
+| Anchor | USD | EUR |
+|--------|-----|-----|
+| Ten-year yield | 4.16% | 1.62% |
+| Long-run inflation | 1.7% | 1.2% |
+| Long-run nominal growth | 4.5% | 3.5% |
+
 
 ### Step 2: Build the Government Bond Assumptions
 
@@ -979,9 +939,14 @@ For each currency, the government bond assumption is anchored to the ten-year yi
 
 These are the simplest assumptions in the set because no forecast is required. The current yield is the expected return, adjusted only for reinvestment. The key fact is the dispersion between the currencies. All else equal, a USD client holding EUR government bonds gives up approximately 254 basis points of expected return relative to a USD portfolio. That does not automatically make USD bonds preferable because currency diversification has value and EUR bonds may have a different correlation profile. The allocation process must nevertheless account for the starting yield gap.
 
+For a US investor, the EUR yield is not the return the position will deliver in USD. It is the return in EUR. What the investor actually earns depends on what the EUR does against the USD over the holding period. If the EUR appreciates, the USD return exceeds the EUR yield. If the EUR depreciates, the USD return falls short of it. The yield gap of 254 basis points is therefore only the starting point for the comparison. The realized difference between the two positions in USD terms is the yield gap plus whatever currency movement occurs.
+
+Because the investment policy does not permit short positions, the EUR exposure cannot be hedged back to USD. The position is held unhedged, and the USD return is the EUR yield plus the currency movement. The strategic assumption is the unhedged return, translated into USD using the purchasing power parity base case. Under that assumption, exchange rates adjust so that currencies with higher inflation depreciate against currencies with lower inflation. The USD inflation rate of 1.7 percent is above the EUR inflation rate of 1.2 percent, which implies modest USD depreciation against the EUR over the horizon. The implication for the assumption set is that the EUR government bond return in USD terms is slightly higher than the local-currency return, narrowing the yield gap slightly, though the USD yield advantage remains significant.
+
+
 ### Step 3: Build the Equity Assumptions
 
-The equity assumption for each region uses the CAPM framework presented earlier in this chapter. Under the CAPM, expected return equals the risk-free rate plus a risk premium proportional to the asset's sensitivity to the market.
+Under the CAPM, expected return equals the risk-free rate plus a risk premium proportional to the asset's sensitivity to the market.
 
 $$
 E(R_i) = R_f + \beta_i [E(R_m) - R_f]
@@ -993,72 +958,55 @@ $$
 E(R_{\text{equity}}) = R_f + \text{ERP}
 $$
 
-Two inputs are required. They are the risk-free rate and the equity risk premium.
+The risk-free rate is the current ten-year government bond yield in the relevant currency, taken from the Interest Rates tab. For USD, the risk-free rate is 4.16 percent. For EUR, it is 1.62 percent. The Performance of Market Segments tab reports a separate risk-free rate series, but these are period-specific realizations rather than long-horizon yields. The ten-year yield is the more appropriate anchor for a strategic assumption because it matches the horizon of the equity forecast.
 
-The risk-free rate is the current ten-year government bond yield in the relevant currency, provided directly in the Interest Rates tab. For USD, the risk-free rate is 4.16 percent. For EUR, it is 1.62 percent.
+The equity risk premium is the excess return investors expect from holding equities rather than government bonds. The Performance of Market Segments tab provides three possible inputs.
 
-The equity risk premium is the excess return investors expect from holding equities rather than government bonds. The simulation does not provide it directly. Three sources are available in order of preference.
+![IMAG Equity Factor Returns](graphics/Strategic_Financial_Analysis/Equity-Factor-Returns.png){#fig-elementwise}
 
-First, use the analyst defaults in the simulation as the baseline estimate for each market. If the simulation provides different premiums for US and European equities, those figures should be used rather than imposing a single assumption.
+The first input is the estimated excess market return for the current round. For USD, the estimate is 0.02 percent. For EUR, it is 0.20 percent. These are the simulation's forward-looking figures for the current period. They are point estimates, which makes them convenient for the CAPM. The concern is that both sit at the bottom of their own expected ranges. The USD range runs from 0.29 to 4.26 percent, and the EUR range runs from −0.01 to 3.67 percent. An estimate at the bottom of its own range is a weak basis for a long-horizon assumption.
 
-Second, consult the historical data in the Performance of Market Segments tab. The realized excess market return estimates what investors actually earned, but it is not the forward-looking premium because it reflects the conditions of that historical period. Unusually strong equity returns will overstate the forward-looking premium, while unusually weak returns will understate it. The historical figure should therefore test whether the analyst default is reasonable rather than replace it.
+The second input is the expected range around the current-round estimate. A range cannot be used directly in the CAPM, but the midpoint of the range is a natural candidate. For USD, the midpoint of 0.29 to 4.26 percent is 2.28 percent. For EUR, the midpoint of −0.01 to 3.67 percent is 1.83 percent. 
 
-Third, use the standard range of 3.5 to 4.5 percent documented earlier in this chapter. It is based on historical experience, forward-looking estimates, and survey evidence, and provides a reasonable fallback when no specific analyst default is available and the historical data cannot be used.
+The third input is the realized excess market return across the historical windows. For USD, the series is 5.20 percent, 4.68 percent, 51.77 percent, and 2.67 percent. For EUR, it is 8.41 percent, 8.16 percent, 74.48 percent, and 28.16 percent. These are realized figures, not forecasts, and the dispersion is wide. The USD series ranges from 2.67 percent to 51.77 percent, and the EUR series ranges from 8.16 percent to 74.48 percent. Using the historical average would mean taking a number that reflects a period of exceptional equity performance and projecting it forward. That would overstate the forward-looking premium if the exceptional period does not repeat.
 
-The resulting expected equity returns are obtained by adding the risk-free rate to the equity risk premium.
+Each input has a different implication. The current-round estimate is the most forward-looking but the weakest as a long-horizon anchor. The expected range midpoint is a compromise but is not itself a forecast. The historical realizations are the most grounded in the simulation's own data but are the least forward-looking.
+
+The choice among them is a judgment, and the assumption set should make that judgment explicit. For the worked example, the analyst uses the midpoint of the expected range. The reason is that it reflects the simulation's own view of the uncertainty around the current estimate while avoiding the two extremes. Using the current-round estimate alone would anchor the assumption at the bottom of the range, and using the historical realizations would anchor it in a period that may not repeat.
+
+The resulting premium is 2.28 percent for USD and 1.83 percent for EUR.
+
+Adding the risk-free rate to the equity risk premium produces the expected equity returns for each segment.
 
 | Segment | Risk-Free Rate | Equity Risk Premium | Expected Equity Return |
 |---------|----------------|---------------------|------------------------|
-| USD Equities | 4.16% | Sourced from simulation or standard range | Sum |
-| EUR Equities | 1.62% | Sourced from simulation or standard range | Sum |
+| USD Equities | 4.16% | 2.28% | 6.44% |
+| EUR Equities | 1.62% | 1.83% | 3.45% |
 
-The dispersion between the two equity segments is driven almost entirely by the dispersion in the risk-free rate. The USD risk-free rate is 254 basis points higher than the EUR risk-free rate. If the equity risk premium is the same in both markets, the USD equity expected return is 254 basis points higher than the EUR equity expected return. This is the mathematical consequence of the starting yield dispersion, and it is the correct result. It reflects the fact that a US investor holding EUR equities is taking on currency risk without receiving the higher US yield as compensation, unless the currency is expected to appreciate. The analyst should not smooth this out by assuming a higher equity risk premium for Europe. If the market data suggests a higher premium for Europe, that is one thing. If the analyst is simply uncomfortable with the dispersion, that is not a reason to adjust.
 
-The student should not assume that the equity risk premium is identical across markets. The narrative summaries may suggest that one market offers a higher premium than the other. The US technology narrative supports a higher premium for US equities. The European headwinds narrative supports a lower premium for EUR equities. If the simulation provides analyst defaults that differ across markets, the student should use those defaults. If it does not, and the student has no specific reason to differentiate, using the same premium for both markets is a reasonable starting assumption.
+The dispersion between the two equity segments is now driven by both the risk-free rate and the equity risk premium. The USD risk-free rate is 254 basis points higher than the EUR risk-free rate, and the USD premium is 45 basis points higher than the EUR premium. The USD equity expected return is therefore approximately 299 basis points higher than the EUR equity expected return.
 
-### Step 4: Check Coherence
+The equity risk premium need not be identical across markets. The narrative summaries may suggest that one market offers a higher premium than the other. The US technology narrative supports a higher premium for US equities, while the European headwinds narrative supports a lower premium for EUR equities. The simulation data is consistent with this view, because the USD expected range midpoint is higher than the EUR figure. If the analyst defaults differ from these figures, the defaults take priority and the simulation data is used only as a cross-check.
 
-Before the assumption set is used, it must be checked for coherence. Coherence has three dimensions.
+#### Expressing the Assumptions in USD Real Terms
 
-The first dimension is return ordering. Equities should have higher expected returns than government bonds in the same currency because equities carry more risk. Higher-volatility segments should also have higher expected returns, all else equal. For the four-segment universe, the expected returns should run from EUR Government Bonds through USD Government Bonds, EUR Equities, and USD Equities. The exact ordering of the equity segments depends on the premium assumptions, but both should exceed the government bond segments.
+The assumptions produced so far are nominal and in local currency. Because the client spends in USD, the returns must be converted into USD and adjusted for inflation before they can feed into the strategic allocation. The conversion is mechanical rather than analytical: it applies assumptions that have already been made rather than introducing new ones, and it does not change which segments are more attractive.
 
-The second dimension is correlation consistency. The correlation matrix must be internally consistent and positive definite, which is required for valid portfolio optimization. The two equity segments should be highly correlated because both are driven by global growth and risk appetite. The government bond segments should be moderately correlated because both respond to global interest-rate conditions. Government bonds should have low or negative correlation with equities in the same currency because they serve as a safe haven during equity-market stress. Cross-currency correlations should be moderate.
+The first adjustment is inflation. The long-run USD inflation assumption of 1.7 percent from Step 1 is subtracted from each nominal return to produce a real return. The USD government bond assumption of 4.2 percent becomes 2.5 percent in real terms, and the USD equity assumption of 6.44 percent becomes 4.74 percent.
 
-The third dimension is economic consistency. The assumptions should tell a coherent story about the economic environment. Strong equity returns paired with weak economic growth are incoherent unless a specific rationale, such as a dramatic expansion of profit margins, explains the combination. Rising interest rates paired with strong bond returns are mathematically inconsistent. The coherence check is not about making the numbers look nice. It is about catching errors before they reach the portfolio.
+The second adjustment is currency. The EUR returns must be converted into USD using the purchasing power parity assumption from Step 2. Because USD inflation of 1.7 percent is above EUR inflation of 1.2 percent, the USD is expected to depreciate modestly against the EUR, which gives a US investor holding EUR assets a small currency boost when converting back. Because the investment policy does not permit short positions, the EUR exposure cannot be hedged, and the unhedged return is the EUR return plus the currency movement.
 
-### Step 5: Translate to USD Real Terms
+The effect on the assumption set is small. The EUR government bond return rises slightly above its local-currency figure of 1.6 percent, and the EUR equity return rises slightly above its local-currency figure of 3.45 percent. The exact size of the currency adjustment depends on the assumed speed of convergence toward purchasing power parity. If convergence is gradual, the annual adjustment is small; if it is faster, the adjustment is larger. The base case assumes gradual convergence. The sensitivity of the allocation to this assumption should be tested, because a larger or smaller currency adjustment changes the relative attractiveness of the EUR segments.
 
-The assumption set must be translated into USD real terms, because that is the currency in which the US client spends. The translation involves two adjustments.
+The final figures are shown in the table below.
 
-The first adjustment is inflation. Subtract USD inflation from each nominal return to produce a real return in USD terms. For the USD government bond assumption of 4.2 percent, the real return is approximately 2.5 percent, using the current USD inflation rate of 1.69 percent as the long-run proxy. For the USD equity assumption, the real return is the nominal assumption minus 1.69 percent.
+| Segment | Nominal Return (Local) | Currency Adjustment | Nominal Return (USD) | Real Return (USD) |
+|---------|------------------------|---------------------|----------------------|-------------------|
+| USD Government Bonds | 4.2% | None | 4.2% | 2.5% |
+| EUR Government Bonds | 1.6% | Small positive | ~1.8% | ~0.1% |
+| USD Equities | 6.44% | None | 6.44% | 4.74% |
+| EUR Equities | 3.45% | Small positive | ~3.65% | ~1.95% |
 
-The second adjustment is currency. For the EUR segments, the analyst must form an exchange-rate assumption. The base case is that the EUR/USD exchange rate converges toward purchasing power parity over the long horizon. Given the higher USD inflation rate, this implies modest USD appreciation against the EUR. It is a modeling assumption rather than a forecast, and its sensitivity should be tested.
-
-The relevant returns for the client are the USD-hedged returns on the EUR segments and the unhedged returns on the USD segments. A USD-hedged EUR government bond return is approximately the EUR yield minus the hedging cost, which reflects the interest-rate differential between USD and EUR. With USD yields at 4.16 percent and EUR yields at 1.62 percent, the hedging cost is approximately 250 basis points. The USD-hedged return on EUR government bonds is therefore close to the USD return itself.
-
-Currency hedging therefore removes most of the return differential between USD and EUR government bonds, but only by imposing a hedging cost. The relevant decision is whether that cost is worth paying to reduce currency risk. For a long-horizon portfolio, the case is usually weaker because currency movements tend to average out. Near-term USD spending needs make hedging more compelling because the client cannot wait for the currency to revert.
-
-### What the Simulation Does Not Provide
-
-An auditable analysis should distinguish clearly between inputs supplied by the simulation and those supplied elsewhere.
-
-The simulation provides interest rates across currencies and maturities, inflation rates, GDP levels, unemployment rates, consumer and business confidence, historical realized yields, historical realized factor returns, and exchange rates.
-
-It does not provide expected volatilities for each asset class, expected correlations between asset classes, dividend yields, long-run nominal growth rates, valuation adjustments, or the equity risk premium.
-
-For each missing input, the analyst must either source it from the historical data in the Performance of Market Segments tab or use the simulation's analyst defaults. The point is not to invent a plausible-looking figure but to identify its source and document the assumption. A practical approach is to keep a written record of every assumption and its source. If it comes from the simulation defaults, note that. If it comes from historical data, record the specific period and calculation. If it is a judgment call, document the reasoning. This record becomes the audit trail for the capital market assumptions and allows them to be revisited as conditions change.
-
-### Applying the Assumptions to the SAA
-
-The capital market assumptions provide the inputs for strategic asset allocation. The SAA process uses them to determine the optimal mix of asset classes for the client's portfolio.
-
-Three constraints shape how these assumptions are used. The client's risk tolerance caps the equity allocation. Inherited or restricted positions must be integrated rather than liquidated if selling them would trigger capital gains taxes that consume a meaningful portion of their value. Goal-based segmentation in the Investment Policy Statement may also require near-term spending needs to be immunized with high-quality government bonds, fixing part of the portfolio regardless of relative expected returns.
-
-The expected return on a balanced USD portfolio using these assumptions will be modest. USD government bonds contribute approximately 4.2 percent. USD equities contribute the risk-free rate plus the equity risk premium, which is likely to produce 7 to 9 percent if the premium is 3 to 5 percent. A portfolio allocated 60 percent to equities and 40 percent to government bonds would therefore have an expected return of approximately 6 to 7 percent nominal, or 4.5 to 5.5 percent real.
-
-The exact figure depends on the equity risk premium and the equity allocation, determined by the analyst and the client respectively. The exercise is not intended to produce a single number. It is intended to produce a defensible range that reflects the underlying inputs and the client's constraints.
-
-Where the assumptions fall short of the target documented in the IPS, the response is not to raise expected returns. Instead, the portfolio can be segmented, goals can be adjusted, or the horizon can be extended. The assumptions tell us what is possible. The IPS tells us what is required. Strategic financial analysis reconciles the two.
 
 ### A Note on the Difference from Tactical Analysis
 
