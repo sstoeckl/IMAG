@@ -1,5 +1,6 @@
 ---
 title: "Tactical Financial Analysis"
+bibliography: references.bib
 ---
 
 ::: {.callout-tip title="Lecture Slides"}
@@ -8,39 +9,49 @@ title: "Tactical Financial Analysis"
 
 ## Introduction
 
-Strategic asset allocation, the subject of Chapter 7, establishes the long-term policy mix. It anchors the portfolio. It determines exposure to systematic risk factors and drives the bulk of long-term returns. But the policy mix is static by design. It does not respond to changing market conditions, shifting valuations, or emerging opportunities.
+Strategic asset allocation, the subject of Chapter 7, establishes the long-term policy mix. It anchors the portfolio and determines the mix of asset classes that will drive the long-term returns. But the policy mix is static and does not respond to changing market conditions, shifting valuations, or emerging opportunities. Due to this an informed portfolio manager may deviate from the strategic allocation in order to capture short-term opportunities. This is tactical asset allocation (TAA). It is a dynamic, opportunistic approach that seeks to enhance returns by adjusting the portfolio in response to market conditions. If the strategic allocation calls for 50 percent equities, a tactical decision might increase that to 55 percent when equities appear cheap relative to bonds, or reduce it to 45 percent when they appear expensive. These deviations are temporary and reversed when the mispricing corrects or the opportunity passes.
 
-Tactical asset allocation fills this gap. It is the deliberate, short-term deviation from the strategic allocation, designed to capitalize on perceived market mispricing or macroeconomic shifts. If the strategic allocation calls for 50 percent equities, a tactical overlay might increase that to 55 percent when equities appear cheap relative to bonds, or reduce it to 45 percent when they appear expensive. These deviations are temporary. They are reversed when the mispricing corrects or the opportunity passes.
+Strategic allocation provides the beta—the market return that comes from broad, sustained exposure to asset classes. Tactical allocation seeks alpha—the excess return that comes from timing those exposures successfully. Beta is earned by staying invested. Alpha is earned by being right about short-term market movements. The promise of outperformance attracts capital and talent, fueling an industry of strategists, forecasters, and active managers. 
 
-A fundamental distinction separates the two approaches. Strategic allocation provides the beta—the market return that comes from broad, sustained exposure to asset classes. Tactical allocation seeks alpha—the excess return that comes from timing those exposures successfully. Beta is earned by staying invested. Alpha is earned by being right about short-term market movements. One is a matter of discipline. The other is a bet on foresight.
+## Theoretical Foundation
 
-Alpha is seductive. The promise of outperformance attracts capital and talent, fueling an industry of strategists, forecasters, and active managers. Yet tactical asset allocation operates in a zero-sum environment. For every investor who beats the market through well-timed trades, another investor loses. The gains of the successful timer are the losses of the unsuccessful one. Arithmetic leaves no room for ambiguity. The average investor earns the market return, less costs. Tactical allocation adds layers of cost: transaction fees, bid-ask spreads, and, in taxable accounts, capital gains taxes. To succeed, the tactical allocator must not only be right about market direction but right by enough to overcome these frictions.
+### The Efficient Market Hypothesis
 
-The evidence is sobering. Decades of research on mutual fund performance demonstrate that most active managers underperform their benchmarks after fees. Market timing proves difficult to sustain. Short-term movements are driven by news, sentiment, and capital flows—forces that resist consistent prediction. Even skilled investors with disciplined processes struggle to add value through tactical adjustments over extended periods.
+The Efficient Market Hypothesis, developed by @fama1970efficient, asks a deceptively simple question. How much information is already reflected in market prices? The answer determines whether tactical allocation is possible. If prices already reflect all relevant information, there is nothing for the tactical allocator to exploit.
 
-This does not render tactical allocation futile. It demands humility. Deviations from the strategic allocation should be modest, grounded in a clear and testable thesis, and evaluated over periods long enough to separate skill from luck. A sound process will endure stretches of underperformance. That is the nature of the endeavor. What matters is whether the process adds value over a full cycle, net of costs.
+Fama distinguished between three different types of market efficiency, each corresponding to a different kind of information. The three forms represent progressively stronger claims about what is already in prices, and each one rules out a different set of tactics.
 
-The tools and frameworks that support tactical financial analysis follow. Valuation signals, momentum, sentiment indicators, and macroeconomic analysis each play a role. So too do the behavioral pitfalls that make tactical allocation harder in practice than it appears on paper. The aim is not to promise easy alpha. It is to provide a clear-eyed assessment of what tactical allocation can achieve—and what it cannot.
+The weakest version, known as weak-form efficiency, describes that prices reflect all information contained in past prices and trading volumes. If this is true, charting and technical analysis cannot generate excess returns, because the patterns they identify are already reflected in the prices themselves. The tactical allocator cannot profit by studying past price movements.
 
-## Theoretical Foundation: Why TAA is Possible (and Hard)
+The middle version, semi-strong form efficiency, says that prices reflect all publicly available information. This includes not only past prices but also earnings reports, economic data releases, news announcements, and anything else that is publicly disclosed. If this is true, neither technical analysis nor fundamental analysis can generate excess returns. The information is already in the price by the time the analyst reads it.
 
-Before examining how tactical asset allocation is implemented, we must understand why it might work—and why it so often fails. The theoretical foundation rests on three pillars: the Efficient Market Hypothesis, the behavioral critique of that hypothesis, and the Fundamental Law of Active Management, which quantifies the conditions under which tactical deviations can add value.
+The strongest version, strong-form efficiency, describes that prices reflect all information, including private information known only to insiders. If this is true, no investor can beat the market consistently, because any advantage they might have is already priced in. Not even insider trading would generate excess returns.
 
-The Efficient Market Hypothesis, or EMH, provides the baseline. Markets are efficient when prices fully reflect all available information. Three forms of efficiency are commonly distinguished. Weak-form efficiency holds that past prices and trading volumes cannot be used to predict future prices. Technical analysis, which relies on patterns in historical data, should not generate excess returns in a weak-form efficient market. Semi-strong form efficiency goes further, asserting that all publicly available information is already embedded in prices. Neither fundamental analysis nor the study of earnings reports, economic data, or news releases can reliably produce alpha. Strong-form efficiency, the most restrictive version, holds that even private information is reflected in prices, leaving no room for any investor to earn excess returns consistently.
+For the tactical allocator, the three forms define constraints on their ability to generate alpha. Weak-form efficiency still permits profit from fundamental analysis. Semi-strong form efficiency leaves only private information as a potential edge. Strong-form efficiency eliminates all informational advantages, since everything is imidiately reflected in prices.
 
-Under strong-form efficiency, tactical asset allocation is futile. No amount of analysis or insight can beat the market because the market already knows everything worth knowing. Under semi-strong or weak-form efficiency, some scope for tactical deviations may exist, but it is narrow. The investor must possess information or analytical capabilities not yet reflected in prices.
+### The Fundamental Law of Active Management
 
-Markets, however, are not perfectly efficient. Decades of research in behavioral finance have documented systematic departures from rationality. Investors overreact to recent news and underreact to longer-term trends. They chase performance, buying assets that have already appreciated and selling those that have declined. Fear and greed drive prices away from fair value, creating pockets of mispricing. These behavioral wedges open the door for tactical allocation. When sentiment pushes an asset class to an extreme, a disciplined tactical investor can take the other side of the trade, selling when others are greedy and buying when they are fearful.
+The Fundamental Law of Active Management, formulated by @grinold1989fundamental, provides the framework for evaluating whether a tactical process can succeed. It states that the information ratio a manager can achieve is the product of two factors: skill and breadth.
 
-The challenge lies in timing. Behavioral mispricing can persist for longer than a rational investor expects. A tactical position taken too early is indistinguishable from a wrong one. The market can remain irrational longer than the tactical allocator can remain solvent, as the saying goes. The behavioral critique explains why opportunities exist. It does not guarantee that they can be exploited.
+To understand the law, we first need to understand what the information ratio measures. The information ratio is the ratio of the portfolio's excess return over its benchmark to the tracking error of that excess return:
 
-Richard Grinold's Fundamental Law of Active Management provides the framework for evaluating whether a tactical process can succeed. The law states that the information ratio, a measure of risk-adjusted excess return, depends on two factors: skill and breadth.
+$$
+IR = \frac{R_p - R_b}{\text{Tracking Error}}
+$$
+
+Where $R_p$ is the return of the portfolio, $R_b$ is the return of the benchmark, $R_p - R_b$ is the excess return, and the tracking error is the standard deviation of the excess return over time. The numerator measures how much value the manager adds. The denominator measures how much risk the manager takes to add it.
+
+The information ratio is closely related to the Sharpe ratio, but the two answer different questions. The Sharpe ratio measures excess return per unit of absolute volatility, using the risk-free rate as the reference. The information ratio measures excess return per unit of active risk, using the benchmark as the reference. A portfolio that tracks its benchmark closely will have a low tracking error and, if it adds even a small amount of excess return, a high information ratio. A portfolio that deviates widely from its benchmark will have a high tracking error and will need a larger excess return to achieve the same information ratio. 
+
+The information ratio has two interpretations that are worth keeping in mind. The first is statistical. It is the average excess return per unit of volatility in excess return, and it is directly related to the t-statistic of the excess return series (@goodwin1998information). An information ratio of 0.5 measured over four years is statistically indistinguishable from zero, because the t-statistic is only 1.0. The same ratio measured over sixteen years is statistically significant, with a t-statistic of 2.0. The practical implication is that a short track record, however impressive, tells us very little about whether the manager has genuine skill or has simply been fortunate.
+
+The second interpretation is economic. If the manager maintains the same level of systematic risk as the benchmark, the excess return decomposes into alpha plus residual noise. The information ratio then becomes the ratio of alpha to residual risk, which is why it is sometimes called the appraisal ratio (@goodwin1998information). It measures the quality of the manager's information, discounted by the risk taken to act on it. A manager with a high information ratio is one whose forecasts are accurate relative to the size of the bets being placed.
+
+With this definition in hand, we can state the Fundamental Law. It decomposes the maximum achievable information ratio into two components:
 
 $$
 IR = IC \times \sqrt{BR}
 $$
-
-The Information Ratio, or IR, captures the quality of the tactical process. It is the excess return generated per unit of active risk taken. A higher IR indicates a more efficient conversion of risk into return.
 
 The Information Coefficient, or IC, measures skill. It is the correlation between the forecaster's predictions and the actual outcomes. An IC of 1.0 indicates perfect foresight. An IC of 0.0 indicates no predictive ability whatsoever. In practice, ICs in financial markets are modest. A correlation of 0.10 between forecasts and realizations is considered strong. Most tactical processes operate with ICs far lower.
 
@@ -50,56 +61,204 @@ The square root relationship is important. Doubling breadth does not double the 
 
 Consider a tactical allocator with an IC of 0.10, a reasonable estimate for a disciplined process. If this allocator makes four independent bets per year, the information ratio is 0.10 times the square root of four, or 0.20. An IR of 0.20 is modest. Over time, it would generate a small but positive excess return. Increasing breadth to sixteen independent bets per year would raise the IR to 0.40, a more meaningful level. But finding sixteen genuinely independent tactical opportunities is difficult. Asset class returns are correlated. Economic events affect multiple markets simultaneously. The assumption of independence is often violated.
 
-The Fundamental Law clarifies why tactical asset allocation is hard. Skill, as measured by the IC, is bounded. No forecaster is consistently prescient. Breadth is constrained. The number of independent opportunities available in any year is limited. The product of these two factors, even under favorable assumptions, produces information ratios that are modest. When costs are subtracted—transaction fees, taxes, and the expenses of research and implementation—the net alpha available to the tactical allocator shrinks further.
+The Fundamental Law also has a value implication. As @goodwin1998information notes, the maximum value a manager can add is proportional to the square of the information ratio, divided by the investor's risk aversion:
 
-This does not mean tactical allocation should be abandoned. It means expectations must be calibrated. A tactical process with a realistic IC and adequate breadth can add value over time. But the value added will be small, measured in tens of basis points rather than percentage points of excess return. The process will experience extended drawdowns. It will test the conviction of those who implement it.
+$$
+\text{Potential Added Value} = \frac{IR^2}{4\lambda}
+$$
 
-The theoretical foundation yields a practical conclusion. Tactical deviations should be modest. The strategic allocation does the heavy lifting. Tactical overlays provide a marginal contribution, one that is welcome but not essential. Framed this way, tactical asset allocation becomes a reasonable pursuit rather than a false promise. It is a search for incremental alpha, pursued with discipline and humility, grounded in a clear understanding of the odds.
+Where $\lambda$ is the coefficient of risk aversion. A manager with an IR of 0.5 serving a conservative investor might add only a few tens of basis points per year. A manager with an IR of 1.0 serving a less risk-averse investor could add several hundred basis points. The framework makes clear that a high information ratio is worth pursuing, but also that even a good manager operating under tight risk constraints cannot add very much.
+
+The Fundamental Law clarifies why tactical asset allocation is hard. Skill, as measured by the IC, is bounded. No forecaster is consistently prescient and breadth is constrained. The number of independent opportunities available in any year is limited. The product of these two factors, even under favorable assumptions, produces information ratios that are modest. When costs are subtracted (transaction fees, taxes, and the expenses of research and implementation) the net alpha available to the tactical allocator shrinks further.
+
+However it should be acknowledged that the Fundamental Law describes a theoretical maximum rather than a forecast. It assumes that the manager's forecasts are independent of one another and that they are implemented without error, and in practice neither assumption holds. Forecasts are correlated, because economic and market conditions affect multiple asset classes at the same time. Implementation is imperfect, because constraints, transaction costs, and behavioral biases prevent the manager from acting on every signal. The realized information ratio will therefore be lower than the theoretical maximum. @goodwin1998information draws this distinction directly when he separates the ex ante theoretical maximum from the ex post realized ratio. His study of 212 active institutional managers over a ten-year period finds a median information ratios below 0.3 in most style categories. The law is useful for calibrating expectations, but it is not useful for predicting results.
+
 
 ## Macro-Fundamental Tactical Analysis
 
-Chapter 6 established the economic variables that drive long-term asset class returns. Tactical analysis uses those same variables differently. Rather than forming ten-year expectations, it focuses on momentum and surprises—the deviation of current data from consensus forecasts and the speed at which conditions are changing.
+Chapter 6 established the economic variables that drive long-term asset class returns. Tactical analysis uses those same variables differently. Rather than forming ten-year expectations, it focuses on momentum and surprises.
 
 ### The Business Cycle as a Tactical Frame
 
-Economic variables do not move independently. They evolve together through a recurring pattern of expansion and contraction known as the business cycle. Understanding where the economy stands within this cycle is the starting point for tactical positioning. It determines which asset classes are likely to lead and which are likely to lag over the coming quarters.
+Economic variables do not move independently. They evolve together through a recurring pattern of expansion and contraction that is commonly known as the business cycle. However it should be added that the term "cycle" is somewhat misleading, because "cycle" suggests a regularity that the data does not support. The pattern is not a law instead it is an empirical observation drawn from the historical record.  What makes the framework useful is not that it tells us when the next phase will arrive. Instead, it tells us what to look for, and it organizes the economic variables from Chapter 6 into a story about where the economy stands and which asset classes are likely to lead or lag over the coming quarters.
 
-The business cycle refers to the fluctuations in economic activity that occur over time, measured by indicators such as GDP growth, employment, industrial production, and consumer spending. These fluctuations are not regular in duration or amplitude. Expansions have lasted as little as a year and as long as a decade. Recessions have been brief and shallow or prolonged and severe. Yet despite this variation, the cycle follows a recognizable sequence. Activity rises to a peak, declines to a trough, and then begins to rise again. The transition points matter. The peak marks the end of expansion and the onset of contraction. The trough marks the end of recession and the beginning of recovery.
+The business cycle is measured by key indicators such as GDP growth, employment levels, industrial production, and consumer spending. While cycles vary in how long they last and how severe they are, they follow a predictable pattern. Economic activity rises to a peak, then falls to a low point (trough), then rises again. Two transition points are particularly important: the peak signals the shift from expansion into recession, and the trough marks the shift from recession back into recovery. For tactical investors, identifying where the economy currently stands in this cycle is essential. It reveals which asset classes are positioned to perform well and which are likely to struggle.
 
 #### Phases of the Business Cycle
 
-The cycle moves through four distinct phases, each defined by a particular configuration of growth, inflation, and monetary policy. The phases do not arrive on a fixed schedule, nor do they always proceed in the same order. Stagflation, for instance, does not occur in every cycle. But the framework provides a mental model for interpreting economic data and positioning portfolios.
+The cycle moves through four distinct phases, each defined by a particular configuration of growth, inflation, and monetary policy. The phases do not arrive on a fixed schedule, nor do they always proceed in the same order. The framework used here follows the Investment Clock developed by @greetham2004investment, which splits the cycle according to the direction of growth relative to trend and the direction of inflation.
+```{r}
+#| echo: false
+#| label: fig-investment-clock-theory
+#| fig-cap: "The Theoretical Economic Cycle: Output Gap and Inflation. Source: Greetham & Hartnett, Merrill Lynch (2004)."
+#| fig-align: center
+#| out-width: "90%"
 
-Recovery follows a recession and marks the period when growth begins to accelerate from a low base. GDP turns positive after a period of contraction, often posting above-trend rates as idle capacity is brought back online. Unemployment, which tends to lag the broader economy, may remain elevated for some time but eventually stabilizes and begins to decline. Inflation remains subdued. Excess capacity in product and labor markets prevents firms from raising prices, and inflation expectations remain anchored. Central banks maintain accommodative monetary policy, keeping interest rates low to nurture the expansion. In this environment, equities tend to perform strongly. Earnings recover from depressed levels, and valuations expand as confidence returns. Credit spreads narrow as default concerns recede, benefiting corporate bonds. Government bonds may face modest headwinds as investors begin to anticipate eventual rate increases, but the low starting point for yields provides a cushion.
+library(ggplot2)
 
-Expansion represents the mature phase of the cycle. Growth is robust, often running above the economy's long-term potential. Labor markets tighten. Unemployment falls to low levels, and wage pressures begin to build as firms compete for scarce workers. Inflation rises. Demand outstrips supply in key sectors, and firms gain pricing power. Central banks respond by shifting toward tighter monetary policy. Interest rates rise to prevent the economy from overheating and to keep inflation expectations from becoming unanchored. Equities may continue to perform well, as strong earnings growth offsets the headwind from rising discount rates. Sectors tied to economic activity, such as industrials and materials, often lead. Commodities perform strongly as demand for physical resources increases and as investors seek hedges against rising inflation. Government bonds typically struggle. Rising rates reduce bond prices, and real returns are compressed.
+t <- seq(0, 2 * pi, length.out = 1000)
+growth <- -sin(t)      # Output gap relative to trend
+inflation <- cos(t)    # Lagging inflation curve
 
-Contraction, or recession, occurs when growth turns negative. GDP declines. Unemployment rises as firms cut costs in response to falling demand. Inflation falls, and deflation may become a concern if the downturn is severe and prolonged. Central banks reverse course, cutting interest rates to stimulate the economy and prevent a deflationary spiral. Equities fall as earnings disappoint and risk aversion spikes. Defensive sectors, such as consumer staples and healthcare, hold up better than cyclical sectors tied to discretionary spending and industrial activity. Government bonds perform well. Investors seek safety, and falling rates boost bond prices. The negative correlation between equities and government bonds reasserts itself. Credit spreads widen as default concerns rise, and corporate bonds, particularly lower-quality issues, may decline even as government bonds rally.
+df <- data.frame(t = t, growth = growth, inflation = inflation)
 
-Stagflation is a distinct phase that combines weak or negative growth with elevated inflation. This combination, most notably experienced during the 1970s, confounds traditional portfolio construction. Equities suffer from weak earnings and from the high discount rates that accompany inflation. Bonds suffer from inflation eroding real returns and from central banks maintaining tight policy to combat price pressures, even in the face of weak growth. Real assets, including commodities and gold, tend to perform best. Commodities benefit from the inflationary impulse and from their role as a store of value when paper currencies lose purchasing power. Gold benefits from declining real interest rates and from safe-haven demand during periods of economic and policy uncertainty.
+ggplot(df, aes(x = t)) +
+  # Shaded phase bands
+  annotate("rect", xmin = 0, xmax = pi/2, ymin = -1.3, ymax = 1.3,
+           fill = "#e0a8a8", alpha = 0.22) + # Reflation
+  annotate("rect", xmin = pi/2, xmax = pi, ymin = -1.3, ymax = 1.3,
+           fill = "#a8c5e0", alpha = 0.22) + # Recovery
+  annotate("rect", xmin = pi, xmax = 3*pi/2, ymin = -1.3, ymax = 1.3,
+           fill = "#c9e0a8", alpha = 0.22) + # Overheat
+  annotate("rect", xmin = 3*pi/2, xmax = 2*pi, ymin = -1.3, ymax = 1.3,
+           fill = "#f0d9a8", alpha = 0.22) + # Stagflation
+  
+  # Trend line
+  geom_hline(yintercept = 0, color = "grey40", linewidth = 0.5, linetype = "dashed") +
+  
+  # Curves
+  geom_line(aes(y = growth, color = "Growth (vs. Trend)"), linewidth = 1.3) +
+  geom_line(aes(y = inflation, color = "Inflation"), linewidth = 1.1, linetype = "dotted") +
+  
+  # Asset class annotations matching the paper
+  annotate("text", x = pi/4, y = -0.2, label = "BONDS\n(Reflation)", 
+           fontface = "bold", size = 3.5, color = "grey30") +
+  annotate("text", x = 3*pi/4, y = -0.2, label = "STOCKS\n(Recovery)", 
+           fontface = "bold", size = 3.5, color = "grey30") +
+  annotate("text", x = 5*pi/4, y = 0.2, label = "COMMODITIES\n(Overheat)", 
+           fontface = "bold", size = 3.5, color = "grey30") +
+  annotate("text", x = 7*pi/4, y = 0.2, label = "CASH\n(Stagflation)", 
+           fontface = "bold", size = 3.5, color = "grey30") +
 
-#### The Investment Clock Framework
+  # Phase labels at the bottom
+  annotate("text", x = pi/4, y = -1.15, label = "Reflation",
+           fontface = "bold", size = 4, color = "grey20") +
+  annotate("text", x = 3*pi/4, y = -1.15, label = "Recovery",
+           fontface = "bold", size = 4, color = "grey20") +
+  annotate("text", x = 5*pi/4, y = -1.15, label = "Overheat",
+           fontface = "bold", size = 4, color = "grey20") +
+  annotate("text", x = 7*pi/4, y = -1.15, label = "Stagflation",
+           fontface = "bold", size = 4, color = "grey20") +
 
-The Investment Clock framework maps these four phases to a stylized cycle. It illustrates how the leadership of different asset classes rotates as the economy moves from recovery through expansion, contraction, and stagflation. This framework, known as the 'Investment Clock,' was popularized by Trevor Greetham (2004) at Merrill Lynch to help practitioners rotate capital into assets with the highest 'regime-based' probability of success. The framework does not predict the precise timing of transitions. Cycles vary in duration and amplitude, and not every cycle includes a stagflationary phase. The sequence, however, is consistent enough to provide a useful mental model.
+  scale_color_manual(name = "", values = c("Growth (vs. Trend)" = "grey15", "Inflation" = "firebrick4")) +
+  labs(x = "Time", y = "Cycle Dynamics") +
+  coord_cartesian(ylim = c(-1.3, 1.3)) +
+  scale_x_continuous(breaks = NULL, labels = NULL) +
+  scale_y_continuous(breaks = NULL, labels = NULL) +
+  theme_minimal() +
+  theme(
+    panel.grid = element_blank(),
+    axis.title = element_text(size = 10, color = "grey30"),
+    axis.text = element_blank(),
+    axis.ticks = element_blank(),
+    legend.position = "bottom"
+  )
 
-During recovery, equities and corporate bonds lead. Earnings are rebounding, credit conditions are improving, and monetary policy remains supportive. Government bonds, having performed well during the preceding recession, begin to lag as investors rotate toward risk assets and as the outlook for rates shifts.
+```
 
-During expansion, commodities join equities at the forefront. Strong global demand drives consumption of industrial resources, and rising inflation increases the appeal of real assets. Government bonds continue to lag as central banks raise rates and inflation expectations rise.
+The cycle starts with **Reflation**, a phase where growth is below trend and falling toward its trough. As demand weakens and commodity prices fall, inflation begins to come down. Profits suffer and real yields drop, prompting central banks to cut short rates aggressively to stimulate the economy. The yield curve shifts down and steepens while fiscal policy, usually still supporting demand from measures taken during the downturn, provides additional stimulus. Confidence remains low but starts to recover. In this environment, bonds perform best, as short rates are falling and bond yields have bottomed out.
 
-During contraction, government bonds provide the best returns. Investors flee risk assets and seek the safety of sovereign debt. Falling rates boost bond prices. Equities and commodities fall as earnings decline and demand for physical resources wanes.
+As policy easing begins to work, the economy transitions into **Recovery**. The output gap reaches its trough and growth turns upward, still below trend but climbing back toward it. Inflation continues to fall because spare capacity remains and productivity is strong, allowing profits to recover quickly. Central banks maintain loose policy, keeping bond yields low while confidence rises steadily. This combination makes recovery the best phase for equities, as credit spreads narrow and default risk fades, benefiting corporate bonds as well. Government bonds begin to lag, however, as investors start to anticipate the rate hikes that will eventually come.
 
-During stagflation, cash and real assets offer the best protection. Equities and bonds both struggle. Commodities and gold benefit from the inflationary environment and from their role as alternative stores of value.
+The cycle enters **Overheat** once growth crosses back above trend and continues rising toward its peak. As capacity is used up and inflation moves higher, central banks respond by raising rates to cool the economy—though growth remains above trend for a while longer and policy turns restrictive. Confidence is high, and markets often speak of a new era, yet bonds do poorly as short rates rise, the yield curve flattens, and long yields follow. Equities can still advance, but they become more volatile and typically top out before the cycle turns. Commodities emerge as the strongest asset class, and cyclical value sectors like industrials and materials tend to lead.
 
-The following table summarizes the characteristics of each phase.
+The final phase, **Stagflation**, begins as growth peaks and starts to fall, even though it remains above trend for a time. The decisive break comes when inflation continues to rise, often pushed higher by oil shocks, while productivity drops and a wage-price spiral threatens to develop as firms raise prices to protect margins. Only a rise in unemployment breaks this spiral. Confidence drops sharply as the central bank becomes reluctant to cut rates until inflation peaks, which limits how much bonds can rally. Equities fall as profits weaken under the combined pressure of slowing growth and elevated costs. Real assets prove most resilient in this environment, with commodities benefiting from inflation and their role as a store of value, while gold gains from falling real rates and safe-haven demand when both policy and the economy are uncertain.
 
-| Phase | Growth | Inflation | Monetary Policy | Leading Assets |
-|-------|--------|-----------|-----------------|----------------|
-| Recovery | Accelerating | Low | Accommodative | Equities, Corporate Bonds |
-| Expansion | Robust | Rising | Tightening | Commodities, Equities |
-| Contraction | Negative | Falling | Easing | Government Bonds |
-| Stagflation | Weak/Negative | Elevated | Tight | Commodities, Gold |
+When growth finally crosses back below trend, the cycle returns to Reflation and begins again. The sequence is a stylized model, not a fixed rule. Shocks such as an oil price collapse or a geopolitical event can move the clock backward, skip a phase, or stall it altogether. What the framework provides is a way to organise the economic variables from the previous chapter into a coherent picture of where the economy stands. It is a lens for interpreting data, not a machine for predicting the next phase.
 
-![The Investment Clock](graphics/Strategic_Financial_Analysis/Investment-Clock.png){#fig-elementwise}
+The table below summarises the characteristics of each phase. The growth column refers to the direction of the output gap, not its level, and the arrows show direction of change rather than whether growth is above or below trend.
+
+| Phase | Growth vs. Trend | Inflation | Best Asset Class | Best Equity Sectors | Yield Curve Slope |
+|-------|-----------------|-----------|------------------|---------------------|-------------------|
+| Reflation | ↓ | ↓ | Bonds | Defensive Growth | Bull Steepening |
+| Recovery | ↑ | ↓ | Stocks | Cyclical Growth | — |
+| Overheat | ↑ | ↑ | Commodities | Cyclical Value | Bear Flattening |
+| Stagflation | ↓ | ↑ | Cash | Defensive Value | — |
+
+: The four phases of the Investment Clock. Source: Greetham and Hartnett (@greetham2004investment). Arrows indicate the direction of change, not the level.
+
+The theoretical table tells us which asset class should lead in each phase. The empirical record from the United States, covering April 1973 through July 2004, shows what actually happened. The table below reports the average real annualized return for each asset class in each phase.
+
+| Phase | Bonds | Stocks | Commodities | Cash |
+|-------|-------|--------|-------------|------|
+| Reflation | 9.8 | 6.4 | −11.9 | 3.3 |
+| Recovery | 7.0 | 19.9 | −7.9 | 2.1 |
+| Overheat | 0.2 | 6.0 | 19.7 | 1.2 |
+| Stagflation | −1.9 | −11.7 | 28.6 | −0.3 |
+| Full sample | 3.5 | 6.1 | 5.8 | 1.5 |
+
+: U.S. real total returns by phase, 1973–2004. Source: Greetham and Hartnett (@greetham2004investment). Returns are geometric annual averages in percent.
+
+The pattern in the table broadly confirms the theory. Bonds do best in Reflation, stocks do best in Recovery, commodities do best in Overheat, and cash is the least bad option in Stagflation. The magnitudes are large, and they are worth pausing on. The difference between holding stocks in Recovery and holding them in Stagflation is over thirty percentage points of annual real return. That is the value of getting the phase right.
+
+The numbers also come with caveats. They are drawn from one country and one specific period. Commodity returns in the sample are heavily influenced by the oil shocks of the 1970s, which is why they are so strongly negative in Reflation and so strongly positive in Stagflation. A different sample period would produce different magnitudes. The direction of the pattern is more informative than the specific figures. The table shows that asset class leadership does rotate with the cycle. It does not promise that the same rotation will repeat with the same magnitudes in the future.
+
+### Sector and Factor Implications of the Clock
+
+The Investment Clock does not stop at the choice between asset classes. It also predicts which equity sectors are likely to lead and lag as the cycle moves through its phases. The Merrill Lynch back-test found that the same growth and inflation dynamics that drive asset class rotation also drive sector rotation within equities, and that the effects are large enough to be worth acting on.
+
+Two dimensions drive the sector pattern. The first is cyclicality. When growth is accelerating, cyclical sectors outperform. When growth is decelerating, defensive sectors take the lead. The second is duration. When inflation is falling, discount rates drop and long-duration growth stocks benefit. When inflation is rising, pricing power matters more, and short-duration value stocks outperform.
+
+The two dimensions together define four quadrant styles, one for each phase of the clock. Each quadrant favours a different kind of sector exposure.
+
+| Phase | Growth | Inflation | Quadrant Style | Leading Sectors |
+|-------|--------|-----------|----------------|-----------------|
+| Reflation | Falling | Falling | Defensive Growth | Consumer Staples, Financials, Consumer Discretionary |
+| Recovery | Rising | Falling | Cyclical Growth | Consumer Discretionary, Telecoms, Technology |
+| Overheat | Rising | Rising | Cyclical Value | Technology, Industrials, Oil & Gas |
+| Stagflation | Falling | Rising | Defensive Value | Oil & Gas, Pharmaceuticals, Utilities |
+
+The Merrill Lynch back-test, covering U.S. equity sectors from April 1973 through July 2004, found that the sectors did rotate broadly as the framework predicted. The table below reports the average annual return of each sector relative to the market, in each of the four phases.
+
+| Sector | Recovery | Overheat | Reflation | Stagflation |
+|--------|----------|----------|-----------|-------------|
+| Consumer Discretionary | 3.8 | −5.8 | 8.9 | −8.9 |
+| Telecoms | 3.7 | −0.9 | −10.2 | 0.0 |
+| Technology | 3.3 | 4.7 | −4.6 | −12.5 |
+| Financials | 1.4 | −1.8 | 11.0 | 1.6 |
+| Industrials | −0.4 | 4.3 | −4.5 | 2.1 |
+| Basic Materials | −2.4 | −3.6 | 0.5 | 2.1 |
+| Consumer Staples | −3.1 | 1.1 | 13.3 | 2.5 |
+| Utilities | −3.1 | −3.2 | −4.7 | 6.4 |
+| Oil & Gas | −4.4 | 4.2 | −12.8 | 14.7 |
+| Pharmaceuticals | −4.5 | 2.9 | 5.6 | 11.6 |
+
+: U.S. broad sector returns relative to the market, by phase, 1973–2004. Source: Greetham and Hartnett (@greetham2004investment). Returns are geometric average annual rates in percent.
+
+The pattern in the table is consistent with the framework. In Recovery, Consumer Discretionary, Telecoms, and Technology lead, and defensives such as Consumer Staples and Utilities lag. In Overheat, Technology, Industrials, and Oil & Gas lead, and Consumer Discretionary is the worst performer. In Reflation, Consumer Staples, Financials, and Consumer Discretionary lead, and Oil & Gas is the worst performer by a wide margin. In Stagflation, Oil & Gas, Pharmaceuticals, and Utilities lead, and Technology and Consumer Discretionary are the worst performers.
+
+The magnitudes are large. The spread between the best and worst sectors in Stagflation is over 25 percentage points per year. In Reflation, the spread is also over 25 percentage points, with Consumer Staples at 13.3 percent and Oil & Gas at −12.8 percent. These are not marginal differences. Getting the sector call right in each phase has a material effect on equity returns.
+
+The statistical evidence is stronger for some sectors than for others. Consumer Discretionary and Oil & Gas are the most macro-driven, with confidence levels above 99 percent in the analysis of variance tests. Telecoms, Utilities, and Basic Materials are poorly explained by the model, and the sector rotation in those cases may reflect factors other than the cycle. The framework is best treated as a guide to which sectors to favor and which to avoid, not as a precise sector timing tool.
+
+The same growth and inflation dynamics also show up in equity factor returns. Growth stocks are long-duration assets: their cash flows are weighted toward the future, so they benefit when discount rates fall. Value stocks are short-duration: their cash flows are weighted toward the present, so they hold up better when discount rates rise. This is why the Investment Clock links falling inflation to growth stocks and rising inflation to value stocks.
+
+Momentum, the third factor that appears in the simulation data, behaves differently. Momentum is not tied to the level of growth or inflation but to the persistence of the market's direction. When the cycle is moving clearly from one phase to the next, trends persist and momentum performs well. When the cycle is choppy or the phase is uncertain, momentum suffers. The tactical allocator can use the phase classification as a signal for whether momentum is likely to be rewarded: a clear phase transition favors momentum, and a stalled or backward clock does not.
+
+### Fixed Income Implications
+
+The Investment Clock also predicts the behaviour of the yield curve. As the cycle moves through its phases, the central bank changes the policy rate, and the shape of the curve responds. The table below reports the average annual change in nominal interest rates at various maturities, in each of the four phases.
+
+| Phase | 3M Fed Funds | 3M T-Bills | 2Y Bond | 10Y+ Bond | Curve Slope | Curve Level | Curve Shift |
+|-------|--------------|------------|---------|-----------|-------------|-------------|-------------|
+| Reflation | −324 | −225 | −141 | −43 | +182 | −268 | Bull Steepening |
+| Recovery | −60 | −56 | −44 | −45 | +12 | −101 | Bull Steepening |
+| Overheat | +122 | +102 | +107 | +54 | −48 | +147 | Bear Flattening |
+| Stagflation | +86 | +51 | −13 | +20 | −32 | +93 | Bear Flattening |
+
+: Changes in nominal interest rates, by phase, 1973–2004. Source: Greetham and Hartnett (@greetham2004investment). Figures are actual basis point changes in nominal interest rates, annualised.
+
+The front end of the curve behaves as the framework predicts. The Fed cuts rates most aggressively during Reflation, by an average of 324 basis points per year. It continues to ease during Recovery, though at a slower pace. It hikes most rapidly during Overheat, by 122 basis points per year, and continues to hike into Stagflation, though the pace slows.
+
+The back end of the curve also behaves as expected. Ten-year Treasury yields fall during Reflation and Recovery, when the central bank is easing and inflation is falling. They rise during Overheat and Stagflation, when inflation pressures push long yields higher.
+
+The combination of the two produces the characteristic yield curve shifts. In Reflation, the curve bull-steepens: short rates fall faster than long rates, and the spread widens. In Overheat, the curve bear-flattens: short rates rise faster than long rates, and the spread narrows. These two shifts are the ones that the framework identifies with the central bank being in play. Recovery and Stagflation fall between the extremes, with smaller and less consistent curve movements.
+
+For the tactical allocator, the yield curve signal is a cross-check on the phase classification. If the phase is Overheat, the curve should be bear-flattening. If it is not, the classification may be wrong, or the central bank may be responding to conditions the framework does not capture. The framework does not predict the level of rates. It predicts the direction of change and the shape of the curve. Both are useful inputs to the duration decision within fixed income.
+
+The three signals, asset class, sector, and yield curve, all flow from the same growth and inflation dynamics. The tactical allocator uses them together. The asset class signal sets the broad allocation. The sector signal tilts the equity sleeve. The yield curve signal informs the duration decision within fixed income. Each signal is imperfect on its own, but together they give a coherent picture of where the cycle is and what it implies for the portfolio.
+
+<!--
 
 #### Drivers of the Business Cycle
 
@@ -251,6 +410,60 @@ The following table synthesizes these relationships.
 
 These relationships are not mechanical. They are tendencies, not certainties. The magnitude and timing of asset class responses vary across cycles, and structural changes in the economy can alter historical patterns. Yet the framework provides a starting point for tactical positioning. It allows the allocator to form expectations that are grounded in economic logic rather than simple extrapolation of past returns.
 
+-->
+
+### The Taylor Rule as a Policy Gauge
+
+The Investment Clock tells us the direction of monetary policy in each phase. It does not tell us whether the level of the policy rate is appropriate given the state of the economy. For that, a benchmark is useful. The Taylor rule provides one. Developed by @taylor1993discretion, it states that the central bank should set the nominal policy rate as a function of the neutral real rate, current inflation, the deviation of inflation from target, and the deviation of output from potential.
+
+$$
+i_t = r^* + \pi_t + 0.5(\pi_t - \pi^*) + 0.5(y_t - y^*)
+$$
+
+Where the variables are defined as:
+
+- $i_t$: the nominal policy rate set by the central bank
+- $r^*$: the neutral real interest rate, the rate consistent with full employment and stable inflation
+- $\pi_t$: the current inflation rate
+- $\pi^*$: the central bank's target inflation rate
+- $y_t$: the log of real GDP
+- $y^*$: the log of potential GDP, the level of output the economy can sustain without generating inflationary pressures
+- $(y_t - y^*)$: the output gap, measuring the degree of economic slack or overheating
+
+The rule is not a prescription that central banks follow mechanically. It is a benchmark against which actual policy can be judged. When the actual rate is far below the rule's prescription, policy is unusually loose. When it is far above, policy is unusually tight. For the tactical allocator, the gap between the actual rate and the prescribed rate is a signal about the future path of policy. A large negative gap suggests that tightening is likely at some point, which is negative for bonds and long-duration equities. A large positive gap suggests that easing is likely, which is the reverse.
+
+The rule has two important limitations. The neutral real rate is not observable, and estimates vary across models and over time. Potential output is also unobservable and is revised as new data arrive. The gap between the actual rate and the prescribed rate is therefore measured with error. The rule is a useful reference point, not a precise tool.
+
+### Economic Surprises and the Earnings Yield Gap
+
+Two other tactical signals sit alongside the cycle framework. The first is the behaviour of economic data relative to consensus. The second is the relative valuation of equities and bonds.
+
+Economic surprise indices track how reported data compare to analyst expectations. When GDP growth, inflation, employment, or industrial production come in above consensus, the surprise is positive. When they fall short, it is negative. These surprises move markets. An economy that consistently beats expectations tends to see equities outperform and bonds underperform, because growth is stronger than the market anticipated and rate expectations adjust upward. An economy that consistently disappoints sees the opposite.
+
+The signal lies in the direction and persistence of the surprises, not in any single reading. A single positive surprise may be noise. A string of positive surprises suggests that the consensus is behind the curve, that conditions are improving faster than analysts recognise. The tactical allocator can position for further positive surprises by overweighting equities and underweighting bonds. The trade works until the consensus catches up, at which point the edge disappears.
+
+The earnings yield gap provides a framework for the choice between equities and bonds. It compares the earnings yield of the equity market, which is the inverse of the price-to-earnings ratio, with the yield on government bonds.
+
+$$
+\text{Yield Gap} = \frac{E}{P} - Y_{\text{bond}}
+$$
+
+Where $E$ is the earnings per share of the equity market, $P$ is the price per share, so that $\frac{E}{P}$ is the earnings yield, and $Y_{\text{bond}}$ is the yield to maturity on a reference government bond, typically the ten-year. A positive gap means equities offer a higher earnings yield than bonds. A negative gap means bonds are relatively more attractive. he tactical signal is straightforward. When the gap is wide, equities are cheap relative to bonds, and the allocator overweights them. When the gap is narrow or negative, the reverse applies.
+
+
+### Deflation as a Regime Outside the Cycle
+
+The Investment Clock framework assumes that inflation is either rising or falling. It does not address what happens when inflation turns negative and the economy enters deflation. Deflation is rare, but it is severe enough that it deserves separate treatment.
+
+Deflation is a sustained fall in the general price level. It usually arises from a collapse in aggregate demand. When consumers and businesses cut spending, firms cut prices to attract buyers. Falling prices reduce revenues, which leads to layoffs, which reduce spending further. The cycle is self-reinforcing. Excess capacity from overinvestment during the prior expansion can also push prices lower. Technology-driven cost reductions can produce mild deflation in specific sectors, but broad-based deflation is almost always a symptom of economic weakness.
+
+The consequences for portfolios are significant. As prices fall, consumers delay purchases in anticipation of even lower prices, which deepens the demand shortfall. The real burden of debt rises, because nominal debt is fixed while the price level falls. Households and firms struggle to service obligations that grow larger in real terms. Defaults rise. Central banks face a particular problem, because nominal interest rates cannot fall below zero. Once rates hit the zero lower bound, the central bank loses its primary tool for stimulating the economy and must resort to unconventional measures.
+
+Asset class behaviour in deflation is close to the mirror image of behaviour in inflation. Nominal government bonds do well, because falling prices increase the real value of fixed payments and central banks cut rates. Equities do poorly, because revenues and profits fall and the real burden of corporate debt rises. Real assets also do poorly, because commodity prices fall and real estate values decline as rents fall and vacancies rise. Gold may hold up better than other real assets if the deflation is accompanied by financial instability and safe-haven demand, but falling prices are generally negative for assets that do not generate fixed cash flows.
+
+For the tactical allocator, deflation is a risk that the Investment Clock does not capture. The clock can identify the phases of an inflationary or disinflationary cycle, but it does not tell you what to do if the cycle tips into outright deflation. The defensive posture is to hold nominal government bonds, particularly those issued by reserve currency sovereigns, and to avoid the assets that depend on nominal growth.
+
+
 ## Sentiment and Behavioral Indicators
 
 Macro-fundamental analysis examines economic data and valuation relationships. Sentiment analysis examines the mood of the market. When fear or greed reaches an extreme, prices disconnect from fundamentals. The tactical allocator who can identify these extremes can position for the reversal.
@@ -325,32 +538,175 @@ A disciplined implementation framework integrates the tracking error budget, act
 
 This framework keeps tactical allocation in its proper place. It is a supplement to the strategic allocation, not a replacement. It operates within defined boundaries. It must clear a cost hurdle before it is implemented. These constraints are not obstacles to performance. They are guardrails that prevent tactical enthusiasm from damaging the long-term plan.
 
-## Case Study: The Schmidt-Miller Tactical Pivot
+## Tactical Financial Analysis in the IMAG Simulation
 
-The Schmidt-Miller family's strategic asset allocation, established in Chapter 7, positions the long-term portfolio at 35 percent global equities, 15 percent Swiss equities, 30 percent corporate bonds, and 20 percent government bonds. The equity allocation is capped at 50 percent. Portfolio volatility is held below 10 percent. These constraints reflect Klaus's loss aversion. The allocation is designed to deliver a 6 to 8 percent return over the long term while protecting against the downside scenarios that keep Klaus awake at night.
+The strategic allocation for the IMAG client was established in Chapter 7. The policy portfolio holds 55 percent US equities, 25 percent EUR equities, 12.5 percent USD government bonds, and 7.5 percent EUR government bonds. The client is US-based and spends in USD. The investment universe is restricted to those four segments. There is no allocation to the UK, Switzerland, Japan, or any other market.
 
-Strategic allocations are built for normal times. They assume that the future will resemble the past, that correlations will hold, and that the economic environment will fluctuate within historical ranges. When the environment shifts, the assumptions underlying the strategic allocation come under pressure.
+The strategic allocation is the benchmark against which every subsequent decision is measured. The tactical analysis asks whether the current environment justifies a temporary deviation from that benchmark.
 
-Consider a scenario. Global inflation, dormant for years, begins to rise. Supply chain disruptions, rising energy prices, and tight labor markets combine to push consumer prices higher. Central banks, initially slow to respond, begin to signal that rate increases are coming. The economic data weakens even as inflation remains elevated. The Investment Clock, introduced earlier in this chapter, rotates from Expansion toward Stagflation.
+The IMAG simulation does not provide data for sentiment indicators or technical indicators. There is no VIX, no put-call ratio, no investor sentiment survey, and no moving average or RSI series. The tactical analysis is therefore confined to the macro-fundamental layer, which is the part of the framework the simulation supports.
 
-This is the environment that most threatens the Schmidt-Miller portfolio. Stagflation punishes both equities and bonds. Equities suffer from weak growth and compressed margins. Bonds suffer from rising inflation and the rate increases that follow. The negative correlation between equities and bonds, which provides the diversification benefit at the heart of the strategic allocation, can break down. In the 1970s, both asset classes delivered negative real returns for years.
+### Reading the Economic Outlook
 
-The tactical question is whether to deviate from the strategic allocation to protect against this threat. The tracking error budget allows for modest deviations. The Investment Clock signal is flashing a warning. The tactical allocator must decide whether to act.
+The first step is to place each economy in the client's universe into one of the four Investment Clock phases. The classification uses the direction of growth relative to trend and the direction of inflation. The relevant data is in the Economic Fundamentals section of the Economic Outlook tab.
 
-The proposed tactical pivot is to shift 5 percent of the portfolio from long-term government bonds into gold. Government bonds are the asset class most vulnerable to rising inflation. Their fixed payments lose purchasing power as prices rise. Their duration amplifies the capital loss when yields increase. Gold, by contrast, has historically served as a store of value during inflationary periods. Its correlation with inflation expectations is positive. Its correlation with equities and bonds is low.
+| Country | GDP, 1 year ago | GDP, 2 quarters ago | GDP, last quarter | GDP, current |
+|---------|-----------------|---------------------|-------------------|--------------|
+| United States | 12.22 | 12.60 | 13.04 | 13.49 |
+| Eurozone | 10.18 | 10.55 | 10.47 | 10.56 |
 
-The trade reduces the portfolio's exposure to the asset class most at risk and increases exposure to the asset best positioned to benefit. The cost is modest. Gold is liquid. The bid-ask spread is narrow. The 5 percent shift consumes a portion of the tracking error budget but remains well within the limits set by the IPS.
+: GDP (trailing 12 months), trillions of USD.
 
-The tactical pivot alters the portfolio's risk profile. The expected return changes little. Gold has no earnings and pays no dividends. Its long-term expected return, as estimated in Chapter 7, is roughly in line with inflation. The benefit lies not in higher expected return but in lower expected shortfall risk under the stagflation scenario. If inflation accelerates and bonds sell off, gold provides a buffer. If the stagflation threat recedes and the Investment Clock rotates back toward Recovery, the tactical position is closed. The portfolio returns to its strategic weights.
+The US figure shows an economy that is still expanding. GDP has risen from 12.22 trillion a year ago to 13.49 trillion, and the quarterly path has been steady. The Eurozone shows a similar pattern but with a slower pace, and the last two quarters have been roughly flat.
 
-The result is evaluated against two metrics. The first is shortfall risk, introduced in Chapter 7. Does the tactical pivot reduce the probability that the portfolio fails to fund the family's €160,000 annual withdrawal? Under the stagflation scenario, the answer is yes. The gold position cushions the portfolio against the simultaneous decline in equities and bonds. The shortfall probability, estimated through Monte Carlo simulation, declines by a measurable amount.
+| Country | Inflation, 1 year ago | Inflation, 2 quarters ago | Inflation, last quarter | Inflation, current |
+|---------|-----------------------|---------------------------|-------------------------|-------------------|
+| United States | 0.60 | 1.34 | 0.51 | 1.69 |
+| Eurozone | 0.42 | 0.11 | 0.00 | 0.42 |
 
-The second metric is tracking error. Does the tactical pivot cause the portfolio to deviate excessively from its strategic benchmark? The answer depends on the magnitude of the shift and the duration of the deviation. A 5 percent shift, held for six to twelve months, adds modest tracking error. The overall portfolio risk remains within the 10 percent volatility cap. Klaus's binding constraint is respected.
+: Inflation rate (year-on-year), percent.
 
-Not all tactical pivots succeed. If the stagflation threat fails to materialize—if inflation proves transitory and growth resumes—the gold position detracts from performance. Bonds rally as rate increase expectations fade. Gold declines. The portfolio underperforms its strategic benchmark by the amount of the tactical loss, less costs.
+The US inflation figure has jumped from 0.51 percent last quarter to 1.69 percent. That is a large move in a single quarter, though the level remains below the Federal Reserve's target. The Eurozone inflation figure is barely above zero and has been there for several quarters.
 
-This is the nature of tactical allocation. It is probabilistic, not certain. The tactical allocator does not need to be right every time. A process that is right more often than it is wrong, and that generates positive net returns after costs over a full cycle, adds value. The key is to keep the deviations modest, the costs low, and the evaluation horizon long enough to separate skill from noise.
+| Country | Unemployment, 1 year ago | Unemployment, 2 quarters ago | Unemployment, last quarter | Unemployment, current |
+|---------|--------------------------|------------------------------|---------------------------|----------------------|
+| United States | 5.40 | 5.10 | 5.00 | 4.60 |
+| Eurozone | 4.53 | 4.43 | 4.43 | 4.13 |
 
-For the Schmidt-Miller family, the tactical pivot serves as a form of insurance. It sacrifices a small amount of expected return in the base case to protect against a tail risk that would be particularly damaging given Klaus's loss aversion. Whether this insurance is worth purchasing depends on the probability assigned to the stagflation scenario and the cost of the premium. The tactical allocator presents the analysis. The family decides.
+: Unemployment rate, percent.
 
-This case study illustrates the proper role of tactical asset allocation within a broader wealth management framework. It is not a separate activity, disconnected from the strategic plan. It is a disciplined response to changing conditions, operating within defined boundaries, evaluated against clear metrics, and ultimately serving the same goals that the strategic allocation was designed to achieve. Tactical allocation does not replace the strategic allocation. It protects it.
+The US labor market is tightening. Unemployment has fallen from 5.40 percent a year ago to 4.60 percent. The Eurozone shows a similar improvement, from 4.53 percent to 4.13 percent.
+
+| Country | Consumer Confidence, last quarter | Consumer Confidence, current | Business Confidence, last quarter | Business Confidence, current |
+|---------|----------------------------------|-------------------------------|----------------------------------|-------------------------------|
+| United States | 95.80 | 106.60 | 56.30 | 53.60 |
+| Eurozone | 48.00 | 48.30 | 10.50 | 1.80 |
+
+: Consumer and business confidence indices.
+
+The US consumer confidence figure has jumped by nearly eleven points. Business confidence has slipped slightly but remains comfortably above 50, which is the level associated with expansion. The Eurozone business confidence figure has fallen sharply, from 10.50 to 1.80, which is a warning sign.
+
+### Classifying the Phases
+
+The classification combines the growth direction with the inflation direction. Growth above trend and inflation rising is Overheat. Growth below trend and rising is Recovery. Growth above trend and falling is Stagflation. Growth below trend and falling is Reflation.
+
+The **United States** is in **Overheat**. GDP is rising at a steady pace, unemployment is falling, and both consumer and business confidence are at levels consistent with an economy running above trend. Inflation has moved up sharply from 0.51 percent to 1.69 percent. Rising growth and rising inflation together place the US in Overheat.
+
+The **Eurozone** is in **Recovery**. GDP growth is positive but decelerating, and the last two quarters have been roughly flat. Inflation at 0.42 percent is barely above zero and is not rising. The sharp drop in business confidence, from 10.50 to 1.80, suggests the recovery is maturing rather than accelerating. The Eurozone is in the later part of Recovery, approaching the point where it may tip into Overheat.
+
+### What the Phases Imply
+
+The Investment Clock maps each phase to a leading asset class, a quadrant style, and a set of leading equity sectors.
+
+| Phase | Growth | Inflation | Best Asset Class | Quadrant Style | Leading Sectors |
+|-------|--------|-----------|------------------|----------------|-----------------|
+| Reflation | Falling | Falling | Bonds | Defensive Growth | Consumer Staples, Financials, Consumer Discretionary |
+| Recovery | Rising | Falling | Stocks | Cyclical Growth | Consumer Discretionary, Telecoms, Technology |
+| Overheat | Rising | Rising | Commodities | Cyclical Value | Technology, Industrials, Oil & Gas |
+| Stagflation | Falling | Rising | Cash | Defensive Value | Oil & Gas, Pharmaceuticals, Utilities |
+
+: The four phases of the Investment Clock. Source: Greetham and Hartnett (@greetham2004investment).
+
+The framework is applied to the four segments in the client's universe.
+
+| Segment | Economy | Phase | Implication |
+|---------|---------|-------|-------------|
+| US Equities | United States | Overheat | Favor equities; tilt toward Technology, Industrials, Oil & Gas |
+| EUR Equities | Eurozone | Recovery | Favor equities; tilt toward Consumer Discretionary, Telecoms, Technology |
+| USD Government Bonds | United States | Overheat | Underweight; rising inflation and rates pressure prices |
+| EUR Government Bonds | Eurozone | Recovery | Underweight; bonds lag as recovery continues |
+
+Both economies are in phases that favor equities over government bonds. The US is in Overheat, where commodities lead and government bonds struggle. The Eurozone is in Recovery, where equities are the strongest asset class and government bonds begin to lag. The two signals point in the same direction, which strengthens the case for an equity overweight and a government bond underweight.
+
+The US carries 55 percent of the client's equity weight and 12.5 percent of the government bond weight. The Overheat classification suggests that US government bonds will struggle, because rising inflation and rising rates put pressure on fixed income. Within the US equity sleeve, the framework favors Technology, Industrials, and Oil & Gas.
+
+The Eurozone carries 25 percent of the client's equity weight and 7.5 percent of the government bond weight. The Recovery classification is the strongest phase for equities. Within the European equity sleeve, the framework favors Consumer Discretionary, Telecoms, and Technology.
+
+### Checking the Classification Against the Sector Data
+
+The aggregate industry returns table provides an independent check on the phase classification for the equity sleeves. If the classification is correct, the sectors that lead in the identified phase should be outperforming the sectors that lag.
+
+| Sector | 3 years ago | 1 year ago | 6 months ago | Realized last round | Estimated current round |
+|--------|-------------|------------|--------------|---------------------|------------------------|
+| Healthcare | −33.64 | −12.99 | −10.28 | 0.00 | −0.04 |
+| Financials | −21.47 | −4.32 | 3.77 | 0.00 | 0.01 |
+| Technology | −21.38 | −7.84 | −4.08 | 0.00 | −0.48 |
+| Consumer Cyclicals | −2.06 | −1.62 | 4.65 | 0.00 | −0.13 |
+| Consumer Non-Cyclicals | −18.17 | −8.48 | −1.56 | 0.00 | 0.97 |
+| Energy | −1.03 | −0.96 | −4.06 | 0.00 | 0.04 |
+| Industrials | 6.00 | 4.16 | 4.14 | 0.00 | 0.27 |
+| Basic Materials | 0.51 | 5.16 | 9.79 | 0.00 | −0.11 |
+
+: Aggregate industry returns, percent. Realized historical values and current-round estimates.
+
+The historical realizations provide the more useful signal, because the current-round estimates are a single observation and the historical windows cover several years.
+
+Over the three-year window, Industrials returned 6.00 percent and Basic Materials returned 0.51 percent, while Healthcare returned −33.64 percent and Technology returned −21.38 percent. Over the twelve-month window, Basic Materials returned 5.16 percent, Industrials returned 4.16 percent, and Financials returned −4.32 percent. Over the six-month window, Basic Materials returned 9.79 percent, Consumer Cyclicals returned 4.65 percent, and Industrials returned 4.14 percent. Healthcare and Technology are consistently negative across all windows.
+
+The sectors that have led over the recent windows are Industrials and Basic Materials, which are both classified in the cyclical value quadrant that leads in Overheat. Technology has been negative over the recent windows, which is a partial counter-signal, because the framework places Technology in the cyclical value quadrant for Overheat but also in the cyclical growth quadrant for Recovery. The inconsistency reflects the fact that Technology straddles the two phases, and its performance depends on whether the driver is the growth cycle or the inflation cycle.
+
+The sectors that have lagged, particularly Healthcare, are the defensive growth sectors that lead in Reflation. Their weak performance is consistent with the framework, because neither the US nor the Eurozone is in Reflation.
+
+The current-round estimates are a partial counter-signal. Consumer Non-Cyclicals is the strongest at 0.97 percent, and Industrials is second at 0.27 percent. Technology and Consumer Cyclicals are negative. If the current-round estimates were treated as a forecast, they would suggest a shift toward defensives. But the current-round estimates are point estimates from the simulation, and the historical record is more informative about the phase-consistent pattern.
+
+The conclusion is that the sector data, taken at the historical horizon, supports the phase classification for both the US and European equity sleeves. The current-round estimates are a weak counter-signal that does not outweigh the historical pattern.
+
+### Checking the Classification Against the Factor Data
+
+The equity factor returns table provides a second check on the equity sleeves. The value, momentum, and robustness factors are the systematic drivers of return that operate alongside the market factor.
+
+| Factor | Currency | 3 years ago | 1 year ago | 6 months ago | Realized last round | Estimated current round |
+|--------|----------|-------------|------------|--------------|---------------------|------------------------|
+| Value | USD | 26.52 | 2.65 | −1.80 | 0.00 | 0.09 |
+| Momentum | USD | 2.06 | 16.22 | 4.70 | 0.00 | 0.14 |
+| Robustness | USD | −6.14 | 3.68 | −0.43 | 0.00 | 0.05 |
+| Value | EUR | 19.89 | 3.48 | −0.05 | 0.00 | 0.07 |
+| Momentum | EUR | 9.25 | 12.53 | 3.72 | 0.00 | 0.66 |
+| Robustness | EUR | 20.09 | 16.58 | 16.46 | 0.00 | −0.01 |
+
+: Equity factor returns, percent. Realized historical values and current-round estimates.
+
+The factor data is reported separately for USD and EUR, and the client holds both. The two currencies do not always move together, so the factor check is conducted separately for each equity sleeve.
+
+Over the three-year windows, value is positive in both currencies, at 26.52 percent in USD and 19.89 percent in EUR. Momentum is weaker in USD at 2.06 percent but stronger in EUR at 9.25 percent. Robustness has weakened in USD, turning negative at −6.14 percent, but remains strongly positive in EUR at 20.09 percent.
+
+Over the twelve-month windows, momentum is the strongest factor in both currencies, at 16.22 percent in USD and 12.53 percent in EUR. Value has weakened to 2.65 percent in USD and 3.48 percent in EUR. Robustness is 3.68 percent in USD and 16.58 percent in EUR.
+
+Over the six-month windows, momentum remains positive at 4.70 percent in USD and 3.72 percent in EUR. Value has turned slightly negative in both currencies. Robustness is −0.43 percent in USD and 16.46 percent in EUR.
+
+The momentum leadership is the most consistent pattern across the two currencies. It is what the framework expects during phase transitions, because momentum benefits when the market is trending in a clear direction. The recent momentum returns are therefore consistent with a market that is moving through the Overheat and Recovery phases.
+
+The value factor has weakened over the recent windows in both currencies. This is a partial counter-signal for the Overheat classification, because the framework predicts that value stocks lead when inflation is rising. The weakness may reflect the fact that inflation, while rising, is still below target, and the market has not yet priced in a sustained inflationary environment.
+
+The robustness factor shows the largest divergence between the two currencies. It has weakened in USD but remains strongly positive in EUR. Robustness is a quality measure and is not directly tied to the Investment Clock framework, so its behaviour is not a direct confirmation or contradiction of the phase classification. It is a reminder that the two equity sleeves behave differently and that factor tilts may need to be currency-specific.
+
+The current-round estimates continue the pattern for momentum, which remains the strongest factor in both currencies at 0.14 percent for USD and 0.66 percent for EUR. Value and robustness are weaker.
+
+The factor data therefore partially confirms the phase classification. The momentum leadership is consistent with a trending market, which is what the framework expects during phase transitions. The value weakness is a partial counter-signal, and it suggests that the market is not yet fully pricing in the Overheat scenario. The USD and EUR sleeves diverge on robustness, which means any factor tilt should be implemented separately for each currency rather than applied uniformly across the equity allocation.
+
+### What the Analysis Shows
+
+The macro-fundamental layer of the tactical analysis produces a clear directional view for the four segments in the client's universe. The US is in Overheat and the Eurozone is in Recovery. Both phases favor equities over government bonds.
+
+| Segment | Phase | Directional View |
+|---------|-------|------------------|
+| US Equities | Overheat | Overweight |
+| EUR Equities | Recovery | Overweight |
+| USD Government Bonds | Overheat | Underweight |
+| EUR Government Bonds | Recovery | Underweight |
+
+The sector data supports the phase classification for both equity sleeves, with cyclical and value sectors leading and defensive growth sectors lagging. The factor data partially confirms the classification, with momentum leadership consistent with a trending market and value weakness a partial counter-signal.
+
+The tactical view is therefore a tilt toward equities and away from government bonds, applied to both the US and European sleeves. The factor tilt should be implemented separately for each currency, because the USD and EUR factor patterns are not identical.
+
+The size of the tilt and the specific implementation depend on the tracking error budget and the client's constraints, which are the subject of the next section.
+
+### A Note on the Tools the Simulation Does Not Provide
+
+The chapter discusses sentiment indicators and technical analysis as complementary tools for tactical allocation. The IMAG simulation does not provide data for these tools. There is no VIX, no put-call ratio, no investor sentiment survey, and no moving average or RSI series. The tactical analysis in the simulation is therefore confined to the macro-fundamental layer.
+
+That is a limitation, not a flaw. The macro layer is the most important layer for tactical allocation over a horizon of months, and the sentiment and technical layers are refinements that improve timing at the margin. If the simulation provided sentiment and technical data, the analysis would check whether the market is positioned for or against the macro view, and it would use the technical indicators to time the entry and set the exit. Without that data, the analysis takes the macro view at face value and reports what the phase classification implies.
+
+The strategic allocation for the IMAG client was established in Chapter 7. The policy portfolio holds 55 percent US equities, 25 percent EUR equities, 12.5 percent USD government bonds, and 7.5 percent EUR government bonds. It is the benchmark against which every subsequent decision is measured. The tactical analysis asks whether the current environment justifies a temporary deviation from that benchmark.
+
+The IMAG simulation does not provide data for sentiment indicators or technical indicators. There is no VIX, no put-call ratio, no investor sentiment survey, and no moving average or RSI series. The tactical analysis is therefore confined to the macro-fundamental layer, which is the part of the framework the simulation supports.
