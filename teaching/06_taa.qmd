@@ -1,0 +1,92 @@
+---
+title: "Setting the tactical allocation"
+---
+
+## What the tactical allocation is in the game
+
+By default the game copies the strategic allocation into the tactical allocation. Disabling the
+automatic tactical allocation on the Investment strategy page opens the tactical grid. What you
+enter there is the allocation the round is run on; the strategic allocation stays the benchmark.
+The page estimates the **tracking error** of your tactical allocation against the benchmark and
+the **projected information ratio** from the forecast returns.
+
+## Station 4 of the app
+
+Inputs:
+
+- **Strategic allocation to work on**: one of the SAAs fixed in station 2.
+- **Maximum deviation per position**: a band of ± this share around each strategic weight;
+  default 0.10. The long-only floor stays in force.
+- **Tracking-error budget**, percent a year; 0 means none. If the optimum exceeds the budget, the
+  deviation is scaled down to it.
+
+Press *Optimise the tactical allocation*. The station solves the same problem as station 2, with
+the client's γ and rules, on the **posterior** of station 3, within the band. Output: the
+strategic matrix, the tactical matrix, their difference in points, the tracking error, the
+expected active return under the posterior and under the prior, and the in-sample comparison.
+
+The last table applies your views to **every** fixed SAA and shows the tilt per asset class:
+the same view produces a different tilt per client.
+
+## Worked example
+
+View: US equities earn 12 % over cash, confidence 50 % (Chapter 5). Band ± 10 points, no
+tracking-error budget.
+
+The Hartleys (γ = 8, home UK), deviation of the tactical from the strategic allocation in points:
+
+| | USD | GBP | EUR | CHF | JPY | Total |
+|:--|--:|--:|--:|--:|--:|--:|
+| Money market | −0.5 | 0 | 0 | 0 | +0.5 | 0 |
+| Government bonds | −7.5 | 0 | 0 | 0 | 0 | −7.5 |
+| Corporate bonds | −0.5 | 0 | 0 | 0 | 0 | −0.5 |
+| Equities | +2.5 | +5.0 | +0.5 | 0 | 0 | +8.0 |
+| Commodities | 0 | 0 | 0 | 0 | 0 | 0 |
+
+Tracking error 1.25 % a year, expected active return +0.8 % under the posterior. The tilt is
+funded from US government bonds, and the equity book keeps its home rule: of the eight points
+added to equities, five go to the UK and most of the rest to the US. (The half point of Japanese
+money market is rounding; the station rounds to half a percent.)
+
+The Keller trust (γ = 5, home euro area), same view: equities +10.5 points (euro area +6, US +4),
+government bonds −10, tracking error 1.8 %, expected active return +1.2 %. Same view, a larger
+tilt, because the client bears more risk per unit of return and holds a larger equity book to
+begin with.
+
+With a tracking-error budget of 1 % both tilts are scaled down: the Hartleys to +6.1 points of
+equity, the Kellers to +5.6.
+
+**A view that opens a currency position.** Suppose instead the view is "euro-area government
+bonds earn 4 % over cash", confidence 50 %. For the Hartleys the station moves 9 points into
+euro-area government bonds and 12 points into euro-denominated positions in all; tracking error
+1.1 %. Most of that tracking error is the euro against the dollar. If that is the bet you mean,
+enter it; if you meant a view on European rates, say so with a relative view against US
+government bonds instead.
+
+## Entering it in the game
+
+1. Investment strategy → disable *Automatic tactical allocation* for the fund.
+2. Type the tactical matrix (currency × asset class) from station 4.
+3. Read the game's tracking-error estimate and projected information ratio. The estimate will not
+   equal the app's exactly (the game uses its own forecast returns and a shorter history), but the
+   order of magnitude must agree. A projected information ratio below zero means the game's
+   forecasts disagree with your views; decide which you believe.
+4. Repeat for every fund with the same views.
+
+## Rules of thumb
+
+- **Tracking error 1 to 3 % a year** is a normal tactical budget for a fund with a fixed
+  benchmark; conservative clients at the low end.
+- **A tilt into a foreign bond or money-market position is a currency bet.** The attribution
+  will show it as a currency effect. Make it only if it is the bet you mean.
+- **Stay inside the hard limits.** The band in station 4 does not know the Min-Max sheet; check
+  the tactical matrix against it before you enter it.
+- **Re-enter every round.** Between rounds the game moves holdings with returns and flows; the
+  tactical grid you entered last round is not where the fund is now.
+- **No views, no tilt.** If the outlook gives you nothing you believe, leave the automatic
+  tactical allocation on. Zero tracking error is a decision, not a failure.
+
+## Deliverable of this step
+
+The tactical matrix per fund in the game, the tracking error and projected information ratio
+noted beside the views in the team forum.

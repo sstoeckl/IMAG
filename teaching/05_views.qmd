@@ -1,0 +1,88 @@
+---
+title: "From the Economic outlook to views"
+---
+
+## What the outlook gives you
+
+The Economic outlook page is the analyst's estimate of the coming period, with an expected range
+around each number: interest rates by maturity and currency, inflation and growth, the expected
+excess market return and the factor premia (HML, MOM, RMW) per currency, credit spreads, and the
+narrative report. The game builds its own segment-level return estimates from these in steps:
+government-bond yields first, corporate bonds as yield plus spread, equities as the risk-free
+rate plus the factor premia, alternatives on their own. You can edit each estimate.
+
+None of this changes the strategic allocation. It changes what you expect **relative to the
+benchmark** for the next round, and that is a view.
+
+## A view, in the form the app needs
+
+Station 3 of the app takes views in the Black-Litterman form, one of two kinds:
+
+- **Absolute:** "position A earns x percent a year over cash". Example: US equities earn 12 %.
+- **Relative:** "position A beats position B by x points a year". Example: euro-area equities
+  beat Swiss equities by 2 points.
+
+Each view has a **confidence** between 5 and 95 percent. The prior the views are measured
+against is not the sample mean but the **equilibrium implied by the fixed SAA**: the expected
+returns under which the client's strategic allocation is exactly optimal (Π = γΣw). With no views
+the posterior equals the prior, and the tactical allocation (Chapter 6) equals the strategic one.
+Every deviation you see later can be traced to a view you entered.
+
+## Turning the outlook into views
+
+A practical recipe, per round:
+
+1. **Start from the prior table** in station 3 (column "Prior, implied by the SAA"). For the
+   Hartleys' SAA the implied excess return of US equities is 7.5 %, of UK equities 9.5 %, of US
+   government bonds 0.4 %.
+2. **Compare with the outlook.** Build the outlook's expected excess return for a segment the
+   way the game does: for equities, the expected excess market return plus the factor premia you
+   expect the segment to earn (the analyst's figures, or your own); for government bonds, the
+   change in yields you expect (a rise in yields is a negative return for a constant-maturity
+   bond: roughly minus duration times the yield change) plus the running yield; for corporate
+   bonds the same plus the spread.
+3. **State the difference as a view**, in annual terms. If the outlook says US equities should
+   do better than the prior implies, enter an absolute view above 7.5 %. If it says only that one
+   market beats another, enter a relative view; relative views are safer, because they do not
+   require you to translate a quarterly estimate into an annual level.
+4. **Set the confidence from the expected range.** An estimate at the centre of a narrow range:
+   70 to 80 %. An estimate at the edge of its range, or a narrative you half believe: 30 to 50 %.
+   The default 50 % is the textbook He–Litterman setting.
+5. **Keep τ at 0.05** unless you want every view to move the allocation more (higher τ) or less
+   (lower τ).
+6. **Read the posterior table**: which positions moved, by how much, and whether the sign is the
+   one you meant. The "Change" column is your view after the model has weighed it against the
+   prior.
+
+::: {.callout-tip title="One set of views for all funds"}
+Views are about the market, not about the client. Enter the same views for every fund; the tilt
+they produce differs by client (Chapter 6), because each fund has its own prior and its own γ.
+The app keeps the views and lets you switch the fixed SAA it is applied to.
+:::
+
+## Worked example
+
+Outlook: the analyst's expected excess market return for USD is at the top of its range, the US
+narrative is strong, and the factor premia are positive. We hold the view that US equities earn
+12 % over cash next year, confidence 50 %, τ = 0.05.
+
+Station 3, the Hartleys: the prior for US equities is 7.5 %, the posterior 9.7 %. The view moves
+the posterior part of the way toward 12 %, and it lifts the positions correlated with US equities
+as well (UK equities from 9.5 to 11.1 %, euro-area equities from 9.7 to 11.6 %) while leaving US
+government bonds almost unchanged (0.35 to 0.26 %). For the Keller trust, the second invented
+client (γ = 5, home euro area, cash ≥ 2 %, no commodities), the same view moves US equities from
+7.7 to 9.8 %: a different prior, because a different SAA, and a different γ.
+
+## What not to do
+
+- Do not enter the sample mean as a view. It is already in the SAA.
+- Do not enter a view on a position the SAA does not hold unless you mean to open it. A view
+  on euro-area government bonds opens a euro position against the dollar (Chapter 6).
+- Do not enter five views at 95 % confidence in round 1. The tactical allocation is scaled by
+  confidence; a wall of certain views produces a wall of tilts and a tracking error the client
+  did not sign up for.
+
+## Deliverable of this step
+
+The views for the round, written down with their confidence and the sentence from the outlook
+that justifies each, in the team forum. They are what you will judge in Chapter 9.

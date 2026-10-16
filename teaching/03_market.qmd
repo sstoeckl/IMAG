@@ -1,0 +1,66 @@
+---
+title: "Reading the market"
+---
+
+## Two sources of information, two uses
+
+The game gives you two different things about the market, and they serve two different
+decisions.
+
+- **The history.** The course dataset (loaded in the allocation app) holds the full history of
+  the 21 positions: monthly total returns in US dollars, unhedged, and the US money-market rate.
+  The strategic allocation of every client is defined on this history (Chapter 4). The game's own
+  Results page also lets you download the last five years of asset, factor and exchange-rate
+  data as an Excel file; that is a subset of the same market.
+- **The Economic outlook.** Each round, the analyst estimates the coming period: interest rates
+  by maturity and currency, inflation and growth, factor premia, with an expected range around
+  every estimate. This is forward-looking information and belongs to the tactical decision
+  (Chapter 5). It is not an input to the strategic allocation.
+
+Keep the two apart. The benchmark does not move with the outlook.
+
+## Station 1 of the app: statistics and correlations
+
+Open the app, station *1 · Strategic Asset Analysis*. Leave all 21 positions selected and the
+sample at the full history. The statistics table is annualised and in excess of the US
+money-market rate; the correlation matrix is of the same excess returns.
+
+Three things to take from the table before you optimise anything.
+
+**The ranking by Sharpe ratio.** Sort the table by the Sharpe column and read it top to bottom.
+The equity markets and the US bond positions sit at the top; the positions in a foreign currency
+other than equities sit at the bottom, several of them with a Sharpe ratio around zero or below.
+Ask of every position near the bottom what premium it is being paid.
+
+**What a foreign bond is in dollars.** Compare the volatility of a country's money-market
+position with that of its government bonds, and look at the correlation between the two. In
+dollars both are mostly the currency: the money market has the currency's volatility on an
+excess return near zero, and the bond adds a few points of premium on top of the same currency
+risk. The game cannot hedge. Keep this in mind when you read the optimiser's output in Chapter 4,
+and when you consider a tactical position in Chapter 6.
+
+**The correlation structure.** The five equity markets move together, with correlations around
+0.4 to 0.65 against the US; US government bonds are slightly negatively correlated with US
+equities. That negative correlation is what a defensive position is for.
+
+::: {.callout-note title="The money market is not the risk-free rate"}
+The US money-market position earns a small premium over the bill it is measured against, at a
+very small volatility, which gives it one of the highest Sharpe ratios in the table. An optimiser
+that maximises the Sharpe ratio fills the portfolio with it. That is why the strategic allocation
+uses the client's γ and not the maximum Sharpe ratio (Chapter 4).
+:::
+
+## What not to do here
+
+- Do not shift means or volatilities "to reflect your view". The strategic benchmark is the
+  sample; views enter in Chapter 5.
+- Do not shorten the sample for the strategic allocation. The client's benchmark is defined on
+  the full history; a shorter window produces a different allocation and a worse score.
+- Do not drop positions from the selection. Zero weights are the optimiser's job, and the
+  statistics of the full universe are what the attribution later refers to.
+
+## Deliverable of this step
+
+Nothing to type into the game. What you should be able to say: which positions carry a
+portfolio and why; what a foreign bond or money-market position is, seen from the dollar; what
+the correlation between equities and US government bonds buys you.

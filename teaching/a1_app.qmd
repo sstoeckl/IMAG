@@ -1,0 +1,89 @@
+---
+title: "The allocation app"
+---
+
+## What it is
+
+A Shiny app, provided with the course, that runs the allocation method of this book on the course
+dataset. It has four stations that follow Chapters 3 to 6. It does not connect to the game; you
+read numbers off it and type them into the game's grids.
+
+Source and installation: the course repository (`2024_CESIM_Invest`). It needs R with the packages
+`shiny`, `DT`, `xts` and `quadprog`; start it with `shiny::runApp()` in the app folder, or use the
+hosted instance your instructor names.
+
+## The data
+
+- `data/classes_monthly.csv`: the 21 positions, monthly total returns in US dollars, unhedged,
+  with an index series; the full history the course uses.
+- `data/riskfree_monthly.csv`: the US money-market rate, monthly.
+- `data/cap_shares.csv`: the capitalisation shares of the five equity markets, for the home rule.
+
+Positions are named `<region>_<class>`: `US_money_market`, `UK_government`, `EU_credit`,
+`CH_equity`, `JP_equity`, `GLOBAL_commodity`. Excess returns are total returns minus the
+money-market rate of the same month. Annualisation: mean × 12, covariance × 12.
+
+## Station 1 · Strategic Asset Analysis
+
+Inputs: the positions (default all 21), the part of the sample in percent of the observations
+(default all). Outputs: annualised statistics (excess return, volatility, Sharpe ratio, skewness,
+worst calendar year, maximum drawdown), the correlation matrix, the growth of 100.
+
+## Station 2 · Strategic Asset Allocation
+
+Inputs: γ (whole numbers), home market and home share, objective (quadratic utility, minimum
+variance, maximum Sharpe), a label; floors and caps by asset class, by currency and per position.
+The problem solved:
+
+$$
+\max_w \; \mu' w - \frac{\gamma}{2}\, w' \Sigma w
+\quad \text{s.t.} \quad \sum w = 1,\; w \ge 0,\; \text{floors and caps},\; \text{home rule},
+$$
+
+with the home rule as one linear equality per foreign equity market: $w_x = (1-h)\, s_x
+\sum_{\text{equity}} w$, where $h$ is the home share and $s_x$ the capitalisation share of market
+$x$ outside the home market. Solved with `quadprog::solve.QP(D = \gamma\Sigma, d = \mu, A, b,
+meq)`. Minimum variance sets μ = 0; maximum Sharpe is the best point of a sweep over γ. Weights are
+rounded to half a percent, the residual into the home equity position.
+
+Outputs: the allocation as a currency × asset class matrix with sums, the positions with raw and
+rounded weights, class and currency totals, in-sample results of the fixed weights rebalanced
+monthly (expected excess return, volatility, Sharpe, best and worst calendar year, maximum
+drawdown), the binding limits, the in-sample path, the efficient frontier under the same limits,
+the constraint rows, and R code that reproduces the run. *Fix this allocation as an SAA* hands it
+to stations 3 and 4; several SAAs can be fixed, by label.
+
+## Station 3 · Tactical Analysis
+
+Inputs: the fixed SAA to work on, τ (default 0.05), up to five views, each absolute ("A earns x %
+over cash") or relative ("A beats B by x points") with a confidence c in (0, 1).
+
+Prior: $\Pi = \gamma \Sigma w_{\text{SAA}}$ (reverse optimisation with the SAA's own γ and the
+unrounded weights). Posterior (He and Litterman 1999):
+
+$$
+\mu_{BL} = \left[(\tau\Sigma)^{-1} + P'\Omega^{-1}P\right]^{-1}
+          \left[(\tau\Sigma)^{-1}\Pi + P'\Omega^{-1}Q\right],
+\qquad
+\Sigma_{BL} = \Sigma + \left[(\tau\Sigma)^{-1} + P'\Omega^{-1}P\right]^{-1},
+$$
+
+with $\Omega$ diagonal and $\Omega_k = \frac{1-c_k}{c_k}\,\tau\, p_k'\Sigma p_k$, so that c = 1/2
+is the He–Litterman setting. Outputs: per position the SAA weight, the sample mean, the prior, the
+posterior and the change; the views as parsed.
+
+## Station 4 · Tactical Asset Allocation
+
+Inputs: the fixed SAA, the maximum deviation per position (band), the tracking-error budget.
+The problem of station 2 on $(\mu_{BL}, \Sigma_{BL})$ with the SAA's γ and rules, plus
+$w_{\text{SAA}} - d \le w \le w_{\text{SAA}} + d$. If a budget is set and the tracking error
+$\sqrt{(w - w_{\text{SAA}})'\Sigma(w - w_{\text{SAA}})}$ exceeds it, the deviation is scaled to
+the budget. Outputs: the SAA, TAA and deviation matrices, tracking error, expected active return
+under the posterior and the prior, in-sample comparison, and the tilt by asset class for every
+fixed SAA under the same views. Without views the TAA equals the SAA.
+
+## Tests
+
+`tests/check_recipe.R` confirms that the app's constraint builder and solver reproduce a
+hand-written quadratic programme for twenty client cases; `tests/check_taa.R` confirms that the
+tactical allocation without views equals the strategic one and shows one view at work.

@@ -1,0 +1,60 @@
+---
+title: "From tactical weights to positions"
+---
+
+## The third layer
+
+The tactical allocation is a grid of segment weights. The fund holds assets. The game's
+**automatic current allocation** translates each segment weight into positions: equities by
+market value (value weighting), bonds and alternatives by equal weight, unless you change the
+preference. After each round the holdings drift with returns and fund flows, and, with automation
+on, are rebalanced back to the tactical weights.
+
+For the first rounds, leave this automation on. The decisions that matter are above it.
+
+## Automation preferences: the ESG floor
+
+*Automatic and benchmark portfolio preferences* is where the ESG requirement of the ESG funds is
+set: **Minimum criteria → ESG rating → A** (or the numeric threshold the game uses for A). The
+filter removes every asset below the floor from the fund's investable set, in the current
+allocation *and* in the benchmark portfolio.
+
+Two things to check:
+
+- The **Matches** column. A warning sign means a segment has no asset that passes the filter;
+  money allocated to that segment stays in cash. On this universe an A floor should pass in
+  every equity segment; if it does not, lower the threshold one notch rather than leave cash.
+- The **weighting**. Value weighting for equities is the default and matches the way the
+  strategic allocation split the equity book across markets by capitalisation. Keep it.
+
+::: {.callout-note title="Why ESG binds here and not earlier"}
+Ratings exist for equities only, and the market carries no ESG premium: the class-level
+statistics of station 1 are unchanged by the filter. What the filter costs is diversification
+inside each equity segment, which shows up as tracking error of the fund's stock book against
+the segment line, not as a different strategic allocation. That is why the ESG funds' strategic
+allocations differ from the others only by "no commodities" and by γ.
+:::
+
+## Asset-level decisions (optional)
+
+Disabling *Automatic current allocation* opens the Markets page for asset-level decisions: the
+list of 180 assets with performance, benchmark weight, factor loadings, industry, maturity; each
+asset's page with description, history, metrics and fundamentals. The Economic outlook's
+*Instrument performance* subpage lets you enter an asset-level alpha if you expect a single asset
+to beat its segment.
+
+Advice for this course: do not do it in the practice rounds or round 1. Security selection on top
+of the tactical tilt adds a layer of tracking error that is hard to attribute later, and the
+automation already produces a sensible, diversified book. If you do it:
+
+- Keep the segment totals equal to the tactical weights, or the tactical decision is overwritten
+  by the asset-level one.
+- Prefer deviations inside a segment (overweight one issuer, underweight another) to deviations
+  across segments.
+- Write down the thesis per deviation; the Analyst page attributes by industry, maturity and
+  factor, and you will want to recognise your own bets.
+
+## Deliverable of this step
+
+For the ESG funds: the floor set and the Matches column clean. For all funds: a conscious decision
+that asset-level automation stays on (or a written list of asset-level deviations).

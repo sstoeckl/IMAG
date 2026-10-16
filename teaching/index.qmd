@@ -1,2 +1,28 @@
 # IMAG Teaching Materials {.unnumbered}
-Welcome! This book accompanies the **Cesim Invest** simulation (IMAG). It includes instructor guidance, agendas, and student-facing notes aligned with diversification, risk–return, and ESG learning outcomes.
+
+This book accompanies the **Cesim Invest** simulation (IMAG). You run Asterion Capital, an
+asset manager with up to four funds, one per client type, invested in 180 assets across five
+currencies. Each round you read the economic outlook, decide the allocation of every fund in
+three layers (strategic, tactical, asset level), set fees, and read the results.
+
+This version documents **the game flow and how to play it well**: what each page of the game
+asks for, in what order to decide, how to get the numbers with the allocation app that comes with
+the course, and how to read what comes back. One chapter per step. The theory behind each step
+(client analysis, capital-market assumptions, mean-variance and Black-Litterman optimization,
+performance attribution) is referenced where it is used and will be added in a later edition.
+
+**How to read it.** Chapter 1 shows the whole round on one page. Chapters 2 to 9 follow the
+order in which you decide. Appendix A is the reference for the allocation app; appendix B
+collects proposed changes to the app and the game.
+
+**The examples.** Every worked example in this book uses two invented clients, the Hartley
+family (home market Britain) and the Keller trust (home market the euro area). They are not
+clients of the game. The game's own clients have their own rules, their own risk aversion and
+their own limits; reading those out of the client cards is your task, and this book shows the
+method, not the answers.
+
+::: {.callout-note title="State of the game"}
+The client descriptions, the limit sheets and the strategic benchmarks described here are the
+October 2026 design. Until Cesim has loaded them into the simulation, the texts and limits you
+see on the Clients page may still be the earlier ones. The method does not change.
+:::

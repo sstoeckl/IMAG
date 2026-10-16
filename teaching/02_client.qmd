@@ -1,0 +1,117 @@
+---
+title: "Reading the client"
+---
+
+## What the Clients page gives you
+
+Each fund has a client card: a general profile of the client type and, behind *Meet client X*, a
+representative client with a home market. The card also shows the fund's AuM, performance and
+satisfaction, and the fee decision (Chapter 8).
+
+The text is written so that everything the strategic allocation needs can be read out of it. A
+client is, underneath the story, **one number and a few rules**:
+
+- a **risk aversion** γ, which the text does *not* state as a number;
+- a **cash floor** (a minimum share of the fund in the money market);
+- a **commodity rule** (a minimum share, or none at all);
+- the **home rule**: a share of the equity book in the client's home market, the rest across
+  the other markets in proportion to their size.
+
+Plus the sustainability requirement, if any, and no short sales. Whatever the card does not
+mention is not constrained, and the card says so: no currency limits, no split between
+government and corporate bonds, no caps per position.
+
+## The rules: read them off
+
+The rules are stated in plain words and mean exactly what they say. "About three percent of the
+portfolio should be available at short notice, in cash" is a cash floor of 3 %. "They do not
+consider commodity futures compatible with their purpose" is a commodity cap of zero. "Half of the
+equities in companies from their home market, the rest spread across the other developed markets
+in proportion to their size" is the home rule with a home share of one half.
+
+Write the rules down as numbers before you open the app. For the Hartley family, the invented
+client used throughout this book:
+
+> Home market Britain. Cash at least 3 %. Commodities at least 5 %. Half of the equity book in
+> UK companies, the rest by market size. No sustainability requirement.
+
+## The risk aversion: bracket it from two decisions
+
+The card describes two decisions the client has taken in the past. Each is a choice between two
+portfolios described by their volatility σ and their expected return over cash μ. A client who
+values a portfolio at
+
+$$
+U = \mu - \frac{\gamma}{2}\,\sigma^2
+$$
+
+reveals a bound on γ with every such choice:
+
+- **Turned down the riskier portfolio X for the quieter Y:** $U_Y > U_X$, hence
+  $\gamma > \dfrac{2(\mu_X - \mu_Y)}{\sigma_X^2 - \sigma_Y^2}$.
+- **Took the riskier portfolio X over the quieter Y:** the same expression is an *upper* bound.
+
+**Worked example, the Hartleys.** Their card says: with their previous adviser they turned down
+a portfolio that swung by ten percent a year for an expected 6.9 percent over cash, and took one
+with eight percent swing and 5.9 percent instead. Later, offered a quieter alternative with six
+percent swing and 5.1 percent over cash, they stayed with a portfolio of eight percent swing and
+6.6 percent over cash.
+
+$$
+\gamma > \frac{2\,(0.069 - 0.059)}{0.10^2 - 0.08^2} = \frac{0.020}{0.0036} = 5.6,
+\qquad
+\gamma < \frac{2\,(0.066 - 0.051)}{0.08^2 - 0.06^2} = \frac{0.030}{0.0028} = 10.7 .
+$$
+
+So γ lies between about 5.5 and 11. The words then place it. "They have lived through two bear
+markets without selling, but they would not want to see a year like 2008 again" points to the
+middle of the bracket; "they need the portfolio to grow, their income covers their spending"
+would point lower; "the income the portfolio produces matters more than growth" would point
+higher. For the Hartleys we take γ = 8.
+
+::: {.callout-warning title="γ is the whole game at this step"}
+The rules are the same for every reader of the card. What distinguishes a careful reading from a
+careless one is the estimate of γ. Chapter 4 shows what it costs to be wrong: for the Hartleys,
+γ = 7 or 9 instead of 8 puts the allocation 7.5 or 5.5 points away from the benchmark; the ends
+of the bracket cost 13 to 23 points.
+:::
+
+## The limits: guidance bands and hard limits
+
+The card carries two kinds of limits.
+
+**Guidance bands** are quoted in the text ("between 12 and 49 percent in government bonds").
+They are the range inside which the client expects to be held, and they are consistent with the
+client's risk aversion: every γ in the bracket gives an allocation inside the bands, and a γ
+outside the bracket leaves at least one band. Use them two ways: as a check on your allocation,
+and to narrow the bracket. If your allocation leaves a band, your γ is outside the bracket.
+
+**Hard limits** are the game's Min-Max sheet, which you will find with the client. They are
+wider than the guidance bands and leave room for tactical positions, including small positions in
+currencies the strategic allocation does not hold. A breach of a hard limit loses the client at
+once, whatever the market does; a dynamic client parked in money market walks away.
+
+## The home market
+
+*Meet client X* names the home market. It decides which equity market carries the home share of
+the equity book; the rest of the book goes to the other markets by capitalisation (US 70.0, euro
+area 14.5, Japan 5.9, Switzerland 5.7, Britain 4.0 percent of the universe, renormalised without
+the home market). Because the home rule puts a large part of the equities into a market the data
+might not otherwise hold at that size, the rest of the allocation adjusts around it: two clients
+with the same γ and different home markets do not hold the same class mix. That is the method
+working, not a mistake.
+
+## Sustainability
+
+A client who requires a minimum rating holds only securities that pass it. This binds when
+tactical weights become positions (Chapter 7), not at the strategic level: the class-level
+statistics of the market do not change with the filter.
+
+## Deliverable of this step
+
+One line per fund, before anything else is done. For the Hartleys:
+
+> Hartley, home UK: γ ≈ 8 (bracket 5.5–11), cash ≥ 3 %, commodities ≥ 5 %, half of equities
+> in the UK, no sustainability floor.
+
+That line is the complete input to the strategic allocation.

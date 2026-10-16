@@ -1,0 +1,66 @@
+---
+title: "Reading the results"
+---
+
+## Where the results are
+
+After the deadline, the Results page shows the round by area: fund performance before and after
+fees, AuM and flows, satisfaction, the firm's financials, and the ranking against the other teams
+in the universe. The Excel download holds the detail, including five years of asset, factor and
+exchange-rate history. The Analyst page holds the two analyses that matter for the next round:
+**performance attribution** and **strategic allocation analysis**.
+
+## Performance attribution: did the tilt pay?
+
+The attribution decomposes last round's return against the benchmark, your strategic
+allocation, by currency, asset class, industry or type, maturity, and factor. Read it against the
+record of Chapter 8:
+
+- **Currency.** Any effect here comes from positions in currencies the strategic allocation does
+  not hold, or from different weights across currencies than the benchmark. If you did not mean
+  a currency bet and there is a currency effect, find the tactical position that caused it
+  (Chapter 6).
+- **Asset class.** The allocation effect of the tactical tilt. Compare its sign with the view
+  that produced the tilt: a positive view on US equities that was followed by a negative
+  allocation effect means the view was wrong this round, not that the method was.
+- **Industry, maturity, factor.** With asset-level automation on, these effects are small and
+  come from the weighting rule; with asset-level decisions they are your security selection.
+
+Judge the views, not the round. One round is one draw. A view with 50 % confidence that was
+wrong once has told you little; a view that was wrong three rounds in a row with high confidence
+has told you to lower the confidence, or to drop the view.
+
+## Strategic allocation analysis: how far from the client?
+
+The Analyst page compares your strategic allocation with the allocation the game's parameters
+hold as optimal for the client. This is the feedback on Chapter 2. A large distance means the
+estimate of γ, or the reading of a rule, is off; the direction of the difference says which way.
+If your fund holds more equities than the optimal allocation, your γ is too low; more government
+bonds, too high. Re-read the card with that in mind, and if you change the strategic allocation,
+do it once, early, and record why: the benchmark should not move every round.
+
+## Satisfaction and AuM
+
+Satisfaction moves with three things: the distance just discussed, the risk the fund took against
+what the client expects, and the fee. AuM follows satisfaction and risk-adjusted performance with
+a lag, and flows between rounds move the holdings (Chapter 7). A fund that loses clients after a
+round inside its limits and with a small tracking error has a fee problem; a fund that loses
+clients after a breach of the Min-Max sheet has an allocation problem, and the breach is the
+first thing to fix.
+
+## Feeding it back
+
+For the next round, in this order:
+
+1. Fix any breach of the hard limits.
+2. Revise the γ estimate if the strategic allocation analysis says so, once.
+3. Revise the confidence of the views that were wrong; add new views from the new outlook.
+4. Revisit the fee only if AuM moved for no investment reason.
+
+Then Chapter 5 again.
+
+## Deliverable of this step
+
+A short written review per fund in the team forum: attribution by effect, verdict on each view,
+distance to the optimal allocation and what you conclude for γ, satisfaction and AuM, the decision
+for the next round.

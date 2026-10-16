@@ -1,0 +1,89 @@
+---
+title: "A round in IMAG"
+---
+
+## The firm, the funds, the clients
+
+You manage Asterion Capital, an asset manager whose founders are stepping back. The firm runs
+**one fund per client type**, up to four: Conservative, Conservative (ESG), Dynamic, Dynamic
+(ESG). Each fund has its own clients, its own benchmark and its own fee. Clients differ by home
+market as well as by type, so a Conservative fund may hold money for American, British,
+euro-area, Swiss and Japanese families; the client card tells you which.
+
+Everything is measured in **US dollars**. Asterion is a dollar house; assets in other currencies
+are held unhedged, and the game offers no way to hedge them.
+
+The investable universe is 180 assets in four asset classes (government bonds, corporate bonds,
+equities, alternatives) and five currencies (USD, GBP, EUR, CHF, JPY). Alternatives exist in USD
+only. A **market segment** is one asset class in one currency, e.g. "EUR / Corporate bonds". With
+the money market this gives the 21 **positions** of the allocation: money market, government
+bonds, corporate bonds and equities in each of the five currencies, plus commodities.
+
+## What the game measures
+
+Three things drive assets under management (AuM), and AuM drives the firm's profit:
+
+1. **Risk-adjusted performance against the benchmark.** The benchmark of each fund is its
+   strategic allocation. The game's Analyst page attributes your return against it (currency,
+   asset class, industry, maturity, factors) and compares your strategic allocation with the
+   optimal allocation held in the game's parameters.
+2. **Client satisfaction.** Surveys ask whether the fund is managed the way the client expects:
+   inside the limits, with the right amount of risk, with the required sustainability. Breaching a
+   hard limit loses clients at once.
+3. **Fees.** Higher fees turn clients away but raise revenue; clients tolerate fees better when
+   their risk-adjusted return is good. Dynamic clients respond to marketing and accept higher
+   fees; conservative clients want them low and transparent.
+
+The instructor picks the winning criterion (Sharpe ratio, alpha, information ratio, cumulative
+shareholder return of the firm). Whatever it is, it runs through the same three channels.
+
+## The decision flow
+
+The game suggests an order, and this book follows it. Each step is one chapter.
+
+| Step | Page in the game | What you decide | Tool | Chapter |
+|:--|:--|:--|:--|:--|
+| 1 | Clients | Read the client: three rules, the risk aversion bracket, the limits | Client card, this book | 2 |
+| 2 | Course dataset | Read the market: statistics and correlations of the 21 positions | App, station 1 | 3 |
+| 3 | Investment strategy → Strategic allocation | The strategic allocation of each fund, its benchmark for the whole game | App, station 2 | 4 |
+| 4 | Economic outlook, Analyst | Turn the outlook into views on expected returns | App, station 3 | 5 |
+| 5 | Investment strategy → Tactical allocation | The tactical allocation for this round | App, station 4 | 6 |
+| 6 | Investment strategy → Automation preferences, Markets | How tactical weights become positions; the ESG floor; asset-level decisions | Game | 7 |
+| 7 | Clients → Fees, Projections, Decision checklist | Fees, check projections, submit as team | Game | 8 |
+| 8 | Results, Analyst | Read performance, attribution, satisfaction; feed it back | Game | 9 |
+
+Steps 1 to 3 are done once, in the first round, and the result stays for the whole game: the
+client does not change and the strategic allocation is the benchmark. Steps 4 to 8 repeat every
+round.
+
+::: {.callout-tip title="The allocation app"}
+The course provides a Shiny app with four stations that mirror steps 2 to 5. It runs on the course
+dataset: the full history of the 21 positions, monthly, in dollars. Appendix A is its reference.
+The app does not talk to the game; you read numbers off the app and type them into the game.
+:::
+
+## Rounds, practice rounds, teams
+
+A round is typically one quarter. Up to three practice rounds precede the game; after them the
+market resets and the decisions of the first practice round become the starting decisions of
+round 1. Nothing else carries over.
+
+Each team member has a **Student Decision Area**; the round is scored on the **Team Decision
+Area**. Work in your own area, then *Copy as team's decisions*; a copy overwrites the team area
+without backup. Appoint a round CEO who submits, and rotate the role.
+
+Between rounds the game moves your holdings with the market and with fund flows, and, if
+automation is on, rebalances them to your tactical weights (Chapter 7). The strategic allocation
+is not touched by this; it is a benchmark, not a holding.
+
+## The round on one page
+
+1. Round 1 only: read the client (Ch. 2), read the market (Ch. 3), set and fix the strategic
+   allocation of every fund (Ch. 4), enter it on the Investment strategy page.
+2. Set the ESG floor for the ESG funds in Automation preferences (Ch. 7).
+3. Read the Economic outlook; write down your views with a confidence (Ch. 5).
+4. Run the tactical station for every fund; enter the tactical allocation; check the projected
+   tracking error and information ratio (Ch. 6).
+5. Decide whether to touch asset-level positions; usually not in the first rounds (Ch. 7).
+6. Set fees; read Projections; copy to the team area before the deadline (Ch. 8).
+7. After the deadline: Results and Analyst; revise your γ estimate and your views (Ch. 9).

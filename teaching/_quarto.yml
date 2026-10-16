@@ -7,40 +7,26 @@ number-depth: 3
 
 book:
   title: "IMAG Teaching Materials"
-  #subtitle: ""
-  #author: ""
-  #date: ""
-  #cover-image:
-  #site-url:
-  #repo-url:
+  subtitle: "Playing the game: the decision flow, round by round"
   bread-crumbs: false
   chapters:
     - index.qmd
-    #- 01_intro.qmd
-    - 01_Introduction.qmd
-    - 02_Asset_Classes.qmd
-    - 03_Sustainable_Investing.qmd
-    - 04_Client_Analysis.qmd
-    - 05_Investment_Policy.qmd
-    #- part: "Strategic Financial Analysis"
-    - 06_Strategic_Fiancial_Analysis.qmd
-    - 07_Strategic_Asset_Allocation.qmd
-    #- part: "Tactical Financial Analysis"
-    - 08_Tactical_Financial_Analysis.qmd
-    - 09_Tactical_Asset_Allocation.qmd
-      # Tactical Financial Analysis
-      # Tactical Asset Allocation
-    - 10_Security_Analysis.qmd
-    - 11_Portfolio_Implementation.qmd
-    - 12_Portfolio_Analysis.qmd
-    #- 13_Feedback_Loop.qmd
+    - 01_round.qmd
+    - 02_client.qmd
+    - 03_market.qmd
+    - 04_saa.qmd
+    - 05_views.qmd
+    - 06_taa.qmd
+    - 07_securities.qmd
+    - 08_submit.qmd
+    - 09_results.qmd
+  appendices:
+    - a1_app.qmd
+    - a2_roadmap.qmd
   page-footer:
     border: true
     center:
       - text: "<div class='imag-footer-wrap'><div class='imag-footer-logos'><img src='../assets/logos/uli.jpg' alt='University of Liechtenstein'><img src='../assets/logos/unibz.jpg' alt='unibz'><img src='../assets/logos/cesim.png' alt='Cesim'><img src='../assets/logos/erasmus.jpg' alt='Erasmus+'></div><p>© 2025 Investment Management Game (IMAG). All rights reserved.</p><p>Supported by <a href='https://erasmus-plus.ec.europa.eu/projects/search/details/2022-1-LI01-KA220-HED-000085536' target='_blank'>Erasmus+</a> and partner institutions.</p></div>"
-    
-
-
 
 format:
   html:
@@ -49,12 +35,6 @@ format:
     toc: true
     number-sections: true
     number-depth: 3
-    # Tailwind removes all margins from all html elements
-    #include-in-header: ../includes/head.html
-    #include-before-body: ../includes/header.html
-    #include-after-body: ../includes/footer.html
     page-layout: full
     smooth-scroll: true
     anchor-sections: true
-
-

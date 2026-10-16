@@ -1,0 +1,54 @@
+---
+title: "Fees, projections, submission"
+---
+
+## Fees
+
+The fee of each fund is set on the Clients page, in percent a year, and charged per round (a
+quarter-round charges a quarter of it). Three facts from the game:
+
+- Higher fees turn clients away and raise revenue per client.
+- Clients tolerate a fee better when their risk-adjusted return is good.
+- Dynamic clients respond to marketing and accept higher fees; conservative clients want fees low
+  and transparent.
+
+A workable rule for the first rounds: a modest fee, differentiated by type (higher for the dynamic
+funds), unchanged until the results show how AuM responds. Fees are the one decision the game lets
+you revise every round with an immediate, visible effect in Projections; changing them every
+round, however, makes the attribution of AuM changes to your investment decisions impossible.
+
+## Projections
+
+The Projections button on every decision page shows the projected AuM and fund performance
+(before and after fees), a recap of the strategy page and the industry allocation, updated as you
+type. Use it as a consistency check, not as a forecast: it runs on the analyst's estimates and on
+your own, and the realised round will differ. Three things to look at before submitting:
+
+- Does each fund's projected tracking error match what station 4 said, roughly?
+- Does any fund show cash that you did not intend (a filter leaving a segment unmatched, Chapter
+  7)?
+- Are the projected fees and AuM in the range you expect?
+
+## Decision checklist and the deadline
+
+The Decision checklist shows every decision of every team member side by side. Decide in your
+own Student Decision Area, then either *Copy as team's decisions* or edit the Team Decision Area
+directly. Copying overwrites without backup; agree on who copies and when. Only the Team Decision
+Area is scored at the deadline.
+
+Round checklist before the deadline:
+
+1. Strategic allocation per fund: unchanged since round 1 (round 1: entered and checked, Chapter 4).
+2. Tactical allocation per fund: entered for this round, inside the hard limits (Chapter 6).
+3. Automation preferences: ESG floor set for the ESG funds, Matches clean (Chapter 7).
+4. Asset-level automation: on, unless you decided otherwise and wrote down why.
+5. Fees: set.
+6. Projections: read.
+7. Team Decision Area: holds the version you mean to submit.
+8. The team forum holds this round's record: views with confidence and justification, tactical
+   matrices, tracking errors, fees.
+
+## Deliverable of this step
+
+The round submitted from the Team Decision Area, and the record in the forum. Chapter 9 reads the
+results against that record.

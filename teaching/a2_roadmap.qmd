@@ -1,0 +1,80 @@
+---
+title: "Proposed changes to the app and the game"
+---
+
+Planning only. Nothing here is implemented; each item names what it would simplify in the flow of
+Chapters 2 to 9 and what it would take.
+
+## Simplifications of the flow
+
+**Station 0: the client.** A form with the two decisions (σ and μ of each portfolio, taken or
+turned down) and the rules; the app computes the γ bracket, shows it, and carries the rules into
+station 2 as the limits. Removes the hand calculation of Chapter 2 and the manual entry of floors.
+Small.
+
+**Band check.** Load the client's guidance bands and Min-Max sheet (from the course's allocation
+workbook) and flag, in station 2 and station 4, any class outside its guidance band or hard
+limit. Removes the manual check of Chapters 4 and 6. Small; needs the sheets in a machine-readable
+file in the app's `data/`.
+
+**Game-format export.** A button that writes the strategic or tactical matrix in the exact layout
+of the game's grid (currency × asset class, percent) to the clipboard or a CSV. Removes typing
+errors. Small.
+
+**Outlook import.** A paste field for the analyst's segment estimates of the round (yields,
+spreads, expected excess market return, factor premia per currency) and a rule that turns them
+into candidate views against the prior, with the confidence derived from the expected range.
+Chapter 5 by hand becomes one paste. Medium; needs the game's export format for the outlook.
+
+**All funds at once.** Run stations 2 to 4 for the firm's up to four funds in one pass: one views
+panel, a tab per fund, one combined export. Station 4's "same views for every fixed SAA" table is
+the first step. Medium.
+
+**Round log.** Keep, per fund and round, the SAA, the views, the TAA, the tracking error, and after
+the round the realised return and attribution (from the Results Excel), so that Chapter 9's
+"judge the views" is a table rather than memory. Medium; needs the Results Excel format.
+
+## Extensions that implement further decisions
+
+**Security selection (Chapter 7).** From the tactical segment weights to positions: value or
+equal weighting, an ESG floor, and the tracking error of the resulting stock book against the
+segment line; optionally overweights by factor loading or industry with their contribution to
+tracking error. Needs asset-level returns and ratings in the app's data (ratings as levels, which
+the course dataset does not carry yet). Large.
+
+**Performance attribution (Chapter 9).** Brinson–Fachler on the game's Results Excel: allocation,
+selection and currency effects against the fixed SAA, per round and cumulative. Medium; the
+inputs are the round's segment returns and weights.
+
+**Tracking-error optimisation proper.** Replace the scaling of station 4 by an optimisation with
+the tracking error as a constraint (a second-order cone, or a search over the active risk
+aversion), so that the TAA at a budget is optimal rather than a shrunk optimum. Small to medium.
+
+**Estimation risk as a discussion tool.** A toggle in station 2 that shows what shrinkage of the
+means toward the grand mean (or a Kan–Zhou-type combination) would do to the allocation, next
+to the plain optimum. Not for the benchmark, which stays the plain optimum; for the discussion of
+why a plain optimum is fragile and why the game defines the benchmark this way. Small.
+
+**Currency hedging as a hypothetical.** Show what the allocation would be if foreign bonds could
+be hedged (local excess returns plus the interest differential, local covariance), next to the
+unhedged one the game allows. Makes Chapter 3's point visible. Small; the hedged series would have
+to be added to the course dataset.
+
+## Suggestions for the game itself
+
+**Client texts and limit sheets.** The October 2026 client profiles, guidance bands and Min-Max
+sheet replace the current ones; the tactical allowance per currency in the Min-Max sheet is what
+keeps foreign bonds available for tactical positions.
+
+**Strategic allocation analysis on the Analyst page.** It compares the fund's strategic
+allocation with the optimal allocation held in the game's parameters. If it reports the distance
+exactly, a team can iterate to the hidden allocation round by round; a coarse report (inside the
+guidance band / outside, or a distance rounded to five points) keeps the client-reading exercise
+alive.
+
+**Tracking error on the Investment strategy page.** It is estimated from the game's own
+forecasts and a short history; the app's figure uses the full history. Stating the horizon and the
+data behind the game's estimate would make the two comparable.
+
+**Exports.** A CSV export of the Economic outlook's segment estimates and of the Results
+attribution would make the outlook import and the round log above possible.
