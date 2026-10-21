@@ -55,8 +55,12 @@ to stations 3 and 4; several SAAs can be fixed, by label.
 
 ## Station 3 · Tactical Analysis
 
-Inputs: the fixed SAA to work on, τ (default 0.05), up to five views, each absolute ("A earns x %
-over cash") or relative ("A beats B by x points") with a confidence c in (0, 1).
+Inputs: τ (default 0.05) and the views, typed one per line: `US_equity 12 50` is an absolute view
+(US equities earn 12 % a year over cash, confidence 50 %); `EU_equity > CH_equity 2 60` is a
+relative view (euro-area equities beat Swiss equities by 2 points a year, confidence 60 %). The
+confidence is optional and defaults to 50; lines starting with `#` are ignored; a list of position
+names is in the panel. The views apply to every fixed SAA; a selector chooses which SAA's prior
+and posterior the table shows.
 
 Prior: $\Pi = \gamma \Sigma w_{\text{SAA}}$ (reverse optimisation with the SAA's own γ and the
 unrounded weights). Posterior (He and Litterman 1999):
@@ -74,13 +78,21 @@ posterior and the change; the views as parsed.
 
 ## Station 4 · Tactical Asset Allocation
 
-Inputs: the fixed SAA, the maximum deviation per position (band), the tracking-error budget.
-The problem of station 2 on $(\mu_{BL}, \Sigma_{BL})$ with the SAA's γ and rules, plus
+Inputs: the maximum deviation per position (band) and the tracking-error budget. One press
+computes the tactical allocation of **every** fixed SAA under the same views. For each SAA, the
+problem of station 2 on $(\mu_{BL}, \Sigma_{BL})$ with that SAA's γ and rules, plus
 $w_{\text{SAA}} - d \le w \le w_{\text{SAA}} + d$. If a budget is set and the tracking error
 $\sqrt{(w - w_{\text{SAA}})'\Sigma(w - w_{\text{SAA}})}$ exceeds it, the deviation is scaled to
-the budget. Outputs: the SAA, TAA and deviation matrices, tracking error, expected active return
-under the posterior and the prior, in-sample comparison, and the tilt by asset class for every
-fixed SAA under the same views. Without views the TAA equals the SAA.
+the budget. Outputs: a summary table with the tilt by asset class, tracking error and active return per fund,
+and a tab per fund with the SAA, TAA and deviation matrices, the active-position figures and the
+binding limits. Without views the TAA equals the SAA.
+
+## Saving your work
+
+Station 2 saves the fixed SAAs (their inputs and weights), the views and the tactical settings as a
+JSON file and loads such a file back. On loading, the SAAs are recomputed from their inputs on the
+current data, so a loaded file is always consistent with the dataset in use. Save the file in the
+team forum; it is the team's record of the funds and views.
 
 ## Tests
 
