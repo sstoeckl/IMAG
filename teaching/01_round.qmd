@@ -16,8 +16,10 @@ are held unhedged, and the game offers no way to hedge them.
 The investable universe is 180 assets in four asset classes (government bonds, corporate bonds,
 equities, alternatives) and five currencies (USD, GBP, EUR, CHF, JPY). Alternatives exist in USD
 only. A **market segment** is one asset class in one currency, e.g. "EUR / Corporate bonds". With
-the money market this gives the 21 **positions** of the allocation: money market, government
-bonds, corporate bonds and equities in each of the five currencies, plus commodities.
+the money market this gives 21 **positions**: money market, government bonds, corporate bonds and
+equities in each of the five currencies, plus commodities. The strategic benchmark is defined on the
+16 positions without the money market: the game's benchmark grid has no cash row, so cash is a
+tactical decision of the player, not a strategic position.
 
 ## What the game measures
 
@@ -43,8 +45,8 @@ The game suggests an order, and this book follows it. Each step is one chapter.
 
 | Step | Page in the game | What you decide | Tool | Chapter |
 |:--|:--|:--|:--|:--|
-| 1 | Clients | Read the client: three rules, the risk aversion bracket, the limits | Client card, this book | 2 |
-| 2 | Course dataset | Read the market: statistics and correlations of the 21 positions | App, station 1 | 3 |
+| 1 | Clients | Read the client: the rules, the risk aversion bracket, the limits | Client card, this book | 2 |
+| 2 | Course dataset | Read the market: statistics and correlations of the benchmark positions | App, station 1 | 3 |
 | 3 | Investment strategy → Strategic allocation | The strategic allocation of each fund, its benchmark for the whole game | App, station 2 | 4 |
 | 4 | Economic outlook, Analyst | Turn the outlook into views on expected returns | App, station 3 | 5 |
 | 5 | Investment strategy → Tactical allocation | The tactical allocation for this round | App, station 4 | 6 |
@@ -58,7 +60,8 @@ round.
 
 ::: {.callout-tip title="The allocation app"}
 The course provides a Shiny app with four stations that mirror steps 2 to 5. It runs on the course
-dataset: the full history of the 21 positions, monthly, in dollars. Appendix A is its reference.
+dataset: the full history of the 21 positions, monthly, in dollars, with the money market left out
+of the benchmark by default. Appendix A is its reference.
 The app does not talk to the game; you read numbers off the app and type them into the game.
 :::
 

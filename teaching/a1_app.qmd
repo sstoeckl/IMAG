@@ -15,7 +15,9 @@ hosted instance your instructor names.
 ## The data
 
 - `data/classes_monthly.csv`: the 21 positions, monthly total returns in US dollars, unhedged,
-  with an index series; the full history the course uses.
+  with an index series; the full history the course uses. The strategic benchmark is defined on
+  the 16 positions without the money market; the app's default selection leaves the five
+  money-market positions out, and they can be added for analysis.
 - `data/riskfree_monthly.csv`: the US money-market rate, monthly.
 - `data/cap_shares.csv`: the capitalisation shares of the five equity markets, for the home rule.
 
@@ -25,8 +27,8 @@ money-market rate of the same month. Annualisation: mean × 12, covariance × 12
 
 ## Station 1 · Strategic Asset Analysis
 
-Inputs: the positions (default all 21), the part of the sample in percent of the observations
-(default all). Outputs: annualised statistics (excess return, volatility, Sharpe ratio, skewness,
+Inputs: the positions (default the 16 benchmark positions), the part of the sample in percent of
+the observations (default all). Outputs: annualised statistics (excess return, volatility, Sharpe ratio, skewness,
 worst calendar year, maximum drawdown), the correlation matrix, the growth of 100.
 
 ## Station 2 · Strategic Asset Allocation

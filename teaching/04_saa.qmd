@@ -13,11 +13,12 @@ is to it, the better the client is served.
 That optimal allocation is defined, and the definition is public:
 
 ::: {.callout-important title="The definition of a client's strategic allocation"}
-Maximise expected excess return minus γ/2 times the variance of the portfolio over the 21
-positions, with μ and Σ the sample mean and covariance of the full history (monthly, in US
-dollars, unhedged, in excess of the US money-market rate, annualised: mean × 12, covariance
-× 12), long-only, fully invested, under the client's rules. Nothing else. Weights are rounded to
-half a percent.
+Maximise expected excess return minus γ/2 times the variance of the portfolio over the 16
+benchmark positions (government bonds, corporate bonds and equities in five currencies, plus
+commodities; no money market), with μ and Σ the sample mean and covariance of the full history
+(monthly, in US dollars, unhedged, in excess of the US money-market rate, annualised: mean × 12,
+covariance × 12), long-only, fully invested, under the client's rules. Nothing else. Weights are
+rounded to half a percent.
 :::
 
 So the task is not to invent an allocation. It is to estimate γ well (Chapter 2) and run the
@@ -28,8 +29,8 @@ optimisation on the right data.
 1. **Client box.** Enter your estimate of γ (whole numbers). Pick the home market from *Meet
    client X* and set the share at home to what the card says. Objective: *Quadratic utility*.
    Give the run a label, e.g. "Hartley, UK".
-2. **Limits by asset class.** Money market min = the cash floor. Commodities: min = the floor,
-   or max 0 if the client holds none. Leave everything else at 0 and 1.
+2. **Limits by asset class.** Commodities: min = the floor, or max 0 if the client holds none.
+   Leave everything else at 0 and 1.
 3. **Limits by currency and per position.** Leave at 0 and 1 unless the card says otherwise.
    The optimiser decides.
 4. **Optimise.** Read the matrix.
@@ -40,22 +41,20 @@ optimisation on the right data.
 
 ## Worked example: the Hartleys
 
-Inputs: γ = 8, home UK with half of the equity book at home, cash ≥ 3 %, commodities ≥ 5 %.
-Output, as the game shows it:
+Inputs: γ = 8, home UK with half of the equity book at home, commodities ≥ 5 %. Output, as the
+game shows it:
 
 | | USD | GBP | EUR | CHF | JPY | Total |
 |:--|--:|--:|--:|--:|--:|--:|
-| Money market | 3.0 | 0 | 0 | 0 | 0 | 3.0 |
-| Government bonds | 35.5 | 0 | 0 | 0 | 0 | 35.5 |
+| Government bonds | 38.0 | 0 | 0 | 0 | 0 | 38.0 |
 | Corporate bonds | 10.5 | 0 | 0 | 0 | 0 | 10.5 |
-| Equities | 17.0 | 22.5 | 3.5 | 1.5 | 1.5 | 46.0 |
+| Equities | 17.0 | 23.0 | 3.5 | 1.5 | 1.5 | 46.5 |
 | Commodities | 5.0 | 0 | 0 | 0 | 0 | 5.0 |
-| Total | 71.0 | 22.5 | 3.5 | 1.5 | 1.5 | 100.0 |
+| Total | 70.5 | 23.0 | 3.5 | 1.5 | 1.5 | 100.0 |
 
-In-sample results of these fixed weights, rebalanced monthly: expected excess return 6.3 %,
-volatility 7.4 %, Sharpe ratio 0.85, worst calendar year −13.9 %, maximum drawdown −22 %.
-Binding limits: the cash floor and the commodity floor. Home share of the equity book: 49 %
-(50 % before rounding).
+In-sample results of these fixed weights, rebalanced monthly: expected excess return 6.4 %,
+volatility 7.5 %, Sharpe ratio 0.85, worst calendar year −13.9 %, maximum drawdown −22 %.
+Binding limit: the commodity floor. Home share of the equity book: 49 % (50 % before rounding).
 
 Read the matrix as the client will. The defensive part of the fund is in dollars. The equity book
 is half British, and the other half follows the capitalisation of the remaining markets, which
@@ -64,9 +63,9 @@ puts the United States first. Everything the card did not ask for is zero.
 ## The checks before you fix it
 
 - **The rules are met and nothing else binds.** The station lists the binding limits; for a
-  well-read client only the floors you entered appear.
-- **Inside the guidance bands.** For the Hartleys the card quotes government bonds 12–49 %,
-  corporate bonds 6–18 %, equities 37–62 %. The example sits inside all three. If a class is
+  well-read client only the floor you entered appears.
+- **Inside the guidance bands.** For the Hartleys the card quotes government bonds 15–52 %,
+  corporate bonds 6–18 %, equities 37–63 %. The example sits inside all three. If a class is
   outside its band, your γ is outside the bracket: move it toward the middle.
 - **Inside the hard limits.** Verify once against the client's Min-Max sheet.
 - **Home share of the equity book as stated.** Rounding moves it by a point.
@@ -83,28 +82,28 @@ Hartleys, whose benchmark is the γ = 8 allocation above:
 
 | γ chosen | 5.5 | 6 | 7 | **8** | 9 | 10 | 11 |
 |:--|--:|--:|--:|--:|--:|--:|--:|
-| Equities % | 61.5 | 57.5 | 51.5 | **46** | 42.5 | 39.5 | 37 |
-| Government bonds % | 12.5 | 18.5 | 28 | **35.5** | 41 | 45.5 | 49 |
-| Volatility % | 9.9 | 9.2 | 8.3 | **7.4** | 6.9 | 6.5 | 6.1 |
+| Equities % | 62.5 | 58.5 | 51.5 | **46.5** | 43 | 40 | 37 |
+| Government bonds % | 15 | 21 | 31 | **38** | 43.5 | 48 | 52 |
+| Volatility % | 10.0 | 9.4 | 8.3 | **7.5** | 7.0 | 6.6 | 6.2 |
 | Worst year % | −23 | −21 | −17 | **−14** | −12 | −10 | −8 |
-| Distance to the benchmark, points | 23 | 17 | 7.5 | **0** | 5.5 | 10 | 13.5 |
+| Distance to the benchmark, points | 23 | 17 | 7 | **0** | 5.5 | 10 | 14 |
 
-The cost is continuous. An estimate one point off costs 5 to 8 points of allocation; the ends of
-the bracket cost 13 to 23. This is the score of the "know your client" step. Note also how the
+The cost is continuous. An estimate one point off costs 5 to 7 points of allocation; the ends of
+the bracket cost 14 to 23. This is the score of the "know your client" step. Note also how the
 worst year moves with γ: the risk words on the card are a second way to place γ in the bracket.
 
 ## Traps
 
-**Maximum Sharpe ratio.** On this market the tangency portfolio is almost entirely money market
-(Chapter 3). It is not the client's allocation. The Sharpe and minimum-variance objectives in the
-app are for comparison only.
+**Maximum Sharpe ratio and minimum variance.** Neither is the client's allocation; the client is
+defined by γ. Both objectives in the app are for comparison only, and with the money-market
+positions added to the selection they collapse into cash.
 
 **Shortening the sample.** The benchmark is defined on the full history. A shorter window moves
 every number.
 
 **Adding limits the card does not state.** A cap on one equity market, a floor on home bonds, a
-currency limit: each moves the allocation away from the benchmark and is a bet the client did
-not ask for.
+currency limit, a cash floor: each moves the allocation away from the benchmark and is a bet the
+client did not ask for.
 
 **Entering the matrix wrongly.** The game's grid is currency × asset class. Commodities are a USD
 position. Check that each column and row sums to the app's totals.

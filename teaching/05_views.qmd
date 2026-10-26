@@ -66,12 +66,12 @@ Outlook: the analyst's expected excess market return for USD is at the top of it
 narrative is strong, and the factor premia are positive. We hold the view that US equities earn
 12 % over cash next year, confidence 50 %, τ = 0.05.
 
-Station 3, the Hartleys: the prior for US equities is 7.5 %, the posterior 9.7 %. The view moves
+Station 3, the Hartleys: the prior for US equities is 7.5 %, the posterior 9.8 %. The view moves
 the posterior part of the way toward 12 %, and it lifts the positions correlated with US equities
-as well (UK equities from 9.5 to 11.1 %, euro-area equities from 9.7 to 11.6 %) while leaving US
-government bonds almost unchanged (0.35 to 0.26 %). For the Keller trust, the second invented
-client (γ = 5, home euro area, cash ≥ 2 %, no commodities), the same view moves US equities from
-7.7 to 9.8 %: a different prior, because a different SAA, and a different γ.
+as well (UK equities from 9.5 to 11.2 %, euro-area equities from 9.7 to 11.6 %) while leaving US
+government bonds almost unchanged (0.39 to 0.30 %). For the Keller trust, the second invented
+client (γ = 5, home euro area, no commodities), the same view moves US equities from 7.7 to
+9.8 %: a different prior, because a different SAA, and a different γ.
 
 ## What not to do
 

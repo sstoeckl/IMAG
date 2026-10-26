@@ -9,31 +9,31 @@ representative client with a home market. The card also shows the fund's AuM, pe
 satisfaction, and the fee decision (Chapter 8).
 
 The text is written so that everything the strategic allocation needs can be read out of it. A
-client is, underneath the story, **one number and a few rules**:
+client is, underneath the story, **one number and two rules**:
 
 - a **risk aversion** γ, which the text does *not* state as a number;
-- a **cash floor** (a minimum share of the fund in the money market);
 - a **commodity rule** (a minimum share, or none at all);
 - the **home rule**: a share of the equity book in the client's home market, the rest across
   the other markets in proportion to their size.
 
 Plus the sustainability requirement, if any, and no short sales. Whatever the card does not
 mention is not constrained, and the card says so: no currency limits, no split between
-government and corporate bonds, no caps per position.
+government and corporate bonds, no caps per position. Cash is not a strategic position: the
+benchmark holds none, and the card leaves it to the manager.
 
 ## The rules: read them off
 
-The rules are stated in plain words and mean exactly what they say. "About three percent of the
-portfolio should be available at short notice, in cash" is a cash floor of 3 %. "They do not
-consider commodity futures compatible with their purpose" is a commodity cap of zero. "Half of the
-equities in companies from their home market, the rest spread across the other developed markets
-in proportion to their size" is the home rule with a home share of one half.
+The rules are stated in plain words and mean exactly what they say. "They do not consider
+commodity futures compatible with their purpose" is a commodity cap of zero; "about five percent in
+commodities" is a floor of 5 %. "Half of the equities in companies from their home market, the rest
+spread across the other developed markets in proportion to their size" is the home rule with a home
+share of one half.
 
 Write the rules down as numbers before you open the app. For the Hartley family, the invented
 client used throughout this book:
 
-> Home market Britain. Cash at least 3 %. Commodities at least 5 %. Half of the equity book in
-> UK companies, the rest by market size. No sustainability requirement.
+> Home market Britain. Commodities at least 5 %. Half of the equity book in UK companies, the
+> rest by market size. No sustainability requirement. Cash at the manager's discretion.
 
 ## The risk aversion: bracket it from two decisions
 
@@ -72,15 +72,15 @@ higher. For the Hartleys we take γ = 8.
 ::: {.callout-warning title="γ is the whole game at this step"}
 The rules are the same for every reader of the card. What distinguishes a careful reading from a
 careless one is the estimate of γ. Chapter 4 shows what it costs to be wrong: for the Hartleys,
-γ = 7 or 9 instead of 8 puts the allocation 7.5 or 5.5 points away from the benchmark; the ends
-of the bracket cost 13 to 23 points.
+γ = 7 or 9 instead of 8 puts the allocation 7 or 5.5 points away from the benchmark; the ends of
+the bracket cost 14 to 23 points.
 :::
 
 ## The limits: guidance bands and hard limits
 
 The card carries two kinds of limits.
 
-**Guidance bands** are quoted in the text ("between 12 and 49 percent in government bonds").
+**Guidance bands** are quoted in the text ("between 15 and 52 percent in government bonds").
 They are the range inside which the client expects to be held, and they are consistent with the
 client's risk aversion: every γ in the bracket gives an allocation inside the bands, and a γ
 outside the bracket leaves at least one band. Use them two ways: as a check on your allocation,
@@ -111,7 +111,7 @@ statistics of the market do not change with the filter.
 
 One line per fund, before anything else is done. For the Hartleys:
 
-> Hartley, home UK: γ ≈ 8 (bracket 5.5–11), cash ≥ 3 %, commodities ≥ 5 %, half of equities
-> in the UK, no sustainability floor.
+> Hartley, home UK: γ ≈ 8 (bracket 5.5–11), commodities ≥ 5 %, half of equities in the UK, no
+> sustainability floor, cash at the manager's discretion.
 
 That line is the complete input to the strategic allocation.

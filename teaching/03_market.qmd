@@ -21,8 +21,9 @@ Keep the two apart. The benchmark does not move with the outlook.
 
 ## Station 1 of the app: statistics and correlations
 
-Open the app, station *1 · Strategic Asset Analysis*. Leave all 21 positions selected and the
-sample at the full history. The statistics table is annualised and in excess of the US
+Open the app, station *1 · Strategic Asset Analysis*. Leave the default selection (the 16
+benchmark positions; the five money-market positions can be added for analysis) and the sample at
+the full history. The statistics table is annualised and in excess of the US
 money-market rate; the correlation matrix is of the same excess returns.
 
 Three things to take from the table before you optimise anything.
@@ -43,11 +44,12 @@ and when you consider a tactical position in Chapter 6.
 0.4 to 0.65 against the US; US government bonds are slightly negatively correlated with US
 equities. That negative correlation is what a defensive position is for.
 
-::: {.callout-note title="The money market is not the risk-free rate"}
-The US money-market position earns a small premium over the bill it is measured against, at a
-very small volatility, which gives it one of the highest Sharpe ratios in the table. An optimiser
-that maximises the Sharpe ratio fills the portfolio with it. That is why the strategic allocation
-uses the client's γ and not the maximum Sharpe ratio (Chapter 4).
+::: {.callout-note title="Where the money market is"}
+Excess returns are measured over the US money-market rate, so the money market is the zero line
+of the table. The five money-market positions themselves are not in the benchmark: the game's
+strategic grid has no cash row, and the client leaves cash to the manager. Add them in station 1
+if you want to see them (in dollars, a foreign money-market position is the currency and nothing
+else); leave them out when you optimise the strategic allocation.
 :::
 
 ## What not to do here
@@ -56,8 +58,8 @@ uses the client's γ and not the maximum Sharpe ratio (Chapter 4).
   sample; views enter in Chapter 5.
 - Do not shorten the sample for the strategic allocation. The client's benchmark is defined on
   the full history; a shorter window produces a different allocation and a worse score.
-- Do not drop positions from the selection. Zero weights are the optimiser's job, and the
-  statistics of the full universe are what the attribution later refers to.
+- Do not drop benchmark positions from the selection. Zero weights are the optimiser's job, and
+  the statistics of the full benchmark universe are what the attribution later refers to.
 
 ## Deliverable of this step
 

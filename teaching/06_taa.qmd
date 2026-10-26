@@ -37,16 +37,14 @@ The Hartleys (γ = 8, home UK), deviation of the tactical from the strategic all
 
 | | USD | GBP | EUR | CHF | JPY | Total |
 |:--|--:|--:|--:|--:|--:|--:|
-| Money market | −0.5 | 0 | 0 | 0 | +0.5 | 0 |
-| Government bonds | −7.5 | 0 | 0 | 0 | 0 | −7.5 |
-| Corporate bonds | −0.5 | 0 | 0 | 0 | 0 | −0.5 |
+| Government bonds | −7.0 | 0 | 0 | 0 | 0 | −7.0 |
+| Corporate bonds | −1.0 | 0 | 0 | 0 | 0 | −1.0 |
 | Equities | +2.5 | +5.0 | +0.5 | 0 | 0 | +8.0 |
 | Commodities | 0 | 0 | 0 | 0 | 0 | 0 |
 
-Tracking error 1.25 % a year, expected active return +0.8 % under the posterior. The tilt is
+Tracking error 1.2 % a year, expected active return +0.75 % under the posterior. The tilt is
 funded from US government bonds, and the equity book keeps its home rule: of the eight points
-added to equities, five go to the UK and most of the rest to the US. (The half point of Japanese
-money market is rounding; the station rounds to half a percent.)
+added to equities, five go to the UK and most of the rest to the US.
 
 The Keller trust (γ = 5, home euro area), same view: equities +10.5 points (euro area +6, US +4),
 government bonds −10, tracking error 1.8 %, expected active return +1.2 %. Same view, a larger
@@ -57,7 +55,7 @@ With a tracking-error budget of 1 % both tilts are scaled down: the Hartleys to 
 equity, the Kellers to +5.6.
 
 **A view that opens a currency position.** Suppose instead the view is "euro-area government
-bonds earn 4 % over cash", confidence 50 %. For the Hartleys the station moves 9 points into
+bonds earn 4 % over cash", confidence 50 %. For the Hartleys the station moves 10 points into
 euro-area government bonds and 12 points into euro-denominated positions in all; tracking error
 1.1 %. Most of that tracking error is the euro against the dollar. If that is the bet you mean,
 enter it; if you meant a view on European rates, say so with a relative view against US
@@ -77,8 +75,10 @@ government bonds instead.
 
 - **Tracking error 1 to 3 % a year** is a normal tactical budget for a fund with a fixed
   benchmark; conservative clients at the low end.
-- **A tilt into a foreign bond or money-market position is a currency bet.** The attribution
-  will show it as a currency effect. Make it only if it is the bet you mean.
+- **A tilt into a foreign bond is a currency bet.** The attribution will show it as a currency
+  effect. Make it only if it is the bet you mean. Cash is outside the benchmark: parking part of
+  the fund in money market is an under-investment against every class, and the information ratio
+  will say so.
 - **Stay inside the hard limits.** The band in station 4 does not know the Min-Max sheet; check
   the tactical matrix against it before you enter it.
 - **Re-enter every round.** Between rounds the game moves holdings with returns and flows; the
