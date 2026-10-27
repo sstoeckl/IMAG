@@ -26,7 +26,8 @@ Each view has a **confidence** between 5 and 95 percent. The prior the views are
 against is not the sample mean but the **equilibrium implied by the fixed SAA**: the expected
 returns under which the client's strategic allocation is exactly optimal (Π = γΣw). With no views
 the posterior equals the prior, and the tactical allocation (Chapter 6) equals the strategic one.
-Every deviation you see later can be traced to a view you entered.
+A view that agrees with the prior leaves it there too. Every deviation you see later can be traced
+to a view you entered.
 
 ## Turning the outlook into views
 
@@ -76,8 +77,9 @@ client (γ = 5, home euro area, no commodities), the same view moves US equities
 ## What not to do
 
 - Do not enter the sample mean as a view. It is already in the SAA.
-- Do not enter a view on a position the SAA does not hold unless you mean to open it. A view
-  on euro-area government bonds opens a euro position against the dollar (Chapter 6).
+- Do not enter a view on a position the SAA does not hold unless you mean to open it. An
+  absolute view on a foreign position is also a view on its currency: a view on euro-area
+  government bonds opens a euro position against the dollar (Chapter 6).
 - Do not enter five views at 95 % confidence in round 1. The tactical allocation is scaled by
   confidence; a wall of certain views produces a wall of tilts and a tracking error the client
   did not sign up for.

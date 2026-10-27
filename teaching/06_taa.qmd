@@ -16,50 +16,78 @@ Inputs:
 
 - **Strategic allocation to work on**: one of the SAAs fixed in station 2.
 - **Maximum deviation per position**: a band of ± this share around each strategic weight;
-  default 0.10. The long-only floor stays in force.
-- **Tracking-error budget**, percent a year; 0 means none. If the optimum exceeds the budget, the
-  deviation is scaled down to it.
+  default 0.05, five points. The long-only floor stays in force.
+- **Tracking-error budget**, percent a year; default 2, and 0 means none. If the optimum exceeds
+  the budget, the deviation is scaled down to it.
 
-Press *Optimise the tactical allocation*. The station solves the same problem as station 2, with
-the client's γ and rules, on the **posterior** of station 3, within the band. Output: the
-strategic matrix, the tactical matrix, their difference in points, the tracking error, the
-expected active return under the posterior and under the prior, and the in-sample comparison.
+Press *Optimise the tactical allocation of every fund*. For each fixed SAA the station maximises
+the utility of station 2, with the client's γ and limits, on the **posterior** expected returns of
+station 3, within the band. Two things differ from station 2:
 
-The last table applies your views to **every** fixed SAA and shows the tilt per asset class:
+- **No home rule.** The home rule defines the benchmark. Kept in the tactical step, the equity
+  book could only grow or shrink in fixed regional proportions, and a view on one market could
+  not act. The client's other limits stay, the commodity floor included.
+- **The sample covariance.** Risk is measured with the covariance of station 2, not with the
+  posterior covariance. The posterior covariance would raise the measured risk as soon as any
+  view is entered and push every fund from equities into bonds, whatever the view said.
+
+Without views the tactical allocation equals the SAA. A view that agrees with the prior leaves it
+there too. So every deviation comes from a view. Output: the strategic matrix, the tactical
+matrix, their difference in points, the tracking error, the expected active return under the
+posterior and under the prior, and the in-sample comparison. A negative expected active return
+under the posterior is flagged.
+
+The summary table applies your views to **every** fixed SAA and shows the tilt per asset class:
 the same view produces a different tilt per client.
 
 ## Worked example
 
-View: US equities earn 12 % over cash, confidence 50 % (Chapter 5). Band ± 10 points, no
-tracking-error budget.
+View: US equities earn 12 % over cash, confidence 50 % (Chapter 5). Band ± 5 points and
+tracking-error budget 2 %, the defaults; the budget does not bind.
 
 The Hartleys (γ = 8, home UK), deviation of the tactical from the strategic allocation in points:
 
 | | USD | GBP | EUR | CHF | JPY | Total |
 |:--|--:|--:|--:|--:|--:|--:|
-| Government bonds | −7.0 | 0 | 0 | 0 | 0 | −7.0 |
-| Corporate bonds | −1.0 | 0 | 0 | 0 | 0 | −1.0 |
-| Equities | +2.5 | +5.0 | +0.5 | 0 | 0 | +8.0 |
+| Government bonds | −5.0 | 0 | 0 | 0 | 0 | −5.0 |
+| Corporate bonds | −4.0 | +1.0 | 0 | 0 | 0 | −3.0 |
+| Equities | +5.0 | +2.0 | +0.5 | +0.5 | 0 | +8.0 |
 | Commodities | 0 | 0 | 0 | 0 | 0 | 0 |
 
-Tracking error 1.2 % a year, expected active return +0.75 % under the posterior. The tilt is
-funded from US government bonds, and the equity book keeps its home rule: of the eight points
-added to equities, five go to the UK and most of the rest to the US.
+Tracking error 1.3 % a year, expected active return +0.7 % under the posterior. US equities rise
+by the full band of 5 points: the band, not the view, decides how much. The rest of the view goes
+to the markets that move with US equities, whose posterior rose too (Chapter 5): the UK gains
+2 points, the euro area and Switzerland half a point each. The tilt is funded from US government
+bonds, again the full band, and US corporate bonds.
 
-The Keller trust (γ = 5, home euro area), same view: equities +10.5 points (euro area +6, US +4),
-government bonds −10, tracking error 1.8 %, expected active return +1.2 %. Same view, a larger
-tilt, because the client bears more risk per unit of return and holds a larger equity book to
-begin with.
+The equity book no longer keeps the benchmark's home share: the UK falls from 49 to 46 % of it.
+That is intended. The home rule defines the benchmark, not the bet.
 
-With a tracking-error budget of 1 % both tilts are scaled down: the Hartleys to +6.1 points of
-equity, the Kellers to +5.6.
+The Keller trust (γ = 5, home euro area), same view: equities +10 points (US +5, euro area +2.5,
+UK +2, Switzerland +0.5), government bonds −5 and corporate bonds −5, both in dollars; tracking
+error 1.5 %, expected active return +1.0 %. Same view, a larger tilt: with a lower γ the Kellers
+accept more risk for a point of expected return.
 
-**A view that opens a currency position.** Suppose instead the view is "euro-area government
-bonds earn 4 % over cash", confidence 50 %. For the Hartleys the station moves 10 points into
-euro-area government bonds and 12 points into euro-denominated positions in all; tracking error
-1.1 %. Most of that tracking error is the euro against the dollar. If that is the bet you mean,
-enter it; if you meant a view on European rates, say so with a relative view against US
-government bonds instead.
+With a tracking-error budget of 1 % both tilts are scaled down: the Hartleys to +6.4 points of
+equity, the Kellers to +6.5 (the summary table, before rounding).
+
+## Two cautions
+
+**An absolute view on a foreign-currency position is also a currency view.** The game's data are
+in dollars, unhedged, and all positions in one currency share that currency. Take the view
+"euro-area government bonds earn 4 % over cash", confidence 50 %. For the Hartleys the station
+moves 5 points into euro-area government bonds and 5 more into euro-area corporate bonds, on which
+you had no view, funded from US bonds. That is 10 points of euro against the dollar; tracking
+error 1.0 %. For a view on foreign rates, state it relative to US government bonds: "euro-area
+government bonds beat US government bonds by 3.5 points" (the prior spread is 1.8). That says
+what the bet is. It does not remove the euro: here the station builds the same 10-point euro
+position. Read the currency totals of the deviation matrix before you enter it.
+
+**The client's commodity floor stays a floor.** A negative view cannot take commodities below it.
+Give the Hartleys the view "commodities earn 0 % over cash" (prior 2.6 %): commodities stay at
+5 %, and the station rearranges the rest instead, government bonds +4 points, corporate bonds
+−3.5, equities −0.5. The expected active return is −0.1 %, and the app flags it: the tilt buys
+lower risk, not return. If the floor blocks your view, leave the fund at its SAA.
 
 ## Entering it in the game
 
@@ -79,8 +107,11 @@ government bonds instead.
   effect. Make it only if it is the bet you mean. Cash is outside the benchmark: parking part of
   the fund in money market is an under-investment against every class, and the information ratio
   will say so.
-- **Stay inside the hard limits.** The band in station 4 does not know the Min-Max sheet; check
-  the tactical matrix against it before you enter it.
+- **A negative expected active return is a warning.** Use fewer views, relative rather than
+  absolute, or a narrower band, or leave the fund at its SAA.
+- **Stay inside the hard limits.** The band in station 4 does not know the Min-Max sheet, and the
+  tactical step does not impose the home rule. Check the tactical matrix against the sheet before
+  you enter it.
 - **Re-enter every round.** Between rounds the game moves holdings with returns and flows; the
   tactical grid you entered last round is not where the fund is now.
 - **No views, no tilt.** If the outlook gives you nothing you believe, leave the automatic

@@ -80,14 +80,20 @@ posterior and the change; the views as parsed.
 
 ## Station 4 · Tactical Asset Allocation
 
-Inputs: the maximum deviation per position (band) and the tracking-error budget. One press
-computes the tactical allocation of **every** fixed SAA under the same views. For each SAA, the
-problem of station 2 on $(\mu_{BL}, \Sigma_{BL})$ with that SAA's γ and rules, plus
-$w_{\text{SAA}} - d \le w \le w_{\text{SAA}} + d$. If a budget is set and the tracking error
-$\sqrt{(w - w_{\text{SAA}})'\Sigma(w - w_{\text{SAA}})}$ exceeds it, the deviation is scaled to
-the budget. Outputs: a summary table with the tilt by asset class, tracking error and active return per fund,
-and a tab per fund with the SAA, TAA and deviation matrices, the active-position figures and the
-binding limits. Without views the TAA equals the SAA.
+Inputs: the maximum deviation per position (band, default 0.05) and the tracking-error budget
+(default 2 % a year, 0 = none). One press computes the tactical allocation of **every** fixed SAA
+under the same views. For each SAA, the problem of station 2 on $(\mu_{BL}, \Sigma)$ with that
+SAA's γ and limits but without the home rule, plus
+$w_{\text{SAA}} - d \le w \le w_{\text{SAA}} + d$. The home rule is left out because it defines
+the benchmark; kept, a view on one equity market could not act. The sample covariance Σ is used,
+not $\Sigma_{BL}$: $\Sigma_{BL}$ raises the measured risk by about $(1+\tau)$ as soon as any view
+is entered and moves weight from equities into bonds for no reason of the views. If a budget is
+set and the tracking error $\sqrt{(w - w_{\text{SAA}})'\Sigma(w - w_{\text{SAA}})}$ exceeds it,
+the deviation is scaled to the budget. Outputs: a summary table with the tilt by asset class,
+tracking error and active return per fund, and a tab per fund with the SAA, TAA and deviation
+matrices, the active-position figures and the binding limits. A negative expected active return
+is flagged in both. Without views the TAA equals the SAA, and a view that agrees with the prior
+leaves it there.
 
 ## Saving your work
 
@@ -100,4 +106,6 @@ team forum; it is the team's record of the funds and views.
 
 `tests/check_recipe.R` confirms that the app's constraint builder and solver reproduce a
 hand-written quadratic programme for twenty client cases; `tests/check_taa.R` confirms that the
-tactical allocation without views equals the strategic one and shows one view at work.
+tactical allocation equals the strategic one without views and under a view that agrees with
+the prior, that a negative view on one equity market lowers that market, and shows one view at
+work with a tracking-error budget.
