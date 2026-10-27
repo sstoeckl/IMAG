@@ -12,9 +12,9 @@ turned down) and the rules; the app computes the γ bracket, shows it, and carri
 station 2 as the limits. Removes the hand calculation of Chapter 2 and the manual entry of floors.
 Small.
 
-**Band check.** Load the client's guidance bands and Min-Max sheet (from the course's allocation
-workbook) and flag, in station 2 and station 4, any class outside its guidance band or hard
-limit. Removes the manual check of Chapters 4 and 6. Small; needs the sheets in a machine-readable
+**Band check.** Load the client's guidance bands (from the course's allocation workbook) and
+flag, in station 2 and station 4, any class outside its band. Removes the manual check of
+Chapters 4 and 6. Small; needs the bands in a machine-readable
 file in the app's `data/`.
 
 **Game-format export.** A button that writes the strategic or tactical matrix in the exact layout
@@ -62,9 +62,8 @@ to be added to the course dataset.
 
 ## Suggestions for the game itself
 
-**Client texts and limit sheets.** The October 2026 client profiles, guidance bands and Min-Max
-sheet replace the current ones; the tactical allowance per currency in the Min-Max sheet is what
-keeps foreign bonds available for tactical positions.
+**Client texts and guidance bands.** The October 2026 client profiles and guidance bands
+replace the current ones.
 
 **Strategic allocation analysis on the Analyst page.** It compares the fund's strategic
 allocation with the optimal allocation held in the game's parameters. If it reports the distance

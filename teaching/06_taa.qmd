@@ -109,9 +109,9 @@ lower risk, not return. If the floor blocks your view, leave the fund at its SAA
   will say so.
 - **A negative expected active return is a warning.** Use fewer views, relative rather than
   absolute, or a narrower band, or leave the fund at its SAA.
-- **Stay inside the hard limits.** The band in station 4 does not know the Min-Max sheet, and the
-  tactical step does not impose the home rule. Check the tactical matrix against the sheet before
-  you enter it.
+- **Stay close to what the card describes.** The band in station 4 is your choice, not a client
+  limit, and the tactical step does not impose the home rule. A tactical matrix far from the
+  guidance bands costs clients.
 - **Re-enter every round.** Between rounds the game moves holdings with returns and flows; the
   tactical grid you entered last round is not where the fund is now.
 - **No views, no tilt.** If the outlook gives you nothing you believe, leave the automatic

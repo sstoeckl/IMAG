@@ -44,15 +44,15 @@ do it once, early, and record why: the benchmark should not move every round.
 Satisfaction moves with three things: the distance just discussed, the risk the fund took against
 what the client expects, and the fee. AuM follows satisfaction and risk-adjusted performance with
 a lag, and flows between rounds move the holdings (Chapter 7). A fund that loses clients after a
-round inside its limits and with a small tracking error has a fee problem; a fund that loses
-clients after a breach of the Min-Max sheet has an allocation problem, and the breach is the
+round close to its guidance bands and with a small tracking error has a fee problem; a fund that
+loses clients after an extreme position has an allocation problem, and that position is the
 first thing to fix.
 
 ## Feeding it back
 
 For the next round, in this order:
 
-1. Fix any breach of the hard limits.
+1. Pull back any extreme position.
 2. Revise the γ estimate if the strategic allocation analysis says so, once.
 3. Revise the confidence of the views that were wrong; add new views from the new outlook.
 4. Revisit the fee only if AuM moved for no investment reason.

@@ -39,7 +39,7 @@ Area is scored at the deadline.
 Round checklist before the deadline:
 
 1. Strategic allocation per fund: unchanged since round 1 (round 1: entered and checked, Chapter 4).
-2. Tactical allocation per fund: entered for this round, inside the hard limits (Chapter 6).
+2. Tactical allocation per fund: entered for this round, close to the guidance bands (Chapter 6).
 3. Automation preferences: ESG floor set for the ESG funds, Matches clean (Chapter 7).
 4. Asset-level automation: on, unless you decided otherwise and wrote down why.
 5. Fees: set.

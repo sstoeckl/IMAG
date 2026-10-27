@@ -30,8 +30,8 @@ Three things drive assets under management (AuM), and AuM drives the firm's prof
    asset class, industry, maturity, factors) and compares your strategic allocation with the
    optimal allocation held in the game's parameters.
 2. **Client satisfaction.** Surveys ask whether the fund is managed the way the client expects:
-   inside the limits, with the right amount of risk, with the required sustainability. Breaching a
-   hard limit loses clients at once.
+   inside the limits, with the right amount of risk, with the required sustainability. A fund held
+   far from what the client expects loses clients at once.
 3. **Fees.** Higher fees turn clients away but raise revenue; clients tolerate fees better when
    their risk-adjusted return is good. Dynamic clients respond to marketing and accept higher
    fees; conservative clients want them low and transparent.

@@ -67,7 +67,6 @@ puts the United States first. Everything the card did not ask for is zero.
 - **Inside the guidance bands.** For the Hartleys the card quotes government bonds 15–52 %,
   corporate bonds 6–18 %, equities 37–63 %. The example sits inside all three. If a class is
   outside its band, your γ is outside the bracket: move it toward the middle.
-- **Inside the hard limits.** Verify once against the client's Min-Max sheet.
 - **Home share of the equity book as stated.** Rounding moves it by a point.
 - **Plausible risk.** Worst year and drawdown should fit the words on the card. The Hartleys
   "would not want to see a year like 2008 again"; a worst year of −14 % in thirty years is

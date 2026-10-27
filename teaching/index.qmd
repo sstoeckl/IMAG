@@ -22,7 +22,7 @@ their own limits; reading those out of the client cards is your task, and this b
 method, not the answers.
 
 ::: {.callout-note title="State of the game"}
-The client descriptions, the limit sheets and the strategic benchmarks described here are the
-October 2026 design. Until Cesim has loaded them into the simulation, the texts and limits you
+The client descriptions, the guidance bands and the strategic benchmarks described here are the
+October 2026 design. Until Cesim has loaded them into the simulation, the texts and bands you
 see on the Clients page may still be the earlier ones. The method does not change.
 :::

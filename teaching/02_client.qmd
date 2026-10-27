@@ -76,9 +76,7 @@ careless one is the estimate of γ. Chapter 4 shows what it costs to be wrong: f
 the bracket cost 14 to 23 points.
 :::
 
-## The limits: guidance bands and hard limits
-
-The card carries two kinds of limits.
+## The guidance bands
 
 **Guidance bands** are quoted in the text ("between 15 and 52 percent in government bonds").
 They are the range inside which the client expects to be held, and they are consistent with the
@@ -86,10 +84,8 @@ client's risk aversion: every γ in the bracket gives an allocation inside the b
 outside the bracket leaves at least one band. Use them two ways: as a check on your allocation,
 and to narrow the bracket. If your allocation leaves a band, your γ is outside the bracket.
 
-**Hard limits** are the game's Min-Max sheet, which you will find with the client. They are
-wider than the guidance bands and leave room for tactical positions, including small positions in
-currencies the strategic allocation does not hold. A breach of a hard limit loses the client at
-once, whatever the market does; a dynamic client parked in money market walks away.
+A fund held far from what the card describes loses the client, whatever the market does; a
+dynamic client parked in money market walks away.
 
 ## The home market
 
