@@ -1,5 +1,6 @@
 ---
 title: "Reading the client"
+bibliography: references.bib
 ---
 
 ## What the Clients page gives you
@@ -34,6 +35,64 @@ client used throughout this book:
 
 > Home market Britain. Commodities at least 5 %. Half of the equity book in UK companies, the
 > rest by market size. No sustainability requirement. Cash at the manager's discretion.
+
+## What γ is, and why it is the whole game
+
+Before reading the two decisions off the card, it is worth being precise about what $\gamma$ is. $\gamma$ is the **coefficient of relative risk aversion** in the standard mean–variance utility
+function:
+
+$$
+U=\mu-\frac{\gamma}{2}\sigma^2
+$$
+
+where $\mu$ is the portfolio's expected excess return over cash and $\sigma^2$ is its variance. The
+function says that a portfolio is valued for its expected return, penalised for its variance, and
+that the penalty is proportional to $\gamma$. A client with $\gamma=0$ cares only about expected
+return and would hold the riskiest asset available. A client with a very large $\gamma$ cares
+almost only about variance and would hold cash. Most clients sit between these extremes.
+
+The parameter is grounded in the **Arrow–Pratt measure of risk aversion** [@arrow1965aspects;
+@pratt1978risk], which formalises the idea that a risk-averse person demands a premium to accept
+a gamble whose expected value is zero. The measure is the same in the mean–variance case, and it is
+what allows an advisor to translate a client's stated preferences into a single number that can be
+fed into a portfolio optimiser. It is also the same $\gamma$ that appears in Chapter 7's
+mean–variance optimisation and in the Black–Litterman prior in Chapter 9. Learning to read it off
+the card is therefore not a separate skill: it is the input to every later step.
+
+**Where $\gamma$ comes from.** There are two routes, and the card supplies one or the other.
+
+- **From a single allocation decision.** If the client states what share $y$ of wealth they would
+  put in a risky portfolio with expected excess return $\mu$ and variance $\sigma^2$, the
+  first-order condition of the utility function gives
+
+  $$
+  \gamma = \frac{\mu}{y\,\sigma^2}.
+  $$
+
+  This is the standard mean–variance result, and it is the one the Arrow–Pratt measure generalises.
+  A client who would put 25 % of wealth in an equity portfolio with 4 % expected excess return and
+  20 % volatility implies $\gamma = 0.04/(0.25 \times 0.04) = 4$. A client who would put 60 % in
+  the same portfolio implies $\gamma = 0.04/(0.60 \times 0.04) \approx 1.7$. The more the client is
+  willing to hold, the lower their risk aversion.
+
+- **From two paired choices.** If the card instead describes two decisions, each a choice between
+  two portfolios, the comparison of utilities isolates $\gamma$ without needing the client to state
+  an allocation. This is the route the Hartleys' card uses, and it is the one the next section
+  derives. It produces a *bracket* rather than a point, because each choice only tells you that
+  $\gamma$ is above or below a threshold.
+
+Both routes produce the same parameter on the same scale. Use whichever the card supplies. If the
+card supplies both, use the paired choices (they are more informative) and treat the single
+allocation as a cross-check.
+
+**Why it is the whole game.** The rules are the same for every careful reader of the card: a
+commodity floor is a commodity floor, and a home share is a home share. What distinguishes a
+careful reading from a careless one is the estimate of $\gamma$, because $\gamma$ is what selects
+the point on the efficient frontier that becomes the client's strategic allocation. A $\gamma$ one
+point too high or too low moves the allocation several percentage points away from the benchmark.
+Chapter 4 quantifies the cost for the Hartleys: $\gamma=7$ or $9$ instead of $8$ puts the
+allocation 7 or 5.5 points away; the ends of the bracket cost 14 to 23 points. Reading the
+client is, in practice, reading $\gamma$.
 
 ## The risk aversion: bracket it from two decisions
 
