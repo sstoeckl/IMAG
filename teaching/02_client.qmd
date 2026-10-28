@@ -178,11 +178,49 @@ i.e. **$\gamma$ lies between about 5.5 and 11**.
 
 For the Hartleys the bear-market comment points to the middle, so we take **$\gamma=8$**.
 
+## From γ to a portfolio, and back
+
+Once $\gamma$ is estimated, it does two things in the rest of the book. It selects the strategic
+allocation in Chapter 7, and it sets the prior in the Black–Litterman step in Chapter 9. Both uses
+depend on the same mapping, and the mapping runs in both directions: from $\gamma$ to a portfolio,
+and from a portfolio back to an implied $\gamma$.
+
+**From $\gamma$ to a portfolio.** In Chapter 7, the client's $\gamma$ selects the point on the
+efficient frontier that maximises $U=\mu-\frac{\gamma}{2}\sigma^2$. Higher $\gamma$ selects a
+quieter, lower-return portfolio; lower $\gamma$ selects a riskier, higher-return one. The mapping
+from $\gamma$ to a *profile* is conventional, and it is useful for sanity-checking:
+
+| $\gamma$ | Profile | Typical equity share |
+|:--|:--|:--|
+| above 6 | Conservative | 20–40 % |
+| 3 to 6 | Moderate | 40–60 % |
+| below 3 | Aggressive | 70 % or more |
+
+The bands are a rough guide, not a rule. A conservative client with a large fixed liability might
+hold more equities than the band suggests, because the liability changes what the portfolio is for.
+But a $\gamma$ that puts the client in one profile and a portfolio that looks like another is a
+signal to check the reading.
+
+**From a portfolio to an implied $\gamma$.** The same first-order condition that gave
+$\gamma = \mu/(y\sigma^2)$ in the single-decision case can be used in reverse: given a portfolio
+with expected excess return $\mu$ and variance $\sigma^2$, and a share $y$ allocated to it, the
+implied $\gamma$ is $\mu/(y\sigma^2)$. This is the check to run on the completed allocation. If the
+optimised portfolio puts 80 % in equities and the implied $\gamma$ is 2, but the card's bracket says
+5.5–11, something in the reading is wrong: either the $\gamma$ was mis-estimated, or the
+constraints have forced the optimiser away from the client's true preference, or the expected
+returns used in the optimisation are inconsistent with the ones the client's card implies.
+
+The check is not a substitute for reading the card. It is a second opinion, and the two should
+agree. When they do not, the card wins: the client's stated behaviour is the primary evidence, and
+the optimised portfolio is a consequence of it, not the other way round.
+
 ::: {.callout-warning title="γ is the whole game at this step"}
 The rules are the same for every reader of the card. What distinguishes a careful reading from a
-careless one is the estimate of γ. Chapter 4 shows what it costs to be wrong: for the Hartleys,
-γ = 7 or 9 instead of 8 puts the allocation 7 or 5.5 points away from the benchmark; the ends of
-the bracket cost 14 to 23 points.
+careless one is the estimate of $\gamma$. Chapter 4 shows what it costs to be wrong: for the
+Hartleys, $\gamma = 7$ or $9$ instead of $8$ puts the allocation 7 or 5.5 points away from the
+benchmark; the ends of the bracket cost 14 to 23 points. The profile bands above are a sanity
+check, not a substitute for the bracket: a $\gamma$ that reads as "moderate" but produces a
+portfolio that looks "aggressive" is a $\gamma$ worth re-reading.
 :::
 
 ## The guidance bands
