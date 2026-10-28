@@ -4,22 +4,17 @@ title: "A round in IMAG"
 
 ## The firm, the funds, the clients
 
-You manage Asterion Capital, an asset manager whose founders are stepping back. The firm runs
-**one fund per client type**, up to four: Conservative, Conservative (ESG), Dynamic, Dynamic
-(ESG). Each fund has its own clients, its own benchmark and its own fee. Clients differ by home
-market as well as by type, so a Conservative fund may hold money for American, British,
-euro-area, Swiss and Japanese families; the client card tells you which.
+You are fund manager at Asterion Capital, an asset manager whose founders are stepping back. The firm runs
+**one fund per client type** and manages a total of up to four different funds, which can be either Conservative, Conservative (ESG), Dynamic, or Dynamic (ESG). Each fund has its own clients, its own benchmark and its own fee. The client card observable in the "Clients" section of the game tells you the home market, the risk-aversion bracket, the limits and the fee of each fund.
 
-Everything is measured in **US dollars**. Asterion is a dollar house; assets in other currencies
-are held unhedged, and the game offers no way to hedge them.
+Asterion measures everything in **US dollars**. Assets in other currencies are held unhedged, and the game offers no way to hedge them. This creates currency risk, which is part of the risk you manage. The game does not allow you to change the currency of a fund.
 
 The investable universe is 180 assets in four asset classes (government bonds, corporate bonds,
 equities, alternatives) and five currencies (USD, GBP, EUR, CHF, JPY). Alternatives exist in USD
-only. A **market segment** is one asset class in one currency, e.g. "EUR / Corporate bonds". With
-the money market this gives 21 **positions**: money market, government bonds, corporate bonds and
-equities in each of the five currencies, plus commodities. The strategic benchmark is defined on the
-16 positions without the money market: the game's benchmark grid has no cash row, so cash is a
-tactical decision of the player, not a strategic position.
+only. A **market segment** is one asset class in one currency, e.g. "EUR / Corporate bonds". 
+
+Together with the money market this gives 21 **positions** hold by each portfolio (money market, government bonds, corporate bonds and
+equities in each of the five currencies, plus commodities). The strategic benchmark (or Strategic Asset Allocation) is defined on the 16 positions without the money market. In the optimal portfolio of cash is not  so cash is a tactical decision of the player, not a strategic position.
 
 ## What the game measures
 
