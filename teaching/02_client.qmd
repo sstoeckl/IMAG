@@ -8,18 +8,19 @@ In professional investment management, building a portfolio is only one part of 
 ## What the Clients page gives you
 
 Each fund has a client card. It is accessible through the "Clients" page. 
-It shows a general profile of the client type and, behind *Meet client X* button, the game introduces us to a representative client. 
-The card also shows the fund's AuM, performance and satisfaction.
+It shows a general profile of the client type and using the *Meet client X* button, the game introduces us to a representative client. 
 
 The text contains all the information needed for strategic allocation. In short, each
 client has **one number and two rules**:
 
 - a **risk aversion** γ, which the text does *not* state as a number;
-- a **commodity rule** (a minimum share, or none at all);
-- the **home rule**: a share of the equity book in the client's home market, the rest across
-  the other markets in proportion to their size.
 
-Plus the sustainability requirement, if any, and a short sales constraint. Whatever the card does not
+<!-- Does every description really has a commodity rule? Or is rather a min and max of every asset class? -->
+
+- a **commodity rule** (a minimum share, or none at all);
+- a **home rule**: a share of the equity book in the client's home market.
+
+Some cases additional have a **sustainability requirement** and a **short sales constraint**. Everything the client descriptions does not
 mention is not constrained.
 
 ## The rules: read them off
@@ -30,125 +31,122 @@ commodities" is a floor of 5 %. "Half of the equities in companies from their ho
 spread across the other developed markets in proportion to their size" is the home rule with a home
 share of one half.
 
-Write the rules down as numbers before you open the app. For the Hartley family, the invented
-client used throughout this book:
+Write the rules down as numbers before you open the app. For the Hartley family, the client description specifies:
 
 > Home market Britain. Commodities at least 5 %. Half of the equity book in UK companies, the
 > rest by market size. No sustainability requirement. Cash at the manager's discretion.
 
-## What γ is, and why it is the whole game
-
-Before reading the two decisions off the card, it is worth being precise about what $\gamma$ is. It is the **coefficient of relative risk aversion** in the standard mean–variance utility
-function:
-
-$$
-U=\mu-\frac{\gamma}{2}\sigma^2
-$$
-
-where $\mu$ is the portfolio's expected excess return over cash and $\sigma^2$ is its variance. The
-function says that a portfolio is valued for its expected return, penalized for its variance, and
-that the penalty is proportional to $\gamma$. A client with $\gamma=0$ cares only about expected
-return and would hold the riskiest asset available. A client with a very large $\gamma$ cares
-almost only about variance and would hold cash. Most clients sit between these extremes.
-
-The parameter is grounded in the **Arrow–Pratt measure of risk aversion** [@arrow1965aspects;
-@pratt1978risk], which formalizes the idea that a risk-averse person demands a premium to accept
-a gamble whose expected value is zero. The measure is the same in the mean–variance case, and it is
-what allows an advisor to translate a client's stated preferences into a single number that can be
-fed into a portfolio optimizer. It is also the same $\gamma$ that appears in Chapter 7's
-mean–variance optimization and in the Black–Litterman prior in Chapter 9. Learning to read it off
-the card is therefore not a separate skill: it is the input to every later step.
-
-**Where $\gamma$ comes from.** There are two routes, and the card supplies one or the other.
-
-- **From a single allocation decision.** If the client states what share $y$ of wealth they would
-  put in a risky portfolio with expected excess return $\mu$ and variance $\sigma^2$, the
-  first-order condition of the utility function gives
-
-  $$
-  \gamma = \frac{\mu}{y\,\sigma^2}.
-  $$
-
-  This is the standard mean–variance result, and it is the one the Arrow–Pratt measure generalizes.
-  A client who would put 25 % of wealth in an equity portfolio with 4 % expected excess return and
-  20 % volatility implies $\gamma = 0.04/(0.25 \times 0.04) = 4$. A client who would put 60 % in
-  the same portfolio implies $\gamma = 0.04/(0.60 \times 0.04) \approx 1.7$. The more the client is
-  willing to hold, the lower their risk aversion.
-
-- **From two paired choices.** If the card instead describes two decisions, each a choice between
-  two portfolios, the comparison of utilities isolates $\gamma$ without needing the client to state
-  an allocation. This is the route the Hartleys' card uses, and it is the one the next section
-  derives. It produces a *bracket* rather than a point, because each choice only tells you that
-  $\gamma$ is above or below a threshold.
-
-Both routes produce the same parameter on the same scale. Use whichever the card supplies. If the
-card supplies both, use the paired choices (they are more informative) and treat the single
-allocation as a cross-check.
-
-**Why it is the whole game.** The rules are the same for every careful reader of the card: a
-commodity floor is a commodity floor, and a home share is a home share. What distinguishes a
-careful reading from a careless one is the estimate of $\gamma$, because $\gamma$ is what selects
-the point on the efficient frontier that becomes the client's strategic allocation. A $\gamma$ one
-point too high or too low moves the allocation several percentage points away from the benchmark.
-Chapter 4 quantifies the cost for the Hartleys: $\gamma=7$ or $9$ instead of $8$ puts the
-allocation 7 or 5.5 points away; the ends of the bracket cost 14 to 23 points. Reading the
-client is, in practice, reading $\gamma$.
 
 ## The risk aversion: bracket it from two decisions
 
-The card describes two decisions the client has taken in the past. Each is a choice between two portfolios, described by their volatility $\sigma$ and their expected return over cash $\mu$.
+The client card describes two decisions the client has taken in the past. Each is a choice
+between two portfolios. For each portfolio the card gives two numbers: its volatility $\sigma$
+(how much it swings) and its expected return over cash $\mu$ (how much more it earns than a
+savings account).
 
-We assume the client values a portfolio by its **mean–variance utility**:
+We need to turn those two decisions into a number, the client's **risk aversion** $\gamma$. The
+idea is simple. A risk-averse client dislikes volatility. Given the choice between a portfolio with
+a bit more return and a lot more volatility, and one with a bit less return and a lot less volatility, the
+choice they made tells us roughly how much they dislike volatility. Two decisions give us two
+constraints — one on each side of the true $\gamma$ — and together they bracket it.
 
-$$
-U=\mu-\frac{\gamma}{2}\sigma^2
-$$
+### The utility function, in one line
 
-where $\gamma \ge 0$ is the client's **coefficient of risk aversion**. (This is the standard Markowitz mean–variance utility; $\gamma$ is the same "risk aversion" that appears in mean–variance optimization, so a bracket here can be carried straight into a portfolio optimizer.) Higher $\gamma$ means the client demands more return per unit of variance.
-
-Each past choice is a comparison of two utilities, and each comparison **isolates $\gamma$**. Write the two portfolios as $X$ (the one with the higher volatility) and $Y$ (the smaller one), so $\sigma_X > \sigma_Y$. The client preferred one of them; that preference says $U_{\text{preferred}} > U_{\text{other}}$. Rearranging:
-
-$$
-\mu_P-\frac{\gamma}{2}\sigma_P^2 > \mu_O-\frac{\gamma}{2}\sigma_O^2
-$$
-
-$$
-\frac{\gamma}{2}\left(\sigma_O^2-\sigma_P^2\right) > \mu_O-\mu_P
-$$
-
-Now the sign of $\sigma_O^2-\sigma_P^2$ decides which way the inequality points:
-
-- **Client turned down the riskier portfolio $X$ for $Y$.** Then $O=Y,\ P=X$, so $\sigma_O^2-\sigma_P^2=\sigma_Y^2-\sigma_X^2<0$. Dividing by a negative flips the inequality, giving a **lower bound**:
+To make "how much they dislike volatility" precise, we assume the client values a portfolio by its
+mean–variance utility:
 
 $$
-\gamma > \frac{2(\mu_X-\mu_Y)}{\sigma_X^2-\sigma_Y^2}
+U = \mu - \frac{\gamma}{2}\sigma^2
 $$
 
-  Intuition: they gave up return to reduce risk, so they must be *at least* this risk-averse.
+Read it as: **utility = return minus a penalty for risk**. The penalty is $\frac{\gamma}{2}$
+times the variance, so a client with a higher $\gamma$ penalises risk more heavily. This is the
+standard Markowitz utility function, and the $\gamma$ in it is the same risk aversion that
+appears in mean–variance optimisation in Chapter 4. Higher $\gamma$ means a more cautious
+client.
 
-- **Client took the riskier portfolio $X$.** Then $O=X,\ P=Y$, the denominator is positive, and the same expression is an **upper bound**:
+A client prefers portfolio A to portfolio B when $U_A > U_B$. Every past decision on the card is
+a statement of that form, and each one can be solved for $\gamma$.
+
+### What one decision tells us
+
+Take one decision. The client chose one portfolio over another. Call the one they chose the
+**winner** and the other the **loser**. We do not yet need to know which is riskier; write the
+winner's return and volatility as $\mu_W, \sigma_W$ and the loser's as $\mu_L, \sigma_L$.
+
+The client preferred the winner, so its utility must be higher:
 
 $$
-\gamma < \frac{2(\mu_X-\mu_Y)}{\sigma_X^2-\sigma_Y^2}
+\mu_W - \frac{\gamma}{2}\sigma_W^2 > \mu_L - \frac{\gamma}{2}\sigma_L^2
 $$
 
-  Intuition: they were willing to accept more risk for more return, so they can't be *more* risk-averse than this.
-
-**The single expression:**
+Move the $\gamma$ terms to the left and the return terms to the right:
 
 $$
-\frac{2(\mu_X-\mu_Y)}{\sigma_X^2-\sigma_Y^2}
+\frac{\gamma}{2}\left(\sigma_L^2 - \sigma_W^2\right) > \mu_L - \mu_W
 $$
 
-is therefore the whole tool: it is a **lower bound** if the client rejected $X$, and an **upper bound** if the client chose $X$. You never need to remember two formulas—just which portfolio the client *ended up with*.
+Now look at the sign of $\sigma_L^2 - \sigma_W^2$. It is positive if the loser was the riskier
+portfolio and negative if the winner was. That sign decides which way the inequality points, and
+therefore whether the decision gives us a floor or a ceiling on $\gamma$.
 
-**Conditions for the bound to be informative.** The derivation assumes $\sigma_X>\sigma_Y$ (by labelling) and $\mu_X>\mu_Y$ (the riskier portfolio also offers more expected return). If the riskier portfolio had *lower* expected return, it would be dominated, the choice would tell you nothing beyond $\gamma>0$, and the formula would be vacuous or sign-flipped. Always check $\mu_X>\mu_Y$ before applying it.
+**Case 1: the client turned down the riskier portfolio.** The winner is the quieter one, so the
+loser had the larger variance and $\sigma_L^2 - \sigma_W^2 > 0$. Dividing by a positive number
+keeps the inequality pointing the same way:
 
-**Units.** Put $\mu$ and $\sigma$ in the same units (both decimals, both annualized). The $\gamma$ you recover is then on the same scale as the $\gamma$ you would feed into a mean–variance optimizer.
+$$
+\gamma > \frac{2(\mu_L - \mu_W)}{\sigma_L^2 - \sigma_W^2}
+$$
+
+The client gave up some return to get a quieter portfolio. That means they must be *at least*
+this risk-averse. The decision gives us a **floor** on $\gamma$.
+
+**Case 2: the client took the riskier portfolio.** The winner is the riskier one, so the loser
+had the smaller variance and $\sigma_L^2 - \sigma_W^2 < 0$. Dividing by a negative number flips
+the inequality:
+
+$$
+\gamma < \frac{2(\mu_W - \mu_L)}{\sigma_W^2 - \sigma_L^2}
+$$
+
+The client was willing to accept more swing to get more return. That means they cannot be *more*
+risk-averse than this. The decision gives us a **ceiling** on $\gamma$.
+
+### The one formula to remember
+
+Notice that the right-hand side is the same expression in both cases, once you put the riskier
+portfolio on top. Write $X$ for the riskier portfolio and $Y$ for the quieter one. Then:
+
+$$
+\text{bound} = \frac{2(\mu_X - \mu_Y)}{\sigma_X^2 - \sigma_Y^2}
+$$
+
+and the only question is whether it is a floor or a ceiling:
+
+- If the client **rejected** the riskier portfolio $X$, the bound is a **floor**: $\gamma > \text{bound}$.
+- If the client **chose** the riskier portfolio $X$, the bound is a **ceiling**: $\gamma < \text{bound}$.
+
+That is the whole method. You do not need to remember two formulas. You need to remember one
+expression and one question: *which portfolio did the client end up with?* If they ended up with
+the quieter one, the expression is a floor. If they ended up with the riskier one, it is a
+ceiling.
+
+### Two conditions for the bound to mean anything
+
+The method only works if the two portfolios are genuinely different in both dimensions.
+
+- **The riskier portfolio must also offer more return.** If the riskier portfolio offered *less*
+  return no sensible client would hold it and the choice would tell
+  us nothing except that the client is irrational. Always check that $\mu_X > \mu_Y$ before
+  applying the formula.
+- **Both numbers must be in the same units.** Put $\mu$ and $\sigma$ in the same units (both
+  decimals, both annualised). The $\gamma$ you recover is then on the same scale as the $\gamma$
+  that goes into the mean–variance optimiser in Chapter 4.
+
+If either condition fails, the decision is not usable and you should look for another one on the
+card.
 
 ### Worked example: the Hartleys
-
-Their card records two decisions.
 
 **Decision 1 — they turned down the riskier portfolio.** With their previous adviser they rejected a portfolio with 10% volatility and 6.9% expected return over cash, and took one with 8% volatility and 5.9% instead. Here $X=(10\%,\,6.9\%),\ Y=(8\%,\,5.9\%)$, and because they *rejected* $X$ this is a **lower** bound:
 
@@ -181,9 +179,7 @@ For the Hartleys the bear-market comment points to the middle, so we take **$\ga
 ## From γ to a portfolio
 
 Once $\gamma$ is estimated, it does two things in the rest of the book. It selects the strategic
-allocation in Chapter 4, and it sets the prior in the Black–Litterman step in Chapter 6. Both uses
-depend on the same mapping, and the mapping runs in both directions: from $\gamma$ to a portfolio,
-and from a portfolio back to an implied $\gamma$.
+allocation in Chapter 4, and it sets the prior in the Black–Litterman step in Chapter 6. 
 
 **From $\gamma$ to a portfolio.** In Chapter 4, the client's $\gamma$ selects the point on the
 efficient frontier that maximises $U=\mu-\frac{\gamma}{2}\sigma^2$. Higher $\gamma$ selects a
