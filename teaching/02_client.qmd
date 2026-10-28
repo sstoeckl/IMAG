@@ -37,37 +37,87 @@ client used throughout this book:
 
 ## The risk aversion: bracket it from two decisions
 
-The card describes two decisions the client has taken in the past. Each is a choice between two
-portfolios described by their volatility σ and their expected return over cash μ. A client who
-values a portfolio at
+The card describes two decisions the client has taken in the past. Each is a choice between two portfolios, described by their volatility $\sigma$ and their expected return over cash $\mu$.
+
+We assume the client values a portfolio by its **mean–variance utility**:
 
 $$
-U = \mu - \frac{\gamma}{2}\,\sigma^2
+U=\mu-\frac{\gamma}{2}\sigma^2
 $$
 
-reveals a bound on γ with every such choice:
+where $\gamma \ge 0$ is the client's **coefficient of risk aversion**. (This is the standard Markowitz mean–variance utility; $\gamma$ is the same "risk aversion" that appears in mean–variance optimisation, so a bracket here can be carried straight into a portfolio optimiser.) Higher $\gamma$ means the client demands more return per unit of variance.
 
-- **Turned down the riskier portfolio X for the quieter Y:** $U_Y > U_X$, hence
-  $\gamma > \dfrac{2(\mu_X - \mu_Y)}{\sigma_X^2 - \sigma_Y^2}$.
-- **Took the riskier portfolio X over the quieter Y:** the same expression is an *upper* bound.
-
-**Worked example, the Hartleys.** Their card says: with their previous adviser they turned down
-a portfolio that swung by ten percent a year for an expected 6.9 percent over cash, and took one
-with eight percent swing and 5.9 percent instead. Later, offered a quieter alternative with six
-percent swing and 5.1 percent over cash, they stayed with a portfolio of eight percent swing and
-6.6 percent over cash.
+Each past choice is a comparison of two utilities, and each comparison **isolates $\gamma$**. Write the two portfolios as $X$ (the one with the higher volatility) and $Y$ (the smaller one), so $\sigma_X > \sigma_Y$. The client preferred one of them; that preference says $U_{\text{preferred}} > U_{\text{other}}$. Rearranging:
 
 $$
-\gamma > \frac{2\,(0.069 - 0.059)}{0.10^2 - 0.08^2} = \frac{0.020}{0.0036} = 5.6,
-\qquad
-\gamma < \frac{2\,(0.066 - 0.051)}{0.08^2 - 0.06^2} = \frac{0.030}{0.0028} = 10.7 .
+\mu_P-\frac{\gamma}{2}\sigma_P^2 > \mu_O-\frac{\gamma}{2}\sigma_O^2
 $$
 
-So γ lies between about 5.5 and 11. The words then place it. "They have lived through two bear
-markets without selling, but they would not want to see a year like 2008 again" points to the
-middle of the bracket; "they need the portfolio to grow, their income covers their spending"
-would point lower; "the income the portfolio produces matters more than growth" would point
-higher. For the Hartleys we take γ = 8.
+$$
+\frac{\gamma}{2}\left(\sigma_O^2-\sigma_P^2\right) > \mu_O-\mu_P
+$$
+
+Now the sign of $\sigma_O^2-\sigma_P^2$ decides which way the inequality points:
+
+- **Client turned down the riskier portfolio $X$ for $Y$.** Then $O=Y,\ P=X$, so $\sigma_O^2-\sigma_P^2=\sigma_Y^2-\sigma_X^2<0$. Dividing by a negative flips the inequality, giving a **lower bound**:
+
+$$
+\gamma > \frac{2(\mu_X-\mu_Y)}{\sigma_X^2-\sigma_Y^2}
+$$
+
+  Intuition: they gave up return to reduce risk, so they must be *at least* this risk-averse.
+
+- **Client took the riskier portfolio $X$.** Then $O=X,\ P=Y$, the denominator is positive, and the same expression is an **upper bound**:
+
+$$
+\gamma < \frac{2(\mu_X-\mu_Y)}{\sigma_X^2-\sigma_Y^2}
+$$
+
+  Intuition: they were willing to accept more risk for more return, so they can't be *more* risk-averse than this.
+
+**The single expression:**
+
+$$
+\frac{2(\mu_X-\mu_Y)}{\sigma_X^2-\sigma_Y^2}
+$$
+
+is therefore the whole tool: it is a **lower bound** if the client rejected $X$, and an **upper bound** if the client chose $X$. You never need to remember two formulas—just which portfolio the client *ended up with*.
+
+**Conditions for the bound to be informative.** The derivation assumes $\sigma_X>\sigma_Y$ (by labelling) and $\mu_X>\mu_Y$ (the riskier portfolio also offers more expected return). If the riskier portfolio had *lower* expected return, it would be dominated, the choice would tell you nothing beyond $\gamma>0$, and the formula would be vacuous or sign-flipped. Always check $\mu_X>\mu_Y$ before applying it.
+
+**Units.** Put $\mu$ and $\sigma$ in the same units (both decimals, both annualised). The $\gamma$ you recover is then on the same scale as the $\gamma$ you would feed into a mean–variance optimiser.
+
+### Worked example: the Hartleys
+
+Their card records two decisions.
+
+**Decision 1 — they turned down the riskier portfolio.** With their previous adviser they rejected a portfolio with 10% volatility and 6.9% expected return over cash, and took one with 8% volatility and 5.9% instead. Here $X=(10\%,\,6.9\%),\ Y=(8\%,\,5.9\%)$, and because they *rejected* $X$ this is a **lower** bound:
+
+$$
+\gamma > \frac{2(0.069-0.059)}{0.10^2-0.08^2}=\frac{0.020}{0.0036}=5.6
+$$
+
+**Decision 2 — they kept the riskier portfolio.** Later, offered a quieter alternative with 6% volatility and 5.1% over cash, they stayed with their 8%-volatility, 6.6% portfolio. Here $X=(8\%,\,6.6\%),\ Y=(6\%,\,5.1\%)$, and because they *chose* $X$ this is an **upper** bound:
+
+$$
+\gamma < \frac{2(0.066-0.051)}{0.08^2-0.06^2}=\frac{0.030}{0.0028}=10.7
+$$
+
+So the two decisions bracket the Hartleys:
+
+$$
+5.6 < \gamma < 10.7
+$$
+
+i.e. **$\gamma$ lies between about 5.5 and 11**.
+
+**Placing $\gamma$ inside the bracket.** The bracket comes from behaviour; the qualitative notes on the card place the point within it:
+
+- *"Lived through two bear markets without selling, but would not want to see a year like 2008 again"* → middle of the bracket.
+- *"They need the portfolio to grow; income covers spending"* → lower end (growth-minded, more risk tolerance).
+- *"The income the portfolio produces matters more than growth"* → higher end (capital preservation, less risk tolerance).
+
+For the Hartleys the bear-market comment points to the middle, so we take **$\gamma=8$**.
 
 ::: {.callout-warning title="γ is the whole game at this step"}
 The rules are the same for every reader of the card. What distinguishes a careful reading from a
