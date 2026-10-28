@@ -3,24 +3,24 @@ title: "Reading the client"
 bibliography: references.bib
 ---
 
+In professional investment management, building a portfolio is only one part of the process. Before deciding how to invest, the manager must understand the person the portfolio is being built for. Good investment management begins with a clear understanding of each client's needs.
+
 ## What the Clients page gives you
 
-Each fund has a client card: a general profile of the client type and, behind *Meet client X*, a
-representative client with a home market. The card also shows the fund's AuM, performance and
-satisfaction, and the fee decision (Chapter 8).
+Each fund has a client card. It is accessible through the "Clients" page. 
+It shows a general profile of the client type and, behind *Meet client X* button, the game introduces us to a representative client. 
+The card also shows the fund's AuM, performance and satisfaction.
 
-The text is written so that everything the strategic allocation needs can be read out of it. A
-client is, underneath the story, **one number and two rules**:
+The text contains all the information needed for strategic allocation. In short, each
+client has **one number and two rules**:
 
 - a **risk aversion** γ, which the text does *not* state as a number;
 - a **commodity rule** (a minimum share, or none at all);
 - the **home rule**: a share of the equity book in the client's home market, the rest across
   the other markets in proportion to their size.
 
-Plus the sustainability requirement, if any, and no short sales. Whatever the card does not
-mention is not constrained, and the card says so: no currency limits, no split between
-government and corporate bonds, no caps per position. Cash is not a strategic position: the
-benchmark holds none, and the card leaves it to the manager.
+Plus the sustainability requirement, if any, and a short sales constraint. Whatever the card does not
+mention is not constrained.
 
 ## The rules: read them off
 
@@ -38,7 +38,7 @@ client used throughout this book:
 
 ## What γ is, and why it is the whole game
 
-Before reading the two decisions off the card, it is worth being precise about what $\gamma$ is. $\gamma$ is the **coefficient of relative risk aversion** in the standard mean–variance utility
+Before reading the two decisions off the card, it is worth being precise about what $\gamma$ is. It is the **coefficient of relative risk aversion** in the standard mean–variance utility
 function:
 
 $$
@@ -46,17 +46,17 @@ U=\mu-\frac{\gamma}{2}\sigma^2
 $$
 
 where $\mu$ is the portfolio's expected excess return over cash and $\sigma^2$ is its variance. The
-function says that a portfolio is valued for its expected return, penalised for its variance, and
+function says that a portfolio is valued for its expected return, penalized for its variance, and
 that the penalty is proportional to $\gamma$. A client with $\gamma=0$ cares only about expected
 return and would hold the riskiest asset available. A client with a very large $\gamma$ cares
 almost only about variance and would hold cash. Most clients sit between these extremes.
 
 The parameter is grounded in the **Arrow–Pratt measure of risk aversion** [@arrow1965aspects;
-@pratt1978risk], which formalises the idea that a risk-averse person demands a premium to accept
+@pratt1978risk], which formalizes the idea that a risk-averse person demands a premium to accept
 a gamble whose expected value is zero. The measure is the same in the mean–variance case, and it is
 what allows an advisor to translate a client's stated preferences into a single number that can be
-fed into a portfolio optimiser. It is also the same $\gamma$ that appears in Chapter 7's
-mean–variance optimisation and in the Black–Litterman prior in Chapter 9. Learning to read it off
+fed into a portfolio optimizer. It is also the same $\gamma$ that appears in Chapter 7's
+mean–variance optimization and in the Black–Litterman prior in Chapter 9. Learning to read it off
 the card is therefore not a separate skill: it is the input to every later step.
 
 **Where $\gamma$ comes from.** There are two routes, and the card supplies one or the other.
@@ -69,7 +69,7 @@ the card is therefore not a separate skill: it is the input to every later step.
   \gamma = \frac{\mu}{y\,\sigma^2}.
   $$
 
-  This is the standard mean–variance result, and it is the one the Arrow–Pratt measure generalises.
+  This is the standard mean–variance result, and it is the one the Arrow–Pratt measure generalizes.
   A client who would put 25 % of wealth in an equity portfolio with 4 % expected excess return and
   20 % volatility implies $\gamma = 0.04/(0.25 \times 0.04) = 4$. A client who would put 60 % in
   the same portfolio implies $\gamma = 0.04/(0.60 \times 0.04) \approx 1.7$. The more the client is
@@ -104,7 +104,7 @@ $$
 U=\mu-\frac{\gamma}{2}\sigma^2
 $$
 
-where $\gamma \ge 0$ is the client's **coefficient of risk aversion**. (This is the standard Markowitz mean–variance utility; $\gamma$ is the same "risk aversion" that appears in mean–variance optimisation, so a bracket here can be carried straight into a portfolio optimiser.) Higher $\gamma$ means the client demands more return per unit of variance.
+where $\gamma \ge 0$ is the client's **coefficient of risk aversion**. (This is the standard Markowitz mean–variance utility; $\gamma$ is the same "risk aversion" that appears in mean–variance optimization, so a bracket here can be carried straight into a portfolio optimizer.) Higher $\gamma$ means the client demands more return per unit of variance.
 
 Each past choice is a comparison of two utilities, and each comparison **isolates $\gamma$**. Write the two portfolios as $X$ (the one with the higher volatility) and $Y$ (the smaller one), so $\sigma_X > \sigma_Y$. The client preferred one of them; that preference says $U_{\text{preferred}} > U_{\text{other}}$. Rearranging:
 
@@ -144,7 +144,7 @@ is therefore the whole tool: it is a **lower bound** if the client rejected $X$,
 
 **Conditions for the bound to be informative.** The derivation assumes $\sigma_X>\sigma_Y$ (by labelling) and $\mu_X>\mu_Y$ (the riskier portfolio also offers more expected return). If the riskier portfolio had *lower* expected return, it would be dominated, the choice would tell you nothing beyond $\gamma>0$, and the formula would be vacuous or sign-flipped. Always check $\mu_X>\mu_Y$ before applying it.
 
-**Units.** Put $\mu$ and $\sigma$ in the same units (both decimals, both annualised). The $\gamma$ you recover is then on the same scale as the $\gamma$ you would feed into a mean–variance optimiser.
+**Units.** Put $\mu$ and $\sigma$ in the same units (both decimals, both annualized). The $\gamma$ you recover is then on the same scale as the $\gamma$ you would feed into a mean–variance optimizer.
 
 ### Worked example: the Hartleys
 
@@ -170,7 +170,7 @@ $$
 
 i.e. **$\gamma$ lies between about 5.5 and 11**.
 
-**Placing $\gamma$ inside the bracket.** The bracket comes from behaviour; the qualitative notes on the card place the point within it:
+**Placing $\gamma$ inside the bracket.** The bracket comes from behavior; the qualitative notes on the card place the point within it:
 
 - *"Lived through two bear markets without selling, but would not want to see a year like 2008 again"* → middle of the bracket.
 - *"They need the portfolio to grow; income covers spending"* → lower end (growth-minded, more risk tolerance).
@@ -178,16 +178,16 @@ i.e. **$\gamma$ lies between about 5.5 and 11**.
 
 For the Hartleys the bear-market comment points to the middle, so we take **$\gamma=8$**.
 
-## From γ to a portfolio, and back
+## From γ to a portfolio
 
 Once $\gamma$ is estimated, it does two things in the rest of the book. It selects the strategic
-allocation in Chapter 7, and it sets the prior in the Black–Litterman step in Chapter 9. Both uses
+allocation in Chapter 4, and it sets the prior in the Black–Litterman step in Chapter 6. Both uses
 depend on the same mapping, and the mapping runs in both directions: from $\gamma$ to a portfolio,
 and from a portfolio back to an implied $\gamma$.
 
-**From $\gamma$ to a portfolio.** In Chapter 7, the client's $\gamma$ selects the point on the
+**From $\gamma$ to a portfolio.** In Chapter 4, the client's $\gamma$ selects the point on the
 efficient frontier that maximises $U=\mu-\frac{\gamma}{2}\sigma^2$. Higher $\gamma$ selects a
-quieter, lower-return portfolio; lower $\gamma$ selects a riskier, higher-return one. The mapping
+portfolio with less variance but lower returns; lower $\gamma$ selects a riskier, higher-return one. The mapping
 from $\gamma$ to a *profile* is conventional, and it is useful for sanity-checking:
 
 | $\gamma$ | Profile | Typical equity share |
@@ -200,19 +200,6 @@ The bands are a rough guide, not a rule. A conservative client with a large fixe
 hold more equities than the band suggests, because the liability changes what the portfolio is for.
 But a $\gamma$ that puts the client in one profile and a portfolio that looks like another is a
 signal to check the reading.
-
-**From a portfolio to an implied $\gamma$.** The same first-order condition that gave
-$\gamma = \mu/(y\sigma^2)$ in the single-decision case can be used in reverse: given a portfolio
-with expected excess return $\mu$ and variance $\sigma^2$, and a share $y$ allocated to it, the
-implied $\gamma$ is $\mu/(y\sigma^2)$. This is the check to run on the completed allocation. If the
-optimised portfolio puts 80 % in equities and the implied $\gamma$ is 2, but the card's bracket says
-5.5–11, something in the reading is wrong: either the $\gamma$ was mis-estimated, or the
-constraints have forced the optimiser away from the client's true preference, or the expected
-returns used in the optimisation are inconsistent with the ones the client's card implies.
-
-The check is not a substitute for reading the card. It is a second opinion, and the two should
-agree. When they do not, the card wins: the client's stated behaviour is the primary evidence, and
-the optimised portfolio is a consequence of it, not the other way round.
 
 ::: {.callout-warning title="γ is the whole game at this step"}
 The rules are the same for every reader of the card. What distinguishes a careful reading from a
@@ -237,8 +224,8 @@ dynamic client parked in money market walks away.
 ## The home market
 
 *Meet client X* names the home market. It decides which equity market carries the home share of
-the equity book; the rest of the book goes to the other markets by capitalisation (US 70.0, euro
-area 14.5, Japan 5.9, Switzerland 5.7, Britain 4.0 percent of the universe, renormalised without
+the equity book; the rest of the book goes to the other markets by capitalization (US 70.0, euro
+area 14.5, Japan 5.9, Switzerland 5.7, Britain 4.0 percent of the universe, renormalized without
 the home market). Because the home rule puts a large part of the equities into a market the data
 might not otherwise hold at that size, the rest of the allocation adjusts around it: two clients
 with the same γ and different home markets do not hold the same class mix. That is the method
