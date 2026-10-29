@@ -9,7 +9,7 @@ the allocation its parameters say is optimal for the client; the closer your str
 is to it, the better the client is served.
 
 <!-- The old text "That optimal allocation is defined, and the definition is public:" was a little confusing to me. Does it meant the same as my new sentence or was there a different intention behind it? -->
-That optimal allocation the game evaluates your decision against is the solution to a quadratic optimisation problem:
+That optimal allocation is the solution to a quadratic optimisation problem:
 
 ::: {.callout-important title="The definition of a client's strategic allocation"}
 Maximise expected excess return minus γ/2 times the variance of the portfolio over the 16
@@ -22,6 +22,22 @@ rounded to half a percent.
 
 So the task is not to invent an allocation. It is to estimate γ well (Chapter 2) and run the
 optimisation on the right data.
+
+## What the optimiser is doing
+
+The objective above is **mean–variance optimisation** (MVO), the framework introduced by Markowitz in 1952. It is worth spending a moment on what it does, because the output only make sense if you know what the machine is trying to achieve.
+
+Every candidate portfolio has two summary numbers. Its **expected excess return** is the weighted average of the excess returns of its holdings. Its **variance** is not just the weighted average of the holdings' variances: it also depends on how the holdings move together (their covariances). Two assets that move in lockstep add volatility when combined; two that move independently partly cancel each other out. That is the whole point of diversification, and it is the reason the optimiser does not simply pile into the single highest-return asset.
+
+Plot every possible portfolio in (volatility, expected return) space and you get a cloud. The upper-left edge of that cloud is the **efficient frontier**: the portfolios that offer the most expected return for their level of risk. Any portfolio not on the frontier is dominated as some others offers either more return for the same risk, or less risk for the same return. The optimiser's job is to find the frontier, then pick the one point on it that the client's $\gamma$ selects. A higher $\gamma$ pushes the choice down and to the left (quieter, lower return); a lower $\gamma$ pushes it up and to the right (riskier, higher return).
+
+![The Markowitz Efficient Frontier](graphics/Strategic_Asset_Allocation/efficient-frontier.png){#fig-efficient-frontier}
+
+Two consequences follow, and both matter for the checks:
+
+- **The allocation is a point on the frontier, not a forecast.** It says "given these inputs and this $\gamma$, this is the best trade-off available." It does not say which asset class will win next year.
+- **MVO is sensitive to its inputs.** Small changes in expected returns or in the covariance matrix can move the optimal weights a long way, sometimes into concentrated positions. That is why the checks at the end of this section look not only at the weights but at what the optimiser chose to leave at zero.
+
 
 ## Station 2 of the app, step by step
 
