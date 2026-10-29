@@ -2,13 +2,58 @@
 title: "Setting the tactical allocation"
 ---
 
-## What the tactical allocation is in the game
-
 By default the game copies the strategic allocation into the tactical allocation. Disabling the
-automatic tactical allocation on the Investment strategy page opens the tactical grid. What you
-enter there is the allocation the round is run on; the strategic allocation stays the benchmark.
+automatic tactical allocation on the Investment strategy page opens the tactical grid. Now we can use our views to tilt the tactical allocation away from the strategic one. The tactical allocation is the one the round is run on; the strategic allocation stays the benchmark. 
 The page estimates the **tracking error** of your tactical allocation against the benchmark and
 the **projected information ratio** from the forecast returns.
+
+## What the model does
+
+The tactical step is a **Black–Litterman** model. It takes the strategic allocation as the starting point, blends in the views you entered in station 3, and produces a **posterior** set of expected returns. Station 4 then optimises the tactical allocation on those posterior returns, within the band and the tracking-error budget. The point of the model is that the tilt is driven by your views and not by the optimiser chasing noise in the expected-return estimates.
+
+### The prior: the strategic allocation, reverse-optimised
+
+The model starts from the strategic allocation. Rather than asking "what returns do I expect?", it asks the reverse question: **what expected returns would make the strategic allocation optimal?** That is the prior, and it is the same one introduced in the previous chapter:
+
+$$
+\Pi = \gamma \Sigma w
+$$
+
+where $w$ is the strategic allocation, $\Sigma$ is the covariance matrix, and $\gamma$ is the client's risk aversion. The prior encodes both the capital market assumptions and the client's risk tolerance. If you have no views, the posterior equals the prior, and the tactical allocation equals the strategic one.
+
+### The views
+
+A view is a statement about expected returns, expressed in one of two forms:
+
+- **Absolute:** "US equities earn 12 % over cash". In the model this is a row of the view matrix $P$ that picks out US equities, with the view's expected return in the corresponding row of $Q$.
+- **Relative:** "euro-area equities beat Swiss equities by 2 points". This is a row of $P$ with $+1$ on euro-area equities and $-1$ on Swiss equities, and the 2 points in $Q$.
+
+Each view has a **confidence**, which enters the model through the matrix $\Omega$. A high-confidence view has a small entry in $\Omega$ (low uncertainty); a low-confidence view has a large entry. $\Omega$ is diagonal when views are independent, which is the usual case in station 3.
+
+### The posterior
+
+The posterior expected returns are the precision-weighted average of the prior and the views:
+
+$$
+E(R) = \left[(\tau\Sigma)^{-1} + P^T\Omega^{-1}P\right]^{-1}
+       \left[(\tau\Sigma)^{-1}\Pi + P^T\Omega^{-1}Q\right]
+$$
+
+The formula looks heavy, but the intuition is simple. The term $(\tau\Sigma)^{-1}$ is the **precision of the prior**: how strongly the model believes the strategic allocation. The term $P^T\Omega^{-1}P$ is the **precision of the views**: how strongly the model believes your views. The posterior is a weighted average of the two, with the weights set by their relative precision. A high-confidence view moves the posterior a long way toward $Q$; a low-confidence view barely moves it.
+
+The parameter $\tau$ scales the uncertainty in the prior. A larger $\tau$ means the model is less confident in the strategic allocation, so the views have more influence. A smaller $\tau$ anchors the posterior more firmly to the strategic allocation. The conventional choice is $\tau = 0.05$, which is the default in station 3.
+
+The parameter $\Omega$ encodes the confidence in each view. A smaller entry means the model treats the view as more precise, so the posterior moves further. A larger entry means the view is treated as noisy, so the posterior moves less. Together, $\tau$ and $\Omega$ determine how far the tactical allocation tilts away from the strategic one.
+
+### Why the tactical step differs from the strategic one
+
+The Black–Litterman posterior is used in station 4 with three modifications relative to station 2:
+
+- **No home rule.** The home rule defines the benchmark, so keeping it in the tactical step would force the equity book to grow or shrink in fixed regional proportions, and a view on one market could not act. The client's other limits stay, the commodity floor included.
+- **The sample covariance.** Risk is measured with the covariance of station 2, not the posterior covariance. Using the posterior covariance would raise measured risk as soon as any view is entered, and push every fund from equities into bonds regardless of what the view said.
+- **Band and tracking-error budget.** The maximum deviation per position (default ± 5 points) and the tracking-error budget (default 2 % a year) limit how far the tactical allocation can stray from the benchmark. If the optimum exceeds the budget, the deviation is scaled down to it.
+
+With these in place, every deviation from the strategic allocation is traceable to a view. A view that agrees with the prior leaves the tactical allocation at the strategic one; a view that disagrees produces a tilt, and the size of the tilt is set by the confidence and by the band and budget.
 
 ## Station 4 of the app
 
