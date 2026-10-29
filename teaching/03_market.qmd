@@ -23,7 +23,7 @@ Keep the two apart. The benchmark does not move with the outlook.
 
 ## Station 1 of the app: statistics and correlations
 
-Open the app, station *1 · Strategic Asset Analysis*. Leave the default selection (the 16
+Open the app, station *1 · Strategic Asset Analysis* (<https://inno.uni.li/apps/invest/>). Do not change the default selection (the 16
 benchmark positions; the five money-market positions can be added for analysis) and the sample at
 the full history. The statistics table is annualised and in excess of the US
 money-market rate; the correlation matrix is of the same excess returns.
