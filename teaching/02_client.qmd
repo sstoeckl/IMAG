@@ -13,10 +13,8 @@ It shows a general profile of the client type and using the *Meet client X* butt
 The text contains all the information needed for strategic allocation. In short, each
 client has **one number and two rules**:
 
-- a **risk aversion** γ, which the text does *not* state as a number;
-
+- a **risk aversion coefficient** γ, which the text does *not* state as a number;
 <!-- Does every description really has a commodity rule? Or is rather a min and max of every asset class? -->
-
 - a **commodity rule** (a minimum share, or none at all);
 - a **home rule**: a share of the equity book in the client's home market.
 
@@ -39,10 +37,8 @@ Write the rules down as numbers before you open the app. For the Hartley family,
 
 ## The risk aversion: bracket it from two decisions
 
-The client card describes two decisions the client has taken in the past. Each is a choice
-between two portfolios. For each portfolio the card gives two numbers: its volatility $\sigma$
-(how much it swings) and its expected return over cash $\mu$ (how much more it earns than a
-savings account).
+The client card describes decisions the client has taken in the past. Each is a choice
+between two portfolios. For each portfolio the card gives two numbers: its volatility $\sigma$ and its expected return $\mu$.
 
 We need to turn those two decisions into a number, the client's **risk aversion** $\gamma$. The
 idea is simple. A risk-averse client dislikes volatility. Given the choice between a portfolio with
@@ -148,13 +144,13 @@ card.
 
 ### Worked example: the Hartleys
 
-**Decision 1 — they turned down the riskier portfolio.** With their previous adviser they rejected a portfolio with 10% volatility and 6.9% expected return over cash, and took one with 8% volatility and 5.9% instead. Here $X=(10\%,\,6.9\%),\ Y=(8\%,\,5.9\%)$, and because they *rejected* $X$ this is a **lower** bound:
+**Decision 1 — they turned down the riskier portfolio.** With their previous adviser they rejected a portfolio with 10% volatility and 6.9% expected return, and took one with 8% volatility and 5.9% instead. Here $X=(10\%,\,6.9\%),\ Y=(8\%,\,5.9\%)$, and because they *rejected* $X$ this is a **lower** bound:
 
 $$
 \gamma > \frac{2(0.069-0.059)}{0.10^2-0.08^2}=\frac{0.020}{0.0036}=5.6
 $$
 
-**Decision 2 — they kept the riskier portfolio.** Later, offered a quieter alternative with 6% volatility and 5.1% over cash, they stayed with their 8%-volatility, 6.6% portfolio. Here $X=(8\%,\,6.6\%),\ Y=(6\%,\,5.1\%)$, and because they *chose* $X$ this is an **upper** bound:
+**Decision 2 — they kept the riskier portfolio.** Later, offered a quieter alternative with 6% volatility and 5.1% expected return, they stayed with their 8%-volatility, 6.6% portfolio. Here $X=(8\%,\,6.6\%),\ Y=(6\%,\,5.1\%)$, and because they *chose* $X$ this is an **upper** bound:
 
 $$
 \gamma < \frac{2(0.066-0.051)}{0.08^2-0.06^2}=\frac{0.030}{0.0028}=10.7
@@ -214,8 +210,7 @@ client's risk aversion: every γ in the bracket gives an allocation inside the b
 outside the bracket leaves at least one band. Use them two ways: as a check on your allocation,
 and to narrow the bracket. If your allocation leaves a band, your γ is outside the bracket.
 
-A fund held far from what the card describes loses the client, whatever the market does; a
-dynamic client parked in money market walks away.
+A fund held far from what the card describes loses the client, whatever the market does; a dynamic client parked in money market walks away. This reduces the assets under management and leads to lower profit, eventually bringing the asset management company into financial difficulty.
 
 ## The home market
 
@@ -235,7 +230,11 @@ statistics of the market do not change with the filter.
 
 ## Deliverable of this step
 
-One line per fund, before anything else is done. For the Hartleys:
+Before proceeding to the next step, write down the three numbers that define the client: γ, the minimum expected return, and the maximum volatility.
+
+This gives you one line per fund, which is important for the next allocation steps. 
+
+For the Hartleys:
 
 > Hartley, home UK: γ ≈ 8 (bracket 5.5–11), commodities ≥ 5 %, half of equities in the UK, no
 > sustainability floor, cash at the manager's discretion.
