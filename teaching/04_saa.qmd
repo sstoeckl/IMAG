@@ -2,15 +2,14 @@
 title: "Setting the strategic allocation"
 ---
 
-## What the strategic allocation is in the game
-
-The strategic allocation is entered once per fund on the Investment strategy page and stays for
+Having understood the client and the market, the next step is to set the strategic allocation. This is the benchmark against which all tactical decisions are measured. The strategic allocation is entered once per fund on the Investment strategy page and stays for
 the whole game. It is the **benchmark**: risk-adjusted performance, attribution and the strategic
 allocation analysis on the Analyst page are measured against it. The game also holds, invisibly,
 the allocation its parameters say is optimal for the client; the closer your strategic allocation
 is to it, the better the client is served.
 
-That optimal allocation is defined, and the definition is public:
+<!-- The old text "That optimal allocation is defined, and the definition is public:" was a little confusing to me. Does it meant the same as my new sentence or was there a different intention behind it? -->
+That optimal allocation the game evaluates your decision against is the solution to a quadratic optimisation problem:
 
 ::: {.callout-important title="The definition of a client's strategic allocation"}
 Maximise expected excess return minus γ/2 times the variance of the portfolio over the 16
@@ -29,7 +28,7 @@ optimisation on the right data.
 1. **Client box.** Enter your estimate of γ (whole numbers). Pick the home market from *Meet
    client X* and set the share at home to what the card says. Objective: *Quadratic utility*.
    Give the run a label, e.g. "Hartley, UK".
-2. **Limits by asset class.** Commodities: min = the floor, or max 0 if the client holds none.
+2. **Limits by asset class.** e.g. Commodities: min = the floor, or max 0 if the client holds none.
    Leave everything else at 0 and 1.
 3. **Limits by currency and per position.** Leave at 0 and 1 unless the card says otherwise.
    The optimiser decides.
@@ -108,7 +107,5 @@ client did not ask for.
 position. Check that each column and row sums to the app's totals.
 
 ## Deliverable of this step
+After this step the SAA should be fixed in the app and entered in the game. The internal documentation should hold a one-line record of the inputs (γ, rules, home) so that the tactical stations and the results discussion refer to the same thing all game. Additionally it will be helpful for future reference to export the SAA calculation as JSON so it can be reloaded in the app if needed.
 
-Per fund: the fixed SAA in the app, the same matrix entered in the game, and the one-line record
-of the inputs (γ, rules, home) in the team forum, so that the tactical stations and the results
-discussion refer to the same thing all game.
