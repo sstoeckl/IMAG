@@ -2,6 +2,8 @@
 title: "Reading the market"
 ---
 
+After understanding the client for whom you are managing money, the next step is to understand the market in which you are. This step is important to build a strategic allocation. Asset classes have different properties: some are more volatile than others, some have a higher expected return, and some move together while others move in opposite directions. 
+
 ## Two sources of information, two uses
 
 The game gives you two different things about the market, and they serve two different
