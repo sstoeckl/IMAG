@@ -3,7 +3,7 @@ title: "Setting the tactical allocation"
 ---
 
 By default the game copies the strategic allocation into the tactical allocation. Disabling the
-automatic tactical allocation on the Investment strategy page opens the tactical grid. Now we can use our views to tilt the tactical allocation away from the strategic one. The tactical allocation is the one the round is run on; the strategic allocation stays the benchmark. 
+automatic tactical allocation on the Investment strategy page opens the tactical grid. There you use your views to tilt the tactical allocation away from the strategic one. The tactical allocation is the one the round is run on; the strategic allocation stays the benchmark.
 The page estimates the **tracking error** of your tactical allocation against the benchmark and
 the **projected information ratio** from the forecast returns.
 
@@ -79,7 +79,7 @@ Inputs:
 
 Press *Optimise the tactical allocation of every fund*. For each fixed SAA the station maximises
 the utility of station 2, with the client's γ and limits, on the **posterior** expected returns of
-station 3, within the band. 
+station 3, within the band.
 
 Without views the tactical allocation equals the SAA. A view that agrees with the prior leaves it
 there too. So every deviation comes from a view. Output: the strategic matrix, the tactical

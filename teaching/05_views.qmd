@@ -6,7 +6,7 @@ Once the strategic allocation is fixed, the next step is to read the Economic ou
 
 ## What the outlook gives you
 
-The Economic outlook page displays the analyst's estimate of the coming period, with an expected range
+The Economic outlook page shows the analyst's estimate of the coming period, with an expected range
 around each number.
 
 It provides a narrative report on the economy and the markets, along with estimates for:
@@ -17,7 +17,7 @@ It provides a narrative report on the economy and the markets, along with estima
 - Credit spreads
 - Exchange rates
 
-The algorithm behind the game uses these estimates to build a set of expected excess returns for the 16 benchmark positions. You can edit each estimate, by clicking on it and entering a new value.
+The algorithm behind the game uses these estimates to build a set of expected excess returns for the 16 benchmark positions. You can edit each estimate: click it and enter a new value.
 
 None of this changes the strategic allocation. It changes what you expect **relative to the
 benchmark** for the next round, and that is a view.
@@ -28,7 +28,7 @@ The outlook gives you numbers. Your job is not to copy them into the app; it is 
 
 ### The cycle in one paragraph
 
-Economic variables do not move independently. Growth, inflation, employment and confidence evolve together through a recurring pattern of expansion and contraction. The pattern is not a law but it is a useful empirical regularity. The framework classifies the economy by two things: the **direction of growth relative to trend** (rising or falling) and the **direction of inflation** (rising or falling). Those two directions define four phases. Each phase has historically favoured a different asset class, and the outlook's numbers are what tell you which phase the economy is in.
+Economic variables do not move independently. Growth, inflation, employment and confidence evolve together through a recurring pattern of expansion and contraction. The pattern is not a law, but it is a useful empirical regularity. The framework classifies the economy by two things: the **direction of growth relative to trend** (rising or falling) and the **direction of inflation** (rising or falling). Those two directions define four phases. Each phase has historically favoured a different asset class, and the outlook's numbers are what tell you which phase the economy is in.
 
 The framework is the Investment Clock of Greetham and Hartnett (2004). The four phases and the asset-class rotation they imply are summarised in the figure below.
 
@@ -125,13 +125,14 @@ The pattern is not just theory. The historical record from the United States, co
 
 : U.S. real total returns by phase, 1973–2004, geometric annual averages in percent. Source: Greetham and Hartnett (2004).
 
-The magnitudes are large: the difference between holding stocks in Recovery and holding them in Stagflation is over thirty percentage points of annual real return. The numbers come with caveats, they are drawn from one country and one period, and the commodity figures are heavily influenced by the oil shocks of the 1970s, so the direction of the pattern is more informative than the specific figures. What the table shows is that asset-class leadership rotates with the cycle. It does not promise that the same magnitudes will repeat.
+The magnitudes are large: the difference between holding stocks in Recovery and holding them in Stagflation is over thirty percentage points of annual real return. The numbers come with caveats: they are drawn from one country and one period, and the commodity figures are heavily influenced by the oil shocks of the 1970s, so the direction of the pattern is more informative than the specific figures. What the table shows is that asset-class leadership rotates with the cycle. It does not promise that the same magnitudes will repeat.
 
 ### Reading a classification off the outlook
 
 The outlook reports, for each economy, the GDP path, the inflation path, the unemployment rate and confidence indices. The classification combines the direction of growth with the direction of inflation.
 
-The example below uses **constructed numbers** — they are not taken from the live simulation, and the figures you see in a given round will differ — but the shape of the exercise is the one you will follow.
+The example below uses **constructed numbers**, not figures from the game; the numbers you see in a
+round will differ, but the exercise is the same.
 
 Suppose the outlook reports the following for two economies, A and B.
 
@@ -173,7 +174,9 @@ The rule is simple: **two or more confirming signals support the classification;
 A direction for each segment, and a confidence based on the cross-checks. That is the input to the Black–Litterman step. The classification does not tell you *how much* to tilt; the Black–Litterman model does that, weighted by your confidence and by the size of the gap between the outlook and the prior.
 
 ## A view, in the form the app needs
-In station 3 of the app the views are entered in the Black-Litterman form, to calculate optimal tilts away from the strategic allocation. Each view is either:
+
+Station 3 of the app takes views in the Black–Litterman form; station 4 turns them into tilts away
+from the strategic allocation. Each view is either:
 
 - **Absolute:** "position A earns x percent a year over cash". Example: US equities earn 12 %.
 - **Relative:** "position A beats position B by x points a year". Example: euro-area equities

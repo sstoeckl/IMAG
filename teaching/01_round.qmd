@@ -4,22 +4,26 @@ title: "A round in IMAG"
 
 ## The firm, the funds, the clients
 
-You are fund manager at Asterion Capital, an asset manager whose founders are stepping back. The firm runs
-**one fund per client type** and manages a total of up to four different funds, which can be either Conservative, Conservative (ESG), Dynamic, or Dynamic (ESG). Each fund has its own clients, its own benchmark and its own fees. The client card observable in the "Clients" section of the game tells you the home market, the risk-aversion bracket, the limits and the currently set fees of each fund. Fees can be adjusted each round, but the client does not change. The game does not allow you to change the fund type or the client type.
+You are a fund manager at Asterion Capital, an asset manager whose founders are stepping back. The firm runs
+**one fund per client type**, up to four in total: Conservative, Conservative (ESG), Dynamic and
+Dynamic (ESG). Each fund has its own clients, its own benchmark and its own fees. The client card
+on the game's Clients page tells you the home market, the risk-aversion bracket, the limits and the currently set fees of each fund. You can change the fees every round; the client, the fund type and the client type stay fixed.
 
-Asterion measures everything in **US dollars**. Assets in other currencies are held unhedged, and the game offers no way to hedge them. This creates currency risk, which is part of the risk you manage. The game does not allow you to change the currency of a fund.
+Asterion measures everything in **US dollars**. Assets in other currencies are held unhedged, and the game offers no way to hedge them. The resulting currency risk is part of the risk you manage. The fund's currency cannot be changed.
 
 The investable universe is 180 assets in four asset classes (government bonds, corporate bonds,
 equities, alternatives) and five currencies (USD, GBP, EUR, CHF, JPY). Alternatives exist in USD
-only. A **market segment** is one asset class in one currency, e.g. "EUR / Corporate bonds". 
+only. A **market segment** is one asset class in one currency, e.g. "EUR / Corporate bonds".
 
 <!-- Can the money market be considered a fifth asset class? It is not a tradeable asset and you once told me that you do not allow it. And even if it is an asset class wouldn't we only be able to hold USD so only one cash position not 5?-->
-Together with the money market this gives 21 **positions** hold by each portfolio (money market, government bonds, corporate bonds and
-equities in each of the five currencies, plus commodities). The strategic benchmark (or Strategic Asset Allocation) is defined on the 16 positions without the money market. In the optimal portfolio there is no cash position, as cash is a tactical decision of the player, not a strategic position.
+Together with the money market this gives 21 **positions** in each portfolio (money market, government bonds, corporate bonds and
+equities in each of the five currencies, plus commodities). The strategic benchmark, the strategic asset allocation (SAA), is defined on the 16 positions
+without the money market. The optimal portfolio holds no cash: cash is a tactical decision of the
+player, not a strategic position.
 
 ## What the game measures
 
-Three things drive assets under management (AuM), the amount of money available to the fund: 
+Three things drive assets under management (AuM), the money a fund manages:
 
 1. **Risk-adjusted performance against the benchmark.** The benchmark of each fund is its
    strategic allocation. The game's Analyst page attributes your return against it (currency,
@@ -32,7 +36,9 @@ Three things drive assets under management (AuM), the amount of money available 
    their risk-adjusted return is good. Dynamic clients respond to marketing and accept higher
    fees; conservative clients want them low and transparent.
 
-AuM directly drives the firm's profit, which is the sum of the fees of all funds multiplied by their AuM. Because of this the goal of each fund manager should be to grow AuM, which is done by maximizing risk-adjusted performance against the benchmark, keeping clients satisfied and charging fees that are appropriate.
+AuM drives the firm's profit, because each fund earns its fee on its AuM. The goal of every fund
+manager is therefore to grow AuM: deliver good risk-adjusted performance against the benchmark,
+keep the clients satisfied, and charge appropriate fees.
 
 The instructor picks the winning criterion (Sharpe ratio, alpha, information ratio, cumulative
 shareholder return of the firm). Whatever it is, it runs through the same three channels.
@@ -57,7 +63,8 @@ client does not change and the strategic allocation is the benchmark. Steps 4 to
 round.
 
 ::: {.callout-tip title="The allocation app"}
-The course provides a Shiny app available at <https://inno.uni.li/apps/invest/> with four stations that mirror steps 2 to 5. It runs on the course
+The course provides a Shiny app (<https://inno.uni.li/apps/invest/>) with four stations that
+mirror steps 2 to 5. It runs on the course
 dataset: the full history of the 21 positions, monthly, in dollars, with the money market left out
 of the benchmark by default. Appendix A is its reference.
 The app does not talk to the game; you read numbers off the app and type them into the game.
@@ -65,7 +72,11 @@ The app does not talk to the game; you read numbers off the app and type them in
 
 ## Rounds, practice rounds, teams
 
-A round is typically one quarter. Before the first round, the course instructor may allow up to three practice rounds. In a practice round you can make decisions and see the results, but the market does not move and your decisions do not carry over. The purpose is to learn how to use the platform and how to make decisions. After the practice rounds, the market resets and the first round begins with the decisions of the first practice round as starting decisions. Nothing else carries over.
+A round is typically one quarter. The instructor may run up to three practice rounds before
+round 1. In a practice round you make decisions and see the results, but the market does not move
+and your decisions do not carry over; the point is to learn the platform. After the practice
+rounds the market resets, and round 1 starts from the decisions of the first practice round.
+Nothing else carries over.
 
 <!-- Should we add images to show where the different sections are in the platform? -->
 

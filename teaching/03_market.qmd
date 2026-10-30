@@ -2,7 +2,9 @@
 title: "Reading the market"
 ---
 
-After understanding the client for whom you are managing money, the next step is to understand the market in which you are. This step is important to build a strategic allocation. Asset classes have different properties: some are more volatile than others, some have a higher expected return, and some move together while others move in opposite directions. 
+Once you know the client, the next step is the market you invest in, because the strategic
+allocation is built on it. Asset classes differ: some are more volatile than others, some have a
+higher expected return, some move together and others in opposite directions.
 
 ## Two sources of information, two uses
 
@@ -23,7 +25,8 @@ Keep the two apart. The benchmark does not move with the outlook.
 
 ## Station 1 of the app: statistics and correlations
 
-Open the app, station *1 · Strategic Asset Analysis* (<https://inno.uni.li/apps/invest/>). Do not change the default selection (the 16
+Open the app (<https://inno.uni.li/apps/invest/>), station *1 · Strategic Asset Analysis*. Keep the
+default selection (the 16
 benchmark positions; the five money-market positions can be added for analysis) and the sample at
 the full history. The statistics table is annualised and in excess of the US
 money-market rate; the correlation matrix is of the same excess returns.

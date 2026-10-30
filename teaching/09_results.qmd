@@ -2,15 +2,18 @@
 title: "Reading the results"
 ---
 
-After the deadline, the Results page shows the performance of the fund in the round just completed. It shows fund performance before and after fees, AuM and flows, satisfaction, the firm's financials, and the ranking against the other teams in the universe. 
+After the deadline, the Results page shows how each fund did in the round just completed: fund
+performance before and after fees, AuM and flows, satisfaction, the firm's financials, and the ranking against the other teams in the universe.
 
-For even further analysis, the Analyst page shows the performance ratios, factor coefficients, and performance attribution. The strategic allocation analysis compares your strategic allocation with the optimal allocation for the client.
+For more detail, the Analyst page shows the performance ratios, factor coefficients, and performance attribution. The strategic allocation analysis compares your strategic allocation with the optimal allocation for the client.
 
 Read the page in this order. **Start with the ratios**: the information ratio tells you whether the tactical tilt worked. **Then read the attribution** to see which decision was responsible. **Then read the strategic allocation analysis**, which tells you whether the γ estimate is right. The first two are adjustments you make every round; the third is an adjustment you make once.
 
 ## Micro attribution: diagnosing the source of the active return
 
-The Analyst page has three attribution tabs: **Active return**, **Allocation**, and **Selection**. Allocation is the effect of *how much* you put in each segment (the tactical tilt); Selection is the effect of *which assets* you held inside each segment (the security selection). Using these tabs, you can diagnose the source of the active return. They decompose the active return into its sources, so you can see which decision (currency, asset class, industry, maturity, factor) was responsible for the outcome. This is **micro attribution**.
+The Analyst page has three attribution tabs: **Active return**, **Allocation**, and **Selection**. Allocation is the effect of *how much* you put in each segment (the tactical tilt); Selection is the effect of *which assets* you held inside each segment (the security selection). Together they decompose the active return by source, so you can see which decision (currency,
+asset class, industry, maturity, factor) was responsible for the outcome. This is **micro
+attribution**.
 
 ### The three questions micro attribution answers
 
@@ -164,9 +167,9 @@ The direction tells you which way to adjust γ. Overweighted in equities means y
 ## Actionable takeaways: what to do with the numbers
 
 The ratios and the attribution tell you what happened. To decide what to do next round, you need
-to translate them into actions. Here is how to read the numbers and what to do about them.
+to translate them into actions. This section says how.
 
-### If the Information Ratio is below 0
+### If the information ratio is below 0
 **What it means:** The active return was negative relative to the risk taken. The tactical views
 were wrong, or the tracking-error budget was too large for the quality of the views.
 
@@ -174,7 +177,7 @@ were wrong, or the tracking-error budget was too large for the quality of the vi
 confidence on the views you have, or narrow the maximum deviation band in station 4. If the IR is
 negative for three rounds in a row with high confidence, stop entering that view entirely.
 
-### If the Information Ratio is between 0 and 0.5
+### If the information ratio is between 0 and 0.5
 **What it means:** The active return was positive, but modest relative to the risk taken. The
 views were slightly right, or the tracking-error budget was too loose.
 
@@ -182,14 +185,14 @@ views were slightly right, or the tracking-error budget was too loose.
 entered views at 80 % confidence and the IR is 0.2, you were overconfident. Lower the confidence
 next round.
 
-### If the Information Ratio is above 0.5
+### If the information ratio is above 0.5
 **What it means:** The views were right relative to the risk taken. The tactical process is
 working.
 
 **What to do:** Keep doing what you are doing. Do not increase the tracking-error budget just
 because the IR is high; the budget is there to protect the client, not to maximise the score.
 
-### If the Sharpe ratio is high but the Information Ratio is low (or zero)
+### If the Sharpe ratio is high but the information ratio is low (or zero)
 **What it means:** The fund generated good absolute risk-adjusted returns, but the tactical
 decisions did not add value. The high Sharpe comes from the strategic allocation, not from the
 tactical tilts.

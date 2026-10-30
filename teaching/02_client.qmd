@@ -3,23 +3,22 @@ title: "Reading the client"
 bibliography: references.bib
 ---
 
-In professional investment management, building a portfolio is only one part of the process. Before deciding how to invest, the manager must understand the person the portfolio is being built for. Good investment management begins with a clear understanding of each client's needs.
+In professional investment management, building a portfolio is only one part of the process. Before deciding how to invest, the manager must understand the person the portfolio is being built for. Good investment management starts with the client's needs.
 
 ## What the Clients page gives you
 
-Each fund has a client card. It is accessible through the "Clients" page. 
-It shows a general profile of the client type and using the *Meet client X* button, the game introduces us to a representative client. 
+Each fund has a client card on the Clients page. It shows a general profile of the client type;
+the *Meet client X* button introduces a representative client.
 
-The text contains all the information needed for strategic allocation. In short, each
-client has **one number and two rules**:
+The text contains everything the strategic allocation needs. In short, each client has **one number and two rules**:
 
 - a **risk aversion coefficient** γ, which the text does *not* state as a number;
 <!-- Does every description really has a commodity rule? Or is rather a min and max of every asset class? -->
 - a **commodity rule** (a minimum share, or none at all);
 - a **home rule**: a share of the equity book in the client's home market.
 
-Some cases additional have a **sustainability requirement** and a **short sales constraint**. Everything the client descriptions does not
-mention is not constrained.
+Some clients also have a **sustainability requirement**, and short sales are never allowed.
+Whatever the card does not mention is not constrained.
 
 ## The rules: read them off
 
@@ -41,10 +40,10 @@ The client card describes decisions the client has taken in the past. Each is a 
 between two portfolios. For each portfolio the card gives two numbers: its volatility $\sigma$ and its expected return $\mu$.
 
 We need to turn those two decisions into a number, the client's **risk aversion** $\gamma$. The
-idea is simple. A risk-averse client dislikes volatility. Given the choice between a portfolio with
-a bit more return and a lot more volatility, and one with a bit less return and a lot less volatility, the
-choice they made tells us roughly how much they dislike volatility. Two decisions give us two
-constraints — one on each side of the true $\gamma$ — and together they bracket it.
+idea is simple. A risk-averse client dislikes volatility. Offered a portfolio with more return and more
+volatility and one with less of both, the client's choice tells us roughly how much they dislike
+volatility. Two decisions give us two
+constraints, one on each side of the true $\gamma$, and together they bracket it.
 
 ### The utility function, in one line
 
@@ -132,8 +131,8 @@ ceiling.
 The method only works if the two portfolios are genuinely different in both dimensions.
 
 - **The riskier portfolio must also offer more return.** If the riskier portfolio offered *less*
-  return no sensible client would hold it and the choice would tell
-  us nothing except that the client is irrational. Always check that $\mu_X > \mu_Y$ before
+  return, no sensible client would hold it, and the choice would tell
+  us nothing about $\gamma$. Always check that $\mu_X > \mu_Y$ before
   applying the formula.
 - **Both numbers must be in the same units.** Put $\mu$ and $\sigma$ in the same units (both
   decimals, both annualised). The $\gamma$ you recover is then on the same scale as the $\gamma$
@@ -144,13 +143,16 @@ card.
 
 ### Worked example: the Hartleys
 
-**Decision 1 — they turned down the riskier portfolio.** With their previous adviser they rejected a portfolio with 10% volatility and 6.9% expected return, and took one with 8% volatility and 5.9% instead. Here $X=(10\%,\,6.9\%),\ Y=(8\%,\,5.9\%)$, and because they *rejected* $X$ this is a **lower** bound:
+**Decision 1: they turned down the riskier portfolio.** With their previous adviser they rejected
+a portfolio with 10 % volatility and 6.9 % expected return over cash, and took one with 8 %
+volatility and 5.9 % instead. Here $X=(10\%,\,6.9\%),\ Y=(8\%,\,5.9\%)$, and because they *rejected* $X$ this is a **lower** bound:
 
 $$
 \gamma > \frac{2(0.069-0.059)}{0.10^2-0.08^2}=\frac{0.020}{0.0036}=5.6
 $$
 
-**Decision 2 — they kept the riskier portfolio.** Later, offered a quieter alternative with 6% volatility and 5.1% expected return, they stayed with their 8%-volatility, 6.6% portfolio. Here $X=(8\%,\,6.6\%),\ Y=(6\%,\,5.1\%)$, and because they *chose* $X$ this is an **upper** bound:
+**Decision 2: they kept the riskier portfolio.** Later, offered an alternative with 6 % volatility
+and 5.1 % expected return over cash, they stayed with their portfolio of 8 % volatility and 6.6 %. Here $X=(8\%,\,6.6\%),\ Y=(6\%,\,5.1\%)$, and because they *chose* $X$ this is an **upper** bound:
 
 $$
 \gamma < \frac{2(0.066-0.051)}{0.08^2-0.06^2}=\frac{0.030}{0.0028}=10.7
@@ -162,24 +164,25 @@ $$
 5.6 < \gamma < 10.7
 $$
 
-i.e. **$\gamma$ lies between about 5.5 and 11**.
+that is, **$\gamma$ lies between about 5.5 and 11**.
 
-**Placing $\gamma$ inside the bracket.** The bracket comes from behavior; the qualitative notes on the card place the point within it:
+**Placing $\gamma$ inside the bracket.** The bracket comes from what the client did; the words on the card place $\gamma$ within it:
 
 - *"Lived through two bear markets without selling, but would not want to see a year like 2008 again"* → middle of the bracket.
-- *"They need the portfolio to grow; income covers spending"* → lower end (growth-minded, more risk tolerance).
-- *"The income the portfolio produces matters more than growth"* → higher end (capital preservation, less risk tolerance).
+- *"They need the portfolio to grow; income covers spending"* → lower end (growth first, more tolerant of risk).
+- *"The income the portfolio produces matters more than growth"* → higher end (capital preservation, less tolerant of risk).
 
 For the Hartleys the bear-market comment points to the middle, so we take **$\gamma=8$**.
 
 ## From γ to a portfolio
 
 Once $\gamma$ is estimated, it does two things in the rest of the book. It selects the strategic
-allocation in Chapter 4, and it sets the prior in the Black–Litterman step in Chapter 6. 
+allocation in Chapter 4, and it sets the prior in the Black–Litterman step in Chapter 6.
 
-**From $\gamma$ to a portfolio.** In Chapter 4, the client's $\gamma$ selects the point on the
-efficient frontier that maximises $U=\mu-\frac{\gamma}{2}\sigma^2$. Higher $\gamma$ selects a
-portfolio with less variance but lower returns; lower $\gamma$ selects a riskier, higher-return one. The mapping
+In Chapter 4, the client's $\gamma$ selects the point on the
+efficient frontier that maximises $U=\mu-\frac{\gamma}{2}\sigma^2$. A higher $\gamma$ selects a
+portfolio with less variance and a lower expected return; a lower $\gamma$ selects a riskier one
+with a higher expected return. The mapping
 from $\gamma$ to a *profile* is conventional, and it is useful for sanity-checking:
 
 | $\gamma$ | Profile | Typical equity share |
@@ -210,7 +213,7 @@ client's risk aversion: every γ in the bracket gives an allocation inside the b
 outside the bracket leaves at least one band. Use them two ways: as a check on your allocation,
 and to narrow the bracket. If your allocation leaves a band, your γ is outside the bracket.
 
-A fund held far from what the card describes loses the client, whatever the market does; a dynamic client parked in money market walks away. This reduces the assets under management and leads to lower profit, eventually bringing the asset management company into financial difficulty.
+A fund held far from what the card describes loses the client, whatever the market does; a dynamic client parked in money market walks away. Lost clients mean lower AuM and lower profit, and in the end put the firm in financial difficulty.
 
 ## The home market
 
@@ -232,7 +235,7 @@ statistics of the market do not change with the filter.
 
 Before proceeding to the next step, write down the three numbers that define the client: γ, the minimum expected return, and the maximum volatility.
 
-This gives you one line per fund, which is important for the next allocation steps. 
+That gives one line per fund, which the next steps build on.
 
 For the Hartleys:
 

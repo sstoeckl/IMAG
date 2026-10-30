@@ -4,7 +4,7 @@ title: "Fees, projections, submission"
 
 ## Fees
 
-After creating an asset allocation for the fund you need to sell it. To earn money and pay your company staff, you need to set a fee. 
+With the allocation set, the fund needs a fee: it pays the firm's staff and earns its profit.
 
 The fee of each fund is set on the Clients page, in percent a year, and charged per round (a
 quarter-round charges a quarter of it). Three facts from the game:

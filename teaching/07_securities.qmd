@@ -2,7 +2,9 @@
 title: "From tactical weights to positions"
 ---
 
-The tactical asset allocation is a grid of segment weights. The allocation algorithm automatically translates each segment weight into positions. You can choose between Value weighting and Equal weighting . The algorithm rebalances the positions back to the tactical weights after each round, unless you disable it.
+The tactical asset allocation is a grid of segment weights. The game's automatic allocation translates each segment weight into positions, by value
+weighting or equal weighting, and rebalances them to the tactical weights after each round unless
+you switch it off.
 
 For the first rounds, leave this automation on. The decisions that matter are above it.
 
@@ -37,7 +39,7 @@ asset's page with description, history, metrics and fundamentals. The Economic o
 *Instrument performance* subpage lets you enter an asset-level alpha if you expect a single asset
 to beat its segment.
 
-As advise do not do it in the practice rounds or round 1. Security selection on top
+Our advice: do not do it in the practice rounds or in round 1. Security selection on top
 of the tactical tilt adds a layer of tracking error that is hard to attribute later, and the
 automation already produces a sensible, diversified book. If you do it:
 
@@ -52,7 +54,7 @@ automation already produces a sensible, diversified book. If you do it:
 
 If you decide to deviate from the automatic weight of a single asset, you need a thesis. A thesis
 is not "the stock is cheap" or "it has done well recently." A thesis is a statement about the
-company's fundamentals that the market has not yet priced in. The game provides the income statement and the balance sheet, which are needed to form one.
+company's fundamentals that the market has not yet priced in. The asset page provides the fundamentals you need to form one.
 
 You do not need to be an accountant. You need to look at three things: **whether the earnings are
 real (quality of earnings), how safely the company is financed (solvency and liquidity), and whether
@@ -75,10 +77,10 @@ much more than the ratios we cover here. The available fields are:
 
 The analysis below focuses on the three important checks for a
 strategic asset allocation context: **Quality of Earnings**, **Solvency and Liquidity**, and
-**Relative Valuation**. But you should be aware that the page contains other useful ratios—such as
-price-to-book (P/B), EV/EBITDA, PEG, and interest coverage—which are not covered in depth here.
+**Relative Valuation**. But you should be aware that the page contains other useful ratios, such as
+price-to-book (P/B), EV/EBITDA, PEG and interest coverage, which are not covered in depth here.
 They are useful for specific sectors (P/B for banks, EV/EBITDA for capital-intensive businesses)
-and for comparing companies with different capital structures. 
+and for comparing companies with different capital structures.
 
 ### Quality of Earnings
 The income statement shows accounting profit. But accounting profit can be managed. A company can
@@ -158,7 +160,7 @@ Suppose you are looking at a European energy company. You read the page in three
     history.
   - Versus market: $12.10 / 15.0 = 0.81$. The stock is cheaper than the market.
 
-**The verdict.** The fundamentals are undeniably better than they were four years ago. The
+**The verdict.** The fundamentals are clearly better than they were four years ago. The
 FCF-to-EPS ratio confirms the profit is real and backed by cash, the current ratio confirms the
 company can pay its bills, and the D/E confirms it is deleveraging. However, the stock has
 re-rated from a P/E of 6.2 to a P/E of 12.1. While it still trades below the broad market, it is

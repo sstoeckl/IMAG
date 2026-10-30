@@ -2,7 +2,8 @@
 title: "Setting the strategic allocation"
 ---
 
-Having understood the client and the market, the next step is to set the strategic allocation. This is the benchmark against which all tactical decisions are measured. The strategic allocation is entered once per fund on the Investment strategy page and stays for
+With the client and the market understood, the next step is the strategic allocation, the
+benchmark against which every tactical decision is measured. The strategic allocation is entered once per fund on the Investment strategy page and stays for
 the whole game. It is the **benchmark**: risk-adjusted performance, attribution and the strategic
 allocation analysis on the Analyst page are measured against it. The game also holds, invisibly,
 the allocation its parameters say is optimal for the client; the closer your strategic allocation
@@ -25,18 +26,21 @@ optimisation on the right data.
 
 ## What the optimiser is doing
 
-The objective above is **mean–variance optimisation** (MVO), the framework introduced by Markowitz in 1952. It is worth spending a moment on what it does, because the output only make sense if you know what the machine is trying to achieve.
+The objective above is **mean–variance optimisation** (MVO), the framework introduced by Markowitz in 1952. It is worth a moment on what it does, because the output only makes sense if you know what the
+optimiser is trying to achieve.
 
-Every candidate portfolio has two summary numbers. Its **expected excess return** is the weighted average of the excess returns of its holdings. Its **variance** is not just the weighted average of the holdings' variances: it also depends on how the holdings move together (their covariances). Two assets that move in lockstep add volatility when combined; two that move independently partly cancel each other out. That is the whole point of diversification, and it is the reason the optimiser does not simply pile into the single highest-return asset.
+Every candidate portfolio has two summary numbers. Its **expected excess return** is the weighted average of the excess returns of its holdings. Its **variance** is not just the weighted average of the holdings' variances: it also depends on how the holdings move together (their covariances). Two assets that move in lockstep diversify nothing; two that move independently partly offset each
+other. That is the whole point of diversification, and it is the reason the optimiser does not simply pile into the single highest-return asset.
 
-Plot every possible portfolio in (volatility, expected return) space and you get a cloud. The upper-left edge of that cloud is the **efficient frontier**: the portfolios that offer the most expected return for their level of risk. Any portfolio not on the frontier is dominated as some others offers either more return for the same risk, or less risk for the same return. The optimiser's job is to find the frontier, then pick the one point on it that the client's $\gamma$ selects. A higher $\gamma$ pushes the choice down and to the left (quieter, lower return); a lower $\gamma$ pushes it up and to the right (riskier, higher return).
+Plot every possible portfolio in (volatility, expected return) space and you get a cloud. The upper-left edge of that cloud is the **efficient frontier**: the portfolios that offer the most expected return for their level of risk. Any portfolio below the frontier is dominated: another portfolio offers more return for the same
+risk, or less risk for the same return. The optimiser finds the frontier and then picks the one point on it that the client's $\gamma$ selects. A higher $\gamma$ pushes the choice down and to the left (quieter, lower return); a lower $\gamma$ pushes it up and to the right (riskier, higher return).
 
 ![The Markowitz Efficient Frontier](graphics/Strategic_Asset_Allocation/efficient-frontier.png){#fig-efficient-frontier}
 
 Two consequences follow, and both matter for the checks:
 
 - **The allocation is a point on the frontier, not a forecast.** It says "given these inputs and this $\gamma$, this is the best trade-off available." It does not say which asset class will win next year.
-- **MVO is sensitive to its inputs.** Small changes in expected returns or in the covariance matrix can move the optimal weights a long way, sometimes into concentrated positions. That is why the checks at the end of this section look not only at the weights but at what the optimiser chose to leave at zero.
+- **MVO is sensitive to its inputs.** Small changes in expected returns or in the covariance matrix can move the optimal weights a long way, sometimes into concentrated positions. That is why the checks below look not only at the weights but at what the optimiser chose to leave at zero.
 
 
 ## Station 2 of the app, step by step
@@ -123,5 +127,9 @@ client did not ask for.
 position. Check that each column and row sums to the app's totals.
 
 ## Deliverable of this step
-After this step the SAA should be fixed in the app and entered in the game. The internal documentation should hold a one-line record of the inputs (γ, rules, home) so that the tactical stations and the results discussion refer to the same thing all game. Additionally it will be helpful for future reference to export the SAA calculation as JSON so it can be reloaded in the app if needed.
+
+Per fund: the SAA fixed in the app, the same matrix entered in the game, and a one-line record of
+the inputs (γ, rules, home) in the team forum, so that the tactical stations and the results
+discussion refer to the same thing all game. Save the app session as well (*Save*, a JSON file);
+*Load* restores the SAAs in a later round.
 
