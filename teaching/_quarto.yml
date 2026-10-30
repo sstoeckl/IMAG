@@ -2,6 +2,9 @@ project:
   type: book
   output-dir: ../docs/teaching
 
+execute:
+  freeze: auto   # CI has no R: computed chunks come from _freeze/, re-render locally after changing them
+
 number-sections: true
 number-depth: 3
 
