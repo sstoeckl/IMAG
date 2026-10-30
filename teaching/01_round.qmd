@@ -4,26 +4,26 @@ title: "A round in IMAG"
 
 ## The firm, the funds, the clients
 
-You manage Asterion Capital, an asset manager whose founders are stepping back. The firm runs
-**one fund per client type**, up to four: Conservative, Conservative (ESG), Dynamic, Dynamic
-(ESG). Each fund has its own clients, its own benchmark and its own fee. Clients differ by home
-market as well as by type, so a Conservative fund may hold money for American, British,
-euro-area, Swiss and Japanese families; the client card tells you which.
+You are a fund manager at Asterion Capital, an asset manager whose founders are stepping back. The firm runs
+**one fund per client type**, up to four in total: Conservative, Conservative (ESG), Dynamic and
+Dynamic (ESG). Each fund has its own clients, its own benchmark and its own fees. The client card
+on the game's Clients page tells you the home market, the client's rules and guidance bands, and the current fee of each fund. You can change the fees every round; the client, the fund type and the client type stay fixed.
 
-Everything is measured in **US dollars**. Asterion is a dollar house; assets in other currencies
-are held unhedged, and the game offers no way to hedge them.
+Asterion measures everything in **US dollars**. Assets in other currencies are held unhedged, and the game offers no way to hedge them. The resulting currency risk is part of the risk you manage. The fund's currency cannot be changed.
 
 The investable universe is 180 assets in four asset classes (government bonds, corporate bonds,
 equities, alternatives) and five currencies (USD, GBP, EUR, CHF, JPY). Alternatives exist in USD
-only. A **market segment** is one asset class in one currency, e.g. "EUR / Corporate bonds". With
-the money market this gives 21 **positions**: money market, government bonds, corporate bonds and
-equities in each of the five currencies, plus commodities. The strategic benchmark is defined on the
-16 positions without the money market: the game's benchmark grid has no cash row, so cash is a
-tactical decision of the player, not a strategic position.
+only. A **market segment** is one asset class in one currency, e.g. "EUR / Corporate bonds".
+
+Together with the money market, one position per currency, this gives 21 **positions** in each
+portfolio (money market, government bonds, corporate bonds and
+equities in each of the five currencies, plus commodities). The strategic benchmark, the strategic asset allocation (SAA), is defined on the 16 positions
+without the money market. The optimal portfolio holds no cash: cash is a tactical decision of the
+player, not a strategic position.
 
 ## What the game measures
 
-Three things drive assets under management (AuM), and AuM drives the firm's profit:
+Three things drive assets under management (AuM), the money a fund manages:
 
 1. **Risk-adjusted performance against the benchmark.** The benchmark of each fund is its
    strategic allocation. The game's Analyst page attributes your return against it (currency,
@@ -35,6 +35,10 @@ Three things drive assets under management (AuM), and AuM drives the firm's prof
 3. **Fees.** Higher fees turn clients away but raise revenue; clients tolerate fees better when
    their risk-adjusted return is good. Dynamic clients respond to marketing and accept higher
    fees; conservative clients want them low and transparent.
+
+AuM drives the firm's profit, because each fund earns its fee on its AuM. The goal of every fund
+manager is therefore to grow AuM: deliver good risk-adjusted performance against the benchmark,
+keep the clients satisfied, and charge appropriate fees.
 
 The instructor picks the winning criterion (Sharpe ratio, alpha, information ratio, cumulative
 shareholder return of the firm). Whatever it is, it runs through the same three channels.
@@ -59,7 +63,8 @@ client does not change and the strategic allocation is the benchmark. Steps 4 to
 round.
 
 ::: {.callout-tip title="The allocation app"}
-The course provides a Shiny app with four stations that mirror steps 2 to 5. It runs on the course
+The course provides a Shiny app (<https://inno.uni.li/apps/invest/>) with four stations that
+mirror steps 2 to 5. It runs on the course
 dataset: the full history of the 21 positions, monthly, in dollars, with the money market left out
 of the benchmark by default. Appendix A is its reference.
 The app does not talk to the game; you read numbers off the app and type them into the game.
@@ -67,9 +72,11 @@ The app does not talk to the game; you read numbers off the app and type them in
 
 ## Rounds, practice rounds, teams
 
-A round is typically one quarter. Up to three practice rounds precede the game; after them the
-market resets and the decisions of the first practice round become the starting decisions of
-round 1. Nothing else carries over.
+A round is typically one quarter. The instructor may run up to three practice rounds before
+round 1. In a practice round you make decisions and see the results, but nothing carries over; the point
+is to learn the platform. After the practice
+rounds the market resets, and round 1 starts from the decisions of the first practice round.
+Nothing else carries over.
 
 Each team member has a **Student Decision Area**; the round is scored on the **Team Decision
 Area**. Work in your own area, then *Copy as team's decisions*; a copy overwrites the team area

@@ -2,51 +2,267 @@
 title: "Reading the results"
 ---
 
-## Where the results are
+After the deadline, the Results page shows how each fund did in the round just completed: fund
+performance before and after fees, AuM and flows, satisfaction, the firm's financials, and the ranking against the other teams in the universe.
 
-After the deadline, the Results page shows the round by area: fund performance before and after
-fees, AuM and flows, satisfaction, the firm's financials, and the ranking against the other teams
-in the universe. The Excel download holds the detail, including five years of asset, factor and
-exchange-rate history. The Analyst page holds the two analyses that matter for the next round:
-**performance attribution** and **strategic allocation analysis**.
+For more detail, the Analyst page shows the performance ratios, factor coefficients, and performance attribution. The strategic allocation analysis compares your strategic allocation with the optimal allocation for the client.
 
-## Performance attribution: did the tilt pay?
+Read the page in this order. **Start with the ratios**: the active return and the information ratio tell you whether the
+tactical tilt worked. **Then read the attribution** to see which decision was responsible. **Then read the strategic allocation analysis**, which tells you whether the γ estimate is right. The first two are adjustments you make every round; the third is an adjustment you make once.
 
-The attribution decomposes last round's return against the benchmark, your strategic
-allocation, by currency, asset class, industry or type, maturity, and factor. Read it against the
-record of Chapter 8:
+## Micro attribution: diagnosing the source of the active return
 
-- **Currency.** Any effect here comes from positions in currencies the strategic allocation does
-  not hold, or from different weights across currencies than the benchmark. If you did not mean
-  a currency bet and there is a currency effect, find the tactical position that caused it
-  (Chapter 6).
-- **Asset class.** The allocation effect of the tactical tilt. Compare its sign with the view
-  that produced the tilt: a positive view on US equities that was followed by a negative
-  allocation effect means the view was wrong this round, not that the method was.
-- **Industry, maturity, factor.** With asset-level automation on, these effects are small and
-  come from the weighting rule; with asset-level decisions they are your security selection.
+The Analyst page has three attribution tabs: **Active return**, **Allocation**, and **Selection**. Allocation is the effect of *how much* you put in each segment (the tactical tilt); Selection is the effect of *which assets* you held inside each segment (the security selection). Together they decompose the active return by source, so you can see which decision (currency,
+asset class, industry, maturity, factor) was responsible for the outcome. This is **micro
+attribution**.
 
-Judge the views, not the round. One round is one draw. A view with 50 % confidence that was
-wrong once has told you little; a view that was wrong three rounds in a row with high confidence
-has told you to lower the confidence, or to drop the view.
+### The three questions micro attribution answers
 
-## Strategic allocation analysis: how far from the client?
+When the IR is negative, the first question is always: *which decision went wrong?* The
+attribution tabs answer three questions, in order:
 
-The Analyst page compares your strategic allocation with the allocation the game's parameters
-hold as optimal for the client. This is the feedback on Chapter 2. A large distance means the
-estimate of γ, or the reading of a rule, is off; the direction of the difference says which way.
-If your fund holds more equities than the optimal allocation, your γ is too low; more government
-bonds, too high. Re-read the card with that in mind, and if you change the strategic allocation,
-do it once, early, and record why: the benchmark should not move every round.
+1. **Was it the allocation or the selection?** The Allocation tab shows the effect of *where* you
+   were positioned (the tactical tilt). The Selection tab shows the effect of *what* you held
+   (the security selection). If the allocation effect is negative and the selection effect is
+   zero, the tactical tilt was wrong. If the allocation effect is zero and the selection effect
+   is negative, the security selection was wrong. If both are negative, both were wrong.
+2. **Was it the currency or the asset class?** Within each tab, the breakdown by Currency and
+   Asset class tells you whether the problem was a currency bet (e.g., overweight euro when the
+   euro fell) or an asset-class bet (e.g., overweight equities when equities fell). If the
+   currency effect is large and the asset-class effect is small, the problem was the currency.
+3. **Was it the industry, the maturity, or the factor?** If the currency and asset-class effects
+   are small but the industry, maturity, or factor effects are large, the problem was at the
+   security level. This is where the security selection shows up. A large negative industry effect
+   means the fund was overweight an industry that underperformed; a large negative factor effect
+   means the fund was tilted toward a factor that underperformed (e.g., value when growth was
+   winning).
+
+### A worked example: diagnosing a negative IR
+
+Suppose the Orange fund has an active return of −0.8 % in a round, and so a negative IR. The
+Analyst page shows:
+
+| Tab | Category | Effect |
+|:--|:--|--:|
+| Allocation | Currency | −0.5 % |
+| Allocation | Asset class | −0.1 % |
+| Selection | Industry | −0.2 % |
+| Selection | Factor | 0.0 % |
+
+**The diagnosis.** The total active return is −0.8 % (the sum of the effects). The allocation
+effect is −0.6 % (currency −0.5 % + asset class −0.1 %), which is the larger part. Within the
+allocation, the currency effect is the dominant term. The selection effect is −0.2 %, all from
+industry. The factor effect is zero.
+
+**What this tells you.** The problem was primarily a **currency bet that went wrong**, not the
+asset-class allocation and not the security selection. The tactical tilt was in the wrong
+currency; the industry selection was a secondary problem; the factor tilt was neutral.
+
+**What to do next round.** The currency bet is the first thing to fix. Go back to the view that
+produced the currency tilt (Chapter 5) and ask whether the view was wrong or the currency
+movement was a surprise. If the view was wrong, lower its confidence or drop it. If the currency
+movement was a surprise, the view may have been right but the outcome was unlucky; keep the view
+but check whether the tracking-error budget was large enough to accommodate the surprise.
+
+The industry selection is a secondary problem. It is a smaller effect, and it may be an artifact
+of the value-weighting rule rather than a deliberate security selection. If the fund is on
+automatic allocation, do not try to fix it; if it is on manual allocation, review the industry
+overweights.
+
+The factor tilt is neutral. Do not change it.
+
+### What micro attribution cannot tell you
+
+Micro attribution is a diagnostic tool, not a decision tool. It tells you *where* the active
+return came from, but it does not tell you whether the decision was *right* in expectation. A
+currency bet that lost money this round may have been the right bet given the information at the
+time. The attribution tells you the outcome; the record of the views tells you whether the
+outcome was consistent with the process.
+
+The rule of thumb: **change the decision only if the attribution shows a systematic problem, not
+a one-off loss.** A currency bet that lost money once is a draw. A currency bet that has lost
+money three rounds in a row is a systematic error, and the attribution tells you to fix it. This
+is the same principle as the IR: one round is not evidence of skill, and one round is not evidence
+of failure either.
+
+### The connection to the performance ratios
+
+The micro attribution and the performance ratios are two sides of the same coin. The ratios tell
+you *whether* the fund added value; the attribution tells you *where* it came from. Read them
+together:
+
+- A **negative IR** with a large **currency effect** means the currency bets were wrong.
+- A **negative IR** with a large **asset-class effect** means the tactical tilt was wrong.
+- A **negative IR** with a large **industry or factor effect** means the security selection was
+  wrong.
+- A **positive IR** with a large **allocation effect** means the tactical tilt was right.
+- A **positive IR** with a large **selection effect** means the security selection was right.
+
+The ratios give you the verdict; the attribution gives you the reason. Use both.
+
+## Defining the performance ratios
+
+The game reports four ratios per fund. They measure different things, and a fund can look good on one and bad on another.
+
+### Sharpe ratio
+
+Excess return per unit of total volatility:
+
+$$
+\text{Sharpe} = \frac{R_p - R_f}{\sigma_p}
+$$
+
+It penalises both upside and downside volatility, so a fund that swings wildly in both directions scores lower than one that swings only upward.
+
+### Sortino ratio
+
+Excess return per unit of *downside* volatility:
+
+$$
+\text{Sortino} = \frac{R_p - R_f}{\sigma_{\text{downside}}}
+$$
+
+It does not penalise upside volatility, so a fund with large gains and small losses scores much higher on Sortino than on Sharpe. Useful when the client cares more about losses than gains.
+
+### Treynor ratio
+
+Excess return per unit of *market* risk:
+
+$$
+\text{Treynor} = \frac{R_p - R_f}{\beta_p}
+$$
+
+It isolates systematic risk, which makes it useful for funds held as part of a diversified portfolio. *Note:* if the fund's beta is negative, the Treynor is negative even when the return is positive. Read it alongside the beta.
+
+### Information ratio
+
+Active return per unit of *active* risk (tracking error):
+
+$$
+\text{IR} = \frac{\text{Active Return}}{\text{Tracking Error}}
+$$
+
+It is the ratio that matters for the tactical tilt, because it measures the skill of the active decisions, not the return of the fund as a whole.
+
+::: {.callout-warning title="Before or after fees"}
+The game's information ratio compares the fund's return **after fees** with the benchmark's return
+**before fees**. A fund that charges a fee therefore shows a negative information ratio whenever
+its tilt earned less than the fee, even if the tilt added return. To judge the tilt, compare the
+fund's return before fees with the benchmark's. The rules in this chapter refer to that
+comparison.
+:::
+
+## Reading the factor coefficients
+
+The game reports five coefficients per fund, from a four-factor model. They tell you what *kind* of risk the fund is taking.
+
+- **Alpha**: return not explained by the factors. Positive is good.
+- **Market beta**: sensitivity to the market. Negative means the fund hedges against downturns.
+- **HML beta**: value (positive) vs. growth (negative).
+- **MOM beta**: momentum (positive) vs. contrarian (negative).
+- **RMW beta**: quality (positive) vs. junk (negative).
+
+A fund with positive alpha, HML, MOM and RMW is a value-momentum-quality fund with skilled management. A fund with negative alpha and RMW but high MOM is a momentum-junk fund with poor management.
+
+## Reading the strategic allocation analysis
+
+The lower half of the Analyst page compares your strategic allocation with the allocation the game's parameters hold as optimal for the client, and gives a recommendation. The recommendation compares your weight to the **target range** for that segment, which is the range consistent with the client's γ. A weight outside the range means the γ estimate or the reading of a rule is off.
+
+- **"Balanced allocation."** Your weight is inside the target range. No change.
+- **"Overweighted."** Your weight is above the range.
+- **"Underweighted."** Your weight is below the range.
+
+The direction tells you which way to adjust γ. Overweighted in equities means your γ is too low; move it up. Overweighted in government bonds means your γ is too high; move it down.
+
+## Actionable takeaways: what to do with the numbers
+
+The ratios and the attribution tell you what happened. To decide what to do next round, you need
+to translate them into actions. This section says how.
+
+### If the information ratio is below 0
+**What it means:** The active return was negative relative to the risk taken. The tactical views
+were wrong, or the tracking-error budget was too large for the quality of the views.
+
+**What to do:** Reduce the size of the tactical tilts. Either use fewer views, lower the
+confidence on the views you have, or narrow the maximum deviation band in station 4. If the IR is
+negative for three rounds in a row with high confidence, stop entering that view entirely.
+
+### If the information ratio is between 0 and 0.5
+**What it means:** The active return was positive, but modest relative to the risk taken. The
+views were slightly right, or the tracking-error budget was too loose.
+
+**What to do:** Keep the views, but check whether the confidence levels are calibrated. If views you
+entered with high confidence keep producing a small IR, lower the confidence next round.
+
+### If the information ratio is above 0.5
+**What it means:** The views were right relative to the risk taken. The tactical process is
+working.
+
+**What to do:** Keep doing what you are doing. Do not increase the tracking-error budget just
+because the IR is high; the budget is there to protect the client, not to maximise the score.
+
+### If the Sharpe ratio is high but the information ratio is low (or zero)
+**What it means:** The fund generated good absolute risk-adjusted returns, but the tactical
+decisions did not add value. The high Sharpe comes from the strategic allocation, not from the
+tactical tilts.
+
+**What to do:** Check the attribution. If the selection effect is zero and the allocation effect
+is zero, the tactical allocation is identical to the strategic allocation. That is fine if you had
+no views, but if you entered views and the IR is zero, the views were neutralised by the model
+(e.g., because the confidence was too low). Raise the confidence or do not enter the view.
+
+### If the Sortino ratio is much higher than the Sharpe ratio
+**What it means:** The fund's volatility is skewed to the upside. The fund has large positive
+returns and small negative ones.
+
+**What to do:** Nothing. This is a good outcome. The client is getting upside volatility without
+the corresponding downside, which is exactly what a risk-averse client wants.
+
+### If the Sortino ratio is much lower than the Sharpe ratio
+**What it means:** The fund's volatility is skewed to the downside. The fund has large negative
+returns and small positive ones.
+
+**What to do:** Check the attribution for a large negative allocation effect. If the fund is
+taking concentrated positions that have gone wrong, pull them back. The client's loss aversion
+makes downside volatility particularly costly.
+
+### If the alpha is positive but the IR is negative
+**What it means:** The fund is generating excess return relative to the factor model (good
+management), but the tactical allocation is underperforming the benchmark (bad tactical
+decisions). The two are unrelated: alpha is measured against factors, IR is measured against the
+benchmark.
+
+**What to do:** Fix the tactical views, not the strategic allocation. The strategic allocation is
+generating alpha; the tactical tilts are destroying value.
+
+### If the market beta is negative
+**What it means:** The fund moves opposite to the market. It is a hedge.
+
+**What to do:** Check whether this is intended. If the client is risk-averse and the fund is
+holding defensive assets, a negative beta is fine. If the client is growth-oriented and the fund
+is hedging unintentionally, reduce the defensive weight.
+
+### If the strategic allocation analysis says "Overweighted"
+**What it means:** The fund is holding more of a segment than the optimal allocation for the
+client's γ.
+
+**What to do:** If the overweight is in equities, raise the γ estimate (the client is more
+risk-averse than you thought). If the overweight is in bonds, lower the γ estimate. Change γ
+once, early, and record why.
+
+### If the satisfaction is falling but the IR is positive
+**What it means:** The fund is beating the benchmark, but the client is unhappy. The most likely
+cause is that the fund is too far from the guidance bands (the client wants a specific allocation,
+not just a good return), or the fee is too high.
+
+**What to do:** Compare the fund's weights to the guidance bands. If the fund is outside the
+bands, pull it back. If the fund is inside the bands, check the fee.
 
 ## Satisfaction and AuM
 
-Satisfaction moves with three things: the distance just discussed, the risk the fund took against
-what the client expects, and the fee. AuM follows satisfaction and risk-adjusted performance with
-a lag, and flows between rounds move the holdings (Chapter 7). A fund that loses clients after a
-round close to its guidance bands and with a small tracking error has a fee problem; a fund that
-loses clients after an extreme position has an allocation problem, and that position is the
-first thing to fix.
+Satisfaction moves with three things: the distance to the optimal allocation, the risk the fund
+took against what the client expects, and the fee. AuM follows satisfaction and risk-adjusted
+performance with a lag.
 
 ## Feeding it back
 

@@ -2,13 +2,9 @@
 title: "From tactical weights to positions"
 ---
 
-## The third layer
-
-The tactical allocation is a grid of segment weights. The fund holds assets. The game's
-**automatic current allocation** translates each segment weight into positions: equities by
-market value (value weighting), bonds and alternatives by equal weight, unless you change the
-preference. After each round the holdings drift with returns and fund flows, and, with automation
-on, are rebalanced back to the tactical weights.
+The tactical asset allocation is a grid of segment weights. The game's automatic allocation translates each segment weight into positions, by value
+weighting or equal weighting, and rebalances them to the tactical weights after each round unless
+you switch it off.
 
 For the first rounds, leave this automation on. The decisions that matter are above it.
 
@@ -43,7 +39,7 @@ asset's page with description, history, metrics and fundamentals. The Economic o
 *Instrument performance* subpage lets you enter an asset-level alpha if you expect a single asset
 to beat its segment.
 
-Advice for this course: do not do it in the practice rounds or round 1. Security selection on top
+Our advice: do not do it in the practice rounds or in round 1. Security selection on top
 of the tactical tilt adds a layer of tracking error that is hard to attribute later, and the
 automation already produces a sensible, diversified book. If you do it:
 
@@ -53,6 +49,126 @@ automation already produces a sensible, diversified book. If you do it:
   across segments.
 - Write down the thesis per deviation; the Analyst page attributes by industry, maturity and
   factor, and you will want to recognise your own bets.
+
+## Analyzing the fundamentals
+
+If you decide to deviate from the automatic weight of a single asset, you need a thesis. A thesis
+is not "the stock is cheap" or "it has done well recently." A thesis is a statement about the
+company's fundamentals that the market has not yet priced in. The asset page provides the fundamentals you need to form one.
+
+You do not need to be an accountant. You need to look at three things: **whether the earnings are
+real (quality of earnings), how safely the company is financed (solvency and liquidity), and whether
+the price already reflects the good news (relative valuation).**
+
+### What the page gives you
+
+Before running the analysis, it helps to know what data the game provides. The asset page contains
+much more than the ratios we cover here. The available fields are:
+
+- **Asset information:** Asset class, area, country, industry, home currency.
+- **Performance metrics:** Price, return over 3 months, 1 year and 5 years, market capitalization.
+- **Factor loadings:** Alpha, market beta, HML beta, MOM beta, RMW beta (both for the last round and
+  long-term).
+- **Other metrics:** Sharpe ratio.
+- **Fundamentals overview (up to five years):** Earnings per share (EPS), price-to-earnings (P/E),
+  return on equity (ROE), return on investment (ROI), debt-to-equity, dividend yield, free cash
+  flow (FCF) per share, revenue, operating margin, current ratio.
+- **ESG ratings (up to five years):** Environmental, Social, Governance, and Overall scores.
+
+The analysis below focuses on the three important checks for
+security selection: **Quality of Earnings**, **Solvency and Liquidity**, and
+**Relative Valuation**. Other common ratios, such as price-to-book (P/B), EV/EBITDA, PEG and interest coverage, are not
+on the page and not covered here. They are useful for specific sectors (P/B for banks, EV/EBITDA for capital-intensive businesses)
+and for comparing companies with different capital structures.
+
+### Quality of Earnings
+EPS is accounting profit, and accounting profit can be managed. A company can
+report a rising EPS by booking revenues early, delaying expenses, or capitalizing costs that should
+be expensed. To know whether the company is actually generating value, you must check the **quality
+of those earnings** against the cash the company generates.
+
+The game provides Free Cash Flow (FCF) and Earnings per Share (EPS), but not Cash Flow from
+Operations. The most direct quality check available is therefore the **FCF-to-EPS ratio**:
+
+$$
+\text{Earnings Quality} = \frac{\text{FCF per share}}{\text{EPS}}
+$$
+
+A ratio near 1.0 means the company is generating enough free cash to back its reported profit. A
+ratio persistently below 1.0 (e.g., 0.4 or 0.6) is a red flag: the company is reporting earnings on
+paper but not generating the cash to back them up. This usually means it is spending heavily just
+to maintain its asset base (high capital expenditure), or it is not collecting its receivables. A
+ratio above 1.0 means the company is generating more cash than it reports in profit, which is
+generally a sign of conservative accounting.
+
+Three checks tell you if the earnings are real:
+
+- **FCF-to-EPS.** The most direct test of whether reported profit is "real." If FCF per share is
+  persistently lower than EPS, the earnings are of low quality. Track the ratio over the
+  years the page shows: a ratio that is improving is a better signal than a ratio that is
+  high but falling.
+- **ROI and ROE trends.** A rising ROE might just mean the company is taking on more debt (since
+  equity is the denominator). Check whether ROI, the return on all capital invested, moves in the
+  same direction. If ROI is falling while ROE is rising, the profitability is an artifact of
+  leverage, not a genuine improvement in the business. A healthy company shows both ROE and ROI
+  rising together, or ROI rising faster than ROE.
+- **EPS growth stability.** Is the EPS growth steady, or jumping around? Stable growth is higher
+  quality than volatile growth.
+
+### Solvency and Liquidity
+Two ratios on the page describe the balance sheet, what the company owns and what it owes, and
+tell you if it can survive a bad year:
+
+- **Current Ratio.** Current assets divided by current liabilities. This measures whether the
+  company has enough short-term assets to cover its short-term bills. A ratio below 1.0 is a
+  warning sign: the company cannot pay what it owes in the next twelve months. A ratio rising from
+  below 1.0 to above 1.0 is a strong sign of improving liquidity.
+- **Debt-to-Equity (D/E).** Total debt divided by shareholders' equity. A high D/E means the
+  company is highly leveraged. A *falling* D/E means it is paying down debt or growing equity,
+  which reduces risk.
+
+### Relative Valuation
+An absolute price-to-earnings (P/E) ratio tells you almost nothing. A P/E of 10 might be expensive
+for a slow-growing utility but cheap for a fast-growing tech company. You have to compare it to
+two benchmarks:
+
+1. **Its own history.** Compare the current P/E to the company's five-year average P/E. If the
+   current P/E is much higher than its historical average, the stock is more expensive than it
+   used to be. The market has re-rated it.
+2. **The market.** Compare the current P/E to the market average. If the stock's P/E is higher
+   than the market, it is trading at a premium.
+
+::: {.callout-tip title="Applying the numbers: a worked example"}
+Suppose you are looking at a European energy company (the numbers are invented). You read the
+page in three steps:
+
+- **Quality of Earnings.** EPS has grown from €1.20 to €4.00 over four years, which is strong.
+  ROI is 16 %, comfortably above the cost of capital. Most importantly, FCF per share has
+  turned from negative (−€0.40) to positive (€3.00). The FCF-to-EPS ratio is therefore
+  $3.00 / 4.00 = 0.75$: the company is generating 75 cents of free cash for every
+  euro of reported profit. It is not a perfect 1.0, but the trend is strongly positive (the ratio
+  was negative four years ago), and 0.75 is high enough to confirm the earnings are backed by
+  cash.
+
+- **Solvency and Liquidity.** The current ratio has risen from 0.9 to 1.6. It is now comfortably
+  above 1.0. D/E has fallen from 57 % to 31 %. *The company has deleveraged and improved its
+  short-term liquidity.*
+
+- **Relative Valuation.** The current P/E is 12. The five-year average P/E is 6.5. The market
+  average is, say, 15.
+  - Versus history: $12 / 6.5 \approx 1.85$. The stock is almost twice as expensive as its own
+    history.
+  - Versus market: $12 / 15 = 0.8$. The stock is cheaper than the market.
+
+**The verdict.** The fundamentals are clearly better than they were four years ago. The
+FCF-to-EPS ratio confirms the profit is real and backed by cash, the current ratio confirms the
+company can pay its bills, and the D/E confirms it is deleveraging. However, the stock has
+re-rated from a P/E of 6.5 to a P/E of 12. While it still trades below the broad market, it is
+nearly double its historical multiple. The market has already priced in the recovery. The thesis
+is *"strong, high-quality fundamentals, but the valuation premium relative to its own history
+leaves no margin of safety."* That supports a neutral or underweight position, not because the
+company is weak, but because the price is full.
+:::
 
 ## Deliverable of this step
 
