@@ -1,0 +1,753 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "IMAG Teaching Materials",
+    "section": "",
+    "text": "IMAG Teaching Materials\nThis book accompanies the Cesim Invest simulation (IMAG). You run Asterion Capital, an asset manager with up to four funds, one per client type, invested in 180 assets across five currencies. Each round you read the economic outlook, decide the allocation of every fund in three layers (strategic, tactical, asset level), set fees, and read the results.\nThis version documents the game flow and how to play it well: what each page of the game asks for, in what order to decide, how to get the numbers with the allocation app that comes with the course, and how to read what comes back. One chapter per step. The theory behind each step (client analysis, capital-market assumptions, mean-variance and Black-Litterman optimization, performance attribution) is referenced where it is used and will be added in a later edition.\nHow to read it. Chapter 1 shows the whole round on one page. Chapters 2 to 9 follow the order in which you decide. Appendix A is the reference for the allocation app; appendix B collects proposed changes to the app and the game.\nThe examples. Every worked example in this book uses two invented clients, the Hartley family (home market Britain) and the Keller trust (home market the euro area). They are not clients of the game. The game’s own clients have their own rules, their own risk aversion and their own limits; reading those out of the client cards is your task, and this book shows the method, not the answers.\n\n\n\n\n\n\nNoteState of the game\n\n\n\nThe client descriptions, the guidance bands and the strategic benchmarks described here are the October 2026 design. Until Cesim has loaded them into the simulation, the texts and bands you see on the Clients page may still be the earlier ones. The method does not change.",
+    "crumbs": [
+      "IMAG Teaching Materials"
+    ]
+  },
+  {
+    "objectID": "01_round.html",
+    "href": "01_round.html",
+    "title": "1  A round in IMAG",
+    "section": "",
+    "text": "1.1 The firm, the funds, the clients\nYou are a fund manager at Asterion Capital, an asset manager whose founders are stepping back. The firm runs one fund per client type, up to four in total: Conservative, Conservative (ESG), Dynamic and Dynamic (ESG). Each fund has its own clients, its own benchmark and its own fees. The client card on the game’s Clients page tells you the home market, the client’s rules and guidance bands, and the current fee of each fund. You can change the fees every round; the client, the fund type and the client type stay fixed.\nAsterion measures everything in US dollars. Assets in other currencies are held unhedged, and the game offers no way to hedge them. The resulting currency risk is part of the risk you manage. The fund’s currency cannot be changed.\nThe investable universe is 180 assets in four asset classes (government bonds, corporate bonds, equities, alternatives) and five currencies (USD, GBP, EUR, CHF, JPY). Alternatives exist in USD only. A market segment is one asset class in one currency, e.g. “EUR / Corporate bonds”.\nTogether with the money market, one position per currency, this gives 21 positions in each portfolio (money market, government bonds, corporate bonds and equities in each of the five currencies, plus commodities). The strategic benchmark, the strategic asset allocation (SAA), is defined on the 16 positions without the money market. The optimal portfolio holds no cash: cash is a tactical decision of the player, not a strategic position.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>A round in IMAG</span>"
+    ]
+  },
+  {
+    "objectID": "01_round.html#what-the-game-measures",
+    "href": "01_round.html#what-the-game-measures",
+    "title": "1  A round in IMAG",
+    "section": "1.2 What the game measures",
+    "text": "1.2 What the game measures\nThree things drive assets under management (AuM), the money a fund manages:\n\nRisk-adjusted performance against the benchmark. The benchmark of each fund is its strategic allocation. The game’s Analyst page attributes your return against it (currency, asset class, industry, maturity, factors) and compares your strategic allocation with the optimal allocation held in the game’s parameters.\nClient satisfaction. Surveys ask whether the fund is managed the way the client expects: inside the limits, with the right amount of risk, with the required sustainability. A fund held far from what the client expects loses clients at once.\nFees. Higher fees turn clients away but raise revenue; clients tolerate fees better when their risk-adjusted return is good. Dynamic clients respond to marketing and accept higher fees; conservative clients want them low and transparent.\n\nAuM drives the firm’s profit, because each fund earns its fee on its AuM. The goal of every fund manager is therefore to grow AuM: deliver good risk-adjusted performance against the benchmark, keep the clients satisfied, and charge appropriate fees.\nThe instructor picks the winning criterion (Sharpe ratio, alpha, information ratio, cumulative shareholder return of the firm). Whatever it is, it runs through the same three channels.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>A round in IMAG</span>"
+    ]
+  },
+  {
+    "objectID": "01_round.html#the-decision-flow",
+    "href": "01_round.html#the-decision-flow",
+    "title": "1  A round in IMAG",
+    "section": "1.3 The decision flow",
+    "text": "1.3 The decision flow\nThe game suggests an order, and this book follows it. Each step is one chapter.\n\n\n\n\n\n\n\n\n\n\nStep\nPage in the game\nWhat you decide\nTool\nChapter\n\n\n\n\n1\nClients\nRead the client: the rules, the risk aversion bracket, the limits\nClient card, this book\n2\n\n\n2\nCourse dataset\nRead the market: statistics and correlations of the benchmark positions\nApp, station 1\n3\n\n\n3\nInvestment strategy → Strategic allocation\nThe strategic allocation of each fund, its benchmark for the whole game\nApp, station 2\n4\n\n\n4\nEconomic outlook, Analyst\nTurn the outlook into views on expected returns\nApp, station 3\n5\n\n\n5\nInvestment strategy → Tactical allocation\nThe tactical allocation for this round\nApp, station 4\n6\n\n\n6\nInvestment strategy → Automation preferences, Markets\nHow tactical weights become positions; the ESG floor; asset-level decisions\nGame\n7\n\n\n7\nClients → Fees, Projections, Decision checklist\nFees, check projections, submit as team\nGame\n8\n\n\n8\nResults, Analyst\nRead performance, attribution, satisfaction; feed it back\nGame\n9\n\n\n\nSteps 1 to 3 are done once, in the first round, and the result stays for the whole game: the client does not change and the strategic allocation is the benchmark. Steps 4 to 8 repeat every round.\n\n\n\n\n\n\nTipThe allocation app\n\n\n\nThe course provides a Shiny app (https://inno.uni.li/apps/invest/) with four stations that mirror steps 2 to 5. It runs on the course dataset: the full history of the 21 positions, monthly, in dollars, with the money market left out of the benchmark by default. Appendix A is its reference. The app does not talk to the game; you read numbers off the app and type them into the game.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>A round in IMAG</span>"
+    ]
+  },
+  {
+    "objectID": "01_round.html#rounds-practice-rounds-teams",
+    "href": "01_round.html#rounds-practice-rounds-teams",
+    "title": "1  A round in IMAG",
+    "section": "1.4 Rounds, practice rounds, teams",
+    "text": "1.4 Rounds, practice rounds, teams\nA round is typically one quarter. The instructor may run up to three practice rounds before round 1. In a practice round you make decisions and see the results, but nothing carries over; the point is to learn the platform. After the practice rounds the market resets, and round 1 starts from the decisions of the first practice round. Nothing else carries over.\nEach team member has a Student Decision Area; the round is scored on the Team Decision Area. Work in your own area, then Copy as team’s decisions; a copy overwrites the team area without backup. Appoint a round CEO who submits, and rotate the role.\nBetween rounds the game moves your holdings with the market and with fund flows, and, if automation is on, rebalances them to your tactical weights (Chapter 7). The strategic allocation is not touched by this; it is a benchmark, not a holding.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>A round in IMAG</span>"
+    ]
+  },
+  {
+    "objectID": "01_round.html#the-round-on-one-page",
+    "href": "01_round.html#the-round-on-one-page",
+    "title": "1  A round in IMAG",
+    "section": "1.5 The round on one page",
+    "text": "1.5 The round on one page\n\nRound 1 only: read the client (Ch. 2), read the market (Ch. 3), set and fix the strategic allocation of every fund (Ch. 4), enter it on the Investment strategy page.\nSet the ESG floor for the ESG funds in Automation preferences (Ch. 7).\nRead the Economic outlook; write down your views with a confidence (Ch. 5).\nRun the tactical station for every fund; enter the tactical allocation; check the projected tracking error and information ratio (Ch. 6).\nDecide whether to touch asset-level positions; usually not in the first rounds (Ch. 7).\nSet fees; read Projections; copy to the team area before the deadline (Ch. 8).\nAfter the deadline: Results and Analyst; revise your γ estimate and your views (Ch. 9).",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>A round in IMAG</span>"
+    ]
+  },
+  {
+    "objectID": "02_client.html",
+    "href": "02_client.html",
+    "title": "2  Reading the client",
+    "section": "",
+    "text": "2.1 What the Clients page gives you\nIn professional investment management, building a portfolio is only one part of the process. Before deciding how to invest, the manager must understand the person the portfolio is being built for. Good investment management starts with the client’s needs.\nEach fund has a client card on the Clients page. It shows a general profile of the client type; the Meet client X button introduces a representative client.\nThe text contains everything the strategic allocation needs. In short, each client has one number and two rules:\nSome clients also have a sustainability requirement, and short sales are never allowed. Whatever the card does not mention is not constrained.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Reading the client</span>"
+    ]
+  },
+  {
+    "objectID": "02_client.html#what-the-clients-page-gives-you",
+    "href": "02_client.html#what-the-clients-page-gives-you",
+    "title": "2  Reading the client",
+    "section": "",
+    "text": "a risk aversion coefficient γ, which the text does not state as a number;\na commodity rule (a minimum share, or none at all);\na home rule: a share of the equity book in the client’s home market, the rest across the other markets in proportion to their size.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Reading the client</span>"
+    ]
+  },
+  {
+    "objectID": "02_client.html#the-rules-read-them-off",
+    "href": "02_client.html#the-rules-read-them-off",
+    "title": "2  Reading the client",
+    "section": "2.2 The rules: read them off",
+    "text": "2.2 The rules: read them off\nThe rules are stated in plain words and mean exactly what they say. “They do not consider commodity futures compatible with their purpose” is a commodity cap of zero; “about five percent in commodities” is a floor of 5 %. “Half of the equities in companies from their home market, the rest spread across the other developed markets in proportion to their size” is the home rule with a home share of one half.\nWrite the rules down as numbers before you open the app. For the Hartley family, the invented client used throughout this book, the rules read:\n\nHome market Britain. Commodities at least 5 %. Half of the equity book in UK companies, the rest by market size. No sustainability requirement. Cash at the manager’s discretion.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Reading the client</span>"
+    ]
+  },
+  {
+    "objectID": "02_client.html#the-risk-aversion-bracket-it-from-two-decisions",
+    "href": "02_client.html#the-risk-aversion-bracket-it-from-two-decisions",
+    "title": "2  Reading the client",
+    "section": "2.3 The risk aversion: bracket it from two decisions",
+    "text": "2.3 The risk aversion: bracket it from two decisions\nThe client card describes decisions the client has taken in the past. Each is a choice between two portfolios. For each portfolio the card gives two numbers: its volatility \\(\\sigma\\) and its expected return over cash \\(\\mu\\).\nWe need to turn those two decisions into a number, the client’s risk aversion \\(\\gamma\\). The idea is simple. A risk-averse client dislikes volatility. Offered a portfolio with more return and more volatility and one with less of both, the client’s choice tells us roughly how much they dislike volatility. Two decisions give us two constraints, one on each side of the true \\(\\gamma\\), and together they bracket it.\n\n2.3.1 The utility function, in one line\nTo make “how much they dislike volatility” precise, we assume the client values a portfolio by its mean–variance utility:\n\\[\nU = \\mu - \\frac{\\gamma}{2}\\sigma^2\n\\]\nRead it as: utility = return minus a penalty for risk. The penalty is \\(\\frac{\\gamma}{2}\\) times the variance, so a client with a higher \\(\\gamma\\) penalises risk more heavily. This is the standard Markowitz utility function, and the \\(\\gamma\\) in it is the same risk aversion that appears in mean–variance optimisation in Chapter 4. Higher \\(\\gamma\\) means a more cautious client.\nA client prefers portfolio A to portfolio B when \\(U_A &gt; U_B\\). Every past decision on the card is a statement of that form, and each one can be solved for \\(\\gamma\\).\n\n\n2.3.2 What one decision tells us\nTake one decision. The client chose one portfolio over another. Call the one they chose the winner and the other the loser. We do not yet need to know which is riskier; write the winner’s return and volatility as \\(\\mu_W, \\sigma_W\\) and the loser’s as \\(\\mu_L, \\sigma_L\\).\nThe client preferred the winner, so its utility must be higher:\n\\[\n\\mu_W - \\frac{\\gamma}{2}\\sigma_W^2 &gt; \\mu_L - \\frac{\\gamma}{2}\\sigma_L^2\n\\]\nMove the \\(\\gamma\\) terms to the left and the return terms to the right:\n\\[\n\\frac{\\gamma}{2}\\left(\\sigma_L^2 - \\sigma_W^2\\right) &gt; \\mu_L - \\mu_W\n\\]\nNow look at the sign of \\(\\sigma_L^2 - \\sigma_W^2\\). It is positive if the loser was the riskier portfolio and negative if the winner was. That sign decides which way the inequality points, and therefore whether the decision gives us a floor or a ceiling on \\(\\gamma\\).\nCase 1: the client turned down the riskier portfolio. The winner is the quieter one, so the loser had the larger variance and \\(\\sigma_L^2 - \\sigma_W^2 &gt; 0\\). Dividing by a positive number keeps the inequality pointing the same way:\n\\[\n\\gamma &gt; \\frac{2(\\mu_L - \\mu_W)}{\\sigma_L^2 - \\sigma_W^2}\n\\]\nThe client gave up some return to get a quieter portfolio. That means they must be at least this risk-averse. The decision gives us a floor on \\(\\gamma\\).\nCase 2: the client took the riskier portfolio. The winner is the riskier one, so the loser had the smaller variance and \\(\\sigma_L^2 - \\sigma_W^2 &lt; 0\\). Dividing by a negative number flips the inequality:\n\\[\n\\gamma &lt; \\frac{2(\\mu_W - \\mu_L)}{\\sigma_W^2 - \\sigma_L^2}\n\\]\nThe client was willing to accept more swing to get more return. That means they cannot be more risk-averse than this. The decision gives us a ceiling on \\(\\gamma\\).\n\n\n2.3.3 The one formula to remember\nNotice that the right-hand side is the same expression in both cases, once you put the riskier portfolio on top. Write \\(X\\) for the riskier portfolio and \\(Y\\) for the quieter one. Then:\n\\[\n\\text{bound} = \\frac{2(\\mu_X - \\mu_Y)}{\\sigma_X^2 - \\sigma_Y^2}\n\\]\nand the only question is whether it is a floor or a ceiling:\n\nIf the client rejected the riskier portfolio \\(X\\), the bound is a floor: \\(\\gamma &gt; \\text{bound}\\).\nIf the client chose the riskier portfolio \\(X\\), the bound is a ceiling: \\(\\gamma &lt; \\text{bound}\\).\n\nThat is the whole method. You do not need to remember two formulas. You need to remember one expression and one question: which portfolio did the client end up with? If they ended up with the quieter one, the expression is a floor. If they ended up with the riskier one, it is a ceiling.\n\n\n2.3.4 Two conditions for the bound to mean anything\nThe method only works if the two portfolios are genuinely different in both dimensions.\n\nThe riskier portfolio must also offer more return. If the riskier portfolio offered less return, no sensible client would hold it, and the choice would tell us nothing about \\(\\gamma\\). Always check that \\(\\mu_X &gt; \\mu_Y\\) before applying the formula.\nBoth numbers must be in the same units. Put \\(\\mu\\) and \\(\\sigma\\) in the same units (both decimals, both annualised). The \\(\\gamma\\) you recover is then on the same scale as the \\(\\gamma\\) that goes into the mean–variance optimiser in Chapter 4.\n\nIf either condition fails, the decision is not usable and you should look for another one on the card.\n\n\n2.3.5 Worked example: the Hartleys\nDecision 1: they turned down the riskier portfolio. With their previous adviser they rejected a portfolio with 10 % volatility and 6.9 % expected return over cash, and took one with 8 % volatility and 5.9 % instead. Here \\(X=(10\\%,\\,6.9\\%),\\ Y=(8\\%,\\,5.9\\%)\\), and because they rejected \\(X\\) this is a lower bound:\n\\[\n\\gamma &gt; \\frac{2(0.069-0.059)}{0.10^2-0.08^2}=\\frac{0.020}{0.0036}=5.6\n\\]\nDecision 2: they kept the riskier portfolio. Later, offered an alternative with 6 % volatility and 5.1 % expected return over cash, they stayed with their portfolio of 8 % volatility and 6.6 %. Here \\(X=(8\\%,\\,6.6\\%),\\ Y=(6\\%,\\,5.1\\%)\\), and because they chose \\(X\\) this is an upper bound:\n\\[\n\\gamma &lt; \\frac{2(0.066-0.051)}{0.08^2-0.06^2}=\\frac{0.030}{0.0028}=10.7\n\\]\nSo the two decisions bracket the Hartleys:\n\\[\n5.6 &lt; \\gamma &lt; 10.7\n\\]\nthat is, \\(\\gamma\\) lies between about 5.5 and 11.\nPlacing \\(\\gamma\\) inside the bracket. The bracket comes from what the client did; the words on the card place \\(\\gamma\\) within it:\n\n“Lived through two bear markets without selling, but would not want to see a year like 2008 again” → middle of the bracket.\n“They need the portfolio to grow; income covers spending” → lower end (growth first, more tolerant of risk).\n“The income the portfolio produces matters more than growth” → higher end (capital preservation, less tolerant of risk).\n\nFor the Hartleys the bear-market comment points to the middle, so we take \\(\\gamma=8\\).",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Reading the client</span>"
+    ]
+  },
+  {
+    "objectID": "02_client.html#from-γ-to-a-portfolio",
+    "href": "02_client.html#from-γ-to-a-portfolio",
+    "title": "2  Reading the client",
+    "section": "2.4 From γ to a portfolio",
+    "text": "2.4 From γ to a portfolio\nOnce \\(\\gamma\\) is estimated, it does two things in the rest of the book. It selects the strategic allocation in Chapter 4, and it sets the prior of the Black–Litterman step in Chapters 5 and 6.\nIn Chapter 4, the client’s \\(\\gamma\\) selects the point on the efficient frontier that maximises \\(U=\\mu-\\frac{\\gamma}{2}\\sigma^2\\). A higher \\(\\gamma\\) selects a portfolio with less variance and a lower expected return; a lower \\(\\gamma\\) selects a riskier one with a higher expected return. Do not read γ off a conventional profile table (“above 6 is conservative”): which equity share a γ produces depends on the data and the client’s rules. The Hartleys, at γ = 8, hold 46.5 % equities; the check is the guidance bands below, not a rule of thumb.\n\n\n\n\n\n\nWarningγ is the whole game at this step\n\n\n\nThe rules are the same for every reader of the card. What distinguishes a careful reading from a careless one is the estimate of \\(\\gamma\\). Chapter 4 shows what it costs to be wrong: for the Hartleys, \\(\\gamma = 7\\) or \\(9\\) instead of \\(8\\) puts the allocation 7 or 5.5 points away from the benchmark; the ends of the bracket cost 14 to 23 points.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Reading the client</span>"
+    ]
+  },
+  {
+    "objectID": "02_client.html#the-guidance-bands",
+    "href": "02_client.html#the-guidance-bands",
+    "title": "2  Reading the client",
+    "section": "2.5 The guidance bands",
+    "text": "2.5 The guidance bands\nGuidance bands are quoted in the text (“between 15 and 52 percent in government bonds”). They are the range inside which the client expects to be held, and they are consistent with the client’s risk aversion: every γ in the bracket gives an allocation inside the bands, and a γ outside the bracket leaves at least one band. Use them two ways: as a check on your allocation, and to narrow the bracket. If your allocation leaves a band, your γ is outside the bracket.\nA fund held far from what the card describes loses the client, whatever the market does; a dynamic client parked in money market walks away. Lost clients mean lower AuM and lower profit, and in the end put the firm in financial difficulty.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Reading the client</span>"
+    ]
+  },
+  {
+    "objectID": "02_client.html#the-home-market",
+    "href": "02_client.html#the-home-market",
+    "title": "2  Reading the client",
+    "section": "2.6 The home market",
+    "text": "2.6 The home market\nMeet client X names the home market. It decides which equity market carries the home share of the equity book; the rest of the book goes to the other markets by capitalization (US 70.0, euro area 14.5, Japan 5.9, Switzerland 5.7, Britain 4.0 percent of the universe, renormalized without the home market). Because the home rule puts a large part of the equities into a market the data might not otherwise hold at that size, the rest of the allocation adjusts around it: two clients with the same γ and different home markets do not hold the same class mix. That is the method working, not a mistake.\n\n2.6.1 Why the rest goes by size\nThe home share is the client’s own choice: most investors hold more of their home market than its size alone would justify, the well-documented home bias (French and Poterba 1991). For the rest of the equity book the client states no view, and the allocation should not invent one. Market capitalization is the weighting that needs no forecast. It is the market portfolio of the CAPM (Sharpe 1964), the one portfolio all investors can hold together, so any other weighting is a bet against the average investor (Sharpe 1991). It also protects the allocation from the optimizer: the expected returns of the five equity markets are estimated with an error larger than the differences between them, and a free optimization turns that noise into extreme weights, often a whole market at zero (Michaud 1989). Fixing the regional split by size leaves γ as the one number the reading of the card has to get right. And it keeps the strategic allocation consistent with Chapters 5 and 6, which reverse-optimize it into the prior of the Black–Litterman step: with the regions at market weights, that prior is close to the market equilibrium Black and Litterman start from (Black and Litterman 1992). The price of the rule is concentration. The United States is 70 percent of the universe, and capitalization weights follow a market into its bubbles, as Japan’s share of world equity around 1989 showed.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Reading the client</span>"
+    ]
+  },
+  {
+    "objectID": "02_client.html#sustainability",
+    "href": "02_client.html#sustainability",
+    "title": "2  Reading the client",
+    "section": "2.7 Sustainability",
+    "text": "2.7 Sustainability\nA client who requires a minimum rating holds only securities that pass it. This binds when tactical weights become positions (Chapter 7), not at the strategic level: the class-level statistics of the market do not change with the filter.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Reading the client</span>"
+    ]
+  },
+  {
+    "objectID": "02_client.html#deliverable-of-this-step",
+    "href": "02_client.html#deliverable-of-this-step",
+    "title": "2  Reading the client",
+    "section": "2.8 Deliverable of this step",
+    "text": "2.8 Deliverable of this step\nBefore the next step, write down what defines the client: γ with its bracket, the commodity rule, the home market and home share, and any sustainability requirement.\nThat gives one line per fund, which the next steps build on.\nFor the Hartleys:\n\nHartley, home UK: γ ≈ 8 (bracket 5.5–11), commodities ≥ 5 %, half of equities in the UK, no sustainability floor, cash at the manager’s discretion.\n\nThat line is the complete input to the strategic allocation.\n\n\n\n\nBlack, Fischer, and Robert Litterman. 1992. “Global Portfolio Optimization.” Financial Analysts Journal 48 (5): 28–43.\n\n\nFrench, Kenneth R., and James M. Poterba. 1991. “Investor Diversification and International Equity Markets.” The American Economic Review 81 (2): 222–26.\n\n\nMichaud, Richard O. 1989. “The Markowitz Optimization Enigma: Is’optimized’optimal?” Financial Analysts Journal 45 (1): 31–42.\n\n\nSharpe, William F. 1964. “Capital Asset Prices: A Theory of Market Equilibrium Under Conditions of Risk.” The Journal of Finance 19 (3): 425–42. https://doi.org/10.1111/j.1540-6261.1964.tb02865.x.\n\n\nSharpe, William F. 1991. “The Arithmetic of Active Management.” Financial Analysts Journal 47 (1): 7–9. https://doi.org/10.2469/faj.v47.n1.7.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Reading the client</span>"
+    ]
+  },
+  {
+    "objectID": "03_market.html",
+    "href": "03_market.html",
+    "title": "3  Reading the market",
+    "section": "",
+    "text": "3.1 Two sources of information, two uses\nOnce you know the client, the next step is the market you invest in, because the strategic allocation is built on it. Asset classes differ: some are more volatile than others, some have a higher expected return, some move together and others in opposite directions.\nThe game gives you two different things about the market, and they serve two different decisions.\nKeep the two apart. The benchmark does not move with the outlook.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Reading the market</span>"
+    ]
+  },
+  {
+    "objectID": "03_market.html#two-sources-of-information-two-uses",
+    "href": "03_market.html#two-sources-of-information-two-uses",
+    "title": "3  Reading the market",
+    "section": "",
+    "text": "The history. The course dataset (loaded in the allocation app) holds the full history of the 21 positions: monthly total returns in US dollars, unhedged, and the US money-market rate. The strategic allocation of every client is defined on this history (Chapter 4). The game’s own Results page also lets you download the last five years of asset, factor and exchange-rate data as an Excel file; that is a subset of the same market.\nThe Economic outlook. Each round, the analyst estimates the coming period: interest rates by maturity and currency, inflation and growth, factor premia, with an expected range around every estimate. This is forward-looking information and belongs to the tactical decision (Chapter 5). It is not an input to the strategic allocation.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Reading the market</span>"
+    ]
+  },
+  {
+    "objectID": "03_market.html#station-1-of-the-app-statistics-and-correlations",
+    "href": "03_market.html#station-1-of-the-app-statistics-and-correlations",
+    "title": "3  Reading the market",
+    "section": "3.2 Station 1 of the app: statistics and correlations",
+    "text": "3.2 Station 1 of the app: statistics and correlations\nOpen the app (https://inno.uni.li/apps/invest/), station 1 · Strategic Asset Analysis. Keep the default selection (the 16 benchmark positions; the five money-market positions can be added for analysis) and the sample at the full history. The statistics table is annualised and in excess of the US money-market rate; the correlation matrix is of the same excess returns.\nThree things to take from the table before you optimise anything.\nThe ranking by Sharpe ratio. Sort the table by the Sharpe column and read it top to bottom. The equity markets and the US bond positions sit at the top; the positions in a foreign currency other than equities sit at the bottom, several of them with a Sharpe ratio around zero or below. Ask of every position near the bottom what premium it is being paid.\nWhat a foreign bond is in dollars. Compare the volatility of a country’s money-market position with that of its government bonds, and look at the correlation between the two. In dollars both are mostly the currency: the money market has the currency’s volatility on an excess return near zero, and the bond adds a few points of premium on top of the same currency risk. The game cannot hedge. Keep this in mind when you read the optimiser’s output in Chapter 4, and when you consider a tactical position in Chapter 6.\nThe correlation structure. The five equity markets move together, with correlations around 0.4 to 0.65 against the US; US government bonds are slightly negatively correlated with US equities. That negative correlation is what a defensive position is for.\n\n\n\n\n\n\nNoteWhere the money market is\n\n\n\nExcess returns are measured over the US money-market rate, so the money market is the zero line of the table. The five money-market positions themselves are not in the benchmark: the game’s strategic grid has no cash row, and the client leaves cash to the manager. Add them in station 1 if you want to see them (in dollars, a foreign money-market position is the currency and nothing else); leave them out when you optimise the strategic allocation.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Reading the market</span>"
+    ]
+  },
+  {
+    "objectID": "03_market.html#what-not-to-do-here",
+    "href": "03_market.html#what-not-to-do-here",
+    "title": "3  Reading the market",
+    "section": "3.3 What not to do here",
+    "text": "3.3 What not to do here\n\nDo not shift means or volatilities “to reflect your view”. The strategic benchmark is the sample; views enter in Chapter 5.\nDo not shorten the sample for the strategic allocation. The client’s benchmark is defined on the full history; a shorter window produces a different allocation and a worse score.\nDo not drop benchmark positions from the selection. Zero weights are the optimiser’s job, and the statistics of the full benchmark universe are what the attribution later refers to.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Reading the market</span>"
+    ]
+  },
+  {
+    "objectID": "03_market.html#deliverable-of-this-step",
+    "href": "03_market.html#deliverable-of-this-step",
+    "title": "3  Reading the market",
+    "section": "3.4 Deliverable of this step",
+    "text": "3.4 Deliverable of this step\nNothing to type into the game. What you should be able to say: which positions carry a portfolio and why; what a foreign bond or money-market position is, seen from the dollar; what the correlation between equities and US government bonds buys you.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Reading the market</span>"
+    ]
+  },
+  {
+    "objectID": "04_saa.html",
+    "href": "04_saa.html",
+    "title": "4  Setting the strategic allocation",
+    "section": "",
+    "text": "4.1 What the optimiser is doing\nWith the client and the market understood, the next step is the strategic allocation, the benchmark against which every tactical decision is measured. The strategic allocation is entered once per fund on the Investment strategy page and stays for the whole game. It is the benchmark: risk-adjusted performance, attribution and the strategic allocation analysis on the Analyst page are measured against it. The game also holds, invisibly, the allocation its parameters say is optimal for the client; the closer your strategic allocation is to it, the better the client is served.\nThat optimal allocation is not arbitrary: it follows a fixed rule, and this book states the rule. It is the solution to a quadratic optimisation problem:\nSo the task is not to invent an allocation. It is to estimate γ well (Chapter 2) and run the optimisation on the right data.\nThe objective above is mean–variance optimisation (MVO), the framework introduced by Markowitz (1952). It is worth a moment on what it does, because the output only makes sense if you know what the optimiser is trying to achieve.\nEvery candidate portfolio has two summary numbers. Its expected excess return is the weighted average of the excess returns of its holdings. Its variance is not just the weighted average of the holdings’ variances: it also depends on how the holdings move together (their covariances). Two assets that move in lockstep diversify nothing; two that move independently partly offset each other. That is the whole point of diversification, and it is the reason the optimiser does not simply pile into the single highest-return asset.\nPlot every possible portfolio in (volatility, expected return) space and you get a cloud. The upper-left edge of that cloud is the efficient frontier: the portfolios that offer the most expected return for their level of risk. Any portfolio below the frontier is dominated: another portfolio offers more return for the same risk, or less risk for the same return. The optimiser finds the frontier and then picks the one point on it that the client’s \\(\\gamma\\) selects. A higher \\(\\gamma\\) pushes the choice down and to the left (quieter, lower return); a lower \\(\\gamma\\) pushes it up and to the right (riskier, higher return).\nTwo consequences follow, and both matter for the checks:",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting the strategic allocation</span>"
+    ]
+  },
+  {
+    "objectID": "04_saa.html#what-the-optimiser-is-doing",
+    "href": "04_saa.html#what-the-optimiser-is-doing",
+    "title": "4  Setting the strategic allocation",
+    "section": "",
+    "text": "Figure 4.1: The Markowitz Efficient Frontier\n\n\n\n\n\nThe allocation is a point on the frontier, not a forecast. It says “given these inputs and this \\(\\gamma\\), this is the best trade-off available.” It does not say which asset class will win next year.\nMVO is sensitive to its inputs. Small changes in expected returns or in the covariance matrix can move the optimal weights a long way, sometimes into concentrated positions. That is why the checks below look not only at the weights but at what the optimiser chose to leave at zero.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting the strategic allocation</span>"
+    ]
+  },
+  {
+    "objectID": "04_saa.html#station-2-of-the-app-step-by-step",
+    "href": "04_saa.html#station-2-of-the-app-step-by-step",
+    "title": "4  Setting the strategic allocation",
+    "section": "4.2 Station 2 of the app, step by step",
+    "text": "4.2 Station 2 of the app, step by step\n\nClient box. Enter your estimate of γ (whole numbers). Pick the home market from Meet client X and set the share at home to what the card says. Objective: Quadratic utility. Give the run a label, e.g. “Hartley, UK”.\nLimits by asset class. Commodities: min = the floor, or max 0 if the client holds none. Leave everything else at 0 and 1.\nLimits by currency and per position. Leave at 0 and 1 unless the card says otherwise. The optimiser decides.\nOptimise. Read the matrix.\nCheck (below). If it passes, Fix this allocation as an SAA; it is now available to the tactical stations.\nEnter it in the game: Investment strategy → Strategic allocation, the currency × asset class grid, in percent. Commodities go into the USD column.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting the strategic allocation</span>"
+    ]
+  },
+  {
+    "objectID": "04_saa.html#worked-example-the-hartleys",
+    "href": "04_saa.html#worked-example-the-hartleys",
+    "title": "4  Setting the strategic allocation",
+    "section": "4.3 Worked example: the Hartleys",
+    "text": "4.3 Worked example: the Hartleys\nInputs: γ = 8, home UK with half of the equity book at home, commodities ≥ 5 %. Output, as the game shows it:\n\n\n\n\nUSD\nGBP\nEUR\nCHF\nJPY\nTotal\n\n\n\n\nGovernment bonds\n38.0\n0\n0\n0\n0\n38.0\n\n\nCorporate bonds\n10.5\n0\n0\n0\n0\n10.5\n\n\nEquities\n17.0\n23.0\n3.5\n1.5\n1.5\n46.5\n\n\nCommodities\n5.0\n0\n0\n0\n0\n5.0\n\n\nTotal\n70.5\n23.0\n3.5\n1.5\n1.5\n100.0\n\n\n\nIn-sample results of these fixed weights, rebalanced monthly: expected excess return 6.4 %, volatility 7.5 %, Sharpe ratio 0.85, worst calendar year −13.9 %, maximum drawdown −22 %. Binding limit: the commodity floor. Home share of the equity book: 49 % (50 % before rounding).\nRead the matrix as the client will. The defensive part of the fund is in dollars. The equity book is half British, and the other half follows the capitalisation of the remaining markets, which puts the United States first. Everything the card did not ask for is zero.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting the strategic allocation</span>"
+    ]
+  },
+  {
+    "objectID": "04_saa.html#the-checks-before-you-fix-it",
+    "href": "04_saa.html#the-checks-before-you-fix-it",
+    "title": "4  Setting the strategic allocation",
+    "section": "4.4 The checks before you fix it",
+    "text": "4.4 The checks before you fix it\n\nThe rules are met and nothing else binds. The station lists the binding limits; for a well-read client only the floor you entered appears.\nInside the guidance bands. For the Hartleys the card quotes government bonds 15–52 %, corporate bonds 6–18 %, equities 37–63 %. The example sits inside all three. If a class is outside its band, your γ is outside the bracket: move it toward the middle.\nHome share of the equity book as stated. Rounding moves it by a point.\nPlausible risk. Worst year and drawdown should fit the words on the card. The Hartleys “would not want to see a year like 2008 again”; a worst year of −14 % in thirty years is consistent with that, a worst year of −23 % is not.\nLook at what is zero. If a position with a Sharpe ratio near zero in station 1 appears in the allocation, a limit is forcing it. Ask which.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting the strategic allocation</span>"
+    ]
+  },
+  {
+    "objectID": "04_saa.html#what-a-wrong-γ-costs",
+    "href": "04_saa.html#what-a-wrong-γ-costs",
+    "title": "4  Setting the strategic allocation",
+    "section": "4.5 What a wrong γ costs",
+    "text": "4.5 What a wrong γ costs\nDistance is half the sum of absolute weight differences to the benchmark, in points. For the Hartleys, whose benchmark is the γ = 8 allocation above:\n\n\n\n\n\n\n\n\n\n\n\n\n\nγ chosen\n5.5\n6\n7\n8\n9\n10\n11\n\n\n\n\nEquities %\n62.5\n58.5\n51.5\n46.5\n43\n40\n37\n\n\nGovernment bonds %\n15\n21\n31\n38\n43.5\n48\n52\n\n\nVolatility %\n10.0\n9.4\n8.3\n7.5\n7.0\n6.6\n6.2\n\n\nWorst year %\n−23\n−21\n−17\n−14\n−12\n−10\n−8\n\n\nDistance to the benchmark, points\n23\n17\n7\n0\n5.5\n10\n14\n\n\n\nThe cost is continuous. An estimate one point off costs 5 to 7 points of allocation; the ends of the bracket cost 14 to 23. This is the score of the “know your client” step. Note also how the worst year moves with γ: the risk words on the card are a second way to place γ in the bracket.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting the strategic allocation</span>"
+    ]
+  },
+  {
+    "objectID": "04_saa.html#traps",
+    "href": "04_saa.html#traps",
+    "title": "4  Setting the strategic allocation",
+    "section": "4.6 Traps",
+    "text": "4.6 Traps\nMaximum Sharpe ratio and minimum variance. Neither is the client’s allocation; the client is defined by γ. Both objectives in the app are for comparison only, and with the money-market positions added to the selection they collapse into cash.\nShortening the sample. The benchmark is defined on the full history. A shorter window moves every number.\nAdding limits the card does not state. A cap on one equity market, a floor on home bonds, a currency limit, a cash floor: each moves the allocation away from the benchmark and is a bet the client did not ask for.\nEntering the matrix wrongly. The game’s grid is currency × asset class. Commodities are a USD position. Check that each column and row sums to the app’s totals.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting the strategic allocation</span>"
+    ]
+  },
+  {
+    "objectID": "04_saa.html#deliverable-of-this-step",
+    "href": "04_saa.html#deliverable-of-this-step",
+    "title": "4  Setting the strategic allocation",
+    "section": "4.7 Deliverable of this step",
+    "text": "4.7 Deliverable of this step\nPer fund: the SAA fixed in the app, the same matrix entered in the game, and a one-line record of the inputs (γ, rules, home) in the team forum, so that the tactical stations and the results discussion refer to the same thing all game. Save the app session as well (Save, a JSON file); Load restores the SAAs in a later round.\n\n\n\n\nMarkowitz, Harry. 1952. “Portfolio Selection.” The Journal of Finance 7 (1): 77–91.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting the strategic allocation</span>"
+    ]
+  },
+  {
+    "objectID": "05_views.html",
+    "href": "05_views.html",
+    "title": "5  From the Economic outlook to views",
+    "section": "",
+    "text": "5.1 What the outlook gives you\nOnce the strategic allocation is fixed, the next step is to read the Economic outlook and turn it into views. The outlook is forward-looking information about the coming period; the views are what you enter into the app to tilt the tactical allocation away from the strategic one and outperform your benchmark.\nThe Economic outlook page shows the analyst’s estimate of the coming period, with an expected range around each number.\nIt provides a narrative report on the economy and the markets, along with estimates for:\nThe algorithm behind the game uses these estimates to build a set of expected excess returns for the 16 benchmark positions. You can edit each estimate: click it and enter a new value.\nNone of this changes the strategic allocation. It changes what you expect relative to the benchmark for the next round, and that is a view.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>From the Economic outlook to views</span>"
+    ]
+  },
+  {
+    "objectID": "05_views.html#what-the-outlook-gives-you",
+    "href": "05_views.html#what-the-outlook-gives-you",
+    "title": "5  From the Economic outlook to views",
+    "section": "",
+    "text": "Interest rates by maturity and currency\nEconomic indicators\nThe expected excess market return and the factor premia (HML, MOM, RMW) per currency\nCredit spreads\nExchange rates",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>From the Economic outlook to views</span>"
+    ]
+  },
+  {
+    "objectID": "05_views.html#reading-the-outlook-the-business-cycle",
+    "href": "05_views.html#reading-the-outlook-the-business-cycle",
+    "title": "5  From the Economic outlook to views",
+    "section": "5.2 Reading the outlook: the business cycle",
+    "text": "5.2 Reading the outlook: the business cycle\nThe outlook gives you numbers. Your job is not to copy them into the app; it is to decide whether you believe them, and where you disagree. The Investment Clock is the lens that turns the outlook’s economic indicators into a view about which asset classes are likely to lead and lag over the coming quarters.\n\n5.2.1 The cycle in one paragraph\nEconomic variables do not move independently. Growth, inflation, employment and confidence evolve together through a recurring pattern of expansion and contraction. The pattern is not a law, but it is a useful empirical regularity. The framework classifies the economy by two things: the direction of growth relative to trend (rising or falling) and the direction of inflation (rising or falling). Those two directions define four phases. Each phase has historically favoured a different asset class, and the outlook’s numbers are what tell you which phase the economy is in.\nThe framework is the Investment Clock of Greetham and Hartnett (2004). The four phases and the asset-class rotation they imply are summarised in the figure below.\n\n\n\n\n\n\n\n\nFigure 5.1: The theoretical economic cycle: output gap and inflation. Source: Greetham and Hartnett (2004).\n\n\n\n\n\n\n\n5.2.2 The four phases\n\nThe four phases of the Investment Clock. Source: Greetham and Hartnett (2004). The growth column refers to the direction of the output gap, not its level.\n\n\n\n\n\n\n\n\n\nPhase\nGrowth\nInflation\nBest asset class\nWhy\n\n\n\n\nReflation\nFalling\nFalling\nBonds\nCentral banks cut rates aggressively; bond yields fall and prices rise.\n\n\nRecovery\nRising\nFalling\nStocks\nGrowth turns up while rates stay low; profits recover fastest.\n\n\nOverheat\nRising\nRising\nCommodities\nCapacity is used up and inflation rises; real assets benefit.\n\n\nStagflation\nFalling\nRising\nCash\nGrowth slows but inflation stays high; the central bank cannot cut.\n\n\n\nThe table is a stylised summary. The point is not that the pattern repeats exactly, but that the direction of growth and inflation tells you something about which asset class the environment is likely to favour.\nThe pattern is not just theory. The historical record from the United States, covering April 1973 through July 2004, shows the same rotation in realised returns.\n\nU.S. real total returns by phase, 1973–2004, geometric annual averages in percent. Source: Greetham and Hartnett (2004).\n\n\nPhase\nBonds\nStocks\nCommodities\nCash\n\n\n\n\nReflation\n9.8\n6.4\n−11.9\n3.3\n\n\nRecovery\n7.0\n19.9\n−7.9\n2.1\n\n\nOverheat\n0.2\n6.0\n19.7\n1.2\n\n\nStagflation\n−1.9\n−11.7\n28.6\n−0.3\n\n\nFull sample\n3.5\n6.1\n5.8\n1.5\n\n\n\nThe magnitudes are large: the difference between holding stocks in Recovery and holding them in Stagflation is over thirty percentage points of annual real return. The numbers come with caveats: they are drawn from one country and one period, and the commodity figures are heavily influenced by the oil shocks of the 1970s, so the direction of the pattern is more informative than the specific figures. What the table shows is that asset-class leadership rotates with the cycle. It does not promise that the same magnitudes will repeat.\n\n\n5.2.3 Reading a classification off the outlook\nThe outlook reports, for each economy, the GDP path, the inflation path, the unemployment rate and confidence indices. The classification combines the direction of growth with the direction of inflation.\nThe example below uses constructed numbers, not figures from the game; the numbers you see in a round will differ, but the exercise is the same.\nSuppose the outlook reports the following for two economies, A and B.\n\n\n\n\n\n\n\n\nIndicator\nEconomy A\nEconomy B\n\n\n\n\nGDP growth, last four quarters\nrising steadily\nrising, but slowing over the last two quarters\n\n\nInflation, current vs four quarters ago\n0.6 % → 1.9 %\n1.4 % → 1.4 %\n\n\nUnemployment, current vs four quarters ago\n5.4 % → 4.6 %\n5.0 % → 4.9 %\n\n\nConsumer confidence\nrising sharply\nflat\n\n\nBusiness confidence\nabove its long-run average\nfalling sharply\n\n\n\nEconomy A is in Overheat. GDP is rising steadily, unemployment is falling, and both consumer and business confidence are at levels consistent with an economy running above trend. Inflation has moved up sharply. Rising growth and rising inflation together place A in Overheat.\nEconomy B is in Recovery. GDP growth is positive but decelerating, inflation is flat and low, and business confidence has fallen sharply. Growth is still rising relative to trend but the momentum is fading. B is in the later part of Recovery, and the fading momentum is a warning: if growth falls back below trend, the clock turns back toward Reflation.\nThe classification gives you a direction for each segment in the client’s universe:\n\n\n\nSegment\nEconomy\nPhase\nDirectional view\n\n\n\n\nEquities A\nA\nOverheat\nOverweight\n\n\nEquities B\nB\nRecovery\nOverweight\n\n\nGovernment bonds A\nA\nOverheat\nUnderweight\n\n\nGovernment bonds B\nB\nRecovery\nUnderweight\n\n\n\nThis table is the direction step. It is not yet a set of Black–Litterman views. To turn it into views, each row is compared to the prior in station 3, the gap is sized, and the confidence is set from the strength of the cross-checks (below).\n\n\n5.2.4 Cross-checks\nThe classification is a hypothesis, not a conclusion. The outlook supplies two further sources of evidence that can confirm or contradict it.\nSector data. The four phases favour different equity sectors. Cyclical and value sectors (industrials, basic materials) lead in Overheat and Recovery; defensive growth sectors (consumer staples) lead in Reflation; defensive value sectors (oil and gas, pharmaceuticals, utilities) lead in Stagflation. If the sector table shows cyclical and value sectors leading over the recent windows, that is consistent with an Overheat or Recovery classification. If it shows defensive growth leading, that is inconsistent, and you should lower your confidence in the classification or reconsider it.\nFactor data. The outlook supplies value (HML), momentum (MOM) and robustness (RMW) premia per currency. Falling inflation favours growth stocks; rising inflation favours value stocks. Momentum is not tied to the level of growth or inflation but to the persistence of the market’s direction: a clear phase transition favours momentum, a stalled or backward clock does not. If the factor data shows momentum leading, that is consistent with a market moving through a phase transition. If value is weakening while the classification says inflation is rising, that is a counter-signal.\nThe rule is simple: two or more confirming signals support the classification; a confirming signal and a contradicting one lower your confidence; a classification contradicted by both the sector and factor data should be revisited before you enter a view. The confidence you set in the Black–Litterman step (below) should reflect how many signals agree.\n\n\n5.2.5 What the classification gives you\nA direction for each segment, and a confidence based on the cross-checks. That is the input to the Black–Litterman step. The classification does not tell you how much to tilt; the Black–Litterman model does that, weighted by your confidence and by the size of the gap between the outlook and the prior.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>From the Economic outlook to views</span>"
+    ]
+  },
+  {
+    "objectID": "05_views.html#a-view-in-the-form-the-app-needs",
+    "href": "05_views.html#a-view-in-the-form-the-app-needs",
+    "title": "5  From the Economic outlook to views",
+    "section": "5.3 A view, in the form the app needs",
+    "text": "5.3 A view, in the form the app needs\nStation 3 of the app takes views in the Black–Litterman form; station 4 turns them into tilts away from the strategic allocation. Each view is either:\n\nAbsolute: “position A earns x percent a year over cash”. Example: US equities earn 12 %.\nRelative: “position A beats position B by x points a year”. Example: euro-area equities beat Swiss equities by 2 points.\n\nEach view has a confidence between 5 and 95 percent. The prior the views are measured against is not the sample mean but the equilibrium implied by the fixed SAA: the expected returns under which the client’s strategic allocation is exactly optimal (Π = γΣw). With no views the posterior equals the prior, and the tactical allocation (Chapter 6) equals the strategic one. A view that agrees with the prior leaves it there too. Every deviation you see later can be traced to a view you entered.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>From the Economic outlook to views</span>"
+    ]
+  },
+  {
+    "objectID": "05_views.html#turning-the-outlook-into-views",
+    "href": "05_views.html#turning-the-outlook-into-views",
+    "title": "5  From the Economic outlook to views",
+    "section": "5.4 Turning the outlook into views",
+    "text": "5.4 Turning the outlook into views\nA practical recipe, per round:\n\nStart from the prior table in station 3 (column “Prior, implied by the SAA”). For the Hartleys’ SAA the implied excess return of US equities is 7.5 %, of UK equities 9.5 %, of US government bonds 0.4 %.\nCompare with the outlook. Build the outlook’s expected excess return for a segment the way the game does: for equities, the expected excess market return plus the factor premia you expect the segment to earn (the analyst’s figures, or your own); for government bonds, the change in yields you expect (a rise in yields is a negative return for a constant-maturity bond: roughly minus duration times the yield change) plus the running yield; for corporate bonds the same plus the spread.\nState the difference as a view, in annual terms. If the outlook says US equities should do better than the prior implies, enter an absolute view above 7.5 %. If it says only that one market beats another, enter a relative view; relative views are safer, because they do not require you to translate a quarterly estimate into an annual level.\nSet the confidence from the expected range. An estimate at the centre of a narrow range: 70 to 80 %. An estimate at the edge of its range, or a narrative you half believe: 30 to 50 %. The default 50 % is the textbook He–Litterman setting.\nKeep τ at 0.05 unless you want every view to move the allocation more (higher τ) or less (lower τ).\nRead the posterior table: which positions moved, by how much, and whether the sign is the one you meant. The “Change” column is your view after the model has weighed it against the prior.\n\n\n\n\n\n\n\nTipOne set of views for all funds\n\n\n\nViews are about the market, not about the client. Enter the same views for every fund; the tilt they produce differs by client (Chapter 6), because each fund has its own prior and its own γ. The app keeps the views and lets you switch the fixed SAA it is applied to.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>From the Economic outlook to views</span>"
+    ]
+  },
+  {
+    "objectID": "05_views.html#worked-example",
+    "href": "05_views.html#worked-example",
+    "title": "5  From the Economic outlook to views",
+    "section": "5.5 Worked example",
+    "text": "5.5 Worked example\nOutlook: the analyst’s expected excess market return for USD is at the top of its range, the US narrative is strong, and the factor premia are positive. We hold the view that US equities earn 12 % over cash next year, confidence 50 %, τ = 0.05.\nStation 3, the Hartleys: the prior for US equities is 7.5 %, the posterior 9.8 %. The view moves the posterior part of the way toward 12 %, and it lifts the positions correlated with US equities as well (UK equities from 9.5 to 11.2 %, euro-area equities from 9.7 to 11.6 %) while leaving US government bonds almost unchanged (0.39 to 0.30 %). For the Keller trust, the second invented client (γ = 5, home euro area, no commodities), the same view moves US equities from 7.7 to 9.8 %: a different prior, because a different SAA, and a different γ.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>From the Economic outlook to views</span>"
+    ]
+  },
+  {
+    "objectID": "05_views.html#what-not-to-do",
+    "href": "05_views.html#what-not-to-do",
+    "title": "5  From the Economic outlook to views",
+    "section": "5.6 What not to do",
+    "text": "5.6 What not to do\n\nDo not enter the sample mean as a view. It is already in the SAA.\nDo not enter a view on a position the SAA does not hold unless you mean to open it. An absolute view on a foreign position is also a view on its currency: a view on euro-area government bonds opens a euro position against the dollar (Chapter 6).\nDo not enter five views at 95 % confidence in round 1. The tactical allocation is scaled by confidence; a wall of certain views produces a wall of tilts and a tracking error the client did not sign up for.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>From the Economic outlook to views</span>"
+    ]
+  },
+  {
+    "objectID": "05_views.html#deliverable-of-this-step",
+    "href": "05_views.html#deliverable-of-this-step",
+    "title": "5  From the Economic outlook to views",
+    "section": "5.7 Deliverable of this step",
+    "text": "5.7 Deliverable of this step\nThe views for the round, written down with their confidence and the sentence from the outlook that justifies each, in the team forum. They are what you will judge in Chapter 9.\n\n\n\n\nGreetham, Trevor, and Michael Hartnett. 2004. The Investment Clock. Special Report No. 1. Merrill Lynch.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>From the Economic outlook to views</span>"
+    ]
+  },
+  {
+    "objectID": "06_taa.html",
+    "href": "06_taa.html",
+    "title": "6  Setting the tactical allocation",
+    "section": "",
+    "text": "6.1 What the model does\nBy default the game copies the strategic allocation into the tactical allocation. Disabling the automatic tactical allocation on the Investment strategy page opens the tactical grid. There you use your views to tilt the tactical allocation away from the strategic one. The tactical allocation is the one the round is run on; the strategic allocation stays the benchmark. The page estimates the tracking error of your tactical allocation against the benchmark and the projected information ratio from the forecast returns.\nThe tactical step is a Black–Litterman model. It takes the strategic allocation as the starting point, blends in the views you entered in station 3, and produces a posterior set of expected returns. Station 4 then optimises the tactical allocation on those posterior returns, within the band and the tracking-error budget. The point of the model is that the tilt is driven by your views and not by the optimiser chasing noise in the expected-return estimates.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Setting the tactical allocation</span>"
+    ]
+  },
+  {
+    "objectID": "06_taa.html#what-the-model-does",
+    "href": "06_taa.html#what-the-model-does",
+    "title": "6  Setting the tactical allocation",
+    "section": "",
+    "text": "6.1.1 The prior: the strategic allocation, reverse-optimised\nThe model starts from the strategic allocation. Rather than asking “what returns do I expect?”, it asks the reverse question: what expected returns would make the strategic allocation optimal? That is the prior, and it is the same one introduced in the previous chapter:\n\\[\n\\Pi = \\gamma \\Sigma w\n\\]\nwhere \\(w\\) is the strategic allocation, \\(\\Sigma\\) is the covariance matrix, and \\(\\gamma\\) is the client’s risk aversion. The prior encodes both the capital market assumptions and the client’s risk tolerance. If you have no views, the posterior equals the prior, and the tactical allocation equals the strategic one.\n\n\n6.1.2 The views\nA view is a statement about expected returns, expressed in one of two forms:\n\nAbsolute: “US equities earn 12 % over cash”. In the model this is a row of the view matrix \\(P\\) that picks out US equities, with the view’s expected return in the corresponding row of \\(Q\\).\nRelative: “euro-area equities beat Swiss equities by 2 points”. This is a row of \\(P\\) with \\(+1\\) on euro-area equities and \\(-1\\) on Swiss equities, and the 2 points in \\(Q\\). A relative view does not move both positions the same way: it moves the long side up and the short side down, in proportion to how precise the view is.\n\nEach view has a confidence, which enters the model through the matrix \\(\\Omega\\). A high-confidence view has a small entry in \\(\\Omega\\) (low uncertainty); a low-confidence view has a large entry. In station 3 the views are treated as independent, so \\(\\Omega\\) is diagonal and each view’s confidence affects only that view’s pull on the posterior.\n\n\n6.1.3 The posterior\nThe posterior expected returns are the precision-weighted average of the prior and the views:\n\\[\nE(R) = \\underbrace{\\left[(\\tau\\Sigma)^{-1} + P^T\\Omega^{-1}P\\right]^{-1}}_{\\text{combined precision}}\n       \\underbrace{\\left[(\\tau\\Sigma)^{-1}\\Pi + P^T\\Omega^{-1}Q\\right]}_{\\text{precision-weighted sum}}\n\\]\nEvery symbol is one of four things: an input you supply, a parameter you set, a matrix the station builds from your views, or a quantity the model computes. The table lists them all.\n\n\n\n\n\n\n\n\nSymbol\nWhat it is\nIn the station\n\n\n\n\n\\(E(R)\\)\nThe posterior expected excess returns, one per position.\nThe output. These are the returns station 4 optimises on.\n\n\n\\(\\Pi\\)\nThe prior expected excess returns, one per position.\nComputed from the fixed SAA: \\(\\Pi = \\gamma\\Sigma w\\).\n\n\n\\(\\Sigma\\)\nThe covariance matrix of the positions.\nFrom station 2’s sample covariance.\n\n\n\\(\\tau\\)\nA scalar that scales the uncertainty in the prior.\nAn input. Default 0.05.\n\n\n\\(P\\)\nThe view matrix. Each row is one view: \\(+1\\) on the position the view is “for”, \\(-1\\) on the position it is “against” (or a single \\(+1\\) for an absolute view).\nBuilt by the station from the views you entered.\n\n\n\\(Q\\)\nThe view returns, one per view: the expected return the view asserts, in annual terms.\nBuilt by the station from the views you entered.\n\n\n\\(\\Omega\\)\nThe view covariance matrix, diagonal when views are independent. Each diagonal entry is the variance of the corresponding view.\nBuilt by the station from the confidence you set on each view.\n\n\n\\((\\tau\\Sigma)^{-1}\\)\nThe precision of the prior: how strongly the model believes the strategic allocation.\nComputed.\n\n\n\\(P^T\\Omega^{-1}P\\)\nThe precision of the views: how strongly the model believes your views, in the directions they point.\nComputed.\n\n\n\nWith the symbols in hand, the formula says one thing: the posterior is a weighted average of the prior \\(\\Pi\\) and the views \\(Q\\), with the weights set by their relative precision. If the views are very precise relative to the prior, the posterior is pulled close to \\(Q\\). If the prior is very precise, the posterior stays close to \\(\\Pi\\). If there are no views, \\(P\\) and \\(Q\\) are empty, \\(P^T\\Omega^{-1}P = 0\\), and the posterior equals the prior.\nWhat \\(\\tau\\) and \\(\\Omega\\) do. \\(\\tau\\) scales the uncertainty in the prior. A larger \\(\\tau\\) means the model is less confident in the strategic allocation, so the views receive relatively more weight; a smaller \\(\\tau\\) anchors the posterior more firmly to the strategic allocation. The conventional choice, and the default in station 3, is \\(\\tau = 0.05\\). Changing \\(\\tau\\) changes every view’s influence at once; it is not a per-view setting. \\(\\Omega\\) encodes the confidence in each view. A smaller entry means the model treats the view as more precise, so the posterior moves further; a larger entry means the view is treated as noisy, so the posterior moves less. Together, \\(\\tau\\) and \\(\\Omega\\) determine how far the tactical allocation tilts away from the strategic one.\n\n\n6.1.4 Why the tactical step differs from the strategic one\nThe Black–Litterman posterior is used in station 4 with three modifications relative to station 2:\n\nNo home rule. The home rule defines the benchmark, so keeping it in the tactical step would force the equity book to grow or shrink in fixed regional proportions, and a view on one market could not act. The client’s other limits stay, the commodity floor included.\nThe sample covariance. Risk is measured with the covariance of station 2, not the posterior covariance. Using the posterior covariance would raise measured risk as soon as any view is entered, and push every fund from equities into bonds regardless of what the view said.\nBand and tracking-error budget. The maximum deviation per position (default ± 5 points) and the tracking-error budget (default 2 % a year) limit how far the tactical allocation can stray from the benchmark. If the optimum exceeds the budget, the deviation is scaled down to it.\n\nWith these in place, every deviation from the strategic allocation is traceable to a view. A view that agrees with the prior leaves the tactical allocation at the strategic one; a view that disagrees produces a tilt, and the size of the tilt is set by the confidence and by the band and budget.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Setting the tactical allocation</span>"
+    ]
+  },
+  {
+    "objectID": "06_taa.html#station-4-of-the-app",
+    "href": "06_taa.html#station-4-of-the-app",
+    "title": "6  Setting the tactical allocation",
+    "section": "6.2 Station 4 of the app",
+    "text": "6.2 Station 4 of the app\nInputs:\n\nStrategic allocation to work on: one of the SAAs fixed in station 2.\nMaximum deviation per position: a band of ± this share around each strategic weight; default 0.05, five points. The long-only floor stays in force.\nTracking-error budget, percent a year; default 2, and 0 means none. If the optimum exceeds the budget, the deviation is scaled down to it.\n\nPress Optimise the tactical allocation of every fund. For each fixed SAA the station maximises the utility of station 2, with the client’s γ and limits, on the posterior expected returns of station 3, within the band.\nWithout views the tactical allocation equals the SAA. A view that agrees with the prior leaves it there too. So every deviation comes from a view. Output: the strategic matrix, the tactical matrix, their difference in points, the tracking error, the expected active return under the posterior and under the prior, and the in-sample comparison. A negative expected active return under the posterior is flagged.\nThe summary table applies your views to every fixed SAA and shows the tilt per asset class: the same view produces a different tilt per client.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Setting the tactical allocation</span>"
+    ]
+  },
+  {
+    "objectID": "06_taa.html#worked-example",
+    "href": "06_taa.html#worked-example",
+    "title": "6  Setting the tactical allocation",
+    "section": "6.3 Worked example",
+    "text": "6.3 Worked example\nView: US equities earn 12 % over cash, confidence 50 % (Chapter 5). Band ± 5 points and tracking-error budget 2 %, the defaults; the budget does not bind.\nThe Hartleys (γ = 8, home UK), deviation of the tactical from the strategic allocation in points:\n\n\n\n\nUSD\nGBP\nEUR\nCHF\nJPY\nTotal\n\n\n\n\nGovernment bonds\n−5.0\n0\n0\n0\n0\n−5.0\n\n\nCorporate bonds\n−4.0\n+1.0\n0\n0\n0\n−3.0\n\n\nEquities\n+5.0\n+2.0\n+0.5\n+0.5\n0\n+8.0\n\n\nCommodities\n0\n0\n0\n0\n0\n0\n\n\n\nTracking error 1.3 % a year, expected active return +0.7 % under the posterior. US equities rise by the full band of 5 points: the band, not the view, decides how much. The rest of the view goes to the markets that move with US equities, whose posterior rose too (Chapter 5): the UK gains 2 points, the euro area and Switzerland half a point each. The tilt is funded from US government bonds, again the full band, and US corporate bonds.\nThe equity book no longer keeps the benchmark’s home share: the UK falls from 49 to 46 % of it. That is intended. The home rule defines the benchmark, not the bet.\nThe Keller trust (γ = 5, home euro area), same view: equities +10 points (US +5, euro area +2.5, UK +2, Switzerland +0.5), government bonds −5 and corporate bonds −5, both in dollars; tracking error 1.5 %, expected active return +1.0 %. Same view, a larger tilt: with a lower γ the Kellers accept more risk for a point of expected return.\nWith a tracking-error budget of 1 % both tilts are scaled down: the Hartleys to +6.4 points of equity, the Kellers to +6.5 (the summary table, before rounding).",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Setting the tactical allocation</span>"
+    ]
+  },
+  {
+    "objectID": "06_taa.html#two-cautions",
+    "href": "06_taa.html#two-cautions",
+    "title": "6  Setting the tactical allocation",
+    "section": "6.4 Two cautions",
+    "text": "6.4 Two cautions\nAn absolute view on a foreign-currency position is also a currency view. The game’s data are in dollars, unhedged, and all positions in one currency share that currency. Take the view “euro-area government bonds earn 4 % over cash”, confidence 50 %. For the Hartleys the station moves 5 points into euro-area government bonds and 5 more into euro-area corporate bonds, on which you had no view, funded from US bonds. That is 10 points of euro against the dollar; tracking error 1.0 %. For a view on foreign rates, state it relative to US government bonds: “euro-area government bonds beat US government bonds by 3.5 points” (the prior spread is 1.8). That says what the bet is. It does not remove the euro: here the station builds the same 10-point euro position. Read the currency totals of the deviation matrix before you enter it.\nThe client’s commodity floor stays a floor. A negative view cannot take commodities below it. Give the Hartleys the view “commodities earn 0 % over cash” (prior 2.6 %): commodities stay at 5 %, and the station rearranges the rest instead, government bonds +4 points, corporate bonds −3.5, equities −0.5. The expected active return is −0.1 %, and the app flags it: the tilt buys lower risk, not return. If the floor blocks your view, leave the fund at its SAA.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Setting the tactical allocation</span>"
+    ]
+  },
+  {
+    "objectID": "06_taa.html#entering-it-in-the-game",
+    "href": "06_taa.html#entering-it-in-the-game",
+    "title": "6  Setting the tactical allocation",
+    "section": "6.5 Entering it in the game",
+    "text": "6.5 Entering it in the game\n\nInvestment strategy → disable Automatic tactical allocation for the fund.\nType the tactical matrix (currency × asset class) from station 4.\nRead the game’s tracking-error estimate and projected information ratio. The estimate will not equal the app’s exactly (the game uses its own forecast returns and a shorter history), but the order of magnitude must agree. A projected information ratio below zero means the game’s forecasts disagree with your views; decide which you believe.\nRepeat for every fund with the same views.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Setting the tactical allocation</span>"
+    ]
+  },
+  {
+    "objectID": "06_taa.html#rules-of-thumb",
+    "href": "06_taa.html#rules-of-thumb",
+    "title": "6  Setting the tactical allocation",
+    "section": "6.6 Rules of thumb",
+    "text": "6.6 Rules of thumb\n\nTracking error 1 to 3 % a year is a normal tactical budget for a fund with a fixed benchmark; conservative clients at the low end.\nA tilt into a foreign bond is a currency bet. The attribution will show it as a currency effect. Make it only if it is the bet you mean. Cash is outside the benchmark: parking part of the fund in money market is an under-investment against every class, and the information ratio will say so.\nA negative expected active return is a warning. Use fewer views, relative rather than absolute, or a narrower band, or leave the fund at its SAA.\nStay close to what the card describes. The band in station 4 is your choice, not a client limit, and the tactical step does not impose the home rule. A tactical matrix far from the guidance bands costs clients.\nRe-enter every round. Between rounds the game moves holdings with returns and flows; the tactical grid you entered last round is not where the fund is now.\nNo views, no tilt. If the outlook gives you nothing you believe, leave the automatic tactical allocation on. Zero tracking error is a decision, not a failure.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Setting the tactical allocation</span>"
+    ]
+  },
+  {
+    "objectID": "06_taa.html#deliverable-of-this-step",
+    "href": "06_taa.html#deliverable-of-this-step",
+    "title": "6  Setting the tactical allocation",
+    "section": "6.7 Deliverable of this step",
+    "text": "6.7 Deliverable of this step\nThe tactical matrix per fund in the game, the tracking error and projected information ratio noted beside the views in the team forum.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Setting the tactical allocation</span>"
+    ]
+  },
+  {
+    "objectID": "07_securities.html",
+    "href": "07_securities.html",
+    "title": "7  From tactical weights to positions",
+    "section": "",
+    "text": "7.1 Automation preferences: the ESG floor\nThe tactical asset allocation is a grid of segment weights. The game’s automatic allocation translates each segment weight into positions, by value weighting or equal weighting, and rebalances them to the tactical weights after each round unless you switch it off.\nFor the first rounds, leave this automation on. The decisions that matter are above it.\nAutomatic and benchmark portfolio preferences is where the ESG requirement of the ESG funds is set: Minimum criteria → ESG rating → A (or the numeric threshold the game uses for A). The filter removes every asset below the floor from the fund’s investable set, in the current allocation and in the benchmark portfolio.\nTwo things to check:",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>From tactical weights to positions</span>"
+    ]
+  },
+  {
+    "objectID": "07_securities.html#automation-preferences-the-esg-floor",
+    "href": "07_securities.html#automation-preferences-the-esg-floor",
+    "title": "7  From tactical weights to positions",
+    "section": "",
+    "text": "The Matches column. A warning sign means a segment has no asset that passes the filter; money allocated to that segment stays in cash. On this universe an A floor should pass in every equity segment; if it does not, lower the threshold one notch rather than leave cash.\nThe weighting. Value weighting for equities is the default and matches the way the strategic allocation split the equity book across markets by capitalisation. Keep it.\n\n\n\n\n\n\n\nNoteWhy ESG binds here and not earlier\n\n\n\nRatings exist for equities only, and the market carries no ESG premium: the class-level statistics of station 1 are unchanged by the filter. What the filter costs is diversification inside each equity segment, which shows up as tracking error of the fund’s stock book against the segment line, not as a different strategic allocation. That is why the ESG funds’ strategic allocations differ from the others only by “no commodities” and by γ.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>From tactical weights to positions</span>"
+    ]
+  },
+  {
+    "objectID": "07_securities.html#asset-level-decisions-optional",
+    "href": "07_securities.html#asset-level-decisions-optional",
+    "title": "7  From tactical weights to positions",
+    "section": "7.2 Asset-level decisions (optional)",
+    "text": "7.2 Asset-level decisions (optional)\nDisabling Automatic current allocation opens the Markets page for asset-level decisions: the list of 180 assets with performance, benchmark weight, factor loadings, industry, maturity; each asset’s page with description, history, metrics and fundamentals. The Economic outlook’s Instrument performance subpage lets you enter an asset-level alpha if you expect a single asset to beat its segment.\nOur advice: do not do it in the practice rounds or in round 1. Security selection on top of the tactical tilt adds a layer of tracking error that is hard to attribute later, and the automation already produces a sensible, diversified book. If you do it:\n\nKeep the segment totals equal to the tactical weights, or the tactical decision is overwritten by the asset-level one.\nPrefer deviations inside a segment (overweight one issuer, underweight another) to deviations across segments.\nWrite down the thesis per deviation; the Analyst page attributes by industry, maturity and factor, and you will want to recognise your own bets.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>From tactical weights to positions</span>"
+    ]
+  },
+  {
+    "objectID": "07_securities.html#analyzing-the-fundamentals",
+    "href": "07_securities.html#analyzing-the-fundamentals",
+    "title": "7  From tactical weights to positions",
+    "section": "7.3 Analyzing the fundamentals",
+    "text": "7.3 Analyzing the fundamentals\nIf you decide to deviate from the automatic weight of a single asset, you need a thesis. A thesis is not “the stock is cheap” or “it has done well recently.” A thesis is a statement about the company’s fundamentals that the market has not yet priced in. The asset page provides the fundamentals you need to form one.\nYou do not need to be an accountant. You need to look at three things: whether the earnings are real (quality of earnings), how safely the company is financed (solvency and liquidity), and whether the price already reflects the good news (relative valuation).\n\n7.3.1 What the page gives you\nBefore running the analysis, it helps to know what data the game provides. The asset page contains much more than the ratios we cover here. The available fields are:\n\nAsset information: Asset class, area, country, industry, home currency.\nPerformance metrics: Price, return over 3 months, 1 year and 5 years, market capitalization.\nFactor loadings: Alpha, market beta, HML beta, MOM beta, RMW beta (both for the last round and long-term).\nOther metrics: Sharpe ratio.\nFundamentals overview (up to five years): Earnings per share (EPS), price-to-earnings (P/E), return on equity (ROE), return on investment (ROI), debt-to-equity, dividend yield, free cash flow (FCF) per share, revenue, operating margin, current ratio.\nESG ratings (up to five years): Environmental, Social, Governance, and Overall scores.\n\nThe analysis below focuses on the three important checks for security selection: Quality of Earnings, Solvency and Liquidity, and Relative Valuation. Other common ratios, such as price-to-book (P/B), EV/EBITDA, PEG and interest coverage, are not on the page and not covered here. They are useful for specific sectors (P/B for banks, EV/EBITDA for capital-intensive businesses) and for comparing companies with different capital structures.\n\n\n7.3.2 Quality of Earnings\nEPS is accounting profit, and accounting profit can be managed. A company can report a rising EPS by booking revenues early, delaying expenses, or capitalizing costs that should be expensed. To know whether the company is actually generating value, you must check the quality of those earnings against the cash the company generates.\nThe game provides Free Cash Flow (FCF) and Earnings per Share (EPS), but not Cash Flow from Operations. The most direct quality check available is therefore the FCF-to-EPS ratio:\n\\[\n\\text{Earnings Quality} = \\frac{\\text{FCF per share}}{\\text{EPS}}\n\\]\nA ratio near 1.0 means the company is generating enough free cash to back its reported profit. A ratio persistently below 1.0 (e.g., 0.4 or 0.6) is a red flag: the company is reporting earnings on paper but not generating the cash to back them up. This usually means it is spending heavily just to maintain its asset base (high capital expenditure), or it is not collecting its receivables. A ratio above 1.0 means the company is generating more cash than it reports in profit, which is generally a sign of conservative accounting.\nThree checks tell you if the earnings are real:\n\nFCF-to-EPS. The most direct test of whether reported profit is “real.” If FCF per share is persistently lower than EPS, the earnings are of low quality. Track the ratio over the years the page shows: a ratio that is improving is a better signal than a ratio that is high but falling.\nROI and ROE trends. A rising ROE might just mean the company is taking on more debt (since equity is the denominator). Check whether ROI, the return on all capital invested, moves in the same direction. If ROI is falling while ROE is rising, the profitability is an artifact of leverage, not a genuine improvement in the business. A healthy company shows both ROE and ROI rising together, or ROI rising faster than ROE.\nEPS growth stability. Is the EPS growth steady, or jumping around? Stable growth is higher quality than volatile growth.\n\n\n\n7.3.3 Solvency and Liquidity\nTwo ratios on the page describe the balance sheet, what the company owns and what it owes, and tell you if it can survive a bad year:\n\nCurrent Ratio. Current assets divided by current liabilities. This measures whether the company has enough short-term assets to cover its short-term bills. A ratio below 1.0 is a warning sign: the company cannot pay what it owes in the next twelve months. A ratio rising from below 1.0 to above 1.0 is a strong sign of improving liquidity.\nDebt-to-Equity (D/E). Total debt divided by shareholders’ equity. A high D/E means the company is highly leveraged. A falling D/E means it is paying down debt or growing equity, which reduces risk.\n\n\n\n7.3.4 Relative Valuation\nAn absolute price-to-earnings (P/E) ratio tells you almost nothing. A P/E of 10 might be expensive for a slow-growing utility but cheap for a fast-growing tech company. You have to compare it to two benchmarks:\n\nIts own history. Compare the current P/E to the company’s five-year average P/E. If the current P/E is much higher than its historical average, the stock is more expensive than it used to be. The market has re-rated it.\nThe market. Compare the current P/E to the market average. If the stock’s P/E is higher than the market, it is trading at a premium.\n\n\n\n\n\n\n\nTipApplying the numbers: a worked example\n\n\n\nSuppose you are looking at a European energy company (the numbers are invented). You read the page in three steps:\n\nQuality of Earnings. EPS has grown from €1.20 to €4.00 over four years, which is strong. ROI is 16 %, comfortably above the cost of capital. Most importantly, FCF per share has turned from negative (−€0.40) to positive (€3.00). The FCF-to-EPS ratio is therefore \\(3.00 / 4.00 = 0.75\\): the company is generating 75 cents of free cash for every euro of reported profit. It is not a perfect 1.0, but the trend is strongly positive (the ratio was negative four years ago), and 0.75 is high enough to confirm the earnings are backed by cash.\nSolvency and Liquidity. The current ratio has risen from 0.9 to 1.6. It is now comfortably above 1.0. D/E has fallen from 57 % to 31 %. The company has deleveraged and improved its short-term liquidity.\nRelative Valuation. The current P/E is 12. The five-year average P/E is 6.5. The market average is, say, 15.\n\nVersus history: \\(12 / 6.5 \\approx 1.85\\). The stock is almost twice as expensive as its own history.\nVersus market: \\(12 / 15 = 0.8\\). The stock is cheaper than the market.\n\n\nThe verdict. The fundamentals are clearly better than they were four years ago. The FCF-to-EPS ratio confirms the profit is real and backed by cash, the current ratio confirms the company can pay its bills, and the D/E confirms it is deleveraging. However, the stock has re-rated from a P/E of 6.5 to a P/E of 12. While it still trades below the broad market, it is nearly double its historical multiple. The market has already priced in the recovery. The thesis is “strong, high-quality fundamentals, but the valuation premium relative to its own history leaves no margin of safety.” That supports a neutral or underweight position, not because the company is weak, but because the price is full.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>From tactical weights to positions</span>"
+    ]
+  },
+  {
+    "objectID": "07_securities.html#deliverable-of-this-step",
+    "href": "07_securities.html#deliverable-of-this-step",
+    "title": "7  From tactical weights to positions",
+    "section": "7.4 Deliverable of this step",
+    "text": "7.4 Deliverable of this step\nFor the ESG funds: the floor set and the Matches column clean. For all funds: a conscious decision that asset-level automation stays on (or a written list of asset-level deviations).",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>From tactical weights to positions</span>"
+    ]
+  },
+  {
+    "objectID": "08_submit.html",
+    "href": "08_submit.html",
+    "title": "8  Fees, projections, submission",
+    "section": "",
+    "text": "8.1 Fees\nWith the allocation set, the fund needs a fee: it pays the firm’s staff and earns its profit.\nThe fee of each fund is set on the Clients page, in percent a year, and charged per round (a quarter-round charges a quarter of it). Three facts from the game:\nA workable rule for the first rounds: a modest fee, differentiated by type (higher for the dynamic funds), unchanged until the results show how AuM responds. Fees are the one decision the game lets you revise every round with an immediate, visible effect in Projections; changing them every round, however, makes the attribution of AuM changes to your investment decisions impossible.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Fees, projections, submission</span>"
+    ]
+  },
+  {
+    "objectID": "08_submit.html#fees",
+    "href": "08_submit.html#fees",
+    "title": "8  Fees, projections, submission",
+    "section": "",
+    "text": "Higher fees turn clients away and raise revenue per client.\nClients tolerate a fee better when their risk-adjusted return is good.\nDynamic clients respond to marketing and accept higher fees; conservative clients want fees low and transparent.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Fees, projections, submission</span>"
+    ]
+  },
+  {
+    "objectID": "08_submit.html#projections",
+    "href": "08_submit.html#projections",
+    "title": "8  Fees, projections, submission",
+    "section": "8.2 Projections",
+    "text": "8.2 Projections\nThe Projections button on every decision page shows the projected AuM and fund performance (before and after fees), a recap of the strategy page and the industry allocation, updated as you type. Use it as a consistency check, not as a forecast: it runs on the analyst’s estimates and on your own, and the realised round will differ. Three things to look at before submitting:\n\nDoes each fund’s projected tracking error match what station 4 said, roughly?\nDoes any fund show cash that you did not intend (a filter leaving a segment unmatched, Chapter 7)?\nAre the projected fees and AuM in the range you expect?",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Fees, projections, submission</span>"
+    ]
+  },
+  {
+    "objectID": "08_submit.html#decision-checklist-and-the-deadline",
+    "href": "08_submit.html#decision-checklist-and-the-deadline",
+    "title": "8  Fees, projections, submission",
+    "section": "8.3 Decision checklist and the deadline",
+    "text": "8.3 Decision checklist and the deadline\nThe Decision checklist shows every decision of every team member side by side. Decide in your own Student Decision Area, then either Copy as team’s decisions or edit the Team Decision Area directly. Copying overwrites without backup; agree on who copies and when. Only the Team Decision Area is scored at the deadline.\nRound checklist before the deadline:\n\nStrategic allocation per fund: unchanged since round 1 (round 1: entered and checked, Chapter 4).\nTactical allocation per fund: entered for this round, close to the guidance bands (Chapter 6).\nAutomation preferences: ESG floor set for the ESG funds, Matches clean (Chapter 7).\nAsset-level automation: on, unless you decided otherwise and wrote down why.\nFees: set.\nProjections: read.\nTeam Decision Area: holds the version you mean to submit.\nThe team forum holds this round’s record: views with confidence and justification, tactical matrices, tracking errors, fees.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Fees, projections, submission</span>"
+    ]
+  },
+  {
+    "objectID": "08_submit.html#deliverable-of-this-step",
+    "href": "08_submit.html#deliverable-of-this-step",
+    "title": "8  Fees, projections, submission",
+    "section": "8.4 Deliverable of this step",
+    "text": "8.4 Deliverable of this step\nThe round submitted from the Team Decision Area, and the record in the forum. Chapter 9 reads the results against that record.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Fees, projections, submission</span>"
+    ]
+  },
+  {
+    "objectID": "09_results.html",
+    "href": "09_results.html",
+    "title": "9  Reading the results",
+    "section": "",
+    "text": "9.1 Micro attribution: diagnosing the source of the active return\nAfter the deadline, the Results page shows how each fund did in the round just completed: fund performance before and after fees, AuM and flows, satisfaction, the firm’s financials, and the ranking against the other teams in the universe.\nFor more detail, the Analyst page shows the performance ratios, factor coefficients, and performance attribution. The strategic allocation analysis compares your strategic allocation with the optimal allocation for the client.\nRead the page in this order. Start with the ratios: the active return and the information ratio tell you whether the tactical tilt worked. Then read the attribution to see which decision was responsible. Then read the strategic allocation analysis, which tells you whether the γ estimate is right. The first two are adjustments you make every round; the third is an adjustment you make once.\nThe Analyst page has three attribution tabs: Active return, Allocation, and Selection. Allocation is the effect of how much you put in each segment (the tactical tilt); Selection is the effect of which assets you held inside each segment (the security selection). Together they decompose the active return by source, so you can see which decision (currency, asset class, industry, maturity, factor) was responsible for the outcome. This is micro attribution.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Reading the results</span>"
+    ]
+  },
+  {
+    "objectID": "09_results.html#micro-attribution-diagnosing-the-source-of-the-active-return",
+    "href": "09_results.html#micro-attribution-diagnosing-the-source-of-the-active-return",
+    "title": "9  Reading the results",
+    "section": "",
+    "text": "9.1.1 The three questions micro attribution answers\nWhen the IR is negative, the first question is always: which decision went wrong? The attribution tabs answer three questions, in order:\n\nWas it the allocation or the selection? The Allocation tab shows the effect of where you were positioned (the tactical tilt). The Selection tab shows the effect of what you held (the security selection). If the allocation effect is negative and the selection effect is zero, the tactical tilt was wrong. If the allocation effect is zero and the selection effect is negative, the security selection was wrong. If both are negative, both were wrong.\nWas it the currency or the asset class? Within each tab, the breakdown by Currency and Asset class tells you whether the problem was a currency bet (e.g., overweight euro when the euro fell) or an asset-class bet (e.g., overweight equities when equities fell). If the currency effect is large and the asset-class effect is small, the problem was the currency.\nWas it the industry, the maturity, or the factor? If the currency and asset-class effects are small but the industry, maturity, or factor effects are large, the problem was at the security level. This is where the security selection shows up. A large negative industry effect means the fund was overweight an industry that underperformed; a large negative factor effect means the fund was tilted toward a factor that underperformed (e.g., value when growth was winning).\n\n\n\n9.1.2 A worked example: diagnosing a negative IR\nSuppose the Orange fund has an active return of −0.8 % in a round, and so a negative IR. The Analyst page shows:\n\n\n\nTab\nCategory\nEffect\n\n\n\n\nAllocation\nCurrency\n−0.5 %\n\n\nAllocation\nAsset class\n−0.1 %\n\n\nSelection\nIndustry\n−0.2 %\n\n\nSelection\nFactor\n0.0 %\n\n\n\nThe diagnosis. The total active return is −0.8 % (the sum of the effects). The allocation effect is −0.6 % (currency −0.5 % + asset class −0.1 %), which is the larger part. Within the allocation, the currency effect is the dominant term. The selection effect is −0.2 %, all from industry. The factor effect is zero.\nWhat this tells you. The problem was primarily a currency bet that went wrong, not the asset-class allocation and not the security selection. The tactical tilt was in the wrong currency; the industry selection was a secondary problem; the factor tilt was neutral.\nWhat to do next round. The currency bet is the first thing to fix. Go back to the view that produced the currency tilt (Chapter 5) and ask whether the view was wrong or the currency movement was a surprise. If the view was wrong, lower its confidence or drop it. If the currency movement was a surprise, the view may have been right but the outcome was unlucky; keep the view but check whether the tracking-error budget was large enough to accommodate the surprise.\nThe industry selection is a secondary problem. It is a smaller effect, and it may be an artifact of the value-weighting rule rather than a deliberate security selection. If the fund is on automatic allocation, do not try to fix it; if it is on manual allocation, review the industry overweights.\nThe factor tilt is neutral. Do not change it.\n\n\n9.1.3 What micro attribution cannot tell you\nMicro attribution is a diagnostic tool, not a decision tool. It tells you where the active return came from, but it does not tell you whether the decision was right in expectation. A currency bet that lost money this round may have been the right bet given the information at the time. The attribution tells you the outcome; the record of the views tells you whether the outcome was consistent with the process.\nThe rule of thumb: change the decision only if the attribution shows a systematic problem, not a one-off loss. A currency bet that lost money once is a draw. A currency bet that has lost money three rounds in a row is a systematic error, and the attribution tells you to fix it. This is the same principle as the IR: one round is not evidence of skill, and one round is not evidence of failure either.\n\n\n9.1.4 The connection to the performance ratios\nThe micro attribution and the performance ratios are two sides of the same coin. The ratios tell you whether the fund added value; the attribution tells you where it came from. Read them together:\n\nA negative IR with a large currency effect means the currency bets were wrong.\nA negative IR with a large asset-class effect means the tactical tilt was wrong.\nA negative IR with a large industry or factor effect means the security selection was wrong.\nA positive IR with a large allocation effect means the tactical tilt was right.\nA positive IR with a large selection effect means the security selection was right.\n\nThe ratios give you the verdict; the attribution gives you the reason. Use both.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Reading the results</span>"
+    ]
+  },
+  {
+    "objectID": "09_results.html#defining-the-performance-ratios",
+    "href": "09_results.html#defining-the-performance-ratios",
+    "title": "9  Reading the results",
+    "section": "9.2 Defining the performance ratios",
+    "text": "9.2 Defining the performance ratios\nThe game reports four ratios per fund. They measure different things, and a fund can look good on one and bad on another.\n\n9.2.1 Sharpe ratio\nExcess return per unit of total volatility:\n\\[\n\\text{Sharpe} = \\frac{R_p - R_f}{\\sigma_p}\n\\]\nIt penalises both upside and downside volatility, so a fund that swings wildly in both directions scores lower than one that swings only upward.\n\n\n9.2.2 Sortino ratio\nExcess return per unit of downside volatility:\n\\[\n\\text{Sortino} = \\frac{R_p - R_f}{\\sigma_{\\text{downside}}}\n\\]\nIt does not penalise upside volatility, so a fund with large gains and small losses scores much higher on Sortino than on Sharpe. Useful when the client cares more about losses than gains.\n\n\n9.2.3 Treynor ratio\nExcess return per unit of market risk:\n\\[\n\\text{Treynor} = \\frac{R_p - R_f}{\\beta_p}\n\\]\nIt isolates systematic risk, which makes it useful for funds held as part of a diversified portfolio. Note: if the fund’s beta is negative, the Treynor is negative even when the return is positive. Read it alongside the beta.\n\n\n9.2.4 Information ratio\nActive return per unit of active risk (tracking error):\n\\[\n\\text{IR} = \\frac{\\text{Active Return}}{\\text{Tracking Error}}\n\\]\nIt is the ratio that matters for the tactical tilt, because it measures the skill of the active decisions, not the return of the fund as a whole.\n\n\n\n\n\n\nWarningBefore or after fees\n\n\n\nThe game’s information ratio compares the fund’s return after fees with the benchmark’s return before fees. A fund that charges a fee therefore shows a negative information ratio whenever its tilt earned less than the fee, even if the tilt added return. To judge the tilt, compare the fund’s return before fees with the benchmark’s. The rules in this chapter refer to that comparison.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Reading the results</span>"
+    ]
+  },
+  {
+    "objectID": "09_results.html#reading-the-factor-coefficients",
+    "href": "09_results.html#reading-the-factor-coefficients",
+    "title": "9  Reading the results",
+    "section": "9.3 Reading the factor coefficients",
+    "text": "9.3 Reading the factor coefficients\nThe game reports five coefficients per fund, from a four-factor model. They tell you what kind of risk the fund is taking.\n\nAlpha: return not explained by the factors. Positive is good.\nMarket beta: sensitivity to the market. Negative means the fund hedges against downturns.\nHML beta: value (positive) vs. growth (negative).\nMOM beta: momentum (positive) vs. contrarian (negative).\nRMW beta: quality (positive) vs. junk (negative).\n\nA fund with positive alpha, HML, MOM and RMW is a value-momentum-quality fund with skilled management. A fund with negative alpha and RMW but high MOM is a momentum-junk fund with poor management.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Reading the results</span>"
+    ]
+  },
+  {
+    "objectID": "09_results.html#reading-the-strategic-allocation-analysis",
+    "href": "09_results.html#reading-the-strategic-allocation-analysis",
+    "title": "9  Reading the results",
+    "section": "9.4 Reading the strategic allocation analysis",
+    "text": "9.4 Reading the strategic allocation analysis\nThe lower half of the Analyst page compares your strategic allocation with the allocation the game’s parameters hold as optimal for the client, and gives a recommendation. The recommendation compares your weight to the target range for that segment, which is the range consistent with the client’s γ. A weight outside the range means the γ estimate or the reading of a rule is off.\n\n“Balanced allocation.” Your weight is inside the target range. No change.\n“Overweighted.” Your weight is above the range.\n“Underweighted.” Your weight is below the range.\n\nThe direction tells you which way to adjust γ. Overweighted in equities means your γ is too low; move it up. Overweighted in government bonds means your γ is too high; move it down.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Reading the results</span>"
+    ]
+  },
+  {
+    "objectID": "09_results.html#actionable-takeaways-what-to-do-with-the-numbers",
+    "href": "09_results.html#actionable-takeaways-what-to-do-with-the-numbers",
+    "title": "9  Reading the results",
+    "section": "9.5 Actionable takeaways: what to do with the numbers",
+    "text": "9.5 Actionable takeaways: what to do with the numbers\nThe ratios and the attribution tell you what happened. To decide what to do next round, you need to translate them into actions. This section says how.\n\n9.5.1 If the information ratio is below 0\nWhat it means: The active return was negative relative to the risk taken. The tactical views were wrong, or the tracking-error budget was too large for the quality of the views.\nWhat to do: Reduce the size of the tactical tilts. Either use fewer views, lower the confidence on the views you have, or narrow the maximum deviation band in station 4. If the IR is negative for three rounds in a row with high confidence, stop entering that view entirely.\n\n\n9.5.2 If the information ratio is between 0 and 0.5\nWhat it means: The active return was positive, but modest relative to the risk taken. The views were slightly right, or the tracking-error budget was too loose.\nWhat to do: Keep the views, but check whether the confidence levels are calibrated. If views you entered with high confidence keep producing a small IR, lower the confidence next round.\n\n\n9.5.3 If the information ratio is above 0.5\nWhat it means: The views were right relative to the risk taken. The tactical process is working.\nWhat to do: Keep doing what you are doing. Do not increase the tracking-error budget just because the IR is high; the budget is there to protect the client, not to maximise the score.\n\n\n9.5.4 If the Sharpe ratio is high but the information ratio is low (or zero)\nWhat it means: The fund generated good absolute risk-adjusted returns, but the tactical decisions did not add value. The high Sharpe comes from the strategic allocation, not from the tactical tilts.\nWhat to do: Check the attribution. If the selection effect is zero and the allocation effect is zero, the tactical allocation is identical to the strategic allocation. That is fine if you had no views, but if you entered views and the IR is zero, the views were neutralised by the model (e.g., because the confidence was too low). Raise the confidence or do not enter the view.\n\n\n9.5.5 If the Sortino ratio is much higher than the Sharpe ratio\nWhat it means: The fund’s volatility is skewed to the upside. The fund has large positive returns and small negative ones.\nWhat to do: Nothing. This is a good outcome. The client is getting upside volatility without the corresponding downside, which is exactly what a risk-averse client wants.\n\n\n9.5.6 If the Sortino ratio is much lower than the Sharpe ratio\nWhat it means: The fund’s volatility is skewed to the downside. The fund has large negative returns and small positive ones.\nWhat to do: Check the attribution for a large negative allocation effect. If the fund is taking concentrated positions that have gone wrong, pull them back. The client’s loss aversion makes downside volatility particularly costly.\n\n\n9.5.7 If the alpha is positive but the IR is negative\nWhat it means: The fund is generating excess return relative to the factor model (good management), but the tactical allocation is underperforming the benchmark (bad tactical decisions). The two are unrelated: alpha is measured against factors, IR is measured against the benchmark.\nWhat to do: Fix the tactical views, not the strategic allocation. The strategic allocation is generating alpha; the tactical tilts are destroying value.\n\n\n9.5.8 If the market beta is negative\nWhat it means: The fund moves opposite to the market. It is a hedge.\nWhat to do: Check whether this is intended. If the client is risk-averse and the fund is holding defensive assets, a negative beta is fine. If the client is growth-oriented and the fund is hedging unintentionally, reduce the defensive weight.\n\n\n9.5.9 If the strategic allocation analysis says “Overweighted”\nWhat it means: The fund is holding more of a segment than the optimal allocation for the client’s γ.\nWhat to do: If the overweight is in equities, raise the γ estimate (the client is more risk-averse than you thought). If the overweight is in bonds, lower the γ estimate. Change γ once, early, and record why.\n\n\n9.5.10 If the satisfaction is falling but the IR is positive\nWhat it means: The fund is beating the benchmark, but the client is unhappy. The most likely cause is that the fund is too far from the guidance bands (the client wants a specific allocation, not just a good return), or the fee is too high.\nWhat to do: Compare the fund’s weights to the guidance bands. If the fund is outside the bands, pull it back. If the fund is inside the bands, check the fee.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Reading the results</span>"
+    ]
+  },
+  {
+    "objectID": "09_results.html#satisfaction-and-aum",
+    "href": "09_results.html#satisfaction-and-aum",
+    "title": "9  Reading the results",
+    "section": "9.6 Satisfaction and AuM",
+    "text": "9.6 Satisfaction and AuM\nSatisfaction moves with three things: the distance to the optimal allocation, the risk the fund took against what the client expects, and the fee. AuM follows satisfaction and risk-adjusted performance with a lag.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Reading the results</span>"
+    ]
+  },
+  {
+    "objectID": "09_results.html#feeding-it-back",
+    "href": "09_results.html#feeding-it-back",
+    "title": "9  Reading the results",
+    "section": "9.7 Feeding it back",
+    "text": "9.7 Feeding it back\nFor the next round, in this order:\n\nPull back any extreme position.\nRevise the γ estimate if the strategic allocation analysis says so, once.\nRevise the confidence of the views that were wrong; add new views from the new outlook.\nRevisit the fee only if AuM moved for no investment reason.\n\nThen Chapter 5 again.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Reading the results</span>"
+    ]
+  },
+  {
+    "objectID": "09_results.html#deliverable-of-this-step",
+    "href": "09_results.html#deliverable-of-this-step",
+    "title": "9  Reading the results",
+    "section": "9.8 Deliverable of this step",
+    "text": "9.8 Deliverable of this step\nA short written review per fund in the team forum: attribution by effect, verdict on each view, distance to the optimal allocation and what you conclude for γ, satisfaction and AuM, the decision for the next round.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Reading the results</span>"
+    ]
+  },
+  {
+    "objectID": "a1_app.html",
+    "href": "a1_app.html",
+    "title": "Appendix A — The allocation app",
+    "section": "",
+    "text": "A.1 What it is\nA Shiny app, provided with the course, that runs the allocation method of this book on the course dataset. It has four stations that follow Chapters 3 to 6. It does not connect to the game; you read numbers off it and type them into the game’s grids.\nSource and installation: the course repository (2024_CESIM_Invest). It needs R with the packages shiny, DT, xts and quadprog; start it with shiny::runApp() in the app folder, or use the hosted instance your instructor names.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>The allocation app</span>"
+    ]
+  },
+  {
+    "objectID": "a1_app.html#the-data",
+    "href": "a1_app.html#the-data",
+    "title": "Appendix A — The allocation app",
+    "section": "A.2 The data",
+    "text": "A.2 The data\n\ndata/classes_monthly.csv: the 21 positions, monthly total returns in US dollars, unhedged, with an index series; the full history the course uses. The strategic benchmark is defined on the 16 positions without the money market; the app’s default selection leaves the five money-market positions out, and they can be added for analysis.\ndata/riskfree_monthly.csv: the US money-market rate, monthly.\ndata/cap_shares.csv: the capitalisation shares of the five equity markets, for the home rule.\n\nPositions are named &lt;region&gt;_&lt;class&gt;: US_money_market, UK_government, EU_credit, CH_equity, JP_equity, GLOBAL_commodity. Excess returns are total returns minus the money-market rate of the same month. Annualisation: mean × 12, covariance × 12.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>The allocation app</span>"
+    ]
+  },
+  {
+    "objectID": "a1_app.html#station-1-strategic-asset-analysis",
+    "href": "a1_app.html#station-1-strategic-asset-analysis",
+    "title": "Appendix A — The allocation app",
+    "section": "A.3 Station 1 · Strategic Asset Analysis",
+    "text": "A.3 Station 1 · Strategic Asset Analysis\nInputs: the positions (default the 16 benchmark positions), the part of the sample in percent of the observations (default all). Outputs: annualised statistics (excess return, volatility, Sharpe ratio, skewness, worst calendar year, maximum drawdown), the correlation matrix, the growth of 100.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>The allocation app</span>"
+    ]
+  },
+  {
+    "objectID": "a1_app.html#station-2-strategic-asset-allocation",
+    "href": "a1_app.html#station-2-strategic-asset-allocation",
+    "title": "Appendix A — The allocation app",
+    "section": "A.4 Station 2 · Strategic Asset Allocation",
+    "text": "A.4 Station 2 · Strategic Asset Allocation\nInputs: γ (whole numbers), home market and home share, objective (quadratic utility, minimum variance, maximum Sharpe), a label; floors and caps by asset class, by currency and per position. The problem solved:\n\\[\n\\max_w \\; \\mu' w - \\frac{\\gamma}{2}\\, w' \\Sigma w\n\\quad \\text{s.t.} \\quad \\sum w = 1,\\; w \\ge 0,\\; \\text{floors and caps},\\; \\text{home rule},\n\\]\nwith the home rule as one linear equality per foreign equity market: \\(w_x = (1-h)\\, s_x\n\\sum_{\\text{equity}} w\\), where \\(h\\) is the home share and \\(s_x\\) the capitalisation share of market \\(x\\) outside the home market. Solved with quadprog::solve.QP(D = \\gamma\\Sigma, d = \\mu, A, b, meq). Minimum variance sets μ = 0; maximum Sharpe is the best point of a sweep over γ. Weights are rounded to half a percent, the residual into the home equity position.\nOutputs: the allocation as a currency × asset class matrix with sums, the positions with raw and rounded weights, class and currency totals, in-sample results of the fixed weights rebalanced monthly (expected excess return, volatility, Sharpe, best and worst calendar year, maximum drawdown), the binding limits, the in-sample path, the efficient frontier under the same limits, the constraint rows, and R code that reproduces the run. Fix this allocation as an SAA hands it to stations 3 and 4; several SAAs can be fixed, by label.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>The allocation app</span>"
+    ]
+  },
+  {
+    "objectID": "a1_app.html#station-3-tactical-analysis",
+    "href": "a1_app.html#station-3-tactical-analysis",
+    "title": "Appendix A — The allocation app",
+    "section": "A.5 Station 3 · Tactical Analysis",
+    "text": "A.5 Station 3 · Tactical Analysis\nInputs: τ (default 0.05) and the views, typed one per line: US_equity 12 50 is an absolute view (US equities earn 12 % a year over cash, confidence 50 %); EU_equity &gt; CH_equity 2 60 is a relative view (euro-area equities beat Swiss equities by 2 points a year, confidence 60 %). The confidence is optional and defaults to 50; lines starting with # are ignored; a list of position names is in the panel. The views apply to every fixed SAA; a selector chooses which SAA’s prior and posterior the table shows.\nPrior: \\(\\Pi = \\gamma \\Sigma w_{\\text{SAA}}\\) (reverse optimisation with the SAA’s own γ and the unrounded weights). Posterior (He and Litterman 1999):\n\\[\n\\mu_{BL} = \\left[(\\tau\\Sigma)^{-1} + P'\\Omega^{-1}P\\right]^{-1}\n          \\left[(\\tau\\Sigma)^{-1}\\Pi + P'\\Omega^{-1}Q\\right],\n\\qquad\n\\Sigma_{BL} = \\Sigma + \\left[(\\tau\\Sigma)^{-1} + P'\\Omega^{-1}P\\right]^{-1},\n\\]\nwith \\(\\Omega\\) diagonal and \\(\\Omega_k = \\frac{1-c_k}{c_k}\\,\\tau\\, p_k'\\Sigma p_k\\), so that c = 1/2 is the He–Litterman setting. Outputs: per position the SAA weight, the sample mean, the prior, the posterior and the change; the views as parsed.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>The allocation app</span>"
+    ]
+  },
+  {
+    "objectID": "a1_app.html#station-4-tactical-asset-allocation",
+    "href": "a1_app.html#station-4-tactical-asset-allocation",
+    "title": "Appendix A — The allocation app",
+    "section": "A.6 Station 4 · Tactical Asset Allocation",
+    "text": "A.6 Station 4 · Tactical Asset Allocation\nInputs: the maximum deviation per position (band, default 0.05) and the tracking-error budget (default 2 % a year, 0 = none). One press computes the tactical allocation of every fixed SAA under the same views. For each SAA, the problem of station 2 on \\((\\mu_{BL}, \\Sigma)\\) with that SAA’s γ and limits but without the home rule, plus \\(w_{\\text{SAA}} - d \\le w \\le w_{\\text{SAA}} + d\\). The home rule is left out because it defines the benchmark; kept, a view on one equity market could not act. The sample covariance Σ is used, not \\(\\Sigma_{BL}\\): \\(\\Sigma_{BL}\\) raises the measured risk by about \\((1+\\tau)\\) as soon as any view is entered and moves weight from equities into bonds for no reason of the views. If a budget is set and the tracking error \\(\\sqrt{(w - w_{\\text{SAA}})'\\Sigma(w - w_{\\text{SAA}})}\\) exceeds it, the deviation is scaled to the budget. Outputs: a summary table with the tilt by asset class, tracking error and active return per fund, and a tab per fund with the SAA, TAA and deviation matrices, the active-position figures and the binding limits. A negative expected active return is flagged in both. Without views the TAA equals the SAA, and a view that agrees with the prior leaves it there.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>The allocation app</span>"
+    ]
+  },
+  {
+    "objectID": "a1_app.html#saving-your-work",
+    "href": "a1_app.html#saving-your-work",
+    "title": "Appendix A — The allocation app",
+    "section": "A.7 Saving your work",
+    "text": "A.7 Saving your work\nStation 2 saves the fixed SAAs (their inputs and weights), the views and the tactical settings as a JSON file and loads such a file back. On loading, the SAAs are recomputed from their inputs on the current data, so a loaded file is always consistent with the dataset in use. Save the file in the team forum; it is the team’s record of the funds and views.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>The allocation app</span>"
+    ]
+  },
+  {
+    "objectID": "a1_app.html#tests",
+    "href": "a1_app.html#tests",
+    "title": "Appendix A — The allocation app",
+    "section": "A.8 Tests",
+    "text": "A.8 Tests\ntests/check_recipe.R confirms that the app’s constraint builder and solver reproduce a hand-written quadratic programme for twenty client cases; tests/check_taa.R confirms that the tactical allocation equals the strategic one without views and under a view that agrees with the prior, that a negative view on one equity market lowers that market, and shows one view at work with a tracking-error budget.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>The allocation app</span>"
+    ]
+  },
+  {
+    "objectID": "a2_roadmap.html",
+    "href": "a2_roadmap.html",
+    "title": "Appendix B — Proposed changes to the app and the game",
+    "section": "",
+    "text": "B.1 Simplifications of the flow\nPlanning only. Nothing here is implemented; each item names what it would simplify in the flow of Chapters 2 to 9 and what it would take.\nStation 0: the client. A form with the two decisions (σ and μ of each portfolio, taken or turned down) and the rules; the app computes the γ bracket, shows it, and carries the rules into station 2 as the limits. Removes the hand calculation of Chapter 2 and the manual entry of floors. Small.\nBand check. Load the client’s guidance bands (from the course’s allocation workbook) and flag, in station 2 and station 4, any class outside its band. Removes the manual check of Chapters 4 and 6. Small; needs the bands in a machine-readable file in the app’s data/.\nGame-format export. A button that writes the strategic or tactical matrix in the exact layout of the game’s grid (currency × asset class, percent) to the clipboard or a CSV. Removes typing errors. Small.\nOutlook import. A paste field for the analyst’s segment estimates of the round (yields, spreads, expected excess market return, factor premia per currency) and a rule that turns them into candidate views against the prior, with the confidence derived from the expected range. Chapter 5 by hand becomes one paste. Medium; needs the game’s export format for the outlook.\nAll funds at once. Run stations 2 to 4 for the firm’s up to four funds in one pass: one views panel, a tab per fund, one combined export. Station 4’s “same views for every fixed SAA” table is the first step. Medium.\nRound log. Keep, per fund and round, the SAA, the views, the TAA, the tracking error, and after the round the realised return and attribution (from the Results Excel), so that Chapter 9’s “judge the views” is a table rather than memory. Medium; needs the Results Excel format.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Proposed changes to the app and the game</span>"
+    ]
+  },
+  {
+    "objectID": "a2_roadmap.html#extensions-that-implement-further-decisions",
+    "href": "a2_roadmap.html#extensions-that-implement-further-decisions",
+    "title": "Appendix B — Proposed changes to the app and the game",
+    "section": "B.2 Extensions that implement further decisions",
+    "text": "B.2 Extensions that implement further decisions\nSecurity selection (Chapter 7). From the tactical segment weights to positions: value or equal weighting, an ESG floor, and the tracking error of the resulting stock book against the segment line; optionally overweights by factor loading or industry with their contribution to tracking error. Needs asset-level returns and ratings in the app’s data (ratings as levels, which the course dataset does not carry yet). Large.\nPerformance attribution (Chapter 9). Brinson–Fachler on the game’s Results Excel: allocation, selection and currency effects against the fixed SAA, per round and cumulative. Medium; the inputs are the round’s segment returns and weights.\nTracking-error optimisation proper. Replace the scaling of station 4 by an optimisation with the tracking error as a constraint (a second-order cone, or a search over the active risk aversion), so that the TAA at a budget is optimal rather than a shrunk optimum. Small to medium.\nEstimation risk as a discussion tool. A toggle in station 2 that shows what shrinkage of the means toward the grand mean (or a Kan–Zhou-type combination) would do to the allocation, next to the plain optimum. Not for the benchmark, which stays the plain optimum; for the discussion of why a plain optimum is fragile and why the game defines the benchmark this way. Small.\nCurrency hedging as a hypothetical. Show what the allocation would be if foreign bonds could be hedged (local excess returns plus the interest differential, local covariance), next to the unhedged one the game allows. Makes Chapter 3’s point visible. Small; the hedged series would have to be added to the course dataset.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Proposed changes to the app and the game</span>"
+    ]
+  },
+  {
+    "objectID": "a2_roadmap.html#suggestions-for-the-game-itself",
+    "href": "a2_roadmap.html#suggestions-for-the-game-itself",
+    "title": "Appendix B — Proposed changes to the app and the game",
+    "section": "B.3 Suggestions for the game itself",
+    "text": "B.3 Suggestions for the game itself\nClient texts and guidance bands. The October 2026 client profiles and guidance bands replace the current ones.\nStrategic allocation analysis on the Analyst page. It compares the fund’s strategic allocation with the optimal allocation held in the game’s parameters. If it reports the distance exactly, a team can iterate to the hidden allocation round by round; a coarse report (inside the guidance band / outside, or a distance rounded to five points) keeps the client-reading exercise alive.\nTracking error on the Investment strategy page. It is estimated from the game’s own forecasts and a short history; the app’s figure uses the full history. Stating the horizon and the data behind the game’s estimate would make the two comparable.\nExports. A CSV export of the Economic outlook’s segment estimates and of the Results attribution would make the outlook import and the round log above possible.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Proposed changes to the app and the game</span>"
+    ]
+  }
+]
