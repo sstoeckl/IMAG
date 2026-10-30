@@ -214,6 +214,24 @@ might not otherwise hold at that size, the rest of the allocation adjusts around
 with the same γ and different home markets do not hold the same class mix. That is the method
 working, not a mistake.
 
+### Why the rest goes by size
+
+The home share is the client's own choice: most investors hold more of their home market than its
+size alone would justify, the well-documented home bias [@french1991investor]. For the rest of the
+equity book the client states no view, and the allocation should not invent one. Market
+capitalization is the weighting that needs no forecast. It is the market portfolio of the CAPM
+[@sharpe1964capital], the one portfolio all investors can hold together, so any other weighting is
+a bet against the average investor [@sharpe1991arithmetic]. It also protects the allocation from
+the optimizer: the expected returns of the five equity markets are estimated with an error larger
+than the differences between them, and a free optimization turns that noise into extreme weights,
+often a whole market at zero [@michaud1989markowitz]. Fixing the regional split by size leaves γ as
+the one number the reading of the card has to get right. And it keeps the strategic allocation
+consistent with Chapters 5 and 6, which reverse-optimize it into the prior of the Black–Litterman
+step: with the regions at market weights, that prior is close to the market equilibrium Black and
+Litterman start from [@black1992global]. The price of the rule is concentration. The United States
+is 70 percent of the universe, and capitalization weights follow a market into its bubbles, as
+Japan's share of world equity around 1989 showed.
+
 ## Sustainability
 
 A client who requires a minimum rating holds only securities that pass it. This binds when
