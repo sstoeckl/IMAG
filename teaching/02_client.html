@@ -26,7 +26,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -249,7 +268,10 @@ window.Quarto = {
   </ul></li>
   <li><a href="#from-γ-to-a-portfolio" id="toc-from-γ-to-a-portfolio" class="nav-link" data-scroll-target="#from-γ-to-a-portfolio"><span class="header-section-number">2.4</span> From γ to a portfolio</a></li>
   <li><a href="#the-guidance-bands" id="toc-the-guidance-bands" class="nav-link" data-scroll-target="#the-guidance-bands"><span class="header-section-number">2.5</span> The guidance bands</a></li>
-  <li><a href="#the-home-market" id="toc-the-home-market" class="nav-link" data-scroll-target="#the-home-market"><span class="header-section-number">2.6</span> The home market</a></li>
+  <li><a href="#the-home-market" id="toc-the-home-market" class="nav-link" data-scroll-target="#the-home-market"><span class="header-section-number">2.6</span> The home market</a>
+  <ul class="collapse">
+  <li><a href="#why-the-rest-goes-by-size" id="toc-why-the-rest-goes-by-size" class="nav-link" data-scroll-target="#why-the-rest-goes-by-size"><span class="header-section-number">2.6.1</span> Why the rest goes by size</a></li>
+  </ul></li>
   <li><a href="#sustainability" id="toc-sustainability" class="nav-link" data-scroll-target="#sustainability"><span class="header-section-number">2.7</span> Sustainability</a></li>
   <li><a href="#deliverable-of-this-step" id="toc-deliverable-of-this-step" class="nav-link" data-scroll-target="#deliverable-of-this-step"><span class="header-section-number">2.8</span> Deliverable of this step</a></li>
   </ul>
@@ -405,6 +427,10 @@ U = \mu - \frac{\gamma}{2}\sigma^2
 <section id="the-home-market" class="level2" data-number="2.6">
 <h2 data-number="2.6" class="anchored" data-anchor-id="the-home-market"><span class="header-section-number">2.6</span> The home market</h2>
 <p><em>Meet client X</em> names the home market. It decides which equity market carries the home share of the equity book; the rest of the book goes to the other markets by capitalization (US 70.0, euro area 14.5, Japan 5.9, Switzerland 5.7, Britain 4.0 percent of the universe, renormalized without the home market). Because the home rule puts a large part of the equities into a market the data might not otherwise hold at that size, the rest of the allocation adjusts around it: two clients with the same γ and different home markets do not hold the same class mix. That is the method working, not a mistake.</p>
+<section id="why-the-rest-goes-by-size" class="level3" data-number="2.6.1">
+<h3 data-number="2.6.1" class="anchored" data-anchor-id="why-the-rest-goes-by-size"><span class="header-section-number">2.6.1</span> Why the rest goes by size</h3>
+<p>The home share is the client’s own choice: most investors hold more of their home market than its size alone would justify, the well-documented home bias <span class="citation" data-cites="french1991investor">(<a href="#ref-french1991investor" role="doc-biblioref">French and Poterba 1991</a>)</span>. For the rest of the equity book the client states no view, and the allocation should not invent one. Market capitalization is the weighting that needs no forecast. It is the market portfolio of the CAPM <span class="citation" data-cites="sharpe1964capital">(<a href="#ref-sharpe1964capital" role="doc-biblioref">Sharpe 1964</a>)</span>, the one portfolio all investors can hold together, so any other weighting is a bet against the average investor <span class="citation" data-cites="sharpe1991arithmetic">(<a href="#ref-sharpe1991arithmetic" role="doc-biblioref">Sharpe 1991</a>)</span>. It also protects the allocation from the optimizer: the expected returns of the five equity markets are estimated with an error larger than the differences between them, and a free optimization turns that noise into extreme weights, often a whole market at zero <span class="citation" data-cites="michaud1989markowitz">(<a href="#ref-michaud1989markowitz" role="doc-biblioref">Michaud 1989</a>)</span>. Fixing the regional split by size leaves γ as the one number the reading of the card has to get right. And it keeps the strategic allocation consistent with Chapters 5 and 6, which reverse-optimize it into the prior of the Black–Litterman step: with the regions at market weights, that prior is close to the market equilibrium Black and Litterman start from <span class="citation" data-cites="black1992global">(<a href="#ref-black1992global" role="doc-biblioref">Black and Litterman 1992</a>)</span>. The price of the rule is concentration. The United States is 70 percent of the universe, and capitalization weights follow a market into its bubbles, as Japan’s share of world equity around 1989 showed.</p>
+</section>
 </section>
 <section id="sustainability" class="level2" data-number="2.7">
 <h2 data-number="2.7" class="anchored" data-anchor-id="sustainability"><span class="header-section-number">2.7</span> Sustainability</h2>
@@ -421,6 +447,23 @@ U = \mu - \frac{\gamma}{2}\sigma^2
 <p>That line is the complete input to the strategic allocation.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-black1992global" class="csl-entry" role="listitem">
+Black, Fischer, and Robert Litterman. 1992. <span>“Global Portfolio Optimization.”</span> <em>Financial Analysts Journal</em> 48 (5): 28–43.
+</div>
+<div id="ref-french1991investor" class="csl-entry" role="listitem">
+French, Kenneth R., and James M. Poterba. 1991. <span>“Investor Diversification and International Equity Markets.”</span> <em>The American Economic Review</em> 81 (2): 222–26.
+</div>
+<div id="ref-michaud1989markowitz" class="csl-entry" role="listitem">
+Michaud, Richard O. 1989. <span>“The Markowitz Optimization Enigma: Is’optimized’optimal?”</span> <em>Financial Analysts Journal</em> 45 (1): 31–42.
+</div>
+<div id="ref-sharpe1964capital" class="csl-entry" role="listitem">
+Sharpe, William F. 1964. <span>“Capital Asset Prices: A Theory of Market Equilibrium Under Conditions of Risk.”</span> <em>The Journal of Finance</em> 19 (3): 425–42. <a href="https://doi.org/10.1111/j.1540-6261.1964.tb02865.x">https://doi.org/10.1111/j.1540-6261.1964.tb02865.x</a>.
+</div>
+<div id="ref-sharpe1991arithmetic" class="csl-entry" role="listitem">
+Sharpe, William F. 1991. <span>“The Arithmetic of Active Management.”</span> <em>Financial Analysts Journal</em> 47 (1): 7–9. <a href="https://doi.org/10.2469/faj.v47.n1.7">https://doi.org/10.2469/faj.v47.n1.7</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
