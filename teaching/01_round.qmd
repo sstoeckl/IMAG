@@ -15,8 +15,8 @@ The investable universe is 180 assets in four asset classes (government bonds, c
 equities, alternatives) and five currencies (USD, GBP, EUR, CHF, JPY). Alternatives exist in USD
 only. A **market segment** is one asset class in one currency, e.g. "EUR / Corporate bonds".
 
-<!-- Can the money market be considered a fifth asset class? It is not a tradeable asset and you once told me that you do not allow it. And even if it is an asset class wouldn't we only be able to hold USD so only one cash position not 5?-->
-Together with the money market this gives 21 **positions** in each portfolio (money market, government bonds, corporate bonds and
+Together with the money market, one position per currency, this gives 21 **positions** in each
+portfolio (money market, government bonds, corporate bonds and
 equities in each of the five currencies, plus commodities). The strategic benchmark, the strategic asset allocation (SAA), is defined on the 16 positions
 without the money market. The optimal portfolio holds no cash: cash is a tactical decision of the
 player, not a strategic position.
@@ -73,12 +73,10 @@ The app does not talk to the game; you read numbers off the app and type them in
 ## Rounds, practice rounds, teams
 
 A round is typically one quarter. The instructor may run up to three practice rounds before
-round 1. In a practice round you make decisions and see the results, but the market does not move
-and your decisions do not carry over; the point is to learn the platform. After the practice
+round 1. In a practice round you make decisions and see the results, but nothing carries over; the point
+is to learn the platform. After the practice
 rounds the market resets, and round 1 starts from the decisions of the first practice round.
 Nothing else carries over.
-
-<!-- Should we add images to show where the different sections are in the platform? -->
 
 Each team member has a **Student Decision Area**; the round is scored on the **Team Decision
 Area**. Work in your own area, then *Copy as team's decisions*; a copy overwrites the team area

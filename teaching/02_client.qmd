@@ -13,7 +13,6 @@ the *Meet client X* button introduces a representative client.
 The text contains everything the strategic allocation needs. In short, each client has **one number and two rules**:
 
 - a **risk aversion coefficient** γ, which the text does *not* state as a number;
-<!-- Does every description really has a commodity rule? Or is rather a min and max of every asset class? -->
 - a **commodity rule** (a minimum share, or none at all);
 - a **home rule**: a share of the equity book in the client's home market, the rest across the
   other markets in proportion to their size.
@@ -178,32 +177,21 @@ For the Hartleys the bear-market comment points to the middle, so we take **$\ga
 ## From γ to a portfolio
 
 Once $\gamma$ is estimated, it does two things in the rest of the book. It selects the strategic
-allocation in Chapter 4, and it sets the prior in the Black–Litterman step in Chapter 6.
+allocation in Chapter 4, and it sets the prior of the Black–Litterman step in Chapters 5 and 6.
 
 In Chapter 4, the client's $\gamma$ selects the point on the
 efficient frontier that maximises $U=\mu-\frac{\gamma}{2}\sigma^2$. A higher $\gamma$ selects a
 portfolio with less variance and a lower expected return; a lower $\gamma$ selects a riskier one
-with a higher expected return. The mapping
-from $\gamma$ to a *profile* is conventional, and it is useful for sanity-checking:
-
-| $\gamma$ | Profile | Typical equity share |
-|:--|:--|:--|
-| above 6 | Conservative | 20–40 % |
-| 3 to 6 | Moderate | 40–60 % |
-| below 3 | Aggressive | 70 % or more |
-
-The bands are a rough guide, not a rule. A conservative client with a large fixed liability might
-hold more equities than the band suggests, because the liability changes what the portfolio is for.
-But a $\gamma$ that puts the client in one profile and a portfolio that looks like another is a
-signal to check the reading.
+with a higher expected return. Do not read γ off a
+conventional profile table ("above 6 is conservative"): which equity share a γ produces depends on
+the data and the client's rules. The Hartleys, at γ = 8, hold 46.5 % equities; the check is the
+guidance bands below, not a rule of thumb.
 
 ::: {.callout-warning title="γ is the whole game at this step"}
 The rules are the same for every reader of the card. What distinguishes a careful reading from a
 careless one is the estimate of $\gamma$. Chapter 4 shows what it costs to be wrong: for the
 Hartleys, $\gamma = 7$ or $9$ instead of $8$ puts the allocation 7 or 5.5 points away from the
-benchmark; the ends of the bracket cost 14 to 23 points. The profile bands above are a sanity
-check, not a substitute for the bracket: a $\gamma$ that reads as "moderate" but produces a
-portfolio that looks "aggressive" is a $\gamma$ worth re-reading.
+benchmark; the ends of the bracket cost 14 to 23 points.
 :::
 
 ## The guidance bands

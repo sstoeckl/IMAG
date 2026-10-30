@@ -1,5 +1,6 @@
 ---
 title: "Setting the strategic allocation"
+bibliography: references.bib
 ---
 
 With the client and the market understood, the next step is the strategic allocation, the
@@ -9,8 +10,8 @@ allocation analysis on the Analyst page are measured against it. The game also h
 the allocation its parameters say is optimal for the client; the closer your strategic allocation
 is to it, the better the client is served.
 
-<!-- The old text "That optimal allocation is defined, and the definition is public:" was a little confusing to me. Does it meant the same as my new sentence or was there a different intention behind it? -->
-That optimal allocation is the solution to a quadratic optimisation problem:
+That optimal allocation is not arbitrary: it follows a fixed rule, and this book states the rule.
+It is the solution to a quadratic optimisation problem:
 
 ::: {.callout-important title="The definition of a client's strategic allocation"}
 Maximise expected excess return minus γ/2 times the variance of the portfolio over the 16
@@ -26,7 +27,7 @@ optimisation on the right data.
 
 ## What the optimiser is doing
 
-The objective above is **mean–variance optimisation** (MVO), the framework introduced by Markowitz in 1952. It is worth a moment on what it does, because the output only makes sense if you know what the
+The objective above is **mean–variance optimisation** (MVO), the framework introduced by @markowitz1952portfolio. It is worth a moment on what it does, because the output only makes sense if you know what the
 optimiser is trying to achieve.
 
 Every candidate portfolio has two summary numbers. Its **expected excess return** is the weighted average of the excess returns of its holdings. Its **variance** is not just the weighted average of the holdings' variances: it also depends on how the holdings move together (their covariances). Two assets that move in lockstep diversify nothing; two that move independently partly offset each

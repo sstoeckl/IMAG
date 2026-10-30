@@ -1,5 +1,6 @@
 ---
 title: "From the Economic outlook to views"
+bibliography: references.bib
 ---
 
 Once the strategic allocation is fixed, the next step is to read the Economic outlook and turn it into views. The outlook is forward-looking information about the coming period; the views are what you enter into the app to tilt the tactical allocation away from the strategic one and outperform your benchmark.
@@ -30,7 +31,7 @@ The outlook gives you numbers. Your job is not to copy them into the app; it is 
 
 Economic variables do not move independently. Growth, inflation, employment and confidence evolve together through a recurring pattern of expansion and contraction. The pattern is not a law, but it is a useful empirical regularity. The framework classifies the economy by two things: the **direction of growth relative to trend** (rising or falling) and the **direction of inflation** (rising or falling). Those two directions define four phases. Each phase has historically favoured a different asset class, and the outlook's numbers are what tell you which phase the economy is in.
 
-The framework is the Investment Clock of Greetham and Hartnett (2004). The four phases and the asset-class rotation they imply are summarised in the figure below.
+The framework is the Investment Clock of @greetham2004investment. The four phases and the asset-class rotation they imply are summarised in the figure below.
 
 ```{r}
 #| echo: false
@@ -109,7 +110,7 @@ ggplot(df, aes(x = t)) +
 | Overheat | Rising | Rising | Commodities | Capacity is used up and inflation rises; real assets benefit. |
 | Stagflation | Falling | Rising | Cash | Growth slows but inflation stays high; the central bank cannot cut. |
 
-: The four phases of the Investment Clock. Source: Greetham and Hartnett (2004). The growth column refers to the direction of the output gap, not its level.
+: The four phases of the Investment Clock. Source: @greetham2004investment. The growth column refers to the direction of the output gap, not its level.
 
 The table is a stylised summary. The point is not that the pattern repeats exactly, but that the direction of growth and inflation tells you something about which asset class the environment is likely to favour.
 
@@ -123,7 +124,7 @@ The pattern is not just theory. The historical record from the United States, co
 | Stagflation | −1.9 | −11.7 | 28.6 | −0.3 |
 | Full sample | 3.5 | 6.1 | 5.8 | 1.5 |
 
-: U.S. real total returns by phase, 1973–2004, geometric annual averages in percent. Source: Greetham and Hartnett (2004).
+: U.S. real total returns by phase, 1973–2004, geometric annual averages in percent. Source: @greetham2004investment.
 
 The magnitudes are large: the difference between holding stocks in Recovery and holding them in Stagflation is over thirty percentage points of annual real return. The numbers come with caveats: they are drawn from one country and one period, and the commodity figures are heavily influenced by the oil shocks of the 1970s, so the direction of the pattern is more informative than the specific figures. What the table shows is that asset-class leadership rotates with the cycle. It does not promise that the same magnitudes will repeat.
 
@@ -146,7 +147,8 @@ Suppose the outlook reports the following for two economies, A and B.
 
 **Economy A is in Overheat.** GDP is rising steadily, unemployment is falling, and both consumer and business confidence are at levels consistent with an economy running above trend. Inflation has moved up sharply. Rising growth and rising inflation together place A in Overheat.
 
-**Economy B is in Recovery.** GDP growth is positive but decelerating, inflation is flat and low, and business confidence has fallen sharply. Growth is still rising relative to trend but the momentum is fading. B is in the later part of Recovery, approaching the point where it may tip into Overheat.
+**Economy B is in Recovery.** GDP growth is positive but decelerating, inflation is flat and low, and business confidence has fallen sharply. Growth is still rising relative to trend but the momentum is fading. B is in the later part of Recovery, and the fading momentum is a warning: if growth falls back
+below trend, the clock turns back toward Reflation.
 
 The classification gives you a direction for each segment in the client's universe:
 

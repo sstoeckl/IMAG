@@ -7,7 +7,8 @@ performance before and after fees, AuM and flows, satisfaction, the firm's finan
 
 For more detail, the Analyst page shows the performance ratios, factor coefficients, and performance attribution. The strategic allocation analysis compares your strategic allocation with the optimal allocation for the client.
 
-Read the page in this order. **Start with the ratios**: the information ratio tells you whether the tactical tilt worked. **Then read the attribution** to see which decision was responsible. **Then read the strategic allocation analysis**, which tells you whether the γ estimate is right. The first two are adjustments you make every round; the third is an adjustment you make once.
+Read the page in this order. **Start with the ratios**: the active return and the information ratio tell you whether the
+tactical tilt worked. **Then read the attribution** to see which decision was responsible. **Then read the strategic allocation analysis**, which tells you whether the γ estimate is right. The first two are adjustments you make every round; the third is an adjustment you make once.
 
 ## Micro attribution: diagnosing the source of the active return
 
@@ -101,7 +102,7 @@ The ratios give you the verdict; the attribution gives you the reason. Use both.
 
 ## Defining the performance ratios
 
-The Results page reports four ratios per fund. They measure different things, and a fund can look good on one and bad on another.
+The game reports four ratios per fund. They measure different things, and a fund can look good on one and bad on another.
 
 ### Sharpe ratio
 
@@ -143,6 +144,14 @@ $$
 
 It is the ratio that matters for the tactical tilt, because it measures the skill of the active decisions, not the return of the fund as a whole.
 
+::: {.callout-warning title="Before or after fees"}
+The game's information ratio compares the fund's return **after fees** with the benchmark's return
+**before fees**. A fund that charges a fee therefore shows a negative information ratio whenever
+its tilt earned less than the fee, even if the tilt added return. To judge the tilt, compare the
+fund's return before fees with the benchmark's. The rules in this chapter refer to that
+comparison.
+:::
+
 ## Reading the factor coefficients
 
 The game reports five coefficients per fund, from a four-factor model. They tell you what *kind* of risk the fund is taking.
@@ -182,9 +191,8 @@ negative for three rounds in a row with high confidence, stop entering that view
 **What it means:** The active return was positive, but modest relative to the risk taken. The
 views were slightly right, or the tracking-error budget was too loose.
 
-**What to do:** Keep the views, but check whether the confidence levels are calibrated. If you
-entered views at 80 % confidence and the IR is 0.2, you were overconfident. Lower the confidence
-next round.
+**What to do:** Keep the views, but check whether the confidence levels are calibrated. If views you
+entered with high confidence keep producing a small IR, lower the confidence next round.
 
 ### If the information ratio is above 0.5
 **What it means:** The views were right relative to the risk taken. The tactical process is
@@ -249,30 +257,6 @@ not just a good return), or the fee is too high.
 
 **What to do:** Compare the fund's weights to the guidance bands. If the fund is outside the
 bands, pull it back. If the fund is inside the bands, check the fee.
-
-::: {.callout-tip title="A worked example: turning the four funds into actions"}
-The game reports these ratios for four funds:
-
-| Ratio | Green | Red | Blue | Orange |
-|:--|--:|--:|--:|--:|
-| Sharpe | 5.87 | 5.72 | 4.24 | 3.71 |
-| Sortino | 34.51 | 25.34 | 31.70 | 10.85 |
-| Treynor | −1.17 | −0.48 | 2.64 | 0.66 |
-| Information ratio | −0.00 | −0.00 | 0.32 | 1.92 |
-
-**Green and Red** have high Sharpe and Sortino, but zero IR. **Action:** The strategic allocation
-is good; the tactical views are neutral. If you entered views, either the confidence was too low
-or the views agreed with the prior. Either raise confidence or stop entering views.
-
-**Blue** has a modest IR (0.32) and positive Treynor (2.64). **Action:** The tactical views are
-slightly positive. Keep them, but check whether the confidence levels are calibrated. An IR of
-0.32 is below the "good" threshold of 0.5, so the views may be overconfident.
-
-**Orange** has the lowest Sharpe (3.71) and Sortino (10.85), but the highest IR (1.92). **Action:**
-The tactical views are excellent. The low Sharpe reflects higher absolute volatility, but the
-client is getting compensated for it in active return. Do not change the views; the process is
-working.
-:::
 
 ## Satisfaction and AuM
 

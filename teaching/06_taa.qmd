@@ -28,7 +28,7 @@ A view is a statement about expected returns, expressed in one of two forms:
 - **Absolute:** "US equities earn 12 % over cash". In the model this is a row of the view matrix $P$ that picks out US equities, with the view's expected return in the corresponding row of $Q$.
 - **Relative:** "euro-area equities beat Swiss equities by 2 points". This is a row of $P$ with $+1$ on euro-area equities and $-1$ on Swiss equities, and the 2 points in $Q$. A relative view does not move both positions the same way: it moves the long side up and the short side down, in proportion to how precise the view is.
 
-Each view has a **confidence**, which enters the model through the matrix $\Omega$. A high-confidence view has a small entry in $\Omega$ (low uncertainty); a low-confidence view has a large entry. $\Omega$ is diagonal when views are independent, which is the usual case in station 3, so each view's confidence affects only that view's pull on the posterior.
+Each view has a **confidence**, which enters the model through the matrix $\Omega$. A high-confidence view has a small entry in $\Omega$ (low uncertainty); a low-confidence view has a large entry. In station 3 the views are treated as independent, so $\Omega$ is diagonal and each view's confidence affects only that view's pull on the posterior.
 
 ### The posterior
 

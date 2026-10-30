@@ -77,16 +77,15 @@ much more than the ratios we cover here. The available fields are:
 
 The analysis below focuses on the three important checks for
 security selection: **Quality of Earnings**, **Solvency and Liquidity**, and
-**Relative Valuation**. But you should be aware that the page contains other useful ratios, such as
-price-to-book (P/B), EV/EBITDA, PEG and interest coverage, which are not covered in depth here.
-They are useful for specific sectors (P/B for banks, EV/EBITDA for capital-intensive businesses)
+**Relative Valuation**. Other common ratios, such as price-to-book (P/B), EV/EBITDA, PEG and interest coverage, are not
+on the page and not covered here. They are useful for specific sectors (P/B for banks, EV/EBITDA for capital-intensive businesses)
 and for comparing companies with different capital structures.
 
 ### Quality of Earnings
-The income statement shows accounting profit. But accounting profit can be managed. A company can
+EPS is accounting profit, and accounting profit can be managed. A company can
 report a rising EPS by booking revenues early, delaying expenses, or capitalizing costs that should
 be expensed. To know whether the company is actually generating value, you must check the **quality
-of those earnings** against the cash flow statement and the balance sheet.
+of those earnings** against the cash the company generates.
 
 The game provides Free Cash Flow (FCF) and Earnings per Share (EPS), but not Cash Flow from
 Operations. The most direct quality check available is therefore the **FCF-to-EPS ratio**:
@@ -105,19 +104,19 @@ generally a sign of conservative accounting.
 Three checks tell you if the earnings are real:
 
 - **FCF-to-EPS.** The most direct test of whether reported profit is "real." If FCF per share is
-  persistently lower than EPS, the earnings are of low quality. Track the ratio over the four
+  persistently lower than EPS, the earnings are of low quality. Track the ratio over the
   years the page shows: a ratio that is improving is a better signal than a ratio that is
   high but falling.
-- **ROIC and ROE trends.** A rising ROE might just mean the company is taking on more debt (since
-  equity is the denominator). Check whether ROIC (which ignores capital structure) is moving in the
-  same direction. If ROIC is falling while ROE is rising, the profitability is an artifact of
-  leverage, not a genuine improvement in the business. A healthy company shows both ROE and ROIC
-  rising together, or ROIC rising faster than ROE.
+- **ROI and ROE trends.** A rising ROE might just mean the company is taking on more debt (since
+  equity is the denominator). Check whether ROI, the return on all capital invested, moves in the
+  same direction. If ROI is falling while ROE is rising, the profitability is an artifact of
+  leverage, not a genuine improvement in the business. A healthy company shows both ROE and ROI
+  rising together, or ROI rising faster than ROE.
 - **EPS growth stability.** Is the EPS growth steady, or jumping around? Stable growth is higher
   quality than volatile growth.
 
 ### Solvency and Liquidity
-The balance sheet shows what the company owns (assets) and what it owes (liabilities). Two ratios
+Two ratios on the page describe the balance sheet, what the company owns and what it owes, and
 tell you if it can survive a bad year:
 
 - **Current Ratio.** Current assets divided by current liabilities. This measures whether the
@@ -140,30 +139,31 @@ two benchmarks:
    than the market, it is trading at a premium.
 
 ::: {.callout-tip title="Applying the numbers: a worked example"}
-Suppose you are looking at a European energy company. You read the page in three steps:
+Suppose you are looking at a European energy company (the numbers are invented). You read the
+page in three steps:
 
-- **Quality of Earnings.** EPS has grown from €1.18 to €4.06 over four years, which is strong.
-  ROIC is 15.9 %, comfortably above the cost of capital. Most importantly, FCF per share has
-  turned from negative (−€0.40) to positive (€2.99). The FCF-to-EPS ratio is therefore
-  $2.99 / 4.06 \approx 0.74$: the company is generating about 74 cents of free cash for every
+- **Quality of Earnings.** EPS has grown from €1.20 to €4.00 over four years, which is strong.
+  ROI is 16 %, comfortably above the cost of capital. Most importantly, FCF per share has
+  turned from negative (−€0.40) to positive (€3.00). The FCF-to-EPS ratio is therefore
+  $3.00 / 4.00 = 0.75$: the company is generating 75 cents of free cash for every
   euro of reported profit. It is not a perfect 1.0, but the trend is strongly positive (the ratio
-  was negative four years ago), and 0.74 is high enough to confirm the earnings are backed by
+  was negative four years ago), and 0.75 is high enough to confirm the earnings are backed by
   cash.
 
-- **Solvency and Liquidity.** The current ratio has risen from 0.94 to 1.58. It is now comfortably
-  above 1.0. D/E has fallen from 57.1 to 31.0. *The company has deleveraged and improved its
+- **Solvency and Liquidity.** The current ratio has risen from 0.9 to 1.6. It is now comfortably
+  above 1.0. D/E has fallen from 57 % to 31 %. *The company has deleveraged and improved its
   short-term liquidity.*
 
-- **Relative Valuation.** The current P/E is 12.10. The five-year average P/E is 6.24. The market
-  average is, say, 15.0.
-  - Versus history: $12.10 / 6.24 = 1.94$. The stock is almost twice as expensive as its own
+- **Relative Valuation.** The current P/E is 12. The five-year average P/E is 6.5. The market
+  average is, say, 15.
+  - Versus history: $12 / 6.5 \approx 1.85$. The stock is almost twice as expensive as its own
     history.
-  - Versus market: $12.10 / 15.0 = 0.81$. The stock is cheaper than the market.
+  - Versus market: $12 / 15 = 0.8$. The stock is cheaper than the market.
 
 **The verdict.** The fundamentals are clearly better than they were four years ago. The
 FCF-to-EPS ratio confirms the profit is real and backed by cash, the current ratio confirms the
 company can pay its bills, and the D/E confirms it is deleveraging. However, the stock has
-re-rated from a P/E of 6.2 to a P/E of 12.1. While it still trades below the broad market, it is
+re-rated from a P/E of 6.5 to a P/E of 12. While it still trades below the broad market, it is
 nearly double its historical multiple. The market has already priced in the recovery. The thesis
 is *"strong, high-quality fundamentals, but the valuation premium relative to its own history
 leaves no margin of safety."* That supports a neutral or underweight position, not because the
