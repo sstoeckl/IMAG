@@ -7,7 +7,7 @@ title: "A round in IMAG"
 You are a fund manager at Asterion Capital, an asset manager whose founders are stepping back. The firm runs
 **one fund per client type**, up to four in total: Conservative, Conservative (ESG), Dynamic and
 Dynamic (ESG). Each fund has its own clients, its own benchmark and its own fees. The client card
-on the game's Clients page tells you the home market, the risk-aversion bracket, the limits and the currently set fees of each fund. You can change the fees every round; the client, the fund type and the client type stay fixed.
+on the game's Clients page tells you the home market, the client's rules and guidance bands, and the current fee of each fund. You can change the fees every round; the client, the fund type and the client type stay fixed.
 
 Asterion measures everything in **US dollars**. Assets in other currencies are held unhedged, and the game offers no way to hedge them. The resulting currency risk is part of the risk you manage. The fund's currency cannot be changed.
 

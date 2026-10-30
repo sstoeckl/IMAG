@@ -48,7 +48,7 @@ Two consequences follow, and both matter for the checks:
 1. **Client box.** Enter your estimate of γ (whole numbers). Pick the home market from *Meet
    client X* and set the share at home to what the card says. Objective: *Quadratic utility*.
    Give the run a label, e.g. "Hartley, UK".
-2. **Limits by asset class.** e.g. Commodities: min = the floor, or max 0 if the client holds none.
+2. **Limits by asset class.** Commodities: min = the floor, or max 0 if the client holds none.
    Leave everything else at 0 and 1.
 3. **Limits by currency and per position.** Leave at 0 and 1 unless the card says otherwise.
    The optimiser decides.

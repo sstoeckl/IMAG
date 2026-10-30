@@ -75,8 +75,8 @@ much more than the ratios we cover here. The available fields are:
   flow (FCF) per share, revenue, operating margin, current ratio.
 - **ESG ratings (up to five years):** Environmental, Social, Governance, and Overall scores.
 
-The analysis below focuses on the three important checks for a
-strategic asset allocation context: **Quality of Earnings**, **Solvency and Liquidity**, and
+The analysis below focuses on the three important checks for
+security selection: **Quality of Earnings**, **Solvency and Liquidity**, and
 **Relative Valuation**. But you should be aware that the page contains other useful ratios, such as
 price-to-book (P/B), EV/EBITDA, PEG and interest coverage, which are not covered in depth here.
 They are useful for specific sectors (P/B for banks, EV/EBITDA for capital-intensive businesses)
@@ -169,3 +169,8 @@ is *"strong, high-quality fundamentals, but the valuation premium relative to it
 leaves no margin of safety."* That supports a neutral or underweight position, not because the
 company is weak, but because the price is full.
 :::
+
+## Deliverable of this step
+
+For the ESG funds: the floor set and the Matches column clean. For all funds: a conscious decision
+that asset-level automation stays on (or a written list of asset-level deviations).

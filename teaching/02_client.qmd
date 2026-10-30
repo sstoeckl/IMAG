@@ -15,7 +15,8 @@ The text contains everything the strategic allocation needs. In short, each clie
 - a **risk aversion coefficient** γ, which the text does *not* state as a number;
 <!-- Does every description really has a commodity rule? Or is rather a min and max of every asset class? -->
 - a **commodity rule** (a minimum share, or none at all);
-- a **home rule**: a share of the equity book in the client's home market.
+- a **home rule**: a share of the equity book in the client's home market, the rest across the
+  other markets in proportion to their size.
 
 Some clients also have a **sustainability requirement**, and short sales are never allowed.
 Whatever the card does not mention is not constrained.
@@ -28,7 +29,7 @@ commodities" is a floor of 5 %. "Half of the equities in companies from their ho
 spread across the other developed markets in proportion to their size" is the home rule with a home
 share of one half.
 
-Write the rules down as numbers before you open the app. For the Hartley family, the client description specifies:
+Write the rules down as numbers before you open the app. For the Hartley family, the invented client used throughout this book, the rules read:
 
 > Home market Britain. Commodities at least 5 %. Half of the equity book in UK companies, the
 > rest by market size. No sustainability requirement. Cash at the manager's discretion.
@@ -37,7 +38,7 @@ Write the rules down as numbers before you open the app. For the Hartley family,
 ## The risk aversion: bracket it from two decisions
 
 The client card describes decisions the client has taken in the past. Each is a choice
-between two portfolios. For each portfolio the card gives two numbers: its volatility $\sigma$ and its expected return $\mu$.
+between two portfolios. For each portfolio the card gives two numbers: its volatility $\sigma$ and its expected return over cash $\mu$.
 
 We need to turn those two decisions into a number, the client's **risk aversion** $\gamma$. The
 idea is simple. A risk-averse client dislikes volatility. Offered a portfolio with more return and more
@@ -233,7 +234,8 @@ statistics of the market do not change with the filter.
 
 ## Deliverable of this step
 
-Before proceeding to the next step, write down the three numbers that define the client: γ, the minimum expected return, and the maximum volatility.
+Before the next step, write down what defines the client: γ with its bracket, the commodity rule,
+the home market and home share, and any sustainability requirement.
 
 That gives one line per fund, which the next steps build on.
 

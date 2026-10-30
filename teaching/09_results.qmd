@@ -38,7 +38,8 @@ attribution tabs answer three questions, in order:
 
 ### A worked example: diagnosing a negative IR
 
-Suppose the Orange fund has an IR of −0.8 in a round. The Analyst page shows:
+Suppose the Orange fund has an active return of −0.8 % in a round, and so a negative IR. The
+Analyst page shows:
 
 | Tab | Category | Effect |
 |:--|:--|--:|
