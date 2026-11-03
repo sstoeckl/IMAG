@@ -168,7 +168,7 @@ that is, **$\gamma$ lies between about 5.5 and 11**.
 
 **Placing $\gamma$ inside the bracket.** The bracket comes from what the client did; the words on the card place $\gamma$ within it:
 
-- *"Lived through two bear markets without selling, but would not want to see a year like 2008 again"* → middle of the bracket.
+- *"Lived through two bear markets without selling, but would not want to see a year like the worst they have lived through again"* → middle of the bracket.
 - *"They need the portfolio to grow; income covers spending"* → lower end (growth first, more tolerant of risk).
 - *"The income the portfolio produces matters more than growth"* → higher end (capital preservation, less tolerant of risk).
 

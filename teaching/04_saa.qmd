@@ -89,7 +89,7 @@ puts the United States first. Everything the card did not ask for is zero.
   outside its band, your γ is outside the bracket: move it toward the middle.
 - **Home share of the equity book as stated.** Rounding moves it by a point.
 - **Plausible risk.** Worst year and drawdown should fit the words on the card. The Hartleys
-  "would not want to see a year like 2008 again"; a worst year of −14 % over the whole sample is
+  "would not want to see a year like the worst they have lived through again"; a worst year of −14 % over the whole sample is
   consistent with that, a worst year of −23 % is not.
 - **Look at what is zero.** If a position with a Sharpe ratio near zero in station 1 appears in
   the allocation, a limit is forcing it. Ask which.
