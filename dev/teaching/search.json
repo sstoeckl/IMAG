@@ -74,7 +74,7 @@
     "href": "02_client.html#what-the-clients-page-gives-you",
     "title": "2  Reading the client",
     "section": "",
-    "text": "Client Analysis\n\n\n\n\n\na risk aversion coefficient γ, which the text does not state as a number;\na commodity rule (a minimum share, or none at all);\na home rule: a share of the equity book in the client’s home market, the rest across the other markets in proportion to their size.",
+    "text": "The Clients page. The card shown is an example; the card of your fund has its own text and its own client.\n\n\n\n\n\na risk aversion coefficient γ, which the text does not state as a number;\na commodity rule (a minimum share, or none at all);\na home rule: a share of the equity book in the client’s home market, the rest across the other markets in proportion to their size.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Reading the client</span>"
     ]
@@ -634,7 +634,7 @@
     "href": "a1_app.html",
     "title": "Appendix A — The allocation app",
     "section": "",
-    "text": "A.1 Station 1: Strategic Asset Analysis\nThis course provides an online application that implements the allocation methods explained in this handbook. Using the course dataset, the app automatically computes the strategic and tactical allocations. Transfer the values from the game to the app to calculate the allocations. Four stations guide you through the process, each corresponding to a chapter in the handbook.\nAccess the application at: https://inno.uni.li/apps/invest/.\nSpecify the investment fund’s asset universe. Leaving this setting unchanged is recommended because the game allows investments in all 16 benchmark positions by default. For the selected assets, the app computes annualised statistics, the correlation matrix, and the cumulative log return.\nAlthough the game cannot replicate money-market positions directly, currency effects have an important impact on overall performance and should therefore be modelled.",
+    "text": "A.1 Station 1: Strategic Asset Analysis\nThis course provides an online application that implements the allocation methods explained in this handbook. Using the course dataset, the app automatically computes the strategic and tactical allocations. Transfer the values from the game to the app to calculate the allocations. Four stations guide you through the process, each corresponding to a chapter in the handbook.\nAccess the application at: https://inno.uni.li/apps/invest/.\nSpecify the investment fund’s asset universe. Leaving this setting unchanged is recommended: the default selection is the 16 benchmark positions, all of which the game lets you invest in. For the selected assets, the app computes annualised statistics, the correlation matrix, and the cumulative log return.\nThe five money-market positions are not part of the benchmark, so the default selection leaves them out. Add them only to study cash: for a foreign money-market position, most of the return and almost all of the risk come from the exchange rate.",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>A</span>  <span class='chapter-title'>The allocation app</span>"
@@ -645,7 +645,7 @@
     "href": "a1_app.html#station-1-strategic-asset-analysis",
     "title": "Appendix A — The allocation app",
     "section": "",
-    "text": "Select asset classes",
+    "text": "Select asset classes. In this screenshot the five money-market positions have been added to the default selection.",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>A</span>  <span class='chapter-title'>The allocation app</span>"
