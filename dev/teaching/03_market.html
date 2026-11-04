@@ -188,12 +188,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">The allocation app</span></span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./a2_roadmap.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Proposed changes to the app and the game</span></span></a>
-  </div>
-</li>
       </ul>
   </li>
     </ul>
@@ -248,6 +242,12 @@ ul.task-list li input[type="checkbox"] {
 <section id="station-1-of-the-app-statistics-and-correlations" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="station-1-of-the-app-statistics-and-correlations"><span class="header-section-number">3.2</span> Station 1 of the app: statistics and correlations</h2>
 <p>Open the app (<a href="https://inno.uni.li/apps/invest/" class="uri">https://inno.uni.li/apps/invest/</a>), station <em>1 · Strategic Asset Analysis</em>. Keep the default selection (the 16 benchmark positions; the five money-market positions can be added for analysis) and the sample at the full history. The statistics table is annualised and in excess of the US money-market rate; the correlation matrix is of the same excess returns.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="graphics/Appendix/AllocationApp.png" class="img-fluid figure-img"></p>
+<figcaption>Strategic Asset Analysis</figcaption>
+</figure>
+</div>
 <p>Three things to take from the table before you optimise anything.</p>
 <p><strong>The ranking by Sharpe ratio.</strong> Sort the table by the Sharpe column and read it top to bottom. The equity markets and the US bond positions sit at the top; the positions in a foreign currency other than equities sit at the bottom, several of them with a Sharpe ratio around zero or below. Ask of every position near the bottom what premium it is being paid.</p>
 <p><strong>What a foreign bond is in dollars.</strong> Compare the volatility of a country’s money-market position with that of its government bonds, and look at the correlation between the two. In dollars both are mostly the currency: the money market has the currency’s volatility on an excess return near zero, and the bond adds a few points of premium on top of the same currency risk. The game cannot hedge. Keep this in mind when you read the optimiser’s output in Chapter 4, and when you consider a tactical position in Chapter 6.</p>
