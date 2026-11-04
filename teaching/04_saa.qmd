@@ -46,6 +46,9 @@ Two consequences follow, and both matter for the checks:
 
 ## Station 2 of the app, step by step
 
+![Strategic Asset Allocation](graphics/Appendix/StrategicAssetAllocation.png)
+
+
 1. **Client box.** Enter your estimate of γ (whole numbers). Pick the home market from *Meet
    client X* and set the share at home to what the card says. Objective: *Quadratic utility*.
    Give the run a label, e.g. "Hartley, UK".

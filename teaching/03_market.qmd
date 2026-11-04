@@ -31,6 +31,8 @@ benchmark positions; the five money-market positions can be added for analysis) 
 the full history. The statistics table is annualised and in excess of the US
 money-market rate; the correlation matrix is of the same excess returns.
 
+![Strategic Asset Analysis](graphics/Appendix/AllocationApp.png)
+
 Three things to take from the table before you optimise anything.
 
 **The ranking by Sharpe ratio.** Sort the table by the Sharpe column and read it top to bottom.
