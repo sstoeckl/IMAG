@@ -7,6 +7,8 @@ Once the strategic allocation is fixed, the next step is to read the Economic ou
 
 ## What the outlook gives you
 
+![Economic Outlook](graphics/Strategic_Asset_Allocation/EconomicOutlook.png)
+
 The Economic outlook page shows the analyst's estimate of the coming period, with an expected range
 around each number.
 
