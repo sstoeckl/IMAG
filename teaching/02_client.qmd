@@ -7,7 +7,7 @@ In professional investment management, building a portfolio is only one part of 
 
 ## What the Clients page gives you
 
-![Client Analysis](graphics/Client_Analysis/ReadClient.png)
+![The Clients page. The card shown is an example; the card of your fund has its own text and its own client.](graphics/Client_Analysis/ReadClient.png)
 
 
 Each fund has a client card on the Clients page. It shows a general profile of the client type;

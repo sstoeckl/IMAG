@@ -8,11 +8,11 @@ Access the application at: <https://inno.uni.li/apps/invest/>.
 
 
 ## Station 1: Strategic Asset Analysis
-Specify the investment fund's asset universe. Leaving this setting unchanged is recommended because the game allows investments in all 16 benchmark positions by default. For the selected assets, the app computes annualised statistics, the correlation matrix, and the cumulative log return.
+Specify the investment fund's asset universe. Leaving this setting unchanged is recommended: the default selection is the 16 benchmark positions, all of which the game lets you invest in. For the selected assets, the app computes annualised statistics, the correlation matrix, and the cumulative log return.
 
-![Select asset classes](graphics/Appendix/SpecifyPositions.png)
+![Select asset classes. In this screenshot the five money-market positions have been added to the default selection.](graphics/Appendix/SpecifyPositions.png)
 
-Although the game cannot replicate money-market positions directly, currency effects have an important impact on overall performance and should therefore be modelled.
+The five money-market positions are not part of the benchmark, so the default selection leaves them out. Add them only to study cash: for a foreign money-market position, most of the return and almost all of the risk come from the exchange rate.
 
 ## Station 2: Strategic Asset Allocation
 Based on the supplied inputs, Station 2 optimises the fund's strategic allocation. This quadratic programme maximises the portfolio's expected return while minimising its risk, subject to several constraints. As introduced in Chapter 4, the method follows the Markowitz mean–variance optimisation framework. Additional constraints account for the home market and home share, as well as floors and caps for asset classes, currencies, and individual positions.
