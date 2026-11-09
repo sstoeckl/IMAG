@@ -36,7 +36,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./a2_roadmap.html" rel="next">
 <link href="./09_results.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -217,12 +216,6 @@ window.Quarto = {
  <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">The allocation app</span></span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./a2_roadmap.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Proposed changes to the app and the game</span></span></a>
-  </div>
-</li>
       </ul>
   </li>
     </ul>
@@ -235,14 +228,10 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#what-it-is" id="toc-what-it-is" class="nav-link active" data-scroll-target="#what-it-is"><span class="header-section-number">A.1</span> What it is</a></li>
-  <li><a href="#the-data" id="toc-the-data" class="nav-link" data-scroll-target="#the-data"><span class="header-section-number">A.2</span> The data</a></li>
-  <li><a href="#station-1-strategic-asset-analysis" id="toc-station-1-strategic-asset-analysis" class="nav-link" data-scroll-target="#station-1-strategic-asset-analysis"><span class="header-section-number">A.3</span> Station 1 · Strategic Asset Analysis</a></li>
-  <li><a href="#station-2-strategic-asset-allocation" id="toc-station-2-strategic-asset-allocation" class="nav-link" data-scroll-target="#station-2-strategic-asset-allocation"><span class="header-section-number">A.4</span> Station 2 · Strategic Asset Allocation</a></li>
-  <li><a href="#station-3-tactical-analysis" id="toc-station-3-tactical-analysis" class="nav-link" data-scroll-target="#station-3-tactical-analysis"><span class="header-section-number">A.5</span> Station 3 · Tactical Analysis</a></li>
-  <li><a href="#station-4-tactical-asset-allocation" id="toc-station-4-tactical-asset-allocation" class="nav-link" data-scroll-target="#station-4-tactical-asset-allocation"><span class="header-section-number">A.6</span> Station 4 · Tactical Asset Allocation</a></li>
-  <li><a href="#saving-your-work" id="toc-saving-your-work" class="nav-link" data-scroll-target="#saving-your-work"><span class="header-section-number">A.7</span> Saving your work</a></li>
-  <li><a href="#tests" id="toc-tests" class="nav-link" data-scroll-target="#tests"><span class="header-section-number">A.8</span> Tests</a></li>
+  <li><a href="#station-1-strategic-asset-analysis" id="toc-station-1-strategic-asset-analysis" class="nav-link active" data-scroll-target="#station-1-strategic-asset-analysis"><span class="header-section-number">A.1</span> Station 1: Strategic Asset Analysis</a></li>
+  <li><a href="#station-2-strategic-asset-allocation" id="toc-station-2-strategic-asset-allocation" class="nav-link" data-scroll-target="#station-2-strategic-asset-allocation"><span class="header-section-number">A.2</span> Station 2: Strategic Asset Allocation</a></li>
+  <li><a href="#station-3-tactical-analysis" id="toc-station-3-tactical-analysis" class="nav-link" data-scroll-target="#station-3-tactical-analysis"><span class="header-section-number">A.3</span> Station 3: Tactical Analysis</a></li>
+  <li><a href="#station-4-tactical-asset-allocation" id="toc-station-4-tactical-asset-allocation" class="nav-link" data-scroll-target="#station-4-tactical-asset-allocation"><span class="header-section-number">A.4</span> Station 4: Tactical Asset Allocation</a></li>
   </ul>
 </nav>
     </div>
@@ -268,58 +257,226 @@ window.Quarto = {
 </header>
 
 
-<section id="what-it-is" class="level2" data-number="A.1">
-<h2 data-number="A.1" class="anchored" data-anchor-id="what-it-is"><span class="header-section-number">A.1</span> What it is</h2>
-<p>A Shiny app, provided with the course, that runs the allocation method of this book on the course dataset. It has four stations that follow Chapters 3 to 6. It does not connect to the game; you read numbers off it and type them into the game’s grids.</p>
-<p>Source and installation: the course repository (<code>2024_CESIM_Invest</code>). It needs R with the packages <code>shiny</code>, <code>DT</code>, <code>xts</code> and <code>quadprog</code>; start it with <code>shiny::runApp()</code> in the app folder, or use the hosted instance your instructor names.</p>
+<p>This course provides an online application that implements the allocation methods explained in this handbook. Using the course dataset, the app automatically computes the strategic and tactical allocations. Transfer the values from the game to the app to calculate the allocations. Four stations guide you through the process, each corresponding to a chapter in the handbook.</p>
+<p>Access the application at: <a href="https://inno.uni.li/apps/invest/" class="uri">https://inno.uni.li/apps/invest/</a>.</p>
+<section id="station-1-strategic-asset-analysis" class="level2" data-number="A.1">
+<h2 data-number="A.1" class="anchored" data-anchor-id="station-1-strategic-asset-analysis"><span class="header-section-number">A.1</span> Station 1: Strategic Asset Analysis</h2>
+<p>Specify the investment fund’s asset universe. Leaving this setting unchanged is recommended: the default selection is the 16 benchmark positions, all of which the game lets you invest in. For the selected assets, the app computes annualised statistics, the correlation matrix, and the cumulative log return.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="graphics/Appendix/SpecifyPositions.png" class="img-fluid figure-img"></p>
+<figcaption>Select asset classes. In this screenshot the five money-market positions have been added to the default selection.</figcaption>
+</figure>
+</div>
+<p>The five money-market positions are not part of the benchmark, so the default selection leaves them out. If you add them here, they also enter the optimisation in Station 2, and the allocation can then hold cash. Returns are in US dollars and unhedged, so a foreign money-market position carries almost the full volatility of its exchange rate.</p>
 </section>
-<section id="the-data" class="level2" data-number="A.2">
-<h2 data-number="A.2" class="anchored" data-anchor-id="the-data"><span class="header-section-number">A.2</span> The data</h2>
-<ul>
-<li><code>data/classes_monthly.csv</code>: the 21 positions, monthly total returns in US dollars, unhedged, with an index series; the full history the course uses. The strategic benchmark is defined on the 16 positions without the money market; the app’s default selection leaves the five money-market positions out, and they can be added for analysis.</li>
-<li><code>data/riskfree_monthly.csv</code>: the US money-market rate, monthly.</li>
-<li><code>data/cap_shares.csv</code>: the capitalisation shares of the five equity markets, for the home rule.</li>
-</ul>
-<p>Positions are named <code>&lt;region&gt;_&lt;class&gt;</code>: <code>US_money_market</code>, <code>UK_government</code>, <code>EU_credit</code>, <code>CH_equity</code>, <code>JP_equity</code>, <code>GLOBAL_commodity</code>. Excess returns are total returns minus the money-market rate of the same month. Annualisation: mean × 12, covariance × 12.</p>
-</section>
-<section id="station-1-strategic-asset-analysis" class="level2" data-number="A.3">
-<h2 data-number="A.3" class="anchored" data-anchor-id="station-1-strategic-asset-analysis"><span class="header-section-number">A.3</span> Station 1 · Strategic Asset Analysis</h2>
-<p>Inputs: the positions (default the 16 benchmark positions), the part of the sample in percent of the observations (default all). Outputs: annualised statistics (excess return, volatility, Sharpe ratio, skewness, worst calendar year, maximum drawdown), the correlation matrix, the growth of 100.</p>
-</section>
-<section id="station-2-strategic-asset-allocation" class="level2" data-number="A.4">
-<h2 data-number="A.4" class="anchored" data-anchor-id="station-2-strategic-asset-allocation"><span class="header-section-number">A.4</span> Station 2 · Strategic Asset Allocation</h2>
-<p>Inputs: γ (whole numbers), home market and home share, objective (quadratic utility, minimum variance, maximum Sharpe), a label; floors and caps by asset class, by currency and per position. The problem solved:</p>
+<section id="station-2-strategic-asset-allocation" class="level2" data-number="A.2">
+<h2 data-number="A.2" class="anchored" data-anchor-id="station-2-strategic-asset-allocation"><span class="header-section-number">A.2</span> Station 2: Strategic Asset Allocation</h2>
+<p>Based on the supplied inputs, Station 2 optimises the fund’s strategic allocation. This quadratic programme maximises the portfolio’s expected return while minimising its risk, subject to several constraints. As introduced in Chapter 4, the method follows the Markowitz mean–variance optimisation framework. Additional constraints account for the home market and home share, as well as floors and caps for asset classes, currencies, and individual positions.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="graphics/Appendix/StrategicAssetAllocation.png" class="img-fluid figure-img"></p>
+<figcaption>Set the parameters for the mean variance optimisation</figcaption>
+</figure>
+</div>
+<p>For each fund, specify the risk-aversion parameter (γ), the home market, the home share, and the objective function: quadratic utility, minimum variance, or maximum Sharpe ratio. Optimal weights for each asset class and currency are then computed subject to the specified constraints.</p>
+<p>With these inputs, the app solves the following optimisation problem:</p>
 <p><span class="math display">\[
 \max_w \; \mu' w - \frac{\gamma}{2}\, w' \Sigma w
 \quad \text{s.t.} \quad \sum w = 1,\; w \ge 0,\; \text{floors and caps},\; \text{home rule},
 \]</span></p>
 <p>with the home rule as one linear equality per foreign equity market: <span class="math inline">\(w_x = (1-h)\, s_x
-\sum_{\text{equity}} w\)</span>, where <span class="math inline">\(h\)</span> is the home share and <span class="math inline">\(s_x\)</span> the capitalisation share of market <span class="math inline">\(x\)</span> outside the home market. Solved with <code>quadprog::solve.QP(D = \gamma\Sigma, d = \mu, A, b, meq)</code>. Minimum variance sets μ = 0; maximum Sharpe is the best point of a sweep over γ. Weights are rounded to half a percent, the residual into the home equity position.</p>
-<p>Outputs: the allocation as a currency × asset class matrix with sums, the positions with raw and rounded weights, class and currency totals, in-sample results of the fixed weights rebalanced monthly (expected excess return, volatility, Sharpe, best and worst calendar year, maximum drawdown), the binding limits, the in-sample path, the efficient frontier under the same limits, the constraint rows, and R code that reproduces the run. <em>Fix this allocation as an SAA</em> hands it to stations 3 and 4; several SAAs can be fixed, by label.</p>
+\sum_{\text{equity}} w\)</span>, where <span class="math inline">\(h\)</span> is the home share and <span class="math inline">\(s_x\)</span> the capitalisation share of the market <span class="math inline">\(x\)</span> outside the home market.</p>
 </section>
-<section id="station-3-tactical-analysis" class="level2" data-number="A.5">
-<h2 data-number="A.5" class="anchored" data-anchor-id="station-3-tactical-analysis"><span class="header-section-number">A.5</span> Station 3 · Tactical Analysis</h2>
-<p>Inputs: τ (default 0.05) and the views, typed one per line: <code>US_equity 12 50</code> is an absolute view (US equities earn 12 % a year over cash, confidence 50 %); <code>EU_equity &gt; CH_equity 2 60</code> is a relative view (euro-area equities beat Swiss equities by 2 points a year, confidence 60 %). The confidence is optional and defaults to 50; lines starting with <code>#</code> are ignored; a list of position names is in the panel. The views apply to every fixed SAA; a selector chooses which SAA’s prior and posterior the table shows.</p>
-<p>Prior: <span class="math inline">\(\Pi = \gamma \Sigma w_{\text{SAA}}\)</span> (reverse optimisation with the SAA’s own γ and the unrounded weights). Posterior (He and Litterman 1999):</p>
-<p><span class="math display">\[
+<section id="station-3-tactical-analysis" class="level2" data-number="A.3">
+<h2 data-number="A.3" class="anchored" data-anchor-id="station-3-tactical-analysis"><span class="header-section-number">A.3</span> Station 3: Tactical Analysis</h2>
+<p>Before calculating the tactical allocation, specify views on the expected returns of the assets. Views can be absolute or relative and can include a confidence level.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="graphics/Appendix/TacticalAnalysis.png" class="img-fluid figure-img"></p>
+<figcaption>Enter Tactical Views</figcaption>
+</figure>
+</div>
+<p>Use the following syntax for the views:</p>
+<ul>
+<li><p>Positions are named <code>&lt;region&gt;_&lt;class&gt;</code>: <code>US_money_market</code>, <code>UK_government</code>, <code>EU_credit</code>, <code>CH_equity</code>, <code>JP_equity</code>, <code>GLOBAL_commodity</code></p>
+<ul>
+<li>Money market: <code>US_money_market</code>, <code>UK_money_market</code>, <code>EU_money_market</code>, <code>CH_money_market</code>, <code>JP_money_market</code></li>
+<li>Government bonds: <code>US_government</code>, <code>UK_government</code>, <code>EU_government</code>, <code>CH_government</code>, <code>JP_government</code></li>
+<li>Corporate bonds: <code>US_credit</code>, <code>UK_credit</code>, <code>EU_credit</code>, <code>CH_credit</code>, <code>JP_credit</code></li>
+<li>Equities: <code>US_equity</code>, <code>UK_equity</code>, <code>EU_equity</code>, <code>CH_equity</code>, <code>JP_equity</code></li>
+<li>Alternatives: <code>GLOBAL_commodity</code></li>
+</ul></li>
+<li><p>Absolute view: <code>&lt;position&gt; &lt;expected return&gt; [confidence]</code> (e.g., <code>US_equity 12 50</code> means that US equities are expected to earn 12% a year over cash, with a confidence of 50%)</p></li>
+<li><p>Relative view: <code>&lt;position1&gt; &gt; &lt;position2&gt; &lt;expected return difference&gt; [confidence]</code> (e.g., <code>EU_equity &gt; CH_equity 2 60</code> means that euro-area equities are expected to beat Swiss equities by 2 points a year, with a confidence of 60%)</p></li>
+<li><p>Enter each view on a new line. Lines starting with <code>#</code> are ignored. A list of position names is available in the panel.</p></li>
+</ul>
+<p>Parameter τ controls the weight assigned to the views during optimisation. Based on the specified views and strategic allocation, the app computes the prior and posterior expected returns.</p>
+<p>These views produce the priors and posteriors through the He–Litterman (1999) model.</p>
+<ul>
+<li><strong>Prior</strong> — the baseline expected returns implied by the strategic allocation, <em>before</em> any tactical views. Reverse optimisation obtains it from <span class="math inline">\(\Pi = \gamma \Sigma w_{\text{SAA}}\)</span>: the SAA weights are treated as if they were optimal, and the returns that would justify them are backed out. The prior therefore anchors the analysis to the long-term allocation.</li>
+<li><strong>Posterior</strong> — the updated expected returns <em>after</em> incorporating the views. The Black–Litterman formula blends the prior (weighted by <span class="math inline">\(\tau\Sigma\)</span>, reflecting uncertainty in the prior) with the views <span class="math inline">\(Q\)</span> (weighted by <span class="math inline">\(\Omega\)</span>, reflecting confidence in each view). High-confidence views move returns further from the prior; low-confidence views barely move them. In the positive-semidefinite sense, posterior covariance <span class="math inline">\(\Sigma_{BL}\)</span> exceeds <span class="math inline">\(\Sigma\)</span> because it adds estimation uncertainty to market risk.</li>
+</ul>
+<!--
+
+To AI Agent and Sebastian I decided to leave this out, maybe we should reintroduce it later. It is a bit technical and the app does not show it, but it is important to understand the underlying math. However I'm not aware of a way on how to present it without being too technical.
+
+**Mathematically:**
+
+Prior:
+
+$$
+\Pi = \gamma \Sigma w_{\text{SAA}}
+$$
+
+This is the reverse optimisation with the SAA's own $\gamma$ and the unrounded weights — i.e., the expected return implied by the strategic asset allocation before any tactical views.
+
+Posterior (He–Litterman 1999):
+
+$$
 \mu_{BL} = \left[(\tau\Sigma)^{-1} + P'\Omega^{-1}P\right]^{-1}
           \left[(\tau\Sigma)^{-1}\Pi + P'\Omega^{-1}Q\right],
 \qquad
 \Sigma_{BL} = \Sigma + \left[(\tau\Sigma)^{-1} + P'\Omega^{-1}P\right]^{-1},
-\]</span></p>
-<p>with <span class="math inline">\(\Omega\)</span> diagonal and <span class="math inline">\(\Omega_k = \frac{1-c_k}{c_k}\,\tau\, p_k'\Sigma p_k\)</span>, so that c = 1/2 is the He–Litterman setting. Outputs: per position the SAA weight, the sample mean, the prior, the posterior and the change; the views as parsed.</p>
+$$
+
+where $\Omega$ is diagonal and
+
+$$
+\Omega_k = \frac{1-c_k}{c_k}\,\tau\, p_k'\Sigma p_k,
+$$
+
+so that $c = 1/2$ is the He–Litterman setting.
+
+-->
 </section>
-<section id="station-4-tactical-asset-allocation" class="level2" data-number="A.6">
-<h2 data-number="A.6" class="anchored" data-anchor-id="station-4-tactical-asset-allocation"><span class="header-section-number">A.6</span> Station 4 · Tactical Asset Allocation</h2>
-<p>Inputs: the maximum deviation per position (band, default 0.05) and the tracking-error budget (default 2 % a year, 0 = none). One press computes the tactical allocation of <strong>every</strong> fixed SAA under the same views. For each SAA, the problem of station 2 on <span class="math inline">\((\mu_{BL}, \Sigma)\)</span> with that SAA’s γ and limits but without the home rule, plus <span class="math inline">\(w_{\text{SAA}} - d \le w \le w_{\text{SAA}} + d\)</span>. The home rule is left out because it defines the benchmark; kept, a view on one equity market could not act. The sample covariance Σ is used, not <span class="math inline">\(\Sigma_{BL}\)</span>: <span class="math inline">\(\Sigma_{BL}\)</span> raises the measured risk by about <span class="math inline">\((1+\tau)\)</span> as soon as any view is entered and moves weight from equities into bonds for no reason of the views. If a budget is set and the tracking error <span class="math inline">\(\sqrt{(w - w_{\text{SAA}})'\Sigma(w - w_{\text{SAA}})}\)</span> exceeds it, the deviation is scaled to the budget. Outputs: a summary table with the tilt by asset class, tracking error and active return per fund, and a tab per fund with the SAA, TAA and deviation matrices, the active-position figures and the binding limits. A negative expected active return is flagged in both. Without views the TAA equals the SAA, and a view that agrees with the prior leaves it there.</p>
-</section>
-<section id="saving-your-work" class="level2" data-number="A.7">
-<h2 data-number="A.7" class="anchored" data-anchor-id="saving-your-work"><span class="header-section-number">A.7</span> Saving your work</h2>
-<p>Station 2 saves the fixed SAAs (their inputs and weights), the views and the tactical settings as a JSON file and loads such a file back. On loading, the SAAs are recomputed from their inputs on the current data, so a loaded file is always consistent with the dataset in use. Save the file in the team forum; it is the team’s record of the funds and views.</p>
-</section>
-<section id="tests" class="level2" data-number="A.8">
-<h2 data-number="A.8" class="anchored" data-anchor-id="tests"><span class="header-section-number">A.8</span> Tests</h2>
-<p><code>tests/check_recipe.R</code> confirms that the app’s constraint builder and solver reproduce a hand-written quadratic programme for twenty client cases; <code>tests/check_taa.R</code> confirms that the tactical allocation equals the strategic one without views and under a view that agrees with the prior, that a negative view on one equity market lowers that market, and shows one view at work with a tracking-error budget.</p>
+<section id="station-4-tactical-asset-allocation" class="level2" data-number="A.4">
+<h2 data-number="A.4" class="anchored" data-anchor-id="station-4-tactical-asset-allocation"><span class="header-section-number">A.4</span> Station 4: Tactical Asset Allocation</h2>
+<p>In the final step, translate the short-term views into a tactical allocation. Define the Strategic Asset Allocation (SAA) and the Tactical Analysis before computing the Tactical Asset Allocation (TAA). Solving an optimisation problem similar to the one in Station 2 produces the TAA, using the posterior expected returns and covariance matrix from Station 3, together with constraints on the maximum deviation per position and the tracking-error budget.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="graphics/Appendix/TacticalAssetAllocation.png" class="img-fluid figure-img"></p>
+<figcaption>Optimise for the Tactical Asset Allocation</figcaption>
+</figure>
+</div>
+<p>Specify the maximum deviation per position (the band; default: 0.05) and the tracking-error budget (default: 2% per year; 0 means no tracking-error constraint). Optimal weights for each asset class and currency are then computed subject to the specified constraints. This budget represents the maximum permitted deviation from the strategic allocation, measured as the standard deviation of the difference between the tactical and strategic allocations using the covariance matrix.</p>
+<p>Station 4 drops the home rule. In Station 2 the rule fixes the split of the equity book across markets, so if it stayed in place, a view on an individual equity market could not change the allocation. Risk is measured with the sample covariance Σ rather than <span class="math inline">\(\Sigma_{BL}\)</span>; the latter adds estimation uncertainty and could shift weights independently of the views. If the tracking error <span class="math inline">\(\sqrt{(w - w_{\text{SAA}})'\Sigma(w - w_{\text{SAA}})}\)</span> exceeds the budget, the deviation is scaled to the budget.</p>
+<!--
+
+
+
+## What it is
+
+A Shiny app, provided with the course, that runs the allocation method of this book on the course
+dataset. It has four stations that follow Chapters 3 to 6. It does not connect to the game; you
+read numbers off it and type them into the game's grids.
+
+Source and installation: the course repository (`2024_CESIM_Invest`). It needs R with the packages
+`shiny`, `DT`, `xts` and `quadprog`; start it with `shiny::runApp()` in the app folder, or use the
+hosted instance your instructor names.
+
+## The data
+
+- `data/classes_monthly.csv`: the 21 positions, monthly total returns in US dollars, unhedged,
+  with an index series; the full history the course uses. The strategic benchmark is defined on
+  the 16 positions without the money market; the app's default selection leaves the five
+  money-market positions out, and they can be added for analysis.
+- `data/riskfree_monthly.csv`: the US money-market rate, monthly.
+- `data/cap_shares.csv`: the capitalisation shares of the five equity markets, for the home rule.
+
+Positions are named `<region>_<class>`: `US_money_market`, `UK_government`, `EU_credit`,
+`CH_equity`, `JP_equity`, `GLOBAL_commodity`. Excess returns are total returns minus the
+money-market rate of the same month. Annualisation: mean × 12, covariance × 12.
+
+## Station 1: Strategic Asset Analysis
+
+Inputs: the positions (default: the 16 benchmark positions) and the proportion of the sample to
+use (default: all observations). Outputs: annualised statistics (excess return, volatility, Sharpe
+ratio, skewness, worst calendar year, maximum drawdown), the correlation matrix, and the growth of 100.
+
+## Station 2: Strategic Asset Allocation
+
+Inputs: γ (whole numbers), home market and home share, objective (quadratic utility, minimum
+variance, maximum Sharpe), a label; floors and caps by asset class, by currency and per position.
+The problem solved:
+
+$$
+\max_w \; \mu' w - \frac{\gamma}{2}\, w' \Sigma w
+\quad \text{s.t.} \quad \sum w = 1,\; w \ge 0,\; \text{floors and caps},\; \text{home rule},
+$$
+
+with the home rule as one linear equality per foreign equity market: $w_x = (1-h)\, s_x
+\sum_{\text{equity}} w$, where $h$ is the home share and $s_x$ the capitalisation share of market
+$x$ outside the home market. Solved with `quadprog::solve.QP(D = \gamma\Sigma, d = \mu, A, b,
+meq)`. Minimum variance sets μ = 0; maximum Sharpe is the best point of a sweep over γ. Weights are
+rounded to half a percent, the residual into the home equity position.
+
+Outputs: the allocation as a currency × asset class matrix with sums, the positions with raw and
+rounded weights, class and currency totals, in-sample results of the fixed weights rebalanced
+monthly (expected excess return, volatility, Sharpe, best and worst calendar year, maximum
+drawdown), the binding limits, the in-sample path, the efficient frontier under the same limits,
+the constraint rows, and R code that reproduces the run. Selecting *Fix this allocation as an SAA*
+makes it available to Stations 3 and 4. Several SAAs can be fixed, each with a separate label.
+
+## Station 3: Tactical Analysis
+
+Inputs: τ (default: 0.05) and the views, entered one per line. For example, `US_equity 12 50` is an absolute view
+(US equities earn 12 % a year over cash, confidence 50 %); `EU_equity > CH_equity 2 60` is a
+relative view (euro-area equities beat Swiss equities by 2 points a year, confidence 60 %). The
+confidence is optional and defaults to 50%; lines starting with `#` are ignored; a list of position
+names is available in the panel. The views apply to every fixed SAA; a selector determines which
+SAA's prior and posterior the table displays.
+
+Prior: $\Pi = \gamma \Sigma w_{\text{SAA}}$ (reverse optimisation with the SAA's own γ and the
+unrounded weights). Posterior (He–Litterman 1999):
+
+$$
+\mu_{BL} = \left[(\tau\Sigma)^{-1} + P'\Omega^{-1}P\right]^{-1}
+          \left[(\tau\Sigma)^{-1}\Pi + P'\Omega^{-1}Q\right],
+\qquad
+\Sigma_{BL} = \Sigma + \left[(\tau\Sigma)^{-1} + P'\Omega^{-1}P\right]^{-1},
+$$
+
+where $\Omega$ is diagonal and $\Omega_k = \frac{1-c_k}{c_k}\,\tau\, p_k'\Sigma p_k$, so that c = 1/2
+is the He–Litterman setting. Outputs: per position the SAA weight, the sample mean, the prior, the
+posterior and the change; the views as parsed.
+
+## Station 4: Tactical Asset Allocation
+
+Inputs: the maximum deviation per position (band, default: 0.05) and the tracking-error budget
+(default: 2% per year; 0 means no tracking-error constraint). One press computes the tactical
+allocation of **every** fixed SAA under the same views. For each SAA, the app solves the Station 2
+problem using $(\mu_{BL}, \Sigma)$ with that
+SAA's γ and limits but without the home rule, plus
+$w_{\text{SAA}} - d \le w \le w_{\text{SAA}} + d$. The home rule is left out because it defines
+the benchmark. If the home rule were retained, a view on an individual equity market could not
+affect the allocation. The sample covariance Σ is used,
+not $\Sigma_{BL}$: $\Sigma_{BL}$ raises the measured risk by about $(1+\tau)$ as soon as any view
+is entered and moves weight from equities into bonds for reasons unrelated to the views. If a budget is
+set and the tracking error $\sqrt{(w - w_{\text{SAA}})'\Sigma(w - w_{\text{SAA}})}$ exceeds it,
+the deviation is scaled to the budget. Outputs: a summary table with the tilt by asset class,
+tracking error and active return per fund, and a tab per fund with the SAA, TAA and deviation
+matrices, the active-position figures and the binding limits. A negative expected active return
+is flagged in both. If the home rule is non-binding, the TAA equals the SAA without views, and a view that agrees with
+the prior leaves it unchanged. If removing the home rule relaxes a binding constraint, the TAA may
+differ even without views.
+
+## Saving your work
+
+Station 2 saves the fixed SAAs (their inputs and weights), the views and the tactical settings as a
+JSON file and loads such a file back. On loading, the SAAs are recomputed from their inputs on the
+current data, so a loaded file is always consistent with the dataset in use. Save the file in the
+team forum; it is the team's record of the funds and views.
+
+## Tests
+
+`tests/check_recipe.R` confirms that the app's constraint builder and solver reproduce a
+hand-written quadratic programme for twenty client cases; `tests/check_taa.R` confirms that the
+tactical allocation equals the strategic one without views and under a view that agrees with
+the prior, that a negative view on one equity market lowers that market, and shows one view at
+work with a tracking-error budget.
+
+-->
 
 
 </section>
@@ -808,9 +965,6 @@ window.Quarto = {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./a2_roadmap.html" class="pagination-link" aria-label="Proposed changes to the app and the game">
-        <span class="nav-page-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Proposed changes to the app and the game</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

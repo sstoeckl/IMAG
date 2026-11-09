@@ -74,7 +74,7 @@
     "href": "02_client.html#what-the-clients-page-gives-you",
     "title": "2  Reading the client",
     "section": "",
-    "text": "a risk aversion coefficient γ, which the text does not state as a number;\na commodity rule (a minimum share, or none at all);\na home rule: a share of the equity book in the client’s home market, the rest across the other markets in proportion to their size.",
+    "text": "The Clients page. The card shown is an example; the card of your fund has its own text and its own client.\n\n\n\n\n\na risk aversion coefficient γ, which the text does not state as a number;\na commodity rule (a minimum share, or none at all);\na home rule: a share of the equity book in the client’s home market, the rest across the other markets in proportion to their size.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Reading the client</span>"
     ]
@@ -174,7 +174,7 @@
     "href": "03_market.html#station-1-of-the-app-statistics-and-correlations",
     "title": "3  Reading the market",
     "section": "3.2 Station 1 of the app: statistics and correlations",
-    "text": "3.2 Station 1 of the app: statistics and correlations\nOpen the app (https://inno.uni.li/apps/invest/), station 1 · Strategic Asset Analysis. Keep the default selection (the 16 benchmark positions; the five money-market positions can be added for analysis) and the sample at the full history. The statistics table is annualised and in excess of the US money-market rate; the correlation matrix is of the same excess returns.\nThree things to take from the table before you optimise anything.\nThe ranking by Sharpe ratio. Sort the table by the Sharpe column and read it top to bottom. The equity markets and the US bond positions sit at the top; the positions in a foreign currency other than equities sit at the bottom, several of them with a Sharpe ratio around zero or below. Ask of every position near the bottom what premium it is being paid.\nWhat a foreign bond is in dollars. Compare the volatility of a country’s money-market position with that of its government bonds, and look at the correlation between the two. In dollars both are mostly the currency: the money market has the currency’s volatility on an excess return near zero, and the bond adds a few points of premium on top of the same currency risk. The game cannot hedge. Keep this in mind when you read the optimiser’s output in Chapter 4, and when you consider a tactical position in Chapter 6.\nThe correlation structure. The five equity markets move together, with correlations around 0.4 to 0.65 against the US; US government bonds are slightly negatively correlated with US equities. That negative correlation is what a defensive position is for.\n\n\n\n\n\n\nNoteWhere the money market is\n\n\n\nExcess returns are measured over the US money-market rate, so the money market is the zero line of the table. The five money-market positions themselves are not in the benchmark: the game’s strategic grid has no cash row, and the client leaves cash to the manager. Add them in station 1 if you want to see them (in dollars, a foreign money-market position is the currency and nothing else); leave them out when you optimise the strategic allocation.",
+    "text": "3.2 Station 1 of the app: statistics and correlations\nOpen the app (https://inno.uni.li/apps/invest/), station 1 · Strategic Asset Analysis. Keep the default selection (the 16 benchmark positions; the five money-market positions can be added for analysis) and the sample at the full history. The statistics table is annualised and in excess of the US money-market rate; the correlation matrix is of the same excess returns.\n\n\n\nStrategic Asset Analysis\n\n\nThree things to take from the table before you optimise anything.\nThe ranking by Sharpe ratio. Sort the table by the Sharpe column and read it top to bottom. The equity markets and the US bond positions sit at the top; the positions in a foreign currency other than equities sit at the bottom, several of them with a Sharpe ratio around zero or below. Ask of every position near the bottom what premium it is being paid.\nWhat a foreign bond is in dollars. Compare the volatility of a country’s money-market position with that of its government bonds, and look at the correlation between the two. In dollars both are mostly the currency: the money market has the currency’s volatility on an excess return near zero, and the bond adds a few points of premium on top of the same currency risk. The game cannot hedge. Keep this in mind when you read the optimiser’s output in Chapter 4, and when you consider a tactical position in Chapter 6.\nThe correlation structure. The five equity markets move together, with correlations around 0.4 to 0.65 against the US; US government bonds are slightly negatively correlated with US equities. That negative correlation is what a defensive position is for.\n\n\n\n\n\n\nNoteWhere the money market is\n\n\n\nExcess returns are measured over the US money-market rate, so the money market is the zero line of the table. The five money-market positions themselves are not in the benchmark: the game’s strategic grid has no cash row, and the client leaves cash to the manager. Add them in station 1 if you want to see them (in dollars, a foreign money-market position is the currency and nothing else); leave them out when you optimise the strategic allocation.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Reading the market</span>"
     ]
@@ -224,7 +224,7 @@
     "href": "04_saa.html#station-2-of-the-app-step-by-step",
     "title": "4  Setting the strategic allocation",
     "section": "4.2 Station 2 of the app, step by step",
-    "text": "4.2 Station 2 of the app, step by step\n\nClient box. Enter your estimate of γ (whole numbers). Pick the home market from Meet client X and set the share at home to what the card says. Objective: Quadratic utility. Give the run a label, e.g. “Hartley, UK”.\nLimits by asset class. Commodities: min = the floor, or max 0 if the client holds none. Leave everything else at 0 and 1.\nLimits by currency and per position. Leave at 0 and 1 unless the card says otherwise. The optimiser decides.\nOptimise. Read the matrix.\nCheck (below). If it passes, Fix this allocation as an SAA; it is now available to the tactical stations.\nEnter it in the game: Investment strategy → Strategic allocation, the currency × asset class grid, in percent. Commodities go into the USD column.",
+    "text": "4.2 Station 2 of the app, step by step\n\n\n\nStrategic Asset Allocation\n\n\n\nClient box. Enter your estimate of γ (whole numbers). Pick the home market from Meet client X and set the share at home to what the card says. Objective: Quadratic utility. Give the run a label, e.g. “Hartley, UK”.\nLimits by asset class. Commodities: min = the floor, or max 0 if the client holds none. Leave everything else at 0 and 1.\nLimits by currency and per position. Leave at 0 and 1 unless the card says otherwise. The optimiser decides.\nOptimise. Read the matrix.\nCheck (below). If it passes, Fix this allocation as an SAA; it is now available to the tactical stations.\nEnter it in the game: Investment strategy → Strategic allocation, the currency × asset class grid, in percent. Commodities go into the USD column.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting the strategic allocation</span>"
     ]
@@ -294,7 +294,7 @@
     "href": "05_views.html#what-the-outlook-gives-you",
     "title": "5  From the Economic outlook to views",
     "section": "",
-    "text": "Interest rates by maturity and currency\nEconomic indicators\nThe expected excess market return and the factor premia (HML, MOM, RMW) per currency\nCredit spreads\nExchange rates",
+    "text": "Economic Outlook\n\n\n\n\n\nInterest rates by maturity and currency\nEconomic indicators\nThe expected excess market return and the factor premia (HML, MOM, RMW) per currency\nCredit spreads\nExchange rates",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>From the Economic outlook to views</span>"
     ]
@@ -634,18 +634,7 @@
     "href": "a1_app.html",
     "title": "Appendix A — The allocation app",
     "section": "",
-    "text": "A.1 What it is\nA Shiny app, provided with the course, that runs the allocation method of this book on the course dataset. It has four stations that follow Chapters 3 to 6. It does not connect to the game; you read numbers off it and type them into the game’s grids.\nSource and installation: the course repository (2024_CESIM_Invest). It needs R with the packages shiny, DT, xts and quadprog; start it with shiny::runApp() in the app folder, or use the hosted instance your instructor names.",
-    "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>A</span>  <span class='chapter-title'>The allocation app</span>"
-    ]
-  },
-  {
-    "objectID": "a1_app.html#the-data",
-    "href": "a1_app.html#the-data",
-    "title": "Appendix A — The allocation app",
-    "section": "A.2 The data",
-    "text": "A.2 The data\n\ndata/classes_monthly.csv: the 21 positions, monthly total returns in US dollars, unhedged, with an index series; the full history the course uses. The strategic benchmark is defined on the 16 positions without the money market; the app’s default selection leaves the five money-market positions out, and they can be added for analysis.\ndata/riskfree_monthly.csv: the US money-market rate, monthly.\ndata/cap_shares.csv: the capitalisation shares of the five equity markets, for the home rule.\n\nPositions are named &lt;region&gt;_&lt;class&gt;: US_money_market, UK_government, EU_credit, CH_equity, JP_equity, GLOBAL_commodity. Excess returns are total returns minus the money-market rate of the same month. Annualisation: mean × 12, covariance × 12.",
+    "text": "A.1 Station 1: Strategic Asset Analysis\nThis course provides an online application that implements the allocation methods explained in this handbook. Using the course dataset, the app automatically computes the strategic and tactical allocations. Transfer the values from the game to the app to calculate the allocations. Four stations guide you through the process, each corresponding to a chapter in the handbook.\nAccess the application at: https://inno.uni.li/apps/invest/.\nSpecify the investment fund’s asset universe. Leaving this setting unchanged is recommended: the default selection is the 16 benchmark positions, all of which the game lets you invest in. For the selected assets, the app computes annualised statistics, the correlation matrix, and the cumulative log return.\nThe five money-market positions are not part of the benchmark, so the default selection leaves them out. If you add them here, they also enter the optimisation in Station 2, and the allocation can then hold cash. Returns are in US dollars and unhedged, so a foreign money-market position carries almost the full volatility of its exchange rate.",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>A</span>  <span class='chapter-title'>The allocation app</span>"
@@ -655,8 +644,8 @@
     "objectID": "a1_app.html#station-1-strategic-asset-analysis",
     "href": "a1_app.html#station-1-strategic-asset-analysis",
     "title": "Appendix A — The allocation app",
-    "section": "A.3 Station 1 · Strategic Asset Analysis",
-    "text": "A.3 Station 1 · Strategic Asset Analysis\nInputs: the positions (default the 16 benchmark positions), the part of the sample in percent of the observations (default all). Outputs: annualised statistics (excess return, volatility, Sharpe ratio, skewness, worst calendar year, maximum drawdown), the correlation matrix, the growth of 100.",
+    "section": "",
+    "text": "Select asset classes. In this screenshot the five money-market positions have been added to the default selection.",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>A</span>  <span class='chapter-title'>The allocation app</span>"
@@ -666,8 +655,8 @@
     "objectID": "a1_app.html#station-2-strategic-asset-allocation",
     "href": "a1_app.html#station-2-strategic-asset-allocation",
     "title": "Appendix A — The allocation app",
-    "section": "A.4 Station 2 · Strategic Asset Allocation",
-    "text": "A.4 Station 2 · Strategic Asset Allocation\nInputs: γ (whole numbers), home market and home share, objective (quadratic utility, minimum variance, maximum Sharpe), a label; floors and caps by asset class, by currency and per position. The problem solved:\n\\[\n\\max_w \\; \\mu' w - \\frac{\\gamma}{2}\\, w' \\Sigma w\n\\quad \\text{s.t.} \\quad \\sum w = 1,\\; w \\ge 0,\\; \\text{floors and caps},\\; \\text{home rule},\n\\]\nwith the home rule as one linear equality per foreign equity market: \\(w_x = (1-h)\\, s_x\n\\sum_{\\text{equity}} w\\), where \\(h\\) is the home share and \\(s_x\\) the capitalisation share of market \\(x\\) outside the home market. Solved with quadprog::solve.QP(D = \\gamma\\Sigma, d = \\mu, A, b, meq). Minimum variance sets μ = 0; maximum Sharpe is the best point of a sweep over γ. Weights are rounded to half a percent, the residual into the home equity position.\nOutputs: the allocation as a currency × asset class matrix with sums, the positions with raw and rounded weights, class and currency totals, in-sample results of the fixed weights rebalanced monthly (expected excess return, volatility, Sharpe, best and worst calendar year, maximum drawdown), the binding limits, the in-sample path, the efficient frontier under the same limits, the constraint rows, and R code that reproduces the run. Fix this allocation as an SAA hands it to stations 3 and 4; several SAAs can be fixed, by label.",
+    "section": "A.2 Station 2: Strategic Asset Allocation",
+    "text": "A.2 Station 2: Strategic Asset Allocation\nBased on the supplied inputs, Station 2 optimises the fund’s strategic allocation. This quadratic programme maximises the portfolio’s expected return while minimising its risk, subject to several constraints. As introduced in Chapter 4, the method follows the Markowitz mean–variance optimisation framework. Additional constraints account for the home market and home share, as well as floors and caps for asset classes, currencies, and individual positions.\n\n\n\nSet the parameters for the mean variance optimisation\n\n\nFor each fund, specify the risk-aversion parameter (γ), the home market, the home share, and the objective function: quadratic utility, minimum variance, or maximum Sharpe ratio. Optimal weights for each asset class and currency are then computed subject to the specified constraints.\nWith these inputs, the app solves the following optimisation problem:\n\\[\n\\max_w \\; \\mu' w - \\frac{\\gamma}{2}\\, w' \\Sigma w\n\\quad \\text{s.t.} \\quad \\sum w = 1,\\; w \\ge 0,\\; \\text{floors and caps},\\; \\text{home rule},\n\\]\nwith the home rule as one linear equality per foreign equity market: \\(w_x = (1-h)\\, s_x\n\\sum_{\\text{equity}} w\\), where \\(h\\) is the home share and \\(s_x\\) the capitalisation share of the market \\(x\\) outside the home market.",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>A</span>  <span class='chapter-title'>The allocation app</span>"
@@ -677,8 +666,8 @@
     "objectID": "a1_app.html#station-3-tactical-analysis",
     "href": "a1_app.html#station-3-tactical-analysis",
     "title": "Appendix A — The allocation app",
-    "section": "A.5 Station 3 · Tactical Analysis",
-    "text": "A.5 Station 3 · Tactical Analysis\nInputs: τ (default 0.05) and the views, typed one per line: US_equity 12 50 is an absolute view (US equities earn 12 % a year over cash, confidence 50 %); EU_equity &gt; CH_equity 2 60 is a relative view (euro-area equities beat Swiss equities by 2 points a year, confidence 60 %). The confidence is optional and defaults to 50; lines starting with # are ignored; a list of position names is in the panel. The views apply to every fixed SAA; a selector chooses which SAA’s prior and posterior the table shows.\nPrior: \\(\\Pi = \\gamma \\Sigma w_{\\text{SAA}}\\) (reverse optimisation with the SAA’s own γ and the unrounded weights). Posterior (He and Litterman 1999):\n\\[\n\\mu_{BL} = \\left[(\\tau\\Sigma)^{-1} + P'\\Omega^{-1}P\\right]^{-1}\n          \\left[(\\tau\\Sigma)^{-1}\\Pi + P'\\Omega^{-1}Q\\right],\n\\qquad\n\\Sigma_{BL} = \\Sigma + \\left[(\\tau\\Sigma)^{-1} + P'\\Omega^{-1}P\\right]^{-1},\n\\]\nwith \\(\\Omega\\) diagonal and \\(\\Omega_k = \\frac{1-c_k}{c_k}\\,\\tau\\, p_k'\\Sigma p_k\\), so that c = 1/2 is the He–Litterman setting. Outputs: per position the SAA weight, the sample mean, the prior, the posterior and the change; the views as parsed.",
+    "section": "A.3 Station 3: Tactical Analysis",
+    "text": "A.3 Station 3: Tactical Analysis\nBefore calculating the tactical allocation, specify views on the expected returns of the assets. Views can be absolute or relative and can include a confidence level.\n\n\n\nEnter Tactical Views\n\n\nUse the following syntax for the views:\n\nPositions are named &lt;region&gt;_&lt;class&gt;: US_money_market, UK_government, EU_credit, CH_equity, JP_equity, GLOBAL_commodity\n\nMoney market: US_money_market, UK_money_market, EU_money_market, CH_money_market, JP_money_market\nGovernment bonds: US_government, UK_government, EU_government, CH_government, JP_government\nCorporate bonds: US_credit, UK_credit, EU_credit, CH_credit, JP_credit\nEquities: US_equity, UK_equity, EU_equity, CH_equity, JP_equity\nAlternatives: GLOBAL_commodity\n\nAbsolute view: &lt;position&gt; &lt;expected return&gt; [confidence] (e.g., US_equity 12 50 means that US equities are expected to earn 12% a year over cash, with a confidence of 50%)\nRelative view: &lt;position1&gt; &gt; &lt;position2&gt; &lt;expected return difference&gt; [confidence] (e.g., EU_equity &gt; CH_equity 2 60 means that euro-area equities are expected to beat Swiss equities by 2 points a year, with a confidence of 60%)\nEnter each view on a new line. Lines starting with # are ignored. A list of position names is available in the panel.\n\nParameter τ controls the weight assigned to the views during optimisation. Based on the specified views and strategic allocation, the app computes the prior and posterior expected returns.\nThese views produce the priors and posteriors through the He–Litterman (1999) model.\n\nPrior — the baseline expected returns implied by the strategic allocation, before any tactical views. Reverse optimisation obtains it from \\(\\Pi = \\gamma \\Sigma w_{\\text{SAA}}\\): the SAA weights are treated as if they were optimal, and the returns that would justify them are backed out. The prior therefore anchors the analysis to the long-term allocation.\nPosterior — the updated expected returns after incorporating the views. The Black–Litterman formula blends the prior (weighted by \\(\\tau\\Sigma\\), reflecting uncertainty in the prior) with the views \\(Q\\) (weighted by \\(\\Omega\\), reflecting confidence in each view). High-confidence views move returns further from the prior; low-confidence views barely move them. In the positive-semidefinite sense, posterior covariance \\(\\Sigma_{BL}\\) exceeds \\(\\Sigma\\) because it adds estimation uncertainty to market risk.",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>A</span>  <span class='chapter-title'>The allocation app</span>"
@@ -688,66 +677,11 @@
     "objectID": "a1_app.html#station-4-tactical-asset-allocation",
     "href": "a1_app.html#station-4-tactical-asset-allocation",
     "title": "Appendix A — The allocation app",
-    "section": "A.6 Station 4 · Tactical Asset Allocation",
-    "text": "A.6 Station 4 · Tactical Asset Allocation\nInputs: the maximum deviation per position (band, default 0.05) and the tracking-error budget (default 2 % a year, 0 = none). One press computes the tactical allocation of every fixed SAA under the same views. For each SAA, the problem of station 2 on \\((\\mu_{BL}, \\Sigma)\\) with that SAA’s γ and limits but without the home rule, plus \\(w_{\\text{SAA}} - d \\le w \\le w_{\\text{SAA}} + d\\). The home rule is left out because it defines the benchmark; kept, a view on one equity market could not act. The sample covariance Σ is used, not \\(\\Sigma_{BL}\\): \\(\\Sigma_{BL}\\) raises the measured risk by about \\((1+\\tau)\\) as soon as any view is entered and moves weight from equities into bonds for no reason of the views. If a budget is set and the tracking error \\(\\sqrt{(w - w_{\\text{SAA}})'\\Sigma(w - w_{\\text{SAA}})}\\) exceeds it, the deviation is scaled to the budget. Outputs: a summary table with the tilt by asset class, tracking error and active return per fund, and a tab per fund with the SAA, TAA and deviation matrices, the active-position figures and the binding limits. A negative expected active return is flagged in both. Without views the TAA equals the SAA, and a view that agrees with the prior leaves it there.",
+    "section": "A.4 Station 4: Tactical Asset Allocation",
+    "text": "A.4 Station 4: Tactical Asset Allocation\nIn the final step, translate the short-term views into a tactical allocation. Define the Strategic Asset Allocation (SAA) and the Tactical Analysis before computing the Tactical Asset Allocation (TAA). Solving an optimisation problem similar to the one in Station 2 produces the TAA, using the posterior expected returns and covariance matrix from Station 3, together with constraints on the maximum deviation per position and the tracking-error budget.\n\n\n\nOptimise for the Tactical Asset Allocation\n\n\nSpecify the maximum deviation per position (the band; default: 0.05) and the tracking-error budget (default: 2% per year; 0 means no tracking-error constraint). Optimal weights for each asset class and currency are then computed subject to the specified constraints. This budget represents the maximum permitted deviation from the strategic allocation, measured as the standard deviation of the difference between the tactical and strategic allocations using the covariance matrix.\nStation 4 drops the home rule. In Station 2 the rule fixes the split of the equity book across markets, so if it stayed in place, a view on an individual equity market could not change the allocation. Risk is measured with the sample covariance Σ rather than \\(\\Sigma_{BL}\\); the latter adds estimation uncertainty and could shift weights independently of the views. If the tracking error \\(\\sqrt{(w - w_{\\text{SAA}})'\\Sigma(w - w_{\\text{SAA}})}\\) exceeds the budget, the deviation is scaled to the budget.",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>A</span>  <span class='chapter-title'>The allocation app</span>"
-    ]
-  },
-  {
-    "objectID": "a1_app.html#saving-your-work",
-    "href": "a1_app.html#saving-your-work",
-    "title": "Appendix A — The allocation app",
-    "section": "A.7 Saving your work",
-    "text": "A.7 Saving your work\nStation 2 saves the fixed SAAs (their inputs and weights), the views and the tactical settings as a JSON file and loads such a file back. On loading, the SAAs are recomputed from their inputs on the current data, so a loaded file is always consistent with the dataset in use. Save the file in the team forum; it is the team’s record of the funds and views.",
-    "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>A</span>  <span class='chapter-title'>The allocation app</span>"
-    ]
-  },
-  {
-    "objectID": "a1_app.html#tests",
-    "href": "a1_app.html#tests",
-    "title": "Appendix A — The allocation app",
-    "section": "A.8 Tests",
-    "text": "A.8 Tests\ntests/check_recipe.R confirms that the app’s constraint builder and solver reproduce a hand-written quadratic programme for twenty client cases; tests/check_taa.R confirms that the tactical allocation equals the strategic one without views and under a view that agrees with the prior, that a negative view on one equity market lowers that market, and shows one view at work with a tracking-error budget.",
-    "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>A</span>  <span class='chapter-title'>The allocation app</span>"
-    ]
-  },
-  {
-    "objectID": "a2_roadmap.html",
-    "href": "a2_roadmap.html",
-    "title": "Appendix B — Proposed changes to the app and the game",
-    "section": "",
-    "text": "B.1 Simplifications of the flow\nPlanning only. Nothing here is implemented; each item names what it would simplify in the flow of Chapters 2 to 9 and what it would take.\nStation 0: the client. A form with the two decisions (σ and μ of each portfolio, taken or turned down) and the rules; the app computes the γ bracket, shows it, and carries the rules into station 2 as the limits. Removes the hand calculation of Chapter 2 and the manual entry of floors. Small.\nBand check. Load the client’s guidance bands (from the course’s allocation workbook) and flag, in station 2 and station 4, any class outside its band. Removes the manual check of Chapters 4 and 6. Small; needs the bands in a machine-readable file in the app’s data/.\nGame-format export. A button that writes the strategic or tactical matrix in the exact layout of the game’s grid (currency × asset class, percent) to the clipboard or a CSV. Removes typing errors. Small.\nOutlook import. A paste field for the analyst’s segment estimates of the round (yields, spreads, expected excess market return, factor premia per currency) and a rule that turns them into candidate views against the prior, with the confidence derived from the expected range. Chapter 5 by hand becomes one paste. Medium; needs the game’s export format for the outlook.\nAll funds at once. Run stations 2 to 4 for the firm’s up to four funds in one pass: one views panel, a tab per fund, one combined export. Station 4’s “same views for every fixed SAA” table is the first step. Medium.\nRound log. Keep, per fund and round, the SAA, the views, the TAA, the tracking error, and after the round the realised return and attribution (from the Results Excel), so that Chapter 9’s “judge the views” is a table rather than memory. Medium; needs the Results Excel format.",
-    "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Proposed changes to the app and the game</span>"
-    ]
-  },
-  {
-    "objectID": "a2_roadmap.html#extensions-that-implement-further-decisions",
-    "href": "a2_roadmap.html#extensions-that-implement-further-decisions",
-    "title": "Appendix B — Proposed changes to the app and the game",
-    "section": "B.2 Extensions that implement further decisions",
-    "text": "B.2 Extensions that implement further decisions\nSecurity selection (Chapter 7). From the tactical segment weights to positions: value or equal weighting, an ESG floor, and the tracking error of the resulting stock book against the segment line; optionally overweights by factor loading or industry with their contribution to tracking error. Needs asset-level returns and ratings in the app’s data (ratings as levels, which the course dataset does not carry yet). Large.\nPerformance attribution (Chapter 9). Brinson–Fachler on the game’s Results Excel: allocation, selection and currency effects against the fixed SAA, per round and cumulative. Medium; the inputs are the round’s segment returns and weights.\nTracking-error optimisation proper. Replace the scaling of station 4 by an optimisation with the tracking error as a constraint (a second-order cone, or a search over the active risk aversion), so that the TAA at a budget is optimal rather than a shrunk optimum. Small to medium.\nEstimation risk as a discussion tool. A toggle in station 2 that shows what shrinkage of the means toward the grand mean (or a Kan–Zhou-type combination) would do to the allocation, next to the plain optimum. Not for the benchmark, which stays the plain optimum; for the discussion of why a plain optimum is fragile and why the game defines the benchmark this way. Small.\nCurrency hedging as a hypothetical. Show what the allocation would be if foreign bonds could be hedged (local excess returns plus the interest differential, local covariance), next to the unhedged one the game allows. Makes Chapter 3’s point visible. Small; the hedged series would have to be added to the course dataset.",
-    "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Proposed changes to the app and the game</span>"
-    ]
-  },
-  {
-    "objectID": "a2_roadmap.html#suggestions-for-the-game-itself",
-    "href": "a2_roadmap.html#suggestions-for-the-game-itself",
-    "title": "Appendix B — Proposed changes to the app and the game",
-    "section": "B.3 Suggestions for the game itself",
-    "text": "B.3 Suggestions for the game itself\nClient texts and guidance bands. The October 2026 client profiles and guidance bands replace the current ones.\nStrategic allocation analysis on the Analyst page. It compares the fund’s strategic allocation with the optimal allocation held in the game’s parameters. If it reports the distance exactly, a team can iterate to the hidden allocation round by round; a coarse report (inside the guidance band / outside, or a distance rounded to five points) keeps the client-reading exercise alive.\nTracking error on the Investment strategy page. It is estimated from the game’s own forecasts and a short history; the app’s figure uses the full history. Stating the horizon and the data behind the game’s estimate would make the two comparable.\nExports. A CSV export of the Economic outlook’s segment estimates and of the Results attribution would make the outlook import and the round log above possible.",
-    "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Proposed changes to the app and the game</span>"
     ]
   }
 ]
