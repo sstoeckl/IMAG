@@ -25,8 +25,7 @@
         <a href="#about" class="hover:text-[var(--brand)]">Project</a>
         <a href="#team" class="hover:text-[var(--brand)]">Team</a>
         <a href="#outcomes" class="hover:text-[var(--brand)]">Outcomes</a>
-        <a href="#events" class="hover:text-[var(--brand)]">Events</a>
-        <a href="#apps" class="hover:text-[var(--brand)]">Game</a>
+        <a href="#game" class="hover:text-[var(--brand)]">Game</a>
         <a href="#contact" class="hover:text-[var(--brand)]">Contact</a>
       </nav>
     </div>
@@ -38,7 +37,7 @@
       <div class="grid md:grid-cols-2 gap-8 items-center">
         <div>
           <h1 class="text-3xl md:text-4xl font-semibold leading-tight text-[var(--ink)]">Investment Management Game (IMAG)</h1>
-          <p class="mt-4 text-lg text-slate-700 wp-serif">Erasmus+ Project 2022-2025: In this project we developed online courses to bring essential pension-finance knowledge to European citizens and higher-education students through accessible online courses and hands-on web applications.</p>
+          <p class="mt-4 text-lg text-slate-700 wp-serif">Erasmus+ Project 2022–2025: In this project we built a web-based investment management simulation and the teaching material around it, so that students can practise portfolio decisions — diversification, risk and return, ESG integration — by making them, round after round, rather than only reading about them.</p>
           <div class="mt-6 flex flex-wrap gap-3">
             <a href="https://www.cesim.com/simulations/cesim-invest" class="inline-flex items-center px-4 py-2 rounded bg-[var(--brand)] text-white hover:bg-[var(--brand-dark)]">Go to simulation</a>
             <a href="teaching.html" class="inline-flex items-center px-4 py-2 rounded border border-[var(--brand)] text-[var(--brand)] hover:bg-[var(--brand)] hover:text-white">See teaching material</a>
@@ -240,7 +239,7 @@
     <div class="mt-6 grid md:grid-cols-3 gap-6">
   
       <!-- Outcome 1: The Game -->
-      <article class="rounded-2xl border bg-white p-5 shadow-sm">
+      <article id="game" class="rounded-2xl border bg-white p-5 shadow-sm scroll-mt-24">
         <h3 class="font-semibold">Cesim Invest — The IMAG Simulation</h3>
         <p class="mt-2 text-sm text-slate-700">
           A web-based investment management simulation where participants act as portfolio managers. Learners practise diversification,
@@ -248,14 +247,14 @@
           The simulation is modular and suitable for schools, universities, and professional training.
         </p>
         <div class="mt-4 space-y-2 text-sm">
-          <a href="assets/pdfs/IMAG_Case_AsterionCapital.pdf" class="inline-flex items-center gap-2 text-[var(--brand)] hover:underline">
-            <span>📄</span><span>Case Description — Asterion Capital</span>
+          <a href="teaching/01_round.html" class="inline-flex items-center gap-2 text-[var(--brand)] hover:underline">
+            <span>📘</span><span>The decision flow, round by round</span>
           </a>
-          <a href="assets/pdfs/IMAG_Player_Decision_Guide.pdf" class="inline-flex items-center gap-2 text-[var(--brand)] hover:underline">
-            <span>📄</span><span>Player Decision Guide</span>
+          <a href="teaching/a1_app.html" class="inline-flex items-center gap-2 text-[var(--brand)] hover:underline">
+            <span>📘</span><span>Simulation reference</span>
           </a>
-          <a href="assets/pdfs/IMAG_Instructor_Portal_Export.pdf" class="inline-flex items-center gap-2 text-[var(--brand)] hover:underline">
-            <span>📄</span><span>Instructor Portal (PDF export)</span>
+          <a href="engine.html" class="inline-flex items-center gap-2 text-[var(--brand)] hover:underline">
+            <span>⚙️</span><span>Engine documentation</span>
           </a>
         </div>
         <div class="mt-5 flex flex-wrap gap-3">
@@ -268,18 +267,19 @@
       <article class="rounded-2xl border bg-white p-5 shadow-sm">
         <h3 class="font-semibold">Teaching Materials</h3>
         <p class="mt-2 text-sm text-slate-700">
-          Ready-to-use assets that make classroom adoption easy: slides, agendas, and example assignments aligned with the simulation’s
-          learning outcomes. Includes a recorded 60-minute “How to play” webinar and a short overview video.
+          Ready-to-use material that makes classroom adoption easy: a teaching book that walks through the simulation
+          chapter by chapter, a six-lesson slide deck, and a short overview video — all aligned with the simulation’s
+          learning outcomes.
         </p>
         <div class="mt-4 space-y-2 text-sm">
-          <a href="assets/pdfs/IMAG_Slides_SamplePack.pdf" class="inline-flex items-center gap-2 text-[var(--brand)] hover:underline">
-            <span>📄</span><span>Slides — Sample Pack</span>
+          <a href="teaching.html" class="inline-flex items-center gap-2 text-[var(--brand)] hover:underline">
+            <span>📘</span><span>Teaching book (all chapters)</span>
           </a>
-          <a href="assets/pdfs/IMAG_Lesson_Agendas.pdf" class="inline-flex items-center gap-2 text-[var(--brand)] hover:underline">
-            <span>📄</span><span>Lesson Agendas & Assignments</span>
+          <a href="slides.html" class="inline-flex items-center gap-2 text-[var(--brand)] hover:underline">
+            <span>🖥️</span><span>Slide deck — six lessons</span>
           </a>
-          <a href="https://player.vimeo.com/video/1109639021?h=0" class="inline-flex items-center gap-2 text-[var(--brand)] hover:underline" target="_blank" rel="noopener">
-            <span>▶️</span><span>Overview Video (Vimeo)</span>
+          <a href="https://vimeo.com/1109639021" class="inline-flex items-center gap-2 text-[var(--brand)] hover:underline" target="_blank" rel="noopener">
+            <span>▶️</span><span>Overview video (Vimeo)</span>
           </a>
         </div>
       </article>
@@ -288,18 +288,19 @@
       <article class="rounded-2xl border bg-white p-5 shadow-sm">
         <h3 class="font-semibold">Competition & Events</h3>
         <p class="mt-2 text-sm text-slate-700">
-          IMAG was showcased in hybrid roadshows and used as the platform for the international Cesim Elite finals. Materials here help
-          you organise campus sessions or a local competition and report outcomes.
+          IMAG was showcased in hybrid roadshows and used as the platform for the international Cesim Elite finals.
+          If you want to run a round on your own campus, the teaching book covers how results are scored and how a
+          course can be sequenced around the game.
         </p>
         <div class="mt-4 space-y-2 text-sm">
-          <a href="assets/pdfs/IMAG_EventKit.pdf" class="inline-flex items-center gap-2 text-[var(--brand)] hover:underline">
-            <span>📄</span><span>Event Kit — How to Host a Session</span>
+          <a href="teaching/09_results.html" class="inline-flex items-center gap-2 text-[var(--brand)] hover:underline">
+            <span>📘</span><span>Reading the results</span>
           </a>
-          <a href="assets/pdfs/IMAG_Competition_Rules.pdf" class="inline-flex items-center gap-2 text-[var(--brand)] hover:underline">
-            <span>📄</span><span>Competition Rules & Scoring</span>
+          <a href="teaching/a2_roadmap.html" class="inline-flex items-center gap-2 text-[var(--brand)] hover:underline">
+            <span>📘</span><span>Course roadmap</span>
           </a>
-          <a href="assets/pdfs/IMAG_Dissemination_Summary.pdf" class="inline-flex items-center gap-2 text-[var(--brand)] hover:underline">
-            <span>📄</span><span>Dissemination Summary (highlights)</span>
+          <a href="https://www.cesim.com/simulations/cesim-invest" class="inline-flex items-center gap-2 text-[var(--brand)] hover:underline" target="_blank" rel="noopener">
+            <span>🔗</span><span>Request access from Cesim</span>
           </a>
         </div>
       </article>
