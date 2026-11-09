@@ -12,7 +12,7 @@ Specify the investment fund's asset universe. Leaving this setting unchanged is 
 
 ![Select asset classes. In this screenshot the five money-market positions have been added to the default selection.](graphics/Appendix/SpecifyPositions.png)
 
-The five money-market positions are not part of the benchmark, so the default selection leaves them out. Add them only to study cash: for a foreign money-market position, most of the return and almost all of the risk come from the exchange rate.
+The five money-market positions are not part of the benchmark, so the default selection leaves them out. If you add them here, they also enter the optimisation in Station 2, and the allocation can then hold cash. Returns are in US dollars and unhedged, so a foreign money-market position carries almost the full volatility of its exchange rate.
 
 ## Station 2: Strategic Asset Allocation
 Based on the supplied inputs, Station 2 optimises the fund's strategic allocation. This quadratic programme maximises the portfolio's expected return while minimising its risk, subject to several constraints. As introduced in Chapter 4, the method follows the Markowitz mean–variance optimisation framework. Additional constraints account for the home market and home share, as well as floors and caps for asset classes, currencies, and individual positions.
@@ -103,8 +103,8 @@ In the final step, translate the short-term views into a tactical allocation. De
 
 Specify the maximum deviation per position (the band; default: 0.05) and the tracking-error budget (default: 2\% per year; 0 means no tracking-error constraint). Optimal weights for each asset class and currency are then computed subject to the specified constraints. This budget represents the maximum permitted deviation from the strategic allocation, measured as the standard deviation of the difference between the tactical and strategic allocations using the covariance matrix.
 
-Omitting the home rule preserves the benchmark. Retaining it would prevent a view on an
-individual equity market from affecting the allocation. Risk is measured with the sample covariance
+Station 4 drops the home rule. In Station 2 the rule fixes the split of the equity book across
+markets, so if it stayed in place, a view on an individual equity market could not change the allocation. Risk is measured with the sample covariance
 Σ rather than $\Sigma_{BL}$; the latter adds estimation uncertainty and could shift weights
 independently of the views. If the tracking error
 $\sqrt{(w - w_{\text{SAA}})'\Sigma(w - w_{\text{SAA}})}$ exceeds the budget, the deviation is
