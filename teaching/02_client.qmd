@@ -3,6 +3,10 @@ title: "Reading the client"
 bibliography: references.bib
 ---
 
+::: {.callout-tip title="Lecture Slides"}
+**Associated slides:** [Lesson 2 — Reading the Client: Client Analysis & Risk Aversion](../slides/02_clients.html)
+:::
+
 In professional investment management, building a portfolio is only one part of the process. Before deciding how to invest, the manager must understand the person the portfolio is being built for. Good investment management starts with the client's needs.
 
 ## What the Clients page gives you

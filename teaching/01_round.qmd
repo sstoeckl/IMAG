@@ -2,6 +2,10 @@
 title: "A round in IMAG"
 ---
 
+::: {.callout-tip title="Lecture Slides"}
+**Associated slides:** [Lesson 1 — A Round in IMAG: Introduction & Simulation Setup](../slides/01_introduction.html)
+:::
+
 ## The firm, the funds, the clients
 
 You are a fund manager at Asterion Capital, an asset manager whose founders are stepping back. The firm runs

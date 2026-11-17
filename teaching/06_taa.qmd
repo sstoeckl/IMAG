@@ -2,6 +2,10 @@
 title: "Setting the tactical allocation"
 ---
 
+::: {.callout-tip title="Lecture Slides"}
+**Associated slides:** [Lesson 5 — From Views to Tactical Allocation](../slides/05_taa.html)
+:::
+
 By default the game copies the strategic allocation into the tactical allocation. Disabling the
 automatic tactical allocation on the Investment strategy page opens the tactical grid. There you use your views to tilt the tactical allocation away from the strategic one. The tactical allocation is the one the round is run on; the strategic allocation stays the benchmark.
 The page estimates the **tracking error** of your tactical allocation against the benchmark and

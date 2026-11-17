@@ -3,6 +3,10 @@ title: "Setting the strategic allocation"
 bibliography: references.bib
 ---
 
+::: {.callout-tip title="Lecture Slides"}
+**Associated slides:** [Lesson 4 — Setting the Strategic Allocation](../slides/04_saa.html)
+:::
+
 With the client and the market understood, the next step is the strategic allocation, the
 benchmark against which every tactical decision is measured. The strategic allocation is entered once per fund on the Investment strategy page and stays for
 the whole game. It is the **benchmark**: risk-adjusted performance, attribution and the strategic

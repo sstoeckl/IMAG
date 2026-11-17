@@ -2,6 +2,10 @@
 title: "Reading the market"
 ---
 
+::: {.callout-tip title="Lecture Slides"}
+**Associated slides:** [Lesson 3 — Reading the Market: Strategic Asset Analysis](../slides/03_market.html)
+:::
+
 Once you know the client, the next step is the market you invest in, because the strategic
 allocation is built on it. Asset classes differ: some are more volatile than others, some have a
 higher expected return, some move together and others in opposite directions.

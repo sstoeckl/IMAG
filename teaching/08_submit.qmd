@@ -2,6 +2,10 @@
 title: "Fees, projections, submission"
 ---
 
+::: {.callout-tip title="Lecture Slides"}
+**Associated slides:** [Lesson 6 — Submit, Measure and Learn](../slides/06_results.html)
+:::
+
 ## Fees
 
 With the allocation set, the fund needs a fee: it pays the firm's staff and earns its profit.

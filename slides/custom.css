@@ -1,4 +1,85 @@
-/* IMAG — custom RevealJS footer styles */
+/* IMAG — custom RevealJS styles */
+
+.reveal .slides section:not(.title-slide):not(.quarto-title-block):not(.stack) {
+  top: 0 !important;
+  padding-top: 4px !important;
+  padding-bottom: 36px !important;
+  box-sizing: border-box;
+}
+
+.reveal .slides section h2 {
+  font-size: 1.45em !important;
+  margin-top: 0 !important;
+  margin-bottom: 0.35em !important;
+  line-height: 1.15 !important;
+}
+
+.reveal .slides section h3 {
+  font-size: 1.15em !important;
+  margin-top: 0.2em !important;
+  margin-bottom: 0.25em !important;
+}
+
+.reveal .slides section p,
+.reveal .slides section ul,
+.reveal .slides section ol {
+  margin-top: 0.25em;
+  margin-bottom: 0.35em;
+}
+
+.reveal .slides section figure,
+.reveal .slides section .quarto-figure {
+  margin-top: 0.2em !important;
+  margin-bottom: 0.2em !important;
+}
+
+.reveal .slides section figure img,
+.reveal .slides section .quarto-figure img,
+.reveal .slides section > p > img {
+  max-height: 430px !important;
+  width: auto !important;
+  max-width: 92% !important;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto !important;
+}
+
+.reveal .slides section figure figcaption,
+.reveal .slides section .quarto-figure-caption {
+  margin-top: 0.25em !important;
+  font-size: 0.65em !important;
+  line-height: 1.2 !important;
+}
+
+.reveal .slides section table {
+  font-size: 0.72em !important;
+  border-collapse: collapse;
+  margin: 0.3em auto !important;
+  width: 100%;
+}
+
+.reveal .slides section table th,
+.reveal .slides section table td {
+  padding: 0.22em 0.5em !important;
+  line-height: 1.2 !important;
+  vertical-align: middle;
+}
+
+.reveal .callout {
+  margin-top: 0.35em;
+  margin-bottom: 0.35em;
+  font-size: 0.85em;
+}
+
+.reveal .callout .callout-body ul,
+.reveal .callout .callout-body ol {
+  margin-bottom: 0.2em;
+}
+
+.reveal .callout .callout-body li {
+  margin-top: 0.18em;
+  margin-bottom: 0.12em;
+}
 
 .reveal .footer.footer-default {
   background: #ffffff;

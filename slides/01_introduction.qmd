@@ -1,0 +1,184 @@
+---
+title: "A Round in IMAG"
+subtitle: "Lesson 1 — Introduction & Simulation Setup"
+format:
+  revealjs:
+    smaller: true
+---
+
+## Learning Outcomes
+
+By the end of this lesson you will be able to:
+
+- Explain what the IMAG simulation measures and why AuM matters
+- Describe the fund, client, benchmark and portfolio structure
+- Navigate the four-station allocation app alongside the Cesim Invest platform
+- Follow the eight-step decision flow from client information to round results
+- Organise your team workflow and governance for practice and scored rounds
+
+# The Firm, the Funds, the Clients {background-color="#1e3a5f"}
+
+## Asterion Capital
+
+- You are a fund manager at **Asterion Capital**, whose founders are stepping back
+- The firm runs up to four funds, one per client type:
+  - **Conservative**
+  - **Conservative (ESG)**
+  - **Dynamic**
+  - **Dynamic (ESG)**
+- Each fund has its own clients, its own benchmark and its own fee structure
+
+## What Stays Fixed vs. What Changes?
+
+- **Fixed for the entire game:**
+  - The client profile and fund type
+  - The client's home market, investment rules and guidance bands (on the **Clients** page)
+  - The strategic asset allocation (**SAA**), set in Round 1 as the fund's benchmark
+- **Updated every round:**
+  - Economic views and the tactical asset allocation (**TAA**)
+  - Optional security-level adjustments
+  - Management fees (charged on Assets under Management, **AuM**)
+
+# The Portfolio Universe {background-color="#1e3a5f"}
+
+## 180 Assets, 21 Positions, 16 Benchmark Segments
+
+| Asset Class | USD | GBP | EUR | CHF | JPY | In SAA Benchmark? |
+|:--|:--:|:--:|:--:|:--:|:--:|:--|
+| **Money market** | ✓ | ✓ | ✓ | ✓ | ✓ | **No** (5 tactical cash positions) |
+| **Government bonds** | ✓ | ✓ | ✓ | ✓ | ✓ | **Yes** (5 benchmark positions) |
+| **Corporate bonds** | ✓ | ✓ | ✓ | ✓ | ✓ | **Yes** (5 benchmark positions) |
+| **Equities** | ✓ | ✓ | ✓ | ✓ | ✓ | **Yes** (5 benchmark positions) |
+| **Alternatives (Commodities)** | ✓ | — | — | — | — | **Yes** (1 USD position) |
+: {tbl-colwidths="[28,8,8,8,8,8,32]"}
+
+- **21 total positions** across the 5 currencies; the **SAA benchmark** is defined on the **16 non-cash segments**.
+
+## The Dollar Numeraire & Currency Risk
+
+- Asterion measures everything in **US dollars (USD)**
+- Foreign-currency assets are held **unhedged** — the game offers no currency hedging instruments
+- Every non-USD position therefore combines **local asset risk + FX risk against the dollar**
+- The optimal strategic benchmark holds **no cash**: holding cash is an active tactical decision, not a strategic position
+
+# What the Game Measures {background-color="#1e3a5f"}
+
+## Three Channels Drive AuM
+
+AuM is the capital a fund manages. Since each fund earns its percentage management fee on its AuM, **growing AuM drives the firm's profit**. AuM responds to three channels:
+
+1. **Risk-Adjusted Performance against the Benchmark**
+2. **Client Satisfaction**
+3. **Management Fees**
+
+## 1. Risk-Adjusted Performance
+
+- Measured against each fund's own **strategic allocation (SAA)**
+- Raw return alone does not win the game; risk-adjusted and benchmark-relative metrics matter
+- The **Analyst** page decomposes and attributes returns by:
+  - Currency and asset class (allocation effect)
+  - Industry, maturity and factor exposures (selection effect)
+  - Comparison of your SAA against the game's hidden optimal allocation for the client
+
+## 2. Client Satisfaction
+
+- Client surveys evaluate whether the fund is managed as promised on the **Clients** page:
+  - Staying inside the client's **guidance bands** and hard limits
+  - Taking the level of risk consistent with the client's risk aversion ($\gamma$)
+  - Meeting the required **ESG rating floor** for sustainability funds
+- A fund held far from client expectations (e.g. parking a dynamic client in cash) loses clients immediately
+
+## 3. Management Fees
+
+- Quoted as an annual percentage on the **Clients** page (one quarter is charged per quarterly round)
+- Higher fees increase revenue per dollar of AuM, but drive clients away
+- Clients tolerate fees better when risk-adjusted performance is strong:
+  - **Dynamic clients** respond to marketing and accept higher fees
+  - **Conservative clients** demand low, transparent fees
+
+## The Winning Criterion
+
+Grow AuM and firm value by balancing all three channels:
+
+1. Deliver strong **risk-adjusted performance** relative to the benchmark
+2. Keep **clients satisfied** by respecting their mandate and risk profile
+3. Charge an **appropriate fee** for each client segment
+
+The instructor sets the final scoring metric (*Sharpe ratio, alpha, information ratio, or cumulative shareholder return*), all of which flow through these three channels.
+
+# The Decision Flow & Allocation App {background-color="#1e3a5f"}
+
+## Setup Once in Round 1 (Steps 1–3)
+
+| Step | Page in the Game | What You Decide | Tool | Ch. |
+|:--:|:--|:--|:--|:--:|
+| **1** | Clients | Read client rules, $\gamma$ bracket & guidance bands | Client card | 2 |
+| **2** | Course dataset | Inspect historical market statistics & correlations | App St. 1 | 3 |
+| **3** | Strategy → Strategic allocation | Set and fix each fund's SAA benchmark | App St. 2 | 4 |
+: {tbl-colwidths="[8,28,42,14,8]"}
+
+- **Done once in Round 1:** the client profile does not change, and the SAA stays fixed as the fund's benchmark for the entire game
+- **The Allocation App (<https://inno.uni.li/apps/invest/>):** runs on the full monthly USD course dataset; you compute matrices in the app and type them into the game grids
+
+## Repeat Every Round (Steps 4–8)
+
+| Step | Page in the Game | What You Decide | Tool | Ch. |
+|:--:|:--|:--|:--|:--:|
+| **4** | Economic outlook, Analyst | Turn macro outlook into expected-return views | App St. 3 | 5 |
+| **5** | Strategy → Tactical allocation | Optimise this round's tactical weights (TAA) | App St. 4 | 6 |
+| **6** | Strategy → Automation, Markets | Set ESG floor; decide on security selection | Game | 7 |
+| **7** | Clients → Fees, Projections | Set fees, verify projections, submit Team Area | Game | 8 |
+| **8** | Results, Analyst | Diagnose ratios, attribution & satisfaction | Game | 9 |
+: {tbl-colwidths="[8,28,42,14,8]"}
+
+- **Repeated every quarter:** form views from the new outlook, tilt the TAA via Black–Litterman, check automation/fees/projections, submit, and feed attribution back into the next round
+
+# Rounds, Practice and Teams {background-color="#1e3a5f"}
+
+## Practice Rounds vs. Scored Rounds
+
+- A round typically represents **one quarter**
+- The instructor may run up to **three practice rounds** before Round 1:
+  - Practice results do not carry over; use them to master the platform and app workflow
+  - After practice, the market resets and **Round 1 starts from the decisions of the first practice round**
+- Between rounds, holdings drift with market returns and fund flows:
+  - If automation is on, the game rebalances holdings back to your tactical weights
+  - The SAA is never touched by market drift — it is a fixed benchmark, not a holding
+
+## Student Area vs. Team Decision Area
+
+- Every team member has a personal **Student Decision Area**
+- Only the **Team Decision Area** is scored at the round deadline
+- Workflow discipline:
+  - Prepare and test decisions in your Student Decision Area
+  - Compare team members' proposals side-by-side on the **Decision checklist** page
+  - Click **Copy as team's decisions** only after agreeing (overwrites the Team Area without backup!)
+  - Appoint a rotating **Round CEO** responsible for the final check and submission
+
+## The Round on One Page
+
+1. **Round 1 only:** Read the client (Ch. 2) and market (Ch. 3); optimise and fix the SAA for every fund (Ch. 4)
+2. Set the **ESG rating floor** for ESG funds in *Automation preferences* (Ch. 7)
+3. Read the *Economic outlook* and record views with confidence levels (Ch. 5)
+4. Run Station 4 for every fund; enter the TAA and check projected tracking error & IR (Ch. 6)
+5. Keep asset-level automation on in early rounds (or document specific security theses, Ch. 7)
+6. Set fees, verify *Projections*, and copy to the **Team Decision Area** before the deadline (Ch. 8)
+7. After the deadline: diagnose *Results* and *Analyst*; revise $\gamma$ (if needed once) and views (Ch. 9)
+
+## Simulation Task — Lesson 1
+
+::: {.callout-important}
+## Deliverable: Platform, App & Team Setup
+
+1. **Explore Cesim Invest:** Locate *Clients, Economic outlook, Investment strategy, Markets, Analyst, Decision checklist,* and *Projections*.
+2. **Test the Allocation App:** Open <https://inno.uni.li/apps/invest/> and verify access to Stations 1–4.
+3. **Establish Team Governance:** Appoint your Round 1 CEO, set an internal review deadline before copying to the *Team Decision Area*, and start your **team forum** log.
+4. **Inspect Active Funds:** Check which of the four funds (*Conservative, Conservative ESG, Dynamic, Dynamic ESG*) are active in your game.
+:::
+
+## Key Takeaways
+
+- Your **SAA is the fixed benchmark**; your **TAA and holdings** deviate tactically when justified by views
+- **AuM** drives firm profit and responds to benchmark-relative performance, client satisfaction and fees
+- Every foreign position is **unhedged in USD**, making currency risk an integral part of portfolio management
+- Work in your **Student Decision Area**, log your reasoning in the forum, and copy deliberately to the **Team Decision Area**

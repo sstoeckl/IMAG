@@ -3,6 +3,10 @@ title: "From the Economic outlook to views"
 bibliography: references.bib
 ---
 
+::: {.callout-tip title="Lecture Slides"}
+**Associated slides:** [Lesson 5 — From Views to Tactical Allocation](../slides/05_taa.html)
+:::
+
 Once the strategic allocation is fixed, the next step is to read the Economic outlook and turn it into views. The outlook is forward-looking information about the coming period; the views are what you enter into the app to tilt the tactical allocation away from the strategic one and outperform your benchmark.
 
 ## What the outlook gives you

@@ -2,6 +2,10 @@
 title: "Reading the results"
 ---
 
+::: {.callout-tip title="Lecture Slides"}
+**Associated slides:** [Lesson 6 — Submit, Measure and Learn](../slides/06_results.html)
+:::
+
 After the deadline, the Results page shows how each fund did in the round just completed: fund
 performance before and after fees, AuM and flows, satisfaction, the firm's financials, and the ranking against the other teams in the universe.
 
@@ -176,87 +180,21 @@ The direction tells you which way to adjust γ. Overweighted in equities means y
 
 ## Actionable takeaways: what to do with the numbers
 
-The ratios and the attribution tell you what happened. To decide what to do next round, you need
-to translate them into actions. This section says how.
+The ratios and the attribution tell you what happened. Use the table below to translate them into
+actions for the next round.
 
-### If the information ratio is below 0
-**What it means:** The active return was negative relative to the risk taken. The tactical views
-were wrong, or the tracking-error budget was too large for the quality of the views.
-
-**What to do:** Reduce the size of the tactical tilts. Either use fewer views, lower the
-confidence on the views you have, or narrow the maximum deviation band in station 4. If the IR is
-negative for three rounds in a row with high confidence, stop entering that view entirely.
-
-### If the information ratio is between 0 and 0.5
-**What it means:** The active return was positive, but modest relative to the risk taken. The
-views were slightly right, or the tracking-error budget was too loose.
-
-**What to do:** Keep the views, but check whether the confidence levels are calibrated. If views you
-entered with high confidence keep producing a small IR, lower the confidence next round.
-
-### If the information ratio is above 0.5
-**What it means:** The views were right relative to the risk taken. The tactical process is
-working.
-
-**What to do:** Keep doing what you are doing. Do not increase the tracking-error budget just
-because the IR is high; the budget is there to protect the client, not to maximise the score.
-
-### If the Sharpe ratio is high but the information ratio is low (or zero)
-**What it means:** The fund generated good absolute risk-adjusted returns, but the tactical
-decisions did not add value. The high Sharpe comes from the strategic allocation, not from the
-tactical tilts.
-
-**What to do:** Check the attribution. If the selection effect is zero and the allocation effect
-is zero, the tactical allocation is identical to the strategic allocation. That is fine if you had
-no views, but if you entered views and the IR is zero, the views were neutralised by the model
-(e.g., because the confidence was too low). Raise the confidence or do not enter the view.
-
-### If the Sortino ratio is much higher than the Sharpe ratio
-**What it means:** The fund's volatility is skewed to the upside. The fund has large positive
-returns and small negative ones.
-
-**What to do:** Nothing. This is a good outcome. The client is getting upside volatility without
-the corresponding downside, which is exactly what a risk-averse client wants.
-
-### If the Sortino ratio is much lower than the Sharpe ratio
-**What it means:** The fund's volatility is skewed to the downside. The fund has large negative
-returns and small positive ones.
-
-**What to do:** Check the attribution for a large negative allocation effect. If the fund is
-taking concentrated positions that have gone wrong, pull them back. The client's loss aversion
-makes downside volatility particularly costly.
-
-### If the alpha is positive but the IR is negative
-**What it means:** The fund is generating excess return relative to the factor model (good
-management), but the tactical allocation is underperforming the benchmark (bad tactical
-decisions). The two are unrelated: alpha is measured against factors, IR is measured against the
-benchmark.
-
-**What to do:** Fix the tactical views, not the strategic allocation. The strategic allocation is
-generating alpha; the tactical tilts are destroying value.
-
-### If the market beta is negative
-**What it means:** The fund moves opposite to the market. It is a hedge.
-
-**What to do:** Check whether this is intended. If the client is risk-averse and the fund is
-holding defensive assets, a negative beta is fine. If the client is growth-oriented and the fund
-is hedging unintentionally, reduce the defensive weight.
-
-### If the strategic allocation analysis says "Overweighted"
-**What it means:** The fund is holding more of a segment than the optimal allocation for the
-client's γ.
-
-**What to do:** If the overweight is in equities, raise the γ estimate (the client is more
-risk-averse than you thought). If the overweight is in bonds, lower the γ estimate. Change γ
-once, early, and record why.
-
-### If the satisfaction is falling but the IR is positive
-**What it means:** The fund is beating the benchmark, but the client is unhappy. The most likely
-cause is that the fund is too far from the guidance bands (the client wants a specific allocation,
-not just a good return), or the fee is too high.
-
-**What to do:** Compare the fund's weights to the guidance bands. If the fund is outside the
-bands, pull it back. If the fund is inside the bands, check the fee.
+| Signal | What it means | What to do |
+|---|---|---|
+| Information ratio below 0 | Active return was negative relative to the risk taken. The tactical views were wrong, or the tracking-error budget was too large. | Reduce tactical tilts: use fewer views, lower confidence, or narrow the maximum deviation band in station 4. If the IR is negative for three rounds with high confidence, stop entering that view. |
+| Information ratio between 0 and 0.5 | Active return was positive, but modest relative to the risk taken. | Keep the views, but check calibration. Lower confidence next round if high-confidence views repeatedly produce a small IR. |
+| Information ratio above 0.5 | The views were right relative to the risk taken. | Keep the process unchanged. Do not increase the tracking-error budget just because the IR is high. |
+| High Sharpe, but low or zero information ratio | Absolute risk-adjusted returns were good, but tactical decisions added no value; the strategic allocation generated the high Sharpe. | Check attribution. If selection and allocation effects are zero, the tactical and strategic allocations are identical. If views were entered but neutralised, raise confidence or omit the view. |
+| Sortino much higher than Sharpe | Volatility is skewed to the upside: large positive returns and small negative ones. | Nothing. This is a good outcome for a risk-averse client. |
+| Sortino much lower than Sharpe | Volatility is skewed to the downside: large negative returns and small positive ones. | Check for a large negative allocation effect and pull back concentrated positions that went wrong. |
+| Positive alpha, but negative IR | The fund is generating excess return relative to the factor model, while tactical allocation is underperforming the benchmark. | Fix the tactical views, not the strategic allocation. |
+| Negative market beta | The fund moves opposite to the market and acts as a hedge. | Check whether this is intended. Keep it for a risk-averse client holding defensive assets; otherwise reduce the defensive weight. |
+| Strategic allocation analysis says “Overweighted” | The fund holds more of a segment than is optimal for the client's γ. | For an equity overweight, raise γ; for a bond overweight, lower γ. Change γ once, early, and record why. |
+| Satisfaction falling, but positive IR | The fund beats the benchmark, but the client may dislike the distance from the guidance bands or the fee. | Compare weights with the guidance bands and pull the fund back if it is outside them. If it is inside, check the fee. |
 
 ## Satisfaction and AuM
 

@@ -2,6 +2,10 @@
 title: "From tactical weights to positions"
 ---
 
+::: {.callout-tip title="Lecture Slides"}
+**Associated slides:** [Lesson 5 — From Views to Tactical Allocation](../slides/05_taa.html)
+:::
+
 The tactical asset allocation is a grid of segment weights. The game's automatic allocation translates each segment weight into positions, by value
 weighting or equal weighting, and rebalances them to the tactical weights after each round unless
 you switch it off.
