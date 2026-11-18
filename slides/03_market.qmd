@@ -6,21 +6,14 @@ format:
     smaller: true
 ---
 
-## What We Already Know
-
-- Each client card gives us a risk aversion estimate ($\gamma$), a commodity rule, a home-market equity rule and guidance bands
-- The strategic allocation (**SAA**) becomes the fund's fixed benchmark for the entire game
-- Client satisfaction and attribution depend on building the SAA on the exact benchmark universe
-- Before optimising in Station 2, we must understand the historical return and risk structure of the market
-
 ## Learning Outcomes
 
 By the end of this lesson you will be able to:
 
-- Distinguish the long-run historical dataset (strategic input) from the round-by-round Economic outlook (tactical input)
-- Read and interpret Station 1's annualised excess-return statistics and correlation matrix
-- Explain why unhedged foreign bonds and money markets behave primarily like currency exposures in USD
-- Identify the diversification and defensive relationships that drive the efficient frontier
+- Separate long-run historical data (SAA input) from the Economic outlook (TAA input)
+- Interpret Station 1's annualised excess returns, Sharpe ratios, and correlations
+- Explain why unhedged foreign bonds behave like currency positions in US dollars
+- Identify the defensive role of USD government bonds against equity drawdowns
 
 # Two Sources of Market Information {background-color="#1e3a5f"}
 
@@ -28,40 +21,29 @@ By the end of this lesson you will be able to:
 
 | Information Source | Data & Horizon | Used For |
 |:--|:--|:--|
-| **Course History** (App) | Full monthly history of the 21 positions in unhedged USD | **Strategic Allocation (SAA)** — Ch. 3–4 (Stations 1–2) |
-| **Economic Outlook** (Game) | Next-quarter analyst forecasts (rates, inflation, spreads, factors) | **Tactical Allocation (TAA)** — Ch. 5–6 (Stations 3–4) |
+| **Course History** (App) | Full monthly history of the 21 positions in unhedged USD | **Strategic Allocation (SAA)** — Stations 1–2 |
+| **Economic Outlook** (Game) | Next-quarter analyst forecasts (rates, inflation, spreads, factors) | **Tactical Allocation (TAA)** — Stations 3–4 |
 : {tbl-colwidths="[24,42,34]"}
 
-- **Core discipline:** Keep the two strictly separate — the strategic benchmark **never moves** with the current round's Economic outlook.
+- **Core rule:** The strategic benchmark is built on the full history and **never moves** with the current outlook.
 
 # Station 1: Strategic Asset Analysis {background-color="#1e3a5f"}
 
 ## Inside Station 1 of the Allocation App
 
-![Station 1 computes annualised excess returns, volatilities, Sharpe ratios, drawdowns and correlations.](assets/market/AllocationApp.png){fig-align="center" width="76%"}
+![Station 1 computes annualised excess returns (over US cash), volatilities, Sharpe ratios, drawdowns and correlations.](assets/market/AllocationApp.png){fig-align="center"}
 
-## How to Configure Station 1
-
-1. Open <https://inno.uni.li/apps/invest/> and select **1 · Strategic Asset Analysis**
-2. Keep the default selection of **16 benchmark positions** (Government bonds, Corporate bonds and Equities in USD, GBP, EUR, CHF, JPY, plus Global Commodities in USD)
-3. Keep the estimation window at **100% (full history)**
-4. Temporarily add the **5 money-market positions** only when you want to inspect pure currency risk; remove them again before moving to Station 2
-
-All figures in the table are **annualised** ($\mu_{\text{ann}} = 12\mu_{\text{m}}$, $\sigma_{\text{ann}} = \sqrt{12}\sigma_{\text{m}}$) and measured **in excess of the US money-market rate**.
-
-# Three Lessons from the Statistics Table {background-color="#1e3a5f"}
+# Three Lessons from Station 1 {background-color="#1e3a5f"}
 
 ## 1. Ranking by the Sharpe Ratio
 
-Sort the Station 1 table by the **Sharpe ratio** column from top to bottom:
-
 $$
-\text{Sharpe ratio} = \frac{\text{Annualised expected excess return }(\mu)}{\text{Annualised volatility }(\sigma)}
+\text{Sharpe ratio} = \frac{\text{Expected excess return over US cash }(\mu)}{\text{Volatility }(\sigma)}
 $$
 
-- **At the top:** Equity markets and **USD** bond positions (e.g. USD Corporate bonds Sharpe $\approx 0.57$, USD Government bonds Sharpe $\approx 0.49$)
-- **Near the bottom:** Non-USD government and corporate bonds, and foreign money-market positions (several with Sharpe ratios near zero or negative)
-- **Key question to ask:** *What risk premium is this position actually being paid for, and why does its volatility look so high in dollars?*
+- **Top of the table:** Equity markets and **USD** bonds (USD Corp bonds $\approx 0.57$, USD Govt bonds $\approx 0.49$)
+- **Bottom of the table:** Non-USD government/corporate bonds and foreign cash (Sharpe near $0$ or negative)
+- Standalone Sharpe does not decide the portfolio — **correlations and client rules** matter too
 
 ## 2. What a Foreign Bond Is in US Dollars
 
@@ -73,54 +55,39 @@ $$
 | **Govt bonds — USD** | $2.32\%$ | $4.75\%$ | $0.49$ | Pure interest-rate risk (zero FX risk) |
 : {tbl-colwidths="[26,14,13,11,36]"}
 
-- Because the game **cannot hedge currencies**, a foreign bond is mostly a **currency position** (~9.5% FX volatility) — which is why Station 2 puts the defensive bond book into **USD bonds**.
+- Unhedged foreign bonds carry **~9.5% FX volatility** — which is why Station 2 places the defensive bond book in **USD bonds**.
 
-## 3. Correlation Structure & Defensive Assets
+## 3. Correlations & Where the Money Market Fits
 
-Inspect the correlation matrix in Station 1:
-
-- **Global equity co-movement:**
-  - The five equity markets move together, with correlations around **0.40 to 0.65** against US equities
-  - Spreading equities across regions diversifies idiosyncratic regional shocks, but still leaves common global equity risk
-- **The defensive anchor:**
-  - **USD government bonds are slightly negatively correlated with US equities**
-  - A negatively correlated asset reduces total portfolio variance ($w^\mathsf{T}\Sigma w$) and cushions equity drawdowns — that is what a defensive position is for, even if its standalone return is lower than equities
-
-# Where the Money Market Fits {background-color="#1e3a5f"}
-
-## The Zero Reference Line
-
-- Excess returns are defined relative to the **US money-market rate**, making USD cash the zero baseline of the table
-- Foreign money-market positions earn roughly zero local excess return, so in USD they isolate **pure exchange-rate risk and carry**
-- Why money markets are excluded from the SAA:
-  - The game's strategic allocation grid has **no cash row**
-  - The client leaves cash management to the manager's tactical discretion
-  - Including USD cash in an unconstrained minimum-variance or Sharpe optimisation would distort the 16-position benchmark
+- **Global equities co-move:** Correlations of **$0.40\text{–}0.65$** with US equities (diversify regional shocks, not global equity risk)
+- **Defensive anchor:** **USD government bonds are negatively correlated with US equities**, cushioning drawdowns and reducing total portfolio variance ($w^\mathsf{T}\Sigma w$)
+- **Money market = zero line:**
+  - Excess returns are measured over USD cash
+  - Inspect the 5 money markets in Station 1 to see pure FX volatility, then **remove them** before optimising the 16-position SAA in Station 2
 
 # What Not to Do Here {background-color="#1e3a5f"}
 
-## Preserve the Integrity of the Strategic Input
+## Preserve the Strategic Input
 
-- **Do not shift historical means or volatilities** to reflect your personal market forecast — views belong in Chapter 5 (Station 3)
-- **Do not shorten the sample window** (keep the slider at 100%) — the game's hidden optimal benchmark is defined on the **full history**; a shorter window changes every input and lowers your client satisfaction score
-- **Do not drop unattractive benchmark positions** from the 16-position list — letting the optimiser assign a $0\%$ weight is right; dropping a position corrupts the benchmark universe used later in attribution
+- **Do not alter historical means or volatilities** to reflect your forecast (views enter in Station 3)
+- **Do not shorten the sample window** (keep at **100%** — the game's hidden benchmark uses the full history)
+- **Do not drop benchmark positions** (let the Station 2 optimiser assign $0\%$ weights where appropriate)
 
 ## Simulation Task — Lesson 3
 
 ::: {.callout-important}
-## Deliverable: Market Structure & Risk Diagnosis
+## Deliverable: Market Structure Diagnosis
 
-Using **Station 1** (<https://inno.uni.li/apps/invest/>), record the following in your **team forum**:
+In **Station 1** (<https://inno.uni.li/apps/invest/>), record in your **team forum**:
 
-1. **Sharpe Ranking:** With the 16 benchmark positions at 100% sample, sort by Sharpe ratio and list the top 5 and bottom 5 positions.
-2. **Unhedged FX Check:** Temporarily add the 5 money-market positions and compare their USD volatility and correlation with each country's government bonds.
-3. **Defensive Correlation:** Record the correlation between **US Equities** and **USD Govt Bonds**, and the range of correlations across the 5 equity markets.
-4. **Reset for Station 2:** Remove the 5 money-market positions so only the **16 benchmark positions (100% sample)** remain selected.
+1. **Sharpe Ranking:** Top 5 and bottom 5 positions across the 16 benchmark segments (100% sample).
+2. **FX vs. Bond Risk:** Compare USD volatility of foreign cash vs. foreign government bonds.
+3. **Correlations:** Record the correlation between **US Equities** and **USD Govt Bonds**, then reset to the **16 benchmark positions**.
 :::
 
 ## Key Takeaways
 
-- **Historical data** defines the fixed SAA benchmark; the **Economic outlook** is reserved for tactical tilts
-- All returns are in **unhedged US dollars**: foreign bonds carry ~9–11% currency volatility and are not low-risk defensive anchors for a USD-measured fund
-- **USD government bonds** provide both lower volatility and negative correlation to equities, making them the primary defensive building block
-- Always keep the **full 16-position universe** and **100% historical sample** when moving to Station 2
+- **History** defines the fixed SAA benchmark; the **Economic outlook** drives tactical tilts
+- In **unhedged USD**, foreign bonds are dominated by currency volatility (~9–11%)
+- **USD government bonds** combine low volatility with negative equity correlation, making them the core defensive asset
+- Keep the **16 benchmark positions** and **100% sample** untouched for Station 2

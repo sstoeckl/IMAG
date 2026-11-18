@@ -6,35 +6,27 @@ format:
     smaller: true
 ---
 
-## What We Already Know
-
-- Each fund's **SAA is fixed** in Round 1 and serves as its benchmark for the entire game
-- By default, Cesim Invest copies the SAA into the tactical allocation (zero tracking error)
-- Every round, the **Economic outlook** provides forward-looking macro, rate, factor and spread estimates
-- In Steps 4–6 of a round, we turn the outlook into **views** (Station 3), optimise the **tactical tilt** (Station 4), and configure **automation & security selection** (Chapter 7)
-
 ## Learning Outcomes
 
 By the end of this lesson you will be able to:
 
-- Classify an economy's business-cycle phase using the **Investment Clock** and cross-check it with sector and factor data
-- Formulate **absolute and relative views** with calibrated confidence in Station 3
-- Explain how the **Black–Litterman model** blends the reverse-optimised SAA prior ($\Pi = \gamma\Sigma w$) with views
-- Optimise the **Tactical Asset Allocation (TAA)** in Station 4 under position bands and a tracking-error budget
-- Configure **ESG automation preferences** and evaluate individual stocks using three fundamental checks
+- Diagnose the business cycle with the **Investment Clock** and cross-check with sectors/factors
+- Enter **absolute and relative views** with calibrated confidence in Station 3
+- Explain how **Black–Litterman** blends the SAA prior ($\Pi = \gamma\Sigma w$) with your views
+- Optimise the **Tactical Asset Allocation (TAA)** in Station 4 under bands and a tracking-error budget
+- Configure **ESG automation** and evaluate individual stocks on three fundamental checks
 
-# Part 1: Reading the Outlook & Business Cycle {background-color="#1e3a5f"}
+# Part 1: Outlook & The Investment Clock {background-color="#1e3a5f"}
 
 ## What the Economic Outlook Gives You
 
 :::: {.columns}
 ::: {.column width="42%"}
 - Published each round with point forecasts and **expected ranges**:
-  - Interest rates by maturity & currency
+  - Interest rates & credit spreads
   - GDP growth, inflation, unemployment & confidence
-  - Market excess return & factor premia (**HML, MOM, RMW**)
-  - Credit spreads & exchange rates
-- Do not copy numbers blindly — diagnose the cycle and form views where you disagree with the SAA prior
+  - Market return & factor premia (**HML, MOM, RMW**)
+- Diagnose the cycle and express views **only where you disagree with the SAA prior**
 :::
 ::: {.column width="58%"}
 ![The Economic outlook page in Cesim Invest.](assets/taa/EconomicOutlook.png){fig-align="center"}
@@ -43,19 +35,19 @@ By the end of this lesson you will be able to:
 
 ## The Investment Clock (Greetham & Hartnett, 2004)
 
-![Classification by growth relative to trend and inflation direction.](assets/taa/investment-clock.png){fig-align="center"}
+![Cycle phases classified by growth relative to trend and inflation direction.](assets/taa/investment-clock.png){fig-align="center"}
 
-## The Four Phases & Historical Evidence
+## Four Phases & Cross-Checks
 
-| Phase | Growth | Inflation | Best Class & Mechanism | US Real Return (1973–2004) |
+| Phase | Growth | Inflation | Favoured Class | US Real Return (1973–2004) |
 |:--|:--:|:--:|:--|:--|
-| **Reflation** | Falling $\downarrow$ | Falling $\downarrow$ | **Bonds:** Central banks cut rates; yields fall | Bonds **+9.8%**, Stocks +6.4% |
-| **Recovery** | Rising $\uparrow$ | Falling $\downarrow$ | **Stocks:** Growth rebounds while rates stay low | Stocks **+19.9%**, Bonds +7.0% |
-| **Overheat** | Rising $\uparrow$ | Rising $\uparrow$ | **Commodities:** Capacity tightens; inflation rises | Comm **+19.7%**, Stocks +6.0% |
-| **Stagflation** | Falling $\downarrow$ | Rising $\uparrow$ | **Cash / Real:** Growth slows; inflation blocks cuts | Cash **−0.3%**, Stocks **−11.7%** |
-: {tbl-colwidths="[14,12,12,36,26]"}
+| **Reflation** | $\downarrow$ | $\downarrow$ | **Bonds** (rate cuts; yields fall) | Bonds **+9.8%**, Stocks +6.4% |
+| **Recovery** | $\uparrow$ | $\downarrow$ | **Stocks** (rebound + low rates) | Stocks **+19.9%**, Bonds +7.0% |
+| **Overheat** | $\uparrow$ | $\uparrow$ | **Commodities** (inflation rises) | Comm **+19.7%**, Stocks +6.0% |
+| **Stagflation** | $\downarrow$ | $\uparrow$ | **Cash / Real** (no rate cuts) | Cash **−0.3%**, Stocks **−11.7%** |
+: {tbl-colwidths="[15,11,11,35,28]"}
 
-- *Source: Greetham & Hartnett (2004), annualised real returns. Use the clock for **directional rotation**, not exact magnitudes.*
+- **Cross-check with Sectors & Factors:** Cyclicals/Value (**HML > 0**) confirm Overheat/Recovery; Defensives/Growth confirm Reflation; **MOM > 0** confirms a clean transition ($\ge 2$ confirming signals $\implies 70\text{–}80\%$ confidence).
 
 ## Worked Example: Classifying Two Economies
 
@@ -63,92 +55,54 @@ By the end of this lesson you will be able to:
 |:--|:--|:--|
 | **GDP growth (last 4Q)** | Rising steadily | Rising, but slowing over last 2Q |
 | **Inflation (vs. 4Q ago)** | $0.6\% \to 1.9\%$ (rising sharply) | $1.4\% \to 1.4\%$ (low and flat) |
-| **Unemployment (vs. 4Q ago)** | $5.4\% \to 4.6\%$ (falling) | $5.0\% \to 4.9\%$ (edging down) |
-| **Confidence indices** | Consumer & business rising | Consumer flat; business falling |
-| **Phase & Directional Tilt** | **Overheat:** OW Equities A & Comm; UW Bonds A | **Late Recovery:** OW Equities B; UW Bonds B |
-: {tbl-colwidths="[26,37,37]"}
-
-## Cross-Checking Your Classification
-
-Treat the macro classification as a **hypothesis** and test it against two additional tables on the outlook page:
-
-1. **Equity Sector Leadership:**
-   - *Overheat / Recovery:* Cyclical & value sectors (**Industrials, Basic Materials**) should lead
-   - *Reflation:* Defensive growth (**Consumer Staples**) should lead
-   - *Stagflation:* Defensive value (**Oil & Gas, Utilities, Pharmaceuticals**) should lead
-2. **Factor Premia (HML, MOM, RMW):**
-   - Rising inflation favours **Value (HML > 0)**; falling inflation favours **Growth (HML < 0)**
-   - A clean phase transition supports **Momentum (MOM > 0)**; a stalling cycle penalises momentum
-
-**Calibration rule:** $\ge 2$ confirming signals $\implies$ **high confidence ($70\text{–}80\%$)**; mixed signals $\implies$ **lower confidence ($30\text{–}50\%$)**; contradicted by both sectors and factors $\implies$ **revisit classification before entering a view**.
+| **Unemployment & Confidence** | Unemployment $\downarrow$; confidence $\uparrow$ | Unemployment flat; business conf. $\downarrow$ |
+| **Diagnosis & Tilt** | **Overheat:** OW Equities A & Comm; UW Bonds | **Late Recovery:** OW Equities B (cautious); UW Bonds |
+: {tbl-colwidths="[28,36,36]"}
 
 # Part 2: Black–Litterman & Station 3 {background-color="#1e3a5f"}
 
-## Station 3: Turning the Outlook into Views
+## Station 3: Entering Views
 
-![Station 3 computes the SAA-implied prior and blends it with your absolute and relative views.](assets/taa/TacticalAnalysis.png){fig-align="center" width="76%"}
+![Station 3 blends the SAA-implied equilibrium prior with your views.](assets/taa/TacticalAnalysis.png){fig-align="center"}
 
-## How to Format Views in Station 3
+## View Syntax & Black–Litterman Math
 
-Station 3 accepts two types of annualised views (one per line), each with a **confidence between 5% and 95%** (default `50`):
-
-- **Absolute view:** `<position> <expected_excess_return_%> [confidence_%]`
+:::: {.columns}
+::: {.column width="46%"}
+- **Absolute view** (`<pos> <ret_%> [conf_%]`):
   ```text
   US_equity 12 50
   ```
-- **Relative view:** `<position_A> > <position_B> <spread_points> [confidence_%]`
+- **Relative view** (`<posA> > <posB> <diff> [conf_%]`):
   ```text
   EU_equity > CH_equity 2 60
   ```
-  *(Relative views are often safer because they express a ranking without requiring an exact annualised return level.)*
-- **One set of views for all funds:** Views describe the *market*, not the client. Enter the same views once in Station 3; Station 4 applies them to every fund's fixed SAA.
-
-## How the Math Works: Prior to Posterior
-
-1. **Reverse-Optimised Prior ($\Pi$):** Black–Litterman (1992; He & Litterman, 1999) backs out the expected returns under which the client's fixed SAA is optimal:
-   $$
-   \Pi = \gamma \Sigma w_{\text{SAA}}
-   $$
-2. **Posterior Expected Returns ($E(R)$):** Precision-weighted average of the prior $\Pi$ and your views $Q$:
-   $$
-   E(R) = \underbrace{\left[(\tau\Sigma)^{-1} + P^\mathsf{T}\Omega^{-1}P\right]^{-1}}_{\text{combined precision}}
-          \underbrace{\left[(\tau\Sigma)^{-1}\Pi + P^\mathsf{T}\Omega^{-1}Q\right]}_{\text{precision-weighted sum}}
-   $$
-   - $P$: pick matrix ($+1$ for absolute; $+1, -1$ for relative); $Q$: view returns; $\tau = 0.05$
-   - $\Omega$: diagonal view uncertainty, $\Omega_k = \frac{1 - c_k}{c_k}\,\tau\,p_k^\mathsf{T}\Sigma p_k$ for confidence $c_k \in (0,1)$
-
-With no views, $E(R) = \Pi$ and **the TAA equals the SAA**. Every tactical tilt is 100% traceable to a view.
-
-## Worked View Example: US Equities at 12%
-
-Suppose the US outlook is at the top of its range and we enter `US_equity 12 50` ($\tau = 0.05$):
-
-- **For the Hartleys ($\gamma = 8$, UK home):**
-  - Prior for `US_equity` implied by their SAA: **$7.5\%$**
-  - Posterior for `US_equity`: **$9.8\%$** (moves halfway from $7.5\%$ toward $12.0\%$ at $50\%$ confidence)
-  - **Spillover via covariance $\Sigma$:** Correlated equity markets also rise (`UK_equity` $9.5\% \to 11.2\%$, `EU_equity` $9.7\% \to 11.6\%$), while negatively correlated `US_government` bonds barely budge ($0.39\% \to 0.30\%$).
-- **For the Keller trust ($\gamma = 5$, EUR home):**
-  - Different SAA and $\gamma \implies$ prior for `US_equity` is **$7.7\%$**, moving to **$9.8\%$** in the posterior.
+- **One set of views for all funds** (keep $\tau = 0.05$)
+:::
+::: {.column width="54%"}
+- **Prior implied by SAA:** $\Pi = \gamma\Sigma w_{\text{SAA}}$
+- **Posterior expected returns:**
+  $$E(R) = \left[(\tau\Sigma)^{-1} + P^\mathsf{T}\Omega^{-1}P\right]^{-1}\left[(\tau\Sigma)^{-1}\Pi + P^\mathsf{T}\Omega^{-1}Q\right]$$
+- **No views $\implies E(R) = \Pi \implies \text{TAA} = \text{SAA}$**
+- Example (`US_equity 12 50` on Hartley): prior $7.5\% \to$ posterior **$9.8\%$** (lifts correlated `UK`/`EU` equities too)
+:::
+::::
 
 # Part 3: Tactical Allocation in Station 4 {background-color="#1e3a5f"}
 
 ## Station 4: Optimising the Tactical Tilt
 
-![Station 4 optimises the TAA for all fixed SAAs simultaneously under position bands and a tracking-error budget.](assets/taa/TacticalAssetAllocation.png){fig-align="center" width="76%"}
+![Station 4 optimises the TAA for all fixed SAAs simultaneously.](assets/taa/TacticalAssetAllocation.png){fig-align="center"}
 
-## Three Differences Between Station 4 (TAA) and Station 2 (SAA)
+## How Station 4 Differs from Station 2
 
-For each fixed SAA, Station 4 maximises $w^\mathsf{T} E(R) - \frac{\gamma}{2}w^\mathsf{T}\Sigma w$ with **three modifications**:
+Station 4 maximises $w^\mathsf{T}E(R) - \frac{\gamma}{2}w^\mathsf{T}\Sigma w$ around each fund's fixed SAA with **three modifications**:
 
-1. **No home-market equity rule:** The home rule defines the strategic benchmark. Keeping it in TAA would force all equity regions to scale up or down in lockstep, preventing a single-country view from acting! (Other client rules, like the commodity floor, remain enforced.)
-2. **Sample covariance $\Sigma$, not posterior $\Sigma_{\text{BL}}$:** Using $\Sigma_{\text{BL}}$ would inflate measured variance by roughly $(1+\tau)$ the moment any view is entered, artificially pushing every fund out of equities into bonds regardless of the view's direction.
-3. **Position band & Tracking-Error (TE) budget:**
-   - **Maximum deviation band:** $|w_i - w_{i,\text{SAA}}| \le d$ (default $d = 0.05 = \pm 5\text{ points}$)
-   - **TE budget:** $\text{TE} = \sqrt{(w - w_{\text{SAA}})^\mathsf{T}\Sigma(w - w_{\text{SAA}})} \le \text{TE}_{\max}$ (default $2.0\%$ per year; if exceeded, deviations are scaled down proportionally)
+1. **No home-market rule:** Allows single-region equity views to act freely (commodity floor still binds)
+2. **Sample covariance $\Sigma$ (not $\Sigma_{\text{BL}}$):** Prevents view uncertainty from artificially inflating risk and pushing funds into bonds
+3. **Risk controls:** Position band $|w_i - w_{i,\text{SAA}}| \le \mathbf{\pm 5\text{ pts}}$ and tracking-error budget $\text{TE} \le \mathbf{2.0\%\text{/yr}}$
 
-## Hartley Worked Example: Tactical Deviation Matrix
-
-Applying `US_equity 12 50` (band $\pm 5\text{ pts}$, TE budget $2.0\%$) to the **Hartleys ($\gamma = 8$)**:
+## Hartley TAA Example (`US_equity 12 50`)
 
 | Asset Class | USD | GBP | EUR | CHF | JPY | **Total Tilt (pts)** |
 |:--|--:|--:|--:|--:|--:|--:|
@@ -159,63 +113,42 @@ Applying `US_equity 12 50` (band $\pm 5\text{ pts}$, TE budget $2.0\%$) to the *
 | **Total Tilt (pts)** | **−4.0** | **+3.0** | **+0.5** | **+0.5** | **0.0** | **0.0** |
 : {tbl-colwidths="[26,12,12,12,12,12,14]"}
 
-- **Hartley ($\gamma = 8$):** $\text{TE} = \mathbf{1.3\%}$/yr, expected active return = **+0.7%**/yr (`US_equity` hits $+5\text{ pt}$ band; correlated `UK`, `EU`, `CH` gain $+3\text{ pts}$).
-- **Same view on Keller ($\gamma = 5$):** Lower $\gamma \implies$ larger tilt (**+10 pts** equities, **−10 pts** USD bonds; $\text{TE} = 1.5\%$, active return **+1.0%**).
+- **Hartley ($\gamma = 8$):** $\text{TE} = 1.3\%$, active return $= +0.7\%$. **Keller ($\gamma = 5$):** Lower $\gamma \implies$ larger tilt ($+10\text{ pts}$ equities, $\text{TE} = 1.5\%$, active return $= +1.0\%$).
 
-## Two Tactical Traps to Watch For
+## Two Tactical Traps
 
-1. **A view on a foreign bond is a currency bet:**
-   - Entering `EU_government 4 50` causes Station 4 to shift $+5\text{ pts}$ into EUR government bonds **and $+5\text{ pts}$ into EUR corporate bonds** (which share EUR/USD covariance), funded from USD bonds — creating a **10-point EUR/USD currency bet**!
-   - Always check the **currency column totals** of the deviation matrix before submitting.
-2. **A binding commodity floor can invert a negative view:**
-   - If you enter `GLOBAL_commodity 0 50` (bearish vs. $2.6\%$ prior) for the Hartleys, the $5\%$ floor prevents selling commodities. The optimiser instead shifts $+4\text{ pts}$ into bonds and $-4\text{ pts}$ out of corporate/equity, producing a **negative expected active return (−0.1%)** flagged by the app!
-   - **Rule:** If a client floor blocks your view or expected active return is negative, **leave the fund at its SAA**.
+- **Foreign bond view = currency bet:** `EU_government 4 50` shifts $+5\text{ pts}$ into EUR govt and $+5\text{ pts}$ into EUR credit $\implies$ **10-point EUR/USD exposure**. Always check currency column totals!
+- **Binding commodity floor:** A bearish commodity view cannot reduce commodities below the client's floor ($5\%$) and may flag a **negative expected active return** — if so, leave the fund at its SAA.
 
-# Part 4: From Tactical Weights to Securities {background-color="#1e3a5f"}
+# Part 4: ESG Automation & Security Selection {background-color="#1e3a5f"}
 
-## Step 6A: Automation & the ESG Floor
+## ESG Automation & Optional Stock Picks
 
-In Cesim Invest, automatic allocation translates your 16 tactical segment weights into 180 individual securities (using market-cap value weighting by default) and rebalances every round:
-
-1. **Set the ESG Floor (Round 1):** Go to *Investment strategy → Automatic and benchmark portfolio preferences* and set **Minimum criteria → ESG rating → A** for the ESG funds.
-2. **Verify the *Matches* column:** Every active segment must have at least one eligible security passing the filter. If a segment shows a warning (0 matches), its weight stays in **unintended cash** — lower the threshold one notch if needed.
-3. **Keep *Automatic current allocation* ON in early rounds:** Value weighting matches the strategic equity split and avoids unattributed security-level tracking error.
-
-## Step 6B: Fundamental Security Selection (Optional)
+- **Automation first (Round 1 & early rounds):**
+  - Set **Minimum criteria → ESG rating → A** for ESG funds in *Automation preferences*
+  - Verify the **Matches** column has no warnings (unmatched segments stay in unintended cash!)
+  - Keep *Automatic current allocation* **ON** (value weighting) unless you have a stock-level thesis
+- **If selecting individual stocks later** (keep segment totals equal to your TAA):
 
 | Check | Metrics on Asset Page | What to Look For |
 |:--|:--|:--|
-| **1. Earnings Quality** | $\text{FCF/share} \div \text{EPS}$, **ROI vs. ROE** | $\text{FCF/EPS} \approx 1.0$ (or rising) confirms cash backs profit; ROI rising with ROE confirms real profitability, not leverage. |
-| **2. Solvency & Liquidity** | **Current Ratio**, **Debt/Equity** | $\text{Current Ratio} > 1.0$ covers short-term bills; falling D/E signals active deleveraging. |
-| **3. Relative Valuation** | **P/E** vs. **5Y History** & **Market** | A stock cheaper than the market ($12 < 15$) can still be expensive vs. its own history ($12 \text{ vs. } 6.5$)! |
+| **1. Earnings Quality** | $\text{FCF/share} \div \text{EPS}$, **ROI vs. ROE** | $\text{FCF/EPS} \approx 1.0$ (cash-backed profit); ROI rising with ROE (not just leverage) |
+| **2. Solvency** | **Current Ratio**, **Debt/Equity** | $\text{Current Ratio} > 1.0$ (liquidity); falling D/E (deleveraging) |
+| **3. Valuation** | **P/E** vs. **5Y History** & **Market** | Cheap vs. market ($12 < 15$) can still be expensive vs. own history ($12 \text{ vs. } 6.5$)! |
 : {tbl-colwidths="[22,26,52]"}
-
-- Only disable *Automatic current allocation* on **Markets** when you have a specific thesis, and **keep segment totals equal to your TAA**.
-
-## Worked Security Thesis: European Energy Stock
-
-Suppose you inspect a European energy company with the following 4-year trajectory:
-
-- **Earnings Quality:** EPS grew from $€1.20 \to €4.00$; FCF/share turned from $-€0.40 \to +€3.00 \implies \text{FCF/EPS} = 3.00 / 4.00 = \mathbf{0.75}$ (strong positive cash trend); $\text{ROI} = 16\%$.
-- **Solvency & Liquidity:** Current ratio rose from $0.9 \to \mathbf{1.6}$ (safe liquidity); D/E fell from $57\% \to \mathbf{31\%}$ (deleveraged).
-- **Relative Valuation:** Current $\text{P/E} = \mathbf{12}$ vs. market average $\text{P/E} = 15$ ($0.80\times$ market), **but** 5-year historical average $\text{P/E} = \mathbf{6.5}$ ($1.85\times$ own history).
-- **Investment Decision:** Fundamentals and cash conversion improved dramatically, **but the stock has nearly doubled its historical multiple**. The recovery is already priced in $\implies$ **Neutral or underweight** (no margin of safety).
 
 ## Simulation Task — Lesson 5
 
 ::: {.callout-important}
-## Deliverable: Round Views, TAA Matrices & ESG Setup
+## Deliverable: Round Views, TAA & ESG Setup
 
-1. **ESG Floors:** Set the ESG rating floor in *Automation preferences* and verify **Matches** has no warnings.
-2. **Cycle & Views:** Classify each economy on the Investment Clock, cross-check sectors/factors, and select 1–3 views with confidence ($30\text{–}80\%$).
-3. **Stations 3 & 4:** Load your SAA `.json`, enter views ($\tau = 0.05$), and optimise all funds' TAAs ($\pm 5\%$ band, $2\%$ TE budget).
-4. **Enter & Log:** Enter the TAA grids in Cesim Invest, check projected TE/IR, and log views, TAA deviations and diagnostics in the **team forum**.
+1. **ESG Floor:** Set the ESG rating floor in *Automation preferences* and verify **Matches** is clean.
+2. **Views & TAA (Stations 3–4):** Load your SAA `.json`, enter 1–3 views with confidence, and optimise all funds' TAAs.
+3. **Enter & Log:** Enter the TAA grids in Cesim, check projected TE/IR, and log views and TAA tilts in the **team forum**.
 :::
 
 ## Key Takeaways
 
-- Classify the macro cycle **before** tilting; cross-check with sectors and factors to calibrate confidence
-- Black–Litterman anchors on the reverse-optimised SAA prior ($\Pi = \gamma\Sigma w$) so **only your views create active tilts**
-- Station 4 drops the home rule and uses sample $\Sigma$ within $\pm 5\%$ bands and a $2\%$ TE budget
-- Watch out for **hidden currency bets** in foreign bond views and **binding commodity floors**
-- Keep security-level automation **ON** in early rounds; when selecting stocks later, check **FCF/EPS**, **Current Ratio & D/E**, and **P/E vs. own history**
+- Classify the cycle and cross-check with sectors/factors **before** entering views
+- Black–Litterman blends the SAA prior ($\Pi = \gamma\Sigma w$) with views — **no views means no tilt**
+- Watch currency column totals on foreign views and keep **security automation ON** in early rounds
